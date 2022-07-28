@@ -3,6 +3,7 @@
 \usepackage[english]{babel}
 \usepackage{textcomp}
 \usepackage{xifthen}
+\usepackage{tabularx}
 
 %Alignment
 \usepackage[skip=10mm]{parskip}
@@ -25,7 +26,6 @@
 		\textbf{\ul{#1:}}\\
 		#2\\
 	\end{minipage}
-%	\par
 }
 \newcommand{\supply}[5]{
 	\begin{minipage}{\textwidth/2}
@@ -37,39 +37,35 @@
 }
 
 \newcommand{\statuseffect}[2]{
-	\begin{minipage}{\textwidth/2}
+	\begin{minipage}{\textwidth}
 		\textbf{\ul{#1:}}\\
 		#2\\
 	\end{minipage}
-%	\par
 }
 \newcommand{\skill}[4][Basic]{
-	\begin{minipage}{\textwidth/2}
+	\begin{minipage}{\textwidth}
 		\textbf{\ul{#2}}\\
 		Difficulty: #1\\
 		Common Characteristic: #3\\
 		Description:\\
 		#4\\
 	\end{minipage}
-%	\par
 }
 \newcommand{\ability}[4]{
-	\begin{minipage}{\textwidth/2}
+	\begin{minipage}{\textwidth}
 		\textbf{\ul{#1}} (#2 XP)\\
 		Prerequisites: #3\\
 		Effect:\\
 		#4\\
 	\end{minipage}
-%	\par
 }
 \newcommand{\maneuver}[3]{
-	\begin{minipage}{\textwidth/2}
+	\begin{minipage}{\textwidth}
 		\textbf{\ul{Maneuver: #1}} (#2 XP)\\
 		Prerequisites: #3\\
 		Effect:\\
 		Allows the use of the maneuver #1 at normal penalties.\\
 	\end{minipage}
-%	\par
 }
 \newcommand{\boon}[4][]{
 	\begin{minipage}{\textwidth}
@@ -108,7 +104,7 @@
 	In the first scenario she rolls a 76, which does result in a success but without any additional degrees of success beyond the first, making this a bare hit. Only the outermost part of the fire is quenched and it continues to spread to the other side but her way might be passable now.\\
 	In the second scenario she rolls a 34, making this 5 degrees of success. She hits dead center and the foam spreads over almost the entire flames, essentially having it die out.\\
 	In the third scenario she rolls an 87, barely failing but with only a single degree of failure. The can might hit something and return, hit the wrong parts of the fire or fail to pop.\\
-	And finally in the fourth scenario she rolls a 99, scoring 3 degrees of failure. The can could slip, pop too early or spread the foam in the wrong direction.
+	And finally in the fourth scenario she rolls a 99, scoring 3 degrees of failure. The can could slip, pop too early or spread the foam in the wrong direction. Details are up to the GM's discretion.
 		}
 	\end{exampleblock}
 	\section{Opposed checks}
@@ -135,9 +131,9 @@
 		\item \textbf{Constitution (Con)} describes the creature’s bodily sturdiness, endurance and pain tolerance.
 		\item \textbf{Strength (Str)} describes the creature’s bodily, physical strength and ability to use it effectively.
 	\end{itemize}
-	Each characteristic can be increased 5 times by 5 points each by spending XP. These advancements cost 200, 400, 800, 1200 and 1600XP respectively.
+	Each characteristic can be increased 5 times by 5 points each by spending XP. Said advancements cost 200, 400, 800, 1200 and 1600XP respectively. These have to be bought in order for any one given characteristic.
 	\section{Characteristic bonuses}
-	Sometimes a mechanic will require a characteristic bonus. This is the characteristic divided by 10 and rounded down - a characteristic of 31 would mean a characteristic bonus of 3 while a characteristic of 49 would result in a bonus of 4. A theoretical characteristic of 125 would result in a characteristic of 12.
+	Sometimes a mechanic will require a characteristic bonus. This is the characteristic divided by 10 and rounded down - a characteristic of 31 would mean a characteristic bonus of 3 while a characteristic of 49 would result in a bonus of 4. A theoretical characteristic of 125 would result in a characteristic bonus of 12.
 	\section{Derived values}
 	A few additional values are directly derived from the set of characteristics. They include the attributes that define limits for augmentation:
 	\begin{itemize}
@@ -425,8 +421,10 @@
 	\section{Common hazards}
 	A few hazards threaten everyone.\\
 	Exhaustion is easily the most common threat to any character after physical damage. Exhaustion is gathered through many ways. Every level of exhaustion gives the character a -10 penalty to any check. If exhaustion reaches too high, the character is at risk of overexertion (see Healing-Lethality).\\
-	Uncontrolled falling is the most common way the environment will try to kill a character. By default the character will take damage that ignores armor but not injury threshold. The damage is an amount of D10 equal to a fifth of the distance fallen in meters and hits an additional zone per full 5 meters, not hitting any zones twice.\\
-	For example hitting the ground after falling 12 meters would deal 2D10 damage to 2 locations. If the fall was 64 meters instead, it would deal 13D10 damage to all locations.\\
+	Uncontrolled falling is the most common way the environment will try to kill a character. By default the character will take damage that ignores armor but not injury threshold. The damage is an amount of D10 equal to a third of the distance fallen in meters and hits an additional zone per full 5 meters, not hitting any zones twice.\\
+	For example hitting the ground after falling 12 meters would deal 4D10 damage to 2 locations. If the fall was 64 meters instead, it would deal 21D10 damage to all locations.\\
+%	Heavy objects falling on top of a character deal damage according to the same calculation, except the result is multiplied with the difference in weight between the character and falling object. It hits as many zones as feasible for its size.\\
+%	For example a flower pot falling from 12 meters would deal 4D10 damage with the result being divided by
 	\textbf{todo: falling objects?}\\
 	Suffocation, also encompassing drowning and smoke inhalation, is an often underestimated threat to most characters. If a character consciously holds her breath, she can hold it for three times her Constitution in seconds. While holding her breath, she can’t fight or do very strenuous tasks. If she cannot or can no longer hold her breath, the effects of suffocation set in after one round.\\
 	The afflicted character will gain exhaustion every round starting with 1 on the first round, 2 on the second round and so on.\\
@@ -448,11 +446,11 @@
 	When a character is exposed to stressful situations, he will suffer from shock. The character makes a courage check with a modifier according to the source and severity of shock. This ranges from +0 for large amounts of blood or some dead bodies over -20 for watching someone die in front of oneself to -60 in truly desperate situations or near-death experiences. Generally the better the reputation with the injured person and the less predictable the situation, the higher the penalty. It also takes a penalty equal to the sum of all “Fear” or “Phobia” disabling characteristics that fit the situation.\\
 	In case the character meets multiple panic situations in a day, add a -10 penalty for each after the first.
 	
-	If the check is failed, roll a D100, add 10 times the degrees of failure and apply the according result from the fear table *TODO: add ref*.
+	If the check is failed, roll a D100, add 10 times the degrees of failure and apply the according result from the table on page \pageref{feartable}.
 	\chapter{Transhumanism}
-%	\section{Philosophies}
-%	To understand the conflict about augmentation, one has to understand two standpoints. \textbf{Transhumanists} support augmentation of the human body. Science is a human aspect, evolution alone can only limit them. Extremists will try to exchange every part of their body with some form of cybernetic or biotechnological replacement even if only for vanity.\\
-%	\textbf{Body purists} believe that too many augments makes a human lose his humanity. Others fear that nerve load might be higher than initially expected, crippling some, driving others insane. The reliance on technology makes humans vulnerable to failure of even just one of those systems. Body purism is no monolith; supporters might believe one or multiple of these things or even something else entirely.
+	\section{Philosophies}
+	To understand the conflict about augmentation, one has to understand two standpoints. \textbf{Transhumanists} support augmentation of the human body. Science is a human aspect, evolution alone can only limit them. Extremists will try to exchange every part of their body with some form of cybernetic or biotechnological replacement even if only for vanity.\\
+	\textbf{Body purists} believe that too many augments makes a person lose his humanity. Others fear that nerve load might be higher than initially expected, crippling some, driving others insane. The reliance on technology makes humans vulnerable to failure of even just one of those systems. Body purism is no monolith; supporters might believe one or multiple of these things or even something else entirely.
 	\section{Cybernetics}
 	Cybernetic augmentation is widespread. Missing or deformed limbs are replaced or existing body parts enhanced to help with work or social life. They don’t naturally regenerate anymore, they are expensive and create a huge load on the patient’s nervous system, as indicated by Rayleigh index values. However they are generally more resilient than most human limbs and most of them offer additional special features. Obviously it takes very invasive surgery to install.
 	\section{Biotech}
@@ -516,12 +514,12 @@
 	A special type of Banes are \textit{Disabling Characteristics}. They behave much like characteristics in that when they come up, a test is made involving them. If the test is successful, the character suffers from whatever the disabling characteristic describes: e.g. fear, arrogance, greed or megalomania.\\
 	Alternatively whenever a character is making a test they would be affected by a disabling characteristic, e.g. climbing with a fear of heights, that test might be at a penalty equal to the disabling characteristic. They range from 20 to 70 only grant additional GP per full 5 or full 10 as specified.
 	\section{Skills}
-	The first thing to spend experience on are skills. Some skills might already have advancements from race or background. If those have prerequisites that the character does not fulfill, they are dormant until the character fulfills the prerequisites. See a full list of skills on page *TODO: add ref*. 
+	The first thing to spend experience on are skills. Some skills might already have advancements from race or background. If those have prerequisites that the character does not fulfill, they are dormant until the character fulfills the prerequisites. See a full list of skills from page \pageref{skilllist} onward. 
 	\section{Educations}
 	Next every character has some sort of knowledge, represented by educations. Some educations might be given by background. If those have prerequisites that the character does not fulfill, they are dormant until the character fulfills the prerequisites.\\
 	See an example list of Educations on page \pageref{eds-explanation} or make some up. 
 	\section{Abilities}
-	Some abilities might be interesting for the character as well. Some abilities might already have advancements from race or background. If those have prerequisites that the character does not fulfill, they are dormant until the character fulfills the prerequisites. A list of abilities can be found on page *TODO: add ref*.
+	Some abilities might be interesting for the character as well. Some abilities might already have advancements from race or background. If those have prerequisites that the character does not fulfill, they are dormant until the character fulfills the prerequisites. A full list of abilities can be found from page \pageref{abilitylist} onward.
 	\section{Shopping trip}
 	Lastly, a character needs some equipment. The amount of money is dependent on the character’s background and possibly boons. By default every character will start with clothing fitting of their social standing, former profession and to a degree place of origin. Visit the equipment section below to buy anything beyond that. 
 	
@@ -720,7 +718,7 @@
 	\subsection{Mods}
 	\section{PES}
 	
-	\chapter{Tables *TODO: rename*}
+	\chapter{Lists}
 	\section{Status effects}
 	\statuseffect{Blinded}{The character cannot see and suffers according penalties, most notably to Perception and combat. He also cannot Gather Senses if the status effect is only temporary or brand new.}
 	\statuseffect{Deafened}{The character cannot hear. She suffers according penalties and can't Gather Senses if the condition is only temporary or brand new.}
@@ -731,6 +729,7 @@
 	\statuseffect{Unconscious}{The character cannot act at all.}
 	
 	\section{Skills}
+	\label{skilllist}
 	\skill{Acrobatics}{Agility}{Acrobatics describes the ability to control one's body. It encompasses moving elegantly, gymnastics, breaking falls and dancing.}
 	\skill{Animal Handling}{Charisma}{Animal Handling is any interaction with animals; calming them down, taming and training them.}
 	\skill{Appeal}{Charisma}{Appeal encompasses any attempt to charm or convince someone that at least outwardly happens in good blood.}
@@ -785,6 +784,7 @@
 	\skill[Advanced]{Zoology}{Intelligence}{Zoology is knowledge about animals. This may be from formal education or experience and can sometimes be restricted when dealing with rare or exotic animals.}
 	
 	\section{Abilities}
+	\label{abilitylist}
 	\ability{Advanced Parry}{400}{Overly Cautious}{When parrying multiple hits, distribute DoS among any amount of attackers. Still requires more DoS than the opponent for single hits. Can also parry Flexible weapons.}
 	\ability{Alpha Strike}{500}{From the shadows, no Beta Strike}{Successfully attacking an unaware target automatically hits critically.}
 	\ability{Assassin Strike}{350}{Acrobatics Trained}{Scoring a critical hit or deathblow in melee allows the character to move up to his speed in meters right away without provoking opportunity attacks.}
@@ -859,9 +859,9 @@
 	\ability{Unquestioned}{500}{Reliable Reputation}{Penalties to Command tests resulting from disbelief in authority (e.g. represented by Rebel or some Bound by Principle) do not apply.}
 	\ability{Unrestrained Reflexes}{300}{Agility 35, Dodge Trained}{The character may make an additional dodge action using the same reaction. This may happen once per turn.}
 	\ability{Vault}{300}{Agility 30, Strength 30}{The character can use suitable objects in the environment to double jump height and leap length during movement without slowing down.}
-	\ability{Volume of Fire}{350}{*TODO*}{When using a weapon with a rate of fire above 1 to take a standard shot, the character may spend more ammunition to gain a +5 to hit per shot fired after the first, up to the weapon's rate of fire.}
+	\ability{Volume of Fire}{350}{Ranged Combat Training (Heavy) Known}{When using a weapon with a rate of fire above 1 to take a standard shot, the character may spend more ammunition to gain a +5 to hit per shot fired after the first, up to the weapon's rate of fire.}
 	\ability{Walk it off}{350}{Constitution 40}{The character can continue acting while bleeding until completely bled out. If combined with Tough as nails, the character may enter a frenzy when bleeding as well.}
-	\ability{Where it hurts}{400}{Hand-to-hand Basics, Strength 40}{The character's unarmed attacks gain the Tearing special rule.}
+	\ability{Where it hurts}{400}{Hand-to-hand Basics, Strength 40}{The character's unarmed attacks may profit from the Tearing special rule.}
 	
 	\subsection{Maneuvers}
 	\maneuver{Attack of Opportunity}{150}{Instinct 30, Agility 30}
@@ -1028,9 +1028,150 @@
 	\end{tabular}
 
 	\section{Fear}
-	
+	\label{feartable}
+	\begin{tabularx}{\textwidth}{|l|X|}
+		\hline
+		1-20    & Shivering, the character takes a -10 penalty on his tests until he passes a courage check. He can spend one action to attempt this check.                                                                                                                                                                                                                                            \\ \hline
+		21-40   & Severely shaken, the character takes a -15 penalty on all tests for the rest of the encounter or scene and can't use maneuvers or transform actions.                                                                                                                                                                                                                                 \\ \hline
+		41-60   & Dumbstruck by fear, the character freezes in place and can’t act until he passes a courage check at the end of one of his turns. This check begins at the same penalty as the initial one and gets a cumulative +10 for every previous attempt. He may take reactions to defend himself or run away (at an increased risk of stumbling as quickly avoiding obstacles is “acting”...) \\ \hline
+		61-80   & Frozen by terror, the character is completely unable to move until he passes a courage check at the end of one of his turns. This check begins at the same penalty as the initial one and gets a cumulative +5 for every previous attempt. Courage checks are allowed 1D5-1 rounds after fear strikes. He may take reactions to defend himself.                                      \\ \hline
+		81-100  & Overcome by horror, the character loses consciousness for 1D10-CrB minutes, minimum of 1.                                                                                                                                                                                                                                                                                            \\ \hline
+		101-120 & Pure horror pierces the character’s heart. His courage is reduced by 2D10+5 for a week, recovering by 1 each day afterwards. He takes a second shock effect at a value of D100/2.                                                                                                                                                                                                    \\ \hline
+		121-140 & Stuck in their worst nightmare, the character falls comatose for a day.                                                                                                                                                                                                                                                                                                           \\ \hline
+		141-200 & Fear breaks the character’s mind. He falls into a coma for half a week and his memory of the last 2D10 days is erased. After such a traumatic experience, the character likely develops a mental disorder (a Bane worth 2-3 GP). Player and GM should discuss what this might be.                                                                                                    \\ \hline
+		201+    & The character dies from sudden cardiac arrest.                                                                                                                                                                                                                                                                                                                                       \\ \hline
+	\end{tabularx}
 	\section{Modifiers}
-	\subsection{Combat}
+	\subsection{General}
+	\begin{center}
+	\begin{tabular}{|l|l|l|}
+		\hline
+		\ul{Situation}         & \ul{Modifier} \\ \hline
+		Difficulty: Difficult   & -10            \\ \hline
+		Difficulty: Hard        & -20            \\ \hline
+		Difficulty: Very Hard   & -30            \\ \hline
+		Difficulty: Grueling    & -40            \\ \hline
+		Difficulty: Punishing   & -50            \\ \hline
+		Difficulty: Hellish     & -60            \\ \hline
+		Difficulty: Challenging & +0             \\ \hline
+		Difficulty: Ordinary    & +10            \\ \hline
+		Difficulty: Routine     & +20            \\ \hline
+		Difficulty: Easy        & +30            \\ \hline
+		Difficulty: Simple      & +40            \\ \hline
+		Difficulty: Elementary  & +50            \\ \hline
+		Difficulty: Trivial     & +60            \\ \hline
+	\end{tabular}
+	\end{center}
+	\subsection{Melee Combat}
+	\begin{tabularx}{\textwidth}{|X|l|l|}
+		\hline
+		\ul{Situation} & \ul{Modifier} & \ul{Keyword} \\ \hline
+		The character attacks below his optimum & -20 & Distance \\ \hline
+		The character is attacking slightly outside of reach. & -20 & Distance \\ \hline
+		The character is fighting in strong winds, heavy rain or on slippery ground. & -10 & Environment \\ \hline
+		The character tries to attack or parry while prone. & -10 & Environment \\ \hline
+		The character is fighting a character in mist, fog or smoke. & -20 & Environment \\ \hline
+		The character tries to dodge while prone. & -20 & Environment \\ \hline
+		The character is fighting in knee deep snow or water. & -30 & Environment \\ \hline
+		Fighting an armed opponent while unarmed. & -10 & Equipment \\ \hline
+		The character is attempting to use two knives or a sword and a knife at once. & -10 & Equipment \\ \hline
+		The character attempts to use a spear one-handed. & -20 & Equipment \\ \hline
+		The character is attempting to use two spears at once. & -40 & Equipment \\ \hline
+		The character is outnumbered 2 to 1. & -10 & Numbers \\ \hline
+		The character and his allies outnumber the enemy 2 to 1. & +10 & Numbers \\ \hline
+		The character is attacking a kneeling target. & +10 & Target \\ \hline
+		The character attacks a stunned target & +20 & Target \\ \hline
+		The character is attacking a prone target. & +20 & Target \\ \hline
+		The character attacks an unaware target. & +30 & Target \\ \hline
+	\end{tabularx}
+	\subsection{Ranged Combat}
+	\begin{tabularx}{\textwidth}{|X|l|l|}
+		\hline
+		\ul{Situation} & \ul{Modifier} & \ul{Keyword} \\ \hline
+		The character is shooting over extreme range. & -50 & Distance \\ \hline
+		The character is shooting over long range. & -20 & Distance \\ \hline
+		The character shoots over short range. & +10 & Distance \\ \hline
+		The character shoots at point blank range. & +30 & Distance \\ \hline
+		The character attempts to use a pistol one-handed. & -10 & Dualwielding \\ \hline
+		The character is attempting to use two pistols at once. & -20 & Dualwielding \\ \hline
+		The character attempts to use a small rifle one-handed. & -30 & Dualwielding \\ \hline
+		The character attempts to use another weapon one-handed. & -60 & Dualwielding \\ \hline
+		The character is attempting to use two small rifles at once. & -40 & Dualwielding \\ \hline
+		The character is fighting in strong winds, heavy rain or on slippery ground. Multiple may stack. & -10 & Environment \\ \hline
+		The character tries to dodge while prone. & -20 & Environment \\ \hline
+		The character is attacking a specific enemy caught up in melee combat or he himself is caught in melee combat. & -30 & Environment \\ \hline
+		The character is attempting to fire blindly at an enemy he knows the rough location of. & -30 & Environment \\ \hline
+		The character is fighting in knee deep snow or water. & -30 & Environment \\ \hline
+		The character is shooting at a character in mist, fog or smoke. & -30 & Environment \\ \hline
+		The character is using a long weapon in somewhat confined spaces like a house. & -20 & Environment \\ \hline
+		The character is using smgs in very tight corridors or tunnels. & -20 & Environment \\ \hline
+		The character shoots from the higher ground. & +10 & Environment \\ \hline
+		The character is shooting a crouching target. & -10 & Target \\ \hline
+		The character is shooting a prone target. & -20 & Target \\ \hline
+		The character attacks a stunned target. & +20 & Target \\ \hline
+		The character attacks an unaware target. & +30 & Target \\ \hline
+	\end{tabularx}
 	\subsection{Social}
+	\begin{tabularx}{\textwidth}{|X|X|l|}
+		\hline
+		\ul{Situation} & \ul{Modifier} & \ul{Focussed skill} \\ \hline
+		Performing a simple dance. & -10 / +0 if the character is trained in both etiquette as well as acrobatics & Acrobatics / Etiquette \\ \hline
+		Performing a difficult, intricate dance. & -40 / -30 if the character is trained in both etiquette as well as acrobatics & Acrobatics / Etiquette \\ \hline
+		The target has something else to do or does not want to be bothered. & -10 & Appeal \\ \hline
+		The target is suspicious and/or has had bad experiences with the character. & -20 & Appeal \\ \hline
+		The target is hostile but not aggressive yet. & -30 & Appeal \\ \hline
+		The target is a devoted enemy and currently in mortal combat with the character. & -60 & Appeal \\ \hline
+		The target and the character are aquainted. & +10 & Appeal \\ \hline
+		The target is friendly. & +20 & Appeal \\ \hline
+		The target is devoted to or close friends with the character. & +30 & Appeal \\ \hline
+		Pickpocketing something obvious like an ID card or a phone sticking out of someone's pocket & -10 & Sleight of hand \\ \hline
+		Performing a simple magic trick to draw one person's attention. & +10 & Sleight of hand \\ \hline
+	\end{tabularx}
 	\subsection{Exploration}
+	\begin{tabularx}{\textwidth}{|X|l|l|}
+		\hline
+		\ul{Situation} & \ul{Modifier} & \ul{Focused skill} \\ \hline
+		Driving under fire or on difficult terrain. & -20 & Drive / pilot \\ \hline
+		Driving a damaged vehicle, still under heavy fire. & -40 & Drive / pilot \\ \hline
+		Driving a vehicle for the first time. & +0 & Drive / pilot \\ \hline
+		Driving in familiar terrain and regions. & +10 & Drive / pilot \\ \hline
+		Controlling a civilian vehicle at moderate speeds or at low speeds in fairly close quarters. & +20 & Drive / pilot \\ \hline
+		Controlling a civilian vehicle at low speeds. & +40 & Drive / pilot \\ \hline
+		Making out sounds with an engine humming on an idle car right next to the character or light animal chatter in the background. & -10 & Perception \\ \hline
+		Trying to make out sounds in a firefight or riot. & -20 & Perception \\ \hline
+		Trying to see something or fight in low light or against light. & -20 & Perception \\ \hline
+		Trying to make out sounds in a street war. & -40 & Perception \\ \hline
+		Trying to fight in total darkness or while blinded. & -60 & Perception \\ \hline
+		Trying to make out sounds with large explosions going off. & -60 & Perception \\ \hline
+		Listening for footsteps on sandy ground. & +0 & Perception \\ \hline
+		Listening for footsteps on wet ground. & +15 & Perception \\ \hline
+		Listening for footsteps in tall grass, on gravel or snow. & +20 & Perception \\ \hline
+		Listening for footsteps on metal flooring. & +30 & Perception \\ \hline
+		Listening for footsteps on grassy ground. & +5 & Perception \\ \hline
+		Listening for sounds in echoing environments. & +100\% & Perception \\ \hline
+		Hide or draw a small object. & -10 & Sleight of hand \\ \hline
+		Hide or draw a fairly large object, like a submachinegun. & -30 & Sleight of hand \\ \hline
+		Trying to hide while moving slowly. & -10 & Stealth \\ \hline
+		Trying to sneak in armor or heavy footwear. & -10 & Stealth \\ \hline
+		Trying to sneak in a strike suit. & -15 & Stealth \\ \hline
+		Trying to hide while running. & -40 & Stealth \\ \hline
+		Trying to sneak while barefoot or wearing very light footwear. & +0 & Stealth \\ \hline
+		Trying to hide while crouching in place. & +10 & Stealth \\ \hline
+		Trying to hide while laying prone in place. & +30 & Stealth \\ \hline
+	\end{tabularx}
+	\subsection{Craftsmanship}
+	\begin{tabularx}{\textwidth}{|X|l|l|}
+		\hline
+		\ul{Situation} & \ul{Modifier} & \ul{Focused skill} \\ \hline
+		Creating or repairing equipment with only insufficient or improvised tools. & -20 & Mechanics \\ \hline
+		Trying to fix unknown technology. & -40 & Mechanics \\ \hline
+		Attempting to repair and use damaged weapon attachments. & +10 & Mechanics \\ \hline
+		Reparing a damaged vehicle with the necessary tools. & +20 & Mechanics \\ \hline
+		Repairing simple circuitry or devices like antennas. & +30 & Mechanics \\ \hline
+		Picking more secure locks like found on motorized vehicles. & -10 & Security \\ \hline
+		Defusing an old landmine. & -30 & Security \\ \hline
+		Setting up a tripwire or trapping a door. & +10 & Security \\ \hline
+		Picking a simple lock like found on a bicycle. & +20 & Security \\ \hline
+		Strategically placing a simple lock or chain. & +60 & Security \\ \hline
+	\end{tabularx}
 \end{document}
