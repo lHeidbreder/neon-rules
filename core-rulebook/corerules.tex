@@ -17,10 +17,11 @@
 %Custom Environments
 \newenvironment{exampleblock}[1][1]
 {\hfill\begin{minipage}{\dimexpr\textwidth-#1cm}}
-{\end{minipage}}
+{\end{minipage}\par}
 
 %Custom Commands
 \newcommand{\ul}[1]{\underline{\smash{#1}}}
+\newcommand{\breakline}{\vspace{.5cm} \hrule width \textwidth \relax}
 \newcommand{\specialrule}[2]{
 	\begin{minipage}{\textwidth/2}
 		\textbf{\ul{#1:}}\\
@@ -84,7 +85,12 @@
 	\chapter{The Foundation}
 	\section{Basics}
 	This booklet will not provide an introduction into tabletop roleplaying in general. If you have never before played a tabletop roleplaying game, there are many great resources out there. It is however not required to have played a game yourself, much less in a D100 system. All game mechanics will be provided on the following pages.
-	\section{Default Scenario}
+	\section{Scenario}
+	\begin{exampleblock}\textit{
+		The year 2113 is coming to an end. After many, many price cuts last year people forgot how to handle their money responsibly, dividing society into \emph{very} different classes. \\
+		Money is power, more than ever. The only thing stopping riots and insurgencies against weakened governments are private security providers - be that gangs and desperate people trying to survive or humanoid robots, unstoppable, unbreakable, of unknown origin. \\
+		The future really has everything.
+	}\end{exampleblock}
 	
 	\chapter{Dice Checks and Stats}
 	\section{Dice}
@@ -162,7 +168,7 @@
 		\setlength\itemsep{-8mm}
 		\item \textbf{Movement Speed \textlangle((Ag+Ag+Str)/40)+5\textrangle:} A character’s total sprint speed, explained in more detail in the chapter Movement.
 		\item \textbf{Standing Leap \textlangle(Ag+Str)/40\textrangle:} The length a character can pass while jumping forward, explained in more detail in the chapter Movement.
-		\item \textbf{Standing Jump \textlangle StandingLeap/4>:\textrangle} The height a character can jump up, explained in more detail in the chapter Movement.
+		\item \textbf{Standing Jump \textlangle StandingLeap/4\textrangle:} The height a character can jump up, explained in more detail in the chapter Movement.
 	\end{itemize}
 	\section{Skills}
 	Likely being the most common modifier on dice checks, skills represent training in a field. This training ranges through:
@@ -190,7 +196,7 @@
 	\end{tabular*}
 	An education has two potential levels, granting +5 modifiers each and costing 200 and 300 XP respectively.
 	\section{Situational Modifiers}
-	Some things become easier or harder in certain situations. Potential situational modifiers are vast and always up to GM discretion. Some common circumstances include lighting and the weather for sight based checks or mood, relationship and general disposition for social checks. Tables from page *TODO: add ref* onward contain more potential circumstances and their respective modifiers. Obviously those lists are not exhaustive.
+	Some things become easier or harder in certain situations. Potential situational modifiers are vast and always up to GM discretion. Some common circumstances include lighting and the weather for sight based checks or mood, relationship and general disposition for social checks. Tables from page \pageref{situationalmodifiers} onward contain more potential circumstances and their respective modifiers. Obviously those lists are not exhaustive.
 	\section{Critical successes and failures}
 	Independently of modifiers and target values rolling a 1 always counts as a critical success. In such a case the degrees of success are equal to the characteristic bonus and ties are always won.\\
 	Conversely rolling a 100 (00:0 on the percentile dice) always counts as a critical failure. The degrees of failure are 14 minus the characteristic bonus and ties are always lost.
@@ -198,19 +204,31 @@
 	To give a better overview of how different modifiers add up, here are two somewhat extraordinary examples for each of the classic pillars of tabletop roleplaying. In general these amounts of modifiers might come up in play but situations like these are rare and sometimes hard to keep track of. 
 	It should be the table’s collective decision how many different modifiers and which of them in particular are being included. 
 	\subsection*{Combat}
-	\underline{Situation 1:}\par
-	\hfill\begin{minipage}{\dimexpr\textwidth-1cm}
+	\ul{Situation:}\par
+	\begin{exampleblock}
 		\textit{Storm hits Eric’s face, the cold rain almost cutting up his face. The faint moonlight is barely visible through the densely clouded night sky. His old, trusty scope had long since broken down and the barrel was damaged, yet he had to take this chance for it might be the last he’d ever get.}
-	\end{minipage}
-
-	\underline{Mechanical Solution:}\par
-	\hfill\begin{minipage}{\dimexpr\textwidth-2.5cm}
-		Both strong winds as well as heavy rain infer a -10 each and low light conditions bring another -20 penalty. Taking aim would grant him a bonus of up to +20, yet due to his broken scope and assuming he does not have a backup, only a +10 is granted. Assuming again that he is shooting over a long distance as to not be noticed, this infers another -20 penalty that is more than made up for by the fact that his target is now unaware, granting a +30 to hit.\\
+	\end{exampleblock}
+	\ul{Mechanical Solution:}\par
+	\begin{exampleblock}
+		Both strong winds as well as heavy rain infer a -10 each and low light conditions bring another -20 penalty for a -40 from environmental effects. Taking aim would grant him a bonus of up to +20, yet due to his broken scope and assuming he does not have a functioning backup for this distance, only a +10 is granted. Assuming again that he is shooting over a long distance as to not be noticed, this infers another -20 penalty that is more than made up for by the fact that his target is now unaware, granting a +30 to hit.\\
 		In total the shot is at a -20 penalty and the target may not dodge.
-	\end{minipage}
-	
+	\end{exampleblock}
+	\breakline
+	\ul{Situation:}\par
+	\begin{exampleblock}
+		\textit{Within the haze, the noise, the people there he is, trying to flee the scene. Jenny has her target in her sight, a chance to sneak up - and a chance to strike. Just before she embeds the blade in his spine, he notices, making her job just that much harder.}
+	\end{exampleblock}
+	\ul{Mechanical Solution:}\par
+	\begin{exampleblock}
+		The attack within a hazy, cramped environment is marginally more difficult for a -10. She snuck up but was noticed last minute, making the target surprised for a +20 bonus; resulting in a +10 bonus overall.\\
+		The unnamed defender is impaired by the same environmental effects. Additionally he is unarmed but defends against a knife, which adds a penalty of -10. In total the defense roll gains a -20.
+	\end{exampleblock}
 	\subsection*{Exploration}
+	*TODO: trailing, sneaking, eavesdropping*
+	*TODO: chase scene*
 	\subsection*{Social}
+	*TODO: Steve's grenade story*
+	*TODO: a riling situation*
 	
 	\chapter{Movement}
 	\section{Walking, running, sprinting}
@@ -511,7 +529,7 @@
 	Boons describe an inherent advantage this character has over others. This is nothing that can be learned afterwards but it might be at least partially substituted with augments.\\
 	Banes are disadvantages that are either innate or stem from the character’s background and are extremely hard to get rid of. They don’t cost GP but grant them instead. Up to 40 GP can be generated from banes. It should be assured that all boons and banes don’t exist purely for mechanical reasons but that they fit the character.
 	\subsection{Disabling characteristics}
-	A special type of Banes are \textit{Disabling Characteristics}. They behave much like characteristics in that when they come up, a test is made involving them. If the test is successful, the character suffers from whatever the disabling characteristic describes: e.g. fear, arrogance, greed or megalomania.\\
+	A special type of Banes are Disabling Characteristics. They behave much like characteristics in that when they come up, a test is made involving them. If the test is successful, the character suffers from whatever the disabling characteristic describes, e.g. fear, arrogance, greed or megalomania.\\
 	Alternatively whenever a character is making a test they would be affected by a disabling characteristic, e.g. climbing with a fear of heights, that test might be at a penalty equal to the disabling characteristic. They range from 20 to 70 only grant additional GP per full 5 or full 10 as specified.
 	\section{Skills}
 	The first thing to spend experience on are skills. Some skills might already have advancements from race or background. If those have prerequisites that the character does not fulfill, they are dormant until the character fulfills the prerequisites. See a full list of skills from page \pageref{skilllist} onward. 
@@ -1042,6 +1060,7 @@
 		201+    & The character dies from sudden cardiac arrest.                                                                                                                                                                                                                                                                                                                                       \\ \hline
 	\end{tabularx}
 	\section{Modifiers}
+	\label{situationalmodifiers}
 	\subsection{General}
 	\begin{center}
 	\begin{tabular}{|l|l|l|}
