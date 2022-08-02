@@ -77,6 +77,12 @@
 }
 \newcommand{\bane}[4]
 {\boon[#4]{#1}{#2}{#3}}
+\newcommand{\weaponmod}[5]{
+	\textbf{\ul{#1}}:\\
+	#3; #4; #5\\
+	#2
+	\par
+}
 
 \begin{document}
 	\maketitle
@@ -97,7 +103,7 @@
 	This system uses D100 to make its decisions. To achieve a Success you have to reach or undershoot a Target Value, which is composed of a Base Value (usually a characteristic or skill, more on those later) and Situational Modifiers. Example:
 	
 	\begin{exampleblock}
-		\textit{Alice is doing reconnaissance. Trying to spot something far away she is asked to make an Investigation check. Her investigation of 55 (Perception of 45 + 10 for being trained in Investigation) is modified by -15 for low light and -10 for slightly misty weather. Her target value therefore becomes 35, so rolling 35 or below would have her succeed.}
+		\textit{Alice is doing reconnaissance. Trying to spot something far away she is asked to make an Investigation check. Her Investigation of 55 (Perception of 45 + 10 for being trained in Investigation) is modified by -15 for low light and -10 for slightly misty weather. Her target value therefore becomes 35, so rolling 35 or below would have her succeed.}
 	\end{exampleblock}
 
 	The required dice will be a D10 and a percentile dice, which essentially is also a D10 with an additional 0 (00, 10, 20 and so on). If a D100 roll is requested, both dice are rolled simultaneously. Both dice are added to each other and that will be the result, so a 4 and a 70 will become 74. The one exception to this is rolling all zeros - this will become 100.
@@ -727,12 +733,170 @@
 	\section{Services}
 	\section{Ranged}
 	\subsection{Weapons}
+	\subsubsection{Pistols}
+	\subsubsection{Short Rifle}
+	\subsubsection{Long Rifle}
+	\subsubsection{Heavy}
+	\subsubsection{Launcher}
+	\subsubsection{Bow}
+	\subsubsection{Throwing}
 	\subsection{Mods}
+	\subsubsection{Constraints}
+	Ranged weapons have a limited number of mod slots which can each only be used once - at some point the weapon becomes unwieldy or the space is simply used up. When in question, apply common sense.\\
+	Pistols:
+	\vspace{-10mm}
+	\begin{itemize}
+		\setlength\itemsep{-8mm}
+		\item Upper Rail
+		\item Lower Rail
+		\item Barrel
+		\item Muzzle
+		\item Core
+	\end{itemize}
+	Rifle:
+	\vspace{-10mm}
+	\begin{itemize}
+		\setlength\itemsep{-8mm}
+		\item Upper Rail
+		\item Lower Rail
+		\item Two Side Rails
+		\item Barrel
+		\item Muzzle
+		\item Core
+	\end{itemize}
+	Heavy Weapon / Launcher:
+	\vspace{-10mm}
+	\begin{itemize}
+		\setlength\itemsep{-8mm}
+		\item Upper Rail
+		\item Lower Rail
+		\item Lower Rail (restricted to bipod / tripod)
+		\item Two Side Rails
+		\item Barrel
+		\item Muzzle
+		\item Core
+	\end{itemize}
+	Bow:
+	\vspace{-10mm}
+	\begin{itemize}
+		\setlength\itemsep{-8mm}
+		\item Upper Rail
+		\item Core
+	\end{itemize}
+	On the following pages all weapon mods are given in this format:\par
+	\vspace{-5mm}
+	\begin{exampleblock}
+		\weaponmod{Name}{Description}{Slot used}{Price}{Weight}
+	\end{exampleblock}
+	\subsubsection{Optics}
+	\weaponmod{Red Dot Sight}{A simple 1x scope with good eye relief, barely obstructing peripheral vision.}{Upper Rail}{cr 5}{0,150 kg}
+	\weaponmod{Holographic Sight}{A non-magnifying 1x sight that is only projected when the character makes an Aim action. Only takes up minimal space on the rail it is mounted, allowing for another item to be mounted without taking this sight off.}{Upper Rail}{cr 7}{0,200 kg}
+	\weaponmod{Flip Scope}{A 3x magnifier to be used in conjunction with a non-magnifying sight.}{Upper Rail}{cr 7}{0,320 kg}
+	\weaponmod{AOG (Advanced Optical Gunsight)}{A common, analog 4x combat scope.}{Upper Rail}{cr 12}{0,350 kg}
+	\weaponmod{TEOG (Tactical Electronic Optical Gunsight)}{A common variable 4-6x combat scope. Due to using electronic magnification it is vulnerable to EMP.}{Upper Rail}{cr 32}{0,380 kg}
+	\weaponmod{LoRa Sight}{An 8x scope - the cheapest long range sight but usually absolutely sufficient.}{Upper Rail}{cr 16}{0,400 kg}
+	\weaponmod{LS-Marksman Scope}{A massive 14x scope used for the longest ranges.}{Upper Rail}{cr 28}{0,420 kg}
+	\weaponmod{OMS (Oculus Marksman System)}{A variable 8-14x electronic scope. Like other electronic magnifiers it is vulnerable to EMP.}{Upper Rail}{cr 51}{0,430 kg}
+	\weaponmod{TS-CQC Gunsight}{A big non-magnifying thermal imaging sight with a sleek profile created for CQC.}{Upper Rail}{cr 42}{0,520 kg}
+	\weaponmod{TS-BR Gunsight}{A 5x battle rifle scope with thermal imaging capabilities.}{Upper Rail}{cr 68}{0,670 kg}
+	\weaponmod{TS-M Gunsight}{A 10x marksman scope with thermal imaging capabilities.}{Upper Rail}{cr 78}{0,670 kg}
+	\weaponmod{Canted Irons}{A 45-degree offset rail mount is added to the top of the weapon for the use of a secondary Ironsight/Optic/Light.}{-}{cr 8}{0,100 kg}
+	\subsubsection{Lights}
+	\weaponmod{Laser Module}{Gives a +5 bonus to hit when not using aim actions. A target spotting the dot with a -10 Perception test cannot be surprised.}{Any rail}{cr 14}{0,100 kg}
+	\weaponmod{Infrared Laser Module}{Works like a laser module but it can only be seen with thermal imaging.}{Any rail}{cr 28}{0,200 kg}
+	\weaponmod{Flashlight}{A flashlight is attached to the weapon, able to light wherever the wielder is aiming.}{Any rail}{cr 6}{0,260 kg}
+	\subsubsection{Muzzles}
+	\weaponmod{Muzzle Brake}{Reduces recoil, thereby halving penalties from Burst actions.}{Muzzle}{cr 20}{0,200 kg}
+	\weaponmod{Flash Suppressor}{Reduces muzzle flash, inferring a -30 penalty to visual perception checks to spot the weapon firing.}{Muzzle}{cr 22}{0,200 kg}
+	\weaponmod{Sound Suppressor}{Reduces both noise and muzzle flash, granting a -30 penalty to all visual perception checks to spot the weapon firing and -10 to hearing based tests; can be combined with cold load ammunition}{Muzzle}{cr 28}{0,200 kg}
+	\weaponmod{Shotgun choke, wide}{Reduces pellet spread on shotguns somewhat. Scatter rule only gives a hit bonus from normal range onward. Range is increased by 50\%.}{Muzzle}{cr 12}{0,200 kg}
+	\weaponmod{Shotgun choke, narrow}{Reduces pellet spread on shotguns a lot. Scatter rule only gives a hit bonus from long range onward. Range is increased by 100\%.}{Muzzle}{cr 12}{0,200 kg}
+	\subsubsection{Underslung Weapons}
+	\weaponmod{skeleton key}{Adds an underslung MS shotgun with half range. Due to increased weight at the front this infers a -5 to hit when using aim actions without a rest.}{Lower Rail}{cr 28}{2,800 kg}
+	\weaponmod{underslung "Thumper" CQC Grenade Launcher}{Adds an underslung "Thumper" CQC Grenade Launcher with half range. Due to increased weight at the front this infers a -5 to hit when using aim actions without a rest.}{Lower Rail}{cr 70}{3,200 kg}
+	\subsubsection{Braces / Grips}
+	\weaponmod{Angled Grip}{A fast-pull grip that grants +2 initiative when using both hands and no rest.}{Lower Rail}{cr 8}{0,100 kg}
+	\weaponmod{Pistol Grip}{A stable grip that increases aim bonus by 5 when using both hands and no rest.}{Lower Rail}{cr 8}{0,100 kg}
+	\weaponmod{Bipod/Tripod}{A stable rest that increases aim bonus by 10 when deployed. A bipod is short and to be used over cover or while prone. Tripods are large and to be used while standing.}{Lower Rail}{cr 10}{0,150 kg}
+	\subsubsection{Barrel}
+	\weaponmod{Extended barrel}{A longer barrel that increases optimum range and armor penetration by 25\%. Such a long weapon may be difficult to use in confined spaces.}{Barrel}{cr 23}{0,200 kg}
+	\weaponmod{Heavy Barrel}{A heavy, more stable barrel. It halves penalties from shooting while on the move but decreases aim bonus by 10 when not using a rest.}{Barrel}{cr 11}{0,200 kg}
+	\subsubsection{Ammunition}
+	\weaponmod{Magazine}{A simple magazine for a ballistic weapon. It holds ammunition in the gun.}{Ballistic Magazine}{cr 12}{-}
+	\weaponmod{Extended-Mag/Belt}{A larger magazine that doubles mag size but is more prone to error, causing jams on 96 and above.}{Ballistic Magazine}{cr 26}{-}
+	\weaponmod{Drum-Mag}{A massive spiral magazine that triples mag size but jams on 96+ and also doesn't fit in normal mag pouches, therefore need to be carried in backpacks.}{Ballistic Magazine}{cr 34}{-}
+	\weaponmod{Dual-Mag}{Taped magazines make swapping from one to the other take half as long, however it doesn't fit in mag pouches anymore. Can easily be improvised with 2 magazines and some duct tape.}{Ballistic Magazine}{-}{-}
+	\weaponmod{Shell Holder}{A clip attached to a rail holding up to 8 shotgun shells. Very useful for special ammunition.}{Any Rail}{cr 2}{-}
+	\weaponmod{Bolt Holder}{A container holding up to 8 bolts attached below a crossbow.}{Core}{cr 3}{-}
+	\subsubsection{Misc}
+	\weaponmod{Camouflage Paint}{If the pattern matches the environment, grants a -20 penalty to visually perceive the weapon. However if the pattern doesn't match, it grants a +5 to visually perceive the weapon instead.}{Paint}{cr 3}{0,000 kg}
+	\weaponmod{Ghillie Cover}{If the pattern matches the environment, grants a -30 penalty to visually perceive the weapon. However if the pattern doesn't match, it grants a +10 to visually perceive the weapon instead.\\
+	Unlike with camouflage paint patterns only exist for desert and forest.}{Paint}{cr 4}{0,150 kg}
+	\subsubsection{Core}
+	\weaponmod{Offload Cycler}{A technological marvel increasing a weapon's fire rate by 50\%, rounded down, if it already has a fire rate of 2 or more.}{Core}{80\%}{0,900 kg}
+	\weaponmod{Multibarrel}{Adds an additional barrel feeding from the same magazine to double the amount of hits and ammo spent at an additional -10 penalty to hit. Only works if the weapon has a capacity of at least 2.}{Core}{60\%}{0,550 kg}
+	\weaponmod{Heatsink}{A heat sink removing the drawbacks from the Adjustable rule. It increases the weapon's weight by 20\%.}{Core}{40\%}{20\%}
+	\weaponmod{Backblast refunneling}{It halves the Backblast range to increase the weapon's range by 50\%. The additional rumble gives a penalty equal to half of the user's strength difference to 70.}{Core}{60\%}{0,400 kg}
+	\weaponmod{Gim-barrel}{A self-stabilizing barrel halves penalties from shooting while moving as well as Burst actions. It doubles the weapon's weight and decreases aim bonus by 5 when not using a rest.}{Core, Barrel}{80\%}{100\%}
+	\weaponmod{Biocoding}{A trigger lock reading biometric data of the user. The weapon can only be used when wielded by a user who was registered during building of the weapon. It cannot be removed or reprogrammed without destroying the weapon.}{none}{cr 20}{0,240 kg}
+	\weaponmod{Vehicle Lock-on}{Adds vehicle lock-on to a Launcher or Heavy weapon; grants +30 to hitting vehicles and powered armor when taking at least one round to aim. Flares don't disrupt targeting but static smoke will.}{Core}{80\%}{3,400 kg}
+	\weaponmod{Heat Seeker}{Adds heat-based targeting assistance systems, thereby granting +15 to shoot targets warmer than their surroundings but -15 to shoot targets colder than their surroundings.}{Core}{cr 280}{2,300 kg}
+	\weaponmod{Energy Shield}{Adds a directional PES that covers the user's head and body. Covers the whole user instead if used with a tripod.\\
+		Armor: 15 / Threshhold: 9}{Core}{cr 180}{3,800 kg}
 	\subsection{Ammunition}
+%	Pistols
+	\subsubsection{7.2mm}
+	\subsubsection{11.8x45mm}
+%	Rifles
+	\subsubsection{6.3mm}
+	\subsubsection{11.8x112mm}
+	\subsubsection{15x132mm}
+%	Shotgun
+	\subsubsection{12gauge}
+%	Fuel Tank
+	\subsubsection{Small Fuel Tanks}
+	\subsubsection{Medium Fuel Tanks}
+	\subsubsection{Large Fuel Tanks}
+%	Fuel Cells
+	\subsubsection{Small Fuel Cells}
+	\subsubsection{Medium Fuel Cells}
+	\subsubsection{Large Fuel Cells}
+%	Mass Driver Blocks
+	\subsubsection{Small Shard Blocks}
+	\subsubsection{Large Shard Blocks}
+	\subsubsection{Vehicle Shard Blocks}
+%	Grenades
+	\subsubsection{20mm grenades}
+	\subsubsection{40mm grenades}
+%	Rockets
+	\subsubsection{Micro Missiles}
+	\subsubsection{Small RPGs}
+	\subsubsection{Large RPGs}
+%	Arrows / Bolts
+	\subsubsection{Arrows}
+	*some arrow*
+	\subsubsection{Bolts}
+	*Some bolt*
+	
+%	\pagebreak
 	\section{Melee}
 	\subsection{System explanation}
+	Melee weapons are not set in stone but created from various components.\\
+	A melee weapon needs a grip. Swords, knives and whips have \emph{hilts}, while hammers, axes and spears have \emph{shafts}.\\
+	The weapon point is the second component. Swords, knives and spears have \emph{blades}; axes and hammers have \emph{heads} and \emph{whips} have their own category.\\
+	Lastly every melee weapon may also have a \emph{core} component. These are not required but add additional functionality to the weapon.
 	\subsection{Components}
+	\subsubsection{Hilts}
+	\subsubsection{Shafts}
+	\subsubsection{Blades}
+	\subsubsection{Whips}
+	\subsubsection{Heads}
+	\subsubsection{Core}
+	
 	\section{Armor}
+	\subsection{Helmets}
+	\subsection{Body Armor}
+	\subsection{Leg Armor}
 	\subsection{Mods}
 	\section{PES}
 	
