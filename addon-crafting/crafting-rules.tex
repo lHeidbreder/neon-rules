@@ -1,0 +1,58 @@
+\documentclass[12pt,a4paper,openany]{book}
+\usepackage{tabularx}
+\title{Neon Pen and Paper - Crafting}
+\author{Fr0sty}
+\date{\today}
+
+\begin{document}
+	\maketitle
+	\tableofcontents
+
+	\chapter{Introduction}
+	Crafting consists of a few steps, starting with the acquisition of materials, as well as preparation of tools and blueprints, over the process of creating the object to the final product in the end.\par
+	\vspace{5mm}
+	\textit{Author's note: The rules on the following pages go in depth and are rather heavy on mechanics. It is only advised to use them if it is desired for one reason or another. Don't add them just to make creating objects more tedious and only if there is a chance of failure.}
+	
+	\chapter{Material acquisition}
+	Acquiring materials without really good connections needs two things: money and time. To buy materials the character collects a point pool equal to one eighth of an object’s cr cost through Commerce checks. Every successful check grants 1+DoS points into the pool. Every check, successful or not, takes at least 4 hours, usually one day, and costs one tenth of the finished item’s cost. Markets can be limited; depending where the character is, multiple checks in the same area and general time may be prohibited as per GM discretion. \par
+	Alternatively - when materials are of simple, natural origin - the character may gather instead of buy them. Again the character needs to collect a point pool of one eighth of the finished object's cost, but instead uses Survival while in a suitable environment. Every check takes 4 hours and causes 1D5 exhaustion. Nature is usually limited; depending where the character is, multiple checks in the same area may be prohibited as per GM discretion.
+	
+	\chapter{Preparation}
+	Two things are required to create a more complex object: a blueprint and the required tools.
+	A blueprint can be something as simple as a drawing or something as elaborate as binary information only comprehensible by specialized AI. Blueprints have qualities ranging from 0 to 10, granting a bonus to the subsequent crafting test equal to 3 times its quality. 2 dimensional blueprints are limited to quality 4.\\
+	Buying a blueprint costs roughly (2Q+6)/20 * P, where Q is the blueprint’s quality and P is the market price of the end product. (If an alternative simpler formula is required, use Q/7*P.)\par
+	Skilled craftsmen can create their own blueprints. The character makes an intelligence based test on his crafting skill. The test is at a penalty depending on the required tool grade given below (Grade 1=+10, Grade 2=+0, Grade 3=-10…). The quality is the DoS, limited to 10. If the character doesn’t have the materials at his disposal, the penalty is doubled, at least to -15.\par
+	Second step of preparation is tools. There are two groups of tools, laboratories for biological or chemical and workshops for mechanical crafting, structured into different grades of tools:
+	\begin{enumerate}
+		\item None or improvised tools
+		\item Campfire (Laboratory) / Multitool kit (Workshop)
+		\item Kitchen (Laboratory) / Garage (Workshop)
+		\item Distillery (Laboratory) / Smithy (Workshop)
+		\item Industrial lab (Laboratory) / Industrial forge (Workshop)
+	\end{enumerate}
+	Creating an object with tools two grades lower than required is completely impossible as the necessary specialized tools are simply missing. A single grade lower is possible, though it infers a -20 penalty. A grade above the required tools grants +10 bonus, while two grades above grant +30 bonus and halve the required time. Any more than that will grant no more benefits as the construction is so simple that the powerful tooling is simply not applicable.\\
+	Objects’ tool requirements are largely up to GM discretion, though a list of examples is given below:
+	\begin{itemize}
+		\item Firearm mods attached to rails require tool grade 1.
+		\item If something has the Improvised rule, it requires tool grade 2.
+		\item Bows, crossbows, non-powered armor and natural drugs require tool grade 3.
+		\item Synthetic drugs, powered armor, PES and firearms require tool grade 4.
+		\item Strike Suits and implants require tool grade 5.
+		\item Repairing requires one tool grade lower than creating anew.
+		\item Ammo requires one tool grade less than the weapon.
+	\end{itemize}
+
+	\chapter{Processing}
+	Finally the actual crafting process begins. The character makes a dexterity based test on his crafting skill at a given penalty. Every test takes one day of work. Every test collects 1+DoS points. When a given pool size is reached, work is finished.\par
+	The penalty and size of the point pool vary greatly depending on the object that’s being created. The table below shows the formulas for penalty first and point pool second:
+	\begin{itemize}
+		\item Weapons: 4 * damage dice; Flat DMG + (AP/2)
+		\item Ammo: 10 * (price per one / price per one of standard type); 10 / (Unit per mag)
+		\item Armor: 3 * Mod points (+ 15 if powered); 2 * Avg armor
+		\item PES: 1,5 * dmg threshold; 2 * armor
+		\item Chemicals: 3 * duration in hours; price (per dosage)
+		\item Augments: 6 * sum of physical load (before mods); price (after mods) / 10
+		\item Misc: None; price / 5
+	\end{itemize}
+	Lastly, failure can have debilitating effects. A slight mishap up to one degree of failure simply wastes the day. Failing by 2 or more degrees removes D10 points that have been collected previously from the pool. Severe mistakes - or just many of them - of 5 degrees of failure or by simply falling below 0 points in the pool cause half of the material to be lost, e.g. as clippings. Failing critically causes loss of all material in as spectacular a fashion as befitting of the character and whatever materials were lost.
+\end{document}
