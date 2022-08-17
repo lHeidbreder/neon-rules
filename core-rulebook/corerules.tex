@@ -84,16 +84,21 @@
 	\par
 }
 \newcommand{\meleecomponent}[6]{
-	\textbf{\ul{#1:}}\\
-	#2\\
-	\textit{Weight}: #4; \textit{Price}: #5\ifthenelse{\isempty{#6}}{}{; \textit{Requirement}: #6}\\
-	\textit{Effect:} #3
+	\begin{minipage}{\textwidth}
+		\textbf{\ul{#1:}}\\
+		#2\\
+		\textit{Weight}: #4; \textit{Price}: #5\ifthenelse{\isempty{#6}}{}{; \textit{Requirement}: #6}\\
+		\textit{Effect}: #3
+	\end{minipage}
 	\par
 }
 \newcommand{\ammo}[6]{
-	\textbf{#1:} #2\\
-	\textit{Price: #3; Unit of sale: #4}\\
-	\textit{Weight/Bulk: #5 per #6}\par
+	\begin{minipage}{\textwidth}
+		\textbf{#1:} #2\\
+		\textit{Price: #3; Unit of sale: #4}\\
+		\textit{Weight/Bulk: #5 per #6}
+	\end{minipage}
+	\par
 }
 
 \begin{document}
