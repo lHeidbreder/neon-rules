@@ -84,11 +84,16 @@
 	\par
 }
 \newcommand{\meleecomponent}[6]{
-	\textbf{\ul{#1}}:\\
+	\textbf{\ul{#1:}}\\
 	#2\\
 	\textit{Weight}: #4; \textit{Price}: #5\ifthenelse{\isempty{#6}}{}{; \textit{Requirement}: #6}\\
 	\textit{Effect:} #3
 	\par
+}
+\newcommand{\ammo}[6]{
+	\textbf{#1:} #2\\
+	\textit{Price: #3; Unit of sale: #4}\\
+	\textit{Weight/Bulk: #5 per #6}\par
 }
 
 \begin{document}
@@ -587,154 +592,154 @@
 	\specialrule{Upgrade Kit (X)}{The weapon is an upgrade kit for another weapon X. Price and weight include X.}
 	
 	\section{Supply}
-	\supply{EC-Comm}{communication}{Two-way emergency communicator that fits in the ear. There are variants for all types of trans-species; vatgrown are assumed to have normal human proportions.}{cr 18}{0,010 kg}
-	\supply{Emergency Location Beacon}{communication}{An emergency beacon used for creating distress signals. Able to send an emergency signal on multiple open channels up to 15 kilometers.}{cr 5}{0,030 kg}
+	\supply{EC-Comm}{communication}{Two-way emergency communicator that fits in the ear. There are variants for all types of trans-species; vatgrown are assumed to have normal human proportions.}{cr 18}{0,01 kg}
+	\supply{Emergency Location Beacon}{communication}{An emergency beacon used for creating distress signals. Able to send an emergency signal on multiple open channels up to 15 kilometers.}{cr 5}{0,03 kg}
 	\supply{Marker/Transmitter}{communication}{Small Tracking device and location transmitter. Can be tethered to almost any smart device.}{cr 22}{0,005 kg}
-	\supply{Radio Backpack}{communication}{An old backpack-carried radio that can transmit any small amount of data like speech up to 5 KM in clear conditions.}{cr 28}{26,000 kg}
+	\supply{Radio Backpack}{communication}{An old backpack-carried radio that can transmit any small amount of data like speech up to 5 KM in clear conditions.}{cr 28}{26 kg}
 	\supply{AI Docking Station}{cyberware}{By itself this device does nothing but it has the requirements to hold an AI.\\
 		Integrity: 15\\
 		Firewall: 6\\
-		Processing Power: +25}{cr 512}{12,000 kg}
+		Processing Power: +25}{cr 512}{12 kg}
 	\supply{Business/Lab Server}{cyberware}{A large device with a lot of processing power and storage but without a direct user interface; either needs a direct connection or access via a network.\\
 		Integrity: 40\\
 		Firewall: 6\\
-		Processing Power: +30}{cr 420}{26,000 kg}
+		Processing Power: +30}{cr 420}{26 kg}
 	\supply{Cell phone}{cyberware}{A communication device small enough to fit into one's pocket.\\
 		Integrity: 5\\
 		Firewall: 1\\
-		Processing power: 0}{cr 18}{0,600 kg}
+		Processing power: 0}{cr 18}{0,6 kg}
 	\supply{Cheap Router/Switch}{cyberware}{A connection device to create or scale networks.\\
 		Integrity: 11\\
 		Firewall: 2 (may work for connected devices, if the attack passes through)\\
-		Processing Power: +5}{cr 12}{0,700 kg}
+		Processing Power: +5}{cr 12}{0,7 kg}
 	\supply{Cracker}{cyberware}{An expensive machine with incredible processing power.\\
 		Integrity: 40\\
 		Firewall: 8\\
-		Processing Power: +30}{cr 108}{9,000 kg}
+		Processing Power: +30}{cr 108}{9 kg}
 	\supply{Portable AI Docking Station}{cyberware}{By itself this device does nothing but it has the requirements to hold an AI. It's small enough to be carried around.\\
 		Integrity: 15\\
 		Firewall: 5\\
-		Processing Power: +20}{cr 896}{5,000 kg}
+		Processing Power: +20}{cr 896}{5 kg}
 	\supply{Secure Router/Switch}{cyberware}{A connection device to create or scale networks. Comes with a few security measures and proper configuration.\\
 		Integrity: 25\\
 		Firewall: 8 (may work for connected devices)\\
-		Processing Power: +10}{cr 50}{0,800 kg}
+		Processing Power: +10}{cr 50}{0,8 kg}
 	\supply{Smart Fridge}{cyberware}{Barely anyone needs a fridge anymore. But those who do tend to pay extra for completely unnecessary features.\\
 		Integrity: 5\\
 		Firewall: 0\\
-		Processing Power: -5}{cr 333}{170,000 kg}
+		Processing Power: -5}{cr 333}{170 kg}
 	\supply{Tablet}{cyberware}{A portable data processing device with a touch screen.\\
 		Integrity: 7\\
 		Firewall: 2\\
-		Processing Power: +5}{cr 23}{1,200 kg}
+		Processing Power: +5}{cr 23}{1,2 kg}
 	\supply{Tactical Datapad}{cyberware}{A tablet that's has 6 armor and shields against 6 rounds of EMP.\\
 		Integrity: 8\\
 		Firewall: 4\\
-		Processing Power: +5}{cr 35}{2,200 kg}
+		Processing Power: +5}{cr 35}{2,2 kg}
 	\supply{Workstation}{cyberware}{A personal computer made to work found in many white collar businesses.\\
 		Integrity: 20\\
 		Firewall: 4\\
-		Processing Power: +10}{cr 43}{8,000 kg}
-	\supply{Flash Glass Goggles}{eyewear}{Made from special glass, these goggles normalize incoming light. This removes all bright-light based penalties and makes the wearer immune to the Flash rule but the user counts as colorblind while wearing it.}{cr 30}{0,450 kg}
-	\supply{Holographic Eyepiece}{eyewear}{Allows a HUD to be displayed over one eye.}{cr 28}{0,300 kg}
+		Processing Power: +10}{cr 43}{8 kg}
+	\supply{Flash Glass Goggles}{eyewear}{Made from special glass, these goggles normalize incoming light. This removes all bright-light based penalties and makes the wearer immune to the Flash rule but the user counts as colorblind while wearing it.}{cr 30}{0,45 kg}
+	\supply{Holographic Eyepiece}{eyewear}{Allows a HUD to be displayed over one eye.}{cr 28}{0,3 kg}
 	\supply{Infrared Goggles}{eyewear}{Goggles that give the ability to see in Infrared, allowing to see heat signatures and infrared devices such as lasers.\\
-		Infrared Goggles give Character a +15 Bonus to opposing Camouflage Tests. Infrared Goggles halve all Penalties from Darkness.}{cr 32}{0,450 kg}
-	\supply{Night Vision Device}{eyewear}{Grants Boon: Night Vision but doubles all penalties to resist being blinded by bright light.}{cr 18}{0,600 kg}
-	\supply{Sun Glasses}{eyewear}{Pair of goggles that halve any Penalties from bright lights but increases low-light penalties by 10 and darkness penalties by 20.}{cr 2}{0,150 kg}
-	\supply{Aerial Descent Unit}{hazards}{Standard issue military parachute. Maneuvering uses Pilot: Air but anyone can decent moderately safely using this.}{cr 10}{9,500 kg}
-	\supply{CBRN Unit}{hazards}{This unit detects and gives information on chemical and radioactive materials, or any other airborne or grounded contaminant. Will get overworked after 60 minutes in strong radiation, thick gases or similar effects.}{cr 12}{0,900 kg}
-	\supply{Climbing Kit}{hazards}{A climbing harness kit that offers the Character a +40 Bonus to climbing tests. Contains a Harness, rappelling kit, and other various climbing tools.}{cr 7}{2,200 kg}
+		Infrared Goggles give Character a +15 Bonus to opposing Camouflage Tests. Infrared Goggles halve all Penalties from Darkness.}{cr 32}{0,45 kg}
+	\supply{Night Vision Device}{eyewear}{Grants Boon: Night Vision but doubles all penalties to resist being blinded by bright light.}{cr 18}{0,6 kg}
+	\supply{Sun Glasses}{eyewear}{Pair of goggles that halve any Penalties from bright lights but increases low-light penalties by 10 and darkness penalties by 20.}{cr 2}{0,15 kg}
+	\supply{Aerial Descent Unit}{hazards}{Standard issue military parachute. Maneuvering uses Pilot: Air but anyone can decent moderately safely using this.}{cr 10}{9,5 kg}
+	\supply{CBRN Unit}{hazards}{This unit detects and gives information on chemical and radioactive materials, or any other airborne or grounded contaminant. Will get overworked after 60 minutes in strong radiation, thick gases or similar effects.}{cr 12}{0,9 kg}
+	\supply{Climbing Kit}{hazards}{A climbing harness kit that offers the Character a +40 Bonus to climbing tests. Contains a Harness, rappelling kit, and other various climbing tools.}{cr 7}{2,2 kg}
 	\supply{Earplugs}{hazards}{A set of Military-Grade earplugs that allow Characters to ignore the hearing-based Penalties given by Flashbangs or other loud noises. \\
 		Gives a -25 Penalty to Hearing-based Investigation and Perception Tests.}{cr 2}{0,004 kg}
-	\supply{Explosives Detection Assistant}{hazards}{A pioneer support device assisting in detecting known explosive compounds. Grants a +30 bonus to detecting and identifying explosives.}{cr 24}{3,400 kg}
-	\supply{Fire Extinguisher}{hazards}{Puts out any fire using foamed dry chemicals. Has 10 uses.}{cr 3}{15,000 kg}
+	\supply{Explosives Detection Assistant}{hazards}{A pioneer support device assisting in detecting known explosive compounds. Grants a +30 bonus to detecting and identifying explosives.}{cr 24}{3,4 kg}
+	\supply{Fire Extinguisher}{hazards}{Puts out any fire using foamed dry chemicals. Has 10 uses.}{cr 3}{15 kg}
 	\supply{Metal Detector}{hazards}{A metal detection unit that is a small metallic plate on an adjustable pole. The Metal Detector\\
 		has a screen at the top of the pole that displays the types of metal found underneath, within\\
-		3 Meters underground, and how far underground the object is.}{cr 9}{8,000 kg}
-	\supply{Proximity detonator}{hazards}{An expensive proximity trigger mechanism. A specialist can rig most explosives with this trigger, causing it to go off when a human or vehicles passes 1 to 3 meters depending on configuration.}{cr 12}{0,250 kg}
-	\supply{Remote Detonator}{hazards}{A small hand-held device that can be synced up to Demolition and Satchel Charge explosives. Has a range of 400 Meters. At the press of a button or an input of an up to 16 digit passcode, the chosen synced explosives will detonate. Can also be set to timed detonation.}{cr 5}{0,450 kg}
+		3 Meters underground, and how far underground the object is.}{cr 9}{8 kg}
+	\supply{Proximity detonator}{hazards}{An expensive proximity trigger mechanism. A specialist can rig most explosives with this trigger, causing it to go off when a human or vehicles passes 1 to 3 meters depending on configuration.}{cr 12}{0,25 kg}
+	\supply{Remote Detonator}{hazards}{A small hand-held device that can be synced up to Demolition and Satchel Charge explosives. Has a range of 400 Meters. At the press of a button or an input of an up to 16 digit passcode, the chosen synced explosives will detonate. Can also be set to timed detonation.}{cr 5}{0,45 kg}
 	\supply{Sound Filter Plugs}{hazards}{Small speakers, a microphone array and an equalizer, in a small enough package to fit a person's ear. Ignore all hearing based-penalties.\\
-		When broken down, infers a -30 to hearing based tests but still protects from loud sounds.}{cr 8}{0,010 kg}
-	\supply{Tripwire}{hazards}{A kit containing all necessary components to rig a grenade into an IED triggered by a tripwire.}{cr 4}{0,700 kg}
+		When broken down, infers a -30 to hearing based tests but still protects from loud sounds.}{cr 8}{0,01 kg}
+	\supply{Tripwire}{hazards}{A kit containing all necessary components to rig a grenade into an IED triggered by a tripwire.}{cr 4}{0,7 kg}
 	\supply{Field surgery kit}{medical}{A kit containing scalpels, syringes and other equipment to do basic field surgery like removing bullets or even remove augments from corpses provided the necessary expertise.\\
-		Grants +10 to medical tests.}{cr 34}{5,600 kg}
+		Grants +10 to medical tests.}{cr 34}{5,6 kg}
 	\supply{Field surgery tent}{medical}{A very simple, packaged tent that can be used as an almost sterile field surgery room. Does not protect from the elements much.\\
-		Grants +10 to medical tests.}{cr 35}{1,500 kg}
-	\supply{Splint}{medical}{When applied this reduces penalties from cracked and broken bones to a quarter.}{cr 3}{0,010 kg}
-	\supply{Stitch kit}{medical}{A more elaborate needle and thread that will close wounds for good. Takes a minute (20 combat rounds) and a Medication check +20 for light bleeding or two minutes and an unmodified Medication check for heavy bleeding. Cannot be applied by the bleeding character on his own.}{cr 22}{0,600 kg}
-	\supply{Thermal blanket}{medical}{Prevents hypothermia or overheating.}{cr 2}{0,900 kg}
-	\supply{Wound dressing}{medical}{Will stop bleeding when applied. Takes 6 seconds (2 combat rounds) but already stops the target from bleeding out when started. Cannot be applied by the bleeding character on his own. Comes in a pack of 20.}{cr 5}{0,200 kg}
-	\supply{Wound sealant foam}{medical}{Will stop bleeding. Takes about 12 seconds (4 combat rounds) to use, 2 of which are the application, the other 2 are hardening. Natural healing of the given zone is stopped until the foam is removed by a physician. Comes in packs of 5.}{cr 4}{0,800 kg}
-	\supply{Compass}{navigation}{A standard magnetic compass that is not effected by EMP or any other sort of digital or electrical attack.}{cr 1}{0,200 kg}
-	\supply{Roadware}{navigation}{Weak AI based GPS-reading software that assists drivers at high speeds and off-roads. The unit gives a +20 Bonus to high-speed driving Tests and Stunting Tests.}{cr 14}{4,800 kg}
-	\supply{Balaclava}{protection}{Face mask for face protection from harsh winds or being identified.}{cr 1}{0,300 kg}
-	\supply{Clothing, Simple}{protection}{Simple clothing to blend into ghettos.}{cr 6}{1,100 kg}
-	\supply{Clothing, Expensive}{protection}{Expensive clothing to blend into high society.}{cr 140}{1,100 kg}
-	\supply{Floatation Vest}{protection}{An adjustable floatation vest that allows up to 210 KG float in water.}{cr 2}{1,000 kg}
-	\supply{Gas Mask}{protection}{Allows to breathe in toxic environments. Comes with 5 disposable filters, each able to last 24 hours.}{cr 18}{1,100 kg}
-	\supply{Ghillie Cloak}{protection}{The Ghillie Cloak offers a +20 Bonus to Camouflage when used in matching surroundings.}{cr 6}{2,400 kg}
-	\supply{Handcuffs}{protection}{Used to bind an individual’s hands or ankles. To escape, a character must roll a -40 security test or a -60 strength test. The handcuffs have an armor rating of 10 and 50 break points.}{cr 12}{0,500 kg}
-	\supply{Rain Poncho}{protection}{Protects the user from rain.}{cr 2}{0,800 kg}
-	\supply{Rape Whistle}{protection}{A small, loud whistle. Reportedly used by some "special" forces alongside foam swords.}{cr 1}{0,050 kg}
+		Grants +10 to medical tests.}{cr 35}{1,5 kg}
+	\supply{Splint}{medical}{When applied this reduces penalties from cracked and broken bones to a quarter.}{cr 3}{0,01 kg}
+	\supply{Stitch kit}{medical}{A more elaborate needle and thread that will close wounds for good. Takes a minute (20 combat rounds) and a Medication check +20 for light bleeding or two minutes and an unmodified Medication check for heavy bleeding. Cannot be applied by the bleeding character on his own.}{cr 22}{0,6 kg}
+	\supply{Thermal blanket}{medical}{Prevents hypothermia or overheating.}{cr 2}{0,9 kg}
+	\supply{Wound dressing}{medical}{Will stop bleeding when applied. Takes 6 seconds (2 combat rounds) but already stops the target from bleeding out when started. Cannot be applied by the bleeding character on his own. Comes in a pack of 20.}{cr 5}{0,2 kg}
+	\supply{Wound sealant foam}{medical}{Will stop bleeding. Takes about 12 seconds (4 combat rounds) to use, 2 of which are the application, the other 2 are hardening. Natural healing of the given zone is stopped until the foam is removed by a physician. Comes in packs of 5.}{cr 4}{0,8 kg}
+	\supply{Compass}{navigation}{A standard magnetic compass that is not effected by EMP or any other sort of digital or electrical attack.}{cr 1}{0,2 kg}
+	\supply{Roadware}{navigation}{Weak AI based GPS-reading software that assists drivers at high speeds and off-roads. The unit gives a +20 Bonus to high-speed driving Tests and Stunting Tests.}{cr 14}{4,8 kg}
+	\supply{Balaclava}{protection}{Face mask for face protection from harsh winds or being identified.}{cr 1}{0,3 kg}
+	\supply{Clothing, Simple}{protection}{Simple clothing to blend into ghettos.}{cr 6}{1,1 kg}
+	\supply{Clothing, Expensive}{protection}{Expensive clothing to blend into high society.}{cr 140}{1,1 kg}
+	\supply{Floatation Vest}{protection}{An adjustable floatation vest that allows up to 21 kg float in water.}{cr 2}{1 kg}
+	\supply{Gas Mask}{protection}{Allows to breathe in toxic environments. Comes with 5 disposable filters, each able to last 24 hours.}{cr 18}{1,1 kg}
+	\supply{Ghillie Cloak}{protection}{The Ghillie Cloak offers a +20 Bonus to Camouflage when used in matching surroundings.}{cr 6}{2,4 kg}
+	\supply{Handcuffs}{protection}{Used to bind an individual’s hands or ankles. To escape, a character must roll a -40 security test or a -60 strength test. The handcuffs have an armor rating of 10 and 50 break points.}{cr 12}{0,5 kg}
+	\supply{Rain Poncho}{protection}{Protects the user from rain.}{cr 2}{0,8 kg}
+	\supply{Rape Whistle}{protection}{A small, loud whistle. Reportedly used by some "special" forces alongside foam swords.}{cr 1}{0,05 kg}
 	\supply{Riot Shield}{protection}{The Anti-Ballistics Riot Shield acts as mobile cover for a Character. The Riot Shield is made of heavy mineral carbon with a hardened plastic window to see through. \\
 		The Shield covers normal-sized or smaller peoples' full bodies, while larger people must crouch to cover their whole body. \\
-		The Riot Shield functions like any normal cover worth 22 armor points.}{cr 28}{5,900 kg}
-	\supply{Security Measures}{software}{Decreases a device's processing power by 10 but increases its firewall by 3. Can be deactivated if required for some reason.}{cr 75}{0,000 kg}
+		The Riot Shield functions like any normal cover worth 22 armor points.}{cr 28}{5,9 kg}
+	\supply{Security Measures}{software}{Decreases a device's processing power by 10 but increases its firewall by 3. Can be deactivated if required for some reason.}{cr 75}{0 kg}
 	\supply{Ammunition Bandolier}{storage}{A bandolier that is worn over armor/clothing that can hold up to 100 shotgun shells, 150 rifle and pistol Rounds, \\
-		50 Sniper Rounds, and 10 Grenades, mass driver blocks, filled magazines, and 40mm Grenades.}{cr 7}{0,300 kg}
-	\supply{Ammunition Pouch}{storage}{Ammunition pouch. Carries 8 magazines, grenades or anything of equivalent size.}{cr 5}{0,350 kg}
-	\supply{Blastproof Clear Casing}{storage}{Blast-proof casing. Can hold up to 5 magazines, grenades or size equivalents but is generally used for portable electronic devices. Offers 18 points of cover that also blocks damage from the EMP special rule to devices on the inside. Damage from EMP cannot damage the case.}{cr 21}{2,800 kg}
-	\supply{Duffle Bag}{storage}{Soft bagged carrying device like a sports- or backpack. Carries 25 magazines, grenades or size equivalent.}{cr 9}{2,900 kg}
-	\supply{Ergonomic Weapon Holster}{storage}{Holds weapons in completely overengineered ways. Time to draw is reduced by one action to a free action minimum.}{cr 16}{0,350 kg}
+		50 Sniper Rounds, and 10 Grenades, mass driver blocks, filled magazines, and 40mm Grenades.}{cr 7}{0,3 kg}
+	\supply{Ammunition Pouch}{storage}{Ammunition pouch. Carries 8 magazines, grenades or anything of equivalent size.}{cr 5}{0,35 kg}
+	\supply{Blastproof Clear Casing}{storage}{Blast-proof casing. Can hold up to 5 magazines, grenades or size equivalents but is generally used for portable electronic devices. Offers 18 points of cover that also blocks damage from the EMP special rule to devices on the inside. Damage from EMP cannot damage the case.}{cr 21}{2,8 kg}
+	\supply{Duffle Bag}{storage}{Soft bagged carrying device like a sports- or backpack. Carries 25 magazines, grenades or size equivalent.}{cr 9}{2,9 kg}
+	\supply{Ergonomic Weapon Holster}{storage}{Holds weapons in completely overengineered ways. Time to draw is reduced by one action to a free action minimum.}{cr 16}{0,35 kg}
 	\supply{Hardcase/Tactical Hardcase}{storage}{An armored carrying device the size of a small backpack / lunchbox that can be placed virtually anywhere on the body. Capable of carrying up to 14/5 Magazines, Grenades, and Clips, or anything of equivalent size. \\
 		The Hardcase has 10 Armor Rating protecting both itself and its content but can only take 30 damage before it's so broken down that it won't hold anything anymore. }{cr 30/18}{1,2 kg / 0,7 kg}
 	\supply{Softcase/Tactical Softcase}{storage}{Soft bagged carrying device the size of a small backpack / lunchbox that can be placed on virtually anywhere on the body. Carries 20/7 magazines or grenades, or anything of equivalent size.\\
 		The softcase has no armor protecting itself or its content and 25 Break Points before it's so broken down that it won't hold anything anymore. }{cr 25/13}{0,9 kg / 0,5 kg}
-	\supply{Tactical Thigh Rig}{storage}{Small, thigh-rigged casing. Carries 3 magazines or grenades, or anything of equivalent size.}{cr 9}{0,200 kg}
-	\supply{Weapon Holster}{storage}{Holds a small weapon. Legally bought or issued weapons are generally assumed to come with a proper holster.}{cr 5}{0,300 kg}
-	\supply{Weapon Sling}{storage}{Holds a larger weapon.}{cr 5}{0,400 kg}
-	\supply{Area Heater}{survival}{A small heater that can heat an area large enough to fill a dome tent.}{cr 24}{2,300 kg}
-	\supply{Camping Stool}{survival}{A stool for sitting that has a setting that allows the stool to fit small to large person.}{cr 6}{1,500 kg}
+	\supply{Tactical Thigh Rig}{storage}{Small, thigh-rigged casing. Carries 3 magazines or grenades, or anything of equivalent size.}{cr 9}{0,2 kg}
+	\supply{Weapon Holster}{storage}{Holds a small weapon. Legally bought or issued weapons are generally assumed to come with a proper holster.}{cr 5}{0,3 kg}
+	\supply{Weapon Sling}{storage}{Holds a larger weapon.}{cr 5}{0,4 kg}
+	\supply{Area Heater}{survival}{A small heater that can heat an area large enough to fill a dome tent.}{cr 24}{2,3 kg}
+	\supply{Camping Stool}{survival}{A stool for sitting that has a setting that allows the stool to fit small to large person.}{cr 6}{1,5 kg}
 	\supply{Entrenching Tool}{survival}{A compact package funtioning as a shovel, an axe or a crowbar. It is much more convenient than carrying three equipment pieces but does none quite as well as the the real thing:\\
 		The crowbar end only grants 20 bonus.\\
 		The axe head deals 4 damage less to structures.\\
-		The small shovel takes 10\% longer.}{cr 25}{2,500 kg}
-	\supply{Fishing Kit}{survival}{A fishing kit that contains a folding fishing rod, ten hooks and bobbers, a spool of 1550 meters of fishing line that can withstand up to 60 kg of tension, 50 pieces of bait, a fishing net that can hold up to 60 kg of weight and a fitting hat.}{cr 7}{2,800 kg}
-	\supply{Military Shovel}{survival}{A standard issue sharpened shovel for entrenchment and other uses. Folds down to the size of the shovel’s head. Rust-proof, sturdy and reliable.}{cr 7}{1,400 kg}
+		The small shovel takes 10\% longer.}{cr 25}{2,5 kg}
+	\supply{Fishing Kit}{survival}{A fishing kit that contains a folding fishing rod, ten hooks and bobbers, a spool of 1550 meters of fishing line that can withstand up to 6 kg of tension, 50 pieces of bait, a fishing net that can hold up to 6 kg of weight and a fitting hat.}{cr 7}{2,8 kg}
+	\supply{Military Shovel}{survival}{A standard issue sharpened shovel for entrenchment and other uses. Folds down to the size of the shovel’s head. Rust-proof, sturdy and reliable.}{cr 7}{1,4 kg}
 	\supply{MRE / Nutrient solution}{survival}{Disgusting nutrient solution that never goes bad - or worse for that matter... \\
-		One tube is enough to sustain normal people for a day and one tube is government issued to all registered civilians each day.}{cr 1}{0,300 kg}
-	\supply{Multi-Tool Kit}{survival}{A briefcase sized kit of tools for repair and building.}{cr 19}{8,000 kg}
-	\supply{Portable Electricity Generator}{survival}{A portable generator that is capable of powering equipment and structures who either don't have their own or whose generators have broken down.}{cr 42}{26,000 kg}
-	\supply{Portable Food Stove}{survival}{A small stove that can prepare food. Since the advent of large scale nutrient solution supply this piece of equipment has become very rare.}{cr 64}{3,500 kg}
-	\supply{Prepared Meal}{survival}{A luxury only very few people choose to afford. Generally a waste of biomass and more of a treat than survival equipment.}{cr 12}{0,500 kg}
-	\supply{Proper Meal Ingredients}{survival}{Expensive ingredients that have short shelf life, need the time, skill and installations to be cooked and don't always offer all nutrients a person needs but if prepared correctly can be a rare, tasty treat.}{cr 4}{0,600 kg}
+		One tube is enough to sustain normal people for a day and one tube is government issued to all registered civilians each day.}{cr 1}{0,3 kg}
+	\supply{Multi-Tool Kit}{survival}{A briefcase sized kit of tools for repair and building.}{cr 19}{8 kg}
+	\supply{Portable Electricity Generator}{survival}{A portable generator that is capable of powering equipment and structures who either don't have their own or whose generators have broken down.}{cr 42}{26 kg}
+	\supply{Portable Food Stove}{survival}{A small stove that can prepare food. Since the advent of large scale nutrient solution supply this piece of equipment has become very rare.}{cr 64}{3,5 kg}
+	\supply{Prepared Meal}{survival}{A luxury only very few people choose to afford. Generally a waste of biomass and more of a treat than survival equipment.}{cr 12}{0,5 kg}
+	\supply{Proper Meal Ingredients}{survival}{Expensive ingredients that have short shelf life, need the time, skill and installations to be cooked and don't always offer all nutrients a person needs but if prepared correctly can be a rare, tasty treat.}{cr 4}{0,6 kg}
 	\supply{Singles/Large/Dome Tent}{survival}{A weather-resistant tent for one/five/ten people to fit in.}{cr 8/22/40}{1,2 / 6 / 12 kg}
-	\supply{Sleep Cot}{survival}{A small cot bed for a single person.}{cr 12}{4,500 kg}
-	\supply{Sleeping Bag}{survival}{A wind-proof sleeping bag.}{cr 10}{1,200 kg}
-	\supply{Survival Blanket}{survival}{A wind and water-proof blanket that uses a thermal lining to keep the user in a more comfortable temperature, closer to their body-heat.}{cr 10}{1,100 kg}
-	\supply{Water Canteen}{survival}{A leak-proof survival canteen with a lock top and 2-liter capacity.}{cr 4}{0,600 kg}
-	\supply{Water Purification System}{survival}{A portable water purification system, favored by wastelanders. It can process 1 liter of water every two hours. Must be cleaned after each use.}{cr 32}{24,000 kg}
+	\supply{Sleep Cot}{survival}{A small cot bed for a single person.}{cr 12}{4,5 kg}
+	\supply{Sleeping Bag}{survival}{A wind-proof sleeping bag.}{cr 10}{1,2 kg}
+	\supply{Survival Blanket}{survival}{A wind and water-proof blanket that uses a thermal lining to keep the user in a more comfortable temperature, closer to their body-heat.}{cr 10}{1,1 kg}
+	\supply{Water Canteen}{survival}{A leak-proof survival canteen with a lock top and 2-liter capacity.}{cr 4}{0,6 kg}
+	\supply{Water Purification System}{survival}{A portable water purification system, favored by wastelanders. It can process 1 liter of water every two hours. Must be cleaned after each use.}{cr 32}{24 kg}
 	\supply{Blowtorch}{tools}{A blowtorch that can be used in any atmosphere and underwater. This blowtorch is plasmabased and will sear through any metal, given enough time.\\
-		For every 2 points of Armor or Cover Points something gives, it takes 1 Half Action to cut through a small portion of it}{cr 18}{1,800 kg}
-	\supply{Bolt Cutters}{tools}{Powerful bolt cutters. Strong enough to cut through even metal sheets and locks. Pincers may need to be replaced after heavy duty as determined by the GM.}{cr 12}{1,100 kg}
-	\supply{Crowbar}{tools}{A proven tool from ages past. Grants a +30 bonus to strength based tests to pry open containers.}{cr 8}{2,600 kg}
-	\supply{Duct Tape}{tools}{A simple, strong water-proof tape. A thousand years don't change everything.}{cr 1}{0,300 kg}
-	\supply{Fire Starter}{tools}{Small dark-green cubes that when cracked open, begin to spark and get hot. After 8 Seconds (3 Rounds) it begins to burn. Works in wind and in rain. Comes with 8 cubes.}{cr 2}{0,100 kg}
-	\supply{Grappling Hook}{tools}{A metal rod with hooks on them that allow for easier climbing when attached to a rope. +10 to Climbing Tests.}{cr 4}{1,000 kg}
-	\supply{Lighter}{tools}{A lighter with a flip-off top that is able to produce flame. Has enough fuel for 100 uses}{cr 1}{0,100 kg}
-	\supply{Rope}{tools}{A carbon fiber rope that can hold up to 500 KG. Comes in a bundle of 35 meters.}{cr 6}{4,200 kg}
-	\supply{SOS Knife Kit}{tools}{A special multi-tool knife that contains the following tools: Screwdriver, corkscrew, small blade, sharpening stone, toothpick, tweezers, wood saw, large blade, metal saw, scissor.}{cr 6}{0,200 kg}
-	\supply{Weapon Cleaning Kit}{tools}{A kit that can be used to clean weapons and perform maintainance to remove any adverse Penalties gained from the weapon being dirty.}{cr 2}{0,700 kg}
-	\supply{Binoculars}{vision equipment}{An electronic Binocular. Has 6 zoom functions, 2x/4x/6x/10x/20x.}{cr 4}{0,800 kg}
-	\supply{Chemical Light Sticks}{vision equipment}{A Chemical Light Stick is a bendable tube, that when bent, begins to glow. Gives a +10 in any Dark or Pitch-Black scenarios. Lasts for 8 hours. Comes in packs of 10.}{cr 2}{0,200 kg}
-	\supply{Fiber Optic Probe}{vision equipment}{A small camera on the end of a 4-meter wire.}{cr 42}{0,600 kg}
-	\supply{Flare Gun}{vision equipment}{A small firearm that fires a 40mm Parachute Flare up to 150 meters}{cr 30}{0,900 kg}
-	\supply{Flashlight}{vision equipment}{Helps to see in the dark. Lowers any Low-light or Darkness penalties by up to 30 but makes it impossible to hide.}{cr 5}{0,600 kg}
-	\supply{Helmet Recorder}{vision equipment}{Records every instance of what happens. Able to store 80 hours of higher quality footage.}{cr 16}{0,400 kg}
-	\supply{Signal Flare}{vision equipment}{A bright flare that is activated by snapping the top off. Can be seen from 2 KM away and lasts up to 1 hour.}{cr 3}{0,350 kg}
-	\supply{Spotter Target System}{vision equipment}{A scoped spotting system that has multiple zoom variants. X10, x15, x20, x25, x30, and x40 scopes that allow a Spotter to assist a sniper in extreme-ranged combat.}{cr 25}{1,100 kg}
+		For every 2 points of Armor or Cover Points something gives, it takes 1 Half Action to cut through a small portion of it}{cr 18}{1,8 kg}
+	\supply{Bolt Cutters}{tools}{Powerful bolt cutters. Strong enough to cut through even metal sheets and locks. Pincers may need to be replaced after heavy duty as determined by the GM.}{cr 12}{1,1 kg}
+	\supply{Crowbar}{tools}{A proven tool from ages past. Grants a +30 bonus to strength based tests to pry open containers.}{cr 8}{2,6 kg}
+	\supply{Duct Tape}{tools}{A simple, strong water-proof tape. A thousand years don't change everything.}{cr 1}{0,3 kg}
+	\supply{Fire Starter}{tools}{Small dark-green cubes that when cracked open, begin to spark and get hot. After 8 Seconds (3 Rounds) it begins to burn. Works in wind and in rain. Comes with 8 cubes.}{cr 2}{0,1 kg}
+	\supply{Grappling Hook}{tools}{A metal rod with hooks on them that allow for easier climbing when attached to a rope. +10 to Climbing Tests.}{cr 4}{1 kg}
+	\supply{Lighter}{tools}{A lighter with a flip-off top that is able to produce flame. Has enough fuel for 100 uses}{cr 1}{0,1 kg}
+	\supply{Rope}{tools}{A carbon fiber rope that can hold up to 5 kg. Comes in a bundle of 35 meters.}{cr 6}{4,2 kg}
+	\supply{SOS Knife Kit}{tools}{A special multi-tool knife that contains the following tools: Screwdriver, corkscrew, small blade, sharpening stone, toothpick, tweezers, wood saw, large blade, metal saw, scissor.}{cr 6}{0,2 kg}
+	\supply{Weapon Cleaning Kit}{tools}{A kit that can be used to clean weapons and perform maintainance to remove any adverse Penalties gained from the weapon being dirty.}{cr 2}{0,7 kg}
+	\supply{Binoculars}{vision equipment}{An electronic Binocular. Has 6 zoom functions, 2x/4x/6x/10x/20x.}{cr 4}{0,8 kg}
+	\supply{Chemical Light Sticks}{vision equipment}{A Chemical Light Stick is a bendable tube, that when bent, begins to glow. Gives a +10 in any Dark or Pitch-Black scenarios. Lasts for 8 hours. Comes in packs of 10.}{cr 2}{0,2 kg}
+	\supply{Fiber Optic Probe}{vision equipment}{A small camera on the end of a 4-meter wire.}{cr 42}{0,6 kg}
+	\supply{Flare Gun}{vision equipment}{A small firearm that fires a 40mm Parachute Flare up to 150 meters}{cr 30}{0,9 kg}
+	\supply{Flashlight}{vision equipment}{Helps to see in the dark. Lowers any Low-light or Darkness penalties by up to 30 but makes it impossible to hide.}{cr 5}{0,6 kg}
+	\supply{Helmet Recorder}{vision equipment}{Records every instance of what happens. Able to store 80 hours of higher quality footage.}{cr 16}{0,4 kg}
+	\supply{Signal Flare}{vision equipment}{A bright flare that is activated by snapping the top off. Can be seen from 2 KM away and lasts up to 1 hour.}{cr 3}{0,35 kg}
+	\supply{Spotter Target System}{vision equipment}{A scoped spotting system that has multiple zoom variants. X10, x15, x20, x25, x30, and x40 scopes that allow a Spotter to assist a sniper in extreme-ranged combat.}{cr 25}{1,1 kg}
 	\supply{Stationary Motion Tracker}{vision equipment}{Scans movement of the environment up to 120 meters and sends it to tethered HUD-capabledevices. \\
-		Must be stationary for 1 Minute (10 Rounds) to calibrate and work. If moved, the Stationary Motion Tracker must be re-calibrated for 1 Minute, again.}{cr 88}{29,000 kg}
+		Must be stationary for 1 Minute (10 Rounds) to calibrate and work. If moved, the Stationary Motion Tracker must be re-calibrated for 1 Minute, again.}{cr 88}{29 kg}
 	
 	\section{Services}
 	\section{Ranged}
@@ -796,38 +801,38 @@
 		\weaponmod{Name}{Description}{Slot used}{List price}{Weight}
 	\end{exampleblock}
 	\subsubsection{Optics}
-	\weaponmod{Red Dot Sight}{A simple 1x scope with good eye relief, barely obstructing peripheral vision.}{Upper Rail}{cr 5}{0,150 kg}
-	\weaponmod{Holographic Sight}{A non-magnifying 1x sight that is only projected when the character makes an Aim action. Only takes up minimal space on the rail it is mounted, allowing for another item to be mounted without taking this sight off.}{Upper Rail}{cr 7}{0,200 kg}
-	\weaponmod{Flip Scope}{A 3x magnifier to be used in conjunction with a non-magnifying sight.}{Upper Rail}{cr 7}{0,320 kg}
-	\weaponmod{AOG (Advanced Optical Gunsight)}{A common, analog 4x combat scope.}{Upper Rail}{cr 12}{0,350 kg}
-	\weaponmod{TEOG (Tactical Electronic Optical Gunsight)}{A common variable 4-6x combat scope. Due to using electronic magnification it is vulnerable to EMP.}{Upper Rail}{cr 32}{0,380 kg}
-	\weaponmod{LoRa Sight}{An 8x scope - the cheapest long range sight but usually absolutely sufficient.}{Upper Rail}{cr 16}{0,400 kg}
-	\weaponmod{LS-Marksman Scope}{A massive 14x scope used for the longest ranges.}{Upper Rail}{cr 28}{0,420 kg}
-	\weaponmod{OMS (Oculus Marksman System)}{A variable 8-14x electronic scope. Like other electronic magnifiers it is vulnerable to EMP.}{Upper Rail}{cr 51}{0,430 kg}
-	\weaponmod{TS-CQC Gunsight}{A big non-magnifying thermal imaging sight with a sleek profile created for CQC.}{Upper Rail}{cr 42}{0,520 kg}
-	\weaponmod{TS-BR Gunsight}{A 5x battle rifle scope with thermal imaging capabilities.}{Upper Rail}{cr 68}{0,670 kg}
-	\weaponmod{TS-M Gunsight}{A 10x marksman scope with thermal imaging capabilities.}{Upper Rail}{cr 78}{0,670 kg}
-	\weaponmod{Canted Irons}{A 45-degree offset rail mount is added to the top of the weapon for the use of a secondary Ironsight/Optic/Light.}{-}{cr 8}{0,100 kg}
+	\weaponmod{Red Dot Sight}{A simple 1x scope with good eye relief, barely obstructing peripheral vision.}{Upper Rail}{cr 5}{0,15 kg}
+	\weaponmod{Holographic Sight}{A non-magnifying 1x sight that is only projected when the character makes an Aim action. Only takes up minimal space on the rail it is mounted, allowing for another item to be mounted without taking this sight off.}{Upper Rail}{cr 7}{0,2 kg}
+	\weaponmod{Flip Scope}{A 3x magnifier to be used in conjunction with a non-magnifying sight.}{Upper Rail}{cr 7}{0,32 kg}
+	\weaponmod{AOG (Advanced Optical Gunsight)}{A common, analog 4x combat scope.}{Upper Rail}{cr 12}{0,35 kg}
+	\weaponmod{TEOG (Tactical Electronic Optical Gunsight)}{A common variable 4-6x combat scope. Due to using electronic magnification it is vulnerable to EMP.}{Upper Rail}{cr 32}{0,38 kg}
+	\weaponmod{LoRa Sight}{An 8x scope - the cheapest long range sight but usually absolutely sufficient.}{Upper Rail}{cr 16}{0,4 kg}
+	\weaponmod{LS-Marksman Scope}{A massive 14x scope used for the longest ranges.}{Upper Rail}{cr 28}{0,42 kg}
+	\weaponmod{OMS (Oculus Marksman System)}{A variable 8-14x electronic scope. Like other electronic magnifiers it is vulnerable to EMP.}{Upper Rail}{cr 51}{0,43 kg}
+	\weaponmod{TS-CQC Gunsight}{A big non-magnifying thermal imaging sight with a sleek profile created for CQC.}{Upper Rail}{cr 42}{0,52 kg}
+	\weaponmod{TS-BR Gunsight}{A 5x battle rifle scope with thermal imaging capabilities.}{Upper Rail}{cr 68}{0,67 kg}
+	\weaponmod{TS-M Gunsight}{A 10x marksman scope with thermal imaging capabilities.}{Upper Rail}{cr 78}{0,67 kg}
+	\weaponmod{Canted Irons}{A 45-degree offset rail mount is added to the top of the weapon for the use of a secondary Ironsight/Optic/Light.}{-}{cr 8}{0,1 kg}
 	\subsubsection{Lights}
-	\weaponmod{Laser Module}{Gives a +5 bonus to hit when not using aim actions. A target spotting the dot with a -10 Perception test cannot be surprised.}{Any rail}{cr 14}{0,100 kg}
-	\weaponmod{Infrared Laser Module}{Works like a laser module but it can only be seen with thermal imaging.}{Any rail}{cr 28}{0,200 kg}
-	\weaponmod{Flashlight}{A flashlight is attached to the weapon, able to light wherever the wielder is aiming.}{Any rail}{cr 6}{0,260 kg}
+	\weaponmod{Laser Module}{Gives a +5 bonus to hit when not using aim actions. A target spotting the dot with a -10 Perception test cannot be surprised.}{Any rail}{cr 14}{0,1 kg}
+	\weaponmod{Infrared Laser Module}{Works like a laser module but it can only be seen with thermal imaging.}{Any rail}{cr 28}{0,2 kg}
+	\weaponmod{Flashlight}{A flashlight is attached to the weapon, able to light wherever the wielder is aiming.}{Any rail}{cr 6}{0,26 kg}
 	\subsubsection{Muzzles}
-	\weaponmod{Muzzle Brake}{Reduces recoil, thereby halving penalties from Burst actions.}{Muzzle}{cr 20}{0,200 kg}
-	\weaponmod{Flash Suppressor}{Reduces muzzle flash, inferring a -30 penalty to visual perception checks to spot the weapon firing.}{Muzzle}{cr 22}{0,200 kg}
-	\weaponmod{Sound Suppressor}{Reduces both noise and muzzle flash, granting a -30 penalty to all visual perception checks to spot the weapon firing and -10 to hearing based tests; can be combined with cold load ammunition}{Muzzle}{cr 28}{0,200 kg}
-	\weaponmod{Shotgun choke, wide}{Reduces pellet spread on shotguns somewhat. Scatter rule only gives a hit bonus from normal range onward. Range is increased by 50\%.}{Muzzle}{cr 12}{0,200 kg}
-	\weaponmod{Shotgun choke, narrow}{Reduces pellet spread on shotguns a lot. Scatter rule only gives a hit bonus from long range onward. Range is increased by 100\%.}{Muzzle}{cr 12}{0,200 kg}
+	\weaponmod{Muzzle Brake}{Reduces recoil, thereby halving penalties from Burst actions.}{Muzzle}{cr 20}{0,2 kg}
+	\weaponmod{Flash Suppressor}{Reduces muzzle flash, inferring a -30 penalty to visual perception checks to spot the weapon firing.}{Muzzle}{cr 22}{0,2 kg}
+	\weaponmod{Sound Suppressor}{Reduces both noise and muzzle flash, granting a -30 penalty to all visual perception checks to spot the weapon firing and -10 to hearing based tests; can be combined with cold load ammunition}{Muzzle}{cr 28}{0,2 kg}
+	\weaponmod{Shotgun choke, wide}{Reduces pellet spread on shotguns somewhat. Scatter rule only gives a hit bonus from normal range onward. Range is increased by 50\%.}{Muzzle}{cr 12}{0,2 kg}
+	\weaponmod{Shotgun choke, narrow}{Reduces pellet spread on shotguns a lot. Scatter rule only gives a hit bonus from long range onward. Range is increased by 100\%.}{Muzzle}{cr 12}{0,2 kg}
 	\subsubsection{Underslung Weapons}
-	\weaponmod{skeleton key}{Adds an underslung MS shotgun with half range. Due to increased weight at the front this infers a -5 to hit when using aim actions without a rest.}{Lower Rail}{cr 28}{2,800 kg}
-	\weaponmod{underslung "Thumper" CQC Grenade Launcher}{Adds an underslung "Thumper" CQC Grenade Launcher with half range. Due to increased weight at the front this infers a -5 to hit when using aim actions without a rest.}{Lower Rail}{cr 70}{3,200 kg}
+	\weaponmod{skeleton key}{Adds an underslung MS shotgun with half range. Due to increased weight at the front this infers a -5 to hit when using aim actions without a rest.}{Lower Rail}{cr 28}{2,8 kg}
+	\weaponmod{underslung "Thumper" CQC Grenade Launcher}{Adds an underslung "Thumper" CQC Grenade Launcher with half range. Due to increased weight at the front this infers a -5 to hit when using aim actions without a rest.}{Lower Rail}{cr 70}{3,2 kg}
 	\subsubsection{Braces / Grips}
-	\weaponmod{Angled Grip}{A fast-pull grip that grants +2 initiative when using both hands and no rest.}{Lower Rail}{cr 8}{0,100 kg}
-	\weaponmod{Pistol Grip}{A stable grip that increases aim bonus by 5 when using both hands and no rest.}{Lower Rail}{cr 8}{0,100 kg}
-	\weaponmod{Bipod/Tripod}{A stable rest that increases aim bonus by 10 when deployed. A bipod is short and to be used over cover or while prone. Tripods are large and to be used while standing.}{Lower Rail}{cr 10}{0,150 kg}
+	\weaponmod{Angled Grip}{A fast-pull grip that grants +2 initiative when using both hands and no rest.}{Lower Rail}{cr 8}{0,1 kg}
+	\weaponmod{Pistol Grip}{A stable grip that increases aim bonus by 5 when using both hands and no rest.}{Lower Rail}{cr 8}{0,1 kg}
+	\weaponmod{Bipod/Tripod}{A stable rest that increases aim bonus by 10 when deployed. A bipod is short and to be used over cover or while prone. Tripods are large and to be used while standing.}{Lower Rail}{cr 10}{0,15 kg}
 	\subsubsection{Barrel}
-	\weaponmod{Extended barrel}{A longer barrel that increases optimum range and armor penetration by 25\%. Such a long weapon may be difficult to use in confined spaces.}{Barrel}{cr 23}{0,200 kg}
-	\weaponmod{Heavy Barrel}{A heavy, more stable barrel. It halves penalties from shooting while on the move but decreases aim bonus by 10 when not using a rest.}{Barrel}{cr 11}{0,200 kg}
+	\weaponmod{Extended barrel}{A longer barrel that increases optimum range and armor penetration by 25\%. Such a long weapon may be difficult to use in confined spaces.}{Barrel}{cr 23}{0,2 kg}
+	\weaponmod{Heavy Barrel}{A heavy, more stable barrel. It halves penalties from shooting while on the move but decreases aim bonus by 10 when not using a rest.}{Barrel}{cr 11}{0,2 kg}
 	\subsubsection{Ammunition}
 	\weaponmod{Magazine}{A simple magazine for a ballistic weapon. It holds ammunition in the gun.}{Ballistic Magazine}{cr 12}{-}
 	\weaponmod{Extended-Mag/Belt}{A larger magazine that doubles mag size but is more prone to error, causing jams on 96 and above.}{Ballistic Magazine}{cr 26}{-}
@@ -836,56 +841,226 @@
 	\weaponmod{Shell Holder}{A clip attached to a rail holding up to 8 shotgun shells. Very useful for special ammunition.}{Any Rail}{cr 2}{-}
 	\weaponmod{Bolt Holder}{A container holding up to 8 bolts attached below a crossbow.}{Core}{cr 3}{-}
 	\subsubsection{Misc}
-	\weaponmod{Camouflage Paint}{If the pattern matches the environment, grants a -20 penalty to visually perceive the weapon. However if the pattern doesn't match, it grants a +5 to visually perceive the weapon instead.}{Paint}{cr 3}{0,000 kg}
+	\weaponmod{Camouflage Paint}{If the pattern matches the environment, grants a -20 penalty to visually perceive the weapon. However if the pattern doesn't match, it grants a +5 to visually perceive the weapon instead.}{Paint}{cr 3}{0 kg}
 	\weaponmod{Ghillie Cover}{If the pattern matches the environment, grants a -30 penalty to visually perceive the weapon. However if the pattern doesn't match, it grants a +10 to visually perceive the weapon instead.\\
-	Unlike with camouflage paint patterns only exist for desert and forest.}{Paint}{cr 4}{0,150 kg}
+	Unlike with camouflage paint patterns only exist for desert and forest.}{Paint}{cr 4}{0,15 kg}
 	\subsubsection{Core}
-	\weaponmod{Offload Cycler}{A technological marvel increasing a weapon's fire rate by 50\%, rounded down, if it already has a fire rate of 2 or more.}{Core}{80\%}{0,900 kg}
-	\weaponmod{Multibarrel}{Adds an additional barrel feeding from the same magazine to double the amount of hits and ammo spent at an additional -10 penalty to hit. Only works if the weapon has a capacity of at least 2.}{Core}{60\%}{0,550 kg}
+	\weaponmod{Offload Cycler}{A technological marvel increasing a weapon's fire rate by 50\%, rounded down, if it already has a fire rate of 2 or more.}{Core}{80\%}{0,9 kg}
+	\weaponmod{Multibarrel}{Adds an additional barrel feeding from the same magazine to double the amount of hits and ammo spent at an additional -10 penalty to hit. Only works if the weapon has a capacity of at least 2.}{Core}{60\%}{0,55 kg}
 	\weaponmod{Heatsink}{A heat sink removing the drawbacks from the Adjustable rule. It increases the weapon's weight by 20\%.}{Core}{40\%}{20\%}
-	\weaponmod{Backblast refunneling}{It halves the Backblast range to increase the weapon's range by 50\%. The additional rumble gives a penalty equal to half of the user's strength difference to 70.}{Core}{60\%}{0,400 kg}
+	\weaponmod{Backblast refunneling}{It halves the Backblast range to increase the weapon's range by 50\%. The additional rumble gives a penalty equal to half of the user's strength difference to 70.}{Core}{60\%}{0,4 kg}
 	\weaponmod{Gim-barrel}{A self-stabilizing barrel halves penalties from shooting while moving as well as Burst actions. It doubles the weapon's weight and decreases aim bonus by 5 when not using a rest.}{Core, Barrel}{80\%}{100\%}
-	\weaponmod{Biocoding}{A trigger lock reading biometric data of the user. The weapon can only be used when wielded by a user who was registered during building of the weapon. It cannot be removed or reprogrammed without destroying the weapon.}{none}{cr 20}{0,240 kg}
-	\weaponmod{Vehicle Lock-on}{Adds vehicle lock-on to a Launcher or Heavy weapon; grants +30 to hitting vehicles and powered armor when taking at least one round to aim. Flares don't disrupt targeting but static smoke will.}{Core}{80\%}{3,400 kg}
-	\weaponmod{Heat Seeker}{Adds heat-based targeting assistance systems, thereby granting +15 to shoot targets warmer than their surroundings but -15 to shoot targets colder than their surroundings.}{Core}{cr 280}{2,300 kg}
+	\weaponmod{Biocoding}{A trigger lock reading biometric data of the user. The weapon can only be used when wielded by a user who was registered during building of the weapon. It cannot be removed or reprogrammed without destroying the weapon.}{none}{cr 20}{0,24 kg}
+	\weaponmod{Vehicle Lock-on}{Adds vehicle lock-on to a Launcher or Heavy weapon; grants +30 to hitting vehicles and powered armor when taking at least one round to aim. Flares don't disrupt targeting but static smoke will.}{Core}{80\%}{3,4 kg}
+	\weaponmod{Heat Seeker}{Adds heat-based targeting assistance systems, thereby granting +15 to shoot targets warmer than their surroundings but -15 to shoot targets colder than their surroundings.}{Core}{cr 280}{2,3 kg}
 	\weaponmod{Energy Shield}{Adds a directional PES that covers the user's head and body. Covers the whole user instead if used with a tripod.\\
-		Armor: 15 / Threshhold: 9}{Core}{cr 180}{3,800 kg}
+		Armor: 15 / Threshold: 9}{Core}{cr 180}{3,8 kg}
 
 	\subsection{Ammunition}
-	*TODO*
+	In the following section ammo types are given in this format:\\
+	First, in bold, there is the type designation. This is little more than an identifier.\\
+	Secondly after the colon you find the effect. These are all changes this type of ammunition has as opposed to the basic weapon profile.\\
+	The price is the price per box off ammunition; every box contains an amount of ammunition equal to the value given at "Unit of sale". For ballistic ammo a single unit is one bullet, for others it is one full load of the weapon.\\
+	Weight and bulk are given in the weight that one "standard magazine" - as used in storage capacities - weighs.
 %	Pistols
 	\subsubsection{7.2mm}
+	\ammo{FMJ}{-}{cr 2}{30}{4g}{40}
+	\ammo{AP}{-1 dmg, +4 AP}{cr 3}{30}{4g}{40}
+	\ammo{Hot Load}{+1 dmg, +4 AP, +15 on hearing checks to identify the shooter's position}{cr 4}{30}{4g}{40}
+	\ammo{Hot AP}{+10 AP, +15 on hearing checks to identify the shooter's position}{cr 6}{30}{4g}{40}
+	\ammo{JSP}{+2 dmg, -3 AP}{cr 3}{30}{4g}{40}
+	\ammo{JHP}{+4 dmg, -6 AP}{cr 4}{30}{4g}{40}
+	\ammo{Shock}{-4 dmg, -5 AP, Stun (4), EMP}{cr 6}{30}{4g}{40}
+	\ammo{Cold Load}{-3 dmg, -3 AP, -15 on hearing checks to identify the shooter's position}{cr 3}{30}{4g}{40}
+	\ammo{Cold AP}{-4 dmg, -15 on hearing checks to identify the shooter's position}{cr 4}{30}{4g}{40}
+	\ammo{Cold JSP}{-6 AP, -15 on hearing checks to identify the shooter's position}{cr 4}{30}{4g}{40}
+	\ammo{Cold JHP}{+2 dmg, -8 AP, -15 on hearing checks to identify the shooter's position}{cr 6}{30}{4g}{40}
+	\ammo{Incendiary}{-2 AP, will ignite flammable materials hit}{cr 3}{30}{4g}{40}
+	\ammo{Tracer}{grants a +10 bonus to hit for others aiming at the same target during this turn}{cr 4}{30}{4g}{40}
+	\ammo{Rubber Rounds}{-10 dmg, 0 AP, Stun (2), every hit against the target's head reduces it's initiative by D5-1}{cr 2}{30}{4g}{40}
 	\subsubsection{11.8x45mm}
+	\ammo{FMJ}{-}{cr 3}{20}{22g}{40}
+	\ammo{AP}{-1 dmg, +4 AP}{cr 5}{20}{22g}{40}
+	\ammo{Hot Load}{+1 dmg, +4 AP, +15 on hearing checks to identify the shooter's position}{cr 6}{20}{22g}{40}
+	\ammo{Hot AP}{+10 AP, +15 on hearing checks to identify the shooter's position}{cr 9}{20}{22g}{40}
+	\ammo{JSP}{+2 dmg, -3 AP}{cr 5}{20}{22g}{40}
+	\ammo{JHP}{+4 dmg, -6 AP}{cr 6}{20}{22g}{40}
+	\ammo{Shock}{-4 dmg, -5 AP, Stun (4), EMP}{cr 9}{20}{22g}{40}
+	\ammo{Cold Load}{-3 dmg, -3 AP, -15 on hearing checks to identify the shooter's position}{cr 5}{20}{22g}{40}
+	\ammo{Cold AP}{-4 dmg, -15 on hearing checks to identify the shooter's position}{cr 6}{20}{22g}{40}
+	\ammo{Cold JSP}{-6 AP, -15 on hearing checks to identify the shooter's position}{cr 6}{20}{22g}{40}
+	\ammo{Cold JHP}{+2 dmg, -8 AP, -15 on hearing checks to identify the shooter's position}{cr 9}{20}{22g}{40}
+	\ammo{Incendiary}{-2 AP, will ignite flammable materials hit}{cr 5}{20}{22g}{40}
+	\ammo{Tracer}{grants a +10 bonus to hit for others aiming at the same target during this turn}{cr 6}{20}{22g}{40}
+	\ammo{Rubber Rounds}{-10 dmg, 0 AP, Stun (2), every hit against the target's head reduces it's initiative by D5-1}{cr 3}{20}{22g}{40}
+	
 %	Rifles
 	\subsubsection{6.3mm}
+	\ammo{FMJ}{-}{cr 2}{30}{8.6g}{30}
+	\ammo{AP}{-1 dmg, +4 AP}{cr 3}{30}{8.6g}{30}
+	\ammo{Hot Load}{+1 dmg, +4 AP, +15 on hearing checks to identify the shooter's position}{cr 4}{30}{8.6g}{30}
+	\ammo{Hot AP}{+10 AP, +15 on hearing checks to identify the shooter's position}{cr 6}{30}{8.6g}{30}
+	\ammo{JSP}{+2 dmg, -3 AP}{cr 3}{30}{8.6g}{30}
+	\ammo{JHP}{+4 dmg, -6 AP}{cr 4}{30}{8.6g}{30}
+	\ammo{Shield Breaker}{-3 dmg, Disrupt}{cr 5}{30}{8.6g}{30}
+	\ammo{Shock}{-4 dmg, -5 AP, Stun (4), EMP}{cr 6}{30}{8.6g}{30}
+	\ammo{Cold Load}{-3 dmg, -3 AP, -15 on hearing checks to identify the shooter's position}{cr 3}{30}{8.6g}{30}
+	\ammo{Cold AP}{-4 dmg, -15 on hearing checks to identify the shooter's position}{cr 4}{30}{8.6g}{30}
+	\ammo{Cold JSP}{-6 AP, -15 on hearing checks to identify the shooter's position}{cr 4}{30}{8.6g}{30}
+	\ammo{Cold JHP}{+2 dmg, -8 AP, -15 on hearing checks to identify the shooter's position}{cr 6}{30}{8.6g}{30}
+	\ammo{Incendiary}{-2 AP, will ignite flammable materials hit}{cr 3}{30}{8.6g}{30}
+	\ammo{Tracer}{grants a +10 bonus to hit for others aiming at the same target during this turn}{cr 4}{30}{8.6g}{30}
+	\ammo{Rubber Rounds}{-10 dmg, 0 AP, Stun (2), every hit against the target's head reduces it's initiative by D5-1}{cr 2}{30}{8.6g}{30}
 	\subsubsection{11.8x112mm}
+	\ammo{FMJ}{-}{cr 4}{20}{50g}{5}
+	\ammo{AP}{-1 dmg, +4 AP}{cr 6}{20}{50g}{5}
+	\ammo{Hot Load}{+1 dmg, +4 AP, +15 on hearing checks to identify the shooter's position}{cr 8}{20}{50g}{5}
+	\ammo{Hot AP}{+10 AP, +15 on hearing checks to identify the shooter's position}{cr 12}{20}{50g}{5}
+	\ammo{JSP}{+2 dmg, -3 AP}{cr 6}{20}{50g}{5}
+	\ammo{JHP}{+4 dmg, -6 AP}{cr 8}{20}{50g}{5}
+	\ammo{Shield Breaker}{-3 dmg, Disrupt}{cr 8}{20}{50g}{5}
+	\ammo{Shock}{-4 dmg, -5 AP, Stun (4), EMP}{cr 12}{20}{50g}{5}
+	\ammo{Cold Load}{-3 dmg, -3 AP, -15 on hearing checks to identify the shooter's position}{cr 6}{20}{50g}{5}
+	\ammo{Cold AP}{-4 dmg, -15 on hearing checks to identify the shooter's position}{cr 8}{20}{50g}{5}
+	\ammo{Cold JSP}{-6 AP, -15 on hearing checks to identify the shooter's position}{cr 8}{20}{50g}{5}
+	\ammo{Cold JHP}{+2 dmg, -8 AP, -15 on hearing checks to identify the shooter's position}{cr 12}{20}{50g}{5}
+	\ammo{Incendiary}{-2 AP, will ignite flammable materials hit}{cr 6}{20}{50g}{5}
+	\ammo{Tracer}{grants a +10 bonus to hit for others aiming at the same target during this turn}{cr 8}{20}{50g}{5}
+	\ammo{Rubber Rounds}{-10 dmg, 0 AP, Stun (2), every hit against the target's head reduces it's initiative by D5-1}{cr 4}{20}{50g}{5}
 	\subsubsection{15x132mm}
+	\ammo{FMJ}{-}{cr 5}{5}{85g}{4}
+	\ammo{AP}{-1 dmg, +4 AP}{cr 8}{5}{85g}{4}
+	\ammo{Hot Load}{+1 dmg, +4 AP, +15 on hearing checks to identify the shooter's position}{cr 10}{5}{85g}{4}
+	\ammo{Hot AP}{+10 AP, +15 on hearing checks to identify the shooter's position}{cr 15}{5}{85g}{4}
+	\ammo{JSP}{+2 dmg, -3 AP}{cr 8}{5}{85g}{4}
+	\ammo{JHP}{+4 dmg, -6 AP}{cr 10}{5}{85g}{4}
+	\ammo{Shock}{-4 dmg, -5 AP, Stun (4), EMP}{cr 15}{5}{85g}{4}
+	\ammo{Cold Load}{-3 dmg, -3 AP, -15 on hearing checks to identify the shooter's position}{cr 8}{5}{85g}{4}
+	\ammo{Cold AP}{-4 dmg, -15 on hearing checks to identify the shooter's position}{cr 10}{5}{85g}{4}
+	\ammo{Cold JSP}{-6 AP, -15 on hearing checks to identify the shooter's position}{cr 10}{5}{85g}{4}
+	\ammo{Cold JHP}{+2 dmg, -8 AP, -15 on hearing checks to identify the shooter's position}{cr 15}{5}{85g}{4}
+	\ammo{Incendiary}{-2 AP, will ignite flammable materials hit}{cr 8}{5}{85g}{4}
+	\ammo{Tracer}{grants a +10 bonus to hit for others aiming at the same target during this turn}{cr 10}{5}{85g}{4}
+	\ammo{Rubber Rounds}{-10 dmg, 0 AP, Stun (2), every hit against the target's head reduces it's initiative by D5-1}{cr 5}{5}{85g}{4}
+	
 %	Shotgun
 	\subsubsection{12gauge}
+	\ammo{Buckshot}{-}{cr 3}{24}{42g}{8}
+	\ammo{Birdshot}{halves damage, ignores all negative size modifiers}{cr 2}{24}{42g}{8}
+	\ammo{Incendiary}{-2 dmg, -4 AP, ignites flammable materials hit}{cr 3}{24}{42g}{8}
+	\ammo{Breaching Round}{+3 dmg, +4 AP, halved range}{cr 5}{24}{42g}{8}
+	\ammo{Slug}{+2 AP, removes Scatter, doubles range}{cr 3}{24}{42g}{8}
+	\ammo{Fragmentation Slug}{removes Scatter but adds Blast (2) rule, doubles range}{cr 6}{24}{42g}{8}
+	\ammo{Incendiary Slug}{+1 AP, removes Scatter, doubles range, ignites flammable objects hit}{cr 4}{24}{42g}{8}
+	\ammo{EMP Slug}{-2 dmg, EMP, removes Scatter, doubles range}{cr 9}{24}{42g}{8}
+	\ammo{Rubber Slug}{-2 dmg, -6 AP, removes Scatter, doubles range, Stun (2)}{cr 3}{24}{42g}{8}
+	
 %	Fuel Tank
 	\subsubsection{Small Fuel Tanks}
+	\ammo{Napalm}{ignites flammable surfaces}{cr 32}{1}{10kg}{}
+	\ammo{White Phosphorus}{halves range, burns for a D5 minutes, ignites flammable surfaces and sticks even to non-flammable ones}{cr 64}{1}{20kg}{}
+	\ammo{Water}{1 dmg, 0 AP, Trauma, Stun (*the original amount of damage dice)}{cr 8}{1}{13kg}{}
 	\subsubsection{Medium Fuel Tanks}
+	\ammo{Napalm}{ignites flammable surfaces}{cr 61}{1}{20kg}{}
+	\ammo{White Phosphorus}{halves range, burns for a D5 minutes, ignites flammable surfaces and sticks even to non-flammable ones}{cr 122}{1}{40kg}{}
+	\ammo{Water}{1 dmg, 0 AP, Trauma, Stun (*the original amount of damage dice)}{cr 17}{1}{25kg}{}
 	\subsubsection{Large Fuel Tanks}
+	\ammo{Napalm}{ignites flammable surfaces}{cr 150}{1}{50kg}{}
+	\ammo{White Phosphorus}{halves range, burns for a D5 minutes, ignites flammable surfaces and sticks even to non-flammable ones}{cr 300}{1}{100kg}{}
+	\ammo{Water}{1 dmg, 0 AP, Trauma, Stun (*the original amount of damage dice)}{cr 32}{1}{62,5kg}{}
+	
 %	Fuel Cells
 	\subsubsection{Small Fuel Cells}
+	\ammo{Standard Issue}{-}{cr 9}{1}{250g}{2}
+	\ammo{Unstable}{On a hit roll above 95 causes the weapon's damage with Blast (1) around the shooter.}{cr 5}{1}{250g}{2}
 	\subsubsection{Medium Fuel Cells}
+	\ammo{Standard Issue}{-}{cr 15}{1}{750g}{1}
+	\ammo{Unstable}{On a hit roll above 95 causes the weapon's damage with Blast (1) around the shooter.}{cr 8}{1}{750g}{1}
 	\subsubsection{Large Fuel Cells}
+	\ammo{Standard Issue}{-}{cr 21}{1}{1.5kg}{0,5}
+	\ammo{Unstable}{On a hit roll above 95 causes the weapon's damage with Blast (1) around the shooter.}{cr 11}{1}{1.5kg}{0,5}
+	
 %	Mass Driver Blocks
 	\subsubsection{Small Shard Blocks}
+	\ammo{Standard Issue}{-}{cr 2}{1}{300g}{1}
+	\ammo{Crude}{-50\% mag size, jams on 91 and above}{cr 1}{2}{300g}{1}
 	\subsubsection{Large Shard Blocks}
+	\ammo{Standard Issue}{-}{cr 5}{1}{1.8kg}{0,5}
+	\ammo{Crude}{-50\% mag size, jams on 91 and above}{cr 2}{2}{1.8kg}{0,5}
 	\subsubsection{Vehicle Shard Blocks}
+	\ammo{Standard Issue}{-}{cr 11}{1}{3.2kg}{0,2}
+	\ammo{Crude}{-50\% mag size, jams on 91 and above}{cr 5}{2}{3.2kg}{0,2}
+	
 %	Grenades
 	\subsubsection{20mm grenades}
+	\ammo{Fragmentation}{2D10+2 | 2 AP | Blast (6)}{cr 60}{1}{120g}{0,5}
+	\ammo{High Explosive}{2D10+6 | 5 AP | Blast (2)}{cr 60}{1}{120g}{0,5}
+	\ammo{Thermobaric}{3D10 | 2 AP | Blast (10) | heat-based, ignores all cover and non-vacuum-sealed or natural armor}{cr 96}{1}{120g}{0,5}
+	\ammo{Incendiary}{D10+2 | 0 AP | Blast (8) | ignites all flammable objects in the radius}{cr 60}{1}{120g}{0,5}
+	\ammo{Buckshot Canister}{2D10+3 | 5 AP | Scatter}{cr 75}{1}{120g}{0,5}
+	\ammo{Slug}{2D5+8 | 8 AP}{cr 75}{1}{120g}{0,5}
+	\ammo{Smoke}{0 | 0 AP | Blast (8), Smoke}{cr 45}{1}{120g}{0,5}
+	\ammo{Flashbang}{0 | 0 AP | Blast (12), Flash}{cr 45}{1}{120g}{0,5}
+	\ammo{EMP}{0 | 0 AP | Blast (6), EMP}{cr 80}{1}{120g}{0,5}
+	\ammo{Tear Gas}{0 | 0 AP | Blast (6), Smoke, Stun (0), ignores cover and non-vacuum-sealed armor, Stun is applied every round in the Smoke}{cr 45}{1}{120g}{0,5}
+	\ammo{Rubber Slug}{1D10+3 | 2 AP | Stun (5), hits to the head cause 2D5 initiative loss}{cr 50}{1}{120g}{0,5}
+	\ammo{Riot Foam}{0 | 0 AP | Blast (12), Sticky}{cr 20}{1}{120g}{0,5}
+	\ammo{Signal Smoke}{0 | 0 AP | Blast (4) | a smoke spewer to signal allies; comes in various colors}{cr 38}{1}{120g}{0,5}
+	\ammo{Parachute Flare}{D5 | 0 AP | a signal flare that burns for 3 minutes and falls at 1 meter per 3 seconds (or 1 round)}{cr 40}{1}{120g}{0,5}
+	\ammo{Infrared Illuminator}{1 | 0 AP | a large chemlight that emits infrared light in a very large area}{cr 42}{1}{120g}{0,5}
 	\subsubsection{40mm grenades}
+	\ammo{Fragmentation}{2D10+7 | 2 AP | Blast (9)}{cr 78}{1}{230g}{1}
+	\ammo{High Explosive}{3D10+6 | 5 AP | Blast (3)}{cr 78}{1}{230g}{1}
+	\ammo{Thermobaric}{4D10 | 2 AP | Blast (15) | heat-based, ignores all cover and non-vacuum-sealed armor}{cr 125}{1}{230g}{1}
+	\ammo{Incendiary}{D10+3 | 0 AP | Blast (12) | ignites all flammable objects in the radius}{cr 78}{1}{230g}{1}
+	\ammo{Buckshot Canister}{3D10+3 | 5 AP | Scatter}{cr 98}{1}{230g}{1}
+	\ammo{Slug}{2D10+9 | 9 AP}{cr 98}{1}{230g}{1}
+	\ammo{Smoke}{0 | 0 AP | Blast (12), Smoke}{cr 59}{1}{230g}{1}
+	\ammo{Flashbang}{0 | 0 AP | Blast (18), Flash}{cr 59}{1}{230g}{1}
+	\ammo{EMP}{0 | 0 AP | Blast (9), EMP}{cr 104}{1}{230g}{1}
+	\ammo{Tear Gas}{0 | 0 AP | Blast (8), Smoke, Stun (0), ignores cover and non-vacuum-sealed armor, Stun is applied every round in the Smoke}{cr 59}{1}{230g}{1}
+	\ammo{Rubber Slug}{2D10+3 | 2 AP | Stun (7), hits to the head cause 2D10 initiative loss}{cr 65}{1}{230g}{1}
+	\ammo{Signal Smoke}{0 | 0 AP | Blast (4) | a smoke spewer to signal allies that lasts for a few minutes; comes in various colors}{cr 49}{1}{230g}{1}
+	\ammo{Parachute Flare}{D5+1 | 0 AP | a signal flare that burns for 5 minutes and falls at 1 meter per 3 seconds (or 1 round)}{cr 52}{1}{230g}{1}
+	\ammo{Thermite}{6D10+10 | 25 AP | Blast (3) | takes two rounds to get going, then burns for one minute dealing its damage every round; sticks to rough surfaces}{cr 156}{1}{230g}{1}
+	
 %	Rockets
 	\subsubsection{Micro Missiles}
+	\ammo{Fragmentation}{-}{cr 84}{4}{1kg}{0,5}
+	\ammo{High Explosive}{-1D10 dmg | +8 AP}{cr 88}{4}{1kg}{0,5}
+	\ammo{Incendiary}{-3 dmg | -3 AP | ignites flammable objects}{cr 76}{4}{1kg}{0,5}
 	\subsubsection{Small RPGs}
+	\ammo{HEAT}{4D10+5 dmg | 6 AP | Blast (5)}{cr 124}{1}{2kg}{0,5}
+	\ammo{High Explosive}{4D10+2 dmg | 3 AP | Blast (6)}{cr 99}{1}{2kg}{0,5}
+	\ammo{Fragmentation}{3D10+8 dmg | 2 AP | Blast (8)}{cr 99}{1}{2kg}{0,5}
+	\ammo{Incendiary}{2D10+5 dmg | 2 AP | Blast (6) | ignites flammable objects}{cr 112}{1}{2kg}{0,5}
+	\ammo{Incendiary Fragmentation}{3D10+5 dmg | 2 AP | Blast (8) | ignites flammable objects}{cr 134}{1}{2kg}{0,5}
+	\ammo{Thermobaric}{4D10+8 dmg | 3 AP | Blast (12) | heat-based, ignores all cover and non-vacuum-sealed armor}{cr 201}{1}{2kg}{0,5}
+	\ammo{Thermite}{6D10+10 | 25 AP | Blast (4) | takes two rounds to get going, then burns for one minute dealing its damage every round; sticks to rough surfaces}{cr 179}{1}{2kg}{0,5}
+	\ammo{Kinetic Penetrator}{4D10+5 dmg | 14 AP}{cr 201}{1}{2kg}{0,5}
 	\subsubsection{Large RPGs}
+	\ammo{HEAT}{4D10+6 dmg | 8 AP | Blast (6)}{cr 168}{1}{3.5kg}{0,25}
+	\ammo{High Explosive}{4D10+4 dmg | 5 AP | Blast (8)}{cr 134}{1}{3.5kg}{0,25}
+	\ammo{Fragmentation}{3D10+11 dmg | 3 AP | Blast (10)}{cr 134}{1}{3.5kg}{0,25}
+	\ammo{Incendiary}{2D10+8 dmg | 2 AP | Blast (8) | ignites flammable objects}{cr 151}{1}{3.5kg}{0,25}
+	\ammo{Incendiary Fragmentation}{3D10+8 dmg | 3 AP | Blast (10) | ignites flammable objects}{cr 181}{1}{3.5kg}{0,25}
+	\ammo{Thermobaric}{5D10+10 dmg | 5 AP | Blast (18) | heat-based, ignores all cover and non-vacuum-sealed armor}{cr 272}{1}{3.5kg}{0,25}
+	\ammo{Thermite}{6D10+10 | 25 AP | Blast (6) | takes two rounds to get going, then burns for one minute dealing its damage every round; sticks to rough surfaces}{cr 242}{1}{3.5kg}{0,25}
+	\ammo{Kinetic Penetrator}{4D10+8 dmg | 18 AP}{cr 272}{1}{3.5kg}{0,25}
+	
 %	Arrows / Bolts
 	\subsubsection{Arrows}
-	*some arrow*
+	\ammo{Broadhead}{-}{cr 1}{25}{30g}{10}
+	\ammo{AP}{-1 dmg, +3 AP}{cr 1}{25}{30g}{10}
+	\ammo{Shield Breaker}{-1 dmg, Disrupt}{cr 2}{25}{30g}{10}
+	\ammo{Syringer}{-3 dmg, +1 AP, contains an empty vial to be filled with poisons or other injections that are released into a biological target when hit}{cr 3}{25}{30g}{10}
+	\ammo{Grapple}{-4 dmg, 0 AP, half range; the mechnized grapple attaches to a rope and holds on most surfaces but e.g. very sturdy metals or fragile materials like glass}{cr 6}{1}{30g}{10}
 	\subsubsection{Bolts}
-	*Some bolt*
+	\ammo{Broadhead}{-}{cr 1}{25}{30g}{10}
+	\ammo{AP}{-1 dmg, +3 AP}{cr 1}{25}{30g}{10}
+	\ammo{Shield Breaker}{-1 dmg, Disrupt}{cr 2}{25}{30g}{10}
+	\ammo{Syringer}{-3 dmg, +1 AP, contains an empty vial to be filled with poisons or other injections that are released into a biological target when hit}{cr 3}{25}{30g}{10}
+	\ammo{Grapple}{-4 dmg, 0 AP, half range; the mechnized grapple attaches to a rope and holds on most surfaces but e.g. very sturdy metals or fragile materials like glass}{cr 6}{1}{30g}{10}
 	
 %	\pagebreak
 	\section{Melee}
@@ -902,26 +1077,26 @@
 	\meleecomponent{Caged hilt}{Shielding the sword wielding hand in some way is an old idea but, like many old ideas, still holds merit this day, so this handle was fitted with a protective basket.}{One-handed; Disarming the wielder is at a -20; The wielding hand (location: arm) has +3 armor}{0,4 kg}{cr 10}{}
 	\meleecomponent{Ergonomic hilt}{A handle fitting the wielder's hand very closely and therefore allowing the user to get a much better feel for the weapon's point.}{One-handed; Binding grants 50\% more bonus, rounded down}{0,2 kg}{cr 12}{}
 	\meleecomponent{Simple long hilt}{A generic two-handed sword hilt offering more leverage than a one-handed hilt.}{Two-handed; +5 to combat rolls}{0,3 kg}{cr 4}{}
-	\meleecomponent{Giant Hilt}{A massive sword hilt. This has no utility for humans and exists more for smiths to boast.}{Oversized}{3,0 kg}{cr 35}{}
+	\meleecomponent{Giant Hilt}{A massive sword hilt. This has no utility for humans and exists more for smiths to boast.}{Oversized}{3 kg}{cr 35}{}
 	\subsubsection{Shafts}
 	\meleecomponent{Short shaft}{A generic short shaft that can build the basis for a spear, hammer or axe.}{One-handed}{0,3 kg}{cr 4}{}
 	\meleecomponent{Long shaft}{A shaft perfect for long spears.}{Two-handed}{0,5 kg}{cr 5}{}
 	\meleecomponent{Twin shaft}{A double-ended spear shaft allowing for two heads to be mounted. Not as effective individually but some people like the versatility.}{Two-handed; -1 damage; allows to add a second weapon point}{0,5 kg}{cr 11}{}
 	\meleecomponent{Rifle}{A weapon mount for the tip of a gun. While a little bit outdated, making an improvised spear can be much more effective than using the knife on its own.}{Two-handed; -5 to melee combat rolls and aim actions with the rifle}{-}{-/-}{}
 	\subsubsection{Blades}
-	\meleecomponent{No blade}{Generally speaking a blade gives great advantages. Sometimes however a blade is simply not available but a stick is still a massive upgrade over fists.}{weapon becomes club}{0,0 kg}{cr 0}{}
+	\meleecomponent{No blade}{Generally speaking a blade gives great advantages. Sometimes however a blade is simply not available but a stick is still a massive upgrade over fists.}{weapon becomes club}{0 kg}{cr 0}{}
 	\meleecomponent{Knife blade}{Short, stiff blade. Good penetration, can cut if necessary.}{Piercing}{0,2 kg}{cr 7}{}
 	\meleecomponent{Sword blade}{A long blade that cuts and stabs well.}{+3 damage}{0,9 kg}{cr 10}{}
 	\meleecomponent{Inverse blade}{A curved swordblade with its edge on the inside. Edge alignment is more difficult but cuts become more devastating.}{Add Dex to melee damage bonus calculation}{0,9 kg}{cr 13}{}
 	\meleecomponent{Plasma cutter}{A knife-sized blade consisting of finely shaped plasma. Cuts through heat much more than force and thereby is easier to use by weaker people.}{+6 damage; halve Melee Damage Bonus}{0,6 kg}{cr 17}{}
 	\meleecomponent{Chain blade}{A high-power, rotating chainsaw functioning as a sword blade. Why someone invented this, no one knows.}{Tearing}{1,2 kg}{cr 23}{}
-	\meleecomponent{Mono blade}{Advertised as a near mono-molecular edge, this is the sharpest knife blade built yet.}{Piercing}{1,0 kg}{cr 27}{}
+	\meleecomponent{Mono blade}{Advertised as a near mono-molecular edge, this is the sharpest knife blade built yet.}{Piercing}{1 kg}{cr 27}{}
 	\subsubsection{Whips}
 	\meleecomponent{Bull whip}{Leather, woven to a rope, making a bad but dirt cheap weapon.}{Flexible}{0,7 kg}{cr 2}{}
 	\meleecomponent{Thorn whip}{Small thorns along the whip increase the damage against tissue but even thinner armor or thicker clothing will stop the weapon.}{Flexible, Tearing}{0,6 kg}{cr 12}{}
 	\meleecomponent{Shock whip}{A difficult piece of equipment to create: coils create a strong electric field while staying flexible enough to whip around and not frying itself.}{Flexible, Shocking}{0,8 kg}{cr 27}{}
 	\subsubsection{Heads}
-	\meleecomponent{No head}{While a designated weapon point is generally superior to none, no weapon head is superior to no weapon.}{None}{0,0 kg}{cr 0}{}
+	\meleecomponent{No head}{While a designated weapon point is generally superior to none, no weapon head is superior to no weapon.}{None}{0 kg}{cr 0}{}
 	\meleecomponent{Hammer head}{A blunt implement originally designed as a tool, later used in a refined form to defeat armor.}{Trauma}{0,8 kg}{cr 8}{}
 	\meleecomponent{Axe head}{A very top heavy blade. Good at splitting moreso than cutting.}{+3 damage}{0,7 kg}{cr 9}{}
 	\meleecomponent{Pick head}{The head on a warpick is designed to defeat armor by breaking through weaker spots. Still works good today.}{Piercing}{0,7 kg}{cr 11}{}
