@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper]{book}
+\documentclass[12pt,a4paper,openany]{book}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{textcomp}
@@ -86,8 +86,8 @@
 \newcommand{\meleecomponent}[6]{
 	\textbf{\ul{#1}}:\\
 	#2\\
-	#4; #5\ifthenelse{\isempty{#6}}{}{; #6}\\
-	#3
+	\textit{Weight}: #4; \textit{Price}: #5\ifthenelse{\isempty{#6}}{}{; \textit{Requirement}: #6}\\
+	\textit{Effect:} #3
 	\par
 }
 
@@ -531,10 +531,9 @@
 		\item Does the character have a dark secret?
 		\item What character traits define the character?
 	\end{enumerate}
-	\section{Race}
-	*TODO: add ref*
-	\section{Background}
-	*TODO: add ref*
+	\section{Race \& Background}
+	Player characters are not the average Joe; they are heroes, villains, the protagonists of their story. However before they became these prodigies, they had to have done something, been someone. This is represented by race and background, the first step of character creation, which every character needs to have.\\
+	Races and backgrounds have an associated GP cost and grant various bonuses and some penalties. Comprehensive lists can be found in sections \ref{sec:racelist} and \ref{sec:backgroundlist}.
 	\section{Characteristics}
 	GP can be spent to increase characteristics. Every characteristic can receive up to 25 points and up to 100 can be spent on characteristics overall but they don’t have to be exhausted.
 	\section{Boons \& banes}
@@ -740,6 +739,7 @@
 	\section{Services}
 	\section{Ranged}
 	\subsection{Weapons}
+	*TODO*
 	\subsubsection{Pistols}
 	\subsubsection{Short Rifle}
 	\subsubsection{Long Rifle}
@@ -852,6 +852,7 @@
 		Armor: 15 / Threshhold: 9}{Core}{cr 180}{3,800 kg}
 
 	\subsection{Ammunition}
+	*TODO*
 %	Pistols
 	\subsubsection{7.2mm}
 	\subsubsection{11.8x45mm}
@@ -888,8 +889,8 @@
 	
 %	\pagebreak
 	\section{Melee}
-	\subsection{System explanation}
-	Melee weapons are not set in stone but created from various components.\\
+	\subsection{Building \emph{your} weapon}
+	Melee weapons are not set in stone but created from various components, allowing for ideal customization.\\
 	A melee weapon needs a grip. Swords, knives and whips have \emph{hilts}, while hammers, axes and spears have \emph{shafts}.\\
 	The weapon point is the second component. Swords, knives and spears have \emph{blades}; axes and hammers have \emph{heads} and \emph{whips} have their own category.\\
 	Lastly every melee weapon may also have a \emph{core} component. These are not required but add additional functionality to the weapon.
@@ -929,12 +930,12 @@
 	\meleecomponent{Cup holder}{A cup holder for your weapon. Why? No reason, really.}{Adds a cup holder}{0,1 kg}{cr 2}{}
 	\meleecomponent{Bipod}{Legend has it that bipods on knives allow stabbing helicopters to death.}{+2 to intimidation if the weapon is visible}{0,8 kg}{cr 6}{}
 	\meleecomponent{Dripper}{Stiletto knives delivering toxins are as infamous as they are rare. However some shady individuals do use such weaponry.}{Adds an injector to the weapon the applies a prepared dose of an injection type chemical to the target on hit.}{0,7 kg}{cr 14}{Blade}
-	\meleecomponent{Shockwire}{An energy source is added inside the weapon, electrifying it. On an already electrical weapon it is possible to direct the electrical field in a manner that will disrupt energy shielding.}{Shocking; If the weapon is already Shocking, it gains Disrupt.}{0,8 kg}{cr 22}{}
+	\meleecomponent{Shock Wire}{An energy source is added inside the weapon, electrifying it. On an already electrical weapon it is possible to direct the electrical field in a manner that will disrupt energy shielding.}{Shocking; If the weapon is already Shocking, it gains Disrupt.}{0,8 kg}{cr 22}{}
 	\meleecomponent{EMP field}{Coils within the weapon emit an electromagnetic field strong enough to interrupt electronic devices.}{EMP}{0,8 kg}{cr 22}{}
-	\meleecomponent{Shotgun}{A single shot 12gauge launcher attached to a hammerhead. It might as well be an improvised explosive device and is as dangerous for the target as for the user and weapon.}{Add a single-shot shotgun to the head, increasing damage by 2D10 for one hit. Takes 5 actions to reload.}{0,6 kg}{cr 23}{Head}
-	\meleecomponent{Ripper Field Generator}{Lovingly dubbed "Ripper Field" by mobsters, this projected force field tears at otherwise stable matter, making it very easy to cut through armor. The field itself is not very stable however and can only be kept alive for a few seconds.}{When activated as a free action, the weapon gains +5 AP for 4 rounds. Takes a small fuel cell and 8 actions to recharge.}{0,8 kg}{cr 28}{}
-	\meleecomponent{IED}{An IED on a stick. Quite dangerous, quite destructive.}{Improvised; An attack causes an explosion equal to a 40mm HE grenade, generally destroying the weapon.}{0,2 kg}{cr 30}{}
-	\meleecomponent{Rocket booster}{Everyone understands that a faster weapon point is more destructive. Since too high speeds make edge alignment and controlling the weapon one-handed nearly impossible, it's only safe to use on large blunt weapons.}{Allows the wielder to forego a second action to gain D10 additional damage.}{1,1 kg}{cr 32}{Two-handed; head}
+	\meleecomponent{Shotgun}{A single shot 12gauge launcher attached to a hammerhead. It might as well be an improvised explosive device and is as dangerous for the target as for the user and weapon.}{Add a single-shot shotgun to the head, increasing damage by 2D10 for one hit. That hit can only be a single or sure strike. Takes 5 actions to reload.}{0,6 kg}{cr 23}{Hammer}
+	\meleecomponent{Ripper Field Generator}{Lovingly dubbed "Ripper Field" by mobsters, this projected force field tears at otherwise stable matter, making it very easy to cut through tough material. The field itself is not very stable however and can only be kept alive for a few seconds.}{When activated as a free action, the weapon gains +4 AP for 4 rounds. Takes a small fuel cell and 8 actions to recharge.}{0,8 kg}{cr 28}{Blade}
+	\meleecomponent{IED}{An IED on a stick, what do you expect? Quite dangerous, quite destructive.}{Improvised; An attack causes an explosion equal to a 40mm HE grenade, generally destroying the weapon.}{0,2 kg}{cr 30}{}
+	\meleecomponent{Rocket booster}{Everyone understands that a faster weapon point is more destructive. Since too high speeds make edge alignment and controlling the weapon one-handed nearly impossible, it's only safe to use on large blunt weapons.}{Allows the wielder to forego a second action to gain D10 additional damage.}{1,1 kg}{cr 32}{Two-handed axe or hammer}
 	
 	\section{Armor}
 	\subsection{Casual wear}
@@ -1152,6 +1153,7 @@
 	\maneuver{Takedown}{100}{Maneuver: Feint, Agility or Strength 40}
 	
 	\section{Races}
+	\label{sec:racelist}
 	\paragraph*{Pure (0 GP)}
 	\textit{Earth's standard human. Comes in all shapes and sizes.}\par
 	\begin{tabular}{|l|l|l|l|l|l|l|l|}
@@ -1401,6 +1403,7 @@
 	\textbf{Usual Backgrounds:} Bodyguard, Bouncer, Mercenary, Soldier, Terrorist\\
 	\textbf{Disallowed Backgrounds:} Orphan, Shark
 	\section{Backgrounds}
+	\label{sec:backgroundlist}
 	\paragraph*{Academic (9 GP)}
 	\textit{Formerly educated in a single or many different things this character mainly knows a lot of things but might lack in the necessary skills to apply them properly.}\par
 	\begin{tabular}{|l|l|l|l|l|l|l|l|}
