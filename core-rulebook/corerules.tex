@@ -16,7 +16,7 @@
 
 %Custom Environments
 \newenvironment{exampleblock}[1][1]
-{\hfill\begin{minipage}{\dimexpr\textwidth-#1cm}}
+{\par\hfill\begin{minipage}{\dimexpr\textwidth-#1cm}}
 {\end{minipage}\par}
 
 %Custom Commands
@@ -75,8 +75,9 @@
 	\end{minipage}
 	\par
 }
-\newcommand{\bane}[4]
-{\boon[#4]{#1}{#2}{#3}}
+\newcommand{\bane}[4]{
+	\boon[#4]{#1}{#2}{#3}
+}
 \newcommand{\weaponmod}[5]{
 	\textbf{\ul{#1}}:\\
 	#3; #4; #5\\
@@ -190,6 +191,13 @@
 	In scenario three Alice rolls a 78 and Bob rolls an 82. Therefore Alice scores a degree of failure, so does Bob. The fact both failed their checks is irrelevant for their opposed checks. Since they both passed equally good or bad, Bob, having the stronger natural inclination, wins the opposition only very slightly. This might just make him more suspicious or completely aware but not hostile, depending on GM narration.\\
 		}
 	\end{exampleblock}
+
+	\section{Assistance}
+	Outside of combat, especially during extended actions, one character is designated as the primary actor and other characters may become assisting actors. Assisting actors make their specific tests first, granting the primary actor 10 + their degrees of success * 5 as a bonus or 10 + their degrees of failure * 5 as a penalty to her test. Assisting tests are not necessarily required to use the same characteristic or skill, for example:\par
+	\begin{exampleblock}
+		John attempts to help Kelly jump into a window. Since the window is narrow, Kelly will be making a check against her agility based Acrobatics skill, while John - using controlled, precise strength - uses his strength based Athletics skill.
+	\end{exampleblock}
+
 	\section{Characteristics}
 	We now know how to perform dice checks but how do we determine our target values? Most basic to the target value is the character’s Characteristic. These are the most basic features that define a creature. Usually one of these values will be the basis for most dice checks:
 	\begin{itemize}
@@ -362,12 +370,12 @@
 	Every combat round is 3 seconds long and consists of a \textit{declaration phase} and an \textit{action phase}. Having higher initiative means declaring later, when that character knows what slower characters will do this round, and resolving their actions before those of slower characters.\\
 	Initiative is variable. When a character is disorientated by being blinded, stunned or falling to the ground, he loses initiative. How much is up to the GM but should be between a D5 for taking a heavy hit to the head and a D10 for smacking his head on the floor.
 	\section{Control area}
-	Every combatant has a control area. The control area is 120° in front of the character and within melee range.
+	Every combatant has a \emph{control area}, which is 120° in front of the character and within melee range. 
 	\section{Actions}
-	Every character has 2 actions per combat round, in addition they are allowed to move. Remember that all actions are happening simultaneously, so some actions might be more difficult while moving.
+	Every character has 2 actions per combat round, in addition they are allowed to move. Remember that all actions are happening simultaneously, so some actions might be more difficult while moving.\\
 	There are two types of combat actions: active actions and reactions. By default one of the character’s actions is active, the other is reactive. Active actions include attacks, reactions encompass parries and dodges. Actions are interchangeable: when turning an action into a reaction or vice versa, the turned action will be at a -20 penalty. Turning actions has to be declared.
 	\section{Maneuver basics}
-	A maneuver describes a combat action a character can take. These actions might look differently or executed in a different way, yet mechanically act the exact same way: a skillful attack to the most vulnerable parts of the human body and a particularly powerful blow will both increase the impact’s damage at a cost to accuracy and therefore are both mechanically \textit{powerstrikes}.\\
+	A maneuver describes a combat action a character can take. These actions might look differently or executed in a different way, yet mechanically act the exact same way: a skillful attack to the most vulnerable parts of the human body and a particularly powerful blow will both increase the impact’s damage at a cost to accuracy and therefore are both mechanically \textit{power strikes}.\\
 	Unless specified otherwise any character can use any maneuver even without being properly trained (i.e. knowing the ability) but all penalties are twice as high to achieve the same results.
 	\section{Voluntary penalties}
 	Most maneuvers take great risk and the bigger the risk, the higher the reward. Voluntary penalties are taken by the acting character and have some sort of effect on maneuvers. The maneuvers that profit from voluntary penalties are designated with a -X modifier.\\
@@ -403,11 +411,7 @@
 	\subsection*{Defensive stance}
 	A combat stance to increase one’s defensive capabilities. Grants a -30 to offensive actions but +10 to defensive actions. Unlike other defensive actions this must be declared during the declaration phase but it may be taken without an ability.
 	\subsection*{Assistance / Cooperation}
-	In combat assistance should be handled as a combined action (see below). Outside of combat, especially during extended actions, one character is designated as the primary actor and other characters may become assisting actors. Assisting actors make their specific tests first, granting the primary actor their degrees of success * 5 as a bonus or their degrees of failure * 5 as a penalty to her test. Assisting tests are not necessarily required to use the same characteristic or skill, for example:
-	
-	\begin{exampleblock}
-		John attempts to help Kelly jump into a window. Since the window is narrow, Kelly will be making a check against her agility based Acrobatics skill, while John - using controlled, precise strength - uses his strength based Athletics skill.
-	\end{exampleblock}
+	In combat assistance should be handled as a combined action (see below).
 	\subsection*{Spotting}
 	Spotting is a special type of assistance. The shooter and the spotter take a combined action with the spotter using Perception. 10 times his DoS will be added to the shooter’s attack roll instead of 5 times.
 	\section{Melee actions}
@@ -576,8 +580,8 @@
 	\section{Cybernetics}
 	Cybernetic augmentation is widespread. Missing or deformed limbs are replaced or existing body parts enhanced to help with work or social life. They don’t naturally regenerate anymore, they are expensive and create a huge load on the patient’s nervous system, as indicated by Rayleigh index values. However they are generally more resilient than most human limbs and most of them offer additional special features. Obviously it takes very invasive surgery to install.
 	\section{Biotech}
-	Biotechnological engineering has come a long way and engineered body parts are rather common. Vat-grown clones of original human body parts or extra dextrous arms; slim, fine legs or extremely dense back muscle implants; whatever it may be, it falls into this category.
-	Compatibility with a human host body is even harder to assure than it is with cybernetic implants, so biotech implants put a great amount of stress on the rest of the body, as indicated by medical toughness.
+	Biotechnological engineering has come a long way and engineered body parts are rather common. Vat-grown clones of original human body parts or extra dexterous arms; slim, fine legs or extremely dense back muscle implants; whatever it may be, it falls into this category.\\
+	While assuring compatibility with the host's nervous system is easier, fitting it to the rest of a human host body is even harder to assure using this younger technology than it is with cybernetic implants, so biotech implants put a great amount of stress on the rest of the body, as indicated by medical toughness.
 	\section{Chemicals}
 	Chemical augmentation is a powerful way to enhance one’s abilities for a short period of time. It is common among thugs that cannot afford proper bionics but also among military and mercenary personnel that need to surpass human peak performance. Chemical augmentation comes with a temporary benefit and some sort of drawback when it runs out. Overuse and overdose can be harmless or extremely dangerous depending heavily on the substance at hand.
 	
@@ -1347,7 +1351,7 @@
 	\statuseffect{Blinded}{The character cannot see and suffers according penalties, most notably to Perception and combat. He also cannot Gather Senses if the status effect is only temporary or brand new.}
 	\statuseffect{Deafened}{The character cannot hear. She suffers according penalties and can't Gather Senses if the condition is only temporary or brand new.}
 	\statuseffect{Frenzied}{The character has entered a vicious rage. She no longer takes penalties from pain and damage aside from complete destruction of body parts. Melee damage bonus from strength is doubled. She will throw herself into combat and needs to make Int checks to distinguish friend from foe. These checks are at a +30 bonus for very close friends and a -30 penalty for completely unknown people.}
-	\statuseffect{Nausea}{The character gains exhaustion for every minute of strenuous activity. In addition, on a failed Con check for any strenous action, he starts vomiting, getting Stunned for D5 rounds.}
+	\statuseffect{Nausea}{The character gains exhaustion for every minute of strenuous activity. In addition, on a failed Con check for any strenuous action, he starts vomiting, getting Stunned for D5 rounds.}
 	\statuseffect{Prone}{The character is granted bonuses and suffers penalties as described in Situational Modifiers. If falling prone was involuntary, she also loses D10 initiative.}
 	\statuseffect{Stunned}{The character cannot act except for move with a speed of 1m/s and loses 1 initiative for every combat round he is stunned. Tests to prevent falling over automatically fail.}
 	\statuseffect{Unconscious}{The character cannot act at all.}
@@ -1391,11 +1395,11 @@
 	\skill{Perception}{Instinct}{Perception is essential for noticing small details. Someone properly educated with trained sense of hearing for example might make out the type of gun or ammunition used in a shot from the sound alone.}
 	\skill[Advanced]{Philosophy}{Intelligence}{Philosophy is what drives many people in the shadows of neon lights. Existential questions rarely find clear answers but one might come close.}
 	\skill[Advanced]{Pilot: Air}{Agility}{Piloting aircraft means understanding basics of aerodynamics and controls of different aircraft, usually but not necessarily it also encompasses basic understanding of flight control procedures.}
-	\skill[Advanced]{Pilot: Jetpack}{Agility}{While not piloting in the classical sense, using jetpacks effectively is an extremely difficult discipline of aeronautics.}
+	\skill[Advanced]{Pilot: Jet pack}{Agility}{While not piloting in the classical sense, using jet packs effectively is an extremely difficult discipline of aeronautics.}
 	\skill[Advanced]{Pilot: Space}{Intelligence}{Piloting spacecraft does not happen alone but this skill is representative of any position spacecraft may have.}
 	\skill[Advanced]{Quaffing}{Constitution}{Quaffing, getting wrecked, hammered, tanked, any of the above. This determines a character's ability to hold his liquor.}
 	\skill{Restraint}{Courage}{Restraint is the ability to push through and ignore both pain and strong emotions. Trying to suppress disabling characteristics is at a penalty equal to the disabling characteristic.}
-	\skill[Advanced]{Security}{Intelligence}{Security encompasses anything that is involved in defense: Personally setting and defusing traps, tactical choice of location, how to employ chokepoints and the exploitation of any mistakes the opposition might have made.}
+	\skill[Advanced]{Security}{Intelligence}{Security encompasses anything that is involved in defense: Personally setting and defusing traps, tactical choice of location, how to employ choke points and the exploitation of any mistakes the opposition might have made.}
 	\skill{Sleight of hand}{Dexterity}{Sleight of hand covers everything that requires delicate fingers and a good distraction. This may be pickpocketing or card tricks or whatever someone might come up with. Picking locks is part of this skill as well.}
 	\skill[Advanced]{Smithing}{Dexterity}{Smithing is the creation of new objects from metal. Casting also falls under this skill, even though it is not technically smithing.}
 	\skill{Stealth}{Agility}{Stealth describes the ability to hide, be it oneself or objects, as well as moving quietly. It is usually heavily modified and often opposed with Perception.}
@@ -1419,17 +1423,17 @@
 	\ability{Blind Fighting}{300}{Trained Sense: Hearing}{Limits the penalties for being blinded in melee combat to -15.}
 	\ability{Blurry}{250}{Acrobatics Trained, Athletics Trained}{While sprinting the character imposes a -20 to everyone trying to hit him.}
 	\ability{Broken}{450}{Courage 40}{Grants +30 to fear and pinning tests but doubles penalties from bad reputation or disposition.}
-	\ability{Butcher}{400}{no Earthshaker}{Damage dealt with blades is increased by 1.}
+	\ability{Butcher}{400}{no Earth Shaker}{Damage dealt with blades is increased by 1.}
 	\ability{Calculated Pilot}{300}{Instinct 30, Dexterity 30}{Halves penalties for piloting tests in demanding, stressful situations.}
 	\ability{Calming Focus}{350}{Courage 40}{Re-roll one failed fear or pinning test per turn.}
-	\ability{Calming Presense}{200}{Command Trained, Calming Focus}{The character may take an action to make a command test at a +20 bonus. For every degree of success all allies in his vicinity gain a +10 to tests to resist fear and pinning.}
+	\ability{Calming Presence}{200}{Command Trained, Calming Focus}{The character may take an action to make a command test at a +20 bonus. For every degree of success all allies in his vicinity gain a +10 to tests to resist fear and pinning.}
 	\ability{Clear Target}{300}{Ranged Base 30}{Halves penalties for calling hit locations on ranged attacks.}
 	\ability{Clotter}{300}{Constitution 55}{When starting to bleed, make a toughness check at a -10 penalty. On a success the character doesn't bleed.}
 	\ability{Crack Shot}{500}{Perception Trained, Clear Target}{Before taking a shot, make a perception check at a penalty equal to twice the target location armor. On a success halve the armor for this attack. Has no effect on shields.}
 	\ability{Dominion}{350}{Supreme Awareness}{When taking a Defensive Stance and not moving, the control area is increased to 360°. The character may also gain attacks of opportunity against disengaging enemies.}
 	\ability{Drunken Master}{300}{Bar Fighter}{Limits the penalty to melee combat resulting from chemicals to -10, he himself is at a -20 to hit and can use maneuvers as normal.\\Costs half as much for \textit{balanced} characters.}
 	\ability{Dual Wielding}{250}{Instinct 30, Dexterity 40}{Halves penalties for dual wielding. Has to be taken once for melee and once for ranged separately.}
-	\ability{Earthshaker}{400}{no Butcher}{Damage dealt with blunt weapons is increased by 1.}
+	\ability{Earth Shaker}{400}{no Butcher}{Damage dealt with blunt weapons is increased by 1.}
 	\ability{Executioner}{350}{Trained Sense: Smell}{Grants +10 to hit bleeding targets.}
 	\ability{Expert Wrestler}{350}{Melee Combat Training (Grappling) Experienced}{The character is incredibly well-trained in grappling that he can initiate a Hold as a free action.}
 	\ability{Face Breaker}{300}{Dexterity 30, Agility 30, Stunning Blow}{Grants unarmed strikes the Trauma special rule.}
@@ -1437,12 +1441,12 @@
 	\ability{Flip Up}{300}{Acrobatics Trained}{When standing up, reduce the time it takes by an action: prone to standing now takes one action or a free action and a successful agility test.}
 	\ability{Focused Frenzy}{350}{Instinct 30, Intelligence 40, no Unbridled Rage}{When the character is made to go berserk by some means, they can still identify friend and foe as well as take defensive actions, albeit at a -15 penalty.}
 	\ability{Formation}{300}{Intelligence 35}{When taking Combined Actions, everyone takes a cumulative +10 up to +30. When the Unbreakable Bond partner is involved, those two gain an additional +10.}
-	\ability{From The Shadows}{250}{Overly Cautious}{During the first round of combat the character has 6 additional initiative, unless the character was ambushed or similarily caught off guard.}
+	\ability{From The Shadows}{250}{Overly Cautious}{During the first round of combat the character has 6 additional initiative, unless the character was ambushed or similarly caught off guard.}
 	\ability{Gruesome}{450}{Intimidate Experienced}{When destroying body locations or landing a killing blow, the character makes an Intimidate test with a bonus equal to twice the last attack's damage. All fear tests suffer an additional penalty equal to 10 + 5 per DoS.}
 	\ability{Hand-to-hand Basics}{250}{Combat Training (Striking or Grappling) Trained}{When fighting armed enemies, the character counts as armed as well.}
 	\ability{Hax0r e1337}{400}{Computer Operation Experienced}{Doubles the degrees of success on Computer Operation tests to crack other devices.}
 	\ability{Heroic}{400}{Courage 40}{Grants +15 to fear and pinning tests.}
-	\ability{High Noon}{500}{Combat Training (Pistol) Experienced, Quickdraw}{When drawing a pistol, the character may take a single shot as a free action.}
+	\ability{High Noon}{500}{Combat Training (Pistol) Experienced, Quick Draw}{When drawing a pistol, the character may take a single shot as a free action.}
 	\ability{Iron Fist}{450}{Hand-to-hand Basics, Maneuver: Stunning Blow}{Every unarmed strike may now count as a having Stun(0) without inferring a penalty.}
 	\ability{Lead Storm}{350}{Strength 45}{Weapons with a fire rate of more than 1 which are not launchers always count as braced.}
 	\ability{Light Sleeper}{250}{Overly Cautious}{Overly Cautious now also works when sleeping or intoxicated.}
@@ -1459,18 +1463,18 @@
 	\ability{Precision Strike}{300}{Melee Base 30}{Halves penalties for attacking small targets with melee attacks.}
 	\ability{Protective Stance}{250}{Instinct 40, Constitution 40}{When taking a Defensive Stance, the character may turn active actions into reactions without penalties and he may parry for allies within his melee range.}
 	\ability{Provoke}{350}{Courage 45}{Spend an action to taunt an enemy and make a skill test opposed by the target's restraint. If the character wins, the target must attack the character at the next opportunity.}
-	\ability{Quickdraw}{250}{Dexterity 30, Agility 30}{Draw smaller equipment pieces, pistols and one-handed melee weapons as a free action.}
+	\ability{Quick Draw}{250}{Dexterity 30, Agility 30}{Draw smaller equipment pieces, pistols and one-handed melee weapons as a free action.}
 	\ability{Rapid Reload}{300}{Dexterity 40}{Halves reload times.}
 	\ability{Reliable Reputation}{200}{Charisma 40, no Broken}{Halves penalties from bad disposition.}
 	\ability{Render}{400}{Strength 55}{When dealing damage with the Tearing rule, roll an additional dice. Still only keep one.}
 	\ability{Ripper}{350}{Render}{When dealing damage with the Tearing rule and rolling doubles, take both dice.}
 	\ability{Sidearm}{250}{Dual Wielding Melee \& Ranged}{When attacking in melee combat with a melee weapon in one hand and a pistol in the other, the character takes no penalties from shooting in melee combat.}
 	\ability{Skinner}{500}{Perception Trained}{Before taking a melee attack, make a perception check at a penalty equal to twice the target location armor. On a success halve the armor for this attack.}
-	\ability{Skulltaker}{500}{Clear Target or Precision Strike}{Removes penalties from calling hit locations for ranged attacks (when combined with Clear Target) or melee attacks (when combined with Precision Strike).}
+	\ability{Skull Taker}{500}{Clear Target or Precision Strike}{Removes penalties from calling hit locations for ranged attacks (when combined with Clear Target) or melee attacks (when combined with Precision Strike).}
 	\ability{Snapshot}{350}{Steady Aim}{Aiming takes half as long.}
 	\ability{Stabilization}{300}{Medication Trained}{The character is able to staunch bleeding in one round.}
 	\ability{Steadfast}{200}{Agility 30, Constitution 30}{Tests to prevent falling over are at a +10.}
-	\ability{Steady Aim}{250}{Intelligence 40, Strength 30}{When aiming, line of sight may be broken for a round without aiming being interrupted. By GM discretion this may count even longer if the target is moving particularily predictably.}
+	\ability{Steady Aim}{250}{Intelligence 40, Strength 30}{When aiming, line of sight may be broken for a round without aiming being interrupted. By GM discretion this may count even longer if the target is moving particularly predictably.}
 	\ability{Strong Back}{350}{Strength 55}{The character's carry weight is increased by half.}
 	\ability{Supreme Awareness}{350}{Instinct 55 or Light Sleeper}{Roll twice when determining initiative or gathering senses, picking the higher result.}
 	\ability{Tactical Advance}{350}{Command Known}{While advancing carefully from one cover to the next over a distance of MS meters in one turn, the character counts as in cover for the whole way.}
@@ -1651,14 +1655,14 @@
 	\noindent\textbf{Other modifiers:} \\
 	\textbf{Skills:} Perception +1\\
 	\textbf{Abilities:} \\
-	\textbf{Boons:} Poisonresistance\\
+	\textbf{Boons:} Poison Resistance\\
 	\textbf{Banes:} Second-class citizen\\
 	\textbf{Usual Backgrounds:} Gambler, Laborer, Performer, Wastelander\\
 	\textbf{Disallowed Backgrounds:} Academic, Shark, Soldier
 	
 	\hrulefill
 	\paragraph*{Trans-species / Generic (1 GP)}
-	\textit{Trans-species humans have changed their bodies to resemble a humanoid version of some animal. Roughly every decade a new wave of trans-species humans rises in popculture, looked upon suspiciously from all those that are not part of the movement themselves.\\
+	\textit{Trans-species humans have changed their bodies to resemble a humanoid version of some animal. Roughly every decade a new wave of trans-species humans rises in pop culture, looked upon suspiciously from all those that are not part of the movement themselves.\\
 	These changes come with qualities and drawbacks related to the animal in question, as well as general physical weakening and sterility.}\par
 	\begin{tabular}{|l|l|l|l|l|l|l|l|}
 		\hline
@@ -1709,7 +1713,7 @@
 	
 	\hrulefill
 	\paragraph*{Vat-grown / Crafter (27 GP)}
-	\textit{Blessed with incredible dexterity, they are created to create. The basic muscle memory to build a certain thing is engrained during the building process and they have an easy time learning more craftsmanship.}\par
+	\textit{Blessed with incredible dexterity, they are created to create. The basic muscle memory to build a certain thing is ingrained during the building process and they have an easy time learning more craftsmanship.}\par
 	\begin{tabular}{|l|l|l|l|l|l|l|l|}
 		\hline
 		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
@@ -1812,7 +1816,7 @@
 	
 	\hrulefill
 	\paragraph*{Child Soldier (15 GP)}
-	\textit{Naturally born children are far cheaper than vatgrown soldiers but, if trained correctly, can be just as effective. These children are raised mentally scarred but very efficient and disciplined killing machines.}\par
+	\textit{Naturally born children are far cheaper than vat-grown soldiers but, if trained correctly, can be just as effective. These children are raised mentally scarred but very efficient and disciplined killing machines.}\par
 	\begin{tabular}{|l|l|l|l|l|l|l|l|}
 		\hline
 		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
@@ -2002,7 +2006,7 @@
 	
 	\hrulefill
 	\paragraph*{Investigator (4 GP)}
-	\textit{Be it private investigators or police officials, many unsolved cases drift through any city's archive. Some investigators are interested in these old, unsolved cases, others are commited to reducing the amount of new ones.}\par
+	\textit{Be it private investigators or police officials, many unsolved cases drift through any city's archive. Some investigators are interested in these old, unsolved cases, others are committed to reducing the amount of new ones.}\par
 	\begin{tabular}{|l|l|l|l|l|l|l|l|}
 		\hline
 		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
@@ -2019,7 +2023,7 @@
 	
 	\hrulefill
 	\paragraph*{Laborer (1 GP)}
-	\textit{A lot of work can be taken over by machines. Yet sometimes a machine can't be used or is simply more expensive than a low wage laborer or a slave. This usage of human resources is not officially endorsed and even technically illegal, yet when a contract is formed (or forged...), the endeavour might be considered legitimate.}\par
+	\textit{A lot of work can be taken over by machines. Yet sometimes a machine can't be used or is simply more expensive than a low wage laborer or a slave. This usage of human resources is not officially endorsed and even technically illegal, yet when a contract is formed (or forged...), the endeavor might be considered legitimate.}\par
 	\begin{tabular}{|l|l|l|l|l|l|l|l|}
 		\hline
 		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
@@ -2125,7 +2129,7 @@
 	
 	\hrulefill
 	\paragraph*{Trafficker (3 GP)}
-	\textit{Anything can be traded, so long as you aren't caught. A particularily hot good is giving the term "human ressources" a new meaning. People like this are cunning, cold and the toughest tradesmen.}\par
+	\textit{Anything can be traded, so long as you aren't caught. A particularly hot good is giving the term "human resources" a new meaning. People like this are cunning, cold and the toughest tradesmen.}\par
 	\begin{tabular}{|l|l|l|l|l|l|l|l|}
 		\hline
 		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
@@ -2232,10 +2236,10 @@
 	\boon{Diver's Lung}{The character may hold her breath twice as long.}{4}
 	\boon{Euphonia}{The character has a beautiful voice. He gains a +10 to social interaction tests when the other party can hear him. This also makes Voice Athlete a basic skill.}{10}
 	\boon[each]{Formal Education}{Grants 50 XP to be spent only on educations. Can be taken multiple times.}{1}
-	\boon{Fortune's Child}{Every session the character may reroll one of her dice rolls or one that she is directly affected by.}{10}
+	\boon{Fortune's Child}{Every session the character may re-roll one of her dice rolls or one that she is directly affected by.}{10}
 	\boon{Giant}{The character becomes two categories larger. He is easier to hit, has more melee range, is faster and more imposing.}{10}
 	\boon[each]{Good Reputation}{The character has some sort of good reputation, either from well known deeds or from known genetic markers. If he is talking to someone who knows of this, he gains a bonus equal to 5 times the boon's level. Can be taken up to level 10.}{2}
-	\boon{Iron Resilience}{Degredation from wounds is reduced by one step.}{10}
+	\boon{Iron Resilience}{Degradation from wounds is reduced by one step.}{10}
 	\boon{Large}{The character becomes a category larger. He is easier to hit, has more melee range, is faster and more imposing.}{5}
 	\boon{Looker}{The character is beautiful. She gains +5 to social interaction tests. Not compatible with Smoking, Ugly and Physically repulsive.}{5}
 	\boon[each]{Natural Armor}{The character has natural armor covering her skin. Adds +1 armor to every location and can be taken multiple times.}{6}
@@ -2324,7 +2328,7 @@
 	\bane{Righteous (DC)}{Some laws are absolute and they must be followed. The character will work against any injustice to the order she believes in.}{1}{per 5}
 	\bane{Scrooge (DC)}{Spending money is painful.}{1}{per 10}
 	\bane{Second-class Citizen}{The character is oppressed for one reason or another. This may e.g. be due to stigmatization of a part of his lifestyle or being born with extremely few resources. In any case this will have consequences in social situations and encounters with law enforcement.
-		Cannot be taken by Vatgrown.}{5}{}
+		Cannot be taken by Vat-grown.}{5}{}
 	\bane{Sensitive Smell (DC)}{When around something that smells particularly nasty, he takes penalties to everything that requires concentration or a healthy stomach equal to the bane.}{3}{per 10}
 	\bane{Short}{The character is small. He is harder to hit, has less melee range and is slower. He is also rarely taken seriously.}{5}{}
 	\bane{Shortcoming}{A characteristic, that hasn't been invested in, is reduced by 5.}{7}{}
@@ -2349,7 +2353,7 @@
 	\begin{tabular}{|l|r|r|l|}
 		\hline
 		\underline{Name} & \underline{\smash{Hit / Intimidate}} & \underline{MS} & \underline{\smash{Example}}                   \\ \hline
-		Miniscule  & -40                                                                                      & -4                                     & a knife, pistol or mobile phone \\ \hline
+		Minuscule  & -40                                                                                      & -4                                     & a knife, pistol or mobile phone \\ \hline
 		Puny       & -30                                                                                      & -3                                     & a limb, rifle or sword          \\ \hline
 		Tiny       & -20                                                                                      & -2                                     & a child                         \\ \hline
 		Small      & -10                                                                                      & -1                                     & small people, tall children     \\ \hline
@@ -2357,7 +2361,7 @@
 		Tall       & 10                                                                                       & 1                                      & imposing super soldiers         \\ \hline
 		Huge       & 20                                                                                       & 2                                      & horses, bikes                   \\ \hline
 		Hulking    & 30                                                                                       & 3                                      & cars                            \\ \hline
-		Enormous   & 40                                                                                       & 4                                      & busses or larger                \\ \hline
+		Enormous   & 40                                                                                       & 4                                      & buses or larger                \\ \hline
 	\end{tabular}
 
 	\section{Fear}
@@ -2426,11 +2430,11 @@
 		The character is shooting over long range. & -20 & Distance \\ \hline
 		The character shoots over short range. & +10 & Distance \\ \hline
 		The character shoots at point blank range. & +30 & Distance \\ \hline
-		The character attempts to use a pistol one-handed. & -10 & Dualwielding \\ \hline
-		The character is attempting to use two pistols at once. & -20 & Dualwielding \\ \hline
-		The character attempts to use a small rifle one-handed. & -30 & Dualwielding \\ \hline
-		The character attempts to use another weapon one-handed. & -60 & Dualwielding \\ \hline
-		The character is attempting to use two small rifles at once. & -40 & Dualwielding \\ \hline
+		The character attempts to use a pistol one-handed. & -10 & Dual-wielding \\ \hline
+		The character is attempting to use two pistols at once. & -20 & Dual-wielding \\ \hline
+		The character attempts to use a small rifle one-handed. & -30 & Dual-wielding \\ \hline
+		The character attempts to use another weapon one-handed. & -60 & Dual-wielding \\ \hline
+		The character is attempting to use two small rifles at once. & -40 & Dual-wielding \\ \hline
 		The character is fighting in strong winds, heavy rain or on slippery ground. Multiple may stack. & -10 & Environment \\ \hline
 		The character tries to dodge while prone. & -20 & Environment \\ \hline
 		The character is attacking a specific enemy caught up in melee combat or he himself is caught in melee combat. & -30 & Environment \\ \hline
@@ -2448,14 +2452,14 @@
 	\subsection{Social}
 	\begin{tabularx}{\textwidth}{|X|X|l|}
 		\hline
-		\ul{Situation} & \ul{Modifier} & \ul{Focussed skill} \\ \hline
+		\ul{Situation} & \ul{Modifier} & \ul{Focused skill} \\ \hline
 		Performing a simple dance. & -10 / +0 if the character is trained in both etiquette as well as acrobatics & Acrobatics / Etiquette \\ \hline
 		Performing a difficult, intricate dance. & -40 / -30 if the character is trained in both etiquette as well as acrobatics & Acrobatics / Etiquette \\ \hline
 		The target has something else to do or does not want to be bothered. & -10 & Appeal \\ \hline
 		The target is suspicious and/or has had bad experiences with the character. & -20 & Appeal \\ \hline
 		The target is hostile but not aggressive yet. & -30 & Appeal \\ \hline
 		The target is a devoted enemy and currently in mortal combat with the character. & -60 & Appeal \\ \hline
-		The target and the character are aquainted. & +10 & Appeal \\ \hline
+		The target and the character are acquainted. & +10 & Appeal \\ \hline
 		The target is friendly. & +20 & Appeal \\ \hline
 		The target is devoted to or close friends with the character. & +30 & Appeal \\ \hline
 		Pickpocketing something obvious like an ID card or a phone sticking out of someone's pocket & -10 & Sleight of hand \\ \hline
@@ -2500,7 +2504,7 @@
 		Creating or repairing equipment with only insufficient or improvised tools. & -20 & Mechanics \\ \hline
 		Trying to fix unknown technology. & -40 & Mechanics \\ \hline
 		Attempting to repair and use damaged weapon attachments. & +10 & Mechanics \\ \hline
-		Reparing a damaged vehicle with the necessary tools. & +20 & Mechanics \\ \hline
+		Repairing a damaged vehicle with the necessary tools. & +20 & Mechanics \\ \hline
 		Repairing simple circuitry or devices like antennas. & +30 & Mechanics \\ \hline
 		Picking more secure locks like found on motorized vehicles. & -10 & Security \\ \hline
 		Defusing an old landmine. & -30 & Security \\ \hline
