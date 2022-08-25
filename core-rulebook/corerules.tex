@@ -85,6 +85,19 @@
 \newcommand{\bane}[4]{
 	\boon[#4]{#1}{#2}{#3}
 }
+\newcommand{\rangedweapon}[9]{
+	\vspace{2mm}
+	\begin{minipage}{\textwidth}
+		\textbf{\ul{#1}}\\
+		\textit{#2}\\
+		\textit{Weight (unloaded)}: #9; \textit{Price}: #8\\
+		#3\\
+		Mag: #5; Reload: #6 actions\\
+		Range: #4\\
+		Special Rules: #7
+	\end{minipage}
+	\par
+}
 \newcommand{\weaponmod}[5]{
 	\textbf{\ul{#1}}:\\
 	#3; #4; #5\\
@@ -862,13 +875,76 @@
 	\section{Ranged}
 	\subsection{Weapons}
 	*TODO*
-	\subsubsection{Pistols}
+	\subsubsection{Pistol}
+	\rangedweapon{Obsidian Bull}{A hand cannon fed from a cylinder.}{Shots: 1; Damage: 2D10+8; AP: 1}{25m}{6 (11.8x45mm)}{6}{Reliable, Single Loader}{cr 50}{1,7 kg}
+	\rangedweapon{Wasteland Condor}{A powerful handgun with an extremely heavy cartridge.}{Shots: 1; Damage: 2D10+8; AP: 1}{25m}{7 (11.8x45mm)}{2}{}{cr 50}{1,9 kg}
+	\rangedweapon{Amber Bull}{A revolver made to fire low caliber rounds.}{Shots: 1; Damage: 2D10+3; AP: 0}{20m}{8 (7.2mm)}{8}{Reliable, Single Loader}{cr 30}{0,5 kg}
+	\rangedweapon{M10}{A small, low caliber, semiautomatic pistol. Very light and decently easy to conceil.}{Shots: 1; Damage: 2D10+3; AP: 0}{20m}{9 (7.2mm)}{1}{}{cr 30}{0,6 kg}
+	\rangedweapon{mOP-3}{A hand-sized 20mm grenade hindloader}{Shots: 1; Damage: ; AP: depending on ammo}{20m}{1 (20mm grenade)}{4}{minimum arming distance of 10m}{cr 40}{1,3 kg}
+	\rangedweapon{"Little Luzifer" Hand Flamer}{A one-handed flamethrower. While it holds "flame" in its name, it can be used for all fueled spray weapons.}{Shots: 5; Damage: 1D10+2; AP: 0}{12m}{5 (small fuel tank)}{8}{Flame, Scatter, Spray}{cr 80}{1,6 kg}
+	\rangedweapon{OH-VLS}{A small, adjustable laser pistol}{Shots: 2; Damage: 1D10+10; AP: 1}{35m}{16 (small fuel cell)}{4}{Adjustable}{cr 70}{0,6 kg}
+	\rangedweapon{Newton Pistol Mk5}{A forearm-sized magnetic accelerator shooting metal fragments}{Shots: 1; Damage: 1D10+2; AP: 12}{35m}{30 (small mass driver shard block)}{8}{}{cr 110}{2,6 kg}
+	\rangedweapon{Newton Pistol Mk2 }{The smallest mass drivers ever built. Shoots very small metal fragments}{Shots: 2; Damage: 1D10+2; AP: 8}{30m}{30 (small mass driver shard block)}{8}{}{cr 95}{2,1 kg}
+	\rangedweapon{Mk1 Shockpistol}{A modified taser. Very much lethal.}{Shots: 1; Damage: 2D5; AP: 0}{20m}{8 (small fuel cell)}{5}{EMP, Stun (4)}{cr 50}{0,4 kg}
+	\rangedweapon{Scattershock}{A one-handed tesla gun}{Shots: 2; Damage: 3D5; AP: 0}{15m}{6 (small fuel cell)}{5}{Scatter, EMP, Stun (3)}{cr 80}{0,6 kg}
 	\subsubsection{Short Rifle}
+	\rangedweapon{MS shotgun}{A double-barrel shotgun with shortened barrels to facilitate pellet spread}{Shots: 1; Damage: 2D10+3; AP: 1}{40m}{2 (12gauge)}{4}{Reliable, Scatter, Single loader}{cr 25}{3,0 kg}
+	\rangedweapon{short-barrel AR-22}{A rifle caliber fired from a short system. Warning: only buy if you don't own a dog}{Shots: 3; Damage: 2D10+2; AP: 6}{50m}{30 (6.3mm)}{4}{}{cr 110}{3,5 kg}
+	\rangedweapon{MP15}{A pistol caliber fired from a small rifle frame.}{Shots: 4; Damage: 2D10+3; AP: 1}{30m}{25 (7.2mm)}{3}{}{cr 65}{2,8 kg}
+	\rangedweapon{"Thumper" CQC Grenade Launcher}{A small launcher meant for utility grenades. Exists as an underbarrel version}{Shots: 1; Damage: ; AP: depending on ammo}{20m}{1 (20mm grenade)}{4}{minimum arming distance of 10m}{cr 70}{4,8 kg}
+	\rangedweapon{OH-VLS conversion kit}{A conversion kit to turn an OH-VLS into a small laser carbine.}{Shots: 3; Damage: 1D10+12; AP: 1}{70m}{16 (medium fuel cell)}{5}{Adjustable, Flame, Upgrade (OH-VLS)}{cr 140}{2,8 kg}
+	\rangedweapon{Newton Pistol Repeater kit}{A conversion kit for low powered Newton Pistols to increase firerate.}{Shots: 4; Damage: 1D10+3; AP: 12}{45m}{30 (small mass driver shard block)}{8}{Upgrade (Mk2 Newton Pistol)}{cr 140}{3,6 kg}
+	\rangedweapon{"Junk Jet" Mass Driver Shotgun}{A mass driver with increased bore to achieve shotgun-like ballistics}{Shots: 1; Damage: 2D10+2; AP: 8}{55m}{6 (small mass driver shard block)}{3}{Scatter}{cr 170}{4,2 kg}
+	\rangedweapon{Crossbow / Harpoon}{A very short bow with a trigger }{Shots: 1; Damage: 1D10+4; AP: 0}{50m}{1 (crossbow bolt)}{6}{Silenced, ignores shields}{cr 25}{3,0 kg}
+	\rangedweapon{Scattershock rifle conversion kit}{A conversion kit for the Scattershock to feed from larger fuel cells. Increases size, mag size and range.}{Shots: 2; Damage: 3D5; AP: 0}{45m}{30 (medium fuel cell)}{5}{Scatter, EMP, Stun (3), Upgrade (Scattershock)}{cr 125}{2,1 kg}
 	\subsubsection{Long Rifle}
+	\rangedweapon{AR-22}{A full sized rifle}{Shots: 3; Damage: 2D10+3; AP: 11}{120m}{30 (6.3mm)}{6}{}{cr 150}{3,8 kg}
+	\rangedweapon{M282 SSW}{A bulky, belt-fed firesupport weapon with high ammunition capacity}{Shots: 6; Damage: 2D10+3; AP: 11}{120m}{120 (6.3mm)}{14}{Bulky}{cr 220}{7,0 kg}
+	\rangedweapon{Mk3 Tankgewehr}{An insanely high-caliber, long barrel rifle made to fight heavy armor. Carries a lot of energy of comparatively small distances.}{Shots: 1; Damage: 3D10+3; AP: 30}{250m}{1 (15x132mm)}{10}{}{cr 210}{16,6 kg}
+	\rangedweapon{"A3R" Advanced Anti-Armor Rifle}{A long range rifle made to take out high value targets or light armor}{Shots: 1; Damage: 2D10+7; AP: 18}{800m}{5 (11.8x112mm)}{6}{}{cr 210}{12,0 kg}
+	\rangedweapon{M5 Shotgun}{A scattergun firing multiple pellets}{Shots: 2; Damage: 4D5+6; AP: 4}{80m}{8 (12gauge)}{16}{Single Loader, Scatter}{cr 130}{3,8 kg}
+	\rangedweapon{OP-2}{A 20mm single shot grenade launcher with increased barrel length}{Shots: 1; Damage: -; AP: depending on ammo}{50m}{1 (20mm grenade)}{4}{minimum arming distance of 10m}{cr 60}{1,9 kg}
+	\rangedweapon{"Rathalos" Handheld Flamethrower}{A flame thrower with an integrated tank}{Shots: 5; Damage: 2D10+4; AP: 0}{35m}{15 (medium fuel tank)}{8}{Flame, Scatter, Spray}{cr 120}{4,0 kg}
+	\rangedweapon{BR-56}{A semiautomatic laser rifle}{Shots: 2; Damage: 1D10+18; AP: 3}{500m}{10 (medium fuel cell)}{12}{Adjustable}{cr 230}{4,3 kg}
+	\rangedweapon{Incinerator Rifle}{A long range laser rifle. Instead of piercing armor it burns it away.}{Shots: 1; Damage: 2D5+30; AP: 4}{700m}{1 (large fuel cell)}{16}{Adjustable, Flame}{cr 220}{9,7 kg}
+	\rangedweapon{M4 Silver Crow}{A handheld, semi automatic mass driver}{Shots: 2; Damage: 2D10+4; AP: 22}{550m}{16 (large mass driver shard block)}{10}{}{cr 180}{11,2 kg}
+	\rangedweapon{R235 Squad Support Weapon}{A fully automatic mass driver}{Shots: 5; Damage: 2D10+4; AP: 16}{180m}{180 (large mass driver shard block)}{18}{}{cr 250}{15,6 kg}
+	\rangedweapon{R13 "Armor Cracker"}{A handheld, long range mass driver}{Shots: 1; Damage: 1D5+18; AP: 35}{1400m}{7 (large mass driver shard block)}{16}{}{cr 260}{23,9 kg}
+	\rangedweapon{FG-9}{A rifle firing high energetic, self-stabilized plasma that explodes on impact. The energy release is highly unpredictable}{Shots: 1; Damage: 4D10+6; AP: 1}{40m}{10 (large fuel cell)}{16}{Blast (3), EMP, Stun (2)}{cr 310}{6,3 kg}
+	\rangedweapon{Choke M3 Arc Rifle}{An arc rifle with little spread to increase range}{Shots: 2; Damage: 3D10; AP: 0}{60m}{10 (large fuel cell)}{12}{EMP, Stun (3), Scatter}{cr 180}{4,1 kg}
+	\rangedweapon{Choke F3 Arc Thrower}{An arc rifle with a large spread made for crowd suppression}{Shots: 2; Damage: 5D5; AP: 0}{30m}{10 (large fuel cell)}{10}{EMP, Stun (2), Spray}{cr 150}{3,9 kg}
 	\subsubsection{Heavy}
+	\rangedweapon{M2 Brass Storm}{A high-caliber machine gun}{Shots: 8; Damage: 2D10+4; AP: 10}{220m}{120 (11.8x112mm)}{18}{}{cr 280}{42,7 kg}
+	\rangedweapon{"Forgefire" Heavy Flamer}{A large flamethrower made for vehicles and emplacements}{Shots: 5; Damage: 3D10+3; AP: 0}{50m}{30 (large fuel tank)}{40}{Flame, Scatter, Spray}{cr 220}{35,4 kg}
+	\rangedweapon{"Slicer" Laser Cannon}{A vehicle laser cannon, powerful enough to break bunker doors. Requires an external power source to equalize its needs}{Shots: 1; Damage: 5D10+20; AP: 8}{400m}{5 (vehicle power cell)}{40}{Powered}{cr 450}{231,0 kg}
+	\rangedweapon{Model 6 "Gladiator" Rotating Railgun}{A mass driver sporting 5 rotating accelerators to prevent overheating and increase firerate}{Shots: 12; Damage: 3D10+8; AP: 12}{500m}{500 (vehicle mass driver shard block)}{40}{Powered}{cr 420}{169,0 kg}
+	\rangedweapon{Mag Rail Cannon}{A massive mass driver built for anti armor LAVs in the days of war}{Shots: 1; Damage: 3D10+18; AP: 40}{6000m}{20 (vehicle mass driver shard block)}{40}{Powered}{cr 450}{143,0 kg}
+	\rangedweapon{"Zeushammer" Ball Lightning Cannon}{A long range tesla cannon firing arcing ball lightnings}{Shots: 1; Damage: 9D10+-4; AP: }{150m}{5 (vehicle power cell)}{40}{Blast (6), EMP, Stun (5), Spray, Powered}{cr 410}{197,0 kg}
 	\subsubsection{Launcher}
+	\rangedweapon{MML-4}{A multi rocket launcher built for vehicles}{Shots: 2; Damage: -; AP: depending on ammo}{350m}{6 (rocket propelled grenade)}{40}{Powered, Backblast (4)}{cr 220}{36,9 kg}
+	\rangedweapon{WTFBRR}{A massive recoilless rifle made for giant loads to be fired from vehicles}{Shots: 1; Damage: -; AP: depending on ammo}{700m}{1 (large rocket propelled grenade)}{20}{Backblast (8)}{cr 360}{45,7 kg}
+	\rangedweapon{Hailfire}{A micro missle launcher firing multiple rockets on multiple targets simulateously}{Shots: 4; Damage: 3D10+2; AP: 4}{250m}{4 (micro missle packs)}{40}{Powered, Multitargeting, Backblast (2)}{cr 200}{26,7 kg}
+	\rangedweapon{M64}{A 40mm rotary grenade launcher}{Shots: 1; Damage: -; AP: depending on ammo}{100m}{6 (40mm grenade)}{36}{Single Loader, minimum arming distance of 15m}{cr 180}{5,4 kg}
+	\rangedweapon{ERPG}{A rocket propelled grenade launcher}{Shots: 1; Damage: -; AP: depending on ammo}{400m}{1 (rocket propelled grenade)}{6}{Backblast (4)}{cr 210}{6,2 kg}
+	\rangedweapon{OP-4}{A 40mm single shot grenade launcher}{Shots: 1; Damage: -; AP: depending on ammo}{70m}{1 (40mm grenade)}{6}{minimum arming distance of 15m}{cr 90}{2,2 kg}
 	\subsubsection{Bow}
+	\rangedweapon{collapsible bow}{A bow that can be collapsed to fit small cases for transportation and concealment}{Shots: 1; Damage: 1D10+3; AP: 1}{50m}{1 (arrow)}{1}{Silenced, ignores shields}{cr 25}{1,5 kg}
+	\rangedweapon{recurve bow}{A full-sized bow}{Shots: 1; Damage: 1D10+4; AP: 2}{75m}{1 (arrow)}{1}{Silenced, -10 to hit per StrB below 4, ignores shields}{cr 20}{3,2 kg}
 	\subsubsection{Throwing}
+	\rangedweapon{C-7}{A block of plastic explosives. Usually made to be set up but can the thrown in a pinch}{Shots: 1; Damage: 2D10+18; AP: 16}{5m}{1 (C-7)}{2}{Blast (6)}{cr 22}{0,2 kg}
+	\rangedweapon{EMP grenade}{Very expensive and very rare, this new type of explosive stuns or even damages unshielded electronics. It also causes piezoelectric exoskeletons to spasm and hurt the wearer.}{Shots: 1; Damage: 0; AP: 0}{15m}{1 (Grenade)}{1}{Blast (6), EMP}{cr 28}{0,1 kg}
+	\rangedweapon{Flashbang}{Popular among law enforcement personnel this non-lethal grenade blinds and deafens anyone not wearing appropriate protective gear with a loud and bright flash.}{Shots: 1; Damage: 0; AP: 0}{15m}{1 (Grenade)}{1}{Blast (12), Flash}{cr 14}{0,1 kg}
+	\rangedweapon{Frag grenade}{An explosive that spreads a large amount of shrapnel in a decently large area. Used against groups of hostiles and to clear rooms since the dawn of gunpowder.}{Shots: 1; Damage: 2D10+2; AP: 2}{15m}{1 (Grenade)}{1}{Blast (6)}{cr 22}{0,1 kg}
+	\rangedweapon{Incendiary grenade}{A fire-based explosive known to be easy and cheap to improvise and to cause a lot of collateral damage. Less useful against energy shielding and metal constructions.}{Shots: 1; Damage: 1D10+2; AP: 0}{15m}{1 (Grenade)}{1}{Blast (8), ignites flammable surfaces in the area}{cr 22}{0,1 kg}
+	\rangedweapon{Riot Foam}{A canister of sticky foam that heavily impairs movement of everyone caught up in it. Can safely but slowly be burnt away at low temperatures.}{Shots: 1; Damage: 0; AP: 0}{15m}{1 (Grenade)}{1}{Blast (12), Sticky}{cr 12}{0,1 kg}
+	\rangedweapon{Smoke grenade}{Favored in open places this non-lethal grenade grants a large amount of artificial conceilment to otherwise clear lines of fire.}{Shots: 1; Damage: 0; AP: 0}{15m}{1 (Grenade)}{1}{Blast (8), Smoke}{cr 14}{0,1 kg}
+	\rangedweapon{Tear gas grenade}{Non-lethal irritant grenades usually employed to stop riots}{Shots: 1; Damage: 0; AP: 0}{15m}{1 (Grenade)}{1}{Blast (8), Smoke, Stun (0), Stun is applied every round in the Smoke}{cr 16}{0,1 kg}
+	\rangedweapon{Blunt throwing weapon}{Blunt instruments like rocks and bottles being thrown. Very common when nothing else is at hand.}{Shots: 1; Damage: 1D5+7; AP: 6}{15m}{1 (Blunt instruments)}{1}{Trauma, Piercing, Improvised}{Rocks are free}{1,0 kg}
+	\rangedweapon{Throwing axe}{Sharp, heavy, bladed weapon weighted for throwing}{Shots: 1; Damage: 1D10+3; AP: 0}{15m}{1 (Axes)}{1}{}{cr 12}{1,1 kg}
+	\rangedweapon{Throwing knives}{Sharp, bladed weapons weighted for throwing}{Shots: 1; Damage: 1D5+3; AP: 3}{15m}{1 (Knives)}{1}{}{cr 10}{0,4 kg}
+	\rangedweapon{Exploding Fuel Cell, Small}{A small fuel cell, usually built very sturdily, may be rigged as an improvised explosive device. Unstable cells however may explode when handled too roughly in higher temperatures.}{Shots: 1; Damage: 2D10+4; AP: 6}{15m}{1 (small fuel cell)}{1}{Blast (1)}{cr 9}{0,3 kg}
+	\rangedweapon{Exploding Fuel Cell, Medium}{A fuel cell, usually built very sturdily, may be rigged as an improvised explosive device. Unstable cells however may explode when handled too roughly in higher temperatures.}{Shots: 1; Damage: 3D10+6; AP: 9}{15m}{1 (medium fuel cell)}{1}{Blast (1)}{cr 15}{0,8 kg}
+	\rangedweapon{Exploding Fuel Cell, Large}{A large fuel cell, usually built very sturdily, may be rigged as an improvised explosive device. Unstable cells however may explode when handled too roughly in higher temperatures.}{Shots: 1; Damage: 4D10+8; AP: 12}{15m}{1 (large fuel cell)}{1}{Blast (2)}{cr 21}{1,5 kg}
 	\subsection{Mods}
 	\subsubsection{Constraints}
 	Ranged weapons have a limited number of mod slots which can each only be used once - at some point the weapon becomes unwieldy or the space is simply used up. When in question, apply common sense.\\
