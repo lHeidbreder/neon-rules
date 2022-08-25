@@ -94,7 +94,7 @@
 		#3\\
 		Mag: #5; Reload: #6 actions\\
 		Range: #4\\
-		Special Rules: #7
+		\ifthenelse{\isempty{#7}}{}{Special Rules: #7}
 	\end{minipage}
 	\par
 }
@@ -871,7 +871,6 @@
 	\service{Orbital drop}{Drop from low orbit onto a desired location. This can obviously not be taken for inside underground complexes but may dig through a bunker's ceiling and trash buildings.}{cr 375}{jump}
 	\section{Ranged}
 	\subsection{Weapons}
-	*TODO*
 	\subsubsection{Pistol}
 	\rangedweapon{Obsidian Bull}{A hand cannon fed from a cylinder.}{Shots: 1; Damage: 2D10+8; AP: 1}{25m}{6 (11.8x45mm)}{6}{Reliable, Single Loader}{cr 50}{1,7 kg}
 	\rangedweapon{Wasteland Condor}{A powerful handgun with an extremely heavy cartridge.}{Shots: 1; Damage: 2D10+8; AP: 1}{25m}{7 (11.8x45mm)}{2}{}{cr 50}{1,9 kg}
