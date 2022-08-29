@@ -1,0 +1,223 @@
+\documentclass[12pt,a4paper,openany]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{textcomp}
+\usepackage{xifthen}
+\usepackage{tabularx}
+
+%Alignment
+\usepackage[skip=10mm]{parskip}
+\raggedbottom
+
+%Title
+\title{Neon Pen and Paper}
+\author{Fr0sty}
+\date{\today}
+
+\begin{document}
+	\maketitle
+	\tableofcontents
+	
+	\chapter{Introduction}
+	A marvel of technological advancement, these powered armors offer vastly improved physical capabilities as well as a near skintight bunker. Many different series are in production and each of them offers many different variants to offer requested adaptability for almost any feasible area of operation.\par
+	A strike suit is built specifically for its pilot. These pilots are born highly qualified and trained by many specialists; the cheapest part of their education. The really expensive part is their equipment: weapons, augments, modifications for each, specialized ammunition, scanners and the list goes on, culminating their armor.\par
+	Depending on their field of expertise, the armor series and variant is picked as detailed below. Note that due to how expensive and rare this type of equipment is, it is also extremely rare and hard to acquire.
+	
+	\chapter{Building a Strike Suit}
+	\section{Commonality}
+	Every Strike Suit has a few similar properties, referred to as the baseline. These common aspects are then modified by the series and variant, as well as custom modifications.\par
+	\begin{itemize}
+		\item Every Strike Suit has very thick armor plates. Arms and legs sport 20 armor, the head has 16 and the torso makes it to 22.
+		\item The armor is fitted with a piezoelectric exo-skeleton. This is ramped up to grant a bonus of 20 points, freely distributed between strength and agility of the wearer, to be determined at the time of creation.
+		\item For squad communication every suit is fitted with a HUD, an intercom and a vitals monitor.
+		\item Additionally every suit has space for 4 mods. Often times this is reduced by variant specific modifications.
+		\item Lastly - to prevent the technology falling into the wrong hands - every suit has a Final Hour chip installed, blowing up the armor in a giant ball of fire and fragmentation when the wearer's vital signs drop to zero.
+	\end{itemize}
+
+	\section{Series}
+	\subsection{basic}
+	\textit{A strike suit is the pinnacle of armor creation, sporting heavy plates that rival APCs, HUD, intercom and vitals monitors for perfect remote support as well as a lightweight, piezoelectric exoframe to carry its own weight and even boost the wearer's physical capabilities.}\par
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		Head & Body & Arms & Legs\\
+		\hline
+		16 & 22 & 20 & 20\\
+		\hline
+	\end{tabular}
+	\par
+	Movement Speed: 0\\
+	Strength / Agility: 20\\
+	Mods: 4\\
+	Weight: 300kg\\
+	Further Modifiers:
+	\vspace{-8mm}
+	\begin{itemize}
+		\setlength\itemsep{-8mm}
+		\item Intercom
+		\item Vitals monitor
+		\item HUD
+		\item Final Hour chip
+	\end{itemize}
+	\par
+	\subsection{Mars}
+	\textit{A CQC type platform sporting increased mobility but reduced leg protection and many slots to integrate weaponry.}\par
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		Head & Body & Arms & Legs\\
+		\hline
+		16 & 22 & 20 & 16\\
+		\hline
+	\end{tabular}
+	\par
+	Movement Speed: 1\\
+	Strength / Agility: 20\\
+	Mods: 6\\
+	Weight: 300kg\\
+	Further Modifiers:
+	\vspace{-8mm}
+	\begin{itemize}
+		\setlength\itemsep{-8mm}
+		\item 2 armor mod points can only be used for integrated weaponry
+		\item cannot be fitted with ranged modules
+	\end{itemize}
+	\par
+	\subsection{Vulcanus}
+	\textit{Tough firesupport platform including additional armoring in its front and powerful stabilizers that allow the use of high caliber, rapid fire ranged weaponry. Its high weight, low mobility and low adaptability with respect to the tight spaces of most AOs today make this type a rare choice.}\par
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		Head & Body & Arms & Legs\\
+		\hline
+		22 & 22 & 26 & 26\\
+		\hline
+	\end{tabular}
+	\par
+	Movement Speed: -2\\
+	Strength / Agility: 20\\
+	Mods: 3\\
+	Weight: 660kg\\
+	Further Modifiers:
+	\vspace{-8mm}
+	\begin{itemize}
+		\setlength\itemsep{-8mm}
+		\item 6 armor to front
+		\item increases size by 1
+		\item use any infantry weapon one-handed without penalty (aside from bows, as the body does not work that way)
+		\item use heavy weapons two-handed, always counting as braced
+	\end{itemize}
+	\par
+	\subsection{Minerva}
+	\textit{A type of reconnaissance platform that is fitted with short range lifeform scanners and interface components for all common wired and wireless networks. Highly customizable.}\par
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		Head & Body & Arms & Legs\\
+		\hline
+		16 & 22 & 20 & 20\\
+		\hline
+	\end{tabular}
+	\par
+	Movement Speed: 0\\
+	Strength / Agility: 20\\
+	Mods: 6\\
+	Weight: 300kg\\
+	Further Modifiers:
+	\vspace{-8mm}
+	\begin{itemize}
+		\setlength\itemsep{-8mm}
+		\item modular interface device: connect to basically any device and network
+		\item 20m life form scanner, pierces 30 armor worth of cover
+	\end{itemize}
+	\par
+	\subsection{Diana}
+	\textit{A direct sucessor to the original series of strike suits made for long range assassination, wetwork and sabotage. It comes with an advanced HUD and target acquisition by default and additionally is the most adaptable of all series.}\par
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		Head & Body & Arms & Legs\\
+		\hline
+		12 & 18 & 16 & 16\\
+		\hline
+	\end{tabular}
+	\par
+	Movement Speed: 0\\
+	Strength / Agility: 20\\
+	Mods: 8\\
+	Weight: 300kg\\
+	Further Modifiers:
+	\vspace{-8mm}
+	\begin{itemize}
+		\setlength\itemsep{-8mm}
+		\item 20 to tracking targets you have data on
+		\item 10 to called shots (min +0)
+	\end{itemize}
+	\par
+	\subsection{Mercury}
+	\textit{An experimental platform with vastly inferior armor but integrated jet boosters to allow for improved movement options in hit-and-run missions.}\par
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		Head & Body & Arms & Legs\\
+		\hline
+		8 & 14 & 12 & 12\\
+		\hline
+	\end{tabular}
+	\par
+	Movement Speed: 1\\
+	Strength / Agility: 20\\
+	Mods: 4\\
+	Weight: 300kg\\
+	Further Modifiers:
+	\vspace{-8mm}
+	\begin{itemize}
+		\setlength\itemsep{-8mm}
+		\item when taking a dodge reaction, the user may move up to 5 meters
+		\item As an action the user may triple movement speed, jump height or leap distance. He may do so every other turn while in an atmosphere that contains oxygen and argon, otherwise he can do it once.
+	\end{itemize}
+	\par
+	\subsection{Venus}
+	\textit{The most lightweight strike suit series, sometimes not even recognisable as power armor depending on its specific design. It was built for unseen infiltration but is sometimes overshadowed by Minerva series platforms, due to the inbuilt connection systems.}\par
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		Head & Body & Arms & Legs\\
+		\hline
+		6 & 12 & 10 & 10\\
+		\hline
+	\end{tabular}
+	\par
+	Movement Speed: 1\\
+	Strength / Agility: 20\\
+	Mods: 5\\
+	Weight: 180kg\\
+	Further Modifiers:
+	\vspace{-8mm}
+	\begin{itemize}
+		\setlength\itemsep{-8mm}
+		\item sensory filters grant +20 to hearing tests
+		\item Inbuilt dampeners help with moving silently. The wearer counts as being barefoot when sneaking.
+		\item contains photoreactive panels that bend the light around the armor; grants +15 to tests made to hide
+		\item if the wearer has a close range holoprojector, it is not inhibited by this armor
+	\end{itemize}
+	\par
+	\subsection{Jupiter}
+	\textit{A platform built for CBRN operation and extremely dense magnetic fields. It is nigh immune to EMPs and has the best redundancies of all strike suits.}\par
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		Head & Body & Arms & Legs\\
+		\hline
+		16 & 22 & 20 & 20\\
+		\hline
+	\end{tabular}
+	\par
+	Movement Speed: 0\\
+	Strength / Agility: 20\\
+	Mods: 4\\
+	Weight: 300kg\\
+	Further Modifiers:
+	\vspace{-8mm}
+	\begin{itemize}
+		\setlength\itemsep{-8mm}
+		\item CBRN Unit
+		\item Faraday Cage with triple effectiveness
+		\item vac-seal
+	\end{itemize}
+	\par
+	
+	\section{Variant}
+\end{document}
