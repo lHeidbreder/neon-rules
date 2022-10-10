@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper]{book}
+\documentclass[12pt,a4paper,openany]{book}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{textcomp}
@@ -86,8 +86,8 @@
 \newcommand{\meleecomponent}[6]{
 	\textbf{\ul{#1}}:\\
 	#2\\
-	#4; #5\ifthenelse{\isempty{#6}}{}{; #6}\\
-	#3
+	\textit{Weight}: #4; \textit{Price}: #5\ifthenelse{\isempty{#6}}{}{; \textit{Requirement}: #6}\\
+	\textit{Effect:} #3
 	\par
 }
 
@@ -531,10 +531,9 @@
 		\item Does the character have a dark secret?
 		\item What character traits define the character?
 	\end{enumerate}
-	\section{Race}
-	*TODO: add ref*
-	\section{Background}
-	*TODO: add ref*
+	\section{Race \& Background}
+	Player characters are not the average Joe; they are heroes, villains, the protagonists of their story. However before they became these prodigies, they had to have done something, been someone. This is represented by race and background, the first step of character creation, which every character needs to have.\\
+	Races and backgrounds have an associated GP cost and grant various bonuses and some penalties. Comprehensive lists can be found in sections \ref{sec:racelist} and \ref{sec:backgroundlist}.
 	\section{Characteristics}
 	GP can be spent to increase characteristics. Every characteristic can receive up to 25 points and up to 100 can be spent on characteristics overall but they don’t have to be exhausted.
 	\section{Boons \& banes}
@@ -740,6 +739,7 @@
 	\section{Services}
 	\section{Ranged}
 	\subsection{Weapons}
+	*TODO*
 	\subsubsection{Pistols}
 	\subsubsection{Short Rifle}
 	\subsubsection{Long Rifle}
@@ -852,6 +852,7 @@
 		Armor: 15 / Threshhold: 9}{Core}{cr 180}{3,800 kg}
 
 	\subsection{Ammunition}
+	*TODO*
 %	Pistols
 	\subsubsection{7.2mm}
 	\subsubsection{11.8x45mm}
@@ -888,8 +889,8 @@
 	
 %	\pagebreak
 	\section{Melee}
-	\subsection{System explanation}
-	Melee weapons are not set in stone but created from various components.\\
+	\subsection{Building \emph{your} weapon}
+	Melee weapons are not set in stone but created from various components, allowing for ideal customization.\\
 	A melee weapon needs a grip. Swords, knives and whips have \emph{hilts}, while hammers, axes and spears have \emph{shafts}.\\
 	The weapon point is the second component. Swords, knives and spears have \emph{blades}; axes and hammers have \emph{heads} and \emph{whips} have their own category.\\
 	Lastly every melee weapon may also have a \emph{core} component. These are not required but add additional functionality to the weapon.
@@ -929,12 +930,12 @@
 	\meleecomponent{Cup holder}{A cup holder for your weapon. Why? No reason, really.}{Adds a cup holder}{0,1 kg}{cr 2}{}
 	\meleecomponent{Bipod}{Legend has it that bipods on knives allow stabbing helicopters to death.}{+2 to intimidation if the weapon is visible}{0,8 kg}{cr 6}{}
 	\meleecomponent{Dripper}{Stiletto knives delivering toxins are as infamous as they are rare. However some shady individuals do use such weaponry.}{Adds an injector to the weapon the applies a prepared dose of an injection type chemical to the target on hit.}{0,7 kg}{cr 14}{Blade}
-	\meleecomponent{Shockwire}{An energy source is added inside the weapon, electrifying it. On an already electrical weapon it is possible to direct the electrical field in a manner that will disrupt energy shielding.}{Shocking; If the weapon is already Shocking, it gains Disrupt.}{0,8 kg}{cr 22}{}
+	\meleecomponent{Shock Wire}{An energy source is added inside the weapon, electrifying it. On an already electrical weapon it is possible to direct the electrical field in a manner that will disrupt energy shielding.}{Shocking; If the weapon is already Shocking, it gains Disrupt.}{0,8 kg}{cr 22}{}
 	\meleecomponent{EMP field}{Coils within the weapon emit an electromagnetic field strong enough to interrupt electronic devices.}{EMP}{0,8 kg}{cr 22}{}
-	\meleecomponent{Shotgun}{A single shot 12gauge launcher attached to a hammerhead. It might as well be an improvised explosive device and is as dangerous for the target as for the user and weapon.}{Add a single-shot shotgun to the head, increasing damage by 2D10 for one hit. Takes 5 actions to reload.}{0,6 kg}{cr 23}{Head}
-	\meleecomponent{Ripper Field Generator}{Lovingly dubbed "Ripper Field" by mobsters, this projected force field tears at otherwise stable matter, making it very easy to cut through armor. The field itself is not very stable however and can only be kept alive for a few seconds.}{When activated as a free action, the weapon gains +5 AP for 4 rounds. Takes a small fuel cell and 8 actions to recharge.}{0,8 kg}{cr 28}{}
-	\meleecomponent{IED}{An IED on a stick. Quite dangerous, quite destructive.}{Improvised; An attack causes an explosion equal to a 40mm HE grenade, generally destroying the weapon.}{0,2 kg}{cr 30}{}
-	\meleecomponent{Rocket booster}{Everyone understands that a faster weapon point is more destructive. Since too high speeds make edge alignment and controlling the weapon one-handed nearly impossible, it's only safe to use on large blunt weapons.}{Allows the wielder to forego a second action to gain D10 additional damage.}{1,1 kg}{cr 32}{Two-handed; head}
+	\meleecomponent{Shotgun}{A single shot 12gauge launcher attached to a hammerhead. It might as well be an improvised explosive device and is as dangerous for the target as for the user and weapon.}{Add a single-shot shotgun to the head, increasing damage by 2D10 for one hit. That hit can only be a single or sure strike. Takes 5 actions to reload.}{0,6 kg}{cr 23}{Hammer}
+	\meleecomponent{Ripper Field Generator}{Lovingly dubbed "Ripper Field" by mobsters, this projected force field tears at otherwise stable matter, making it very easy to cut through tough material. The field itself is not very stable however and can only be kept alive for a few seconds.}{When activated as a free action, the weapon gains +4 AP for 4 rounds. Takes a small fuel cell and 8 actions to recharge.}{0,8 kg}{cr 28}{Blade}
+	\meleecomponent{IED}{An IED on a stick, what do you expect? Quite dangerous, quite destructive.}{Improvised; An attack causes an explosion equal to a 40mm HE grenade, generally destroying the weapon.}{0,2 kg}{cr 30}{}
+	\meleecomponent{Rocket booster}{Everyone understands that a faster weapon point is more destructive. Since too high speeds make edge alignment and controlling the weapon one-handed nearly impossible, it's only safe to use on large blunt weapons.}{Allows the wielder to forego a second action to gain D10 additional damage.}{1,1 kg}{cr 32}{Two-handed axe or hammer}
 	
 	\section{Armor}
 	\subsection{Casual wear}
@@ -1152,7 +1153,734 @@
 	\maneuver{Takedown}{100}{Maneuver: Feint, Agility or Strength 40}
 	
 	\section{Races}
+	\label{sec:racelist}
+	\paragraph*{Pure (0 GP)}
+	\textit{Earth's standard human. Comes in all shapes and sizes.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		25 & 25 & 25 & 25 & 25 & 25 & 25 & 25 \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} \\
+	\textbf{Abilities:} \\
+	\textbf{Boons:} \\
+	\textbf{Banes:} \\
+	\textbf{Usual Backgrounds:} Any\\
+	\textbf{Disallowed Backgrounds:} 
+	
+	\hrulefill
+	\paragraph*{Trans-species / Avian (3 GP)}
+	\textit{A human that has undergone surgery and gene therapy to attain some bird-like features. Generally that is good eyesight but it might also encompass a feather coat.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		22 & 22 & 35 & 22 & 22 & 30 & 22 & 22 \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} Perception +1,	Survival +1\\
+	\textbf{Abilities:} \\
+	\textbf{Boons:} Nimble,	Outstanding sense (sight)\\
+	\textbf{Banes:} Second-class citizen\\
+	\textbf{Usual Backgrounds:} Courier, Driver, Gambler, Laborer, Performer, Wastelander\\
+	\textbf{Disallowed Backgrounds:} Academic, Shark, Soldier
+	
+	\hrulefill
+	\paragraph*{Trans-species / Canine (1 GP)}
+	\textit{A human that through gene therapy and surgery has attained dog-like features. These are cosmetic changes and an outstanding sense of smell.\\
+	These types of people are generally more obedient after their transformation. Due to this and their sharp senses, they are often employed by private investigators.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		25 & 22 & 35 & 30 & 20 & 25 & 20 & 22 \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} Perception +2\\
+	\textbf{Abilities:} \\
+	\textbf{Boons:} Outstanding sense (smell)\\
+	\textbf{Banes:} Second-class citizen, Slave mentality 20\\
+	\textbf{Usual Backgrounds:} Gambler, Investigator, Laborer, Performer, Wastelander\\
+	\textbf{Disallowed Backgrounds:} Academic, Shark, Soldier
+	
+	\hrulefill
+	\paragraph*{Trans-species / Castorimorpha (3 GP)}
+	\textit{A human that through gene therapy and surgery has attained beaver-like features. These are some cosmetic changes, an affinity for swimming and a more agile but weaker body.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		22 & 25 & 30 & 25 & 20 & 30 & 25 & 22 \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} Swimming +1\\
+	\textbf{Abilities:} \\
+	\textbf{Boons:} Diver's Lung, Nimble\\
+	\textbf{Banes:} Second-class citizen\\
+	\textbf{Usual Backgrounds:} Laborer, Performer, Wastelander\\
+	\textbf{Disallowed Backgrounds:} Academic, Shark, Soldier
+	
+	\hrulefill
+	\paragraph*{Trans-species / Elf (0 GP)}
+	\textit{Among all trans-species transformations this is by far the most expensive and complicated, due to how difficult creating the necessary material is. However due to the very fine process, some who undergo the procedure keep just a small part of their fertility.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		22 & 25 & 28 & 25 & 25 & 28 & 20 & 20 \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} Acrobatics +1, Appeal +1\\
+	\textbf{Abilities:} \\
+	\textbf{Boons:} one Outstanding Sense, Looker\\
+	\textbf{Banes:} \\
+	\textbf{Usual Backgrounds:} Escort, Laborer, Performer, Wastelander\\
+	\textbf{Disallowed Backgrounds:} Academic, Shark, Soldier
+	
+	\hrulefill
+	\paragraph*{Trans-species / Feline (6 GP)}
+	\textit{The oldest form of trans-species humans, someone that has undergone gene therapy to attain some cat-like features. They come to see very well in the dark and gain a superior sense of balance.\\
+	However they also become playful and particularly dislike hard or dirty work, which is why of all trans-humans they are likely the most trafficked, usually just as status symbols.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		20 & 25 & 35 & 25 & 25 & 30 & 22 & 20 \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} Acrobatics +1\\
+	\textbf{Abilities:} \\
+	\textbf{Boons:} Balance, Dark Vision\\
+	\textbf{Banes:} Second-class citizen, Vanity 20\\
+	\textbf{Usual Backgrounds:} Escort, Laborer, Performer, Wastelander\\
+	\textbf{Disallowed Backgrounds:} Academic, Shark, Soldier
+	
+	\hrulefill
+	\paragraph*{Trans-species / Piscean (3 GP)}
+	\textit{By far the rarest form of trans-species humans, these people have acquired some fish-like attributes. The skin is covered in scales, the breathing can partially be substituted by gills.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		22 & 22 & 30 & 22 & 22 & 30 & 22 & 22 \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} Perception +1, Swimming +2\\
+	\textbf{Abilities:} \\
+	\textbf{Boons:} Dark Vision, Diver's Lung, Natural Armor 2\\
+	\textbf{Banes:} Second-class citizen\\
+	\textbf{Usual Backgrounds:} Gambler, Laborer, Performer, Wastelander\\
+	\textbf{Disallowed Backgrounds:} Academic, Soldier
+	
+	\hrulefill
+	\paragraph*{Trans-species / Reptilian (1 GP)}
+	\textit{Sometimes regarded as the odd one out even among trans-species, these people chose to gain reptilian qualities like scales, an inclination to climb and even higher reflexes than other trans-humans.
+		While other trans-species might pass as some sort of costume, these changes are absolutely unmistakable.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		22 & 22 & 38 & 20 & 20 & 25 & 25 & 20 \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} Climbing +1, Perception +1\\
+	\textbf{Abilities:} Overly cautious\\
+	\textbf{Boons:} Natural Armor 4\\
+	\textbf{Banes:} Second-class citizen, Impaired Sense (Touch)\\
+	\textbf{Usual Backgrounds:} Gambler, Laborer, Performer, Wastelander\\
+	\textbf{Disallowed Backgrounds:} Academic, Shark, Soldier
+	
+	\hrulefill
+	\paragraph*{Trans-species / Ungulate (0 GP)}
+	\textit{Through gene therapy and surgery this person has taken on cow-like features. Most of the changes are of cosmetic nature, but most of them are tougher than the average human.\\
+	Likely for both of those reasons these people are often employed as cheap workforce for dangerous, exhausting jobs.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		22 & 22 & 30 & 22 & 22 & 22 & 30 & 28 \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} Perception +1\\
+	\textbf{Abilities:} \\
+	\textbf{Boons:} Poisonresistance\\
+	\textbf{Banes:} Second-class citizen\\
+	\textbf{Usual Backgrounds:} Gambler, Laborer, Performer, Wastelander\\
+	\textbf{Disallowed Backgrounds:} Academic, Shark, Soldier
+	
+	\hrulefill
+	\paragraph*{Trans-species / Generic (1 GP)}
+	\textit{Trans-species humans have changed their bodies to resemble a humanoid version of some animal. Roughly every decade a new wave of trans-species humans rises in popculture, looked upon suspiciously from all those that are not part of the movement themselves.\\
+	These changes come with qualities and drawbacks related to the animal in question, as well as general physical weakening and sterility.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		22 & 22 & 36 & 22 & 22 & 22 & 22 & 22 \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} one except instinct +5\\
+	\textbf{Skills:} Perception +2\\
+	\textbf{Abilities:} \\
+	\textbf{Boons:} Big Spender 2, Outstanding sense (any one)\\
+	\textbf{Banes:} Second-class citizen\\
+	\textbf{Usual Backgrounds:} Gambler, Laborer, Performer, Wastelander\\
+	\textbf{Disallowed Backgrounds:} Academic, Shark, Soldier
+	
+	\hrulefill
+	\paragraph*{Vat-grown / Adaptive (26 GP)}
+	\textit{Artificially grown, these humans are created to serve a single person or institution for generally a single purpose. They are superior to normal humans in almost every way, except they usually intentionally lack some creative thought and can't reproduce due to how unique their genetic material is.\\
+	They don't strive to raise in social classes or to improve their living situation much due to inbuilt programming and are very obedient unless their master wishes specifically for creative thought.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		28 & 28 & 28 & 28 & 28 & 28 & 28 & 28 \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} +4 to any two\\
+	\textbf{Skills:} \\
+	\textbf{Abilities:} \\
+	\textbf{Boons:} 3 levels between: Adaptable Circulation, Nerves of Steel\\
+	\textbf{Banes:} Slave Mentality 25\\
+	\textbf{Usual Backgrounds:} \\
+	\textbf{Disallowed Backgrounds:} Orphan, Shark
+	
+	\hrulefill
+	\paragraph*{Vat-grown / Biocomputer (24 GP)}
+	\textit{Created with incredible intelligence they are grown to serve as generals, advisers and assistants. The only limit to their incredible intellect is usually jokes.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		30 & 40 & 30 & 25 & 25 & 25 & 25 & 25 \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} two educations +2
+	one education +1\\
+	\textbf{Abilities:} \\
+	\textbf{Boons:} \\
+	\textbf{Banes:} Slave Mentality 25\\
+	\textbf{Usual Backgrounds:} Academic, Hacker\\
+	\textbf{Disallowed Backgrounds:} Orphan, Shark
+	
+	\hrulefill
+	\paragraph*{Vat-grown / Crafter (27 GP)}
+	\textit{Blessed with incredible dexterity, they are created to create. The basic muscle memory to build a certain thing is engrained during the building process and they have an easy time learning more craftsmanship.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		25 & 30 & 30 & 25 & 40 & 25 & 25 & 30 \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} +2 on one of: Chemistry, Construction, Mechanics, Medication, Security, Smithing\\
+	\textbf{Abilities:} \\
+	\textbf{Boons:} Outstanding Sense (Touch)\\
+	\textbf{Banes:} Slave Mentality 25\\
+	\textbf{Usual Backgrounds:} Academic, Doctor, Engineer, Fixer, Laborer\\
+	\textbf{Disallowed Backgrounds:} Orphan, Shark
+	
+	\hrulefill
+	\paragraph*{Vat-grown / Social (26 GP)}
+	\textit{Built for any type of social role, these specimen are generally ordered by members of high society to fulfill a certain job, be it as an escort, as a salesperson or as some sort of investigator.\\
+	Since those jobs can be fulfilled sufficiently by normal humans and growing people is not cheap, these types are rare.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		30 & 30 & 30 & 40 & 25 & 25 & 25 & 25 \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} +1 to: Appeal and Deceive OR Command and Intimidate OR Commerce and Estimate\\
+	\textbf{Abilities:} \\
+	\textbf{Boons:} Smoking OR Social Chameleon\\
+	\textbf{Banes:} Slave Mentality 25
+	Vanity 30\\
+	\textbf{Usual Backgrounds:} Escort, Fence, Investigator, Performer\\
+	\textbf{Disallowed Backgrounds:} Orphan, Shark
+	
+	\hrulefill
+	\paragraph*{Vat-grown / Warrior (30 GP)}
+	\textit{The most common vat-grown human. The fight against terrorists for governments, against governments for insurgents or against whoever pays the least, but they are also employed as high-society bouncers and bodyguards.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		35 & 20 & 25 & 20 & 20 & 30 & 35 & 35 \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} Con or Str +8\\
+	\textbf{Skills:} Melee Combat Training (Striking or Grappling) +1
+	Security +1\\
+	\textbf{Abilities:} \\
+	\textbf{Boons:} Two of: Combat Academic, Iron Resilience, Stoic, Tough as nails\\
+	\textbf{Banes:} Slave Mentality 30\\
+	\textbf{Usual Backgrounds:} Bodyguard, Bouncer, Mercenary, Soldier, Terrorist\\
+	\textbf{Disallowed Backgrounds:} Orphan, Shark
 	\section{Backgrounds}
+	\label{sec:backgroundlist}
+	\paragraph*{Academic (9 GP)}
+	\textit{Formerly educated in a single or many different things this character mainly knows a lot of things but might lack in the necessary skills to apply them properly.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		& 5 &  &  &  &  &  &  \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} +6, maximum of +2 across: Chemistry, Computer Operation, Cryptography, Herbalism, History, Law, Mechanics, Medication, Philosophy, Smithing, Stories, Zoology;
+	one Education +2
+	one Education +1\\
+	\textbf{Abilities:} Natural Geek\\
+	\textbf{Boons:} \\
+	\textbf{Banes:} \\
+	
+	\hrulefill
+	\paragraph*{Bodyguard (7 GP)}
+	\textit{Sworn to protect this character is versed in how to identify and eliminate threats to another person.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		5 &  &  &  &  &  &  &  \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} Ranged Combat Training (Pistol or Short rifle) +2
+	One armed Melee Combat Training +2
+	Combat Training (Striking or Grappling) +1
+	Perception +1
+	One Drive +2
+	a fitting Navigation +2\\
+	\textbf{Abilities:} \\
+	\textbf{Boons:} \\
+	\textbf{Banes:} \\
+	
+	\hrulefill
+	\paragraph*{Bouncer (1 GP)}
+	\textit{This character was employed to stop intrusions. Usually this happens rather peacefully but if necessary this might include force as well.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		&  &  &  &  &  &  &  \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} Combat Training (Striking AND Grappling) +2
+	Intimidate +2
+	Interrogation +1
+	Restraint +1\\
+	\textbf{Abilities:} \\
+	\textbf{Boons:} \\
+	\textbf{Banes:} \\
+	
+	\hrulefill
+	\paragraph*{Child Soldier (15 GP)}
+	\textit{Naturally born children are far cheaper than vatgrown soldiers but, if trained correctly, can be just as effective. These children are raised mentally scarred but very efficient and disciplined killing machines.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		2 &  & 2 & -5 & 2 & 2 & 2 & 2 \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} Command +1
+	Ranged Combat Training (Pistol and two others) +2
+	Melee Combat Training (Any one) +2
+	Melee Combat Training (Another unarmed) +1
+	Security +2\\
+	\textbf{Abilities:} Broken\\
+	\textbf{Boons:} Tough as nails\\
+	\textbf{Banes:} Ignorant (Horrors of war) 40\\
+	
+	\hrulefill
+	\paragraph*{Courier (8 GP)}
+	\textit{Delivering packages in the darker parts can be easier said than done. It takes precision, cunning and obviously a fit pair of legs. Such a character knows the darkest secrets of his city and those secrets are safe with him.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		&  &  &  &  & 5 &  &  \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} Athletics +2
+	Climbing +2
+	Deceive +1
+	One Drive or Pilot +2
+	Sleight of hand +1
+	Stealth +1\\
+	\textbf{Abilities:} Flip Up\\
+	\textbf{Boons:} \\
+	\textbf{Banes:} \\
+	
+	\hrulefill
+	\paragraph*{Doctor (7 GP)}
+	\textit{A medical professional is always welcome. He has learned not just first aid but may also be capable of performing surgery.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		& 5 &  &  &  &  &  &  \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} Appeal +1
+	Medication +3
+	Perception +1
+	Restraint +2\\
+	\textbf{Abilities:} Stabilization\\
+	\textbf{Boons:} \\
+	\textbf{Banes:} \\
+	
+	\hrulefill
+	\paragraph*{Driver (8 GP)}
+	\textit{Professionally trained in the art of moving a vehicle. She keeps her calm in stressful situations and gets her contractor from point A to B safely.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		&  & 5 &  &  &  &  &  \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} One Drive +2
+	One Drive or Pilot +3
+	One fitting Navigation +2
+	Restraint +2\\
+	\textbf{Abilities:} \\
+	\textbf{Boons:} \\
+	\textbf{Banes:} \\
+	
+	\hrulefill
+	\paragraph*{Engineer (0 GP)}
+	\textit{Constructing buildings is incredibly important, people who understand how to are vital to society.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		&  &  &  &  &  &  &  \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} Computer Operation +1
+	Construction +3
+	Mechanics +2\\
+	\textbf{Abilities:} \\
+	\textbf{Boons:} \\
+	\textbf{Banes:} \\
+	
+	\hrulefill
+	\paragraph*{Escort (4 GP)}
+	\textit{Capable of talking through almost every situation and usually chosen for their looks, such people managed to turn their bodies and tongues into money.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		&  &  & 5 &  &  &  &  \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} Appeal +2
+	Deceive +1
+	Interrogation +1
+	Quaffing +1
+	Restraint +2
+	Sleight of hand +1\\
+	\textbf{Abilities:} \\
+	\textbf{Boons:} \\
+	\textbf{Banes:} \\
+	
+	\hrulefill
+	\paragraph*{Fence (2 GP)}
+	\textit{Stolen goods are not terribly uncommon, one just needs to know where to sell them to. Some of those fences are even capable of stealing their own goods.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		&  &  &  &  &  &  &  \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} Commerce +3
+	Deceive +2
+	Sleight of hand +1
+	Stealth +1\\
+	\textbf{Abilities:} \\
+	\textbf{Boons:} Good Reputation 2\\
+	\textbf{Banes:} \\
+	
+	\hrulefill
+	\paragraph*{Fixer (4 GP)}
+	\textit{There are a lot of people dependent on drugs, be it Flow addicted members of illegal fight clubs, corporate hackers working under Speed influence or young couples experimenting with Raze, someone has to make their substances. These people know how to make it and know what it does to one's body, in the short as well as long term. Whether they care is an individual question.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		&  &  &  &  &  &  &  \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} Appeal +1
+	Brewing +1
+	Chemistry +3
+	Commerce +2
+	Stealth +1
+	Medication +2\\
+	\textbf{Abilities:} \\
+	\textbf{Boons:} \\
+	\textbf{Banes:} \\
+	
+	\hrulefill
+	\paragraph*{Gambler (2 GP)}
+	\textit{Somehow Lady Fortuna is with this one and he made his money by gambling. In many cases such players are accused of cheating, sometimes banned from their dens and other times wanted by crime families.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		&  &  &  &  &  &  &  \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} Gambling +3
+	Interrogation +2\\
+	\textbf{Abilities:} \\
+	\textbf{Boons:} Fortune's Child\\
+	\textbf{Banes:} Debt (2000cr)\\
+	
+	\hrulefill
+	\paragraph*{Hacker - Black Hat (1 GP)}
+	\textit{Corporate hacking, blackmailing or juvenile curiosity and too much contact with cyberspace can lead someone to become a black hat. Their acts are malicious and their allegiance lies with money. More often than not they are in the process of fleeing from authorities or corporations.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		&  &  &  &  &  &  &  \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} Commerce +1
+	Computer Operation +3
+	Security +1
+	Stealth +2\\
+	\textbf{Abilities:} \\
+	\textbf{Boons:} \\
+	\textbf{Banes:} \\
+	
+	\hrulefill
+	\paragraph*{Hacker - White Hat (0 GP)}
+	\textit{As opposed to black hats, white hats are trying to find weaknesses in systems so they can fix them. Their actions are generally benevolent in nature but they also rarely work unpaid.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		&  &  &  &  &  &  &  \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} Computer Operation +3
+	Law or Security +2
+	the other +1\\
+	\textbf{Abilities:} \\
+	\textbf{Boons:} \\
+	\textbf{Banes:} \\
+	
+	\hrulefill
+	\paragraph*{Investigator (4 GP)}
+	\textit{Be it private investigators or police officials, many unsolved cases drift through any city's archive. Some investigators are interested in these old, unsolved cases, others are commited to reducing the amount of new ones.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		&  &  &  &  &  &  &  \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} Interrogation +2
+	Perception +2
+	Law +2
+	Security +2\\
+	\textbf{Abilities:} Overly Cautious\\
+	\textbf{Boons:} \\
+	\textbf{Banes:} \\
+	
+	\hrulefill
+	\paragraph*{Laborer (1 GP)}
+	\textit{A lot of work can be taken over by machines. Yet sometimes a machine can't be used or is simply more expensive than a low wage laborer or a slave. This usage of human resources is not officially endorsed and even technically illegal, yet when a contract is formed (or forged...), the endeavour might be considered legitimate.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		&  &  &  &  &  &  &  \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} Athletics +2
+	Medication +1
+	Navigation (Ground) +1
+	Restraint +2
+	Survival +2\\
+	\textbf{Abilities:} \\
+	\textbf{Boons:} \\
+	\textbf{Banes:} \\
+	
+	\hrulefill
+	\paragraph*{Mercenary (2 GP)}
+	\textit{Born for fighting and fighting for pay; the core principles of mercenaries haven't changed. Loyalty belongs to the first or highest bidder and as long as the price fits, the dirty work will be taken care of.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		&  &  &  &  &  &  &  \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} Intimidation +1
+	Ranged Combat Training (Pistol and one other) +2
+	Melee Combat Training (Any one) +1
+	Security +2\\
+	\textbf{Abilities:} \\
+	\textbf{Boons:} Stoic or Tough as nails\\
+	\textbf{Banes:} Bound by duty or Wanted II\\
+	
+	\hrulefill
+	\paragraph*{Performer (5 GP)}
+	\textit{Performers are paid to sing, dance, balance and whatever might be entertaining to watch or listen to. Payment is usually slim or depending on the circumstances as simple as continuing to live.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		&  &  & 3 &  & 3 &  &  \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} Acrobatics +2
+	Appeal +1
+	Athletics +1
+	Education: Etiquette +2
+	Voice Athlete +2\\
+	\textbf{Abilities:} \\
+	\textbf{Boons:} \\
+	\textbf{Banes:} \\
+	
+	\hrulefill
+	\paragraph*{Shark (0 GP)}
+	\textit{Some people have enough money to make more money by loaning money and having it paid back at ludicrous interest rates. These people are usually versed in all forms of trade and bending the law.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		&  &  &  &  &  &  &  \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} Commerce +3
+	Intimidation +1
+	Law +2\\
+	\textbf{Abilities:} \\
+	\textbf{Boons:} \\
+	\textbf{Banes:} \\
+	
+	\hrulefill
+	\paragraph*{Soldier (3 GP)}
+	\textit{Harsh training and incredible equipment make them a force to be reckoned with. Most are only employed to defend borders but the best of them are chosen to sabotage terrorists, either by infiltration or via an orbital drop in a strike suit.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		&  &  &  &  &  &  &  \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} Command +2
+	Ranged Combat Training (Pistol and one other) +2
+	Melee Combat Training (Any one and another unarmed) +1
+	Security +2\\
+	\textbf{Abilities:} \\
+	\textbf{Boons:} Stoic or Tough as nails\\
+	\textbf{Banes:} Belief in authority 30
+	Bound by duty\\
+	
+	\hrulefill
+	\paragraph*{Terrorist (3 GP)}
+	\textit{There are many reasons to be unhappy with the country's situation but only few take such radical measures. These people have reached the point of either complete devotion to a cause and an according enemy or of having absolutely nothing to lose anymore.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		&  &  &  &  &  &  &  \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} Chemistry or Construction +2
+	Deceive +1
+	History or Philosophy +2
+	Melee Combat Training (Any one) +1
+	Ranged Combat Training (Any one) +1
+	Security +1\\
+	\textbf{Abilities:} \\
+	\textbf{Boons:} Social Chameleon\\
+	\textbf{Banes:} Rebel 30\\
+	
+	\hrulefill
+	\paragraph*{Trafficker (3 GP)}
+	\textit{Anything can be traded, so long as you aren't caught. A particularily hot good is giving the term "human ressources" a new meaning. People like this are cunning, cold and the toughest tradesmen.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		&  &  &  &  &  &  &  \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} Appeal +1
+	Commerce +2
+	Deceive +2
+	Intimidation +1
+	Security +1\\
+	\textbf{Abilities:} Broken\\
+	\textbf{Boons:} \\
+	\textbf{Banes:}
+	
+	\hrulefill
+	\paragraph*{Urchin (0 GP)}
+	\textit{A child that lost its guardians and maybe its living place very early in life needs to learn a lot of things in a short amount of time in order to survive. There is not much time for youth nor slacking off and it will understand that acting slowly is very dangerous.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		&  &  &  &  &  &  &  \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} Appeal +1
+	Athletics +1
+	Climbing +1
+	Deceive +1
+	Dodge +1
+	Perception +1
+	Restraint +1
+	Sleight of hand +1
+	Stealth +1
+	Survival +1\\
+	\textbf{Abilities:} \\
+	\textbf{Boons:} \\
+	\textbf{Banes:} \\
+	
+	\hrulefill
+	\paragraph*{E-Girl (5 GP)}
+	\textit{}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		&  &  & 5 &  &  &  &  \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} Appeal +2
+	Deceive +1
+	Commerce +2
+	Stories +1
+	Voice Athlete +2\\
+	\textbf{Abilities:} \\
+	\textbf{Boons:} \\
+	\textbf{Banes:} \\
+	
+	\hrulefill
+	\paragraph*{Wastelander (1 GP)}
+	\textit{Not everyone grows up in flashing cities. Many people grow up in the far outskirts, places where barely anything grows and that are by their very existence hostile towards life, yet somehow small communities arise in them again and again. 
+		Growing up in such places takes a toll on someone and it requires quickly learning a very particular set of skills.}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		&  &  &  &  &  &  &  \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} Cooking +2
+	Perception +2
+	Survival +2\\
+	\textbf{Abilities:} Trained sense (any one)\\
+	\textbf{Boons:} \\
+	\textbf{Banes:} \\
+	
+	\hrulefill
+	\paragraph*{Technician (8 GP)}
+	\textit{}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		& 3 &  &  & 3 &  &  &  \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} Computer Operation +2
+	Construction +1
+	Mechanics +3
+	Perception +1
+	Security +1
+	two Educations +1\\
+	\textbf{Abilities:} \\
+	\textbf{Boons:} \\
+	\textbf{Banes:} \\
+	
+	\hrulefill
+	\paragraph*{Street Fighter (8 GP)}
+	\textit{}\par
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
+		&  &  &  &  &  & 3 & 3 \\ \hline
+	\end{tabular}\par
+	\noindent\textbf{Other modifiers:} \\
+	\textbf{Skills:} One armed Melee Combat Training +2
+	Melee Combat Training (Striking or Grappling) +2
+	Melee Combat Training (the other) +1
+	Restraint +2\\
+	\textbf{Abilities:} Melee Maneuvers worth 400 XP\\
+	\textbf{Boons:} \\
+	\textbf{Banes:} \\
+	
+	
 	\section{Boons}
 	\boon[each]{Adaptable Circulation}{Medical Toughness is increased by 1. Can be taken multiple times.}{2}
 	\boon{Ambidextrous}{The character can use either hand equally good. Dual Wielding and Maneuver: Flurry only cost half. When combined with Dual Wielding, removes penalties for dual wielding melee weapons and pistols completely.}{12}
