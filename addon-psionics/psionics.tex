@@ -1,0 +1,319 @@
+\documentclass[12pt,a4paper,openany]{book}
+
+\input{../core-rulebook/config/news.tex}
+\input{../core-rulebook/config/packages.tex}
+
+\title{Neon Pen and Paper - Psionics}
+\author{Fr0sty}
+\date{\today}
+
+%default pside effects
+\newcommand{\dpeii}{\mod{Psychic Recoil}{Instead of the target, the psionic is hit by the power instead. If the caster is the target, nothing happens.}}
+\newcommand{\dpeiv}{\mod{Strength to Spare}{The next power the character casts within 10 minutes gains a +10.}}
+\newcommand{\dpeix}{\mod{Overload}{The Cassandra implant starts malfunctioning and goes into emergency reboot. Due to psionic fields in the skull the caster takes -10 to intelligence and can't use psionics for the next hour.}\setcounter{enumi}{-1}}
+
+\begin{document}
+	\maketitle
+	\tableofcontents
+	
+	\chapter{Introduction}
+	This psionic system for Neon PnP serves as a pseudo magic system that may be added for a more science-fantasy as opposed to a science-fiction feeling.\\
+	Please note that a psionic described in this book is very flexible and may outshine more specialized player characters. Also - due to how flexible these rules are - it might demand a lot of imagination from a GM.
+	
+	Author's note: \emph{I'm doing this for shits and giggles because I wanted to write a magic system. Neither does it fit my vision of a more scientifically accurate sci-fi/cyberpunk crossover nor is it likely to be particularly balanced. It exists mostly to allow conversion of Neon to other settings like Mass Effect or Warhammer 40k. Use at your own peril.}
+	
+	\chapter{Becoming a Psionic}
+	To even consider casting psionic powers, the character must first become a psionic. Luckily this is accessible to anyone with the necessary connections and funds to buy a Cassandra focus implant.\\
+	Certain individuals are more efficient with this focus however (represented by a boon in chapter \ref{ch:addcontent}). This advanced affinity exists from birth and can't be recreated later, as is the case with all boons. \par
+	The moment a character attains a Cassandra focus, he may learn the Psionics skill and with the first level of said skill, the character gains access to his first psionic discipline. He can learn more disciplines by buying the Psionic Discipline ability as described in chapter \ref{ch:addcontent}.
+	
+	\chapter{Creating a Power}
+	\label{ch:create}
+	Below are all the rules required to build a power. It may make sense for a psionic to keep a list of powers prepared at hand.
+	\section{Disciplines}
+	Many different disciplines exist for a psionic to choose from. Below there is a list of disciplines; this list does not have to be exhaustive for your world.
+	\subsubsection*{Telekinesis}
+	Telekinesis is the exertion of force on objects from a distance. This can be pushing, pulling, tearing and whatever other direction the caster may come up with.\\
+	Generally the strength characteristic of this force is the power's intensity. The force is slightly visible and a targeted creature may react as it does to any physical action as well.
+	\subsubsection*{Telepathy}
+	Tapping into a creature's mind and altering thoughts or feelings are part of the telepathy discipline.\\
+	The target has multiple ways to defend itself: against telepathic influence the target may make a courage test; if it scores more DoS than the psionic on their power, said power has no effect. If the target has at least 3 DoS more than the psionic, it also learns that something tried to tap its mind.\\
+	Against mind reading the same is possible but additionally a target that knows it has its mind read may deceive the psionic at a -10.
+	\subsubsection*{Biomancy}
+	The biomancy discipline encompasses all modifications done to bodies, be that the caster's or another's. These may be strength increases, improvements to senses or worsening the sensation of pain.\\
+	An unwilling target may oppose the power with a constitution test.
+	\subsubsection*{Fluvimancy}
+	The manipulation of energy. Most often this manifests as fire or lightning but something as simple as light is part of this discipline as well.\\
+	Energy types are very varied in nature, therefore no single thing will stop all of this discipline. However anything that works against other sources of the specific energy in question will work against results of fluvimancy as well.
+	\subsubsection*{Whispers}
+	In some cases all psionics are referred to as whispering. That however is not technically correct, as whispering is the discipline of reading and modifying data. Advanced whisperers are said to be capable of altering encrypted data transmissions, while overconfident psionics were reportedly driven mad trying to read a LEGION enforcer's alien mind.\\
+	The data cannot protect itself, however encryption and active AIs will make a whisperers job just that much harder.
+	\subsubsection*{Blank}
+	Blanks are ironically named, as they are the most sensitive to other psionics being used around them. The name stems from the role they generally occupy - mage slayers, witch hunters, psionic prosecutors.\\
+	Since blanks only identify and cancel psionic powers, the only way to defeat a blank is by another blank. However, a blank's power is also only useful against other psionics.
+	\section{Modifiers}
+	Many different components make up the total modifier and strain of a psionic power. Not every category makes sense for any given power; in such a case no modifiers are applied.
+	\subsection{Complexity}
+	After picking the right discipline, the core of how difficult and taxing a power is to cast is the task’s complexity. This is very difficult to generalize but falls into roughly the categories below. Each category comes with an example from every discipline.
+	\begin{itemize}
+		\mod{easy}{+30, cost 1: tap someone on the back, send a short psychic message, change hair color, create enough light to read, detect network communication}
+		\mod{routine}{+20, cost 1: distract psychically, shove a stationary target, change outward appearance, detect power lines in a wall, detect network devices}
+		\mod{simple}{+10, cost 2: shove a moving target, cause stun / confusion / delusion, cause exhaustion, blind a target, read stored data}
+		\mod{challenging}{+/-0, cost 3: cause damage, hurl an object, cause an illusion affecting one sense, improve senses, stun a target, read data streams}
+		\mod{difficult}{-10, cost 3: crush an object, cause an illusion affecting all senses, increase a characteristic, cause an EMP, wipe stored data}
+		\mod{hard}{-20, cost 4: choke a person, modify memory, sprout natural weapons, power electronic devices, modify stored data}
+		\mod{grueling}{-40, cost 5: summon a clone, modify feelings, heal, create a PES, modify data stream}
+		\mod{insane}{-60, cost 6: levitate, completely dominate a person, cause cybernetics to be rejected, absorb energy to sprout natural armor, turn into an AI while the body goes limp}
+	\end{itemize}
+	A special case is the Blank discipline. To find and identify powers the psionic makes a hard (-20) Psionics test, gaining +10 per cost of the power to identify. On a success he gains some insight like the discipline, cost, caster and target, one for success and one additional per DoS.\\
+	Canceling an analyzed power uses the next higher complexity compared to the power being canceled. Canceling an \emph{insane}ly complex power is \emph{insane}ly complex itself but increases its cost by 2.
+	\subsection{Intensity}
+	If a power requires a value to represent its strength, that is the power’s intensity. Not every power needs to be equally strong - causing someone a bit of pain may be closer to the desired outcome than ripping off his leg. Evidently lower power output is less strenuous on the caster.
+	\begin{itemize}
+		\mod{1, independent of DoS}{+30}
+		\mod{2 + DoS}{+20}
+		\mod{2D10 + DoS}{+10}
+		\mod{5 + 2 per DoS}{+/-0, cost +1}
+		\mod{12 + 5 per DoS}{-10, cost +2}
+		\mod{25 + 10 per DoS}{-20, cost +3}
+	\end{itemize}
+	\subsection{Cast Time}
+	Rome was not built in a day, neither was a mind of steel cracked in seconds. Generally, the longer the caster takes, the easier the power will be; any longer than half an hour will definitely make things harder however, since no human can focus for that long.
+	\begin{itemize}
+		\mod{15+ min}{+30, no pside effects}
+		\mod{5 min}{+20}
+		\mod{1 min}{+10}
+		\mod{20 sec}{+/-0}
+		\mod{6 sec (2 rounds)}{-10}
+		\mod{2 sec (1 action)}{-20}
+		\mod{reaction}{-30}
+	\end{itemize}
+	\subsection{Range}
+	The further a power’s target is from the caster, the harder it becomes to aim and the more taxing the power will be.
+	\begin{itemize}
+		\mod{touch}{+20}
+		\mod{self}{+10}
+		\mod{1m}{+/-0}
+		\mod{10m}{-10}
+		\mod{100m}{-20, cost +1}
+		\mod{1km}{-30, cost +2}
+	\end{itemize}
+	\subsection{Target}
+	Different targets are easier or harder to effect.
+	\begin{itemize}
+		\mod{No specific target}{+/-0}
+		\mod{Single target}{+10}
+		\mod{Small zone or group (2+DoS meters radius / people)}{-10}
+		\mod{Large zone or group (2+5 per DoS meters radius / people)}{-20, cost +1}
+	\end{itemize}
+	\subsection{Duration}
+	The longer a power is supposed to last, the more exhausting a power is and the more difficult it is to amass and control that power.
+	\begin{itemize}
+		\mod{instant}{+/-0}
+		\mod{very short (5 + DoS rounds)}{+20}
+		\mod{short (10 + 3 per DoS rounds)}{+10}
+		\mod{1 min}{+/-0}
+		\mod{10 min}{-10}
+		\mod{30 min}{-20, cost +1}
+		\mod{2 hours}{-30, cost +2}
+	\end{itemize}
+	\subsection{Special Circumstances}
+	\subsubsection{Rituals}
+	Taking lots of time consuming and expensive preparation as well as at least one and a half hour to cast is usually very hard to focus on. Doing rituals on the other hand makes focusing much easier.\\
+	Ritual casting grants +10 to cast (in addition to 15+ minutes of cast time) and cost round about cr 50. If a point of focus - most commonly a sacrifice - is prepared, an additional +10 is granted. This costs \emph{at least} another 60, more commonly 75 credits.
+	\subsubsection{Radiation}
+	Areas with strong mixed radiation are usually very hazardous. But inside such an area casting psionics is at a +10 to +30 and reduces cost by 1. The power’s cost is likely the last concern however…
+%	\subsubsection{Holding back}
+%	Psionics can show advanced restraint, using the bare minimum of power necessary to cast. This reduces the cost by 3 to a minimum of 0 and if it reaches 0, no pside effects can occur either. The drawback is that, since the power is reduced by a lot, no degrees of success can be gained.
+	\subsubsection{Pushing}
+	If push comes to shove, any psionic can push a power further than necessary. Such effort is surprisingly easy to control but unsurprisingly strenuous, granting a +10 for every additional cost added to the power voluntarily.
+	
+	\chapter{Casting a Power}
+	Now that the power has been constructed, it is time to use it. Our target value is determined as follows:
+	\begin{enumerate}
+		\item A fitting characteristic determined by the GM, constitution for most biomancy and either instinct or charisma for telepathy.
+		\item The modifier of the power calculated in chapter \ref{ch:create}.
+		\item The skill bonus of the caster's Psionic skill
+		\item Potentially special circumstances
+	\end{enumerate}
+	Now that we have our target value, the roll is made in the first action of the cast time. In the last action the power is resolved. If the test fails, cast time is halved but the power is not resolved.
+	
+	\chapter{Repercussions and Pside Effects}
+	Such power comes at a great price, namely the user's own life. Every power has a cost associated with it. At the end of the cast time roll 1D5 and subtract it from the power's cost to a minimum of 0. The caster takes damage equal to that number on a randomly determined location, ignoring cover, shields, armor and injury threshold as part of the user's own body is used to power his psionics.
+	
+	\vspace*{5mm}
+	Additionally these abilities are not without flaw, the Focus implant has not had much field testing. Casting a psionic power consists of energy accumulation, precise timing and intense concentration. If too little energy is accumulated, the power cannot manifest. If timing is off, the power fizzles out. Now what happens if the psionic is powerful and skilled enough but her concentration slips? Enter "pside effects."\par
+	Whenever a psionic test shows doubles - whether or not the cast was successful - a pside effect is invoked. The specific effect is taken from the table with regards to the discipline cast and the number on the dice. When a power from a combined discipline is invoked, results from both tables are applied. If some effect is unfeasible or does not fit the situation well, the next lower number is applied, the effect is skipped or a completely different effect may be applied as per GM discretion.
+	
+	\paragraph{Telekinesis}
+	\begin{enumerate}
+%		*TODO: meme names*
+		\mod{Another Happy Landing}{After casting the power the character is flung 2D10 meters into the air, crashing down a round later.}
+		\dpeii
+		\mod{Unlimited Power}{The character starts levitating for a minute, gaining 1 MS for the duration and ignoring difficult terrain.}
+		\dpeiv
+		\mod{Misdirected Force}{Strong winds pick up around the psionic and small objects in the area start flying around uncontrollably, potentially obstructing vision.}
+		\mod{Pushed Around}{The caster pulls the nearest human sized object toward him if the object is lighter or him towards the object if it is heavier.}
+		\mod{Spacial Distortions}{A sphere of 10m around the character becomes hard to move in for ~15 seconds (5 rounds). All physical actions work as if under water, except for swimming.}
+		\mod{Power Leak}{The power starts leaking from the psionic uncontrollably, pushing against the character from all sides. The caster becomes unable to move and very hard to be moved for D10 rounds.}
+		\dpeix
+		\mod{Shatter Ground}{The psionic causes a massive shaking in about 10m radius, feeling much like an earthquake except every object itself is affected. Brittle objects like glass tends to brake and metals may deform. Objects take damage equal to roughly 3 times the power's level, ignoring all armor.}
+	\end{enumerate}
+	\paragraph{Telepathy}
+	\begin{enumerate}
+		\mod{Unsealed Mind}{The target gains intel on the psionic's current thoughts.}
+		\dpeii
+		\mod{Treasure Hunt}{Gain intel on the target's current thoughts and mood.}
+		\dpeiv
+		\mod{Primal Fear}{For about the next 24 hours all animals become agitated near the psionic, causing them to either flee in panic or attack in desperation.}
+		\mod{Body Swap}{Swap the body with the target for a minute. If there were multiple targets, one is chosen at random.}
+		\mod{Targeting Issues}{Instead of the intended target a target within range is chosen at random.}
+		\mod{Open Stream}{Every person within range learns of the content of the telepathy. Even for experts the caster does not immediately become obvious if the power was cast subtly - and the content does not give the participants away...}
+		\dpeix
+		\mod{Overwhelmed}{The psionic's mind is crushed under the sheer amount of unwanted information she is receiving. She gains a fitting disabling characteristic the target has at 10 or, if she already has it, it increases by D10.}
+	\end{enumerate}
+	\paragraph{Biomancy}
+	\begin{enumerate}
+		\mod{Turned Off}{One random extremity loses its function as if destroyed for two minutes. If the result would indicate death, the character becomes catatonic instead.}
+		\dpeii
+		\mod{Really Soft}{The character ignores fall damage and the trauma rule for a minute and gains +20 to all tests concerned with squeezing through small openings.}
+		\dpeiv
+		\mod{Nourishment}{The caster counts as having eaten for this day. Not only she get nourished however - all perishables she has on her start sprouting fungal or bacterial colonies and effectively go bad immediately.}
+		\mod{Loss of Sense}{For a minute one random sense (touch, hearing, sight, smell, taste) is lost.}
+		\mod{Mixed Senses}{Senses get mixed up for a minute. The character loses all actions except the reaction, falls prone and cannot get up, and all physical actions are at -30.}
+		\mod{Augment Rebuff}{RI or MT (whichever is higher) is reduced by D5 for one hour. If it is reduced below 0, the character goes unconscious for the duration and takes D10 damage to every location that has implants requiring RI / MT (whichever was reduced).}
+		\dpeix
+		\mod{Berserk}{All of the psionic's physical charactistics and melee combat base increase by 20 and pain-related penalties are ignored for 2D5 rounds. The character falls into a bloodlusty rage and rushes the person in the vicinity that she has the strongest feelings for - whatever those feelings may be. After the duration the caster drops unconscious for a few hours.}
+	\end{enumerate}
+	\paragraph{Fluvimancy}
+	\begin{enumerate}
+		\mod{Blackout}{Uncontrolled energy leaks from the caster, veiling him in a force field. He becomes undetectable to sonar, radar and heat sensors but is affected by an EMP for 2 minutes.}
+		\dpeii
+		\mod{Loaded}{Electricity courses through the caster's body, eager to leave into other hosts. Unarmed attacks gain +3 damage and AP, as well as the Stun (2) and EMP special rules.}
+		\dpeiv
+		\mod{Static Field}{An electric field surrounds the character. It is not strong, just enough to be detected and to make hair stand on end.}
+		\mod{Vengeful Technology}{All non-primitive weapons within 4D10 meters jam.}
+		\mod{Shining Example}{The psionic's eyes and mouth begin to shine, the skin to shimmer. Now more imposing than ever, the user gains +5 to all social tests but -20 to all stealth tests and shooting him in the dark is at no penalty.}
+		\mod{Man's not hot}{The character is veiled into a mantle of flames for a minute, dealing D5 damage with the Spray, Flame and Blast (1) special rules centered around the character. The character is immune to damage from all weapons with the flame rule, his equipment however is not.}
+		\dpeix
+		\mod{Surge}{Overload protection of the focus implant fails at the worst time. The character takes a hit with D10+1 damage - ignoring cover, armor, shields and injury threshold - as well as the Stun and Flame special rules in a violent display of lightning bolts. All characters within 3 meters take the same hit but reduced as if it was a ranged attack.}
+	\end{enumerate}
+	\paragraph{Whispers}
+	\begin{enumerate}
+		\mod{Mind Loss}{Enter the targeted machine for a minute. The body loses consciousness and may be mistaken for dead.\\
+			If the body dies during this time, the broken mind remains as scrap code streams on the device or network. Depending on permissions of said code and processing power of the device the mind may reform as some sort of AI.}
+		\dpeii
+		\mod{Digital Inspiration}{A part of the virtual world broadens the psionic's horizon. The next non-physical action gains a +5 bonus.}
+		\dpeiv
+		\mod{Interruption}{All technology within a meter of the psionic stops working for a few seconds (one round).}
+		\mod{Intrusive Data}{All information in the exchange is flooded with a bunch of additional information that may make it hard to discern which is the relevant information and which is just unwanted payload.\\
+			\emph{Note}: sometimes even the additional, originally unwanted information may be extremely interesting.}
+		\mod{Extreme Personality}{Some data hits a proverbial nerve and the psionic becomes easier to irritate. For ten minutes all successful Restraint tests need to be re-rolled once.}
+		\mod{Calling Card}{After the power ends it leaves an undeniable tamper mark on the data. How exactly that looks is up to context.}
+		\dpeix
+		\mod{Take me with you}{The exchange leaves behind permanent scrap code streams in the psionic's brain which will randomly influence him from time to time - give advise or distract for example.\\
+			When the character does something in line with the other consciousness, he gains a +10 bonus. If he does something to its dislike or he is simply in its bad books, he gains a -10.}
+	\end{enumerate}
+	\paragraph{Blank\\}
+	Blank powers are a special case, as they cause pside effects depending on the type of power they are being used against. When they are just used to find psionic powers, they cause the same pside effects as Telepathy does.
+	
+	\chapter{Extending the rules}
+	\section{Disciplines}
+	Depending on the world and implementation of psionics, this system may require additional disciplines.\par
+	First have a look whether an existing discipline may include a certain type of powers. For example pyromancy is a part of fluvimancy in this system. If you want to make it its own thing, make sure to either remove the original discipline altogether or add limitations to it.\par
+	Secondly make sure any new disciplines have clear limitations on what they can and more importantly can\emph{not} do.
+	\section{Pside effects}
+	For every new psionic discipline there needs to be a pside effect table. Two options exist here: either take an existing table that fits closely enough or create a brand new one. If you decide to pick an existing table, then that's it, it's that easy.\par
+	However if you'd like to create a whole new one, here's a few notes on their style:
+	\begin{itemize}
+		\item Results 22, 44 and 99 are generic and the same across all tables.
+		\item Result 33 is beneficial.
+		\item Result 88 is slightly detrimental.
+		\item Results 11 and 00 are very detrimental.
+		\item All other results are neutral.
+	\end{itemize}
+	
+	\chapter{Additional Content}
+	\label{ch:addcontent}
+	\section{Boons}
+	\boon{Psionic Aptitude}{Grants access to an additional discipline; Start the game with the Psionics skill at Trained; Cannot be taken by Vat-grown or AIs}{12}
+	\boon{Psionic Prodigy}{Grants access to up to two additional disciplines; Start with the Psionics skill at Trained; Can only be taken by \emph{Pure} humans.}{25}
+	
+	\section{Banes}
+	\boon{Frail Mind}{become vulnerable to Telepathy (+10 to target)}{-8}
+	
+	\section{Skills}
+	\skill{Psionics}{any}{The knowledge to cast psionics. This is just the general skill and routine; to actually be useful a Cassandra implant and the knowledge of disciplines is also required.}
+	
+	\section{Abilities}
+	\ability{Psionic discipline}{0}{Psionics Known}{Gain access to the character's first psionic discipline}
+	\ability{Additional psionic discipline I}{600\\aptitude: 300\\prodigy: 200}{}{Gain access to an additional psionic discipline}
+	\ability{Additional psionic discipline II}{600\\prodigy: 400}{Psionic Aptitude or Psionic Prodigy}{gain access to a third psionic discipline}
+	\ability{Additional psionic discipline III}{600}{Psionics Prodigy}{gain access to a fourth psionic discipline}
+	\ability{Combat caster}{500}{Psionics Trained}{gain +5 to cast powers with a casting duration of 10 sec and below}
+	\ability{Sixth Sense}{250}{Psionics Trained}{When a psi power is cast within 20 meters, the character may make a Psionics test as a free action. On a success he gains some insight like the discipline, the cost, the caster, the target, one for success and one additional per DoS.}
+	\ability{Mage Slayer}{400}{Sixth Sense or Witchseeker implant}{The user gains an attack of opportunity when he starts casting in the user's melee reach. Additionally damage caused by the user counts double for the purpose of breaking a psionic's concentration.}
+	
+	\section{Supply}
+	\supply{Winston's Detector}{hazards}{Allows detection of psionic powers. Anyone can tell when a power is cast within the vicinity but to estimate additional detail requires a test like the ability Sixth Sense with Logic replacing Psionics.}{cr 69}{0,3 kg}
+	\supply{Psi Core}{core melee component}{Immediately after hitting an opponent in melee, the wielder may cast a psionic power with a casting time of 1 action and range touch as a free action instead.}{cr 57}{0,4 kg}
+	
+	\section{Implants}
+	\implant{Cassandra Psi-Focus}{A rare, experimental implant to allow a select few individuals to improve their effectiveness in private military operations. It comes with a lot of drawbacks and can only reveal its full potential with certain individuals.}{allows access to Psionics}{brain}{2 RI, 2 MT}{cr 165}{-}
+	\implant{Psi Amp}{An amplifier for psionics, more rare than the Focus implant itself, even comparatively. They have to be attuned to improve a certain discipline rather than just all psionics to be used safely.}{gain +5 to cast a certain discipline; may be taken multiple times}{nervous system}{1 RI}{cr 95}{Perfect fit}
+	\implant{Psionic Release}{A release implant to reduce the strain of casting psionics. Many psionics would probably like this implant but for most military contractors this implant is simply too expensive for anything more than a single fireteam - if even that.}{reduce cost of powers by 1}{chest}{3 MT}{cr 370}{-}
+	\implant{Null Mesh}{A special mesh is grown into the skin. It gives the skin a very particular violet color that is sure to shoot ice cold fear through a psionic's veins.}{psionics cast at or by the wearer take a -30}{skin}{1 MT}{cr 95}{Perfect fit, Aesthetic, Wrongly fitted, Inconspicuous}
+	\implant{"Witchseeker" Implanted Winston's Detector}{A Winston's Detector implanted into the brain to feed its readings directly to the brain of the user. Depending on how it is implanted, the sensation may be experienced as a new type of smell, a specific sound or even visible as a faint mist. Extremely rare military hardware which gives "witchseeker" psi hunters their name.}{allows access to Psionics but limited to the \emph{Blank} discipline; grants +10 to Psionics}{brain}{2 RI, 1 MT}{cr 88}{-}
+	
+	\section{Chemicals}
+	\subsection{Dissociative}
+	\subsubsection{Superbia}
+	Type:\tab tablet/pill\\
+	Effect:\tab gain +20 to cast\\
+	Side Effects:\tab increase cost of powers cast by 1\\
+	Duration:\tab one hour\\
+	Minor Overdose:\\
+	\begin{itemize}
+		\setlength\itemsep{-8mm}
+		\vspace{-12mm}
+		\item hallucinations
+	\end{itemize}
+	Severe Overdose:\\
+	\begin{itemize}
+		\setlength\itemsep{-8mm}
+		\vspace{-12mm}
+		\item nausea
+		\item vomiting
+		\item blackout
+	\end{itemize}
+	OD Resistance:\tab MT\\
+	Addiction After:\tab 4 overdoses\\
+	Price:\tab cr 14\\
+	Weight:\tab 0,01g\\
+	Notes:\tab extremely rare
+	
+	\subsection{Sedative}
+	\subsubsection{Helium Stabilizer}
+	Type:\tab tablet/pill\\
+	Effect:\tab all pside effects below 9 are ignored\\
+	Side Effects:\tab gain -10 to cast\\
+	Duration:\tab 30 min\\
+	Minor Overdose:\\
+	\begin{itemize}
+		\setlength\itemsep{-8mm}
+		\vspace{-12mm}
+		\item loss of casting ability
+	\end{itemize}
+	Severe Overdose:\\
+	\begin{itemize}
+		\setlength\itemsep{-8mm}
+		\vspace{-12mm}
+		\item loss of casting ability
+	\end{itemize}
+	OD Resistance:\tab RI\\
+	Addiction After:\tab - overdoses\\
+	Price:\tab cr 12\\
+	Weight:\tab 0,01g\\
+	Notes:\tab 
+	
+\end{document}
