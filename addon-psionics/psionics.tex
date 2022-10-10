@@ -1,54 +1,11 @@
 \documentclass[12pt,a4paper,openany]{book}
-\usepackage{tabto}
+
+\input{../core-rulebook/config/news.tex}
+\input{../core-rulebook/config/packages.tex}
 
 \title{Neon Pen and Paper - Psionics}
 \author{Fr0sty}
 \date{\today}
-
-\newcommand{\ul}{\underline{\smash{#1}}}[1]
-\newcommand{\mod}[2]{\item \textbf{#1}: #2}
-\newcommand{\boon}[4][]{
-	\begin{minipage}{\textwidth}
-		\textbf{\ul{\smash{#2}}} (#4 GP\ifthenelse{\isempty{#1}}{}{ }#1)\\
-		#3
-	\end{minipage}
-	\par
-}
-\newcommand{\skill}[4][Basic]{
-	\begin{minipage}{\textwidth}
-		\textbf{\ul{#2}}\\
-		Difficulty: #1\\
-		Common Characteristic: #3\\
-		Description:\\
-		#4\\
-	\end{minipage}
-}
-\newcommand{\ability}[4]{
-	\begin{minipage}{\textwidth}
-		\textbf{\ul{#1}} (#2 XP)\\
-		Prerequisites: #3\\
-		Effect:\\
-		#4\\
-	\end{minipage}
-}
-\newcommand{\supply}[5]{
-	\begin{minipage}{\textwidth/2}
-		\textbf{\ul{#1}} (#2)\\
-		Price: #4\\
-		Weight: #5\\
-		#3\\
-	\end{minipage}
-}
-\newcommand{\implant}[7]{
-	\begin{minipage}{\textwidth}
-		\textbf{#1}\\
-		\textit{#2}\\
-		Effect: #3\\
-		\textit{Price:} #6; \textit{Load:} #5 \ifthenelse{\isequivalentto{-}{#4}}{}{; \textit{Slot:} #4}\\
-		\textit{Available Mods:} #7
-	\end{minipage}
-	\par
-}
 
 %default pside effects
 \newcommand{\dpeii}{\mod{Psychic Recoil}{Instead of the target, the psionic is hit by the power instead. If the caster is the target, nothing happens.}}
