@@ -1,0 +1,403 @@
+\documentclass[12pt,a4paper,openany]{book}
+\input{../core-rulebook/config/news.tex}
+\input{../core-rulebook/config/packages.tex}
+
+%Title
+\title{Neon Pen and Paper - Strike Suits}
+\author{Fr0sty}
+\date{\today}
+
+\begin{document}
+	\maketitle
+	\tableofcontents
+	
+	\chapter{Introduction}
+	A marvel of technological advancement, these powered armors offer vastly improved physical capabilities as well as a near skintight bunker. Many different series are in production and each of them offers many different variants to offer requested adaptability for almost any feasible area of operation.\par
+	Any strike suit is built specifically for its pilot. These pilots are born either highly qualified or extremely privileged and are trained by many specialists; the cheapest part of their journey. The really expensive part is their equipment: weapons, augments, modifications for each, specialized ammunition, scanners and the list goes on - culminating their armor.\par
+	Depending on their field of expertise, the armor series and variant is picked as detailed below. Note that due to how expensive and rare this type of equipment is, it is also extremely rare and hard to acquire, as even if a suit could be obtained from a dead pilot, the armor likely would not fit.
+	
+	\chapter{Building a Strike Suit}
+	\section{Common Features}
+	Every Strike Suit has a few similar properties, referred to as the \emph{Baseline}. These common aspects are then modified by the series and variant, as well as custom modifications.\par
+	\begin{itemize}
+		\item Every Strike Suit has very thick armor plates. Arms and legs sport 20 armor, the head has 16 and the torso makes it to 22.
+		\item The armor is fitted with a piezoelectric exo-skeleton. This is ramped up to grant a bonus of 20 points, freely distributed between strength and agility of the wearer, to be determined at the time of creation.
+		\item For squad communication every suit is fitted with a HUD, an intercom and a vitals monitor.
+		\item Additionally every suit has space for 4 mods. Often times this is reduced by variant specific modifications.
+		\item Lastly - to prevent the technology falling into the wrong hands - every suit has a Final Hour chip installed, blowing up the armor in a giant ball of fire and fragmentation when the wearer's vital signs drop to zero.\\
+		This system is both safe and secure - it cannot be hacked or overridden in any way and it does not make mistakes.
+		\item The single downside to strike suits is the fact that vehicle lock-on works against such a piece of armor, making them a priority target out in the open.
+	\end{itemize}
+	\par
+	Such a marvel of technology requires strong connections to powerful people and a fair sum of money - production cost alone is at around 1800 cr.
+
+	\section{Series}
+	Every strike suit is constructed to fulfill a specific purpose. This means that every piece of armor has to belong to a specific series of strike suit, specialized in various areas of operation.
+	\subsection{Baseline}
+	\textit{A strike suit is the pinnacle of armor creation, sporting heavy plates that rival APCs, HUD, intercom and vitals monitors for perfect remote support as well as a lightweight, piezoelectric exoframe to carry its own weight and even boost the wearer's physical capabilities.}\par
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		Head & Body & Arms & Legs\\
+		\hline
+		16 & 22 & 20 & 20\\
+		\hline
+	\end{tabular}
+	\par
+	Movement Speed: 0\\
+	Strength / Agility: 20\\
+	Mods: 4\\
+	Weight: 300kg\\
+	Further Modifiers:
+	\vspace{-8mm}
+	\begin{itemize}
+		\setlength\itemsep{-8mm}
+		\item Intercom
+		\item Vitals monitor
+		\item HUD
+		\item Piezoelectric exoframe
+		\item Final Hour chip
+	\end{itemize}
+	\par
+	\subsection{Mars}
+	\textit{A CQC type platform sporting increased mobility but reduced leg protection and many slots to integrate weaponry.}\par
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		Head & Body & Arms & Legs\\
+		\hline
+		16 & 22 & 20 & 16\\
+		\hline
+	\end{tabular}
+	\par
+	Movement Speed: 1\\
+	Strength / Agility: 20\\
+	Mods: 6\\
+	Weight: 300kg\\
+	Further Modifiers:
+	\vspace{-8mm}
+	\begin{itemize}
+		\setlength\itemsep{-8mm}
+		\item 2 armor mod points can only be used for integrated weaponry
+		\item cannot be fitted with ranged modules
+	\end{itemize}
+	\par
+	\subsection{Vulcanus}
+	\textit{Tough firesupport platform including additional armoring in its front and powerful stabilizers that allow the use of high caliber, rapid fire ranged weaponry. Its high weight, low mobility and low adaptability all with respect to the tight and varied spaces of most AOs today make this type a rare choice.}\par
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		Head & Body & Arms & Legs\\
+		\hline
+		16 & 22 & 20 & 20\\
+		\hline
+	\end{tabular}
+	\par
+	Movement Speed: -2\\
+	Strength / Agility: 20\\
+	Mods: 3\\
+	Weight: 660kg\\
+	Further Modifiers:
+	\vspace{-8mm}
+	\begin{itemize}
+		\setlength\itemsep{-8mm}
+		\item 6 armor to front
+		\item increases size by 1
+		\item use any infantry weapon one-handed without penalty (aside from bows, as the body does not work that way)
+		\item use heavy weapons two-handed, always counting as braced
+	\end{itemize}
+	\par
+	\subsection{Minerva}
+	\textit{A type of reconnaissance platform that is fitted with short range lifeform scanners and interface components for all common wired and wireless networks. Highly customizable.}\par
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		Head & Body & Arms & Legs\\
+		\hline
+		16 & 22 & 20 & 20\\
+		\hline
+	\end{tabular}
+	\par
+	Movement Speed: 0\\
+	Strength / Agility: 20\\
+	Mods: 6\\
+	Weight: 300kg\\
+	Further Modifiers:
+	\vspace{-8mm}
+	\begin{itemize}
+		\setlength\itemsep{-8mm}
+		\item modular interface device: connect to basically any device and network
+		\item 20m life form scanner, pierces 30 armor worth of cover
+	\end{itemize}
+	\par
+	\subsection{Diana}
+	\textit{A direct sucessor to the original series of strike suits made for long range assassination, wetwork and sabotage. It comes with an advanced HUD and target acquisition by default and additionally is the most adaptable of all series.}\par
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		Head & Body & Arms & Legs\\
+		\hline
+		12 & 18 & 16 & 16\\
+		\hline
+	\end{tabular}
+	\par
+	Movement Speed: 0\\
+	Strength / Agility: 20\\
+	Mods: 8\\
+	Weight: 300kg\\
+	Further Modifiers:
+	\vspace{-8mm}
+	\begin{itemize}
+		\setlength\itemsep{-8mm}
+		\item 20 to tracking targets you have data on
+		\item 10 to called shots (min +0)
+	\end{itemize}
+	\par
+	\subsection{Mercury}
+	\textit{An experimental platform with vastly inferior armor but integrated jet boosters to allow for improved movement options in hit-and-run missions.}\par
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		Head & Body & Arms & Legs\\
+		\hline
+		8 & 14 & 12 & 12\\
+		\hline
+	\end{tabular}
+	\par
+	Movement Speed: 1\\
+	Strength / Agility: 20\\
+	Mods: 4\\
+	Weight: 300kg\\
+	Further Modifiers:
+	\vspace{-8mm}
+	\begin{itemize}
+		\setlength\itemsep{-8mm}
+		\item when taking a dodge reaction, the user may move up to 5 meters
+		\item As an action the user may triple movement speed, jump height or leap distance. He may do so every other turn while in an atmosphere that contains oxygen and argon, otherwise he can do it once.
+	\end{itemize}
+	\par
+	\subsection{Venus}
+	\textit{The most lightweight strike suit series, sometimes not even recognisable as power armor depending on its specific design. It was built for unseen infiltration but is sometimes overshadowed by Minerva series platforms, due to the inbuilt connection systems.}\par
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		Head & Body & Arms & Legs\\
+		\hline
+		6 & 12 & 10 & 10\\
+		\hline
+	\end{tabular}
+	\par
+	Movement Speed: 1\\
+	Strength / Agility: 20\\
+	Mods: 5\\
+	Weight: 180kg\\
+	Further Modifiers:
+	\vspace{-8mm}
+	\begin{itemize}
+		\setlength\itemsep{-8mm}
+		\item sensory filters grant +20 to hearing tests
+		\item Inbuilt dampeners help with moving silently. The wearer counts as being barefoot when sneaking.
+		\item contains photoreactive panels that bend the light around the armor; grants +15 to tests made to hide
+		\item if the wearer has a close range holoprojector, it is not inhibited by this armor
+	\end{itemize}
+	\par
+	\subsection{Jupiter}
+	\textit{A platform built for CBRN operation and extremely dense magnetic fields. It is nigh immune to EMPs and has the best redundancies of all strike suits.}\par
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		Head & Body & Arms & Legs\\
+		\hline
+		16 & 22 & 20 & 20\\
+		\hline
+	\end{tabular}
+	\par
+	Movement Speed: 0\\
+	Strength / Agility: 20\\
+	Mods: 4\\
+	Weight: 300kg\\
+	Further Modifiers:
+	\vspace{-8mm}
+	\begin{itemize}
+		\setlength\itemsep{-8mm}
+		\item CBRN Unit
+		\item Faraday Cage with triple effectiveness
+		\item vac-seal
+	\end{itemize}
+	\par
+	
+	\section{Variant}
+	Unlike series variants are purely optional and offer more specialized and unique modules. Wearers of such armors are usually the best at their craft but rarely equipped to respond to enormous surprises all by themselves and rely on their teams to make up for their deficits.
+	\subsection{Mars - Guts}
+	\textit{Built as a proof of concept this overengineered power armor utilizes modified Vulcanus series stabilizers to allow for oversized melee weapons to be used}\par
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		Head & Body & Arms & Legs\\
+		\hline
+		16 & 22 & 20 & 16\\
+		\hline
+	\end{tabular}
+	\par
+	Movement Speed: -2\\
+	Strength / Agility: 30\\
+	Mods: 4\\
+	Weight: 540kg\\
+	Further Modifiers:
+	\vspace{-8mm}
+	\begin{itemize}
+		\setlength\itemsep{-8mm}
+		\item can use Mech-sized melee weapons
+		\item -stat bonus can only apply to str
+	\end{itemize}
+	\par
+	\subsection{Mars - Seraph}
+	\textit{Smaller weapons offer a few key advantages: they are lighter, less bulky and can more easily be used in confined spaces. Since it is more difficult to use two weapons simultaneously, this suit features a band of niche support systems for such a combatant.}\par
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		Head & Body & Arms & Legs\\
+		\hline
+		16 & 22 & 20 & 16\\
+		\hline
+	\end{tabular}
+	\par
+	Movement Speed: 1\\
+	Strength / Agility: 20\\
+	Mods: 6\\
+	Weight: 300kg\\
+	Further Modifiers:
+	\vspace{-8mm}
+	\begin{itemize}
+		\setlength\itemsep{-8mm}
+		\item reduces dual wielding penalties by 10 to a minimum of +0
+		\item increases the control area by 40 degrees
+		\item decreases visual perception when looking for details by 5
+	\end{itemize}
+	\par
+	\subsection{Vulcanus - Linebreaker}
+	\textit{In the most desperate days of the old war people were thrown at opposing forces in a twisted attempt to stop more loss of life. This armor contains sufficient counter measures against horde type attacks to the point where a single trained soldier could break a whole offense. Ever since such tactics became unnecessary, it has fallen out of fashion.}\par
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		Head & Body & Arms & Legs\\
+		\hline
+		22 & 22 & 26 & 26\\
+		\hline
+	\end{tabular}
+	\par
+	Movement Speed: -2\\
+	Strength / Agility: 20\\
+	Mods: 1\\
+	Weight: 660kg\\
+	Further Modifiers:
+	\vspace{-8mm}
+	\begin{itemize}
+		\setlength\itemsep{-8mm}
+		\item integrated Hailfire
+		\item +10 to long and extreme range (min +0)
+	\end{itemize}
+	\par
+	\subsection{Vulcanus - Bunkerbuster}
+	\textit{Being more resistant to shrapnel, ricochets and fire, this suit was created as a heavy armor CQC alternative to the melee focussed Mars series. Since it is larger, more cumbersome, susceptible to simple traps like sinkholes and flamethrowers cause too much colleteral damage, it is chosen less often.}\par
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		Head & Body & Arms & Legs\\
+		\hline
+		22 & 28 & 26 & 26\\
+		\hline
+	\end{tabular}
+	\par
+	Movement Speed: -2\\
+	Strength / Agility: 20\\
+	Mods: 3\\
+	Weight: 759kg\\
+	Further Modifiers:
+	\vspace{-8mm}
+	\begin{itemize}
+		\setlength\itemsep{-8mm}
+		\item immune to fire
+		\item the series' additional front armor counts everywhere (included in the armor table)
+	\end{itemize}
+	\par
+	\subsection{Diana - Wraith}
+	\textit{High armor targets can require special armament. These weapons are usually large and cumbersome and are rarely used in infiltration and sabotage. This variant features a threat analysis system that highlights weaknesses and simplifies engage or disengage management.}\par
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		Head & Body & Arms & Legs\\
+		\hline
+		14 & 18 & 16 & 16\\
+		\hline
+	\end{tabular}
+	\par
+	Movement Speed: 0\\
+	Strength / Agility: 20\\
+	Mods: 5\\
+	Weight: 300kg\\
+	Further Modifiers:
+	\vspace{-8mm}
+	\begin{itemize}
+		\setlength\itemsep{-8mm}
+		\item threat assessment system
+	\end{itemize}
+	\par
+	\subsection{Diana - Fury}
+	\textit{Large parts of the world are uninhabitable: cosmic rays hitting the surface almost unimpeded, lingering radiation from various catastrophes or nature trying to reclaim territory by inventing all kinds of toxins. Operating in such an environment requires a certain skill set, a keen mind - and a piece of armor like this.}\par
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		Head & Body & Arms & Legs\\
+		\hline
+		12 & 18 & 16 & 16\\
+		\hline
+	\end{tabular}
+	\par
+	Movement Speed: 0\\
+	Strength / Agility: 20\\
+	Mods: 8\\
+	Weight: 300kg\\
+	Further Modifiers:
+	\vspace{-8mm}
+	\begin{itemize}
+		\setlength\itemsep{-8mm}
+		\item primary through tertiary rebreathers and life support systems
+		\item 15 shielding against EMP
+	\end{itemize}
+	\par
+	\subsection{Minerva - Wompa}
+	\textit{Frontline logistics and pioneering require specialized training and equipment. This variant is outfitted with improved computing devices, redundant short and long-range communication devices and improved cyber security measures.}\par
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		Head & Body & Arms & Legs\\
+		\hline
+		16 & 22 & 20 & 20\\
+		\hline
+	\end{tabular}
+	\par
+	Movement Speed: 0\\
+	Strength / Agility: 20\\
+	Mods: 4\\
+	Weight: 300kg\\
+	Further Modifiers:
+	\vspace{-8mm}
+	\begin{itemize}
+		\setlength\itemsep{-8mm}
+		\item redundant communication devices, capable of cutting through 5 meters of EMP smoke
+		\item processing power +30
+		\item integrity 45
+	\end{itemize}
+	\par
+	\subsection{Minerva - Giger}
+	\textit{Recon is not restricted to earth's surface; many places that may require prospectors or scouts are unlivable. For radioactive wastelands many different setups have been used but the vacuum of space has never been navigated as effortlessly.}\par
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		Head & Body & Arms & Legs\\
+		\hline
+		16 & 22 & 20 & 20\\
+		\hline
+	\end{tabular}
+	\par
+	Movement Speed: 0\\
+	Strength / Agility: 20\\
+	Mods: 5\\
+	Weight: 300kg\\
+	Further Modifiers:
+	\vspace{-8mm}
+	\begin{itemize}
+		\setlength\itemsep{-8mm}
+		\item -10 ag
+		\item vacuum sealed for 6 hours
+		\item simple climbing equipment allowing for maintaining walking speed in zero gravity
+	\end{itemize}
+	\par
+	
+	
+\end{document}

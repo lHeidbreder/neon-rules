@@ -1,0 +1,161 @@
+%Custom Environments
+\newenvironment{exampleblock}[1][1]
+{\par\hfill\begin{minipage}{\dimexpr\textwidth-#1cm}}
+	{\end{minipage}\par}
+
+%Custom Commands
+\newcommand{\ul}[1]{\underline{\smash{#1}}}
+\newcommand{\breakline}{\vspace{.5cm} \hrule width \textwidth \relax}
+\newcommand{\specialrule}[2]{
+	\begin{minipage}{\textwidth/2}
+		\textbf{\ul{#1:}}\\
+		#2\\
+	\end{minipage}
+}
+\newcommand{\supply}[5]{
+	\begin{minipage}{\textwidth/2}
+		\textbf{\ul{#1}} (#2)\\
+		Price: #4\\
+		Weight: #5\\
+		#3\\
+	\end{minipage}
+}
+\newcommand{\service}[4]{
+	\begin{minipage}{\textwidth/2}
+		\textbf{\ul{#1}}\\
+		#2\\
+		\textit{Cost:} #3 per #4\\
+	\end{minipage}
+	%	\par
+}
+\newcommand{\statuseffect}[2]{
+	\begin{minipage}{\textwidth}
+		\textbf{\ul{#1:}}\\
+		#2\\
+	\end{minipage}
+}
+\newcommand{\skill}[4][Basic]{
+	\begin{minipage}{\textwidth}
+		\textbf{\ul{#2}}\\
+		Difficulty: #1\\
+		Common Characteristic: #3\\
+		Description:\\
+		#4\\
+	\end{minipage}
+}
+\newcommand{\ability}[4]{
+	\begin{minipage}{\textwidth}
+		\textbf{\ul{#1}} (#2 XP)\\
+		Prerequisites: #3\\
+		Effect:\\
+		#4\\
+	\end{minipage}
+}
+\newcommand{\maneuver}[3]{
+	\begin{minipage}{\textwidth}
+		\textbf{\ul{Maneuver: #1}} (#2 XP)\\
+		Prerequisites: #3\\
+		Effect:\\
+		Allows the use of the maneuver #1 at normal penalties.\\
+	\end{minipage}
+}
+\newcommand{\boon}[4][]{
+	\begin{minipage}{\textwidth}
+		\textbf{\ul{\smash{#2}}} (#4 GP\ifthenelse{\isempty{#1}}{}{ }#1)\\
+		#3
+	\end{minipage}
+	\par
+}
+\newcommand{\bane}[4]{
+	\boon[#4]{#1}{#2}{#3}
+}
+\newcommand{\rangedweapon}[9]{
+	\vspace{2mm}
+	\begin{minipage}{\textwidth}
+		\textbf{\ul{#1}}\\
+		\textit{#2}\\
+		\textit{Weight (unloaded)}: #9; \textit{Price}: #8\\
+		#3\\
+		Mag: #5; Reload: #6 actions\\
+		Range: #4\\
+		\ifthenelse{\isempty{#7}}{}{Special Rules: #7}
+	\end{minipage}
+	\par
+}
+\newcommand{\weaponmod}[5]{
+	\textbf{\ul{#1}}:\\
+	#3; #4; #5\\
+	#2
+	\par
+}
+\newcommand{\meleecomponent}[6]{
+	\begin{minipage}{\textwidth}
+		\textbf{\ul{#1:}}\\
+		#2\\
+		\textit{Weight}: #4; \textit{Price}: #5\ifthenelse{\isempty{#6}}{}{; \textit{Requirement}: #6}\\
+		\textit{Effect}: #3
+	\end{minipage}
+	\par
+}
+\newcommand{\ammo}[6]{
+	\begin{minipage}{\textwidth}
+		\textbf{#1:} #2\\
+		\textit{Price: #3; Unit of sale: #4}\\
+		\textit{Weight/Bulk: #5 per #6}
+	\end{minipage}
+	\par
+}
+\newcommand{\armor}[9]{
+	\begin{minipage}{\textwidth}
+		\textbf{\ul{#1}} (covers: #6)\\
+		\begin{tabular}{|r|r|r|r|}
+			\hline
+			Head & Chest & Arms & Legs\\
+			\hline
+			#2 & #3 & #4 & #5\\
+			\hline
+		\end{tabular}\par
+		\vspace{2mm}
+		\textit{Price:} #8; \textit{Weight:} #9\\
+		#7
+	\end{minipage}
+	\par
+}
+\newcommand{\armormod}[6]{
+	\begin{minipage}{\textwidth}
+		\textbf{\ul{#1}}\\
+		#2\\
+		\textit{Price:} #3; \textit{Weight:} #6\\
+		\textit{Mod points:} #4\ifthenelse{\isequivalentto{N}{#5}}{}{; Requires power source}
+	\end{minipage}
+	\par
+}
+\newcommand{\pes}[6]{
+	\begin{minipage}{\textwidth}
+		\textbf{\ul{#1}}\\
+		Armor: #2; Threshold: #3\\
+		\textit{Price:} #4; \textit{Weight:} #5
+		\ifthenelse{\isempty{#6}}{}{\\} %conditional line break
+		#6
+	\end{minipage}
+	\par
+}
+\newcommand{\implant}[7]{
+	\begin{minipage}{\textwidth}
+		\textbf{#1}\\
+		\textit{#2}\\
+		Effect: #3\\
+		\textit{Price:} #6; \textit{Load:} #5 \ifthenelse{\isequivalentto{-}{#4}}{}{; \textit{Slot:} #4}\\
+		\textit{Available Mods:} #7
+	\end{minipage}
+	\par
+}
+\newcommand{\augmod}[3]{
+	\begin{minipage}{\textwidth}
+		\textbf{#1}\\
+		#2\\
+		\textit{Cost:} #3
+	\end{minipage}
+	\par
+}
+\newcommand{\mod}[2]{\item \textbf{#1}: #2}
