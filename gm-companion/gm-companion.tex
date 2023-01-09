@@ -1,0 +1,85 @@
+\documentclass[12pt,a4paper,openany]{book}
+\input{../core-rulebook/config/news.tex}
+\input{../core-rulebook/config/packages.tex}
+
+\usepackage{ltablex}
+%Title
+\title{Neon Pen and Paper - GM Companion}
+\author{Fr0sty}
+\date{\today}
+
+\begin{document}
+	\maketitle
+	\tableofcontents
+	
+	\chapter{Specialties}
+%	What differenciates Neon from other PnP games? How do you deal with that as a GM?
+%	Lethality
+%	Modularity
+	
+	\chapter{Mission Creation}
+%	Models: Technoir, Halo Mythic
+	\section{Mission Type}
+	\section{Goal}
+	\section{Opposition}
+	\section{Twist}
+	
+	\chapter{Bestiary}
+	\section{Hit Locations}
+	Not all creatures have to look like humans necessarily; the list at the end of this chapter contains humanoids, quadrupeds, worms and hexapeds. Of course hit locations and location hp differ.
+	\input{components/hitlocations.tex}
+
+	\section{Size}
+	Larger creatures are more resilient on average. Mechanically this means that HP is multiplied by a factor depending on a creature's size category.\\
+	Example: While an \emph{average} humanoid has 25 HP on his body, a \emph{huge} humanoid would have 200\% of that, i.e. 2 times, i.e. 50.
+	\begin{tabularx}{\textwidth}{|l|r|}
+		\hline
+		Minuscule &  50\% \\ \hline
+		Puny      &  66\% \\ \hline
+		Tiny      &  75\% \\ \hline
+		Small     &  88\% \\ \hline
+		Average   & 100\% \\ \hline
+		Tall      & 150\% \\ \hline
+		Huge      & 200\% \\ \hline
+		Hulking   & 250\% \\ \hline
+		Enormous  & 300\% \\ \hline
+	\end{tabularx}
+	
+	\section{Tags}
+	Creatures may carry tags like \emph{ANIMAL}. Any tag means some collection of traits that these creatures share, whether they are generally similar or not. If you want to create your own creatures, start by adding a tag to an existing creature and reskinning it.\\
+	Example: One might say that a bear [an existing creature] by itself is not all that interesting. A \emph{DRUGGED} bear [added a tag] sounds hilarious and much more mechanically engaging but might not exactly be taken seriously by many players. Going on to call it Subject B4R, a recent bio-weapon built by Mishima Zaibatsu for brutal, morale breaking close quarters engagements [reskin] might make for a very interesting plot point and tense encounter.
+	\input{components/tags.tex}
+	
+	\section{Creatures}
+	\input{components/bestiary.tex}
+	
+	\chapter{Nemesis}
+	Very special, personal enemies might be classified as \emph{Nemesis}. They should be few and far between and have a personal connection to one player character or even the whole party.\\
+	To make them special mechanically as well they should gain 20-25 GP in Boons, 10-15 GP in Banes and one or two Nemesis Abilities. They may be chosen from the list below or made up.
+	\section*{Nemesis Abilities}
+	The following section contains a list of possible Nemesis abilities. It is by no means comprehensive.
+	{\setlength{\extrarowheight}{5pt}
+	\begin{tabularx}{\textwidth}{l|X}
+		Ability & Effect\\
+		\hline
+		\textbf{Blooded} & The Nemesis is incredibly jaded and resilient. He ignores any pain and fear.\\
+		\hline
+		\textbf{Caring} & The Nemesis is charismatic and kind to his underlings. Anyone not hostile towards him will support him in a fight to the best of their abilities.\\
+		\hline
+		\textbf{Conniving} & The Nemesis is prepared for everything. Once per day when failing a test, he may decide to pass with D5 DoS instead, as he planned for exactly this occasion. If his opponent does something absolutely bananas, the GM may rule even this ability to be outclassed.\\
+		\hline
+		\textbf{Cruel} & The Nemesis is a heartless individual. Once per encounter he may make an Intimidate test, causing fear in its opponents. Each time a character sees him after the first, the test gains cumulative a bonus of +10.\\
+		\hline
+		\textbf{Fanatical} & The Nemesis is obsessed and nothing will stop him. He can ignore any and all modifiers that directly distract him from his goal, be that pain, exhaustion, sleep deprivation or someone talking at him while he's driving. While he is blinded by that goal however, his Instinct is reduced by 20.\\
+		\hline
+		\textbf{Foresightful} & The Nemesis can almost see the future. His instinct is increased by 10 and deceptive maneuvers like \emph{Faints} don't work against him, nor will he ever lose initiative from dirty tricks.\\
+		\hline
+		\textbf{Honor-bound} & The Nemesis will never stab someone in the back, in turn he has become a great duelist. While in a one-on-one fight - be that melee or shootout - he gains a +15 to combat tests. Otherwise he will gain a -10 to combat tests.\\
+		\hline
+		\textbf{Masked} & The Nemesis' facial features are very unremarkable and he knows to use this as an advantage. When the Nemesis dies and the body is not closely investigated, it may turn out later that the corpse is just a double.\\
+		\hline
+		\textbf{Reputable} & The Nemesis is generally well regarded; this means that characters who speak out against him at the wrong place or the wrong time will quite possibly suffer dire consequences.\\
+		\hline
+		
+	\end{tabularx}}
+\end{document}
