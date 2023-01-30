@@ -61,6 +61,7 @@
 }
 \newcommand{\boon}[4][]{
 	\begin{minipage}{\textwidth}
+		\label{boon::#2}
 		\textbf{\ul{\smash{#2}}} (#4 GP\ifthenelse{\isempty{#1}}{}{ }#1)\\
 		#3
 	\end{minipage}
