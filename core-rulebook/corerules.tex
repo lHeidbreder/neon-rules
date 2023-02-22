@@ -11,8 +11,7 @@
 \input{config/news.tex}
 
 \begin{document}
-	\maketitle
-	\tableofcontents
+	\input{config/frontpages.tex}
 	
 	\chapter{The Foundation}
 	\section{Basics}
@@ -33,6 +32,8 @@
 	\end{exampleblock}
 
 	The required dice will be a D10 and a percentile dice, which essentially is also a D10 with an additional 0 (00, 10, 20 and so on). If a D100 roll is requested, both dice are rolled simultaneously. Both dice are added to each other and that will be the result, so a 4 and a 70 will become 74. The one exception to this is rolling all zeros - this will become 100.
+	\section{Re-rolls}
+	Some rules will allow re-rolling dice. In this case you roll the dice again and the new result will count as f the first roll never took place. A D100 in this case is a single dice and has to be re-rolled as a whole - not just the 1s or the 10s.
 	\section{Degrees of success/failure}
 	Success can mean a lot of things. Hitting a target and hitting dead center are both successes but they clearly differ in how successful they are. Enter Degrees of Success (or DoS for short). You gain one degree of success for just general success and every full 10 points there are between the eyes on the dice and the target value gives you one additional degree of success. Depending on how many are achieved, the GM describes the result accordingly.
 	Another example:
@@ -252,7 +253,7 @@
 	With basic medical knowledge (a medication check +50) a character can stop another from bleeding out. That character needs to be right next to the patient and cannot perform any other actions other than holding the wound shut.\\
 	\textbf{Overexertion} is often overlooked but can very well be lethal. Generally if a character’s exhaustion surpasses their ConB, they collapse, recovering from one level per 2 hours of rest. If the character manages to surpass 3 times her ConB, the character collapses but does not recover naturally anymore. If the character can be saved at that point is up to the GM.
 	\section{Natural healing}
-	Characters recover from wounds naturally. The wounded character takes a constitution test at a modifier according to the table below. He heals one wound plus one per degree of success, if any. Recovery is split evenly among damaged zones, prioritizing more severe injuries. This recovery only happens if the wounds can at all heal and are not infected.
+	Characters recover from wounds naturally. The wounded character takes a constitution test at a modifier according to the table below. He heals one wound plus one per degree of success, if any, but reduced by 1/4 of the total armor worn during sleep to a minimum of 1. Recovery is split evenly among damaged zones, prioritizing more severe injuries. This recovery only happens if the wounds can at all heal and are not infected.
 	\section{Medical attention}
 	If a character gets medical attention, he recovers in addition to his natural healing. The medical check is at a -5 penalty for every location that is being treated beyond the first, so up to a -25 if the whole body is being treated. If the performing doctor is also the patient, the test takes an additional -15. Every treated zone will recover from one wound and the tending doctor can split their DoS between all treated locations to recover from even more wounds. Any character can benefit from this once per day.
 	\section{Recovery time}
@@ -263,16 +264,17 @@
 	\chapter{Hazards}
 	\section{Common hazards}
 	A few hazards threaten everyone.\\
-	Exhaustion is easily the most common threat to any character after physical damage. Exhaustion is gathered through many ways. Every level of exhaustion gives the character a -10 penalty to any check. If exhaustion reaches too high, the character is at risk of overexertion (see Healing-Lethality).\\
-	Uncontrolled falling is the most common way the environment will try to kill a character. By default the character will take damage that ignores armor but not injury threshold. The damage is an amount of D10 equal to a third of the distance fallen in meters and hits an additional zone per full 5 meters, not hitting any zones twice.\\
+	\textbf{Deafening} may be painful but is not lethal. It is very common when using firearms without ear protection or a silencer, especially in enclosed spaces. As a rule of thumb a character is deafened for one combat round for every shot fired within 2 meters or 4 meters indoors. Explosives cause deafening for twice the Blast radius. When the number of rounds reaches 25, the character permanently loses his hearing.\\
+	\textbf{Exhaustion} is easily the most common threat to any character after physical damage. Exhaustion is gathered through many ways. Every level of exhaustion gives the character a -10 penalty to any check. If exhaustion reaches too high, the character is at risk of overexertion (see Healing-Lethality).\\
+	Uncontrolled \textbf{falling} is the most common way the environment will try to kill a character. By default the character will take damage that ignores armor but not injury threshold. The damage is an amount of D10 equal to a third of the distance fallen in meters and hits an additional zone per full 5 meters, not hitting any zones twice.\\
 	For example hitting the ground after falling 12 meters would deal 4D10 damage to 2 locations. If the fall was e.g. 65 meters instead, it would deal 22D10 damage to all locations.\\
-	Objects falling onto a character deal half as much damage for every kilogram they weigh. For example a flower pot weighing three kilos falling from 12 meters would deal 6D10 damage.\\
+	\textbf{Objects falling} onto a character deal half as much damage for every kilogram they weigh. For example a flower pot weighing three kilos falling from 12 meters would deal 6D10 damage.\\
 	\emph{Note: These calculations can be unnecessarily complicated. If you don't absolutely need precise values, estimate the results.}\\
-	Suffocation, also encompassing drowning and smoke inhalation, is an often underestimated threat to most characters. If a character consciously holds her breath, she can hold it for three times her Constitution in seconds. While holding her breath, she can’t fight or do very strenuous tasks. If she cannot or can no longer hold her breath, the effects of suffocation set in after one round.\\
+	\textbf{Suffocation}, also encompassing drowning and smoke inhalation, is an often underestimated threat to most characters. If a character consciously holds her breath, she can hold it for three times her Constitution in seconds. While holding her breath, she can’t fight or do very strenuous tasks. If she cannot or can no longer hold her breath, the effects of suffocation set in after one round.\\
 	The afflicted character will gain exhaustion every round starting with 1 on the first round, 2 on the second round and so on.\\
-	Fire and the burns associated with it are a minor threat to characters. Fire does minor damage, generally up to D10 per round, but it deals its damage to every location ignoring three quarters of any non-sealed armor. Fire generally comes with smoke and eats away at the oxygen in the air - both of which can be very lethal in enclosed spaces, see Suffocation.\\
-	Freezing is relatively rare. Should a character be submitted to cold temperatures without proper equipment however, she will suffer a level of exhaustion every hour. If temperatures are freezing cold, she will suffer 2 levels per hour.\\
-	Starvation is even rarer and purely optional, food is widely available. Should the party be confronted with the wasteland however, starvation suddenly enters the ring. Starvation progresses in 5 steps, advancing one per day of no or inadequate food. Eating around half as much as required advances the effects by one step only every two days.\\
+	\textbf{Fire} and the burns associated with it are a minor threat to characters. Fire does minor damage, generally up to D10 per round, but it deals its damage to every location ignoring three quarters of any non-sealed armor. Fire generally comes with smoke and eats away at the oxygen in the air - both of which can be very lethal in enclosed spaces, see Suffocation.\\
+	\textbf{Freezing} is relatively rare. Should a character be submitted to cold temperatures without proper equipment however, she will suffer a level of exhaustion every hour. If temperatures are freezing cold, she will suffer 2 levels per hour.\\
+	\textbf{Starvation} is even rarer and purely optional, food is widely available. Should the party be confronted with the wasteland however, starvation suddenly enters the ring. Starvation progresses in 5 steps, advancing one per day of no or inadequate food. Eating around half as much as required advances the effects by one step only every two days.\\
 	After the first step the character will be distracted by hunger, increasing all disabling characteristics by 15. After two steps natural healing is stopped and recovery times are twice as long. The character also shows the first visual signs of malnourishment. After step three she takes -15 to every test and exhaustion does not regenerate naturally anymore, while after the fourth one level of exhaustion is also gained every day. Five days in the character will start hallucinating.\\
 	Starvation starts recovering when the character has eaten enough again by one step every rest phase.
 	\section{CBRN}
@@ -320,7 +322,7 @@
 	Before anyone determines what the character is - i.e. create a stat sheet - first it needs to be decided who said character is. The following list of 20 questions covers all questions a player or a GM may have concerning a character and will form the basis for character creation. Keep them in mind at every step, as they define who your character is at its core.
 	
 	\begin{enumerate}
-		\setlength\itemsep{-8mm}
+		\setlength\itemsep{-6mm}
 		\item What does the character look like?\\
 			\textit{Are you large or small? Are you male or female or can anyone even tell? What color are your hair and his eyes? How are you built?}
 		\item What first impression does the character leave on strangers?\\
