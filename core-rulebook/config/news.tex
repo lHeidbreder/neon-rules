@@ -5,46 +5,48 @@
 
 %Custom Commands
 \newcommand{\ul}[1]{\underline{\smash{#1}}}
-\newcommand{\breakline}{\vspace{.5cm} \hrule width \textwidth \relax}
+\newcommand{\breakline}{\vspace{.5cm} \hrule width \columnwidth \relax}
 \newcommand{\specialrule}[2]{
-	\begin{minipage}{\textwidth/2}
+	\begin{minipage}{\columnwidth}
 		\textbf{\ul{#1:}}\\
 		#2\\
 	\end{minipage}
+	\par
 }
-\newcommand{\supply}[5]{
-	\begin{minipage}{\textwidth/2}
-		\textbf{\ul{#1}} (#2)\\
-		Price: #4\\
-		Weight: #5\\
-		#3\\
+\newcommand{\supply}[4]{
+	\begin{minipage}{\columnwidth}
+		\textbf{\ul{#1}}\\
+		Price: #3\\
+		Weight: #4\\
+		#2\\
 	\end{minipage}
+	\par
 }
 \newcommand{\service}[4]{
-	\begin{minipage}{\textwidth/2}
+	\begin{minipage}{\columnwidth}
 		\textbf{\ul{#1}}\\
 		#2\\
 		\textit{Cost:} #3 per #4\\
 	\end{minipage}
-	%	\par
+	\par
 }
 \newcommand{\statuseffect}[2]{
-	\begin{minipage}{\textwidth}
+	\begin{minipage}{\columnwidth}
 		\textbf{\ul{#1:}}\\
 		#2\\
 	\end{minipage}
 }
 \newcommand{\skill}[4][Basic]{
-	\begin{minipage}{\textwidth}
+	\begin{minipage}{\columnwidth}
 		\textbf{\ul{#2}}\\
 		Difficulty: #1\\
 		Common Characteristic: #3\\
-		Description:\\
-		#4\\
+		\textit{#4}\\
 	\end{minipage}
+	\par
 }
 \newcommand{\ability}[4]{
-	\begin{minipage}{\textwidth}
+	\begin{minipage}{\columnwidth}
 		\textbf{\ul{#1}} (#2 XP)\\
 		Prerequisites: #3\\
 		Effect:\\
@@ -52,7 +54,7 @@
 	\end{minipage}
 }
 \newcommand{\maneuver}[3]{
-	\begin{minipage}{\textwidth}
+	\begin{minipage}{\columnwidth}
 		\textbf{\ul{Maneuver: #1}} (#2 XP)\\
 		Prerequisites: #3\\
 		Effect:\\
@@ -60,8 +62,9 @@
 	\end{minipage}
 }
 \newcommand{\boon}[4][]{
-	\begin{minipage}{\textwidth}
-		\textbf{\ul{\smash{#2}}} (#4 GP\ifthenelse{\isempty{#1}}{}{ }#1)\\
+	\begin{minipage}{\columnwidth}
+		\label{boon::#2}
+		\textbf{\ul{\smash{#2}}} \mbox{(#4 GP\ifthenelse{\isempty{#1}}{}{ }#1)}\\
 		#3
 	\end{minipage}
 	\par
@@ -70,8 +73,7 @@
 	\boon[#4]{#1}{#2}{#3}
 }
 \newcommand{\rangedweapon}[9]{
-	\vspace{2mm}
-	\begin{minipage}{\textwidth}
+	\begin{minipage}{\columnwidth}
 		\textbf{\ul{#1}}\\
 		\textit{#2}\\
 		\textit{Weight (unloaded)}: #9; \textit{Price}: #8\\
@@ -89,7 +91,7 @@
 	\par
 }
 \newcommand{\meleecomponent}[6]{
-	\begin{minipage}{\textwidth}
+	\begin{minipage}{\columnwidth}
 		\textbf{\ul{#1:}}\\
 		#2\\
 		\textit{Weight}: #4; \textit{Price}: #5\ifthenelse{\isempty{#6}}{}{; \textit{Requirement}: #6}\\
@@ -98,7 +100,7 @@
 	\par
 }
 \newcommand{\ammo}[6]{
-	\begin{minipage}{\textwidth}
+	\begin{minipage}{\columnwidth}
 		\textbf{#1:} #2\\
 		\textit{Price: #3; Unit of sale: #4}\\
 		\textit{Weight/Bulk: #5 per #6}
@@ -106,7 +108,7 @@
 	\par
 }
 \newcommand{\armor}[9]{
-	\begin{minipage}{\textwidth}
+	\begin{minipage}{\columnwidth}
 		\textbf{\ul{#1}} (covers: #6)\\
 		\begin{tabular}{|r|r|r|r|}
 			\hline
@@ -122,7 +124,7 @@
 	\par
 }
 \newcommand{\armormod}[6]{
-	\begin{minipage}{\textwidth}
+	\begin{minipage}{\columnwidth}
 		\textbf{\ul{#1}}\\
 		#2\\
 		\textit{Price:} #3; \textit{Weight:} #6\\
@@ -131,7 +133,7 @@
 	\par
 }
 \newcommand{\pes}[6]{
-	\begin{minipage}{\textwidth}
+	\begin{minipage}{\columnwidth}
 		\textbf{\ul{#1}}\\
 		Armor: #2; Threshold: #3\\
 		\textit{Price:} #4; \textit{Weight:} #5
@@ -141,7 +143,7 @@
 	\par
 }
 \newcommand{\implant}[7]{
-	\begin{minipage}{\textwidth}
+	\begin{minipage}{\columnwidth}
 		\textbf{#1}\\
 		\textit{#2}\\
 		Effect: #3\\
@@ -151,7 +153,7 @@
 	\par
 }
 \newcommand{\augmod}[3]{
-	\begin{minipage}{\textwidth}
+	\begin{minipage}{\columnwidth}
 		\textbf{#1}\\
 		#2\\
 		\textit{Cost:} #3
@@ -159,3 +161,11 @@
 	\par
 }
 \newcommand{\mod}[2]{\item \textbf{#1}: #2}
+\newcommand{\nrule}[3]{
+	\begin{minipage}{\textwidth}
+		\textbf{#1}\\
+		\ul{Condition:} #2\\
+		\ul{Effect:} #3
+	\end{minipage}
+	\par
+}
