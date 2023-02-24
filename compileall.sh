@@ -22,3 +22,6 @@ do
     lualatex.exe -synctex=1 -interaction=nonstopmode --output-directory="${file_output_dir}" ${i##*/} 1>> "${console_output_dir}/compile.out" 2>> "${console_output_dir}/compile.err"
     cd $main_dir
 done
+
+#Delete all non-pdf files
+rm ${file_output_dir}/*[!.pdf]
