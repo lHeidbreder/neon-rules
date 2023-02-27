@@ -1,6 +1,6 @@
 shopt -s nullglob
 shopt -s globstar
-main_dir=$(pwd)
+main_dir="$(pwd)/.."
 
 console_output_dir="${main_dir}/compiler_output"
 mkdir -p $console_output_dir
