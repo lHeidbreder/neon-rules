@@ -19,7 +19,7 @@ for i in ${files[@]}
 do
     cd ${i%/*.tex}
     echo "Compiling: ${i##*/}"
-    lualatex.exe -synctex=1 -interaction=nonstopmode --output-directory="${file_output_dir}" ${i##*/} 1>> "${console_output_dir}/compile.out" 2>> "${console_output_dir}/compile.err"
+    lualatex.exe -interaction=nonstopmode --output-directory="${file_output_dir}" ${i##*/} 1>> "${console_output_dir}/compile.out" 2>> "${console_output_dir}/compile.err"
     cd $main_dir
 done
 
