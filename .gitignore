@@ -275,3 +275,10 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
+
+# VS files for coding-related files
+.vs/
+
+# Compile script files
+compiler_output/
+file_output/
