@@ -1,6 +1,6 @@
 shopt -s nullglob
 shopt -s globstar
-main_dir="$(pwd)/.."
+main_dir="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )/.."
 
 console_output_dir="${main_dir}/scripts/compiler_output"
 mkdir -p $console_output_dir
