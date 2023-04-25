@@ -58,7 +58,7 @@
 \newcommand{\maneuver}[3]{
 	\begin{minipage}{\columnwidth}
 		\textbf{\ul{Maneuver: #1}} (#2 XP)\\
-		Prerequisites: #3\\
+		\textit{Prerequisites: #3\\}
 		Effect:\\
 		Allows the use of the maneuver #1 at normal penalties.\\
 	\end{minipage}
@@ -106,7 +106,7 @@
 	\begin{minipage}{\columnwidth}
 		\textbf{#1:} #2\\
 		\textit{Price: #3; Unit of sale: #4}\\
-		\textit{Weight/Bulk: #5 per #6}
+		\textit{Weight/Bulk: #5 \ifthenelse{\isempty{#6}}{each}{per #6}}
 	\end{minipage}
 	\par
 }
