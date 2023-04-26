@@ -3,9 +3,7 @@
 \input{../core-rulebook/config/news.tex}
 \input{../core-rulebook/config/packages.tex}
 
-\title{Neon Pen and Paper - Psionics}
-\author{Fr0sty}
-\date{\today}
+\def\subtitle{Psionics}
 
 %default pside effects
 \newcommand{\dpeii}{\mod{Psychic Recoil}{Instead of the target, the psionic is hit by the power instead. If the caster is the target, nothing happens.}}
@@ -13,19 +11,19 @@
 \newcommand{\dpeix}{\mod{Overload}{The Cassandra implant starts malfunctioning and goes into emergency reboot. Due to psionic fields in the skull the caster takes -10 to intelligence and can't use psionics for the next hour.}\setcounter{enumi}{-1}}
 
 \begin{document}
-	\input{../core-rulebook/config/packages.tex}
-	
+	\input{../core-rulebook/config/frontpages.tex}
+
 	\chapter{Introduction}
 	This psionic system for Neon PnP serves as a pseudo magic system that may be added for a more science-fantasy as opposed to a science-fiction feeling.\\
 	Please note that a psionic described in this book is very flexible and may outshine more specialized player characters. Also - due to how flexible these rules are - it might demand a lot of imagination from a GM.
-	
+
 	Author's note: \emph{I'm doing this for shits and giggles because I wanted to write a magic system. Neither does it fit my vision of a more scientifically accurate sci-fi/cyberpunk crossover nor is it likely to be particularly balanced. It exists mostly to allow conversion of Neon to other settings like Mass Effect or Warhammer 40k. Use at your own peril.}
-	
+
 	\chapter{Becoming a Psionic}
 	To even consider casting psionic powers, the character must first become a psionic. Luckily this is accessible to anyone with the necessary connections and funds to buy a Cassandra focus implant.\\
 	Certain individuals are more efficient with this focus however (represented by a boon in chapter \ref{ch:addcontent}). This advanced affinity exists from birth and can't be recreated later, as is the case with all boons. \par
 	The moment a character attains a Cassandra focus, he may learn the Psionics skill and with the first level of said skill, the character gains access to his first psionic discipline. He can learn more disciplines by buying the Psionic Discipline ability as described in chapter \ref{ch:addcontent}.
-	
+
 	\chapter{Creating a Power}
 	\label{ch:create}
 	Below are all the rules required to build a power. It may make sense for a psionic to keep a list of powers prepared at hand.
@@ -126,7 +124,7 @@
 %	Psionics can show advanced restraint, using the bare minimum of power necessary to cast. This reduces the cost by 3 to a minimum of 0 and if it reaches 0, no pside effects can occur either. The drawback is that, since the power is reduced by a lot, no degrees of success can be gained.
 	\subsubsection{Pushing}
 	If push comes to shove, any psionic can push a power further than necessary. Such effort is surprisingly easy to control but unsurprisingly strenuous, granting a +10 for every additional cost added to the power voluntarily.
-	
+
 	\chapter{Casting a Power}
 	Now that the power has been constructed, it is time to use it. Our target value is determined as follows:
 	\begin{enumerate}
@@ -136,14 +134,14 @@
 		\item Potentially special circumstances
 	\end{enumerate}
 	Now that we have our target value, the roll is made in the first action of the cast time. In the last action the power is resolved. If the test fails, cast time is halved but the power is not resolved.
-	
+
 	\chapter{Repercussions and Pside Effects}
 	Such power comes at a great price, namely the user's own life. Every power has a cost associated with it. At the end of the cast time roll 1D5 and subtract it from the power's cost to a minimum of 0. The caster takes damage equal to that number on a randomly determined location, ignoring cover, shields, armor and injury threshold as part of the user's own body is used to power his psionics.
-	
+
 	\vspace*{5mm}
 	Additionally these abilities are not without flaw, the Focus implant has not had much field testing. Casting a psionic power consists of energy accumulation, precise timing and intense concentration. If too little energy is accumulated, the power cannot manifest. If timing is off, the power fizzles out. Now what happens if the psionic is powerful and skilled enough but her concentration slips? Enter "pside effects."\par
 	Whenever a psionic test shows doubles - whether or not the cast was successful - a pside effect is invoked. The specific effect is taken from the table with regards to the discipline cast and the number on the dice. When a power from a combined discipline is invoked, results from both tables are applied. If some effect is unfeasible or does not fit the situation well, the next lower number is applied, the effect is skipped or a completely different effect may be applied as per GM discretion.
-	
+
 	\paragraph{Telekinesis}
 	\begin{enumerate}
 		\mod{Another Happy Landing}{After casting the power the character is flung 2D10 meters into the air, crashing down a round later.}
@@ -214,7 +212,7 @@
 	\end{enumerate}
 	\paragraph{Blank\\}
 	Blank powers are a special case, as they cause pside effects depending on the type of power they are being used against. When they are just used to find psionic powers, they cause the same pside effects as Telepathy does.
-	
+
 	\chapter{Extending the rules}
 	\section{Disciplines}
 	Depending on the world and implementation of psionics, this system may require additional disciplines.\par
@@ -230,20 +228,20 @@
 		\item Results 11 and 00 are very detrimental.
 		\item All other results are neutral.
 	\end{itemize}
-	
+
 	\chapter{Additional Content}
 	\label{ch:addcontent}
 	\section{Boons}
 	\boon{Oozing Power}{When the character gains the ability to use psionics, he figuratively leaks power. All psionics he casts have their power increased by 1 level without additional costs but he permanently brings a very obvious effect around him wherever he goes. This may be strong winds, a faint whistling or optical illusions; whatever it may be, it makes it extremely obvious that he is a psionic.}{10}
 	\boon{Psionic Aptitude}{Grants access to an additional discipline; Start the game with the Psionics skill at Trained; Cannot be taken by Vat-grown or AIs}{12}
 	\boon{Psionic Prodigy}{Grants access to up to two additional disciplines; Start with the Psionics skill at Trained; Can only be taken by \emph{Pure} humans.}{25}
-	
+
 	\section{Banes}
 	\boon{Frail Mind}{become vulnerable to Telepathy (+10 to target)}{-8}
-	
+
 	\section{Skills}
 	\skill{Psionics}{any}{The knowledge to cast psionics. This is just the general skill and routine; to actually be useful a Cassandra implant and the knowledge of disciplines is also required.}
-	
+
 	\section{Abilities}
 	\ability{Psionic discipline}{0}{Psionics Known}{Gain access to the character's first psionic discipline}
 	\ability{Additional psionic discipline I}{600\\aptitude: 300\\prodigy: 200}{}{Gain access to an additional psionic discipline}
@@ -252,18 +250,18 @@
 	\ability{Combat caster}{500}{Psionics Trained}{gain +5 to cast powers with a casting duration of 10 sec and below}
 	\ability{Sixth Sense}{250}{Psionics Trained}{When a psi power is cast within 20 meters, the character may make a Psionics test as a free action. On a success he gains some insight like the discipline, the cost, the caster, the target, one for success and one additional per DoS.}
 	\ability{Mage Slayer}{400}{Sixth Sense or Witchseeker implant}{The user gains an attack of opportunity when he starts casting in the user's melee reach. Additionally damage caused by the user counts double for the purpose of breaking a psionic's concentration.}
-	
+
 	\section{Supply}
 	\supply{Winston's Detector}{hazards}{Allows detection of psionic powers. Anyone can tell when a power is cast within the vicinity but to estimate additional detail requires a test like the ability Sixth Sense with Logic replacing Psionics.}{cr 69}{0,3 kg}
 	\supply{Psi Core}{core melee component}{Immediately after hitting an opponent in melee, the wielder may cast a psionic power with a casting time of 1 action and range touch explicitly against the opponent as a free action instead.}{cr 57}{0,4 kg}
-	
+
 	\section{Implants}
 	\implant{Cassandra Psi-Focus}{A rare, experimental implant to allow a select few individuals to improve their effectiveness in private military operations. It comes with a lot of drawbacks and can only reveal its full potential with certain individuals.}{allows access to Psionics}{brain}{2 RI, 2 MT}{cr 165}{-}
 	\implant{Psi Amp}{An amplifier for psionics, more rare than the Focus implant itself, even comparatively. They have to be attuned to improve a certain discipline rather than just all psionics to be used safely.}{gain +5 to cast a certain discipline; may be taken multiple times}{nervous system}{1 RI}{cr 95}{Perfect fit}
 	\implant{Psionic Release}{A release implant to reduce the strain of casting psionics. Many psionics would probably like this implant but for most military contractors this implant is simply too expensive for anything more than a single fireteam - if even that.}{reduce cost of powers by 1}{chest}{3 MT}{cr 370}{-}
 	\implant{Null Mesh}{A special mesh is grown into the skin. It gives the skin a very particular violet color that is sure to shoot ice cold fear through a psionic's veins.}{psionics cast at or by the wearer take a -30}{skin}{1 MT}{cr 95}{Perfect fit, Aesthetic, Wrongly fitted, Inconspicuous}
 	\implant{"Witchseeker" Implanted Winston's Detector}{A Winston's Detector implanted into the brain to feed its readings directly to the brain of the user. Depending on how it is implanted, the sensation may be experienced as a new type of smell, a specific sound or even visible as a faint mist. Extremely rare military hardware which gives "witchseeker" psi hunters their name.}{allows access to Psionics but limited to the \emph{Blank} discipline; grants +10 to Psionics}{brain}{2 RI, 1 MT}{cr 88}{-}
-	
+
 	\section{Chemicals}
 	\subsection{Dissociative}
 	\subsubsection{Superbia}
@@ -290,7 +288,7 @@
 	Price:\tab cr 14\\
 	Weight:\tab 0,01g\\
 	Notes:\tab extremely rare
-	
+
 	\subsection{Sedative}
 	\subsubsection{Helium Stabilizer}
 	Type:\tab tablet/pill\\
@@ -313,6 +311,6 @@
 	Addiction After:\tab - overdoses\\
 	Price:\tab cr 12\\
 	Weight:\tab 0,01g\\
-	Notes:\tab 
-	
+	Notes:\tab
+
 \end{document}
