@@ -1,6 +1,6 @@
 %Custom Environments
 \newenvironment{exampleblock}[1][1]
-{\par\hfill\begin{minipage}{\dimexpr\textwidth-#1cm}}
+{\par\hfill\begin{minipage}{\dimexpr\columnwidth-#1cm}}
 	{\end{minipage}\par}
 
 %Custom Commands
@@ -9,24 +9,24 @@
 \newcommand{\specialrule}[2]{
 	\begin{minipage}{\columnwidth}
 		\textbf{\ul{#1:}}\\
-		#2\\
+		#2
 	\end{minipage}
-	\par
+    \par
 }
 \newcommand{\supply}[4]{
 	\begin{minipage}{\columnwidth}
 		\textbf{\ul{#1}}\\
 		Price: #3\\
 		Weight: #4\\
-		#2\\
+		#2
 	\end{minipage}
-	\par
+    \par
 }
 \newcommand{\service}[4]{
 	\begin{minipage}{\columnwidth}
 		\textbf{\ul{#1}}\\
 		#2\\
-		\textit{Cost:} #3 per #4\\
+		\textit{Cost:} #3 per #4
 	\end{minipage}
 	\par
 }
@@ -41,10 +41,12 @@
 		\textbf{\ul{#2}}\\
 		Difficulty: #1\\
 		Common Characteristic: #3\\
-		\textit{#4}\\
+		Description:\\
+		#4\\
 	\end{minipage}
-	\par
 }
+\newcommand{\melee}[2]{\skill{#1}{Melee Base}{#2}}
+\newcommand{\ranged}[2]{\skill{#1}{Ranged Base}{#2}}
 \newcommand{\ability}[4]{
 	\begin{minipage}{\columnwidth}
 		\textbf{\ul{#1}} (#2 XP)\\
@@ -56,7 +58,7 @@
 \newcommand{\maneuver}[3]{
 	\begin{minipage}{\columnwidth}
 		\textbf{\ul{Maneuver: #1}} (#2 XP)\\
-		Prerequisites: #3\\
+		\textit{Prerequisites: #3\\}
 		Effect:\\
 		Allows the use of the maneuver #1 at normal penalties.\\
 	\end{minipage}
@@ -64,7 +66,7 @@
 \newcommand{\boon}[4][]{
 	\begin{minipage}{\columnwidth}
 		\label{boon::#2}
-		\textbf{\ul{\smash{#2}}} \mbox{(#4 GP\ifthenelse{\isempty{#1}}{}{ }#1)}\\
+		\textbf{\ul{\smash{#2}}} (#4 GP\ifthenelse{\isempty{#1}}{}{ }#1)\\
 		#3
 	\end{minipage}
 	\par
@@ -73,6 +75,7 @@
 	\boon[#4]{#1}{#2}{#3}
 }
 \newcommand{\rangedweapon}[9]{
+	\vspace{2mm}
 	\begin{minipage}{\columnwidth}
 		\textbf{\ul{#1}}\\
 		\textit{#2}\\
@@ -103,7 +106,7 @@
 	\begin{minipage}{\columnwidth}
 		\textbf{#1:} #2\\
 		\textit{Price: #3; Unit of sale: #4}\\
-		\textit{Weight/Bulk: #5 per #6}
+		\textit{Weight/Bulk: #5 \ifthenelse{\isempty{#6}}{each}{per #6}}
 	\end{minipage}
 	\par
 }
@@ -161,30 +164,3 @@
 	\par
 }
 \newcommand{\mod}[2]{\item \textbf{#1}: #2}
-\newcommand{\nrule}[3]{
-	\begin{minipage}{\textwidth}
-		\textbf{#1}\\
-		\ul{Condition:} #2\\
-		\ul{Effect:} #3
-	\end{minipage}
-	\par
-}
-\newcommand{\baselocation}[6]{
-	\begin{minipage}{\columnwidth}
-		\textbf{\ul{#1}}\\
-		#2\\
-		\textit{Size:} #3; \textit{Conceal:} #4; \textit{Defense:} #5\\
-		Special conditions:\\
-		#6
-	\end{minipage}
-	\par
-}
-\newcommand{\baseasset}[6]{
-	\begin{minipage}{\columnwidth}
-		\textbf{\ul{#1}}\\
-		#6\\
-		\textit{Size:} #3; \textit{Conceal:} #4; \textit{Defense:} #5\\
-		#2
-	\end{minipage}
-	\par
-}
