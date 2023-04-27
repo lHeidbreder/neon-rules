@@ -1,4 +1,3 @@
-\usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{textcomp}
 \usepackage{xifthen}
@@ -17,3 +16,21 @@
 \author{Fr0sty}
 \date{\today}
 
+%Fonts
+\usepackage{fontspec}
+\def\fontpath{../core-rulebook/config/fonts/}
+\newfontfamily\heading[Path = \fontpath]{missiondanger}[
+	Extension = .ttf,
+	BoldFont = missiondangerexpand,
+	ItalicFont = missiondangerital,
+	BoldItalicFont = missiondangertitleital]
+\newfontfamily\subheading[Path = \fontpath]{paladinssemiital}[
+	Extension = .ttf,
+	BoldFont = paladinslaser,
+	ItalicFont = paladinssuperital,
+	BoldItalicFont = paladinsexpand]
+
+%Heading formatting
+\usepackage{titlesec}
+\titleformat{\chapter}{\heading\huge\bfseries}{\thechapter}{20pt}{}%\Huge}
+\titleformat{\section}{\subheading}{\thetitle}{18pt}{}
