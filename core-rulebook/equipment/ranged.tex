@@ -188,8 +188,9 @@ On the following pages all weapon mods are given in this format:\par
 \weaponmod{Biocoding}{A trigger lock reading biometric data of the user. The weapon can only be used when wielded by a user who was registered during building of the weapon. It cannot be removed or reprogrammed without destroying the weapon.}{none}{cr 20}{0.24 kg}
 \weaponmod{Vehicle Lock-on}{Adds vehicle lock-on to a Launcher or Heavy weapon; grants +30 to hitting vehicles and powered armor when taking at least one round to aim. Flares don't disrupt targeting but static smoke will.}{Core}{80\%}{3.4 kg}
 \weaponmod{Heat Seeker}{Adds heat-based targeting assistance systems, thereby granting +15 to shoot targets warmer than their surroundings but -15 to shoot targets colder than their surroundings.}{Core}{cr 280}{2.3 kg}
-\weaponmod{Energy Shield}{Adds a directional PES that covers the user's head and body. Covers the whole user instead if used with a tripod.\\
-	Armor: 15 / Threshold: 9}{Core}{cr 180}{3.8 kg}
+\weaponmod{Energy Shield}{Adds a directional PES that covers the user's head and torso. Covers the whole user instead if used with a tripod.\\
+	Armor: 15 / Threshold: 4}{Core}{cr 180}{3.8 kg}
+\weaponmod{Smart Gun}{Sophisticated aiming assistance takes care of all the hard work. The gun always uses a target value of 65 when taking shots, regardless of modifiers or the shooter. It still requires to be pointed in roughly the right direction though and will completely fail under EMP.}{Core}{cr 190}{6.9kg}
 
 \subsection{Ammunition}
 In the following section ammo types are given in this format:\\
@@ -292,25 +293,30 @@ Weight and bulk are given in the weight that one "standard magazine" - as used i
 
 %	Fuel Tank
 \subsubsection{Small Fuel Tanks}
-\ammo{Napalm}{ignites flammable surfaces}{cr 32}{1}{10kg}{}
-\ammo{White Phosphorus}{halves range, burns for a D5 minutes, ignites flammable surfaces and sticks even to non-flammable ones}{cr 64}{1}{20kg}{}
+\ammo{Napalm}{ignites flammable surfaces and sticks even to non-flammable ones}{cr 32}{1}{10kg}{}
+\ammo{White Phosphorus}{halves range, burns for a D5 minutes, ignites flammable surfaces and sticks even to non-flammable ones, cannot be extinguished by water}{cr 64}{1}{20kg}{}
 \ammo{Water}{1 dmg, 0 AP, Trauma, Stun (*the original amount of damage dice)}{cr 8}{1}{13kg}{}
+\ammo{Liquid Helium}{halves range, causes D5 exhaustion per hit}{cr 64}{1}{13kg}{}
+
 \subsubsection{Medium Fuel Tanks}
 \ammo{Napalm}{ignites flammable surfaces}{cr 61}{1}{20kg}{}
 \ammo{White Phosphorus}{halves range, burns for a D5 minutes, ignites flammable surfaces and sticks even to non-flammable ones}{cr 122}{1}{40kg}{}
 \ammo{Water}{1 dmg, 0 AP, Trauma, Stun (*the original amount of damage dice)}{cr 17}{1}{25kg}{}
+\ammo{Liquid Helium}{halves range, causes D5 exhaustion per hit}{cr 122}{1}{25kg}{}
+
 \subsubsection{Large Fuel Tanks}
 \ammo{Napalm}{ignites flammable surfaces}{cr 150}{1}{50kg}{}
 \ammo{White Phosphorus}{halves range, burns for a D5 minutes, ignites flammable surfaces and sticks even to non-flammable ones}{cr 300}{1}{100kg}{}
 \ammo{Water}{1 dmg, 0 AP, Trauma, Stun (*the original amount of damage dice)}{cr 32}{1}{62.5kg}{}
+\ammo{Liquid Helium}{halves range, causes D10 exhaustion per hit}{cr 300}{1}{62.5kg}{}
 
 %	Fuel Cells
 \subsubsection{Small Fuel Cells}
 \ammo{Standard Issue}{-}{cr 9}{1}{250g}{2}
 \ammo{Unstable}{On a hit roll above 95 causes the weapon's damage with Blast (1) around the shooter.}{cr 5}{1}{250g}{2}
 \subsubsection{Medium Fuel Cells}
-\ammo{Standard Issue}{-}{cr 15}{1}{750g}{1}
-\ammo{Unstable}{On a hit roll above 95 causes the weapon's damage with Blast (1) around the shooter.}{cr 8}{1}{750g}{1}
+\ammo{Standard Issue}{-}{cr 15}{1}{750g}{}
+\ammo{Unstable}{On a hit roll above 95 causes the weapon's damage with Blast (1) around the shooter.}{cr 8}{1}{750g}{}
 \subsubsection{Large Fuel Cells}
 \ammo{Standard Issue}{-}{cr 21}{1}{1.5kg}{0.5}
 \ammo{Unstable}{On a hit roll above 95 causes the weapon's damage with Blast (1) around the shooter.}{cr 11}{1}{1.5kg}{0.5}
