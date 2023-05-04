@@ -164,3 +164,35 @@
 	\par
 }
 \newcommand{\mod}[2]{\item \textbf{#1}: #2}
+
+%Base Building
+\newcommand{\baselocation}[6]{
+	\begin{minipage}{\columnwidth}
+		\textbf{#1}\\
+		Size: #3; Concealment: #4; Defense: #5\\
+		Conditions: #6\\
+		\textit{Cost:} #2
+	\end{minipage}
+	\par
+}
+\newcommand{\baseasset}[6]{
+	\begin{minipage}{\columnwidth}
+		\textbf{#1}\\
+		\textit{#2}
+		Size: #3; Concealment: #4; Defense: #5\\
+		\textit{Cost:} #6
+	\end{minipage}
+	\par
+}
+
+%Narrative
+\newcommand{\nrule}[3]{
+	\begin{minipage}{\columnwidth}
+		\section{#1}
+		\textit{#2}\\
+		\begin{exampleblock}
+			#3
+		\end{exampleblock}
+	\end{minipage}
+	\par
+}
