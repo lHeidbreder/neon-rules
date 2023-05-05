@@ -36,9 +36,10 @@ function ParseCSVLine (line,sep)
 			end 
 		end
 	end
-	return res
+    return res
 end
 
+-- Splits the entry and adds "\item " before each part
 function itemize(entry)
     local parts = string.gmatch(entry, "([^,]+)")
     local rtn = ""
@@ -49,15 +50,13 @@ function itemize(entry)
     return rtn
 end
 
-function import_from(csv_path, template_path)
-
-    -- open file
-    local csv = io.open(csv_path, "r")
+function importfrom(csvpath, templatepath)
 
     local headers = {}
     local lines = {}
     local is_first_line = true
-    for line in io.lines(csv_path) do
+    for line in io.lines(csvpath) do
+        
         -- parse first line for headers
         if is_first_line then
             headers = ParseCSVLine(line)
@@ -66,36 +65,41 @@ function import_from(csv_path, template_path)
         end
     
         -- parse all other lines
-        table.insert(lines, ParseCSVLine(line))
+        local parsedline = ParseCSVLine(line)
+        table.insert(lines, parsedline)
 
         ::continue::
     end
 
-    -- close file
-    csv:close()
-
     -- load template
-    local template_file = io.open(template_path, "r")
-    local template = f:read("*all")
+    local template_file = io.open(templatepath, "r")
+    local template = template_file:read("*all")
     template_file:close()
 
     -- adjust for itemize
-    for i=0,table.getn(headers) do
+    for i=1,table.getn(headers) do
         if string.match(headers[i], "itemize:[a-zA-Z_]") ~= nil then
-            for line in lines do
-                line[i] = itemize(line[i])
+            for key, line in pairs(lines) do
+                lines[key][i] = itemize(lines[key][i])
             end
         end
     end
 
     -- fill template
-    for line in lines do
-        local filled_template = template
-
-        for j=0,table.getn(headers) do
-            filled_template = string.gsub(filled_template, "@"..headers[j].."@", line[j])
+    for key, line in pairs(lines) do
+        local filledtemplate = template
+        
+        for j=1,table.getn(headers) do
+            filledtemplate = string.gsub(filledtemplate, "@"..headers[j].."@", line[j])
         end
 
-        tex.sprint(filled_template)
+        tex.print(filledtemplate)
+        --writetofile(filledtemplate)
     end
+end
+
+function writetofile(text)
+    local out = io.open("lua.out", "w")
+    out:write(text)
+    io.close(out)
 end
