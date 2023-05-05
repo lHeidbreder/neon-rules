@@ -1,0 +1,4 @@
+% First arg: the file path
+% Second arg: the template path
+\directlua{dofile("csv_importer.lua")}
+\newcommand{\luaimport}[2]{import_from(#1, #2)}
