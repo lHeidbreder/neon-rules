@@ -282,3 +282,5 @@ TSWLatexianTemp*
 # Compile script files
 compiler_output/
 file_output/
+_rulepackage/
+*.texin
