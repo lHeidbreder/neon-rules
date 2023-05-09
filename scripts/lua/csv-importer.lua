@@ -52,6 +52,9 @@ end
 
 function importfrom(csvpath, templatepath)
 
+    -- clear input file
+    os.remove(csvpath..".texin")
+
     local headers = {}
     local lines = {}
     local is_first_line = true
@@ -93,13 +96,13 @@ function importfrom(csvpath, templatepath)
             filledtemplate = string.gsub(filledtemplate, "@"..headers[j].."@", line[j])
         end
 
-        tex.print(filledtemplate)
-        --writetofile(filledtemplate)
+        --write to file so \input can pick it up later
+        writetofile(csvpath..".texin", filledtemplate)
     end
 end
 
-function writetofile(text)
-    local out = io.open("lua.out", "w")
+function writetofile(path, text)
+    local out = io.open(path, "a")
     out:write(text)
     io.close(out)
 end

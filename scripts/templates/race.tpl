@@ -1,4 +1,4 @@
-\paragraph*{@name@ \ifthenelse{\isempty{@variant@}}{}{ / @variant@} (@cost@ GP)}
+\paragraph*{@name@ \ifthenelse{\isempty{@variant@}}{}{/ @variant@} (@cost@ GP)}
 \textit{@flavor_text@}\par
 \begin{tabular}{|l|l|l|l|l|l|l|l|}
     \hline

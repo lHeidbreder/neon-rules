@@ -283,3 +283,4 @@ TSWLatexianTemp*
 compiler_output/
 file_output/
 _rulepackage/
+*.texin
