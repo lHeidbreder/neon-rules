@@ -11,8 +11,14 @@
 \usepackage[skip=10mm]{parskip}
 \raggedbottom
 
-%Title
-\title{Neon Pen and Paper - \subtitle}
+% Title Image
+\usepackage{wallpaper}
+\def\coverimgpath{../art/\subtitle/cover}
+
+%Title Page
+\title{
+	\colorbox{cyan}{Neon Pen and Paper - \subtitle} %TODO: replace box with glowing effect
+}
 \author{Fr0sty}
 \date{\today}
 
@@ -35,4 +41,5 @@
 \titleformat{\chapter}{\heading\huge\bfseries}{\thechapter}{20pt}{}%\Huge}
 \titleformat{\section}{\subheading}{\thetitle}{18pt}{}
 
+%lua scripts
 \input{../scripts/lua/lua_scripts.tex}
