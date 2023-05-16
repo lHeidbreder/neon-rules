@@ -284,3 +284,6 @@ compiler_output/
 file_output/
 _rulepackage/
 *.texin
+
+# csv import temp files
+*/out.txt
