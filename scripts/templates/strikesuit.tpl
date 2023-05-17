@@ -1,4 +1,4 @@
-\subsection{@series@ \ifthenelse{\isempty{@variant@}}{}{- @variant@}}
+\subsection*{@series@ \ifthenelse{\isempty{@variant@}}{}{- @variant@}}
 \textit{@flavor_text@}\par
 \begin{tabular}{|l|l|l|l|}
     \hline
@@ -12,10 +12,12 @@ Movement Speed: @movement_speed@\\
 Strength / Agility: @stat_bonus@\\
 Mods: @mod_slots@\\
 Weight: @weight@kg\\
-Further Modifiers:
+\ifthenelse{\isempty{@itemize:further_modifiers@}}
+{}
+{Further Modifiers:
 \vspace{-8mm}
 \begin{itemize}
     \setlength\itemsep{-8mm}
     @itemize:further_modifiers@
-\end{itemize}
+\end{itemize}}
 \par

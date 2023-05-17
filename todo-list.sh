@@ -1,1 +1,1 @@
-grep -ril -e 'todo' . | grep -E '.tex$'
+grep -ril -e 'todo' . | grep -E '(.tex)|(.csv)$'
