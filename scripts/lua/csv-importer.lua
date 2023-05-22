@@ -41,7 +41,8 @@ end
 
 -- Splits the entry and adds "\item " before each part
 function itemize(entry)
-    local parts = string.gmatch(entry, "([^,]+)")
+	if entry == nil then return "" end
+	local parts = string.gmatch(entry, "([^,]+)") or {}
     local rtn = ""
     for part in parts do
         rtn = rtn .. "\\item " .. part .. "\n"
