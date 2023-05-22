@@ -96,6 +96,9 @@ function importfrom(csvpath, templatepath)
         for j=1,table.getn(headers) do
             filledtemplate = string.gsub(filledtemplate, "@"..headers[j].."@", line[j])
         end
+		
+		--clean every pattern without matching column
+		filledtemplate = string.gsub(filledtemplate, "@[^%s]@", "")
 
         --write to file so \input can pick it up later
         writetofile(csvpath..".texin", filledtemplate)
