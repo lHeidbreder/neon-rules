@@ -16,11 +16,17 @@
 \def\coverimgpath{../art/\subtitle/cover}
 
 %Title Page
-\title{
-	\colorbox{cyan}{Neon Pen and Paper - \subtitle} %TODO: replace box with glowing effect
+\usepackage{shadowtext}
+\newcommand{\glowup}[2][cyan]{
+    \shadowoffset{1.5pt}
+    \shadowcolor{#1}
+    \shadowtext{#2}
 }
-\author{Fr0sty}
-\date{\today}
+\title{
+    \glowup{Neon Pen and Paper - \subtitle}
+}
+\author{\glowup{Fr0sty}}
+\date{\glowup{\today}}
 
 %Fonts
 \usepackage{fontspec}
