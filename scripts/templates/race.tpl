@@ -35,3 +35,14 @@
     \setlength\itemsep{-8mm} \vspace{-8mm}
     @itemize:traits@
     \end{itemize} }
+\ifthenelse{\isempty{@itemize:usual_backgrounds@}}{}{ \textbf{Usual Backgrounds:}
+    \begin{itemize}
+    \setlength\itemsep{-8mm} \vspace{-8mm}
+    @itemize:usual_backgrounds@
+    \end{itemize} }
+\ifthenelse{\isempty{@itemize:disallowed_backgrounds@}}{}{ \textbf{Disallowed Backgrounds:}
+    \begin{itemize}
+    \setlength\itemsep{-8mm} \vspace{-8mm}
+    @itemize:disallowed_backgrounds@
+    \end{itemize} }
+\hrulefill
