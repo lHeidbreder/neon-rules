@@ -1,6 +1,6 @@
 %Custom Environments
 \newenvironment{exampleblock}[1][1]
-{\par\hfill\begin{minipage}{\dimexpr\columnwidth-#1cm}}
+{\par\vspace*{-8mm}\hfill\begin{minipage}{\dimexpr\columnwidth-#1cm}}
 	{\end{minipage}\par}
 
 %Custom Commands
@@ -14,12 +14,12 @@
     \par
 }
 \newcommand{\supply}[4]{
-	\begin{minipage}{\columnwidth}
+%	\begin{minipage}{\columnwidth}
 		\textbf{\ul{#1}}\\
 		Price: #3\\
 		Weight: #4\\
 		#2
-	\end{minipage}
+%	\end{minipage}
     \par
 }
 \newcommand{\service}[4]{
@@ -88,9 +88,11 @@
 	\par
 }
 \newcommand{\weaponmod}[5]{
-	\textbf{\ul{#1}}:\\
-	#3; #4; #5\\
-	#2
+	\begin{minipage}{\columnwidth}
+		\textbf{\ul{#1}}:\\
+		#3; #4; #5\\
+		#2
+	\end{minipage}
 	\par
 }
 \newcommand{\meleecomponent}[6]{
