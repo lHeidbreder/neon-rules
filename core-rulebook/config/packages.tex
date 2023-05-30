@@ -55,11 +55,13 @@
 	BoldFont = paladinslaser,
 	ItalicFont = paladinssuperital,
 	BoldItalicFont = paladinsexpand]
+\newfontfamily\parhead[Path = \fontpath]{Legend}[Extension = .otf]
 
 %Heading formatting
 \usepackage{titlesec}
 \titleformat{\chapter}{\heading\huge\bfseries}{\thechapter}{20pt}{}%\Huge}
 \titleformat{\section}{\subheading}{\thetitle}{18pt}{}
+\titleformat{\subsection}{\parhead}{\thetitle}{16pt}{}
 
 %lua scripts
 \input{../scripts/lua/lua_scripts.tex}
