@@ -79,11 +79,12 @@
 	\begin{minipage}{\columnwidth}
 		\textbf{\ul{#1}}\\
 		\textit{#2}\\
-		\textit{Weight (unloaded)}: #9; \textit{Price}: #8\\
+		\textbf{Weight}: #9\\
+		\textbf{Price}: #8\\
 		#3\\
-		Mag: #5; Reload: #6 actions\\
-		Range: #4\\
-		\ifthenelse{\isempty{#7}}{}{Special Rules: #7}
+		\textbf{Mag}: #5; \textbf{Reload}: #6 actions\\
+		\textbf{Range}: #4\\
+		\ifthenelse{\isempty{#7}}{}{\textbf{Special Rules}: #7}
 	\end{minipage}
 	\par
 }
