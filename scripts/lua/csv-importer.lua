@@ -94,6 +94,14 @@ function importfrom(csvpath, templatepath)
         local filledtemplate = template
         
         for j=1,table.getn(headers) do
+            
+            if line[j] == nil then
+                line[j] = ""
+            end
+            
+            --escape "%" for both lua and latex
+            line[j] = string.gsub(line[j], "%%", "\\%%%%")
+            
             filledtemplate = string.gsub(filledtemplate, "@"..headers[j].."@", line[j])
         end
 		

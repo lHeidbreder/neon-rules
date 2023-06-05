@@ -47,7 +47,7 @@
 	\input{components/tags.tex}
 
 	\section{Creatures}
-	\input{components/bestiary.tex}
+	\luaimport{components/bestiary.csv}{beast.tpl} %TODO: split by category?
 
 	\chapter{Nemesis}
 	Very special, personal enemies might be classified as \emph{Nemesis}. They should be few and far between and have a personal connection to one player character or even the whole party.\\
@@ -60,7 +60,7 @@
 		\hline
 		\textbf{Blooded} & The Nemesis is incredibly jaded and resilient. He ignores any pain and fear.\\
 		\hline
-		\textbf{Caring} & The Nemesis is charismatic and kind to his underlings. Anyone not hostile towards him will support him in a fight to the best of their abilities.\\
+		\textbf{Charismatic} & The Nemesis is charismatic and kind to his underlings. Anyone not hostile towards him will support him in a fight to the best of their abilities.\\
 		\hline
 		\textbf{Conniving} & The Nemesis is prepared for everything. Once per day when failing a test, he may decide to pass with D5 DoS instead, as he planned for exactly this occasion. If his opponent does something absolutely bananas, the GM may rule even this ability to be outclassed.\\
 		\hline
