@@ -1,4 +1,4 @@
-\paragraph*{@name@}
+\subsubsection*{@name@}
 \textit{@flavor_text@}\par
 \begin{tabular}{|l|l|l|l|l|l|l|l|r|r|}
     \hline
