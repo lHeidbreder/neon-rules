@@ -98,7 +98,7 @@ function importfrom(csvpath, templatepath)
         end
 		
 		--clean every pattern without matching column
-		filledtemplate = string.gsub(filledtemplate, "@[^%s]*@", "")
+		filledtemplate = string.gsub(filledtemplate, "@[^%s@]*@", "")
 
         --write to file so \input can pick it up later
         writetofile(csvpath..".texin", filledtemplate)
