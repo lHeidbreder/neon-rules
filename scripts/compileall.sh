@@ -18,8 +18,13 @@ files=(${main_dir}/*/*.tex)
 for i in ${files[@]}
 do
     cd ${i%/*.tex}
+    if [ -f prep.sh ]; 
+    then bash prep.sh; fi
     echo "Compiling: ${i##*/}"
-    lualatex.exe -interaction=nonstopmode --output-directory="${file_output_dir}" ${i##*/} 1>> "${console_output_dir}/compile.out" 2>> "${console_output_dir}/compile.err"
+    for j in {1..4}
+    do
+        lualatex.exe -interaction=nonstopmode --output-directory="${file_output_dir}" ${i##*/} 1>> "${console_output_dir}/compile.out" 2>> "${console_output_dir}/compile.err"
+    done
     cd $main_dir
 done
 
