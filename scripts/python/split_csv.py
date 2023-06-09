@@ -20,7 +20,7 @@ if __name__ == '__main__':
             
     # write tables to their own files
     for key, tbl in extracted_tables.items():
-        with open(out_filepath_prefix + "-" + key + ".csv", mode="w", newline="", encoding="utf-8") as outfile:
+        with open(out_filepath_prefix + "-" + key.lower() + ".csv", mode="w", newline="", encoding="utf-8") as outfile:
             writer = csv.DictWriter(outfile, tbl[0].keys())
             writer.writeheader()
             writer.writerows(tbl)

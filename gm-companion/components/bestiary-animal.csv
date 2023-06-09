@@ -1,6 +1,0 @@
-name,flavor_text,hit_locations,size,hp,cr,int,ins,ch,dex,ag,con,str,melee,ranged,itemize:skills,itemize:traits,weapons,armor,Group
-Birb,"A small, flying biped. Absolutely harmless.",Winged Biped,Puny,66%,15,15,35,25,10,35,15,15,33,25,,"ANIMAL,Outstanding Sight",,,Wildlife
-Hunting Eagle,"An expensive hunting animal. Eagles don't particularily like the cities, so it's very hard to keep them tame.",Winged Biped,Tiny,75%,20,20,40,20,10,35,20,20,38,30,,"ANIMAL,Outstanding Sight",,,Wildlife
-Stray,"Wild dogs, stray cats and whatever other forsaken pets may roam the streets. They aren't generally a threat.",Quadruped,Tiny,75%,18,15,30,25,10,35,20,20,34,25,,"ANIMAL,Outstanding Smell",,,Wildlife
-War Dog,"Very loyal and well-trained dogs to search, fight and take down enemies. Since it takes so long to grow and train them, they are incredibly expensive.",Quadruped,Small,88%,25,22,35,20,10,35,25,25,40,31,,"ANIMAL,Outstanding Smell",,,Wildlife
-Mutadog,"A biological weapon created originally from a dog, hence the name. Not much of the original is left; mutadogs sport incredibly dense muscle fibers, thick bone plating and very erratic behavior, making them incredibly dangerous.",Quadruped,Average,100%,40,18,35,15,5,35,40,40,50,33,,"ANIMAL,Outstanding Smell",,Natural Armor (2D10),Wildlife
