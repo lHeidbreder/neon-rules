@@ -5,12 +5,15 @@
 \usepackage{tabularx}
 \usepackage{multicol}
 
+%\input{../core-rulebook/config/packages.tex}
+
+\def\inputfield#1{ \TextField[width=0.4\columnwidth, name=#1]{} }
+\def\textbox#1{ \TextField[name=#1, multiline, width=\columnwidth, height=5.5\baselineskip]{} }
+
 \begin{document}
-\begin{multicols}{2}
-	\begin{tabular}{rr}%>{\centering}p{0.6cm}ll}
-		\TextField[width=\columnwidth]{Name} & \TextField[width=\columnwidth]{Total XP}\\
-		\TextField[width=\columnwidth]{Race} & \TextField[width=\columnwidth]{Spent XP}\\
-		\TextField[width=\columnwidth]{Background} & \TextField[width=\columnwidth]{Left XP}
-	\end{tabular}
-\end{multicols}
+
+\input{components/page1}
+\pagebreak
+
+
 \end{document}
