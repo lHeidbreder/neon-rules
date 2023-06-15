@@ -94,11 +94,19 @@ function importfrom(csvpath, templatepath)
         local filledtemplate = template
         
         for j=1,table.getn(headers) do
+            
+            if line[j] == nil then
+                line[j] = ""
+            end
+            
+            --escape "%" for both lua and latex
+            line[j] = string.gsub(line[j], "%%", "\\%%%%")
+            
             filledtemplate = string.gsub(filledtemplate, "@"..headers[j].."@", line[j])
         end
 		
 		--clean every pattern without matching column
-		filledtemplate = string.gsub(filledtemplate, "@[^%s]*@", "")
+		filledtemplate = string.gsub(filledtemplate, "@[^%s@]*@", "")
 
         --write to file so \input can pick it up later
         writetofile(csvpath..".texin", filledtemplate)
