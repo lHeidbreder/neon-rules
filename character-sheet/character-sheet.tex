@@ -1,19 +1,26 @@
-\documentclass{report}
+\documentclass{letter}
 \usepackage[english]{babel}
 \usepackage{hyperref}
 \usepackage{array}
 \usepackage{tabularx}
 \usepackage{multicol}
 
-%\input{../core-rulebook/config/packages.tex}
+\usepackage{tabto}
 
-\def\inputfield#1{ \TextField[width=0.4\columnwidth, name=#1]{} }
+%\input{../core-rulebook/config/packages.tex}
+\directlua{dofile("../scripts/lua/csv-importer.lua")}
+\newcommand{\generalskills}{\directlua{noncombat_skills("../core-rulebook/lists/skills.csv")}}
+
+\def\inputfield#1{ \TextField[width=0.3\columnwidth, name=#1]{} }
+\def\charfield#1{ \TextField[width=8mm, name=#1]{} }
 \def\textbox#1{ \TextField[name=#1, multiline, width=\columnwidth, height=5.5\baselineskip]{} }
+\def\skillcheckbox#1{\CheckBox[name=#1,height=0.4\baselineskip,width=0.8\baselineskip]{}}
 
 \begin{document}
+\centering
 
 \input{components/page1}
 \pagebreak
-
+\input{components/page2}
 
 \end{document}

@@ -1,8 +1,7 @@
-{\centering
-\begin{tabularx}{\textwidth}{lrlr}
-	Name: & \inputfield{Name} & \inputfield{Total XP} & Total XP\\
-	Race: & \inputfield{Race} & \inputfield{Spent XP} & Spent XP\\
-	Background: & \inputfield{Background} & \inputfield{Spare XP} & Spare XP
+\begin{tabularx}{\textwidth}{rXXl}
+	Name & \inputfield{Name} & \inputfield{Total XP} & Total XP\\
+	Race & \inputfield{Race} & \inputfield{Spent XP} & Spent XP\\
+	Background & \inputfield{Background} & \inputfield{Spare XP} & Spare XP
 \end{tabularx}
 %
 \vspace{20mm}%TODO: placeholder; portrait goes here
@@ -14,7 +13,31 @@
 	Banes \vspace*{1mm} \\
 	\textbox{Banes}
 \end{multicols}
-
-lorem ipsum
-
-}
+%
+\vspace{20mm}
+%
+\begin{multicols}{2}
+\begin{tabularx}{\columnwidth}{rl}
+	\charfield{cr}	& Courage		\\
+	\charfield{int}	& Intelligence	\\
+	\charfield{ins}	& Instinct		\\
+	\charfield{ch}	& Charisma		\\
+	\charfield{ag}	& Agility		\\
+	\charfield{dex}	& Dexterity		\\
+	\charfield{con} & Constitution	\\
+	\charfield{str}	& Strength		\\
+	\charfield{it}	& Injury Threshold
+\end{tabularx}
+%
+\begin{tabularx}{\columnwidth}{rl}
+	Rayleigh Index	& \charfield{ri}	\\
+	Medical Toughness&\charfield{mt}	\\
+	Initiative		& \charfield{ini}	\\
+	Melee Base		& \charfield{melee}	\\
+	Ranged Base		& \charfield{range}	\\
+	Melee Damage Bonus&\charfield{dmg}	\\
+	Movement Speed	& \charfield{ms}	\\
+	Standing Leap	& \charfield{leap}	\\
+	Standing Jump	& \charfield{jump}
+\end{tabularx}
+\end{multicols}
