@@ -134,17 +134,16 @@ function noncombat_skills(filepath)
     end
     
     for _,line in pairs(lines) do
-        local out = "@skill@ \\= \\skillcheckbox{@skill@_untrained}\\skillcheckbox{@skill@_known}\\skillcheckbox{@skill@_trained}\\skillcheckbox{@skill@_experienced}\\skillcheckbox{@skill@_mastered}\\\\"
+        local out = "@skill@ @Subtype@ \\= \\skillcheckbox{@skill@@Subtype@_untrained}\\skillcheckbox{@skill@@Subtype@_known}\\skillcheckbox{@skill@@Subtype@_trained}\\skillcheckbox{@skill@@Subtype@_experienced}\\skillcheckbox{@skill@@Subtype@_mastered}\\\\"
         for j=1,table.getn(headers) do
             
             if line[j] == nil then
                 line[j] = ""
             end
             if string.match(line[j],"Combat Training") then
-                print(line[j])
                 goto continue0
             end
-
+            
             --escape "%" for both lua and latex
             line[j] = string.gsub(line[j], "%%", "\\%%%%")
             
