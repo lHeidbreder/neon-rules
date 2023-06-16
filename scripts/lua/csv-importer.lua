@@ -134,13 +134,54 @@ function noncombat_skills(filepath)
     end
     
     for _,line in pairs(lines) do
-        local out = "@skill@ @Subtype@ \\= \\skillcheckbox{@skill@@Subtype@_untrained}\\skillcheckbox{@skill@@Subtype@_known}\\skillcheckbox{@skill@@Subtype@_trained}\\skillcheckbox{@skill@@Subtype@_experienced}\\skillcheckbox{@skill@@Subtype@_mastered}\\\\"
+        local out = "@skill@ @subtype@ \\= \\skillcheckbox{@skill@@subtype@_untrained}\\skillcheckbox{@skill@@subtype@_known}\\skillcheckbox{@skill@@subtype@_trained}\\skillcheckbox{@skill@@subtype@_experienced}\\skillcheckbox{@skill@@subtype@_mastered}\\\\"
         for j=1,table.getn(headers) do
             
             if line[j] == nil then
                 line[j] = ""
             end
             if string.match(line[j],"Combat Training") then
+                goto continue0
+            end
+            
+            --escape "%" for both lua and latex
+            line[j] = string.gsub(line[j], "%%", "\\%%%%")
+            
+            out = string.gsub(out, "@"..headers[j].."@", line[j])
+        end
+        tex.print(out)
+        ::continue0::
+    end
+end
+
+function combat_skills(filepath)
+    local headers = {}
+    local lines = {}
+    local is_first_line = true
+    for line in io.lines(filepath) do
+        
+        -- parse first line for headers
+        if is_first_line then
+            headers = ParseCSVLine(line)
+            is_first_line = false
+            goto continue
+        end
+    
+        -- parse all other lines
+        local parsedline = ParseCSVLine(line)
+        table.insert(lines, parsedline)
+
+        ::continue::
+    end
+    
+    for _,line in pairs(lines) do
+        local out = "@skill@ @Subtype@ \\= \\skillcheckbox{@skill@@Subtype@_untrained}\\skillcheckbox{@skill@@Subtype@_known}\\skillcheckbox{@skill@@Subtype@_trained}\\skillcheckbox{@skill@@Subtype@_experienced}\\skillcheckbox{@skill@@Subtype@_mastered}\\\\"
+        for j=1,table.getn(headers) do
+            
+            if line[j] == nil then
+                line[j] = ""
+            end
+            if not string.match(line[j],"Combat Training") then
                 goto continue0
             end
             
