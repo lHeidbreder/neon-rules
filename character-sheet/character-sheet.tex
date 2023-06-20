@@ -1,16 +1,57 @@
-\documentclass{report}
+\documentclass{letter}
 \usepackage[english]{babel}
 \usepackage{hyperref}
 \usepackage{array}
 \usepackage{tabularx}
 \usepackage{multicol}
+\usepackage{forloop}
+\usepackage{longtable}
+\newsavebox\ltmcbox
+\setlength\textwidth{1.2\textwidth}
+\setlength\topmargin{0.5\topmargin}
+\setlength\evensidemargin{\oddsidemargin}
+
+%\input{../core-rulebook/config/packages.tex}
+\directlua{dofile("../scripts/lua/csv-importer.lua")}
+\newcommand{\generalskills}{\directlua{noncombat_skills("../core-rulebook/lists/skills.csv")}}
+\newcommand{\meleecombatskills}{\directlua{combat_skills("../core-rulebook/lists/skills.csv", "Melee")}}
+\newcommand{\rangedcombatskills}{\directlua{combat_skills("../core-rulebook/lists/skills.csv", "Ranged")}}
+
+\newcommand{\bodylocation}[1]{%
+	\textbf{\large#1}\\
+	\begin{tabular}{rl}
+		HP: & \charfield{#1hpcurrent} / \charfield{#1hptotal}\\
+		Armor: & \charfield{#1armor}\\
+		Augments: & \TextField[width=0.3\textwidth, name=#1]{}
+	\end{tabular}
+	\par
+}
+\newcommand{\meleeweapon}[1]{
+	\begin{tabular}{rl}
+		Name & \inputfield{#1name} \\
+		Head & \inputfield{#1head} \\
+		Grip & \inputfield{#1grip} \\
+		Core & \inputfield{#1core}
+	\end{tabular}\\
+	Damage: \charfield{#1dmg} / AP: \charfield{#1ap}
+	\par
+}
+
+\def\inputfield#1{ \TextField[width=0.3\columnwidth, name=#1]{} }
+\def\charfield#1{ \TextField[width=8mm, name=#1]{} }
+\def\textbox#1{ \TextField[name=#1, multiline, width=\columnwidth, height=5.5\baselineskip]{} }
+\def\skillcheckbox#1{\CheckBox[name=#1]{}}%,height=0.4\baselineskip,width=0.8\baselineskip]{}}
 
 \begin{document}
-\begin{multicols}{2}
-	\begin{tabular}{rr}%>{\centering}p{0.6cm}ll}
-		\TextField[width=\columnwidth]{Name} & \TextField[width=\columnwidth]{Total XP}\\
-		\TextField[width=\columnwidth]{Race} & \TextField[width=\columnwidth]{Spent XP}\\
-		\TextField[width=\columnwidth]{Background} & \TextField[width=\columnwidth]{Left XP}
-	\end{tabular}
-\end{multicols}
+\centering
+\pagestyle{empty}
+
+\input{components/page1}
+\pagebreak
+\input{components/page2}
+\pagebreak
+\input{components/page3}
+\pagebreak
+\input{components/page4}
+
 \end{document}
