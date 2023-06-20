@@ -1,7 +1,7 @@
 % characteristic refresher with same handles
 \begin{tabularx}{\textwidth}{rXrXrXrX}
-	Courage & \charfield{cr} & Intelligence & \charfield{int} & Instinct & \charfield{ins} & Charisma & \charfield{ch} \\
-	Agility & \charfield{ag} & Dexterity & \charfield{dex} & Constitution & \charfield{con} & Strength & \charfield{str}
+	Courage & \charfield{cr2} & Intelligence & \charfield{int2} & Instinct & \charfield{ins2} & Charisma & \charfield{ch2} \\
+	Agility & \charfield{ag2} & Dexterity & \charfield{dex2} & Constitution & \charfield{con2} & Strength & \charfield{str2}
 \end{tabularx}\par
 %
 \vspace{2mm}
@@ -12,8 +12,14 @@ Abilities \vspace{1mm} \\
 
 %non-combat skills
 \begin{multicols}{2}
-%	\raggedleft %TODO: this does nothing
-	\begin{tabbing}
-	\generalskills
-	\end{tabbing}
+	\setbox\ltmcbox\vbox{
+		\makeatletter\col@number\@ne
+		\begin{longtable}{rl}
+			\generalskills
+		\end{longtable}
+		\unskip
+		\unpenalty
+		\unpenalty}
+	\unvbox\ltmcbox
 \end{multicols}
+\par

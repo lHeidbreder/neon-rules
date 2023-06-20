@@ -134,7 +134,7 @@ function noncombat_skills(filepath)
     end
     
     for _,line in pairs(lines) do
-        local out = "@skill@ @subtype@ \\= \\skillcheckbox{@skill@@subtype@_untrained}\\skillcheckbox{@skill@@subtype@_known}\\skillcheckbox{@skill@@subtype@_trained}\\skillcheckbox{@skill@@subtype@_experienced}\\skillcheckbox{@skill@@subtype@_mastered}\\\\"
+        local out = "@skill@ @subtype@ & \\skillcheckbox{@skill@@subtype@_untrained}\\skillcheckbox{@skill@@subtype@_known}\\skillcheckbox{@skill@@subtype@_trained}\\skillcheckbox{@skill@@subtype@_experienced}\\skillcheckbox{@skill@@subtype@_mastered}\\\\"
         for j=1,table.getn(headers) do
             
             if line[j] == nil then
@@ -154,7 +154,7 @@ function noncombat_skills(filepath)
     end
 end
 
-function combat_skills(filepath)
+function combat_skills(filepath, filter)
     local headers = {}
     local lines = {}
     local is_first_line = true
@@ -175,14 +175,17 @@ function combat_skills(filepath)
     end
     
     for _,line in pairs(lines) do
-        local out = "@skill@ @Subtype@ \\= \\skillcheckbox{@skill@@Subtype@_untrained}\\skillcheckbox{@skill@@Subtype@_known}\\skillcheckbox{@skill@@Subtype@_trained}\\skillcheckbox{@skill@@Subtype@_experienced}\\skillcheckbox{@skill@@Subtype@_mastered}\\\\"
+        local out = "@subtype@ & \\skillcheckbox{@skill@@subtype@_untrained}\\skillcheckbox{@skill@@subtype@_known}\\skillcheckbox{@skill@@subtype@_trained}\\skillcheckbox{@skill@@subtype@_experienced}\\skillcheckbox{@skill@@subtype@_mastered}\\\\"
+        
+        print(line[1])
+        if not string.match(line[1],filter.." Combat Training") then
+            goto continue0
+        end
+
         for j=1,table.getn(headers) do
             
             if line[j] == nil then
                 line[j] = ""
-            end
-            if not string.match(line[j],"Combat Training") then
-                goto continue0
             end
             
             --escape "%" for both lua and latex
