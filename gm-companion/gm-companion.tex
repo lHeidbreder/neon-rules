@@ -1,7 +1,6 @@
 \documentclass[12pt,a4paper,openany]{book}
 \input{../core-rulebook/config/news.tex}
 \input{../core-rulebook/config/packages.tex}
-\usepackage{ltablex}
 
 \def\subtitle{GM Companion}
 
@@ -27,14 +26,23 @@
 	\input{components/mission-creation.tex}
 
 	\chapter{Bestiary}
+	\section{Difficulty}
+	Creatures have associated difficulty ratings. When creating an encounter, simply add up the individual creatures' ratings. A balanced party of player characters without extensive preparation should be able to handle a difficulty equal to the group's total XP divided by 1000.
+	\begin{exampleblock}
+		\itshape A player group of 4 players freshly created characters (2500XP) covering all 3 pillars of play should be able to handle encounters of difficulty 10.
+	\end{exampleblock}
+	Important notes: This system is incredibly flawed. In-party balance, focus on combat, knowledge or talking, equipment and many other factors will melt these rules. If you notice that your party struggles hard or breezes through all encounters you throw at them, adjust them using wave tactics, easy escape routes or simply more or less enemies.\\
+	I also wouldn't personally trust this system - especially the social rating - further than I can throw it. Really, this works more as a quick overview which stat block to use.
+	
 	\section{Hit Locations}
 	Not all creatures have to look like humans necessarily; the list at the end of this chapter contains humanoids, quadrupeds, worms and hexapeds. Of course hit locations and location hp differ.
 	\input{components/hitlocations.tex}
 
 	\section{Size}
 	Larger creatures are more resilient on average. Mechanically this means that HP is multiplied by a factor depending on a creature's size category.\\
-	Example: While an \emph{average} humanoid has 25 HP on his body, a \emph{huge} humanoid would have 200\% of that, i.e. 2 times, i.e. 50.
-	\begin{tabularx}{\textwidth}{|l|r|}
+	Example: While an \emph{average} humanoid has 25 HP on his body, a \emph{huge} humanoid would have 200\% of that, i.e. 2 times, i.e. 50.\\
+	\begin{center}
+	\begin{tabular}{|l|r|}
 		\hline
 		Minuscule &  50\% \\ \hline
 		Puny      &  66\% \\ \hline
@@ -45,7 +53,8 @@
 		Huge      & 200\% \\ \hline
 		Hulking   & 250\% \\ \hline
 		Enormous  & 300\% \\ \hline
-	\end{tabularx}
+	\end{tabular}
+	\end{center}
 
 	\section{Tags}
 	Creatures may carry tags like \emph{ANIMAL}. Any tag means some collection of traits that these creatures share, whether they are generally similar or not. If you want to create your own creatures, start by adding a tag to an existing creature and reskinning it. Example:\par
@@ -56,9 +65,12 @@
 	\vspace{5mm}
 	\input{components/tags.tex}
 
+	\pagebreak
+
 	\section{Creatures}
 	\input{components/bestiary.tex}
 
+	\pagebreak
 	\section{Hordes}
 	Sometimes heroes stand against insurmountable swarms and hordes. Such hordes are created with the following few simple rules.
 	
@@ -84,13 +96,43 @@
 	\subsection*{Actions}
 	In combat a horde acts as a single entity but gains 2 bonus actions every time its size increases. These bonus actions may be offensive, defensive or utility-driven. \\
 	Note, however, that hordes never have to reload. They represent "a bunch of creatures", not professional 17th century firing lines.
-
+	
+	\subsection*{Difficulty}
+	For every 3 size increases the combat difficulty increases by 1. Social difficulty is unaffected.
+	
+	\subsection*{Keep In Mind}
+	Horde rules may work for every type of creature - technically. However, your miles may vary if you use these rules for smart or extremely large creatures. Hordes are much flimsier and - in a way - less dangerous than single creatures.
+	
+	
+	\section{Companions}
+	A player may ask for a companion. If it is just a pet, you can easily ignore this section. If it is supposed to have mechanical advantages (like combat assistance), follow the steps below.
+	\subsection{Prerequisites}
+	The character should have either the \textit{Companion} or \textit{Mighty Companion} ability and no companion so far.\\
+	If the player character does not have the ability but has great chemistry with an NPC, you may give them a discount (see \textit{Unique Experience} in Narrative Rules).\\
+	With GM permission any character may acquire multiple companions at any given time, requiring multiple instances of the same ability. \textit{Note however that many companion will slow down combat considerably.}
+	\subsection{Picking}
+	Valid to be companions are any creatures with a Combat Difficulty of up to 1 (or up to 3 in case of a \textit{Mighty Companion}) that don't have the CERBERUS or LEGION trait or that the GM otherwise deems inappropriate.\\
+	Notice that the companion is not chosen by the player but it is offered by the GM, taking into account the player's wishes.
+	\subsection{In Effect}
+	The companion will assist the group in reasonable ways, this includes in exploration and combat. However this should not include social encounters - because the GM talking to imself is simply not interesting - nor riddles - as it makes them completely redundant.\\
+	A companion should supplement whatever the characters can do already or compensate individual (but not overall) weaknesses.\\
+	Also keep in mind that a companion should always be inferior to the player characters, otherwise the player character would be the companion...
+	\subsection{The Worst Case}
+	There is always a chance for the companion to be crippled or lethally wounded. In case the companion is effectively lost, the player character may adopt another companion in its stead, using the same ability he already has. It will however require the following:
+	\vspace{-8mm}
+	\begin{itemize}
+		\setlength\itemsep{-8mm}
+		\item The character needs to acknowledge the companion's death.
+		\item The character is offered a new companion, when he has developed a fitting relationship to another NPC.
+		\item If the character acquired his ability at a discount, he has to pay the difference when adopting the new companion.
+	\end{itemize}
+	
 
 	\chapter{Nemesis}
 	Very special, personal enemies might be classified as \emph{Nemesis}. They should be few and far between and have a personal connection to one player character or even the whole party.\\
 	To make them special mechanically as well they should gain 20-25 GP in Boons, 10-15 GP in Banes and one or two Nemesis Abilities. They may be chosen from the list below or made up.
 	\section*{Nemesis Abilities}
-	The following section contains a list of possible Nemesis abilities. It is by no means comprehensive.
+	The following section contains a list of possible Nemesis abilities. It is by no means comprehensive.\\
 	{\setlength{\extrarowheight}{5pt}
 	\begin{tabularx}{\textwidth}{l|X}
 		Ability & Effect\\
@@ -113,9 +155,7 @@
 		\hline
 		\textbf{Reputable} & The Nemesis is generally well regarded; this means that characters who speak out against him at the wrong place or the wrong time will quite possibly suffer dire consequences.
 	\end{tabularx}}
-	\section*{Keep In Mind}
-	Horde rules may work for every type of creature - technically. However, your miles may vary if you use these rules for smart or extremely large creatures. Hordes are much flimsier and - in a way - less dangerous than single creatures.
-
+	
 	\chapter{Patrons \& Contacts}
 	On the opposite side of the Nemesis lay the contacts and patrons - the powerful allies. Usually their individual stats are not that important, it is what they represent: influence, knowledge and goods.
 	\section*{Personality}
