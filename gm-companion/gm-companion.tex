@@ -1,7 +1,6 @@
 \documentclass[12pt,a4paper,openany]{book}
 \input{../core-rulebook/config/news.tex}
 \input{../core-rulebook/config/packages.tex}
-\usepackage{ltablex}
 
 \def\subtitle{GM Companion}
 
@@ -27,14 +26,23 @@
 	\input{components/mission-creation.tex}
 
 	\chapter{Bestiary}
+	\section{Difficulty}
+	Creatures have associated difficulty ratings. When creating an encounter, simply add up the individual creatures' ratings. A balanced party of player characters without extensive preparation should be able to handle a difficulty equal to the group's total XP divided by 1000.
+	\begin{exampleblock}
+		\itshape A player group of 4 players freshly created characters (2500XP) covering all 3 pillars of play should be able to handle encounters of difficulty 10.
+	\end{exampleblock}
+	Important notes: This system is incredibly flawed. In-party balance, focus on combat, knowledge or talking, equipment and many other factors will melt these rules. If you notice that your party struggles hard or breezes through all encounters you throw at them, adjust them using wave tactics, easy escape routes or simply more or less enemies.\\
+	I also wouldn't personally trust this system - especially the social rating - further than I can throw it. Really, this works more as a quick overview which stat block to use.
+	
 	\section{Hit Locations}
 	Not all creatures have to look like humans necessarily; the list at the end of this chapter contains humanoids, quadrupeds, worms and hexapeds. Of course hit locations and location hp differ.
 	\input{components/hitlocations.tex}
 
 	\section{Size}
 	Larger creatures are more resilient on average. Mechanically this means that HP is multiplied by a factor depending on a creature's size category.\\
-	Example: While an \emph{average} humanoid has 25 HP on his body, a \emph{huge} humanoid would have 200\% of that, i.e. 2 times, i.e. 50.
-	\begin{tabularx}{\textwidth}{|l|r|}
+	Example: While an \emph{average} humanoid has 25 HP on his body, a \emph{huge} humanoid would have 200\% of that, i.e. 2 times, i.e. 50.\\
+	\begin{center}
+	\begin{tabular}{|l|r|}
 		\hline
 		Minuscule &  50\% \\ \hline
 		Puny      &  66\% \\ \hline
@@ -45,7 +53,8 @@
 		Huge      & 200\% \\ \hline
 		Hulking   & 250\% \\ \hline
 		Enormous  & 300\% \\ \hline
-	\end{tabularx}
+	\end{tabular}
+	\end{center}
 
 	\section{Tags}
 	Creatures may carry tags like \emph{ANIMAL}. Any tag means some collection of traits that these creatures share, whether they are generally similar or not. If you want to create your own creatures, start by adding a tag to an existing creature and reskinning it. Example:\par
