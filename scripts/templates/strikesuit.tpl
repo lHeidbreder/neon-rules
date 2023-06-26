@@ -1,3 +1,4 @@
+\hrulefill
 \subsection*{@series@ \ifthenelse{\isempty{@variant@}}{}{- @variant@}}
 \textit{@flavor_text@}\par
 \begin{tabular}{|l|l|l|l|}

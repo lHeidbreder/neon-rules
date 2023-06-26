@@ -5,7 +5,7 @@
     Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
     @cr@ & @int@ & @ins@ & @ch@ & @dex@ & @ag@ & @con@ & @str@ \\ \hline
 \end{tabular}\par
-\ifthenelse{\isempty{@itemize:other_modifiers@}}{}{ \noindent\textbf{Other modifiers:}
+\ifthenelse{\isempty{@itemize:other_modifiers@}}{}{\vspace{-8mm} \noindent\textbf{Other modifiers:}
     \begin{itemize}
     \setlength\itemsep{-8mm} \vspace{-8mm}
     @itemize:other_modifiers@
