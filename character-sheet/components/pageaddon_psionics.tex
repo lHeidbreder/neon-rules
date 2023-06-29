@@ -1,0 +1,30 @@
+\begin{tabular}{rl}
+Psionics & \skillcheckbox{psionics\_untrained}\skillcheckbox{psionics\_known}\skillcheckbox{psionics\_trained}\skillcheckbox{psionics\_experienced}\skillcheckbox{psionics\_mastered}
+\end{tabular}
+\par
+\begin{multicols}{2}
+\begin{tabular}{rl}
+	\forloop{i}{1}{\value{i} < 3}{Psionic Discipline \Roman{i} & \inputfield{psidiscipline\arabic{i}}\\}
+\end{tabular}
+\par
+\begin{tabular}{rl}
+	\forloop{i}{3}{\value{i} < 5}{Psionic Discipline \Roman{i} & \inputfield{psidiscipline\arabic{i}}\\}
+\end{tabular}
+\end{multicols}
+\par
+%
+%spell templates
+\def\modfield#1{\TextField[name=#1, width=19mm]{}}
+\def\spelltemplate#1{
+	\\
+	\TextField[name=st-descriptor#1]{} &%
+	\modfield{name=st-complexity#1} &%
+	\modfield{st-casttime#1} &%
+	\modfield{st-duration#1} &%
+	\modfield{st-intensity#1} &%
+	\charfield{st-modifier#1}
+}
+\begin{tabularx}{\columnwidth}{X|cccc|c}
+	Descriptor & Complexity & Cast Time & Duration & Intensity & Modifier
+	\forloop{i}{0}{\value{i} < 20}{\spelltemplate{\arabic{i}}}
+\end{tabularx}
