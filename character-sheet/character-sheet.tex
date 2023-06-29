@@ -1,6 +1,6 @@
 \documentclass{letter}
 \usepackage[english]{babel}
-\usepackage{hyperref}
+%\usepackage{hyperref}
 \usepackage{array}
 \usepackage{tabularx}
 \usepackage{multicol}
@@ -8,10 +8,10 @@
 \usepackage{longtable}
 \newsavebox\ltmcbox
 \setlength\textwidth{1.2\textwidth}
-\setlength\topmargin{0.5\topmargin}
+\setlength\topmargin{0.3\topmargin}
 \setlength\evensidemargin{\oddsidemargin}
 
-%\input{../core-rulebook/config/packages.tex}
+\input{../core-rulebook/config/packages.tex}
 \directlua{dofile("../scripts/lua/csv-importer.lua")}
 \newcommand{\generalskills}{\directlua{noncombat_skills("../core-rulebook/lists/skills.csv")}}
 \newcommand{\meleecombatskills}{\directlua{combat_skills("../core-rulebook/lists/skills.csv", "Melee")}}
@@ -53,5 +53,7 @@
 \input{components/page3}
 \pagebreak
 \input{components/page4}
+\pagebreak
+\input{components/pageaddon_psionics}
 
 \end{document}

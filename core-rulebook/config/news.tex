@@ -60,7 +60,7 @@
 		\textbf{\ul{Maneuver: #1}} (#2 XP)\\
 		\textit{Prerequisites: #3\\}
 		Effect:\\
-		Allows the use of the maneuver #1 at normal penalties.\\
+		Allows the use of the maneuver \emph{#1} at normal penalties.\\
 	\end{minipage}
 }
 \newcommand{\boon}[4][]{
@@ -167,6 +167,7 @@
 	\par
 }
 \newcommand{\mod}[2]{\item \textbf{#1}: #2}
+\newcommand{\psicomponent}[4]{\textbf{#1} & #2 & #3 & #4\\}
 
 %Base Building
 \newcommand{\baselocation}[6]{
@@ -181,7 +182,7 @@
 \newcommand{\baseasset}[6]{
 	\begin{minipage}{\columnwidth}
 		\textbf{#1}\\
-		\textit{#2}
+		\textit{#2}\\
 		Size: #3; Concealment: #4; Defense: #5\\
 		\textit{Cost:} #6
 	\end{minipage}
@@ -193,6 +194,7 @@
 	\begin{minipage}{\columnwidth}
 		\section{#1}
 		\textit{#2}\\
+		\vspace{8mm}
 		\begin{exampleblock}
 			#3
 		\end{exampleblock}

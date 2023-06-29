@@ -1,8 +1,9 @@
 \subsubsection*{@name@}
 \textit{@flavor_text@}\par
 \ifthenelse{\isempty{@difficulty_social@ @difficulty_combat@}}{}{\textbf{Difficulty}: }
-\ifthenelse{\isempty{@difficulty_social@}}{}{Social @difficulty_social@ \ifthenelse{isempty{@difficulty_combat@}}{}{ / }}
+\ifthenelse{\isempty{@difficulty_social@}}{}{Social @difficulty_social@ / }
 \ifthenelse{\isempty{@difficulty_combat@}}{}{Combat @difficulty_combat@}
+\par
 \begin{tabular}{|l|l|l|l|l|l|l|l|r|r|}
     \hline
     Cr & Int & Ins & Ch & Dex & Ag & Con & Str & Melee & Range \\ \hline
