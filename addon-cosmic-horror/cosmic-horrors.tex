@@ -1,0 +1,117 @@
+\documentclass[12pt,a4paper,openany]{book}
+\input{../core-rulebook/config/news.tex}
+\input{../core-rulebook/config/packages.tex}
+
+\def\subtitle{Cosmic Horrors}
+
+\begin{document}
+	\input{../core-rulebook/config/frontpages.tex}
+	
+	\chapter{Introduction}
+	Out there, in the void between the stars, there are things beyond comprehension, beyond reason. And the oldest and strongest emotion of mankind is fear, and the oldest and strongest kind of fear is fear of the unknown...
+
+	\chapter{Perils From Beyond}
+	When the world beyond touches ours, humans in the vicinity will suffer - of two things specifically.
+	\par
+	\textbf{Insight} is the effect on the mind when someone tries to understand the dark beyond. It is usually temporary but too much will change or even break a mind.
+	\\
+	\textbf{Corruption} is the effect on the body, setting in after extended exposure to the dark or being watched by entities from beyond.
+	\\
+	\textbf{Powerful creatures} live beyond, attracted by strong emotion. First in line are the \emph{Demons} - wicked and malevolent beings from outside our perceived reality. \emph{Horrors}, on the other hand, only get their name due to their attraction to nightmares - concepts like malevolence do not apply to them.
+	
+	\section{Insight}
+	\subsection{Gaining Insight}
+	Characters gain Insight whenever they sense horrors from beyond with any sense they were given naturally - so hearing, seeing, smelling or touching. The feeling is extremely unpleasant.
+	\\
+	Seeing (or hearing, touching, smelling...) any creature with the DEMONIC tag will cause D5 Insight. Particularly powerful beings or groups will cause D10.
+	\subsection{Reducing Insight}
+	Characters may reduce their Insight by resting away from such anomalies. It then reduces by 6 every day.
+	\subsection{Effects of Insight}
+	Every point of Insight reduces a character's Courage by 1. When Courage reaches 0, the character goes catatonic for at least a week and gains D10 corruption.
+	
+	\section{Corruption}
+	\subsection{Gaining Corruption}
+	Corruption is gained when the dark powers try to enter a human body. 
+	\vspace{-8mm}
+	\begin{itemize}
+		\setlength\itemsep{-8mm}
+		\item In areas with a lot of presence characters gain up to 1 corruption per hour.
+		\item Participating in or crashing rituals, which ask for some outer entity's favor, will cause D5 corruption.
+	\end{itemize}
+	\subsection{Reducing Corruption}
+	Corruption is basically permanent. It reduces by 1 per 2 years without contact to the eldritch. Considering corruption attracts the eldritch, this is very hard to do.
+	\subsection{Effects of Corruption}
+	A character can accrue up to 100 corruption, at which point he will transform - sometimes into an entity from beyond but more likely than not into a puddle of goo on the floor or a pile of ash.\\
+	That point of ascension is not reached suddenly. His body will slowly mutate as corruption accumulates. Every full 10 points of corruption will cause a mutation (see Chapter \ref{ch:mutation}).
+	
+	\chapter{Mutation}
+	\label{ch:mutation}
+	Every now and then a character may be forced to mutate. Roll a D100 and consult the table below. The result may be modified by a tenth of the character's insight at the time of mutation.
+	\par
+	Most mutations are clearly visible and make social interactions much, much harder.
+	\section*{Mutations}
+	\vspace{4mm}
+	\begin{multicols}{2}
+	\luaimport{mutations.csv}{mutation.tpl}
+	\end{multicols}
+	
+	\chapter{Rituals}
+	%TODO
+	%ask the Great Ones for help
+	Rituals take a long time, are expensive and a lot of work to set up. They are however the prime way to ask the Great Ones for favor and protection in exchange for a tribute.
+	\section{The Tribute}
+	Great Ones respond well to unique things and strong emotions. The more personal to the participants this tribute is, the more likely the Great One will respond well - but nothing is guaranteed.
+	\section{The Ritual}
+	%gain a benefit in accordance with the request and size of tribute
+	When preparation is done, the ritual then takes a few hours and a Philosophy test. The test may be modified by the tribute (TODO), the request (TODO) and the leading character's Insight (one-to-one).%TODO
+	\par
+	During the performance of the ritual the participants will slowly unravel a small portion of the great Beyond, gaining them 2D10 Insight.\\
+	If the ritual is successful, all participants are touched by the blasphemy, gaining D5 corruption.
+	\section{The Outcome}
+	A "successful" ritual does not necessarily mean the desired outcome. Instead the GM secretly rolls a D5 and consults the table below. For every 3 full DoS the ritual succeeded with, one option may be excluded by the leading character.
+	\par
+	\begin{enumerate}
+		\raggedright
+		\setlength\itemsep{-8mm}
+		\item The ritual succeeds as desired.
+		\item The ritual fizzles, nothing happens. Participants' corruption gain is reduced by 3, to a minimum of 0.
+		\item The ritual succeeds. A horror is summoned.
+		\item The ritual succeeds. A demon is summoned.
+		\item The ritual succeeds. A random participant mutates, immediately and violently. The resulting mutation may not be adjusted using Insight.
+	\end{enumerate}
+%	TODO
+%	\section{Examples}
+%	\input{components/examplerituals}
+	
+	\chapter{Possession}
+	%TODO
+	%only demons can possess
+	%horrors can be possessed
+	%Passive Bonuses: increased injury threshold by demon's power?
+	%Active Ability - Invoke: for one action, gain a bonus to any characteristic equal to the character's corruption; gain D10 corruption
+	%Penalty: Insomnia, hostility towards horrors
+	\section{Voluntary}
+	\section{Involuntary}
+	
+	\section{Possessed Weapons}
+	%TODO
+	%demon is bound into the weapon in a ritual
+	%a stronger ritual binds a stronger demon
+	%the stronger the demon, the more traits the weapon gains
+	
+	\chapter{Additional Content}
+%	\section{Boons}
+%	\section{Banes}
+	\section{Bestiary}
+	\subsection{Tags}
+	%TODO: DEMONIC - cause Insight to creatures around, don't get Insight from other DEMONIC creatures
+	%TODO: INCORPOREAL - cannot interact with the physical world
+	\subsection{Creatures}
+	%TODO: import bestiary
+	
+	\chapter{Psionics Patch}
+	When using both this and the Psionics Addon, you may want to use the following addendum to glue them together: 
+	Insight increases the psionic target value one-to-one. However, the cost now not only deals damage to the caster but will also cause the same amount of corruption.\\
+	By GM discretion some casters may use this new and some may use the old way of casting.
+	
+\end{document}

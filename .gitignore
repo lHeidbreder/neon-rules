@@ -287,3 +287,6 @@ _rulepackage/
 
 # csv import temp files
 */out.txt
+
+# Working files
+*~lock*
