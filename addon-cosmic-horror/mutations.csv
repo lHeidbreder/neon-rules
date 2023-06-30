@@ -1,0 +1,51 @@
+name,flavor_text,description
+Addiction,Warped desires follow the character – a yearning for the strange and otherworldly.,"The character develops an addiction to an unlikely substance. The stranger, the better."
+Animal Hybrid,"A Great One is making you its pet, quite literally.","The character takes on an animalistic appearance, be that cat eyes and ears, a snake tongue and elongated neck or another animal. This change is purely cosmetic."
+Bestial,The mind breaks before the body does. Just a bit more and he will turn into yet another blood straved beast.,The character's intelligence is permanently reduced by D10 and he gains the ANIMAL trait.
+Blasted Senses,"A lot happens beyond the veil – too much, too intense for mortal minds, for mortal senses.",The character loses one of his natural senses. Another – in an attempt to compensate – gains a +10. Which are determined randomly.
+Blood Substitution,"The ichor, that courses through his veins, is no longer the lifeblood that proves his humanity. Maybe it has left long ago.","When the character takes damage, he causes an attack with Dmg: D10+2, AP 0, Blast (1) centered on himself."
+Blood-Drunk,,"If the character smells, touches or drinks blood, he becomes drunk as if from alcohol."
+Boneless,Unnaturally agile but even more fleshy and fragile.,"The character permanently gains D10 Agility and Dexterity. He loses twice that amount of Strength, to a minimum of 1."
+Burning Body,"Unquelled emotions, a soul on fire, sets a body ablaze. The mind really is mightier.",The character's body is ablaze. He gains -20 to hide and deals D10 damage with the Spray quality when holding an enemy in a lock or bear hug.
+Centaur,"Lithe or powerful, agile or lumbering, this gift is a show of might, grace and ownership.","The character gains 2 more legs, doubling his speed."
+Cosmic Aspect,"A piece of Kos nourishing your body, on your way to ascension.",The character gains either the DEADLY MELEE tag or the Natural Armor (+1) Boon.
+Cyclops,You won't need your eye. You won't even need your other eye – to listen to the voices.,The character permanently loses an eye. It cannot be restored.
+Darksoul,"Blasphemy seething from your essence, enough to break a lesser mind.","Once per scene, when someone sees the character, they have to make a test to resist fear."
+Dimensional Instability,Walking beyond is an ability many consider to be unnatural. But really – returning in one piece is the actual oddity.,"Once per session the character can use an action to gain the INCORPOREAL trait for D10 rounds. He gains Insight equal to the rounds spent beyond. If it ends in hard material, he is violently crushed or suffocates."
+Dream-Eater,"They say that some spirits can eat nightmares. So tell me, how do happy dreams taste?",The character never has to eat or drink to stave off starvation. He and everyone sleeping near him will suffer nightmare induced Insomnia.
+Eldritch Eye,"Open your third eye, the one given after birth. See the abyss, as it stares back.",The character permanently gains 5 Insight but gains +40 to any test identifying the supernatural.
+Eldritch Impregnation,,"Over the course of 3D5 days a child grows in the character's body. Every day the character's physical characteristics are reduced by 4. If any reach 0, the character is bedridden. The character then gives birth to a mutant (GM's choice), which he will protect with his life."
+Emaciated,"You look torn, beaten, tired. You cannot conquer eternity, not before your body breaks.",Fatigue penalties for the character are doubled.
+Eyestalks,,"The character's Base Initiative is doubled, but he cannot wear helmets anymore."
+False Idol,"A third, forth, fifth eye of the great ones watch them through you. What a delight.",The character gains +20 to interact with his companions.
+Featureless Face,,"The character loses all facial features. His voice becomes muffled and uncanny, and he retains all senses."
+Flaming Skull,,The character's headbutts gains the Flame special rule. He suffers a -20 penalty to hide.
+Grossly Fat,"Oversaturated with power from beyond, your body swelling to sizes unheard of.","The character permanently loses D10 Charisma and Agility, as well as 2 MS, but gains D10 Toughness and increases his Size by one category."
+Icon of Blasphemy,"Heresy on command, leaking the truth of the dark between the stars.",Once per session the character can force everyone who can see him to make a fear test at a -30 penalty. He gains the DEMONIC trait for a round. His DEMONIC strength is 1.
+Illusion of Normality,,"The character's mutations are invisible to normal people. If someone is suspicious and passes an -30 Perception test, the mutations are revealed."
+Infernal Will,"Everything can be intense to the point of mindshattering pain – injury, fear, even your hubris.","The character is immune to all fear; if he however fails a test by 3 or more DoF, he immediately suffers shock."
+Inside Out,"To hide your hideous outside, the ugly insides show themselves.","The character suffers a -30 penalty to social interation, but a +20 to intimidation and no one can tell the severity of his injuries."
+Limb Loss,"A sacrifice to the dark, whether you intended or not.",The character loses a random natural limb.
+Magnificent Horns,The mark of a powerful beast. Minions flock to such a display of might.,The character gains horns and the DEADLY MELEE tag when using them. Companion Abilities cost half.
+Mechanoid,"A dream for many, though the price is high. Some will be jealous, even of your blasphemy.","The character's whole body turns mechanical. He no longer bleeds, doesn't need to breathe and can no longer swim but sinks like a rock."
+Nerveless,"Burnt away or sent ahead, your sense of touch is gone. It has its upsides – it's a gift after all.","The character takes no more pain penalties, but gain the Bane: No Tactile Sense. If he already has that, penalties are doubled and he permanently loses D10 Dexterity."
+Pervasive Miasma,,"The character gains the Bane: Bad Smell. If he already has that, he becomes unable to hide from creatures with a sense of smell."
+Possessed Weapon,The biggest gift - one of them – bound to an object of power and expression.,"A weapon the character owns gets possessed. The entity's power is equal to a tenth of the character's Insight, minimum of 1."
+Price of Knowledge,,"Once per session, you may ask the GM a yes or no question. Once you do so, gain D10 Insight."
+Projectile Attack,,"As long as the character does not wear a helmet or facemask, he counts as being equipped with a ranged weapon with the following profile: Shots: 1, Damage: 1D10+2, Spray, Flame. The weapon does not have to be reloaded."
+Pseudo-Horror,"A little overzealous perhaps, you are the closest thing to a demon existing on earth.","The character gains horrific appearance, as well as the DEMONIC and VOLATILE traits. His DEMONIC strength is 1."
+Sight beyond sight,"You see things, things no one could describe. You may call them souls, auras – they betray their person.","The character gains -10 to visual Perception, but +10 to Interrogation."
+Slayer Limb,"Violence brings violence. In the end, it has to be this way.",A weapon the character is holding fuses with the limb he is holding it with. The weapon no longer needs maintainance nor reloading.
+Soul-Touched,Nothing is quite as unpleasant as an unsolicited touch in an intimate region. What would be more intimate than your very essence?,"The character gains a Bane representing a psychological condition, by choice of the GM."
+Steel-Hearted,,"The character halves all Fear penalties. If the penalty falls below 10, the character passes automatically."
+Strange Voice,,"At the beginning of a scene roll a D10: on a 1 to 5, the character gains +15 to social interaction but -15 to Intimidation tests; otherwise the values are reversed."
+Strange Walk,"Over there you don't have solid ground. Really, you are just preparing to leave.","The character halves his MS, but is at an additional -10 to hit when moving."
+Tail,An unnatural extension to be sure,The character gains a tail and the DEADLY MELEE tag when using it.
+Tentacle,"Your prayers were heard, answered. In the way you'd like? They're surely making you more like them.","A random limb of the character turns into a tentacle. He gains +10 to Grappling tests with this limb. If it was a leg, it reduces MS by 1."
+Torso Mouth,,The character develops a massive mouth on his torso. He also gains the Hungry Bane or increases it by one step.
+Unblinking,,The character does not blink anymore and cannot close his eyes.
+Unnatural Beauty,"Impossibly gorgeous, people will come swarming – but only to look. They are afraid.","The character gains +5 to charisma-based tests, effectively improving his appearance by one category, even beyond Smoking. The character no longer gets actively approached by non-hostile characters."
+Warped Appearance,Turned uncanny by the Great Beyond. None shall forget you - hiding is not your destiny.,The character suffers a -20 penalty to disguise himself and is easily remembered by anyone.
+Wendigo Transformation,,"The character's body temperature sinks noticeably, to the point where a thin ice sheets collects on it. He develops a taste for human flesh and a slight distaste for augmented people."
+Winged,"An angel, sent from the heavens? A demon, escaped from hell? A heretic, to be sure.",The character gains wings. They are not powerful enough to fly but will halve fall damage and double leap distance.
+Wreathed in Blasphemy,"Corrupted to the core, you can smell what's up with him.","The character gain +15 to interaction tests with Cultists, but a -15 for anyone else."
