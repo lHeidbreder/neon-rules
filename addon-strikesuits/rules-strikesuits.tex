@@ -8,24 +8,40 @@
 	\input{../core-rulebook/config/frontpages.tex}
 
 	\chapter{Introduction}
-	A marvel of technological advancement, these powered armors offer vastly improved physical capabilities as well as a near skintight bunker. Many different series are in production and each of them offers many different variants to offer requested adaptability for almost any feasible area of operation.\par
+	A marvel of technological advancement, these powered armors offer vastly improved physical capabilities with a neural link as well as a near skintight bunker. Many different series are in production and each of them offers many different variants to offer requested adaptability for almost any feasible area of operation.\par
 	Any strike suit is built specifically for its pilot. These pilots are born either highly qualified or extremely privileged and are trained by many specialists; the cheapest part of their journey. The really expensive part is their equipment: weapons, augments, modifications for each, specialized ammunition, scanners and the list goes on - culminating their armor.\par
 	Depending on their field of expertise, the armor series and variant is picked as detailed below. Note that due to how expensive and rare this type of equipment is, it is also extremely rare and hard to acquire, as even if a suit could be obtained from a dead pilot, the armor likely would not fit.
-
+	
+	\chapter{Development History}
+	Rome was not built in a day. Neither were such marvels thought up in a day. Many iterations existed before.
+	\section*{Power Loader}
+	Massive powered mechs made to carry loads. Compared to forklifts these can turn on the spot, move freely even on sand and are a little more flexible in how containers are arranged, but it is notably slower.
+	\par
+	%TODO: make vehicle when those have rules
+	\armor{Power Loader}{2}{2}{2}{2}{vehicle}{MS 4m/s, 180 Str, Size: Hulking}{cr 1300}{1100 kg}
+	\section*{Powered Exo-Skeleton}
+	Initially built for military usage, allowing squad support soldiers to carry larger amounts of ammunition, this has found use in many fields of human society. They are large, relatively loud and slow down movement, but they are also very stable and allow a lot of extra weight capacity.
+	\par
+	\armor{Lifter Skeleton}{0}{1}{1}{1}{None}{-30 to Stealth tests, Size increased by one category, -2 MS, double carry weight}{cr 1200}{500 kg}
+	\section*{Semi-Powered Armor}
+	An improvement over a powered exo-skeleton, as this piece of equipment is armor first and utility second. This piece is not quite as cumbersome and loud, also the mechanics are protected by the armor plates.
+	\par
+	\armor{Semi-Powered Armor}{0}{12}{10}{10}{torso, arms, legs}{-2 MS, +20 Str}{cr 1500}{550 kg}
+	
 	\chapter{Building a Strike Suit}
 	\section{Common Features}
 	Every Strike Suit has a few similar properties, referred to as the \emph{Baseline}. These common aspects are then modified by the series and variant, as well as custom modifications.\par
 	\begin{itemize}
-		\item Every Strike Suit has very thick armor plates. Arms and legs sport 20 armor, the head has 16 and the torso makes it to 22.
+		\item Every Strike Suit has very thick armor plates. Usually arms and legs sport 20 armor, the head has 16 and the torso makes it to 22.
 		\item The armor is fitted with a piezoelectric exo-skeleton. This is ramped up to grant a bonus of 20 points, freely distributed between strength and agility of the wearer, to be determined at the time of creation.
 		\item For squad communication every suit is fitted with a HUD, an intercom and a vitals monitor.
 		\item Additionally every suit has space for 4 mods. Often times this is reduced by variant specific modifications.
 		\item Lastly - to prevent the technology falling into the wrong hands - every suit has a Final Hour chip installed, blowing up the armor in a giant ball of fire and fragmentation when the wearer's vital signs drop to zero.\\
 		This system is both safe and secure - it cannot be hacked or overridden in any way and it does not make mistakes.
-		\item The single downside to strike suits is the fact that vehicle lock-on works against such a piece of armor, making them a priority target out in the open.
+		\item The greatest downside to strike suits is the fact that vehicle lock-on works against such a piece of armor, making them a priority target out in the open.
 	\end{itemize}
 	\par
-	Such a marvel of technology requires strong connections to powerful people and a fair sum of money - production cost alone is at around 1800 cr.
+	Such a marvel of technology requires strong connections to powerful people and a fair sum of money - production cost alone is at around 1800 cR.
 
 	\section{Series}
 	Every strike suit is constructed to fulfill a specific purpose. This means that every piece of armor has to belong to a specific series of strike suit, specialized in various areas of operation.
@@ -40,5 +56,13 @@
     \begin{multicols}{2}
     	\luaimport{strikesuits-variants.csv}{strikesuit.tpl}
     \end{multicols}
+    
+    \chapter{Piloting a Strike Suit}
+    Piloting any Strike Suit requires MkII Pilot Implants. They always have to be perfectly fitted to both the user and the Strike Suit to work properly and come in at about 600cR.\\
+    \begin{itemize}
+    	\item With proper implants, the user's Strike Suit works to the full extent.
+    	\item With pilot implants that are not fitted to the particular strike suit, the suit's characteristic bonuses are turned into penalties instead, as controlling the exo-skeleton is very hard without a connection.
+    	\item Without pilot implants the strike suit will not move at all.
+    \end{itemize}
     
 \end{document}
