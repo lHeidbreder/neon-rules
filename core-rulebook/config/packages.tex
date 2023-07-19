@@ -11,6 +11,20 @@
 \usepackage[skip=10mm]{parskip}
 \raggedbottom
 
+% Background Gradient
+\usepackage{background}
+\backgroundsetup{
+    scale=1,
+    angle=0,
+    opacity=1,
+    contents={\begin{tikzpicture}[remember picture,overlay]
+            \path [left color = gray!50,
+%            middle color = gray!50,
+            right color = gray!20] (current page.south west)rectangle (current page.north east);
+    \end{tikzpicture}}
+} %taken from https://tex.stackexchange.com/questions/82206/background-color-gradient-for-entire-document
+% TODO: this should be [gray!20, gray!50, gray!20] but middle color is ignored
+
 % Title Image
 \usepackage{wallpaper}
 \def\coverimgpath{../art/\subtitle/cover}
@@ -41,11 +55,13 @@
 	BoldFont = paladinslaser,
 	ItalicFont = paladinssuperital,
 	BoldItalicFont = paladinsexpand]
+\newfontfamily\parhead[Path = \fontpath]{Legend}[Extension = .otf]
 
 %Heading formatting
 \usepackage{titlesec}
 \titleformat{\chapter}{\heading\huge\bfseries}{\thechapter}{20pt}{}%\Huge}
 \titleformat{\section}{\subheading}{\thetitle}{18pt}{}
+\titleformat{\subsection}{\parhead}{\thetitle}{16pt}{}
 
 %lua scripts
 \input{../scripts/lua/lua_scripts.tex}

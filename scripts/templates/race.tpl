@@ -5,7 +5,7 @@
     Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
     @cr@ & @int@ & @ins@ & @ch@ & @dex@ & @ag@ & @con@ & @str@ \\ \hline
 \end{tabular}\par
-\ifthenelse{\isempty{@itemize:other_modifiers@}}{}{ \noindent\textbf{Other modifiers:}
+\ifthenelse{\isempty{@itemize:other_modifiers@}}{}{\vspace{-8mm} \noindent\textbf{Other modifiers:}
     \begin{itemize}
     \setlength\itemsep{-8mm} \vspace{-8mm}
     @itemize:other_modifiers@
@@ -35,3 +35,14 @@
     \setlength\itemsep{-8mm} \vspace{-8mm}
     @itemize:traits@
     \end{itemize} }
+\ifthenelse{\isempty{@itemize:usual_backgrounds@}}{}{ \textbf{Usual Backgrounds:}
+    \begin{itemize}
+    \setlength\itemsep{-8mm} \vspace{-8mm}
+    @itemize:usual_backgrounds@
+    \end{itemize} }
+\ifthenelse{\isempty{@itemize:disallowed_backgrounds@}}{}{ \textbf{Disallowed Backgrounds:}
+    \begin{itemize}
+    \setlength\itemsep{-8mm} \vspace{-8mm}
+    @itemize:disallowed_backgrounds@
+    \end{itemize} }
+\hrulefill

@@ -94,16 +94,135 @@ function importfrom(csvpath, templatepath)
         local filledtemplate = template
         
         for j=1,table.getn(headers) do
+            
+            if line[j] == nil then
+                line[j] = ""
+            end
+            
+            --escape "%" for both lua and latex
+            line[j] = string.gsub(line[j], "%%", "\\%%%%")
+            
             filledtemplate = string.gsub(filledtemplate, "@"..headers[j].."@", line[j])
         end
 		
 		--clean every pattern without matching column
-		filledtemplate = string.gsub(filledtemplate, "@[^%s]@", "")
+		filledtemplate = string.gsub(filledtemplate, "@[^%s@]*@", "")
 
         --write to file so \input can pick it up later
         writetofile(csvpath..".texin", filledtemplate)
     end
 end
+
+function noncombat_skills(filepath)
+    local headers = {}
+    local lines = {}
+    local is_first_line = true
+    for line in io.lines(filepath) do
+        
+        -- parse first line for headers
+        if is_first_line then
+            headers = ParseCSVLine(line)
+            is_first_line = false
+            goto continue
+        end
+    
+        -- parse all other lines
+        local parsedline = ParseCSVLine(line)
+        table.insert(lines, parsedline)
+
+        ::continue::
+    end
+    
+    for _,line in pairs(lines) do
+        local out = "@skill@ @subtype@ & \\skillcheckbox{@skill@@subtype@_untrained}\\skillcheckbox{@skill@@subtype@_known}\\skillcheckbox{@skill@@subtype@_trained}\\skillcheckbox{@skill@@subtype@_experienced}\\skillcheckbox{@skill@@subtype@_mastered}\\\\"
+        for j=1,table.getn(headers) do
+            
+            if line[j] == nil then
+                line[j] = ""
+            end
+            if string.match(line[j],"Combat Training") then
+                goto continue0
+            end
+            
+            --escape "%" for both lua and latex
+            line[j] = string.gsub(line[j], "%%", "\\%%%%")
+            
+            out = string.gsub(out, "@"..headers[j].."@", line[j])
+        end
+        tex.print(out)
+        ::continue0::
+    end
+end
+
+function combat_skills(filepath, filter)
+    local headers = {}
+    local lines = {}
+    local is_first_line = true
+    for line in io.lines(filepath) do
+        
+        -- parse first line for headers
+        if is_first_line then
+            headers = ParseCSVLine(line)
+            is_first_line = false
+            goto continue
+        end
+    
+        -- parse all other lines
+        local parsedline = ParseCSVLine(line)
+        table.insert(lines, parsedline)
+
+        ::continue::
+    end
+    
+    for _,line in pairs(lines) do
+        local out = "@subtype@ & \\skillcheckbox{@skill@@subtype@_untrained}\\skillcheckbox{@skill@@subtype@_known}\\skillcheckbox{@skill@@subtype@_trained}\\skillcheckbox{@skill@@subtype@_experienced}\\skillcheckbox{@skill@@subtype@_mastered}\\\\"
+        
+        print(line[1])
+        if not string.match(line[1],filter.." Combat Training") then
+            goto continue0
+        end
+
+        for j=1,table.getn(headers) do
+            
+            if line[j] == nil then
+                line[j] = ""
+            end
+            
+            --escape "%" for both lua and latex
+            line[j] = string.gsub(line[j], "%%", "\\%%%%")
+            
+            out = string.gsub(out, "@"..headers[j].."@", line[j])
+        end
+        tex.print(out)
+        ::continue0::
+    end
+end
+
+-- Taken from https://stackoverflow.com/questions/41942289/display-contents-of-tables-in-lua
+function tprint (tbl, indent)
+    if not indent then indent = 0 end
+    local toprint = string.rep(" ", indent) .. "{\r\n"
+    indent = indent + 2 
+    for k, v in pairs(tbl) do
+      toprint = toprint .. string.rep(" ", indent)
+      if (type(k) == "number") then
+        toprint = toprint .. "[" .. k .. "] = "
+      elseif (type(k) == "string") then
+        toprint = toprint  .. k ..  "= "   
+      end
+      if (type(v) == "number") then
+        toprint = toprint .. v .. ",\r\n"
+      elseif (type(v) == "string") then
+        toprint = toprint .. "\"" .. v .. "\",\r\n"
+      elseif (type(v) == "table") then
+        toprint = toprint .. tprint(v, indent + 2) .. ",\r\n"
+      else
+        toprint = toprint .. "\"" .. tostring(v) .. "\",\r\n"
+      end
+    end
+    toprint = toprint .. string.rep(" ", indent-2) .. "}"
+    return toprint
+  end
 
 function writetofile(path, text)
     local out = io.open(path, "a")
