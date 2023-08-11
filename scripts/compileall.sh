@@ -1,3 +1,4 @@
+#!/bin/bash
 shopt -s nullglob
 shopt -s globstar
 main_dir="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )/.."
