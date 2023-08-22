@@ -171,6 +171,16 @@
 \newcommand{\mod}[2]{\item \textbf{#1}: #2}
 \newcommand{\psicomponent}[4]{\textbf{#1} & #2 & #3 & #4\\}
 
+%filler images
+\newcommand{\filltopageendgraphics}[2][]{%
+	\par
+	\zsaveposy{top-\thepage}% Mark (baseline of) top of image
+	\vfill
+	\zsaveposy{bottom-\thepage}% Mark (baseline of) bottom of image
+	\smash{\includegraphics[height=\dimexpr\zposy{top-\thepage}sp-\zposy{bottom-\thepage}sp\relax,#1]{#2}}%
+	\par
+}
+
 %Base Building
 \newcommand{\baselocation}[6]{
 	\begin{minipage}{\columnwidth}
