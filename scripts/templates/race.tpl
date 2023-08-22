@@ -50,9 +50,9 @@
     @itemize:disallowed_backgrounds@
     \end{itemize} }
 \end{multicols}
-%TODO: a picture has to go here, if it exists
+\def\currentfillerimagepath{../art/\subtitle/@picture_path@}
 \IfFileExists
-    {@picture_path@}
-    {\filltopageendgraphics{@picture_path@}} %fill the rest of the page with the image
-    {\pagebreak} %break page if there was no filler image
-%\pagebreak
+    {\currentfillerimagepath}
+    {\begin{center}\filltopageendgraphics{\currentfillerimagepath}\end{center}} %fill the rest of the page with the image
+    {} %if there was no filler image, do nothing
+\pagebreak
