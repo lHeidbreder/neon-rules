@@ -8,7 +8,9 @@
 	\input{../core-rulebook/config/frontpages.tex}
 
 	\chapter{Introduction}
-	Playing AI is in many ways very different from playing a human. Most AI only has limited free will and creative thinking - and most importantly no physical body. To personify artificial intelligence, most AI has some imagery associated with it when it is created. This can be only a head, a full human body model or a talking horse - there are very few limitations to the creativity of mad scientists and marketing departments.
+	Playing AI is in many ways very different from playing a human. Most AI only has limited free will and creative thinking - and most importantly no physical body.
+	\par
+	To personify artificial intelligence, most AI has some imagery associated with it when it is created. This can be only a head, a full human body model or a talking horse - there are very few limitations to the creativity of mad scientists and marketing departments.
 
 	\chapter{Beyond Human}
 	\vspace{-8mm} %remove this if it is no longer necessary to keep whitespace the same
@@ -38,18 +40,24 @@
 	\vspace{-8mm}
 	\begin{itemize}
 		\setlength\itemsep{-8mm}
-		\item An AI does not have HP. Instead it uses the device’s integrity.
-		\item An AI does not have senses. Instead it uses sensors and camera feeds.
-		\item An AI does not have a voice itself. It requires necessary interface devices to communicate with humans.
-		\item An AI does not earn money. Starting capital still exists, either to buy a hardware device for the AI or to share with other party members. Earnings after missions shouldn’t be reduced but then split among the other characters.
+		\item An AI does not have HP. Instead it uses the device’s integrity to measure damage.
+		\item An AI does not have senses. Instead it uses sensors, camera feeds, microphones, and such.
+		\item An AI does not have a voice itself. It requires necessary interface devices to communicate with humans, such as loudspeakers or displays.
+		\item An AI does not earn money. Starting capital still exists, either to buy a hardware device for the AI or to share with other party members. Earnings from missions shouldn’t be reduced but then split among the other characters.\\
+			\textit{If, for example, a group of 4 player characters would be paid 150cr each, 3 player characters carrying an AI should receive 200cr each and be expected to buy any necessary equipment for their AI companion.}
 	\end{itemize}
 
 	\chapter{Limited Creation}
-	AI is not inherently more intelligent than humans but since they require a device to “live”, they have access to many specialized tools at once and they are generally made for a specific purpose, they can therefore do their work more quickly and efficiently.\\
-	AI is limited by connections - be that hardware devices connected directly or via wireless networks - and accessibility. They also don’t gain any more actions than humans do.
+	AI is not inherently more intelligent or capable than humans. But since they require a device to “live”, they have access to many specialized tools at once and are generally made for a specific purpose. Therefore they can do their work more quickly and efficiently.
+	\par
+	AI is limited by connections - be that hardware devices connected physically to the AI's host or via wireless networks - and accessibility.
+	\\%
+	They also - importantly - don’t gain any more actions than humans do.
 
 	\chapter{Spirit in a Bottle}
-	A few AI are fitted into humanoid robotic bodies officially called “Shells”, sometimes referred to as a “Bottle” or “Tin”. They behave very humanlike in many cases with a few distinct differences:
+	A few AI are fitted into humanoid robotic bodies officially called “Shells”, sometimes referred to as a “Bottle” or “Tin”.
+	\\%
+	They look very humanlike in many ways - with most sporting realistic looking synthetic skin, for example - with a few key distinctions:
 	\vspace{-8mm}
 	\begin{itemize}
 		\setlength\itemsep{-8mm}
@@ -61,14 +69,17 @@
 		\item Shells have no Medical Toughness but do have Rayleigh Index. Recovery from surgery is done within days, not weeks.
 		\item Shells are equipped with various connectors, allowing physical access to other cyberware. They themselves also work as a piece of cyberware with their specified processing power.
 	\end{itemize}
-
-	Shells grant the AI an actual Strength and Constitution characteristic. AI may be implanted into an empty Shell within 3 hours.
+	\par
+	Shells grant the AI a physical Strength and Constitution characteristic, which cannot be improved with characteristic advancements.
+	\\%
+	An AI may be implanted into an empty Shell within 3 hours, including all necessary calibration.
 
 	\chapter{Additional Content}
 	\vspace{-18mm}
 	\section{Basic Questions Revised}
 	In many cases the 20 questions in the core rules may not be applicable to AI characters. Below they are readjusted to better fit what would be interesting for AI characters.
-	\vspace{-8mm}
+%	\vspace{-8mm}
+	\begin{multicols}{2}
 	\begin{enumerate}
 		\setlength\itemsep{-6mm}
 		\item What represents the character visually?\\
@@ -84,7 +95,7 @@
 		\item In which locations have you been deployed?\\
 		\textit{AI is generally stationary, sure. But still: have you been employed in offices, secluded data centers or on the battlefield? Have you ever inhabited a Shell?}
 		\item How does the character regard transhumanism?\\
-		\textit{Do you approve humans becoming more machine? Do you want to be biological?}
+		\textit{Do you approve humans becoming more machine? Would you want to be biological, if you had the chance?}
 		\item What’s the character’s opinion on people diving?\\
 		\textit{Do humans in cyberspace annoy you or do you enjoy the company?}
 		\item For who or what would the character risk his existence?\\
@@ -109,9 +120,11 @@
 		\textit{Do you understand the concept of love? Is there someone very dear to you?}
 		\item Does the character have a dark secret?\\
 		\textit{Considering what you are, you probably know many secrets about others but this is about you. What is the worst thing you have been tasked to do?}
+\pagebreak %dirty fix
 		\item What character traits define the character?\\
 		\textit{If you had to describe yourself is just a handful of words, which would you choose?}
 	\end{enumerate}
+	\end{multicols}
 
 	\section{Races}
 	\luaimport{ai-races.csv}{race.tpl}
@@ -125,15 +138,16 @@
 	\end{enumerate}}{12}{}
 
 	\section{Shells}
-	\begin{tabularx}{\textwidth}{|l|r|r|l|r|X|r|r|}
+	\begin{tabularx}{\textwidth}{|l|r|r|r|r|X|r|r|}
 		\hline
-		Name & Con & Str & Proc Pwr & HP & Additional & Price & Weight \\ \hline
+		Name & Con & Str & PP & HP & Additionally & Price & Weight \\ \hline
 		Base & 30 & 30 & +10 & 100\% & & cr 125 & 80 kg \\ \hline
 		Crafter & 30 & 35 & +10 & 100\% & equipped with all types of portable tools & cr 320 & 72 kg \\ \hline
 		Scout & 35 & 30 & +0 & 100\% & halves penalties from noise on sneaking & cr 320 & 64 kg \\ \hline
 		Guard & 45 & 40 & +0 & 150\% & Size (Tall) & cr 740 & 235 kg \\ \hline
 		Enforcer & 40 & 45 & +0 & 150\% & Size (Tall) & cr 740 & 235 kg \\ \hline
-		Warden & 60 & 60 & +10 & 200\% & Size (Huge), can use vehicle weaponry & cr 1200 & 1,600 kg \\ \hline
+		Warden & 75 & 75 & +10 & 200\% & Size (Huge), all weaponry counts as one category smaller & cr 1200 & 1,600 kg \\ \hline
 	\end{tabularx}
+	\par \vspace{-8mm}
 	\textit{Note: HP is zone HP in relation to humans, e.g. Enforcers' extremities have 23 HP, the body has 38.}
 \end{document}
