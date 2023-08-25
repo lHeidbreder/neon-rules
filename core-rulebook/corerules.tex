@@ -189,10 +189,14 @@
 	\input{rules/ranged.tex}
 
 	\chapter{Healing}
-	\vspace{-15mm} %fixes pagebreak
+	\vspace{-5mm} %fixes pagebreak
 	\section{Anatomy}
 	The human body is no monolith; it will be regarded in 6 parts: two legs, two arms, the torso and the head. To determine a random location, consult the chart below. When a regular hit is scored, the two dice are swapped to determine the location.\\
-	Example: A simple ranged attack. The hit roll is a 37, so the location is a 73, therefore hitting the right leg. Attacks scoring multiple hits may use the same location for convenience or roll different locations for all additional hits.
+	Example: 
+	{\itshape
+		A simple ranged attack. The hit roll is a 37, so the location is a 73, therefore hitting the right leg.\\
+		Attacks scoring multiple hits may use the same location for convenience or roll different locations for all additional hits. You should probably decide which way you take before it comes up at the table.
+	}
 	\par
 	\begin{minipage}{\columnwidth}
 		\begin{tabularx}{\columnwidth}{Xcr}
@@ -207,15 +211,16 @@
 		\end{tabularx}
 	\end{minipage}
 	\section{Degradation}
-	For every full 20\% of location HP lost, the character takes a penalty to all values in the “Degrading stats” column when using this body part. Usually this penalty is a -10, the exception is initiative; base initiative is reduced by 1 and D5 temporary initiative is lost that can be gained back through the “Gather Senses” action.\\
+	For every full 20\% of location HP lost, the character takes a penalty to all values in the “Degrading stats” column when using this body part. Usually this penalty is a -10, the exception is initiative; base initiative is reduced by 1 and D5 temporary initiative is lost that can be gained back through the “Gather Senses” action.
+	\par
 	When 60\% is lost, light bleeding begins and at 80\% severe bleeding sets in. At more than 100\% the body part is lost or crippled, more in need of repair rather than healing. Details are up to GM discretion.
 	\section{Lethality}
 	\label{sec:lethality}
 	There are multiple ways for any living character to die.
-	Firstly there is \emph{critical organ failure}. This is achieved by destruction or removal of essential organs. When the torso or head body location is destroyed in a spectacular fashion, the GM may rule that this character has died on the spot.\\
-	Secondly a character may die from \emph{blood loss}. When characters start \emph{bleeding lightly} as determined by the anatomy table or GM discretion, they have ConB minutes (or Con*2 rounds) before unconsciousness sets in. They then have another ConB*9 seconds (or ConB*3 rounds) before they irrevocably bleed out. When \emph{bleeding severely} the character only has ConB*3 seconds (or ConB rounds) before unconsciousness sets in. After that he can be saved for only ConB+D5 rounds or bleed to death. Note that “light” and “severe” bleeding are distinctions within game mechanics; both are actually quite severe, a matter of life and death.\\
-	With basic medical knowledge (a medication check +40, if in doubt) a character can stop another from bleeding out. That character needs to be right next to the patient and cannot perform any other actions other than holding the wound shut.\\
-	\emph{Overexertion} is often overlooked but can very well be lethal. Generally if a character’s exhaustion surpasses their ConB, they collapse, recovering from one level per 2 hours of rest. If the character manages to surpass 3 times her ConB, the character collapses but does not recover naturally anymore. Whether the character can be saved at that point, is up to the GM.
+	\paragraph{Critical organ failure}is first. This is achieved by destruction or removal of essential organs. When the torso or head body location is destroyed in a spectacular fashion, the GM may rule that this character has died on the spot.
+	\paragraph{Blood loss}is another way a character may die. When characters start \emph{bleeding lightly} as determined by the anatomy table or GM discretion, they have ConB minutes (or Con*2 rounds) before unconsciousness sets in. They then have another ConB*9 seconds (or ConB*3 rounds) before they irrevocably bleed out. When \emph{bleeding severely} the character only has ConB*3 seconds (or ConB rounds) before unconsciousness sets in. After that he can be saved for only ConB+D5 rounds or bleed to death. Note that “light” and “severe” bleeding are distinctions within game mechanics; both are actually quite severe, a matter of life and death.\\
+	With basic medical knowledge (a medication check +40, if in doubt) a character can stop another from bleeding out. That character needs to be right next to the patient and cannot perform any other actions other than holding the wound shut.
+	\paragraph{Overexertion} is often overlooked but can very well be lethal. Generally if a character’s exhaustion surpasses their ConB, they collapse, recovering from one level per 2 hours of rest. If the character manages to surpass 3 times her ConB, the character collapses but does not recover naturally anymore. Whether the character can be saved at that point, is up to the GM.
 	\section{Natural healing}
 	Characters recover from wounds naturally. The wounded character takes a constitution test at a modifier according to the table below. He heals one wound per degree of success, but reduced by 1/4 of the total armor worn during sleep, to a minimum of 0 - staying combat-ready all night is not the epitome of relaxation.
 	Recovery is split evenly among damaged zones, prioritizing more severe injuries. This recovery only happens if the wounds can at all heal and are not infected.

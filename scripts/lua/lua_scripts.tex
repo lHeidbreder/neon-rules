@@ -5,3 +5,7 @@
 	\directlua{importfrom("#1", "../scripts/templates/#2")}
     \input{#1.texin}
 }
+
+%itemize for psionics
+\directlua{dofile("../scripts/lua/psionics.lua")}
+\newcommand{\psitemize}[1]{\vspace{-2mm} \begin{itemize} \directlua{psitemize("#1")} \end{itemize}}
