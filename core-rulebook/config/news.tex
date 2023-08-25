@@ -101,17 +101,17 @@
 \newcommand{\meleecomponent}[6]{
 	\begin{minipage}{\columnwidth}
 		\textbf{\ul{#1:}}\\
-		#2\\
-		\textit{Weight}: #4; \textit{Price}: #5\ifthenelse{\isempty{#6}}{}{; \textit{Requirement}: #6}\\
-		\textit{Effect}: #3
+		\textit{#2}\\
+		\textbf{Weight}: #4; \textbf{Price}: #5\ifthenelse{\isempty{#6}}{}{; \textbf{Requirement}: #6}\\
+		\textbf{Effect}: #3
 	\end{minipage}
 	\par
 }
 \newcommand{\ammo}[6]{
 	\begin{minipage}{\columnwidth}
-		\textbf{#1:} #2\\
-		\textit{Price: #3; Unit of sale: #4}\\
-		\textit{Weight/Bulk: #5 \ifthenelse{\isempty{#6}}{each}{per #6}}
+		\textbf{#1:} \textit{#2}\\
+		\textbf{Price}: #3; \textbf{Unit of sale}: #4\\
+		\textbf{Weight/Bulk}: #5 \textit{\ifthenelse{\isempty{#6}}{each}{per #6}}
 	\end{minipage}
 	\par
 }
