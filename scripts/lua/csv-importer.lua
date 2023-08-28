@@ -65,6 +65,11 @@ function importfrom(csvpath, templatepath)
     local is_first_line = true
     for line in io.lines(csvpath) do
         
+        --skip lines beginning with %
+        if string.find(line,'^%%') then
+            goto continue
+        end
+
         -- parse first line for headers
         if is_first_line then
             headers = ParseCSVLine(line)
