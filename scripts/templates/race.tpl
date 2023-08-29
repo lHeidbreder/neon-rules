@@ -12,8 +12,9 @@
     \setlength\itemsep{-10mm} \vspace{-8mm}
     @itemize:other_modifiers@
     \end{itemize} }
+\hrulefill
 \vspace{4mm}
-\begin{multicols}{2}
+\begin{multicols*}{2}
 \ifthenelse{\isempty{@itemize:skills@}}{}{ \textbf{Skills:}
     \begin{itemize}
     \setlength\itemsep{-10mm} \vspace{-8mm}
@@ -24,6 +25,7 @@
     \setlength\itemsep{-10mm} \vspace{-8mm}
     @itemize:abilities@
     \end{itemize} }
+\ifthenelse{\isempty{@itemize:usual_backgrounds@@itemize:disallowed_backgrounds@}}{\columnbreak}{}
 \ifthenelse{\isempty{@itemize:boons@}}{}{ \textbf{Boons:}
     \begin{itemize}
     \setlength\itemsep{-10mm} \vspace{-8mm}
@@ -34,6 +36,7 @@
     \setlength\itemsep{-10mm} \vspace{-8mm}
     @itemize:banes@
     \end{itemize} }
+\ifthenelse{\isempty{@itemize:usual_backgrounds@@itemize:disallowed_backgrounds@}}{}{\columnbreak}
 \ifthenelse{\isempty{@itemize:traits@}}{}{ \textbf{Traits:}
     \begin{itemize}
     \setlength\itemsep{-10mm} \vspace{-8mm}
@@ -49,7 +52,7 @@
     \setlength\itemsep{-10mm} \vspace{-8mm}
     @itemize:disallowed_backgrounds@
     \end{itemize} }
-\end{multicols}
+\end{multicols*}
 \def\currentfillerimagepath{../art/\subtitle/@picture_path@}
 \IfFileExists
     {\currentfillerimagepath}
