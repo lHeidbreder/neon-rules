@@ -1,0 +1,29 @@
+Race: Vat-grown - Adaptive [26]
+Background: Doctor [7]
+
+CR  28 + 10 = 38
+Int 35 + 20 = 55
+Ins 28 + 15 = 42
+Ch  28 + 10 = 38
+Dex 35 + 20 = 55
+Ag  28 + 10 = 38
+Con 28 + 10 = 38
+Str 28 +  5 = 32 + 5 [200]
+[100]
+
+Boons: Nerves of Steel 2, Adaptable Circulation 1
+Banes: Slave Mentality 25
+    Bad Reputation 4 [-8], Blood Lust 40 [-4], Evil Monologue [-5], Scrooge 40 [-4], Trigger Phrase [-7], Ugly [-5]
+
+Abilities: Stabilization
+    MVR: Powerstrike [200], MVR: Stunning Blow [100]
+Skills: Appeal +1, Medication +3, Perception +1, Restrait +2
+    Chemistry +3 [1200], Melee Combat Training (Striking) +2 [600], Deceive +1 [200]
+
+XP left: 0
+
+Equip:
+- simple shiv (knife blade, simple hilt, no core) [10]
+- Mk IIa PES Prototype [96]
+- Stitch Kit [22]
+- Leftover credits [10]

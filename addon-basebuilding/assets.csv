@@ -1,0 +1,22 @@
+name,flavor_text,size,concealment,defense,cost,group
+Extension / Additional Story,Increases size capacity; may at most double the base size in most cases; its cost is limited to be the location's original cost at most.,-4,-2,-1,5000,Basic
+Facade,Increase concealment by masking the base's true purpose.,2,2,0,300,Concealment
+Fabrication Plant,"Produces a certain type of synthetic components automatically. Produces a net value of roughly cr 100 daily, given it is continuously supplied.",4,-1,-2,160000,Crafting
+Forge,Enables Forge crafting. The size and cost depends on the forge's size.,1 / 2 / 4,-2,-2,"120 / 1,600 / 13,800",Crafting
+Lab,Enables Chemical crafting. The size and cost depends on the lab's size.,1 / 2 / 4,-2,-2,"120 / 1,600 / 13,800",Crafting
+Plantation,"Produces a certain type of natural components automatically. Produces a net value of roughly cr 100 daily, given it is continuously supplied.",4,-1,-2,160000,Crafting
+Vehicle Bay,Enables Vehicle repairs and modification,4,-2,-1,860,Crafting
+EMI Dynamo,Allows EM pulse in defense situations,1,-3,1,2800,Defense
+Life Support Systems,"Removes dependency on outside world for clean water, food and air",1,-1,1,400 per location's size point,Defense
+Hidden Pathways,Allows circling around or escaping from the enemy in defense situations,0,0,1,320,Defense
+Surveillance System,Prevents being infiltrated,1,-1,1,2600,Defense
+Turret Grid,Adds allied turrets in defense situations,1,-3,2,3800,Defense
+Comms Network,"Allows safe communication during preparation, internally and externally. Anyone trying to break encryption takes an additional -20 penalty.",1,0,1,1250,Preparation
+Data Center,Allows advanced data mining,1,-1,-1,750,Preparation
+Equipment Stash,Allows safe storage of various types of equipment,2,0,1,40,Preparation
+Hidden Stash,Allows safe storage of items that won't easily be found by a search,0,0,1,80,Preparation
+Holding Facility,Allows safe storage of prisoners and people of interest; 2 cells each,1,-2,-1,400,Preparation
+Living Quarters / R\&R,Improves recovery through relaxation. All natural healing tests gain +10 and recovery time is reduced by half.,1,2,-1,100,Preparation
+Medical Facilities,Increases regeneration of health. All medical attention tests to regenerate HP gain +10.,1,-1,-1,900,Preparation
+MedEvac / ER,"If during a mission a character is mortally wounded, he may be extracted and survive the encounter. He will however be traumatized and gain a Bane worth roughly 4 GP.",4,-3,1,4600,Preparation
+Aug Surgery,Allows implantation surgery.,2,-2,-1,1600,Preparation

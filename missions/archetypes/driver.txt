@@ -1,0 +1,26 @@
+Race: Pure [0]
+Background: Driver, Broad Education: Bodyguard [7 + 17 + 7 = 31]
+
+CR  27 + 15 = 42
+Int 25 +  5 = 30
+Ins 30 + 15 = 45
+Ch  25 +  5 = 30
+Dex 25 +  5 = 30
+Ag  25 + 15 = 40
+Con 27 + 25 = 42
+Str 27 + 15 = 42
+[100]
+
+Boons: 
+Banes: Bad Reputation 3 [-6], Belief in Authority 40 [-4], Bound by Principle (Protect, no corruption) [-12], Claustrophobia 30 [-9]
+
+Abilities: Hand-to-hand Basics [250], Overly Cautious [300], Where it hurts [400], MVR: Powerstrike [200], MVR: Attack of Opportunity [150]
+Skills: Ranged Combat Training (Pistol) +2, Melee Combat Training (One-handed Club) +2, Melee Combat Training (Grappling) +1, Perception +1, Drive (Car) +4, Drive (Heavy) +3, Navigation (Ground) +4, Restraint +2
+    Melee Combat Training (Striking) +3 [1200]
+
+XP left: 0
+
+Equip:
+- M10 [30]
+- Mk IIa PES Prototype [96]
+- leftover credits [4]

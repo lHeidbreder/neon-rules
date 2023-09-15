@@ -1,0 +1,35 @@
+Race: Transspecies - Feline [6]
+Background: Hacker - Black Hat [4]
+
+CR  20 + 15 = 35
+Int 25 + 25 = 50
+Ins 35 + 15 = 50
+Ch  25 + 10 = 35
+Dex 25 + 10 = 35
+Ag  30 + 10 = 40
+Con 22 + 10 = 32
+Str 20 +  5 = 25
+[100]
+
+Boons: Balance, Dark Vision
+    Ambidextrous [12], Big Spender [3]
+Banes: Second-class Citizen, Vanity 20
+    Addiction (Speed) [-10], Bathophobia 30 [-3], Caring 20 [-4], Curiosity 40 [-8]
+
+Abilities: Battle Mind [400], Hax0r e1337 [400]
+Education: Cybersecurity +10 [500]
+Skills: Acrobatics +1, Commerce +1, Computer Operation +3, Security +3, Stealth +2
+    Ranged Weapon Training (Pistol) +2 [600], Deceive +2 [600]
+
+XP left: 0
+
+Equip:
+- M10 [30]
+- Mk IIa PES Prototype [96]
+- Subdermal Data Storage [50]
+- High-performance Sight [100]
+- Shadow Runners [144]
+- Neural Vault [220]
+- leftover credits: 20
+
+credit note: 135 + 525 = 660

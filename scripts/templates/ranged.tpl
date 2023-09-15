@@ -3,7 +3,7 @@
 		\textbf{\ul{@name@}}\\
 		\textit{@flavor_text@}\\
 		\textbf{Weight}: @weight@ kg\\
-		\textbf{Price}: cR @price@\\
+		\textbf{Price}: cr @price@\\
 		\textbf{Shots}: @shots@\\
         \textbf{Damage}: @damage@\\
         \textbf{AP}: @ap@\\

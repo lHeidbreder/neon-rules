@@ -1,0 +1,28 @@
+Race: Pure [0]
+Background: Courier [7]
+
+CR  25 + 5 = 30
+Int 25 + 5 = 30
+Ins 25 + 15 = 40
+Ch  25 + 15 = 40
+Dex 25 + 15 = 40
+Ag  30 + 30 = 60
+Con 25 + 10 = 35
+Str 25 + 10 = 35
+[100]
+
+Boons: Aptitude (Ag) [10], Nimble [10]
+Banes: Arrogance 35 [-7], Debt (cr 2000) [-4], Delusions of Grandeur 30 [-6], Impatient 25 [-5], Impulsive [-5]
+
+Abilities: Flip Up
+    Overly Cautious [300]
+Skills: Atheltics +2, Climbing +2, Deceive +1, Drive (Bike) +2, Sleight of hand +1, Stealth +1
+    Perception +3 [1400], Melee Combat Training (Knife) +1 [200], Dodge +2 [600]
+    
+XP left: 0
+
+Equip:
+- EC-Comm [18]
+- simple shiv (knife blade, simple hilt, no core) [10]
+- Mk IIa PES Prototype [96]
+- leftover credits [16]
