@@ -1,4 +1,4 @@
-\def\currentfillerimagepath{../art/prefabs/\pfcname}
+\def\currentfillerimagepath{../art/prefabs/\pfcname.png}
 \IfFileExists
     {\currentfillerimagepath}
     {\begin{center}\filltopageendgraphics{\currentfillerimagepath}\end{center}} %fill the rest of the page with the image
