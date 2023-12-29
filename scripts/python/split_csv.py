@@ -12,7 +12,7 @@ if __name__ == '__main__':
     extracted_tables = {}
     
     # read tables from source file
-    with open(src_filepath) as srcfile:
+    with open(src_filepath, encoding="utf-8") as srcfile:
         for row in csv.DictReader(srcfile):
             if row[colname] not in extracted_tables.keys():
                 extracted_tables[row[colname]] = []

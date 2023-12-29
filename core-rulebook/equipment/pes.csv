@@ -1,0 +1,12 @@
+name,armor,threshold,price,weight,special
+Mk IIa PES Prototype,8,3,96,1.9,
+Mk IIIa Retail-Ready PES,15,4,126,1.2,
+Mk III Projected Armor,24,5,144,2.6,
+Mk IV Heavy PES,32,5,156,5.8,Cumbersome
+Projected Bunker Shielding,64,7,186,350,"incredibly large, 8m radius"
+Rumble Energy Shielding,12,4,114,1.4,triggers on melee attacks as well
+MagMA Heat Shield,16,4,132,1.4,halves fire damage
+EOD Energy Shielding,19,4,138,1.2,armor doubled against dispersed damage (all attacks with \emph{Scatter} or \emph{Blast} rules)
+Unstable PES,24,5,144,0.7,"shocks surroundings (excluding the wearer) when triggered: Blast (1), EMP, Stun (2)"
+Energy Rotella,13,4,120,1.1,"only shields one arm, like a conventional shield"
+Mk IVa Heavy Prototype,30,5,156,1.2,blocks ranged attacks going out

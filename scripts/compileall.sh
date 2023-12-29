@@ -3,6 +3,9 @@ shopt -s nullglob
 shopt -s globstar
 main_dir="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )/.."
 
+# clean
+git clean -xf
+git clean -Xf
 console_output_dir="${main_dir}/scripts/compiler_output"
 mkdir -p $console_output_dir
 rm ${console_output_dir}/compile.out
@@ -22,10 +25,7 @@ do
     if [ -f prep.sh ]; 
     then bash prep.sh; fi
     echo "Compiling: ${i##*/}"
-    for j in {1..4}
-    do
-        lualatex.exe -interaction=nonstopmode --output-directory="${file_output_dir}" ${i##*/} 1>> "${console_output_dir}/compile.out" 2>> "${console_output_dir}/compile.err"
-    done
+    latexmk -pdflua -output-directory="${file_output_dir}" ${i##*/} 1>> "${console_output_dir}/compile.out" 2>> "${console_output_dir}/compile.err"
     cd $main_dir
 done
 

@@ -19,7 +19,8 @@ In \emph{descending} order all characters resolve their actions. Depending on th
 	Lastly, Jane moves after Paul and attacks. She's attacking in movement unexpectedly and therefore has to deal with a -20 in addition to the modifiers she already has.
 \end{exampleblock}
 \subsection{Variable Initiative}
-Initiative is variable. When a character is disorientated by being blinded, stunned or falling to the ground, he loses initiative. How much is up to the GM but should be between a D5 for taking a wounding hit to the head and a D10 for smacking his head while dropping to the floor.
+\label{subsec:variableini}
+Initiative is variable. When a character is disorientated by being blinded, stunned or falling to the ground, he loses initiative. How much is up to the GM but should be between a D5 for taking a wounding hit to the head and a D10 for dropping to the floor.
 \\%
 Unlike a reduced Base Initiative, this may be regained by taking the \emph{Gather Senses} action.
 \section{Control area}
@@ -36,25 +37,32 @@ Unless specified otherwise any character can use any maneuver even without being
 \section{Voluntary penalties}
 Most maneuvers take great risk and the bigger the risk, the higher the reward. Voluntary penalties are taken by the acting character and have some sort of effect on maneuvers. The maneuvers that profit from voluntary penalties are designated with a \emph{-X} modifier.\\
 Voluntary penalties can’t be taken to reduce the target value below 20. If multiple maneuvers profiting from voluntary penalties are combined - e.g. a \emph{power strike} and a \emph{faint} - the benefits are split freely among them.
+%TODO: example?
 \section{Shooting size \& multiple targets}
-When attacking a group of targets or one large target in ranged combat, hitting becomes easier. Depending on the overall target size a bonus to hit given on the Size-table is inferred. If the target is a group, the individual target is determined randomly if necessary.\\
+When attacking a group of targets or one large target in \emph{ranged} combat, hitting becomes easier. Depending on the overall target size a bonus to hit given on the Size-table is inferred. If the target is a group, the individual target is determined randomly if necessary.\\
 Attacking a single target in a large, moving group is impossible and the target will have to either be lured out or hit by chance or explosives.
 \section{Dual-wielding}
-When wielding two weapons, the character may attack using both weapons in one action. Using small arms is at a -30, using large weapons is at -60. Additionally, attacking different targets is at a -10 penalty.\\
-Attacking twice is not possible in turned actions.
+When wielding two weapons, the character may attack using both weapons in one action. Using one-handed weapons is at a -30, using two-handed weapons is at -60. Additionally, attacking different targets is at a -10 penalty.\\
+Attacking or parrying twice is not possible in turned actions, i.e. dual-wielders cannot take the same action three times per turn.
 \section{Combined actions}
 \label{combinedaction}
 To take combined actions, the involved members need some way to communicate - preferable privately - and all take their go on the lowest involved initiative. They don't have to test against the same characteristic or skill, but they should in some way support each other.\\
-The team may distribute all Degrees of Success among each other freely, allowing them to cancel out Degrees of Failure and making failed tests succeed.
+The team may then distribute all Degrees of Success among each other freely, allowing them to cancel out Degrees of Failure and making failed tests succeed.
 \begin{exampleblock}
 	\itshape
 	Three people participate in a combined action. Two of them succeed, with 3 and 4 DoS respectively. The last one fails with 3 DoF.\\
-	They can now decide to have everyone succeed at 2 DoS, or one at 3 and two at 1, or even one at 6, one at 1 and just have the last one fail.
+	They can now decide to e.g. have everyone succeed (one at 2 DoS, the others at 1), or have one succeed at 6, one at 1 and just have the last one fail as is.
 \end{exampleblock}
 \section{Damage and armor}
 When a character takes a hit that is not defended against, first worn armor and cover are reduced by the attack's armor penetration, down to a minimum of 0. \\
 The leftover armor and the target’s injury threshold then reduce the attack’s damage, again down to a minimum of 0. \\
 Any leftover damage is then applied to the randomly determined hit location and the target now takes penalties in accordance.
+\begin{exampleblock}
+	\itshape
+	An attack deals 2D10+5 damage (rolling 15 in total) and has 6 AP.\\
+	The defender wears "armor" with an armor value of 4 and sits behind a thin wall with armor value of 8, for a total of 12. His Injury Threshold is 3.\\
+	The effective armor is reduced to 6. Now both the armor and the Injury Threshold is deducted from the damage, so the hit deals (15-6-3=) 6 damage in total.
+\end{exampleblock}
 \section{Cover and concealment}
 Any object blocking line of sight is considered \emph{Concealment}. Attacking a target behind such concealment comes with a -30 penalty as if blindfiring.
 \emph{Cover} on the other hand provides additional armor points depending on material and thickness.
