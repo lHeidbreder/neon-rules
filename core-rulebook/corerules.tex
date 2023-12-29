@@ -48,21 +48,22 @@
 		}
 	\end{exampleblock}
 	\section{Opposed checks}
+	\label{sec:opposedchecks}
 	We went over success, we went over types of success, now the last thing to go over is direct opposition. Rather straightforward the DoS are compared; if they are the same, then the result was so close that the natural skill of the opponents is decisive.
 	\par
 	\pagebreak %quick fix
 	Compare the two target values with the higher one getting a very small success over the other. If even these two are the same, usually nothing happens. Three more examples depicting the different situations:
 	\begin{exampleblock}\textit{
 	Alice is stopped from entering a building by Bob, a cautious bouncer. Since she does not want to cause a ruckus that could alert her target inside, she tries to smooth-talk her way through him. To determine the result her game master asks for a Persuasion check, opposed by Bob’s Interrogation check.\\
-	Bob, being a naturally perceptive and cautious guy, has 55 Instinct and being trained in Interrogation grants him a further +10 bonus for a target value of 65. Alice is only slightly less naturally charming, having a Charisma of 45, but since she’s also experienced in persuasion granting her a +20, her target value is also 65.\\
-	In scenario one Alice rolls a 34, Bob rolls a 42, meaning Alice gains 3 degrees of success and Bob gains 2. Therefore Alice has achieved a very slight victory that might just be enough for her to achieve her desired result.\\
-	In scenario two Alice rolls a 26 and Bob rolls a 24. Alice gains 3 degrees of success, Bob gains 4. Therefore Alice suffers slight loss here. Whether she may not enter or she enters but is noticed, is up to the GM’s ruling and narration.\\
-	In scenario three Alice rolls a 78 and Bob rolls an 82. Therefore Alice scores a degree of failure, so does Bob. The fact both failed their checks is irrelevant for their opposed checks. Since they both passed equally good or bad, Bob, having the stronger natural inclination, wins the opposition only very slightly. This might just make him more suspicious or completely aware but not hostile, depending on GM narration.\\
+	Bob, being a naturally perceptive and cautious guy, has 55 Instinct and being trained in Interrogation grants him a further +10 bonus for a target value of \emph{65}. Alice is only slightly less naturally charming, having a Charisma of 45, but since she’s also experienced in persuasion granting her a +20, her target value is also \emph{65}.\\
+	In scenario one Alice rolls a 34, Bob rolls a 42, meaning Alice gains 4 degrees of success and Bob gains 3. Therefore Alice has achieved a very slight victory that might just be enough for her to achieve her desired result.\\
+	In scenario two Alice rolls a 26 and Bob rolls a 24. Alice gains 4 degrees of success, Bob gains 5. Therefore Alice suffers slight loss here. Whether she may not enter or she enters but is noticed, is up to the GM’s ruling and narration.\\
+	In scenario three Alice rolls a 78 and Bob rolls an 82. Therefore Alice scores 2 degrees of failure, so does Bob. The fact both failed their checks is irrelevant for their opposed checks. Since they both passed equally good (or bad), Bob - having the stronger natural inclination - wins the opposition only very slightly. This might just make him more suspicious or completely aware but not hostile, depending on GM narration.\\
 		}
 	\end{exampleblock}
 
 	\section{Assistance}
-	Outside of combat, especially during extended actions, one character is designated as the primary actor and other characters may become assisting actors. Assisting actors make their specific tests first, granting the primary actor 10 + their degrees of success * 5 as a bonus or 10 + their degrees of failure * 5 as a penalty to her test. Assisting tests are not necessarily required to use the same characteristic or skill, for example:\par
+	Outside of combat, especially during extended actions, one character is designated as the primary actor and other characters may become assisting actors. Assisting actors make their specific tests first, granting the primary actor 5 * their degrees of success as a bonus or 5 * their degrees of failure as a penalty to her test. Assisting tests are not necessarily required to use the same characteristic or skill, for example:\par
 	\begin{exampleblock}
 		\itshape
 		John attempts to help Kelly jump into a window. Since the window is narrow, Kelly will be making a check against her agility based Acrobatics skill, while John - using controlled, precise strength - uses his strength based Athletics skill.
@@ -72,11 +73,11 @@
 	We now know how to perform dice checks but how do we determine our target values? Most basic to the target value is the character’s Characteristic. These are the most basic features that define a creature. Usually one of these values will be the basis for most dice checks:
 	\begin{itemize}
 		\setlength\itemsep{-8mm}
-		\item \textbf{Courage (Cr)} describes the creature’s strength of will and the creature’s ability to overcome emotional impulses like the obvious fear but also e.g. anger.
+		\item \textbf{Courage (Cr)} describes the creature’s strength of will and the creature’s ability to overcome emotional impulses like obviously fear but also e.g. anger.
 		\item \textbf{Intelligence (Int)} describes the creature’s capability to remember old as well as to understand and learn new things. It also encompasses drawing conclusions from things the creature knows.
 		\item \textbf{Instinct (Ins)} describes the creature’s reaction speed in situations that don’t allow for time to think. Also encompasses general perception.
 		\item \textbf{Charisma (Ch)} describes the creature’s presence. The more charisma the more self-confident and persuasive the creature appears.
-		\item \textbf{Dexterity (Dex)} describes the creature’s finesse with very fine tools such as profane lockpicks or a blowtorch.
+		\item \textbf{Dexterity (Dex)} describes the creature’s finesse with very fine tools such as mundane lockpicks or a blowtorch.
 		\item \textbf{Agility (Ag)} describes the creature’s body control and flexibility.
 		\item \textbf{Constitution (Con)} describes the creature’s bodily sturdiness, endurance and pain tolerance.
 		\item \textbf{Strength (Str)} describes the creature’s bodily, physical strength and ability to use it effectively.
@@ -89,14 +90,21 @@
 	\end{minipage}
 	
 	\section{Derived values}
-	A few additional values are directly derived from the set of characteristics. They include the attributes that define limits for augmentation:
+	A few additional values are directly derived from the set of characteristics. \\
+	They include the attributes that define \emph{limits for augmentation}:
 	\begin{itemize}
 		\setlength\itemsep{-8mm}
-		\item \textbf{Rayleigh Index \textlangle(Cr+Int+Con)/20\textrangle:} Cybernetic augmentation puts a massive strain on the human body. This number indicates the body’s limit for nerve load. It must never be surpassed or the character is at immediate, high risk of vital organ failure, brain and nerve damage and more.
-		\item \textbf{Medical Toughness \textlangle(Ag+Con+Str)/20\textrangle:} This simplified measurement represents all factors that allow or disallow further bio-engineered parts to be accepted by the character’s body. This must also never be surpassed, though the exact consequences are dependent on the body part that is being installed and range from organ activation failure, over inhibited circulation, up to spontaneous fatal cardiac arrest.
+		\item \textbf{Rayleigh Index \textlangle(Cr+Int+Con)/20\textrangle:}
+		Cybernetic augmentation puts a massive strain on the human body, mainly the nervous system.
+		This number indicates the body’s limit for said load.
+		It must never be surpassed or the character is at immediate, high risk of vital organ failure, brain and nerve damage and more.
+		\item \textbf{Medical Toughness \textlangle(Ag+Con+Str)/20\textrangle:}
+		This simplified measurement represents all factors that allow or disallow further bio-engineered parts to be accepted by the character’s body.
+		This must also never be surpassed, though the exact consequences are dependent on the body part that is being installed 
+		- ranging from organ activation failure, over inhibited circulation, up to spontaneous fatal cardiac arrest.
 	\end{itemize}
 
-	They also encompass combat-related values:
+	They also encompass \emph{combat-related values}:
 	\begin{itemize}
 		\setlength\itemsep{-8mm}
 		\item \textbf{Base Initiative \textlangle(Cr+Ins+Ag)/10\textrangle:} The base value for the character’s initiative. While that may be modified by circumstances and abilities (not to mention a dice roll), “base initiative” refers to exactly this value.
@@ -106,7 +114,7 @@
 %		This serves as the foundation for proper combat training.
 	\end{itemize}
 
-	The following values are special, in that they are recalculated if temporary modifiers impact the characteristics that make them up:
+	Unlike the values above, the following are mainly used for combat yet should be recalculated on the fly, whenever temporary modifiers are applied:
 	\begin{itemize}
 		\setlength\itemsep{-8mm}
 		\item \textbf{Injury Threshold \textlangle ConB\textrangle:} The amount of damage the character can take before he is actually injured to the point of pain, bleeding and weakening. All damage taken is reduced by this and it is not ignored by an attack’s armor penetration.
@@ -116,7 +124,7 @@
 	Lastly there are values that are not necessarily restricted solely to combat:
 	\begin{itemize}
 		\setlength\itemsep{-8mm}
-		\item \textbf{Movement Speed \textlangle((Ag+Ag+Str)/40)+5\textrangle:} A character’s total sprint speed, explained in more detail in the chapter Movement.
+		\item \textbf{Movement Speed \textlangle(Ag+Ag+Str)/40 + 5\textrangle:} A character’s total sprint speed, explained in more detail in the chapter Movement.
 		\item \textbf{Standing Leap \textlangle(Ag+Str)/40\textrangle:} The length a character can pass while jumping forward, explained in more detail in the chapter Movement.
 		\item \textbf{Standing Jump \textlangle Standing Leap/4\textrangle:} The height a character can jump up, explained in more detail in the chapter Movement.
 	\end{itemize}
@@ -124,8 +132,10 @@
 	Likely being the most common modifier on dice checks, skills represent training in a field. This training ranges through:
 	\begin{itemize}
 		\setlength\itemsep{-8mm}
-		\item \textbf{unknown:} The character has never had any contact with this very advanced subject. This infers at least a -40 penalty to according skill checks or might also make checks completely impossible.
-		\item \textbf{untrained:} The character has had very little contact with this complex field or barely touched this simple field. This infers a -20 penalty to according skill checks.
+		\item \textbf{unknown:} The character has never had any contact with this very advanced subject. 
+		This infers at least a -40 penalty to according skill checks or might also make checks completely impossible outright.
+		\item \textbf{untrained:} The character has had very little contact with this complex field or barely touched this simple field.
+		This infers a -20 penalty to according skill checks.
 		\item \textbf{known:} The character has a grasp of this field’s basics. No modifier is applied.
 		\item \textbf{trained:} The character had either some formal training or a natural knack for this field. This grants a +10 bonus to associated skill checks.
 		\item \textbf{experienced:} The character had extensive training in this field. This grants a +20 bonus to associated skill checks.
@@ -134,7 +144,9 @@
 	Basic skills start untrained, advanced skills start unknown. The first increase costs 200 XP, the second one (taking a basic skill from known to trained for example) will cost 400, the third 600 and so on. That means increasing a basic skill from untrained to mastered will cost 2000 XP and taking an advanced skill from unknown to mastered will cost 3000 XP overall.
 	\section{Educations}
 	\label{eds-explanation}
-	In addition to directly applicable fields characters may be trained in, they also have more general, broader knowledge. While this might not replace a skill, it might assist them in many different fields. Educations are extremely diverse, so this is just a small list of examples:\\ \\
+	In addition to directly applicable fields characters may be trained in, they also have more general, broader knowledge.
+	While this might not replace a skill, it might assist them in many different fields, adding their modifier to any test the GM deems applicable.
+	Educations are extremely diverse, so this is just a small list of examples:\\ \\
 	\begin{tabular*}{\textwidth}{|l|@{\extracolsep{\fill}}r|}
 		\hline
 		Education               & Example Skills \\
@@ -149,8 +161,14 @@
 	\section{Situational Modifiers}
 	Some things become easier or harder in certain situations. Potential situational modifiers are vast and always up to GM discretion. Some common circumstances include lighting and the weather for sight based checks or mood, relationship and general disposition for social checks. Tables from page \pageref{situationalmodifiers} onward contain more potential circumstances and their respective modifiers. Obviously those lists are not exhaustive.
 	\section{Critical successes and failures}
+	%TODO: steal imperium maledictum's crit rules
 	Independently of modifiers and target values rolling a 1 always counts as a critical success. In such a case the degrees of success are equal to the characteristic bonus and ties are always won.\\
 	Conversely rolling a 100 (00:0 on the percentile dice) always counts as a critical failure. The degrees of failure - if at all necessary - are 14 minus the characteristic bonus and ties are always lost.
+	\section{GM Advice: When to roll}
+	You don't always need to demand a roll.\\
+	In cases where nothing is at stake and characters have enough time, do not have your players roll. They succeed.\\
+	In cases where the target value surpasses 100 or goes below 0, rolls may be unnecessary and the result predetermined.\\
+	Note that if you demand a roll, players will demand the result to matter.
 	
 	\section{Skill check examples}
 	To give a better overview of how different modifiers add up, here are two somewhat extraordinary examples for each of the classic pillars of tabletop roleplaying. In general these amounts of modifiers might come up in play but situations like these are rare and sometimes hard to keep track of.
@@ -170,13 +188,15 @@
 %	TODO: How much?
 	\section{Climbing, jumping, leaping}
 	Sometimes getting from point A to point B becomes difficult when they are on different elevations. It might also be necessary to cross over obstacles in one’s way and do so fast.\\
-	\textbf{Climbing} works just as walking or running would, only that speed is halved. Since usually the climbers hands are occupied, what actions can be taken is up to GM discretion. Actions that need footwork or are taken twisted behind one’s back suffer at least a -20 penalty - potentially in addition to -20 for actions during movement - if they are possible at all.\\
+	\textbf{Climbing} works just as walking or running would, only that speed is halved. Since usually the climbers hands are occupied, what actions can be taken is up to GM discretion.\\
+	Actions that need footwork or are taken twisted behind one’s back suffer at least a -20 penalty - potentially in addition to -20 for actions during movement - if they are possible at all. When in doubt, ask for a Climbing check.\\
 	\textbf{Leaping} is another important form of horizontal coverage. Leap length is technically a characteristic-derived value, though it decreases with exhaustion: (AB + SB - Exhaustion)/2. Leap length can be doubled with proper run-up, a minimum of about 4 meters.\\
 	Finally \textbf{jumping} is probably the most basic form of vertical coverage. Jump height is a quarter of leaping distance, follows the same rules for run-up and - if the character has something to grip and at least one free hand - may end in a climb.
 	\section{Swimming}
 	Swimming is the last form of human movement and quite possibly the slowest. For most people swim speed is roughly a tenth of a character’s movement speed on land. Depending on equipment load, armor and special augmentation it may be even lower or completely impossible, per GM discretion when in question.
 	\section{Movement and size}
-	Due to longer extremities larger characters are generally faster, as per the size table. Additionally characters that are at least 2 categories smaller can temporarily occupy the same space, as the small character runs through the larger character’s legs or climbs on their back. Use common sense to determine where and when that is and is not possible. In any case it should slow down both characters.
+	Due to longer extremities larger characters are generally faster, as per the size table (see p. \pageref{sizestable}).\\
+	Additionally characters that are at least 2 categories apart can temporarily occupy the same space, as the small character runs through the larger character’s legs or climbs on their back. Use common sense to determine where and when that is and is not possible. In any case it should slow down both characters.
 	\section{Encumbrance: bulk and weight}
 	When a character is carrying too much, he will eventually be \emph{over-encumbered}. Any object that is carried at one's person but outside of a proper pouch will cause one point of encumbrance from \emph{bulk}.\\
 	Any excess \emph{weight} will also cause encumbrance. One point is gained for surpassing half the character’s strength in kilograms and for a quarter of the character’s strength each after that point. Worn armor is ignored, so long as it fits.\\
@@ -193,10 +213,12 @@
 	\section{Anatomy}
 	The human body is no monolith; it will be regarded in 6 parts: two legs, two arms, the torso and the head. To determine a random location, consult the chart below. When a regular hit is scored, the two dice are swapped to determine the location.\\
 	Example: 
+	\begin{exampleblock}
 	{\itshape
 		A simple ranged attack. The hit roll is a 37, so the location is a 73, therefore hitting the right leg.\\
 		Attacks scoring multiple hits may use the same location for convenience or roll different locations for all additional hits. You should probably decide which way you take before it comes up at the table.
 	}
+	\end{exampleblock}
 	\par
 	\begin{minipage}{\columnwidth}
 		\begin{tabularx}{\columnwidth}{Xcr}
@@ -214,15 +236,17 @@
 	For every full 20\% of location HP lost, the character takes a penalty to all values in the “Degrading stats” column when using this body part. Usually this penalty is a -10, the exception is initiative; base initiative is reduced by 1 and D5 temporary initiative is lost that can be gained back through the “Gather Senses” action.
 	\par
 	When 60\% is lost, light bleeding begins and at 80\% severe bleeding sets in. At more than 100\% the body part is lost or crippled, more in need of repair rather than healing. Details are up to GM discretion.
+	%TODO: example?
 	\section{Lethality}
 	\label{sec:lethality}
 	There are multiple ways for any living character to die.
 	\paragraph{Critical organ failure}is first. This is achieved by destruction or removal of essential organs. When the torso or head body location is destroyed in a spectacular fashion, the GM may rule that this character has died on the spot.
 	\paragraph{Blood loss}is another way a character may die. When characters start \emph{bleeding lightly} as determined by the anatomy table or GM discretion, they have ConB minutes (or Con*2 rounds) before unconsciousness sets in. They then have another ConB*9 seconds (or ConB*3 rounds) before they irrevocably bleed out. When \emph{bleeding severely} the character only has ConB*3 seconds (or ConB rounds) before unconsciousness sets in. After that he can be saved for only ConB+D5 rounds or bleed to death. Note that “light” and “severe” bleeding are distinctions within game mechanics; both are actually quite severe, a matter of life and death.\\
 	With basic medical knowledge (a medication check +40, if in doubt) a character can stop another from bleeding out. That character needs to be right next to the patient and cannot perform any other actions other than holding the wound shut.
-	\paragraph{Overexertion} is often overlooked but can very well be lethal. Generally if a character’s exhaustion surpasses their ConB, they collapse, recovering from one level per 2 hours of rest. If the character manages to surpass 3 times her ConB, the character collapses but does not recover naturally anymore. Whether the character can be saved at that point, is up to the GM.
+	\paragraph{Overexertion} is often overlooked but can very well be lethal. Generally if a character’s exhaustion surpasses their ConB, they collapse, recovering from one level per 2 hours of rest. If the character manages to surpass 3 times her ConB, the character collapses but does not recover naturally anymore. Whether the character can be saved at that point, is up to the GM.\\
+	Note that overexertion is generally a very slow process and - unless he is forced to continue - anyone can slow down before reaching dangerous levels of exhaustion.
 	\section{Natural healing}
-	Characters recover from wounds naturally. The wounded character takes a constitution test at a modifier according to the table below. He heals one wound per degree of success, but reduced by 1/4 of the total armor worn during sleep, to a minimum of 0 - staying combat-ready all night is not the epitome of relaxation.
+	Characters recover from wounds naturally. The wounded character takes a constitution test at a modifier according to the table below. He heals one wound per degree of success, but reduced by the total average armor worn during sleep including PES, to a minimum of 0 - staying combat-ready all night is not the epitome of relaxation.\\
 	Recovery is split evenly among damaged zones, prioritizing more severe injuries. This recovery only happens if the wounds can at all heal and are not infected.
 	\section{Medical attention}
 	If a character gets medical attention, he recovers in addition to his natural healing. The medical check is at a -5 penalty for every location that is being treated beyond the first, so up to a -25 if the whole body is being treated. If the performing doctor is treating himself, the test takes an additional \mbox{-15}. %prevent line break
@@ -234,32 +258,38 @@
 
 	\chapter{Hazards}
 	\section{Common hazards}
-	\paragraph{Deafening} may be painful but is not lethal. It is very common when using firearms without ear protection or a silencer, especially in enclosed spaces.
-	As a rule of thumb a character is deafened for one combat round for every shot fired within 2 meters or 4 meters indoors. Explosives cause deafening for a number of rounds equal to twice (or four times when indoors) the Blast radius, in an area equal to roughly twice the Blast. When the number of rounds reaches 25, the character permanently loses his hearing.
+	\paragraph{Deafening} may be painful but is not lethal. It is very common when using firearms without ear protection or a silencer, especially in enclosed spaces.\\
+	As a rule of thumb a character is deafened for one combat round for every shot fired within 2 meters or 4 meters indoors. Explosives cause deafening for a number of rounds equal to twice (or four times when indoors) the Blast radius, in an area equal to roughly twice the Blast.\\
+	When the number of remaining rounds of deafening exceeds 25, the character is likely to permanently lose his hearing.
 	\paragraph{Exhaustion} is easily the most common threat to any character after physical damage. Exhaustion is gathered through many ways. Every level of exhaustion gives the character a -10 penalty to any check. If exhaustion reaches too high, the character is at risk of overexertion (see p. \pageref{sec:lethality}).
 	\paragraph{Uncontrolled falling} is the most common way the environment will try to kill a character. By default the character will take damage that ignores armor but not injury threshold. The damage is an amount of D10 equal to a third of the distance fallen in meters and hits an additional zone per full 5 meters, not hitting any zones twice.\\
 	For example hitting the ground after falling 12 meters would deal 4D10 damage to 2 locations. If the fall was e.g. 65 meters instead, it would deal 22D10 damage to all locations.\\
 	This is always the fall onto solid ground. Falling onto softer grounds, like snow, will reduce the damage. %TODO: how much?
 	\paragraph{Objects falling} onto a character deal half as much damage for every kilogram they weigh. For example a flower pot weighing three kilos falling from 12 meters would deal 6D10 damage.\\
+	Unless the object is particularly large, it only hits one location. The aforementioned flower pot will only hit one location, a fridge might hit 3 or more.\\
 	\emph{Note: These calculations can be unnecessarily complicated. If you don't absolutely need precise values, estimate the results.}
-	\paragraph{Suffocation}- commonly through drowning or smoke inhalation - is an often underestimated threat to most characters. If a character consciously holds her breath, she can hold it for three times her Constitution in seconds. While holding her breath, she can’t fight or do very strenuous tasks. If she cannot, or can no longer, hold her breath, the effects of suffocation set in the next round.\\
+	\label{hazards:suffocation}
+	\paragraph{Suffocation}- commonly through drowning or smoke inhalation - is an often underestimated threat to most characters. If a character consciously holds her breath, she can hold it for three times her Constitution in seconds (or her Constitution in combat rounds).
+	While holding her breath, she can’t fight or do other very strenuous tasks. If she cannot, or can no longer, hold her breath, the effects of suffocation set in the next round.\\
 	The afflicted character will gain exhaustion every round starting with 1 on the first round, 2 on the second round and so on.
-	\paragraph{Fire} and the burns associated with it are a minor threat to characters. Fire does minor damage, generally up to D5 per round, but it deals its damage to every location ignoring three quarters of any non-sealed armor. Fire generally comes with smoke and eats away at the oxygen in the air - both of which can be very lethal in enclosed spaces, see Suffocation.
+	\paragraph{Fire} and the burns associated with it are a minor threat to characters. Fire does minor damage, generally up to D5 per round, but it deals its damage to every location ignoring three quarters of any non-sealed armor. Fire generally comes with smoke and eats away at the oxygen in the air - both of which can be very lethal in enclosed spaces, see \emph{Suffocation}.
 	\paragraph{Freezing} is relatively rare. Should a character be submitted to cold temperatures without proper equipment however, she will suffer a level of exhaustion every hour. If temperatures are freezing cold, she will suffer 2 levels per hour.
 %	\paragraph{Starvation} is even rarer and purely optional, food is widely available. Should the party be confronted with the wasteland however, starvation suddenly enters the ring. Starvation progresses in 5 steps, advancing one per day of no or inadequate food. Eating around half as much as required advances the effects by one step only every two days.\\
 %	After the first step the character will be distracted by hunger, increasing all disabling characteristics by 15. After two steps natural healing is stopped and recovery times are twice as long. The character also shows the first visual signs of malnourishment. After step three she takes -15 to every test and exhaustion does not regenerate naturally anymore, while after the fourth one level of exhaustion is also gained every day. Five days in the character will start hallucinating.\\
 %	Starvation starts recovering when the character has eaten enough again by one step every rest phase.
 	
 	\section{CBRN}
+	\label{hazards:cbrn}
 	While not quite an everyday occurrence, CBRN hazards are also quite common - chemical terrorism or dirty bombs, ruins of ancient broken power plants or engineered animals; our protagonists are at a constant risk to face such hazards.
 	\paragraph{Biological and chemical} hazards are likely the most common special hazards. \emph{Biological} includes disease, as well as animal and plant toxins. \emph{Chemical} encompasses synthetic poison, chemical fires and fumes as well as drug intake. In both cases the inflicted victim makes a constitution check at a specified penalty.\\
 	If it passes, it suffers no ill effects. If it fails, it is afflicted with the hazard’s full effect.
 	\paragraph{Radiological} hazards, encompassing everything between radiation sickness and cancer, is a constant threat in fallout zones.\\
-	An hour or two of exposure the afflicted makes a constitution check at a penalty or suffers effects depending on the dosage of radiation. Decrease the severity by one step per degree of success on the resistance test.
-	\paragraph{Nuclear} hazards are essentially a radiological hazard following an explosive and should therefore be handled as an explosive, an EMP and a radiological hazard.
+	After about an hour or two of exposure the afflicted makes a constitution check at a penalty or suffers ill effects depending on the dosage of radiation. Decrease the severity by one step per degree of success on the resistance test.
+	%TODO: list ill effects
+	\paragraph{Nuclear} hazards are essentially a radiological hazard following an explosive and should therefore be handled as an \emph{explosive}, an \emph{EMP} and a \emph{radiological} hazard.
 	\paragraph{EMPs} are capable of disabling improperly shielded technology and can either be used voluntarily by educated personnel, or be created as a side product from orbital mining operations, terraforming or high-powered plasma lances.\\
 	For every meter the machine is inside the EMP’s radius, it is disabled for one round or 3 seconds narrative time. Once the time reaches 30 seconds, all stored data is wiped.\\
-	Cybernetic limbs affected by EMP cause one level of exhaustion to the wearer every round. Inner augments cause D5 levels instead.\\
+	Inner cybernetics affected by EMP cause one level of exhaustion to the wearer every round. Every cybernetic that was "wiped" causes an immediate D5.\\
 	Proper shielding reduces the time of the effect and certain data drives can be immune to wipes by means of EMP.
 %	
 	\section{Shock, fear and trauma}
@@ -279,6 +309,7 @@
 	The attacker’s goal is to reduce the target devices’ \emph{integrity} to 0, working much like damage in combat. If the integrity reaches 0, the attacker gains access to read, write and execute. Attacking gains a modifier called the attacking device’s \emph{processing power}.\\
 	The device protects itself by means summarized as “\emph{firewall}”, working much like a character’s damage threshold.
 	\section{Actions}
+	Any action when hacking is an extended action, requiring a full combat round or more. They can also often times not be interrupted.
 	\subsection*{Attack}
 	When attacking a device, the character may once per turn spend an action to attack. He makes a Computer Operation check, dealing 1D5+DoS to the target’s integrity, reduced by the target’s firewall. Failing by 10-firewall degrees of failure (or critically) locks the attacking device out of the target device indefinitely.
 	\subsection*{Restore}
@@ -297,25 +328,25 @@
 	\label{sec:ccResources}
 	Character creation uses two different point pools: Generation Points, or \emph{GP} for short, and Experience Points, or \emph{XP} for short. 
 	GP describe the most basic attributes that make up your character - mostly the traits he was born with - while XP depict everything the character has learned.\\
-	Every character begins with 100 GP and 2500 XP. While you can earn and use XP later on in the campaign, make sure you have exactly no GP left when you finish character creation as any leftover is wasted.
+	Every character begins with \emph{100 GP} and \emph{2500 XP}. While you can earn and use XP later on in the campaign, make sure you have exactly no GP left when you finish character creation as any leftover is wasted.
 	
 	\section{Basic Questions}
-	Before anyone determines \emph{what} the character is - i.e. create a stat sheet - first it needs to be decided \emph{who} said character is. The following list of 20 questions covers all questions a player or a GM should have concerning a character and will form the basis for character creation from this point forward. Keep them in mind at every step, as they define who your character is at its core.
+	Before anyone determines \emph{what} the character is - i.e. create a stat sheet - first it needs to be decided \emph{who} said character is. The following list of 20 questions covers all questions a player or a GM should have concerning a character and will form the basis for character creation from this point forward. Keep them close at every step, as they define who your character is at its core.
 
 	\pagebreak
 
 	\begin{enumerate}
 		\setlength\itemsep{-6mm}
 		\item What does the character look like?\\
-			\textit{Are you large or small? Are you male or female or can anyone even tell? What color are your hair and his eyes? How are you built?}
+			\textit{Are you large or small? Are you male or female? Can people even tell? What color are your hair and his eyes? How are you built?}
 		\item What first impression does the character leave on strangers?\\
-			\textit{Do you look trustworthy or shady? Are others easily intimidated by you?}
+			\textit{Do you look trustworthy or shady? Are others easily intimidated by you? Do you look deceptively smart or stupid?}
 		\item How did the character grow up?\\
 			\textit{What did you do in your past? What memories will you never forget?}
 		\item Does the character still have relations to people from his past?\\
 			\textit{Do you have parents or siblings and are they alive? What about other relatives, friends or comrades in arms? A rival perhaps? Or what about a lover?}
 		\item Why did the character join the party?\\
-			\textit{What event caused you to give up your previous life? What are you after; what drives you?}
+			\textit{What event caused you to give up your previous life? What are you after now; what drives you?}
 		\item Where has the character been already?\\
 			\textit{I know that people rarely come around these days. But maybe you have. And if you haven't: what parts of town have you seen?}
 		\item How does the character regard transhumanism?\\
@@ -325,7 +356,7 @@
 		\item For who or what would the character risk his life?\\
 			\textit{What is so dear to you that you would risk the only life you have? A person maybe? Or an idea, a dream?}
 		\item What’s the character’s biggest wish?\\
-			\textit{Do you have a dream, something you want to do above all else? Tell me about it.}
+			\textit{Do you have a dream, something you want to do above all else? Tell me about what you are living for.}
 		\item What’s the character’s biggest fear?\\
 			\textit{What do you fear more than anything? Existential dread? Dying without having made a difference? Losing a loved one? You gotta have something, I know it.}
 		\item What does the character’s morality look like and how law-abiding is he?\\
@@ -337,13 +368,13 @@
 		\item What does the character think of animals?\\
 			\textit{Do you like animals? Do you like one in particular? And what about them? Do animals like you?}
 		\item What does the character regard as beautiful?\\
-			\textit{Everyone has something they really like to surround themselves with. What is it for you - paintings, sculptures, music... or maybe certain people? What do you like about it?}
+			\textit{Everyone has something they really like to surround themselves with. What is it for you - paintings, sculptures, music... certain people? What do you like about it?}
 		\item What does the character like to eat and drink? What would he like to try?\\
-			\textit{Have you ever tried anything besides nutrient paste? Do you even eat cooked food on a regular basis? And is there something that you'd definitely want to try?}
+			\textit{Have you ever tried anything besides nutrient paste? Do you eat cooked food, perhaps even on a regular basis? And is there something that you'd definitely want to try?}
 		\item What does love look like to the character?\\
-			\textit{What do you feel when you love? Do you know? Is it something mundane and commonplace or extremely special and precious?}
+			\textit{What do you feel when you love? Do you even know? Is it something mundane and commonplace or extremely special and precious?}
 		\item Does the character have a dark secret?\\
-			\textit{What is the worst thing you have done? Why did you do it? Why does it haunt you?}
+			\textit{What is the worst thing you have done or seen? Why did you do it? Why does it haunt you?}
 		\item What character traits define the character?\\
 			\textit{If you had to describe yourself is just a handful of words, which would you choose?}
 	\end{enumerate}
@@ -356,7 +387,7 @@
 	They obviously don’t have to be exhausted.
 	\section{Boons \& Banes}
 	The leftover GP can be spent on Boons and missing GP can be compensated with Banes.\\
-	Boons describe an inherent advantage this character has over others. This is nothing that can be learned afterwards but it might be at least partially substituted with augments.\\
+	Boons describe an inherent advantage this character has over others. This is nothing that can be acquired after character creation but it might be at least partially substituted with augments.\\
 	Banes are disadvantages that are either innate or stem from the character’s background and are extremely hard to get rid of. They don’t cost GP but grant them instead. Up to 40 GP can be generated from banes.
 	\par
 	You should assure that all boons and banes don’t exist purely for mechanical reasons but that they fit the character.\\
@@ -364,7 +395,7 @@
 	You can find the lists in sections \ref{sec:boonlist} and \ref{sec:banelist}.
 	
 	\subsection{Disabling Characteristics}
-	A special type of Banes are Disabling Characteristics. They behave much like characteristics in that a test may be made against them to determine whether they come up. If the test is successful, i.e. the dice show less or equal to the value of the disabling characteristic, the character suffers from whatever it describes, e.g. fear, arrogance, greed or megalomania.\\
+	A special type of Banes are \emph{Disabling Characteristics}. They behave much like characteristics in that a test may be made against them to determine whether they come up. If the test is successful, i.e. the dice show less or equal to the value of the disabling characteristic, the character suffers from whatever it describes, e.g. fear, arrogance, greed or megalomania.\\
 	Alternatively whenever a character is making a test they would be affected by a disabling characteristic, e.g. climbing with a fear of heights, that test might be at a penalty equal to the disabling characteristic. They range from 20 to 70 only grant additional GP per full 5 or full 10, as specified.
 	
 	\section{Skills}
@@ -373,7 +404,7 @@
 	Next every character has some sort of knowledge, represented by educations. Some educations might be given by background. If those have prerequisites that the character does not fulfill, they are dormant until the character fulfills the prerequisites.\\
 	See an example list of Educations in section \ref{eds-explanation} or make some up.
 	\section{Abilities}
-	Some abilities might be interesting for the character as well. Some abilities might already have advancements from race or background. If those have prerequisites that the character does not fulfill, they are dormant until the character fulfills the prerequisites. A full list of abilities can be found in section \ref{abilitylist}.
+	Some abilities might be interesting for the character as well. Some abilities might already be known from race or background. If those have prerequisites that the character does not fulfill, they are dormant until the character fulfills the prerequisites. A full list of abilities can be found in section \ref{abilitylist}.
 	\section{Shopping trip}
 	Lastly, a character needs some equipment. The amount of money a character starts with is equal to 100 plus their charisma. \\
 	By default every character will start with clothing fitting of their social standing, former profession and to a degree place of origin. Visit the equipment section below to buy anything beyond that.
@@ -402,8 +433,8 @@
 
 	\input{lists/prefabcharacters.tex}
 
-	\input{lists/sizes.tex}
 	\input{lists/fear.tex}
+	\input{lists/sizes.tex}
 	\input{lists/modifiers.tex}
 	
 	\chapter{Credits}

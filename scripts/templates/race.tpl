@@ -12,7 +12,7 @@
     \setlength\itemsep{-10mm} \vspace{-8mm}
     @itemize:other_modifiers@
     \end{itemize} }
-\hrulefill
+\ifthenelse{\isempty{@itemize:skills@@itemize:abilities@@itemize:boons@@itemize:banes@@itemize:traits@@itemize:usual_backgrounds@@itemize:disallowed_backgrounds@}}{}{\hrulefill}
 \vspace{4mm}
 \begin{multicols*}{2}
 \ifthenelse{\isempty{@itemize:skills@}}{}{ \textbf{Skills:}
