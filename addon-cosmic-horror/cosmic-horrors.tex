@@ -46,21 +46,22 @@
 	
 	\chapter{Mutation}
 	\label{ch:mutation}
-	Every now and then a character may be forced to mutate. Roll a D100 and consult the table below. The result may be modified by a tenth of the character's insight at the time of mutation.
+	Every now and then a character may be forced to mutate. Roll a D100, divide by 2 and consult the table below. The result may be modified by a tenth of the character's insight at the time of mutation.
 	\par
 	Most mutations are clearly visible and make social interactions much, much harder.
 	\par
 	\begin{multicols}{2}
 		\begin{enumerate}
 			\setlength\itemsep{-10mm}
-			\luaimport{mutations.csv}{mutation-tableentry.tpl}
+			\luaimport{mutations.csv}{mutation-tableentry.tpl}{muttable}
 		\end{enumerate}
 	\end{multicols}
 	
 	\section*{Mutations}
 	\vspace{4mm}
 	\begin{multicols}{2}
-	\luaimport{mutations.csv}{mutation.tpl}
+		\newcounter{mutations} %fixes hyperref links
+		\luaimport{mutations.csv}{mutation.tpl}{mutations}
 	\end{multicols}
 	
 	\chapter{Rituals}

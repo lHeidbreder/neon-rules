@@ -55,10 +55,11 @@ function itemize(entry)
     return rtn
 end
 
-function importfrom(csvpath, templatepath)
+function importfrom(csvpath, templatepath, outpath)
 
-    -- clear input file
-    os.remove(csvpath..".texin")
+    -- exit if file exists
+    f=io.open(outpath..".texin","r")
+    if f~=nil then io.close(f) return end
 
     local headers = {}
     local lines = {}
@@ -118,7 +119,7 @@ function importfrom(csvpath, templatepath)
 		filledtemplate = string.gsub(filledtemplate, "@[^%s@]*@", "")
 
         --write to file so \input can pick it up later
-        writetofile(csvpath..".texin", filledtemplate)
+        writetofile(outpath..".texin", filledtemplate)
     end
 end
 

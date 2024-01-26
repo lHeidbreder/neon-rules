@@ -1,9 +1,9 @@
 % First arg: the file path
 % Second arg: the template path
 \directlua{dofile("../scripts/lua/csv-importer.lua")}
-\newcommand{\luaimport}[2]{
-	\directlua{importfrom("#1", "../scripts/templates/#2")}
-    \input{#1.texin}
+\newcommand{\luaimport}[3]{
+	\directlua{importfrom("#1", "../scripts/templates/#2", "#3")}
+    \input{#3.texin}
 }
 
 %itemize for psionics
