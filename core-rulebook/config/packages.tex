@@ -12,15 +12,16 @@
 \raggedbottom
 
 % Background Gradient
+\usepackage[dvipsnames]{xcolor}
 \usepackage{background}
 \backgroundsetup{
     scale=1,
     angle=0,
     opacity=1,
     contents={\begin{tikzpicture}[remember picture,overlay]
-            \path [left color = gray!50,
+            \path [left color = Black!30,
 %            middle color = gray!50,
-            right color = gray!20] (current page.south west)rectangle (current page.north east);
+            right color = CornflowerBlue!30] (current page.south west)rectangle (current page.north east);
     \end{tikzpicture}}
 } %taken from https://tex.stackexchange.com/questions/82206/background-color-gradient-for-entire-document
 % TODO: this should be [gray!20, gray!50, gray!20] but middle color is ignored
