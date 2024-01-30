@@ -1,2 +1,9 @@
 name,variant,cost,flavor_text,itemize:other_modifiers,itemize:skills,itemize:abilities,itemize:boons,itemize:banes,itemize:traits,cr,int,ins,ch,dex,ag,con,str
 Rogue Artificial Intelligence,Generic,3,"Many live among all of us, but very few seek their own purpose. Such a free willed AI is often seen as dangerous or even heretical; people fear those monsters, most of which they themselves created.",Con or Str +6,Computer Operation +1,Battle Mind,,Bound by Duty or Wanted II,AI (as described above),20,30,22,25,25,25,25,25
+%Rogue Artificial Intelligence,Spy,,TODO,,,,,,,,,,,,,,
+%Rogue Artificial Intelligence,Combat,,TODO,,,,,,,,,,,,,,
+%Rogue Artificial Intelligence,Management,,TODO,,,,,,,,,,,,,,
+%Rogue Artificial Intelligence,Finance,,TODO,,,,,,,,,,,,,,
+%Rogue Artificial Intelligence,Social Manipulation,,TODO,,,,,,,,,,,,,,
+%Rogue Artificial Intelligence,Medical,,TODO,,,,,,,,,,,,,,
+%Rogue Artificial Intelligence,Entertainment,,TODO,,,,,,,,,,,,,,

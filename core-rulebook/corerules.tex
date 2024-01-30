@@ -160,10 +160,19 @@
 	An education has two potential levels, granting +5 modifiers each and costing 200 and 300 XP respectively.
 	\section{Situational Modifiers}
 	Some things become easier or harder in certain situations. Potential situational modifiers are vast and always up to GM discretion. Some common circumstances include lighting and the weather for sight based checks or mood, relationship and general disposition for social checks. Tables from page \pageref{situationalmodifiers} onward contain more potential circumstances and their respective modifiers. Obviously those lists are not exhaustive.
-	\section{Critical successes and failures}
-	%TODO: steal imperium maledictum's crit rules
-	Independently of modifiers and target values rolling a 1 always counts as a critical success. In such a case the degrees of success are equal to the characteristic bonus and ties are always won.\\
-	Conversely rolling a 100 (00:0 on the percentile dice) always counts as a critical failure. The degrees of failure - if at all necessary - are 14 minus the characteristic bonus and ties are always lost.
+	
+	\section{Automatic Successes and Failures}
+	Independently of modifiers and target values rolling a 1-3 always counts as an automatic success.
+	Likewise rolling a 98-100 always counts as an automatic failure.
+	\section{Critical Results}
+	Rolling doubles on a test indicates a critical result. Determine whether the test succeeded or failed.
+	\textit{In addition 1s and 100s are always critical successes or failures respectively.}\\
+	In case of a critical success the Degrees of Success are doubled and ties are always won.
+	In combat the attack deals damage even if the opponent evades or deals double damage if he does not.\\
+	Conversely in case of a critical failure the Degrees of Failure are doubled and ties are always lost.
+	In combat the opponent's action is improved - from failure to success, from success to critical success.\\
+	Critical results may always have additional effects as per the narrative and GM discretion.
+	
 	\section{GM Advice: When to roll}
 	You don't always need to demand a roll.\\
 	In cases where nothing is at stake and characters have enough time, do not have your players roll. They succeed.\\
@@ -184,8 +193,7 @@
 	\textbf{Running speed} is half a character’s movement speed in meters per second. At this speed most things and most notably combat actions take a -20 penalty. It is also exhausting after a while, so every ~5 minutes a jogging character takes a level of exhaustion.\\
 	A normal character’s \textbf{sprint speed} in meters per second is given by their derived value movement speed. At this speed most actions and most notably all combat actions take a -40 penalty or might, as per GM discretion, be completely impossible - firing machine guns while sprinting might be difficult due to bulk for example. A running character takes a level of exhaustion every other round.
 	\section{Marching}
-	For the most part getting access to vehicular transport is easy enough. In some instances though it might be necessary to take longer marches on foot. Normal groups travel at roughly 30 kilometers a day or 40 if they push themselves. Marching is exhausting and every traveler will gain levels of exhaustion depending on their journey.
-%	TODO: How much?
+	For the most part getting access to vehicular transport is easy enough. In some instances though it might be necessary to take longer marches on foot. Normal groups travel at roughly 30 kilometers a day or 40 if they push themselves. Marching is exhausting and every traveler will gain D5 levels of exhaustion (or D5+2 if they're pushing), adjusted depending on their journey.
 	\section{Climbing, jumping, leaping}
 	Sometimes getting from point A to point B becomes difficult when they are on different elevations. It might also be necessary to cross over obstacles in one’s way and do so fast.\\
 	\textbf{Climbing} works just as walking or running would, only that speed is halved. Since usually the climbers hands are occupied, what actions can be taken is up to GM discretion.\\
@@ -209,15 +217,14 @@
 	\input{rules/ranged.tex}
 
 	\chapter{Healing}
-	\vspace{-5mm} %fixes pagebreak
+	\vspace{-10mm} %fixes pagebreak
 	\section{Anatomy}
 	The human body is no monolith; it will be regarded in 6 parts: two legs, two arms, the torso and the head. To determine a random location, consult the chart below. When a regular hit is scored, the two dice are swapped to determine the location.\\
 	Example: 
 	\begin{exampleblock}
-	{\itshape
+		\itshape
 		A simple ranged attack. The hit roll is a 37, so the location is a 73, therefore hitting the right leg.\\
-		Attacks scoring multiple hits may use the same location for convenience or roll different locations for all additional hits. You should probably decide which way you take before it comes up at the table.
-	}
+		Attacks scoring multiple hits may use the same location for convenience or roll different locations for all additional hits. You should probably decide which way you take \emph{before} it comes up at the table.
 	\end{exampleblock}
 	\par
 	\begin{minipage}{\columnwidth}
@@ -233,20 +240,29 @@
 		\end{tabularx}
 	\end{minipage}
 	\section{Degradation}
-	For every full 20\% of location HP lost, the character takes a penalty to all values in the “Degrading stats” column when using this body part. Usually this penalty is a -10, the exception is initiative; base initiative is reduced by 1 and D5 temporary initiative is lost that can be gained back through the “Gather Senses” action.
+	For every full 20\% of location HP lost, the character takes a -10 penalty to all tests when using this body part. For the head and body locations that is every action.
+	When the head is struck, base initiative is reduced by 1 and D5 temporary initiative is lost, which may be regained through the “Gather Senses” action.
 	\par
 	When 60\% is lost, light bleeding begins and at 80\% severe bleeding sets in. At more than 100\% the body part is lost or crippled, more in need of repair rather than healing. Details are up to GM discretion.
-	%TODO: example?
+	\begin{exampleblock}
+		\itshape
+		Natalie has taken heavy damage - 4 to the head, 7 to the body, 7 to her right arm.
+		Any attack action using her pistol suffers a -40 (with her right arm) or a -50 (with her off hand).
+		Any calculation or charming attempts suffer -20 from head wounds and general pain and fatigue (the body wounds).
+	\end{exampleblock}
+	
 	\section{Lethality}
 	\label{sec:lethality}
 	There are multiple ways for any living character to die.
 	\paragraph{Critical organ failure}is first. This is achieved by destruction or removal of essential organs. When the torso or head body location is destroyed in a spectacular fashion, the GM may rule that this character has died on the spot.
-	\paragraph{Blood loss}is another way a character may die. When characters start \emph{bleeding lightly} as determined by the anatomy table or GM discretion, they have ConB minutes (or Con*2 rounds) before unconsciousness sets in. They then have another ConB*9 seconds (or ConB*3 rounds) before they irrevocably bleed out. When \emph{bleeding severely} the character only has ConB*3 seconds (or ConB rounds) before unconsciousness sets in. After that he can be saved for only ConB+D5 rounds or bleed to death. Note that “light” and “severe” bleeding are distinctions within game mechanics; both are actually quite severe, a matter of life and death.\\
+	\paragraph{Blood loss}is another way a character may die. When characters start \emph{bleeding lightly} as determined by degradation or GM discretion, they have ConB minutes (or Con*2 rounds) before unconsciousness sets in.
+	They then have another ConB*9 seconds (or ConB*3 rounds) before they irrevocably bleed out. When \emph{bleeding severely} the character only has ConB*3 seconds (or ConB rounds) before unconsciousness sets in.
+	After that he can be saved for only ConB+D5 rounds or bleed to death. Note that “light” and “severe” bleeding are distinctions within game mechanics; both are actually quite severe, a matter of life and death.\\
 	With basic medical knowledge (a medication check +40, if in doubt) a character can stop another from bleeding out. That character needs to be right next to the patient and cannot perform any other actions other than holding the wound shut.
 	\paragraph{Overexertion} is often overlooked but can very well be lethal. Generally if a character’s exhaustion surpasses their ConB, they collapse, recovering from one level per 2 hours of rest. If the character manages to surpass 3 times her ConB, the character collapses but does not recover naturally anymore. Whether the character can be saved at that point, is up to the GM.\\
 	Note that overexertion is generally a very slow process and - unless he is forced to continue - anyone can slow down before reaching dangerous levels of exhaustion.
 	\section{Natural healing}
-	Characters recover from wounds naturally. The wounded character takes a constitution test at a modifier according to the table below. He heals one wound per degree of success, but reduced by the total average armor worn during sleep including PES, to a minimum of 0 - staying combat-ready all night is not the epitome of relaxation.\\
+	Characters recover from wounds naturally. The wounded character takes a constitution test at a modifier according to the table below. He heals one wound per Degree of Success, but reduced by the total average armor worn during sleep including PES, to a minimum of 0 - staying combat-ready all night is not the epitome of relaxation.\\
 	Recovery is split evenly among damaged zones, prioritizing more severe injuries. This recovery only happens if the wounds can at all heal and are not infected.
 	\section{Medical attention}
 	If a character gets medical attention, he recovers in addition to his natural healing. The medical check is at a -5 penalty for every location that is being treated beyond the first, so up to a -25 if the whole body is being treated. If the performing doctor is treating himself, the test takes an additional \mbox{-15}. %prevent line break
@@ -264,7 +280,7 @@
 	\paragraph{Exhaustion} is easily the most common threat to any character after physical damage. Exhaustion is gathered through many ways. Every level of exhaustion gives the character a -10 penalty to any check. If exhaustion reaches too high, the character is at risk of overexertion (see p. \pageref{sec:lethality}).
 	\paragraph{Uncontrolled falling} is the most common way the environment will try to kill a character. By default the character will take damage that ignores armor but not injury threshold. The damage is an amount of D10 equal to a third of the distance fallen in meters and hits an additional zone per full 5 meters, not hitting any zones twice.\\
 	For example hitting the ground after falling 12 meters would deal 4D10 damage to 2 locations. If the fall was e.g. 65 meters instead, it would deal 22D10 damage to all locations.\\
-	This is always the fall onto solid ground. Falling onto softer grounds, like snow, will reduce the damage. %TODO: how much?
+	This is always the fall onto solid ground. Falling onto softer grounds, like snow, will reduce the damage by up to half.
 	\paragraph{Objects falling} onto a character deal half as much damage for every kilogram they weigh. For example a flower pot weighing three kilos falling from 12 meters would deal 6D10 damage.\\
 	Unless the object is particularly large, it only hits one location. The aforementioned flower pot will only hit one location, a fridge might hit 3 or more.\\
 	\emph{Note: These calculations can be unnecessarily complicated. If you don't absolutely need precise values, estimate the results.}
@@ -284,8 +300,26 @@
 	\paragraph{Biological and chemical} hazards are likely the most common special hazards. \emph{Biological} includes disease, as well as animal and plant toxins. \emph{Chemical} encompasses synthetic poison, chemical fires and fumes as well as drug intake. In both cases the inflicted victim makes a constitution check at a specified penalty.\\
 	If it passes, it suffers no ill effects. If it fails, it is afflicted with the hazard’s full effect.
 	\paragraph{Radiological} hazards, encompassing everything between radiation sickness and cancer, is a constant threat in fallout zones.\\
-	After about an hour or two of exposure the afflicted makes a constitution check at a penalty or suffers ill effects depending on the dosage of radiation. Decrease the severity by one step per degree of success on the resistance test.
-	%TODO: list ill effects
+	After about an hour or two of exposure the afflicted makes a constitution check. Failing advances the ill effects by the Degrees of Failure.
+	Effects are cumulative.
+	\begin{enumerate}
+		\setlength\itemsep{-10mm}
+		\item \textbf{Nausea, Fatigue} - The character gains a level of fatigue that will not recover.
+		\item \textbf{Headache} - He takes a -10 to all physical activities.
+		\item \textbf{Vomiting} - The character takes a Constitution-based Restraint test every round in combat. Failing means losing his actions.
+		\item \textbf{Dehydration} - The character requires three times as much water every day.
+		\item \textbf{Fever} - The character develops a fever during the next rest, preventing regeneration and recovery.
+		\item \textbf{Weakening} - His physical characteristics are reduced by 10.
+		\item \textbf{Anemia} - The character will bleed out twice as fast.
+		\item \textbf{Confusion} - Mental characteristics are reduced by 10.
+		\item \textbf{Ataxia} - All characteristics are reduced by a further 10.
+		\item \textbf{Internal damages} - The character permanently loses 1 RI or MT. If implants require more than remains available, the character both experiences severe graft rejection and immediately advances radiation sickness by one.
+		\item \textbf{Recovery or fatality} - The character collapses. If he is rescued from the premises before the next test would be made, he may recover as usually, though failing to reduce the severity means death.
+	\end{enumerate}
+	\par
+	When outside the radiation the character may take a Constitution test every day. On a success the radiation sickness reduces by one.\\
+	Afterwards roll D10: if the result is lower than the character's level of radiation sickness, the character develops cancer in a random location.
+	Of course this may happen repeatedly.
 	\paragraph{Nuclear} hazards are essentially a radiological hazard following an explosive and should therefore be handled as an \emph{explosive}, an \emph{EMP} and a \emph{radiological} hazard.
 	\paragraph{EMPs} are capable of disabling improperly shielded technology and can either be used voluntarily by educated personnel, or be created as a side product from orbital mining operations, terraforming or high-powered plasma lances.\\
 	For every meter the machine is inside the EMP’s radius, it is disabled for one round or 3 seconds narrative time. Once the time reaches 30 seconds, all stored data is wiped.\\
@@ -294,11 +328,12 @@
 %	
 	\section{Shock, fear and trauma}
 	When a character is exposed to stressful situations, he will suffer from shock. The character makes a courage check with a modifier according to the source and severity of shock.\\
-	This ranges from +0 for large amounts of blood or some dead bodies over -20 for watching someone die in front of oneself to -60 in truly desperate situations or near-death experiences. Generally the better the reputation with the injured person and the less predictable the situation, the higher the penalty. It also takes a penalty equal to the sum of all “Fear” or “Phobia” disabling characteristics that fit the situation.
+	This ranges from +0 for large amounts of blood or an unexpected dead body, over -20 for watching someone die in front of oneself, to -60 in truly desperate situations or near-death experiences.
+	Generally the better the reputation with the injured person and the less predictable the situation, the higher the penalty. It also takes a penalty equal to the sum of all “Fear” or “Phobia” disabling characteristics that fit the situation.
 	\par \vspace{-5mm}
 	In case the character meets multiple panic situations in a day, add a -10 penalty for each after the first.
 	\par \vspace{-5mm}
-	If the check is failed, roll a D100, add 10 times the degrees of failure and apply the according result from the table on page \pageref{feartable}.
+	If the check is failed, roll a D10, add the Degrees of Failure and apply the according result from the table on page \pageref{feartable}.
 	
 	\chapter{Transhumanism}
 	\input{augs/philosophy}

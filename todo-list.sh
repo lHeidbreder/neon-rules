@@ -1,2 +1,3 @@
 #!/bin/bash
-grep -ril -e 'todo' . | grep -E '(.tex)|(.csv)$'
+shopt -s globstar
+grep -ril -e 'todo' **/*.{tex,csv}
