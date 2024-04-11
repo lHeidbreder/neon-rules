@@ -53,7 +53,7 @@
 	\begin{multicols}{2}
 		\begin{enumerate}
 			\setlength\itemsep{-10mm}
-			\luaimport{mutations.csv}{mutation-tableentry.tpl}{muttable}
+			\luaimport{components/mutations.csv}{mutation-tableentry.tpl}{muttable}
 		\end{enumerate}
 	\end{multicols}
 	
@@ -61,10 +61,11 @@
 	\vspace{4mm}
 	\begin{multicols}{2}
 		\newcounter{mutations} %fixes hyperref links
-		\luaimport{mutations.csv}{mutation.tpl}{mutations}
+		\luaimport{components/mutations.csv}{mutation.tpl}{mutations}
 	\end{multicols}
 	
 	\chapter{Rituals}
+	\label{ch:rituals}
 	Rituals take a long time, are expensive and a lot of work to set up. They are however the prime way to ask the Great Ones for favor and protection in exchange for a tribute.
 	\section{The Tribute}
 	Great Ones respond well to unique things and strong emotions. The more personal to the participants this tribute is, the more likely the Great One will respond well - but nothing is guaranteed.
@@ -104,51 +105,55 @@
 	During the performance of the ritual the participants will slowly unravel a small portion of the great Beyond, gaining them 2D10 Insight.\\
 	If the ritual is successful, all participants are touched by the blasphemy, gaining D5 corruption.
 	\section{The Outcome}
-	A "successful" ritual does not necessarily mean the desired outcome. Instead the GM secretly rolls a D5 and consults the table below. For every 3 full DoS the ritual succeeded with, one option may be excluded by the leading character.
+	A "successful" ritual does not necessarily mean the desired outcome. Instead the GM secretly rolls a D5 and consults the table below.\\
+	For every 3 full DoS the ritual succeeded with, one option may be excluded by the leading character. If an excluded option is rolled, the leading character may choose the outcome instead.
 	\par
 	\begin{enumerate}
 		\raggedright
 		\setlength\itemsep{-8mm}
-		\item The ritual succeeds as desired.
+		\item The ritual succeeds without further incident.
 		\item The ritual fizzles, nothing happens. Participants' corruption gain is reduced by 3, to a minimum of 0.
-		\item The ritual succeeds. A horror is summoned.
-		\item The ritual succeeds. A demon is summoned.
+		\item The ritual succeeds. A demon attempts possession of the ritual leader.
+		\item The ritual succeeds. A demon is summoned and manifests.
 		\item The ritual succeeds. A random participant mutates, immediately and violently. The resulting mutation may not be adjusted using Insight.
 		The leading character may have a higher chance to be chosen.
 	\end{enumerate}
 	\section{The Reward}
 	If the ritual succeeds, the creature who answers will provide something close to the desired outcome - functionally the same.
 	Depending on the specific creature, the effect may take a different shape however.
+	\section{Examples}
+	\input{components/examplerituals.tex}
 	
 	\chapter{Possession}
-	%TODO
-	%only demons can possess
-	%horrors can be possessed
-	%Passive Bonuses: increased injury threshold by demon's power?
-	%Active Ability - Invoke: for one action, gain a bonus to any characteristic equal to the character's corruption; gain D10 corruption
-	%Penalty: Insomnia, hostility towards horrors
-	\section{Voluntary}
-	\section{Involuntary}
-	
-	\section{Possessed Weapons}
-	%TODO
-	%demon is bound into the weapon in a ritual
-	%a stronger ritual binds a stronger demon
-	%the stronger the demon, the more traits the weapon gains
+	\input{components/possessedcreatures.tex}
+	\input{components/possessedweapons.tex}
 	
 	\chapter{Additional Content}
-%	\section{Boons}
-%	\section{Banes}
+	\section{Boons}
+	\boon{Blessed Birth}{The character starts with a random \hyperref[ch:mutation]{mutation} and 3 corruption.}{6}
+	\section{Banes}
+	\boon{Mark of Sacrifice}{The character bears the mark of sacrifice somewhere on his body. Otherworldly creatures (at least all those with the DEMONIC trait) react aggressively towards him and he takes a -30 penalty to hide from them.}{5}
+	\boon{Watched}{Otherworldly entities are aware of the character. He always has 2 Insight. May be taken multiple times.}{3}
+	\section{Ability}
+	\ability{Steeled}{400}{Courage 40}{Whenever the character would gain corruption, he makes a Con test at a penalty equal to 3 times the corruption. On a success the corruption is ignored.}
 	\section{Bestiary}
 	\subsection{Tags}
-	%TODO: DEMONIC - cause Insight to creatures around, don't get Insight from other DEMONIC creatures
-	%TODO: INCORPOREAL - cannot interact with the physical world
+	\begin{tabularx}{\columnwidth}{l|X}
+		Name & Effect \\ \hline
+		DEMONIC & Other non-DEMONIC creatures suffer D5-1 Insight upon witnessing this creature. 
+					This includes seeing, touching, hearing and smelling the creature, among others. \\
+		\hline
+		INCORPOREAL & The creature cannot interact with the physical world and vice versa.
+	\end{tabularx}
+	
 	\subsection{Creatures}
-	%TODO: import bestiary
+	\luaimport{components/bestiary.csv}{beast.tpl}{horrorbestiary}
 	
 	\chapter{Psionics Patch}
 	When using both this and the Psionics Addon, you may want to use the following addendum to glue them together: 
 	Insight increases the psionic target value one-to-one. However, the cost now not only deals damage to the caster but will also cause the same amount of corruption.\\
 	By GM discretion some casters may use this new and some may use the old way of casting.
 	
+	\chapter{Credits}
+	\input{components/credits.tex}
 \end{document}
