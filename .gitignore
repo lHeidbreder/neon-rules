@@ -288,5 +288,8 @@ _rulepackage/
 # csv import temp files
 */out.txt
 
+# Administrative files
+*.todo
+
 # Working files
 *~lock*

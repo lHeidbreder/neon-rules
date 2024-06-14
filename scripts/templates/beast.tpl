@@ -14,17 +14,15 @@
 \textbf{HP scale}: @hp@ \\
 \begin{multicols}{2}
 \ifthenelse{\isempty{@itemize:skills@}}{}{ \textbf{Skills:}
-    \begin{itemize}
-    \setlength\itemsep{-8mm} \vspace{-8mm}
+    \begin{sitemize}[8]
     @itemize:skills@
-    \end{itemize} 
+    \end{sitemize} 
     \columnbreak
     }
 \ifthenelse{\isempty{@itemize:traits@}}{}{ \textbf{Tags:}
-    \begin{itemize}
-    \setlength\itemsep{-8mm} \vspace{-8mm}
+    \begin{sitemize}[8]
     @itemize:traits@
-    \end{itemize}
+    \end{sitemize}
     } 
 \ifthenelse{\isempty{@itemize:skills@}}{\columnbreak}{} %heuristically break the column after traits if there were no skills
 \ifthenelse{\isempty{@armor@@itemize:weapons@@itemize:other_equipment@}}{}{\textbf{Equipment} \begin{itemize} \setlength\itemsep{-9mm} \vspace{-9mm}}%

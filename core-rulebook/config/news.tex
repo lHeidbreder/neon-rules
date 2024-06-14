@@ -1,7 +1,30 @@
 %Custom Environments
 \newenvironment{exampleblock}[1][1]
-{\par\vspace*{-8mm}\hfill\begin{minipage}{\dimexpr\columnwidth-#1cm}}
-	{\end{minipage}\par}
+{
+	\par
+	\vspace{-5mm}
+	\hfill
+	\begin{minipage}
+		{\dimexpr\columnwidth-#1cm}
+	\begin{mdframed}[
+		backgroundcolor=Gray!65,
+		topline=false
+		]
+}{
+	\end{mdframed}
+	\end{minipage}
+	\par
+}
+
+%%shortened itemize
+\newenvironment{sitemize}[1][10]
+{
+	\begin{itemize}
+	\vspace{-#1mm}
+	\setlength\itemsep{-#1mm}
+}{
+	\end{itemize}
+}
 
 %Custom Commands
 \newcommand{\ul}[1]{\underline{\smash{#1}}}

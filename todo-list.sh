@@ -2,7 +2,7 @@
 shopt -s globstar
 
 if [ "$1" = "list" ]
-then grep -ri -e 'todo' **/*.{tex,csv} > "todos$(printf '%(%Y-%m-%d)T\n' -1).txt"
+then grep -ri -e 'todo' **/*.{tex,csv} > "$(printf '%(%Y-%m-%d)T\n' -1).todo"
 exit
 fi
 
