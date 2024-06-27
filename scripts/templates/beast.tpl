@@ -27,7 +27,7 @@
 \ifthenelse{\isempty{@itemize:skills@}}{\columnbreak}{} %heuristically break the column after traits if there were no skills
 \ifthenelse{\isempty{@armor@@itemize:weapons@@itemize:other_equipment@}}{}{\textbf{Equipment} \begin{sitemize}[9]}%
 \ifthenelse{\isempty{@armor@}}{}{\item\textbf{Armor}: @armor@}
-\ifthenelse{\isempty{@itemize:weapons@}}{}{\item\textbf{Weapons}: \begin{sitemize} @itemize:weapons@ \end{itemize}}
+\ifthenelse{\isempty{@itemize:weapons@}}{}{\item\textbf{Weapons}: \begin{sitemize} @itemize:weapons@ \end{sitemize}}
 \ifthenelse{\isempty{@itemize:other_equipment@}}{}{\item\textbf{Other}: @itemize:other_equipment@}
 \ifthenelse{\isempty{@armor@@itemize:weapons@@itemize:other_equipment@}}{}{\end{sitemize}}
 \end{multicols}
