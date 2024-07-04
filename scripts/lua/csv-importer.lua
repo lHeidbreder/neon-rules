@@ -133,8 +133,9 @@ function noncombat_skills(filepath)
         ::continue::
     end
     
+    local tpl = io.open("../scripts/templates/noncombat-skill.tpl"):read("*all")
     for _,line in pairs(lines) do
-        local out = "@skill@ @subtype@ & \\skillcheckbox{@skill@@subtype@_untrained}\\skillcheckbox{@skill@@subtype@_known}\\skillcheckbox{@skill@@subtype@_trained}\\skillcheckbox{@skill@@subtype@_experienced}\\skillcheckbox{@skill@@subtype@_mastered}\\\\"
+        local out = tpl
         for j=1,table.getn(headers) do
             
             if line[j] == nil then
@@ -174,8 +175,9 @@ function combat_skills(filepath, filter)
         ::continue::
     end
     
+    local tpl = io.open("../scripts/templates/combat-skill.tpl"):read("*all")
     for _,line in pairs(lines) do
-        local out = "@subtype@ & \\skillcheckbox{@skill@@subtype@_untrained}\\skillcheckbox{@skill@@subtype@_known}\\skillcheckbox{@skill@@subtype@_trained}\\skillcheckbox{@skill@@subtype@_experienced}\\skillcheckbox{@skill@@subtype@_mastered}\\\\"
+        local out = tpl
         
         print(line[1])
         if not string.match(line[1],filter.." Combat Training") then
