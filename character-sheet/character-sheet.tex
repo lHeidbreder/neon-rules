@@ -1,3 +1,4 @@
+%TODO: is not A4!
 \documentclass{letter}
 \usepackage[english]{babel}
 %\usepackage{hyperref}
@@ -7,9 +8,16 @@
 \usepackage{forloop}
 \usepackage{longtable}
 \newsavebox\ltmcbox
-\setlength\textwidth{1.2\textwidth}
-\setlength\topmargin{0.3\topmargin}
-\setlength\evensidemargin{\oddsidemargin}
+
+%margins
+\def\heightmarge{30mm}
+\addtolength{\textheight}{\heightmarge}
+\addtolength{\topmargin}{-1\dimexpr \heightmarge \relax}
+%\addtolength{\bottommargin}{-1\heightmarge}
+\def\sidemarge{.5\oddsidemargin}
+\addtolength{\textwidth}{2\dimexpr\oddsidemargin-\sidemarge\relax}
+\setlength\oddsidemargin{\sidemarge}
+\setlength\evensidemargin{\sidemarge}
 
 \input{../core-rulebook/config/packages.tex}
 \directlua{dofile("../scripts/lua/csv-importer.lua")}
@@ -19,6 +27,7 @@
 
 \newcommand{\bodylocation}[1]{%
 	\textbf{\large#1}\\
+	\vspace{2mm}
 	\begin{tabular}{rl}
 		HP: & \charfield{#1hpcurrent} / \charfield{#1hptotal}\\
 		Armor: & \charfield{#1armor}\\
@@ -27,20 +36,23 @@
 	\par
 }
 \newcommand{\meleeweapon}[1]{
-	\begin{tabular}{rl}
+	\begin{tabular}{rc}
 		Name & \inputfield{#1name} \\
 		Head & \inputfield{#1head} \\
 		Grip & \inputfield{#1grip} \\
-		Core & \inputfield{#1core}
-	\end{tabular}\\
-	Damage: \charfield{#1dmg} / AP: \charfield{#1ap}
+		Core & \inputfield{#1core} \\
+		Damage & \charfield{#1dmg} \\
+		AP & \charfield{#1ap}
+	\end{tabular}
 	\par
 }
 
-\def\inputfield#1{ \TextField[width=0.3\columnwidth, name=#1]{} }
+\def\inputfield#1{ \TextField[width=0.3\columnwidth, bordercolor=black, name=#1]{} }
 \def\charfield#1{ \TextField[width=8mm, name=#1]{} }
 \def\textbox#1{ \TextField[name=#1, multiline, width=\columnwidth, height=5.5\baselineskip]{} }
 \def\skillcheckbox#1{\CheckBox[name=#1]{}}%,height=0.4\baselineskip,width=0.8\baselineskip]{}}
+
+
 
 \begin{document}
 \centering
