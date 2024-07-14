@@ -6,7 +6,7 @@ then grep -ri -e 'todo' **/*.{tex,csv} > "$(printf '%(%Y-%m-%d)T\n' -1).todo"
 exit
 fi
 
-TODOS=$(grep -ril -e 'todo' **/*.{tex,csv})
+TODOS=$(grep -ril -e 'todo' **/*.{tex,csv,tpl})
 if [ "$1" = "open" ]
 then for i in $TODOS
     do start $i
