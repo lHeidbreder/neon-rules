@@ -32,6 +32,8 @@
 \def\coverimgpath{../art/\subtitle/cover.png}
 
 %Title Page
+\def\titletextcolor{black}
+\def\titleshadowcolor{cyan}
 \usepackage{shadowtext}
 \newcommand{\glowup}[2][cyan]{
     \shadowoffset{1.5pt}
@@ -39,10 +41,10 @@
     \shadowtext{#2}
 }
 \title{
-    \glowup{Neon Pen and Paper - \subtitle}
+    \glowup[\titleshadowcolor]{\textcolor{\titletextcolor}{Neon Pen and Paper - \subtitle}}
 }
-\author{\glowup{Fr0sty}}
-\date{\glowup{\today}}
+\author{\glowup[\titleshadowcolor]{\textcolor{\titletextcolor}{Fr0sty}}}
+\date{\glowup[\titleshadowcolor]{\textcolor{\titletextcolor}{\today}}}
 
 %Fonts
 \usepackage{fontspec}

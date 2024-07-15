@@ -1,3 +1,4 @@
+%TODO: use template?
 \begin{tabular}{rl}
 Psionics & \skillcheckbox{psionics\_untrained}\skillcheckbox{psionics\_known}\skillcheckbox{psionics\_trained}\skillcheckbox{psionics\_experienced}\skillcheckbox{psionics\_mastered}
 \end{tabular}
@@ -17,8 +18,8 @@ Psionics & \skillcheckbox{psionics\_untrained}\skillcheckbox{psionics\_known}\sk
 \def\modfield#1{\TextField[name=#1, width=19mm]{}}
 \def\spelltemplate#1{
 	\\
-	\TextField[name=st-descriptor#1]{} &%
-	\modfield{name=st-complexity#1} &%
+	\TextField[name=st-descriptor#1, width=28mm]{} &%
+	\modfield{st-complexity#1} &%
 	\modfield{st-casttime#1} &%
 	\modfield{st-duration#1} &%
 	\modfield{st-intensity#1} &%
@@ -26,5 +27,5 @@ Psionics & \skillcheckbox{psionics\_untrained}\skillcheckbox{psionics\_known}\sk
 }
 \begin{tabularx}{\columnwidth}{X|cccc|c}
 	Descriptor & Complexity & Cast Time & Duration & Intensity & Modifier
-	\forloop{i}{0}{\value{i} < 20}{\spelltemplate{\arabic{i}}}
+	\forloop{i}{0}{\value{i} < 25}{\spelltemplate{\arabic{i}}}
 \end{tabularx}
