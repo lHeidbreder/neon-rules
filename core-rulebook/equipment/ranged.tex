@@ -1,62 +1,36 @@
 \def\rwimport#1{\luaimport{equipment/rangedweapons-#1.csv}{ranged.tpl}{#1}}
+\newcommand{\rangesec}[1]{
+	\subsubsection{#1}
+	\vspace{8mm}
+	\begin{multicols}{2}
+	\rwimport{#1}
+	\end{multicols}
+}
 \section{Ranged}
 \subsection{Weapons}
-\subsubsection{Pistol}
-\vspace{10mm}
-\begin{multicols}{2}
-\rwimport{pistol}
-\end{multicols}
+\rangesec{Pistol}
 
 \hrulefill
-\subsubsection{Short Rifle}
-\vspace{8mm}
-\begin{multicols}{2}
-\rwimport{short rifle}
-\end{multicols}
+\rangesec{Short Rifle}
 
 \pagebreak
-\subsubsection{Long Rifle}
-\vspace{8mm}
-\begin{multicols}{2}
-\vspace{2mm}
-\rwimport{long rifle}
-\end{multicols}
+\rangesec{Long Rifle}
 
 \pagebreak
-\subsubsection{Heavy}
-\vspace{8mm}
-\begin{multicols}{2}
-\rwimport{heavy}
-\end{multicols}
+\rangesec{Heavy}
 
 \pagebreak
-\subsubsection{Launcher}
-\vspace{8mm}
-\begin{multicols}{2}
-\rwimport{launcher}
-\end{multicols}
+\rangesec{Launcher}
 
 \pagebreak
-\subsubsection{Bow}
-\vspace{8mm}
-\begin{multicols}{2}
-\rwimport{bow}
-\end{multicols}
+\rangesec{Bow}
 
 \hrulefill
-\subsubsection{Throwing}
-\vspace{8mm}
-\begin{multicols}{2}
-\rwimport{throwing}
-\end{multicols}
+\rangesec{Throwing}
 
 \pagebreak %quickfix
 %\hrulefill
-\subsubsection{Traps}
-\vspace{8mm}
-\begin{multicols}{2}
-\rwimport{trap}
-\end{multicols}
+\rangesec{Traps}
 
 \pagebreak %quick fix
 \subsection{Mods}
