@@ -1,70 +1,70 @@
-group,name,flavor_text,shots,damage,ap,range,mag,ammo,reload,special_rules,price,weight
-Pistol,Obsidian Bull,A hand cannon fed from a cylinder.,1,2D10+8,1,25,6,11.8x45mm,1,Reliable; Single Loader,50,"1,7"
-Pistol,Wasteland Condor,A powerful handgun with an extremely heavy cartridge.,1,2D10+8,1,25,7,11.8x45mm,2,,50,"1,9"
-Pistol,Amber Bull,A revolver made to fire low caliber rounds.,1,2D10+3,0,20,8,7.2mm,1,Reliable; Single Loader,30,"0,5"
-Pistol,M10,"A small, low caliber, semiautomatic pistol. Very light and decently easy to conceal.",1,2D10+3,0,20,9,7.2mm,1,,30,"0,6"
-Pistol,mOP-3,"A hand-sized 20mm, breech loading, grenade launcher.",1,-,-,20,1,20mm grenade,4,"Damage, AP and effects depend on ammunition; 10m minimum arming distance",40,"1,3"
-Pistol,Little Lucifer,"A one-handed liquid propellant. While it is knows as a flame thrower, it can be used for all fueled spray weapons.",5,1D10+2,0,12,5,small fuel tank,8,Flame; Scatter; Spray,80,"1,6"
-Pistol,OH-VLS,"A small laser pistol. Adjustable, conceilable and lightweight.",2,1D10+10,1,35,16,small fuel cell,4,Adjustable,70,"0,6"
-Pistol,Newton Pistol Mk2,The smallest mass drivers ever built. Shoots very small metal fragments.,2,1D10+2,8,30,30,small shard block,8,,95,"2,1"
-Pistol,Newton Pistol Mk5,A forearm-sized magnetic accelerator shooting metal fragments.,1,1D10+2,12,35,30,small shard block,8,,110,"2,6"
-Pistol,Mk1 Shock Pistol,A modified taser. Very much lethal.,1,2D5,0,20,8,small fuel cell,5,EMP; Stun (4),50,"0,4"
-Pistol,Scattershock,A wide-arcing shock pistol.,2,3D5,0,15,6,small fuel cell,5,Scatter; EMP; Stun (3),80,"0,6"
-Short Rifle,MS Shotgun,A double-barrel shotgun with shortened barrels to facilitate pellet spread.,1,2D10+3,1,40,2,12gauge,2,Reliable; Scatter; Single Loader,25,3
-Short Rifle,SBAR-22,A rifle caliber fired from a short system. Warning: only buy this if you don’t own a dog!,3,2D10+2,6,50,30,6.3mm,4,,110,"3,5"
-Short Rifle,MP15,A pistol caliber fired from a small rifle frame.,4,2D10+3,1,30,25,7.2mm,3,,65,"2,8"
-Short Rifle,Thumper,A small CQC grenade launcher meant for utility grenades. Exists as an under barrel version for rifles.,1,-,-,40,1,20mm grenade,4,"Damage, AP and effects depend on ammunition; 10m minimum arming distance",70,"4,8"
-Short Rifle,OH-VLS Conversion,A conversion kit to turn an OH-VLS into a small laser carbine.,3,1D10+12,1,70,16,small fuel cell,5,Adjustable; Flame; Upgrade (OH-VLS),140,"2,8"
-Short Rifle,Newton Pistol Repeater,A conversion kit for low powered Newton Pistols to increase fire rate.,4,1D10+3,12,45,30,small shard block,8,Upgrade (Newton Pistol Mk2),140,"3,6"
-Short Rifle,Junk Jet,A small mass driver with increased bore and decreased barrel length to achieve shotgun-like ballistics.,1,2D10+2,8,35,6,small shard block,3,Scatter,170,"4,2"
-Short Rifle,Crossbow,"A medieval weapon with a trigger, accelerating sharp sticks.",1,1D10+4,0,50,1,crossbow bolt,6,Silenced; ignores PES,25,3
-Short Rifle,Scattershock Conversion,"A conversion kit for the Scattershock to feed from larger fuel cells. Increases size, mag size and range.",2,3D5,0,25,16,medium fuel cell,5,Scatter; EMP; Stun (3); Upgrade (Scattershock),125,"2,1"
-Long Rifle,AR-22,A full-sized but basic rifle.,3,2D10+3,11,70,30,6.3mm,6,,150,"3,8"
-Long Rifle,M282 SSW,"A bulky, belt-fed fire support weapon with high ammunition capacity.",6,2D10+3,11,70,120,6.3mm,14,Bulky,220,7
-Long Rifle,Mk3 Tankgewehr,"An insanely high-caliber, long barrel rifle made to fight heavy armor. Carries a lot of energy of comparatively small distances.",1,3D10+3,30,220,1,15x132mm,10,,210,"16,6"
-Long Rifle,A3R,"The ""Makar Advanced Anti-Armor Rifle"": A long range rifle made to take out high value targets or light armor. Not an overly clever name but don’t tell the snipers.",1,2D10+7,18,800,5,11.8x112mm,6,,210,12
-Long Rifle,M5 Shotgun,A scattergun with a tube magazine firing multiple pellets per shot.,2,4D5+6,4,80,8,12gauge,2,"Single Loader, Scatter",130,"3,8"
-Long Rifle,OP-2,A 20mm single shot grenade launcher with increased barrel length.,1,-,-,50,1,20mm grenade,4,"Damage, AP and effects depend on ammunition; 10m minimum arming distance",60,"1,9"
-Long Rifle,Rathalos,"A flame thrower with an integrated tank to profit from familiar, proven rifle ergonomics.",5,2D10+4,0,35,15,medium fuel tank,8,Flame; Scatter; Spray,120,4
-Long Rifle,BR-56,A semiautomatic laser rifle.,2,1D10+18,3,500,10,medium fuel cell,12,Adjustable,230,"4,3"
-Long Rifle,Incinerator Rifle,A long range laser rifle. Instead of piercing through armor it burns it away.,1,2D5+30,4,700,1,large fuel cell,16,Adjustable; Flame,220,"9,7"
-Long Rifle,M4 Silver Crow,"A handheld, semi automatic mass driver. Very powerful but decently mobile.",2,2D10+4,22,550,16,large shard block,10,,180,"11,2"
-Long Rifle,R235 SSW,"A fully automatic mass driver, for when squad support is two rooms over.",5,2D10+4,16,220,180,large shard block,18,,250,"15,6"
-Long Rifle,R13 Armor Cracker,"A handheld, long range mass driver",1,1D5+18,35,1400,7,large shard block,16,,260,"23,9"
-Long Rifle,FG-9,"A rifle firing high energetic, self-stabilized plasma that destabilizes and explodes on impact. The energy release is highly unpredictable.",1,4D10+6,1,40,10,large fuel cell,16,Blast (3); EMP; Stun (2),310,"6,3"
-Long Rifle,Choke M3 Arc Rifle,An arc rifle with little spread to increase range.,2,3D10,0,60,10,large fuel cell,12,EMP; Stun (3); Scatter,180,"4,1"
-Long Rifle,Choke F3 Arc Thrower,An arc rifle with a large spread made for crowd suppression,2,5D5,0,30,10,large fuel cell,10,EMP; Stun (2); Spray,150,"3,9"
-Heavy,M2 Brass Storm,A high-caliber machine gun with high fire-rate.,8,2D10+4,10,180,120,11.8x112mm,18,,280,"42,7"
-Heavy,M36 Chain Cannon,A heavy machine gun with an external cycler. Reduced fire rate when compared to the M2 but renowned for unrivaled reliability. It is extremely heavy and cannot reasonably be called portable.,5,2D10+4,10,180,120,11.8x112mm,18,Reliable,295,"69,2"
-Heavy,RM4 Chain Shotgun,"An automatic, belt fed shotgun known for its high maintenance need.",4,4D5+6,4,80,80,12gauge,18,Scatter,280,"28,4"
-Heavy,Forge Fire,A large flamethrower made for vehicles and emplacements,5,3D10+3,0,50,30,large fuel tank,40,Flame; Scatter; Spray,220,"35,4"
-Heavy,Slicer,"A vehicle laser cannon, powerful enough to break bunker doors. Requires a massive power source to equalize its needs and is overly affected by refraction, limiting its range.",1,5D10+20,8,40,5,vehicle power cell,40,Powered,450,231
-Heavy,Model 6 Gladiator,A heavy mass driver sporting 5 rotating accelerators to prevent overheating and increase fire rate.,12,3D10+8,12,500,500,vehicle shard block,40,"Reliable, Powered",420,169
-Heavy,Mag Rail Cannon,A massive mass driver built for anti armor LAVs in the days of war.,1,3D10+18,40,6000,20,vehicle shard block,40,Powered,450,143
-Heavy,Zeushammer,"Also referred to as the ""Ball Lightning Cannon"" this weapon is a long range Tesla cannon firing arcing ball lightnings.",1,9D10-4,0,150,5,vehicle power cell,40,Blast (6); EMP; Stun (5); Spray; Powered,410,197
-Launcher,MML-4,A multi rocket launcher built for vehicles,2,-,-,350,6,rocket propelled grenade,40,"Damage, AP and effects depend on ammunition; Powered; Backblast (4)",220,"36,9"
-Launcher,WTFBRR,A massive recoilless rifle made for giant loads to be fired from vehicles,1,-,-,700,1,large rocket propelled grenade,20,"Damage, AP and effects depend on ammunition; Backblast (8)",360,"45,7"
-Launcher,Hail Fire,A micro missile launcher firing multiple rockets on multiple targets simultaneously,4,3D10+2,4,250,4,micro missile pack,40,Powered; Multitargeting; Backblast (2),200,"26,7"
-Launcher,M64,A 40mm rotary grenade launcher,1,-,-,100,6,40mm grenade,6,"Damage, AP and effects depend on ammunition; 10m minimum arming distance; Single Loader",180,"5,4"
-Launcher,ERPG,A rocket propelled grenade launcher,1,-,-,400,1,rocket propelled grenade,6,"Damage, AP and effects depend on ammunition; Backblast (4)",210,"6,2"
-Launcher,OP-4,A 40mm breech loading grenade launcher,1,-,-,70,1,40mm grenade,6,"Damage, AP and effects depend on ammunition; 15m minimum arming distance",90,"2,2"
-Launcher,Thunderstrike,"A grenade launcher fed from a belt. Very useful for crowd control but complete overkill in most situations. It is also extremely cumbersome due to the massive belt or belt box, much too large to be used on foot.",4,-,-,100,30,40mm grenade,9,"Damage, AP and effects depend on ammunition; 15m minimum arming distance",136,"14,2"
-Bow,Collapsible Bow,A bow that can be collapsed to fit small cases for transportation and concealment.,1,1D10+3,1,50,1,arrow,1,Silenced,25,"1,5"
-Bow,Recurve Bow,A full-sized bow with heavy draw.,1,1D10+4,2,75,1,arrow,1,Silenced; -10 to hit per StrB below 40,20,"3,2"
-Throwing,Asphyxiation Grenade,"A chemical weapon that burns away oxygen in a living room sized area. This reaction is not strongly exothermic, making it hard to detect before it’s too late.",1,-,-,15,1,grenade,,Blast (5); causes suffocation,31,"0,3"
-Throwing,EMP grenade,"Very expensive and very rare, this new type of explosive stuns or even damages unshielded electronics. It also causes piezoelectric exoskeletons to spasm and hurt the wearer.",1,-,-,15,1,grenade,,Blast (6); EMP,28,"0,1"
-Throwing,Flashbang,Popular among law enforcement personnel this non-lethal grenade blinds and deafens anyone not wearing appropriate protective gear with a loud and bright flash.,1,-,-,15,1,grenade,,Blast (12); Flash,14,"0,1"
-Throwing,Frag Grenade,An explosive that spreads a large amount of shrapnel in a decently large area. Used against groups of hostiles and to clear rooms since the dawn of gunpowder.,1,2D10+2,2,15,1,grenade,,Blast (6),22,"0,1"
-Throwing,Incendiary Grenade,A fire-based explosive known to be easy and cheap to improvise and to cause a lot of collateral damage. Less useful against energy shielding and metal constructions.,1,1D10+2,0,15,1,grenade,,Blast (8); Flame,22,"0,1"
-Throwing,Riot Foam,A canister of sticky foam that heavily impairs movement of everyone caught up in it. Can safely but slowly be burnt away at low temperatures.,1,-,-,15,1,grenade,,Blast (12); Sticky,12,"0,1"
-Throwing,Smoke Grenade,Favored in open places this non-lethal grenade grants a large amount of artificial concealment to otherwise clear lines of fire.,1,-,-,15,1,grenade,,Blast (8); Smoke,14,"0,1"
-Throwing,Tear Gas Grenade,Non-lethal irritant grenades usually employed to stop riots.,1,-,-,15,1,grenade,,Blast (8); Smoke; Stun (0); Stun is applied every round in the Smoke,16,"0,1"
-Throwing,Blunt Throwing Weapon,Blunt instruments like rocks and bottles being thrown. Very common when nothing else is at hand.,1,1D5+7,6,15,,,,Trauma; Piercing; Improvised,Rocks are free,"0,8"
-Throwing,Throwing Axe,"Sharp, heavy, bladed weapon weighted for throwing",1,1D10+6,0,15,,,,,12,1
-Throwing,Throwing Knives,"Sharp, bladed weapons weighted for throwing",1,1D5+5,3,15,,,,,10,"0,4"
-Traps,Bear Trap,"A strong, spring loaded clamp made to injure legs and stop creatures from fleeing or approaching.",,2D10+12,0,,,,,,8,"1,1"
-Traps,C-7,A block of plastic explosives. Usually made to be set up but can the thrown in a pinch.,,2D10+18,16,,,,,Blast (6),22,"0,2"
-Traps,Cloak Mine,A landmine with an integrated cloaking field. Makes an obvious noise when stepped upon and takes a decent amount of time to arm for safety reasons.,,2D10+5,4,,,,,Blast (3); detecting the noise when stepped upon takes a +0 Perception test,33,"1,2"
-Traps,Exploding Small Fuel Cell,"A small fuel cell, usually built very sturdily, may be rigged as an improvised explosive device. Unstable cells however may explode when handled too roughly in high temperatures.",,2D10+4,6,,,,,Blast (1),,"0,3"
-Traps,Exploding Medium Fuel Cell,"A fuel cell, usually built very sturdily, may be rigged as an improvised explosive device. Unstable cells however may explode when handled too roughly in high temperatures.",,3D10+6,9,,,,,Blast (1),,"0,8"
-Traps,Exploding Large Fuel Cell,"A large fuel cell, usually built very sturdily, may be rigged as an improvised explosive device. Unstable cells however may explode when handled too roughly in high temperatures.",,4D10+8,12,,,,,Blast (2),,"1,5"
+group,name,flavor_text,shots,damage,ap,range,mag,ammo,reload,special_rules,price,weight,,,,
+Pistol,Obsidian Bull,A hand cannon fed from a cylinder.,1,2D10+8,1,25,6,11.8x45mm,1,Reliable, Single Loader,50,"1,7",,,
+Pistol,Wasteland Condor,A powerful handgun with an extremely heavy cartridge.,1,2D10+8,1,25,7,11.8x45mm,2,,50,"1,9",,,,
+Pistol,Amber Bull,A revolver made to fire low caliber rounds.,1,2D10+3,0,20,8,7.2mm,1,Reliable, Single Loader,30,"0,5",,,
+Pistol,M10,"A small, low caliber, semiautomatic pistol. Very light and decently easy to conceal.",1,2D10+3,0,20,9,7.2mm,1,,30,"0,6",,,,
+Pistol,mOP-3,"A hand-sized 20mm, breech loading, grenade launcher.",1,-,-,20,1,20mm grenade,4,"Damage, AP and effects depend on ammunition; 10m minimum arming distance",40,"1,3",,,,
+Pistol,Little Lucifer,"A one-handed liquid propellant. While it is knows as a flame thrower, it can be used for all fueled spray weapons.",5,1D10+2,0,12,5,small fuel tank,8,Flame, Scatter, Spray,80,"1,6",,
+Pistol,OH-VLS,"A small laser pistol. Adjustable, conceilable and lightweight.",2,1D10+10,1,35,16,small fuel cell,4,Adjustable,70,"0,6",,,,
+Pistol,Newton Pistol Mk2,The smallest mass drivers ever built. Shoots very small metal fragments.,2,1D10+2,8,30,30,small shard block,8,,95,"2,1",,,,
+Pistol,Newton Pistol Mk5,A forearm-sized magnetic accelerator shooting metal fragments.,1,1D10+2,12,35,30,small shard block,8,,110,"2,6",,,,
+Pistol,Mk1 Shock Pistol,A modified taser. Very much lethal.,1,2D5,0,20,8,small fuel cell,5,EMP, Stun (4),50,"0,4",,,
+Pistol,Scattershock,A wide-arcing shock pistol.,2,3D5,0,15,6,small fuel cell,5,Scatter, EMP, Stun (3),80,"0,6",,
+Short Rifle,MS Shotgun,A double-barrel shotgun with shortened barrels to facilitate pellet spread.,1,2D10+3,1,40,2,12gauge,2,Reliable, Scatter, Single Loader,25,3,,
+Short Rifle,SBAR-22,A rifle caliber fired from a short system. Warning: only buy this if you don’t own a dog!,3,2D10+2,6,50,30,6.3mm,4,,110,"3,5",,,,
+Short Rifle,MP15,A pistol caliber fired from a small rifle frame.,4,2D10+3,1,30,25,7.2mm,3,,65,"2,8",,,,
+Short Rifle,Thumper,A small CQC grenade launcher meant for utility grenades. Exists as an under barrel version for rifles.,1,-,-,40,1,20mm grenade,4,"Damage, AP and effects depend on ammunition; 10m minimum arming distance",70,"4,8",,,,
+Short Rifle,OH-VLS Conversion,A conversion kit to turn an OH-VLS into a small laser carbine.,3,1D10+12,1,70,16,small fuel cell,5,Adjustable, Flame, Upgrade (OH-VLS),140,"2,8",,
+Short Rifle,Newton Pistol Repeater,A conversion kit for low powered Newton Pistols to increase fire rate.,4,1D10+3,12,45,30,small shard block,8,Upgrade (Newton Pistol Mk2),140,"3,6",,,,
+Short Rifle,Junk Jet,A small mass driver with increased bore and decreased barrel length to achieve shotgun-like ballistics.,1,2D10+2,8,35,6,small shard block,3,Scatter,170,"4,2",,,,
+Short Rifle,Crossbow,"A medieval weapon with a trigger, accelerating sharp sticks.",1,1D10+4,0,50,1,crossbow bolt,6,Silenced, ignores PES,25,3,,,
+Short Rifle,Scattershock Conversion,"A conversion kit for the Scattershock to feed from larger fuel cells. Increases size, mag size and range.",2,3D5,0,25,16,medium fuel cell,5,Scatter, EMP, Stun (3), Upgrade (Scattershock),125,"2,1",
+Long Rifle,AR-22,A full-sized but basic rifle.,3,2D10+3,11,70,30,6.3mm,6,,150,"3,8",,,,
+Long Rifle,M282 SSW,"A bulky, belt-fed fire support weapon with high ammunition capacity.",6,2D10+3,11,70,120,6.3mm,14,Bulky,220,7,,,,
+Long Rifle,Mk3 Tankgewehr,"An insanely high-caliber, long barrel rifle made to fight heavy armor. Carries a lot of energy of comparatively small distances.",1,3D10+3,30,220,1,15x132mm,10,,210,"16,6",,,,
+Long Rifle,A3R,"The ""Makar Advanced Anti-Armor Rifle"": A long range rifle made to take out high value targets or light armor. Not an overly clever name but don’t tell the snipers.",1,2D10+7,18,800,5,11.8x112mm,6,,210,12,,,,
+Long Rifle,M5 Shotgun,A scattergun with a tube magazine firing multiple pellets per shot.,2,4D5+6,4,80,8,12gauge,2,"Single Loader, Scatter",130,"3,8",,,,
+Long Rifle,OP-2,A 20mm single shot grenade launcher with increased barrel length.,1,-,-,50,1,20mm grenade,4,"Damage, AP and effects depend on ammunition; 10m minimum arming distance",60,"1,9",,,,
+Long Rifle,Rathalos,"A flame thrower with an integrated tank to profit from familiar, proven rifle ergonomics.",5,2D10+4,0,35,15,medium fuel tank,8,Flame, Scatter, Spray,120,4,,
+Long Rifle,BR-56,A semiautomatic laser rifle.,2,1D10+18,3,500,10,medium fuel cell,12,Adjustable,230,"4,3",,,,
+Long Rifle,Incinerator Rifle,A long range laser rifle. Instead of piercing through armor it burns it away.,1,2D5+30,4,700,1,large fuel cell,16,Adjustable, Flame,220,"9,7",,,
+Long Rifle,M4 Silver Crow,"A handheld, semi automatic mass driver. Very powerful but decently mobile.",2,2D10+4,22,550,16,large shard block,10,,180,"11,2",,,,
+Long Rifle,R235 SSW,"A fully automatic mass driver, for when squad support is two rooms over.",5,2D10+4,16,220,180,large shard block,18,,250,"15,6",,,,
+Long Rifle,R13 Armor Cracker,"A handheld, long range mass driver",1,1D5+18,35,1400,7,large shard block,16,,260,"23,9",,,,
+Long Rifle,FG-9,"A rifle firing high energetic, self-stabilized plasma that destabilizes and explodes on impact. The energy release is highly unpredictable.",1,4D10+6,1,40,10,large fuel cell,16,Blast (3), EMP, Stun (2),310,"6,3",,
+Long Rifle,Choke M3 Arc Rifle,An arc rifle with little spread to increase range.,2,3D10,0,60,10,large fuel cell,12,EMP, Stun (3), Scatter,180,"4,1",,
+Long Rifle,Choke F3 Arc Thrower,An arc rifle with a large spread made for crowd suppression,2,5D5,0,30,10,large fuel cell,10,EMP, Stun (2), Spray,150,"3,9",,
+Heavy,M2 Brass Storm,A high-caliber machine gun with high fire-rate.,8,2D10+4,10,180,120,11.8x112mm,18,,280,"42,7",,,,
+Heavy,M36 Chain Cannon,A heavy machine gun with an external cycler. Reduced fire rate when compared to the M2 but renowned for unrivaled reliability. It is extremely heavy and cannot reasonably be called portable.,5,2D10+4,10,180,120,11.8x112mm,18,Reliable,295,"69,2",,,,
+Heavy,RM4 Chain Shotgun,"An automatic, belt fed shotgun known for its high maintenance need.",4,4D5+6,4,80,80,12gauge,18,Scatter,280,"28,4",,,,
+Heavy,Forge Fire,A large flamethrower made for vehicles and emplacements,5,3D10+3,0,50,30,large fuel tank,40,Flame, Scatter, Spray,220,"35,4",,
+Heavy,Slicer,"A vehicle laser cannon, powerful enough to break bunker doors. Requires a massive power source to equalize its needs and is overly affected by refraction, limiting its range.",1,5D10+20,8,40,5,vehicle power cell,40,Powered,450,231,,,,
+Heavy,Model 6 Gladiator,A heavy mass driver sporting 5 rotating accelerators to prevent overheating and increase fire rate.,12,3D10+8,12,500,500,vehicle shard block,40,"Reliable, Powered",420,169,,,,
+Heavy,Mag Rail Cannon,A massive mass driver built for anti armor LAVs in the days of war.,1,3D10+18,40,6000,20,vehicle shard block,40,Powered,450,143,,,,
+Heavy,Zeushammer,"Also referred to as the ""Ball Lightning Cannon"" this weapon is a long range Tesla cannon firing arcing ball lightnings.",1,9D10-4,0,150,5,vehicle power cell,40,Blast (6), EMP, Stun (5), Spray, Powered,410,197
+Launcher,MML-4,A multi rocket launcher built for vehicles,2,-,-,350,6,rocket propelled grenade,40,"Damage, AP and effects depend on ammunition; Powered; Backblast (4)",220,"36,9",,,,
+Launcher,WTFBRR,A massive recoilless rifle made for giant loads to be fired from vehicles,1,-,-,700,1,large rocket propelled grenade,20,"Damage, AP and effects depend on ammunition; Backblast (8)",360,"45,7",,,,
+Launcher,Hail Fire,A micro missile launcher firing multiple rockets on multiple targets simultaneously,4,3D10+2,4,250,4,micro missile pack,40,Powered, Multitargeting, Backblast (2),200,"26,7",,
+Launcher,M64,A 40mm rotary grenade launcher,1,-,-,100,6,40mm grenade,6,"Damage, AP and effects depend on ammunition; 10m minimum arming distance; Single Loader",180,"5,4",,,,
+Launcher,ERPG,A rocket propelled grenade launcher,1,-,-,400,1,rocket propelled grenade,6,"Damage, AP and effects depend on ammunition; Backblast (4)",210,"6,2",,,,
+Launcher,OP-4,A 40mm breech loading grenade launcher,1,-,-,70,1,40mm grenade,6,"Damage, AP and effects depend on ammunition; 15m minimum arming distance",90,"2,2",,,,
+Launcher,Thunderstrike,"A grenade launcher fed from a belt. Very useful for crowd control but complete overkill in most situations. It is also extremely cumbersome due to the massive belt or belt box, much too large to be used on foot.",4,-,-,100,30,40mm grenade,9,"Damage, AP and effects depend on ammunition; 15m minimum arming distance",136,"14,2",,,,
+Bow,Collapsible Bow,A bow that can be collapsed to fit small cases for transportation and concealment.,1,1D10+3,1,50,1,arrow,1,Silenced,25,"1,5",,,,
+Bow,Recurve Bow,A full-sized bow with heavy draw.,1,1D10+4,2,75,1,arrow,1,Silenced, -10 to hit per StrB below 40,20,"3,2",,,
+Throwing,Asphyxiation Grenade,"A chemical weapon that burns away oxygen in a living room sized area. This reaction is not strongly exothermic, making it hard to detect before it’s too late.",1,-,-,15,1,grenade,,Blast (5), causes suffocation,31,"0,3",,,
+Throwing,EMP grenade,"Very expensive and very rare, this new type of explosive stuns or even damages unshielded electronics. It also causes piezoelectric exoskeletons to spasm and hurt the wearer.",1,-,-,15,1,grenade,,Blast (6), EMP,28,"0,1",,,
+Throwing,Flashbang,Popular among law enforcement personnel this non-lethal grenade blinds and deafens anyone not wearing appropriate protective gear with a loud and bright flash.,1,-,-,15,1,grenade,,Blast (12), Flash,14,"0,1",,,
+Throwing,Frag Grenade,An explosive that spreads a large amount of shrapnel in a decently large area. Used against groups of hostiles and to clear rooms since the dawn of gunpowder.,1,2D10+2,2,15,1,grenade,,Blast (6),22,"0,1",,,,
+Throwing,Incendiary Grenade,A fire-based explosive known to be easy and cheap to improvise and to cause a lot of collateral damage. Less useful against energy shielding and metal constructions.,1,1D10+2,0,15,1,grenade,,Blast (8), Flame,22,"0,1",,,
+Throwing,Riot Foam,A canister of sticky foam that heavily impairs movement of everyone caught up in it. Can safely but slowly be burnt away at low temperatures.,1,-,-,15,1,grenade,,Blast (12), Sticky,12,"0,1",,,
+Throwing,Smoke Grenade,Favored in open places this non-lethal grenade grants a large amount of artificial concealment to otherwise clear lines of fire.,1,-,-,15,1,grenade,,Blast (8), Smoke,14,"0,1",,,
+Throwing,Tear Gas Grenade,Non-lethal irritant grenades usually employed to stop riots.,1,-,-,15,1,grenade,,Blast (8), Smoke, Stun (0), Stun is applied every round in the Smoke,16,"0,1",
+Throwing,Blunt Throwing Weapon,Blunt instruments like rocks and bottles being thrown. Very common when nothing else is at hand.,1,1D5+7,6,15,,,,Trauma, Piercing, Improvised,0 (Rocks are free),"0,8",,
+Throwing,Throwing Axe,"Sharp, heavy, bladed weapon weighted for throwing",1,1D10+6,0,15,,,,,12,1,,,,
+Throwing,Throwing Knives,"Sharp, bladed weapons weighted for throwing",1,1D5+5,3,15,,,,,10,"0,4",,,,
+Traps,Bear Trap,"A strong, spring loaded clamp made to injure legs and stop creatures from fleeing or approaching.",,2D10+12,0,,,,,,8,"1,1",,,,
+Traps,C-7,A block of plastic explosives. Usually made to be set up but can the thrown in a pinch.,,2D10+18,16,,,,,Blast (6),22,"0,2",,,,
+Traps,Cloak Mine,A landmine with an integrated cloaking field. Makes an obvious noise when stepped upon and takes a decent amount of time to arm for safety reasons.,,2D10+5,4,,,,,Blast (3), detecting the noise when stepped upon takes a +0 Perception test,33,"1,2",,,
+Traps,Exploding Small Fuel Cell,"A small fuel cell, usually built very sturdily, may be rigged as an improvised explosive device. Unstable cells however may explode when handled too roughly in high temperatures.",,2D10+4,6,,,,,Blast (1),,"0,3",,,,
+Traps,Exploding Medium Fuel Cell,"A fuel cell, usually built very sturdily, may be rigged as an improvised explosive device. Unstable cells however may explode when handled too roughly in high temperatures.",,3D10+6,9,,,,,Blast (1),,"0,8",,,,
+Traps,Exploding Large Fuel Cell,"A large fuel cell, usually built very sturdily, may be rigged as an improvised explosive device. Unstable cells however may explode when handled too roughly in high temperatures.",,4D10+8,12,,,,,Blast (2),,"1,5",,,,

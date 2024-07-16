@@ -1,0 +1,14 @@
+%This page is extremely ugly
+%but reworking it sounds like a hassle.
+%One day, perhaps.
+
+%Inventory
+{\huge\bfseries Inventory}
+\begin{multicols}{2}
+	\forloop{i}{0}{\value{i} < 56}{\TextField[width=\columnwidth, name=inv\arabic{i}]{}\\}
+\end{multicols}
+
+%Notes Box
+\textbf{\large Notes}\\
+\TextField[name=notes, multiline, width=\columnwidth, height=18.5\baselineskip]{}
+\par

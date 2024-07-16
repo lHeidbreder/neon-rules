@@ -16,30 +16,38 @@
 	\textbox{Banes}
 \end{multicols}
 %
-\vspace{10mm}
+%These tables below have been balanced by hand to feel symmetrical!
+%Be very careful when rearranging!
+\begin{multicols}{2}
+\begin{tabularx}{\columnwidth}{rlX}
+	\charfield{cr}	& Courage (Cr) \\
+	\charfield{int}	& Intelligence (Int) \\
+	\charfield{ins}	& Instinct (Ins) \\
+	\charfield{ch}	& Charisma (Ch)
+\end{tabularx}
+\begin{tabularx}{\columnwidth}{Xrl}
+	& Agility (Ag) & \charfield{ag}\\
+	& Dexterity (Dex) & \charfield{dex} \\
+	& Constitution (Con) & \charfield{con} \\
+	& Strength (Str) & \charfield{str} \\
+\end{tabularx}
+\end{multicols}
+%
+\vspace{5mm}
 %
 \begin{multicols}{2}
 \begin{tabularx}{\columnwidth}{rlX}
-	\charfield{cr}	& Courage		\\
-	\charfield{int}	& Intelligence	\\
-	\charfield{ins}	& Instinct		\\
-	\charfield{ch}	& Charisma		\\
-	\charfield{ag}	& Agility		\\
-	\charfield{dex}	& Dexterity		\\
-	\charfield{con} & Constitution	\\
-	\charfield{str}	& Strength		\\
-	\charfield{it}	& Injury Threshold
+	\charfield{ri} & Rayleigh Index \textsubscript{(Cr+Int+Con)/20} \\
+	\charfield{melee} & Melee Base \textsubscript{(Cr+Ins+Ag+Str)/3} \\
+	\charfield{dmg}	& Melee Damage Bonus \textsubscript{(Ag+Str)/10} \\
+	\charfield{ini} & Initiative \textsubscript{(Cr+Ins+Ag)/10} \\
+	\charfield{leap} & Standing Leap \textsubscript{(Ag+Str)/40} \\
 \end{tabularx}
-%
 \begin{tabularx}{\columnwidth}{Xrl}
-	& Rayleigh Index	& \charfield{ri}	\\
-	& Medical Toughness&\charfield{mt}	\\
-	& Initiative		& \charfield{ini}	\\
-	& Melee Base		& \charfield{melee}	\\
-	& Ranged Base		& \charfield{range}	\\
-	& Melee Damage Bonus&\charfield{dmg}	\\
-	& Movement Speed	& \charfield{ms}	\\
-	& Standing Leap	& \charfield{leap}	\\
-	& Standing Jump	& \charfield{jump}
+	& Medical Toughness \textsubscript{(Ag+Con+Str)/20} &\charfield{mt}	\\
+	& Ranged Base \textsubscript{(Int+Ins+Dex+Str)/3} & \charfield{range} \\
+	& Injury Threshold \textsubscript{ConB} & \charfield{it} \\
+	& Movement Speed \textsubscript{(Ag+Ag+Str)/40+5} & \charfield{ms}	\\
+	& Standing Jump	\textsubscript{(Ag+Str)/160} & \charfield{jump}
 \end{tabularx}
 \end{multicols}

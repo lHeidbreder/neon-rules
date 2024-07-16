@@ -1,17 +1,16 @@
-%Weapons
-\newcounter{i}
-{\huge\bfseries Melee Weapons}
-\begin{multicols}{3}
-	\forloop{i}{0}{\value{i} < 3}{\meleeweapon{\arabic{i}}}
-\end{multicols}
-
-%Inventory
-{\huge\bfseries Inventory}
+\bodylocation{Head}
 \begin{multicols}{2}
-	\forloop{i}{0}{\value{i} < 36}{\TextField[width=\columnwidth, name=inv\arabic{i}]{}\\}
+	\bodylocation{Left Arm}
+	\bodylocation{Right Arm}
 \end{multicols}
-
-%Notes Box
-\textbf{\large Notes}\\
-\TextField[name=notes, multiline, width=\columnwidth, height=10.5\baselineskip]{}
+\bodylocation{Torso}
+\begin{multicols}{2}
+	\bodylocation{Left Leg}
+	\bodylocation{Right Leg}
+\end{multicols}
+\vspace{8mm}
+\textbf{\large Miscellaneous Augments}\\
+\textbox{miscaugs}
 \par
+
+

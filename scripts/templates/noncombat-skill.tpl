@@ -1,1 +1,1 @@
-@skill@ @subtype@ & \skillcheckbox{@skill@@subtype@_untrained}\skillcheckbox{@skill@@subtype@_known}\skillcheckbox{@skill@@subtype@_trained}\skillcheckbox{@skill@@subtype@_experienced}\skillcheckbox{@skill@@subtype@_mastered}\\
+@skill@ \textsubscript{@subtype@} & \skillcheckbox{@skill@@subtype@_untrained}\skillcheckbox{@skill@@subtype@_known}\skillcheckbox{@skill@@subtype@_trained}\skillcheckbox{@skill@@subtype@_experienced}\skillcheckbox{@skill@@subtype@_mastered} & \charfield{@skill@@subtype@}\\

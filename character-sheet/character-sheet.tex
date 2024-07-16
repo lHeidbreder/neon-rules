@@ -1,5 +1,5 @@
 %TODO: is not A4!
-\documentclass{letter}
+\documentclass[a4paper]{letter}
 \usepackage[english]{babel}
 %\usepackage{hyperref}
 \usepackage{array}
@@ -14,7 +14,7 @@
 \addtolength{\textheight}{\heightmarge}
 \addtolength{\topmargin}{-1\dimexpr \heightmarge \relax}
 %\addtolength{\bottommargin}{-1\heightmarge}
-\def\sidemarge{.5\oddsidemargin}
+\def\sidemarge{0mm}
 \addtolength{\textwidth}{2\dimexpr\oddsidemargin-\sidemarge\relax}
 \setlength\oddsidemargin{\sidemarge}
 \setlength\evensidemargin{\sidemarge}
@@ -30,25 +30,74 @@
 	\vspace{2mm}
 	\begin{tabular}{rl}
 		HP: & \charfield{#1hpcurrent} / \charfield{#1hptotal}\\
+		\hline
 		Armor: & \charfield{#1armor}\\
-		Augments: & \TextField[width=0.3\textwidth, name=#1]{}
+		Mods: & \TextField[width=0.3\textwidth, name=armormods#1]{} \\
+		\hline
+		Augments: & \TextField[width=0.3\textwidth, name=augs#1]{} \\
+		Mods: & \TextField[width=0.3\textwidth, name=augmods#1]{}
 	\end{tabular}
 	\par
 }
 \newcommand{\meleeweapon}[1]{
-	\begin{tabular}{rc}
-		Name & \inputfield{#1name} \\
-		Head & \inputfield{#1head} \\
-		Grip & \inputfield{#1grip} \\
-		Core & \inputfield{#1core} \\
-		Damage & \charfield{#1dmg} \\
-		AP & \charfield{#1ap}
-	\end{tabular}
-	\par
+	\noindent\fbox{\parbox{\linewidth}{
+		\centering
+		\TextField[
+			name=melee#1name,
+			width=\columnwidth,
+			height=1.3\baselineskip,
+			bordercolor=black
+			]{}\\
+		\vspace{2mm}
+		{
+		\setlength\tabcolsep{0mm}
+		\begin{tabularx}{\columnwidth}{ccc}
+			Head & Grip & Core \\
+			\inputfield{melee#1head} &
+			\inputfield{melee#1grip} &
+			\inputfield{melee#1core} \\
+			\inputfield{melee#1dmg} &
+			\inputfield{melee#1ap} &
+			\inputfield{melee#1skill} \\
+			DMG & AP & Skill
+		\end{tabularx}
+		}
+		\\%
+		Notes, Special Rules, etc.
+		\TextField[name=notesr#1, multiline, width=\columnwidth]{}
+		\par
+	}}
+}
+
+\newcommand{\rangedweapon}[1]{
+	\noindent\fbox{\parbox{\linewidth}{
+		\centering
+		\TextField[
+		name=ranged#1name,
+		width=\columnwidth,
+		height=1.3\baselineskip,
+		bordercolor=black
+		]{}\\
+		\vspace{2mm}
+		{
+			\setlength\tabcolsep{0mm}
+			\begin{tabularx}{\columnwidth}{ccc}
+				Damage & AP & RoF \\
+				\inputfield{ranged#1dmg} &
+				\inputfield{ranged#1ap} & \inputfield{ranged#1rof} \\
+				\inputfield{ranged#1reach} & \inputfield{ranged#1mag} & \inputfield{ranged#1skill} \\
+				Reach & Mag & Skill \\
+			\end{tabularx}
+		}
+		\par
+		Notes, Special Rules, Mods, etc.
+		\TextField[name=notesr#1, multiline, width=\columnwidth]{}
+		\par
+	}}
 }
 
 \def\inputfield#1{ \TextField[width=0.3\columnwidth, bordercolor=black, name=#1]{} }
-\def\charfield#1{ \TextField[width=8mm, name=#1]{} }
+\def\charfield#1{ \TextField[width=10mm, name=#1]{} }
 \def\textbox#1{ \TextField[name=#1, multiline, width=\columnwidth, height=5.5\baselineskip]{} }
 \def\skillcheckbox#1{\CheckBox[name=#1]{}}%,height=0.4\baselineskip,width=0.8\baselineskip]{}}
 
@@ -58,14 +107,22 @@
 \centering
 \pagestyle{empty}
 
+%basic info
 \input{components/page1}
 \pagebreak
+%skills, abilites
 \input{components/page2}
 \pagebreak
+%combat skills, weapons
 \input{components/page3}
 \pagebreak
+%hp, armor, augs
 \input{components/page4}
 \pagebreak
+%inventory, notes
+\input{components/page5.tex}
+\pagebreak
+%addons
 \input{components/pageaddon_psionics}
 
 \end{document}

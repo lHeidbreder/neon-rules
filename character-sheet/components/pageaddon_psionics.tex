@@ -1,6 +1,5 @@
-%TODO: use template?
-\begin{tabular}{rl}
-Psionics & \skillcheckbox{psionics\_untrained}\skillcheckbox{psionics\_known}\skillcheckbox{psionics\_trained}\skillcheckbox{psionics\_experienced}\skillcheckbox{psionics\_mastered}
+\begin{tabular}{rll}
+Psionics & \skillcheckbox{psionics\_untrained}\skillcheckbox{psionics\_known}\skillcheckbox{psionics\_trained}\skillcheckbox{psionics\_experienced}\skillcheckbox{psionics\_mastered} & \charfield{@skill@@subtype@}
 \end{tabular}
 \par
 \begin{multicols}{2}
@@ -15,10 +14,10 @@ Psionics & \skillcheckbox{psionics\_untrained}\skillcheckbox{psionics\_known}\sk
 \par
 %
 %spell templates
-\def\modfield#1{\TextField[name=#1, width=19mm]{}}
+\def\modfield#1{\TextField[name=#1, width=20mm]{}}
 \def\spelltemplate#1{
 	\\
-	\TextField[name=st-descriptor#1, width=28mm]{} &%
+	\TextField[name=st-descriptor#1, width=40mm]{} &%
 	\modfield{st-complexity#1} &%
 	\modfield{st-casttime#1} &%
 	\modfield{st-duration#1} &%

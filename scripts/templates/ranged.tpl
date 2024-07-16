@@ -3,7 +3,7 @@
 		\textbf{\ul{@name@}}\\
 		\textit{@flavor_text@}\\
 		\ifthenelse{\isempty{@weight@}}{}{\textbf{Weight}: @weight@ kg\\}
-		\ifthenelse{\isempty{@price@}}{}{\textbf{Price}: cr @price@\\}
+		\ifthenelse{\isempty{@price@}}{}{\textbf{Price}: cR @price@\\}
 		\ifthenelse{\isempty{@shots@}}{}{\textbf{Shots}: @shots@\\}
         \textbf{Damage}: \ifthenelse{\isempty{@damage@}}{0}{@damage@}\\
         \textbf{AP}: \ifthenelse{\isempty{@ap@}}{0}{@ap@}\\
