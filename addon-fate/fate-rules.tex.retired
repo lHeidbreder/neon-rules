@@ -8,9 +8,7 @@
 	\input{../core-rulebook/config/frontpages.tex}
 	
 	\chapter{Introduction}
-	Neon is a very lethal game. Since we don't want our protagonists to die to a stray bullet, they may need to be protected by fate itself. 
-	This may be represented by luck, unnatural determination and willpower or supernatural intervention as per GM discretion and game world.
-
+	
 	\chapter{Mechanics}
 	\section{Resource}
 	At character creation every player character gains \emph{Resilience Tokens} - the amount can range from

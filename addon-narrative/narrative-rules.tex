@@ -2,7 +2,7 @@
 \input{../core-rulebook/config/news.tex}
 \input{../core-rulebook/config/packages.tex}
 
-\def\subtitle{Narrative Rules}
+\def\subtitle{Extended Rules}
 
 \begin{document}
 	\input{../core-rulebook/config/frontpages.tex}
@@ -14,13 +14,55 @@
 	\par
 	It is encouraged for the GM to keep them at hand and to offer them in dire or epic situations to keep fun and motivation up, or to restore hope.
 
-	\chapter{Rules}
+	\chapter{Narrative Rules}
 	\nrule{I know a guy}{When the party has absolutely no idea where to continue, a critical NPC died in unfortunate circumstances or something similar, a party member may exclaim “I know I guy”.}{The player describes an NPC. This description includes a name, a profession, how he would be able to help and why… or at what cost. The GM should decide on some sort of side effect. Maybe the NPC is currently wanted and the players are targeted by association or the character is in the NPC’s bad books for one reason or another. Ideally the character was mentioned in the character's 20 questions before, though this should not be required.\\
 		Without any caveat the use of this rule should always be denied; if a player is looking for friends in high places, a boon exists for that.}
 	\nrule{A monkey's paw}{A character just scored a bare failure but really needs to succeed.}{The character may be allowed to pass - at a cost. This may be taking a hit to health, exhaustion or reputation; alternatively equipment may be damaged among many other, more situational things like being detected and other complications. The more sense this consequence makes in narration, the better.\\
 		Both GM and player need to consent to the effect.}
-	\nrule{Unique experience}{Mechanically a character passes an extremely difficult test. Narratively a character lives through a trying, mind breaking and personality altering ordeal against all odds.}{The character may gain a 50\% discount on one level of a skill or education. Alternatively a disabling characteristic may be reduced by 5-10 points due to the newly found courage or the change in perspective.}
+	\nrule{Unique experience}{Mechanically a character passes an extremely difficult test. Narratively a character lives through a trying, mind breaking and personality altering ordeal against all odds.}{
+		The character may gain a 50\% discount on one level of a skill or education, or an ability.
+		Alternatively a disabling characteristic may be reduced by 5-10 points due to the newly found courage or the change in perspective.}
 	\nrule{Loyalty is its own reward}{A character succumbs to fear or a disabling characteristic, causing infighting or complete and total derailing of the adventure or campaign.}{The player may with permission of the GM declare loyalty to the party. He may act to protect and support the party as if he was not affected but in turn forfeits his own decision making.\\
 		As banes and fear exist for a reason, it is advised to allow this sparingly and in critical situations only.}
-	\nrule{The Finest Hour}{Once per character ever, in the most dire of situations.}{The character immediately takes a turn in combat. This may be right after his own. This cannot interrupt another character.}
+	\nrule{The Finest Hour}{Once per character ever, in the most dire of situations.}{
+		The character immediately takes a turn in combat,
+			which does not require a declaration phase.
+		This may be right after his own.
+		This cannot interrupt another character.}
+	
+	\chapter{Armor of Fate}
+	Neon is a very lethal game.
+	Since we don't want our protagonists to die to a stray bullet, they may need to be protected by fate itself. 
+	This may be represented by luck, unnatural determination and willpower or supernatural intervention as per GM discretion and game world.
+	\begin{exampleblock}
+		These rules are a bit more advanced and require a bit more bookkeeping.
+	\end{exampleblock}
+	
+	\section{Resource}
+	At character creation every player character gains \emph{Resilience Tokens} - the amount can range from
+	\begin{sitemize}
+		\item \textbf{1} for a slightly less punishing experience, over
+		\item \textbf{2} for heroic protagonists, to
+		\item \textbf{4} for an absolute cakewalk.
+	\end{sitemize}
+	Once used they are lost and can be restored by performing heroic acts, taking a key role in the players' immaculate plan, finishing their character arc or other such occasions. Generally speaking they should be reset at the end of an adventure.
+	\begin{exampleblock}
+		Note:
+		\begin{itemize}
+			\item Don't be too stingy with them, as they are yet another resource allowing a GM to turn up the heat.
+			\item Players that have few or no tokens can often be given one for less impressive tasks than those characters who already have a safety net.
+			\item Make sure that the key roles - and therefore the Resilience Tokens - don't always fall to the same player characters.
+		\end{itemize}
+	\end{exampleblock}
+	\section{Uses}
+	\emph{Resilience Tokens} can be used as follows:
+	\par
+	\begin{tabularx}{\columnwidth}{rX}
+		1 token & When the character takes a hit, he takes no damage from said hit. \\
+		1 token & When the character dies, he is stable but comatose instead. It is up to GM discretion how long it takes for him to regain consciousness. \\
+		1 token & The character automatically passes a Restraint test to suppress all deterioration as a free action. \\
+		2 tokens & The character becomes immune to pain, fear and getting stunned for the rest of the encounter.
+	\end{tabularx}
+	\par
+	All of these are subject to GM discretion - he may exclude some options, add other ones or adjust the cost if the campaign in question deems that necessary.
 \end{document}

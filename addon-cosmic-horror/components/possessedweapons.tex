@@ -1,29 +1,36 @@
 \section{Possessed Weapons}
 \label{sec:possessedweapon}
 \subsection*{Binding}
-Unlike living creatures an inanimate object always has to have a demon bound to it ritually.
+Unlike living creatures an inanimate object always has to have a demon bound to it ritually
+- as Demons are not interested in objects and objects cannot invite Demons.
 \par
-First the demon is summoned.
+First a demon needs to running free, e.g. from Summoning.
 The free demon is then distracted or incapacitated for 5 minutes while the object is prepared to house the spirit.
 \par
-Once the object is ready, the ritual leader must win a contest of wills against the demon, forcing it into the object and sealing it away.
-The difference in DoS is referred to as the \emph{Maximum Binding Strength}.
-The \emph{Effective Binding Strength} is a number between 0 and the \emph{Maximum Binding Strength} chosen by the ritual leader (see p.\pageref{ch:rituals}+), plus D5.\\
-If he fails, he is instead stunned for D5 rounds and the demon becomes aware of the attempt... and very angry.
+Once the object is ready, the ritual leader must win a contest of wills
+	(an opposed Courage-based philosophy test)
+	against the demon, forcing it into the object and sealing it away.
+\\%
+The ritual leader may repeat this test as often as he likes and collect the difference in DoS.
+Once he is satisfied, the total is noted down as the \emph{Binding Strength}.
+If the total ever falls below 0, however, the leader is stunned for D5 rounds and the demon is frenzied.
 
 \subsection*{Distortions}
 When a demon possesses a weapon, it gains unfathomable new abilities and its outward appearance is drastically warped.
 It can no longer be disassembled, becomes very resistant or outright immune to most damage, regenerates like a living creature and requires no maintenance.
 \par
 In addition draw a number of tarot cards equal to twice the summoning's DoS.
-Then remove an amount of cards equal to the Effective Binding Strength.\\
+Then remove an amount of cards equal to the Binding Strength.\\
 Go through all leftover cards and apply the results in \ref{sec:traits}.
 \\%
-\emph{DM note: Ideally the players know only the meaning of each card, not the exact effect.}
-\\%
 Apply all of the remaining effects.
+\begin{exampleblock}
+	\itshape
+	Ideally the players know only the meaning of each tarot card
+	(e.g. \emph{Youth} for a straight Fool),
+	not the the associated weapon trait.
+\end{exampleblock}
 
 \subsection{Traits}
 \label{sec:traits}
-%Images taken from https://pixabay.com/images/search/major%20arcana/ by giftedMG
 \luaimport{components/weapontraits.csv}{arcanum.tpl}{possessedweapontraits}

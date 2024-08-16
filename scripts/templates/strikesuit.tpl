@@ -11,14 +11,21 @@
 \end{tabular}
 \par
 \vspace{2mm}
-Movement Speed: @movement_speed@\\
+\ifthenelse{\equal{0}{@movement_speed@}}
+    {}
+    {Movement Speed Bonus: @movement_speed@\\}
 Strength / Agility: @stat_bonus@\\
 Mods: @mod_slots@\\
 Weight: @weight@kg\\
+%cannot cascade ifthenelse
+\ifthenelse{\isempty{@variant@}}
+    {\def\seriesmodpreamble{}}
+    {\def\seriesmodpreamble{\item \emph{@series@-series modifiers}}}
 \ifthenelse{\isempty{@itemize:further_modifiers@}}
 {}
 {Further Modifiers:
 \begin{itemize}
+    \seriesmodpreamble
     @itemize:further_modifiers@
 \end{itemize}}
 \end{minipage}

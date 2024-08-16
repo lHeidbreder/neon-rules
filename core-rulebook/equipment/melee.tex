@@ -1,10 +1,11 @@
 \pagebreak
 \section{Melee}
 \subsection{Building \emph{your} weapon}
-Melee weapons are not set in stone but created from various components, allowing for ideal customization.\\
+Melee weapons are not set in stone - they are instead created from various components, allowing for ideal customization.\\
 A melee weapon needs a grip. Swords, knives and whips have \emph{hilts}, while hammers, axes and spears have \emph{shafts}.\\
 The weapon point is the second component. Swords, knives and spears have \emph{blades}; axes and hammers have \emph{heads} and \emph{whips} have their own category.\\
-Lastly every melee weapon may also have a \emph{core} component. These are not required but add additional functionality to the weapon.
+Lastly every melee weapon may also have a \emph{core} component.
+These are not required but add additional unique features to the weapon.
 \subsection{Components}
 \subsubsection{Hilts}
 \vspace{8mm}
@@ -13,7 +14,7 @@ Lastly every melee weapon may also have a \emph{core} component. These are not r
 \meleecomponent{Push hilt}{A hilt vertical to the blade. Biomechanically inferior to a normal hilt in terms of reach and leverage, yet somehow preferred by some.}{One-handed; weapon uses Melee Combat Training (Striking) instead}{0,1 kg}{cr 4}{}
 \meleecomponent{Duelist hilt}{An offensively minded hilt at a slight tilt, made to make disarming an opponent much easier.}{One-handed; +15 to disarms}{0,2 kg}{cr 7}{}
 \meleecomponent{Caged hilt}{Shielding the sword wielding hand in some way is an old idea but, like many old ideas, still holds merit this day, so this handle was fitted with a protective basket.}{One-handed; Disarming the wielder is at a -20; The wielding hand (location: arm) has +3 armor}{0,4 kg}{cr 10}{}
-\meleecomponent{Ergonomic hilt}{A handle fitting the wielder's hand very closely and therefore allowing the user to get a much better feel for the weapon's point.}{One-handed; Binding grants 50\% more bonus, rounded down}{0,2 kg}{cr 12}{}
+\meleecomponent{Ergonomic hilt}{A handle fitting the wielder's hand very closely and therefore allowing the user to get a much better feel for the weapon's point.}{One-handed; Binding is twice as effective.}{0,2 kg}{cr 12}{}
 \meleecomponent{Simple long hilt}{A generic two-handed sword hilt offering more leverage than a one-handed hilt.}{Two-handed; +5 to combat rolls}{0,3 kg}{cr 4}{}
 \meleecomponent{Giant Hilt}{A massive sword hilt. This has no utility for humans and exists more for smiths to boast.}{Oversized}{3 kg}{cr 35}{}
 \end{multicols}
@@ -30,8 +31,13 @@ Lastly every melee weapon may also have a \emph{core} component. These are not r
 \subsubsection{Blades}
 \vspace{8mm}
 \begin{multicols}{2}
-\meleecomponent{No blade}{Generally speaking a blade gives great advantages. Sometimes however a blade is simply not available but a stick is still a massive upgrade over fists.}{weapon becomes club}{0 kg}{cr 0}{}
-\meleecomponent{Knife blade}{Short, stiff blade. Good penetration, can cut if necessary.}{Piercing}{0,2 kg}{cr 7}{}
+\meleecomponent{No blade}{Generally speaking a blade gives great advantages. Sometimes however a blade is simply not available but a stick is still a massive upgrade over fists.}{The weapon becomes a simple, primitive club.}{0 kg}{cr 0}{}
+\meleecomponent{Knife blade}{Short, stiff blade. Good penetration, can cut if necessary.}{
+	None
+	%This is supposed to have Piercing
+	%but that only makes sense when range exists
+	%otherwise Mono does the same
+	}{0,2 kg}{cr 7}{}
 \meleecomponent{Sword blade}{A long blade that cuts and stabs well.}{+3 damage}{0,9 kg}{cr 10}{}
 \meleecomponent{Inverse blade}{A curved sword blade with its edge on the inside. Edge alignment is more difficult but cuts become more devastating.}{Add Dex to melee damage bonus calculation}{0,9 kg}{cr 13}{}
 \meleecomponent{Plasma cutter}{A knife-sized blade consisting of finely shaped plasma. Cuts through heat much more than force and thereby is easier to use by weaker people.}{+6 damage; halve Melee Damage Bonus}{0,6 kg}{cr 27}{}
@@ -52,7 +58,7 @@ Lastly every melee weapon may also have a \emph{core} component. These are not r
 \subsubsection{Heads}
 \vspace{8mm}
 \begin{multicols}{2}
-\meleecomponent{No head}{While a designated weapon point is generally superior to none, no weapon head is superior to no weapon.}{None}{0 kg}{cr 0}{}
+\meleecomponent{No head}{While a designated weapon point is generally superior to none, no weapon head is superior to no weapon.}{The weapon becomes a simple, primitive club.}{0 kg}{cr 0}{}
 \meleecomponent{Hammer head}{A blunt implement originally designed as a tool, later used in a refined form to defeat armor.}{Trauma}{0,8 kg}{cr 8}{}
 \meleecomponent{Axe head}{A very top heavy blade. Good at splitting more so than cutting.}{+3 damage}{0,7 kg}{cr 9}{}
 \meleecomponent{Pick head}{The head on a war pick is designed to defeat armor by breaking through weaker spots. Still works good today.}{Piercing}{0,7 kg}{cr 11}{}
@@ -66,10 +72,22 @@ Lastly every melee weapon may also have a \emph{core} component. These are not r
 \meleecomponent{Bipod}{Legend has it that bipods on knives allow stabbing helicopters to death.}{+2 to intimidation if the weapon is visible}{0,8 kg}{cr 6}{}
 \meleecomponent{Dripper}{Stiletto knives delivering toxins are as infamous as they are rare. However some shady individuals do use such weaponry.}{Adds an injector to the weapon the applies a prepared dose of an injection type chemical to the target on hit.}{0,7 kg}{cr 14}{Blade}
 \meleecomponent{Shock Wire}{An energy source is added inside the weapon, electrifying it. On an already electrical weapon it is possible to direct the electrical field in a manner that will disrupt energy shielding.}{Shocking; If the weapon is already Shocking, it gains Disrupt.}{0,8 kg}{cr 22}{}
-\meleecomponent{EMP field}{Coils within the weapon emit an electromagnetic field strong enough to interrupt electronic devices.}{EMP}{0,8 kg}{cr 22}{}
+\meleecomponent{EMP field}{Coils within the weapon emit an electromagnetic field strong enough to interrupt electronic devices.}{When activated as a free action,
+	the weapon gains \emph{EMP} this round.
+	Takes a small fuel cell and 8 actions to recharge.}{0,8 kg}{cr 22}{}
 \meleecomponent{Shotgun}{A single shot 12gauge launcher attached to a hammerhead. It might as well be an improvised explosive device and is as dangerous for the target as for the user and weapon.}{Add a single-shot shotgun to the head, increasing damage by 2D10 for one hit. That hit can only be a single or sure strike. Takes 5 actions to reload.}{0,6 kg}{cr 23}{Hammer}
 \meleecomponent{Ripper Field Generator}{Lovingly dubbed "Ripper Field" by mobsters, this projected force field tears at otherwise stable matter, making it very easy to cut through tough material. The field itself is not very stable however and can only be kept alive for a few seconds.}{When activated as a free action, the weapon gains +4 AP for 4 rounds. Takes a small fuel cell and 8 actions to recharge.}{0,8 kg}{cr 28}{Blade}
-\meleecomponent{IED}{An IED on a stick, what do you expect? Quite dangerous, quite destructive.}{Improvised; An attack causes an explosion equal to a 40mm HE grenade, generally destroying the weapon.}{0,2 kg}{cr 30}{}
+\meleecomponent{IED}{An IED on a stick, what do you expect? Quite dangerous, quite destructive.}{The weapon gains \emph{Improvised}.
+	An attack with this weapon causes an explosion equal to a 40mm HE grenade, generally destroying the weapon.\\
+	If the target wears an active PES,
+	only he is hit and the damage is doubled.}{0,2 kg}{cr 30}{}
 \meleecomponent{Rocket booster}{Everyone understands that a faster weapon point is more destructive. Since too high speeds make edge alignment and controlling the weapon one-handed nearly impossible, it's only safe to use on large blunt weapons.}{Allows the wielder to forego a second action to gain D10 additional damage.}{1,1 kg}{cr 32}{Two-handed axe or hammer}
-\meleecomponent{Thunder Field}{A massive repulsor field - normally used to block mortar fire - is strapped to a club or hammer for some reason. It now lacks precision and battery life but makes up for it with the additional work for janitors.}{When activated as a free action, any target hit and possible targets up to one meter removed are thrown 2D10 meters away from the wielder, reduced by 1 meter per 50kg it weighs. Takes a small fuel cell and 8 actions to reload.}{3,2kg}{cr 38}{Two-handed blunt weapon}
+\meleecomponent{Thunder Field}{A massive repulsor field
+	- normally used to block mortar fire -
+	is strapped to a club or hammer for some reason.
+	It now lacks precision and battery life
+	but makes up for it by causing additional work for janitors.}{When activated as a free action,
+	any target hit and possible targets up to one meter removed are thrown 3D10 meters away from the wielder,
+	reduced by 1 meter per 50kg it weighs.
+	Takes a small fuel cell and 8 actions to reload.}{3,2kg}{cr 38}{Two-handed blunt weapon}
 \end{multicols}

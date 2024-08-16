@@ -6,10 +6,11 @@
 		\ifthenelse{\isempty{@price@}}{}{\textbf{Price}: cR @price@\\}
 		\ifthenelse{\isempty{@shots@}}{}{\textbf{Shots}: @shots@\\}
         \textbf{Damage}: \ifthenelse{\isempty{@damage@}}{0}{@damage@}\\
-        \textbf{AP}: \ifthenelse{\isempty{@ap@}}{0}{@ap@}\\
+        \ifthenelse{\isempty{@ap@} \OR \equal{@ap@}{0}}{}{\textbf{AP}: @ap@\\}
 		\ifthenelse{\isempty{@mag@}}{}{\textbf{Mag}: @mag@\\}
         \ifthenelse{\isempty{@ammo@}}{}{\textbf{Ammo}: @ammo@\\}
-		\ifthenelse{\isempty{@reload@}}{}{\textbf{Reload}: \mbox{@reload@ actions}\\}
+    \ifthenelse{\equal{@reload@}{1}}{\def\acident{action}}{\def\acident{actions}}
+		\ifthenelse{\isempty{@reload@}}{}{\textbf{Reload}: \mbox{@reload@ \acident}\\}
 		\ifthenelse{\isempty{@range@}}{}{\textbf{Range}: @range@m\\}
 		\ifthenelse{\isempty{@special_rules@}}{}{\textbf{Special Rules}: @special_rules@}
 	\end{minipage}
