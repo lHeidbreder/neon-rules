@@ -30,6 +30,16 @@
 %Custom Commands
 \newcommand{\ul}[1]{\underline{\smash{#1}}}
 \newcommand{\breakline}{\vspace{.5cm} \hrule width \columnwidth \relax}
+\newcommand{\derivedvalue}[3]{
+	\begin{samepage}
+	\subsubsection{#1 \textsubscript{\textlangle#2\textrangle}}
+	\hfill
+	\begin{minipage}{\dimexpr\columnwidth-1cm}
+		#3
+	\end{minipage}
+	\end{samepage}
+	\par
+}
 \newcommand{\specialrule}[2]{
 	\begin{minipage}{\columnwidth}
 		\textbf{\ul{#1:}}\\
