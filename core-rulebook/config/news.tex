@@ -50,8 +50,8 @@
 \newcommand{\supply}[4]{
 	\begin{minipage}{\columnwidth}
 		\textbf{\ul{#1}}\\
-		\textit{Price: #3}\\
-		\textit{Weight: #4}\\
+		\textit{Price: cR #3}\\
+		\textit{Weight: #4 kg}\\
 		#2
 	\end{minipage}
     \par
@@ -127,7 +127,7 @@
 \newcommand{\weaponmod}[5]{
 	\begin{minipage}{\columnwidth}
 		\textbf{\ul{#1}}\\
-		\textit{#3}; \textit{#4}; \textit{#5}\\
+		\textit{#3}; \textit{cR #4}; \textit{#5 kg}\\
 		#2
 	\end{minipage}
 	\par
@@ -136,7 +136,7 @@
 	\begin{minipage}{\columnwidth}
 		\textbf{\ul{#1:}}\\
 		\textit{#2}\\
-		\textbf{Weight}: #4; \textbf{Price}: #5\ifthenelse{\isempty{#6}}{}{; \textbf{Requirement}: #6}\\
+		\textbf{Weight}: #4 kg; \textbf{Price}: cR #5\ifthenelse{\isempty{#6}}{}{; \textbf{Requirement}: #6}\\
 		\textbf{Effect}: #3
 	\end{minipage}
 	\par
@@ -160,7 +160,7 @@
 			\hline
 		\end{tabular}\par
 		\vspace{2mm}
-		\textit{Price:} #8; \textit{Weight:} #9\\
+		\textit{Price:} cR #8; \textit{Weight:} #9 kg\\
 		#7
 	\end{minipage}
 	\par
@@ -174,22 +174,12 @@
 	\end{minipage}
 	\par
 }
-\newcommand{\pes}[6]{
-	\begin{minipage}{\columnwidth}
-		\textbf{\ul{#1}}\\
-		Armor: #2; Threshold: #3\\
-		\textit{Price:} #4; \textit{Weight:} #5
-		\ifthenelse{\isempty{#6}}{}{\\} %conditional line break
-		#6
-	\end{minipage}
-	\par
-}
 \newcommand{\implant}[7]{
 	\begin{minipage}{\columnwidth}
 		\textbf{#1}\\
 		\textit{#2}\\
 		\textit{Effect}: #3\\
-		\textit{Price:} #6; \textit{Load:} #5\ifthenelse{\isequivalentto{-}{#4}}{}{; \textit{Slot:} #4}\\
+		\textit{Price:} cR #6; \textit{Load:} #5\ifthenelse{\isequivalentto{-}{#4}}{}{; \textit{Slot:} #4}\\
 		\textit{Available Mods:} #7
 	\end{minipage}
 	\par
@@ -221,7 +211,7 @@
 		\textbf{#1}\\
 		Size: #3; Concealment: #4; Defense: #5\\
 		Conditions: #6\\
-		\textit{Cost:} #2
+		\textit{Cost:} cR #2
 	\end{minipage}
 	\par
 }
@@ -232,7 +222,7 @@
 		Size: #3\\
 		Concealment: #4\\
 		Defense: #5\\
-		\textit{Cost:} #6
+		\textit{Cost:} cR #6
 	\end{minipage}
 	\par
 }

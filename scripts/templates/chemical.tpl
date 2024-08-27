@@ -17,6 +17,6 @@ Severe Overdose:\\
 \end{itemize}
 OD Resistance:\tab @od_resist@\\
 Addiction After:\tab @addiction_countdown@\\
-Price:\tab cr @price@\\
+Price:\tab cR @price@\\
 Weight:\tab @weight@g\\
 Notes:\tab @notes@
