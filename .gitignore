@@ -284,6 +284,7 @@ compiler_output/
 file_output/
 _rulepackage/
 *.texin
+*.fade.png
 
 # csv import temp files
 */out.txt

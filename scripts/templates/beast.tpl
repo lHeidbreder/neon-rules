@@ -34,6 +34,7 @@
 \def\currentfillerimagepath{../art/\subtitle/@picture_path@}
 \IfFileExists
     {\currentfillerimagepath}
-    {\begin{center}\filltopageendgraphics{\currentfillerimagepath}\end{center}\pagebreak} %fill the rest of the page with the image
+    {\begin{center}\filltopageendgraphics{\currentfillerimagepath}\end{center}} %fill the rest of the page with the image
     {} %if there was no filler image, do nothing
-\pagebreak
+\pagebreak[3]
+

@@ -62,6 +62,8 @@
 \newfontfamily\parhead[Path = \fontpath]{Legend}[Extension = .otf]
 
 %Heading formatting
+%TODO: try to replace \needspace usage with [nobottomtitles] feature in titlesec
+%looks like the cleaner option, but may be less flexible
 \usepackage{titlesec}
 \usepackage{needspace}
 \titleformat{\chapter}{\needspace{30mm} \heading\huge\bfseries}{\thechapter}{20pt}{}%\Huge}
