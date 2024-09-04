@@ -19,7 +19,7 @@
     \end{sitemize} 
     \columnbreak
     }
-\ifthenelse{\isempty{@itemize:traits@}}{}{ \textbf{Tags:}
+\ifthenelse{\isempty{@itemize:traits@}}{}{ \textbf{Traits:}
     \begin{sitemize}[8]
     @itemize:traits@
     \end{sitemize}
