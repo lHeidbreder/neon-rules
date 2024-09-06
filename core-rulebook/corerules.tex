@@ -299,7 +299,7 @@
 	\section{Walking, running, sprinting}
 	Characters move at different speeds, starting with a casual stroll and ending in a full-power short distance sprint.\\
 	\textbf{Walking speed} is about 3-4km/h, 1m/s or 3m per turn for a normal human being. Being larger or smaller might affect this but to a generally negligible degree. It is not exhausting and most things are not impaired at this speed.\\
-	\textbf{Running speed} is half a character’s movement speed in meters per second. At this speed most things and most notably combat actions take a -20 penalty. It is also exhausting after a while, so every ~5 minutes a jogging character takes a level of exhaustion.\\
+	\textbf{Running speed} is half a character’s movement speed in meters per second. At this speed most things and most notably combat actions take a -20 penalty. It is also exhausting after a while, so every \sim 5 minutes a jogging character takes a level of exhaustion.\\
 	A normal character’s \textbf{sprint speed} in meters per second is given by their derived value movement speed.
 	At this speed most actions (most notably all combat actions)
 		take a -40 penalty
@@ -503,14 +503,19 @@
 	Inner cybernetics affected by EMP cause one level of exhaustion to the wearer every round.\\
 	Proper shielding reduces the time of the effect and certain data drives can be immune to wipes by means of EMP.
 %
-	\section{Shock, fear and trauma}
-	When a character is exposed to stressful situations, he will suffer from shock. The character makes a courage check with a modifier according to the source and severity of shock.\\
+	\section{Fear, Shock and Trauma}
+	When a character is exposed to stressful situations, he will be at risk of suffering from Shock.
+	\\%
+	\paragraph{1. Fear}
+	The character makes a Courage check with a modifier according to source and severity.\\
 	This ranges from +0 for large amounts of blood or an unexpected dead body, over -20 for watching someone die in front of oneself, to -60 in truly desperate situations or near-death experiences.
 	Generally the better the reputation with the injured person and the less predictable the situation, the higher the penalty. It also takes a penalty equal to the sum of all “Fear” or “Phobia” disabling characteristics that fit the situation.
 	\par \vspace{-5mm}
 	In case the character meets multiple panic situations in a day, add a -10 penalty for each after the first.
-	\par \vspace{-5mm}
-	If the check is failed, roll a D10, add the Degrees of Failure and apply the according result from the table on page \pageref{feartable}.
+	\paragraph{2. Shock}
+	If the check is failed, the character suffers from Shock.
+	Roll a D10, add the Degrees of Failure.
+	Then apply the according result from the table on page \pageref{feartable}.
 
 	\chapter{Transhumanism}
 	\input{augs/philosophy}
@@ -554,10 +559,11 @@
 	\pagebreak
 
 %TODO: put questions in command
-%	\begin{samepage}
+%	\begin{minipage}{\columnwidth}
 %		\item #1\\
 %		\textit{#2}
-%	\end{samepage}
+%	\end{minipage}
+	\begin{multicols}{2}
 	\begin{enumerate}
 		\setlength\itemsep{-6mm}
 		\item What does the character look like?\\
@@ -610,6 +616,7 @@
 		\item What character traits define the character?\\
 			\textit{If you had to describe yourself is just a handful of words, which would you choose?}
 	\end{enumerate}
+	\end{multicols}
 
 	\section{Race \& Background}
 	Player characters are not the average Joe; they are heroes, villains, the protagonists of their story. However before they became these prodigies, they had to have done something, been someone. This is represented by race and background, the first step of character creation, which every character needs to have.\par
@@ -620,7 +627,10 @@
 	\section{Boons \& Banes}
 	The leftover GP can be spent on Boons, and missing GP can be compensated with Banes.\\
 	Boons describe an inherent advantage this character has over others. This is nothing that can be acquired after character creation but it might be at least partially substituted with augments.\\
-	Banes are disadvantages that are either innate or stem from the character’s background and are extremely hard to get rid of. They don’t cost GP but grant them instead. Up to 40 GP can be generated from banes.
+	Banes are disadvantages that are either innate or stem from the character’s background and are extremely hard (often even impossible) to get rid of.
+	They don’t cost GP but grant them instead.
+	Up to 40 GP can be generated from banes.
+	Anything beyond that is wasted.
 	\par
 	You should assure that all boons and banes don’t exist purely for mechanical reasons but that they fit the character.\\
 	If you are looking for additional mechanics, try reflavoring existing boons and banes instead of inventing new ones. There is usually something to fit most visions.\\
@@ -651,7 +661,9 @@
 	Some abilities might be interesting for the character as well. Some abilities might already be known from race or background. If those have prerequisites that the character does not fulfill, they are dormant until the character fulfills the prerequisites. A full list of abilities can be found in section \ref{abilitylist}.
 	\section{Shopping trip}
 	Lastly, a character needs some equipment. The amount of money a character starts with is equal to 100 plus their charisma. \\
-	By default every character will start with clothing fitting of their social standing, former profession and to a degree place of origin. Visit the equipment section below to buy anything beyond that.
+	By default every character will start with clothing fitting of their social standing, former profession and to a degree place of origin.
+	They also generally have a L1NC implant (see p. \pageref{implant:l1nc}).
+	Visit the equipment section below to buy anything beyond that.
 
 	\chapter{Equipment}
 	\input{lists/specialrules.tex}
