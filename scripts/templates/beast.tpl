@@ -3,7 +3,25 @@
 \ifthenelse{\isempty{@difficulty_social@}}{}{Social @difficulty_social@ / }
 \ifthenelse{\isempty{@difficulty_combat@}}{}{Combat @difficulty_combat@}
 \par
-\textit{@flavor_text@}
+\def\currentfillerimagepath{../art/\subtitle/bestiary/@picture_path@}
+\IfFileExists
+    {
+        \currentfillerimagepath
+    }{
+        \begin{multicols*}{2}
+        \textit{@flavor_text@}
+        \columnbreak
+        \begin{center}
+            \tryincludewithfade
+                [width=\columnwidth]
+            {
+                \currentfillerimagepath
+            }
+        \end{center}
+        \end{multicols*}
+    }{
+        \textit{@flavor_text@}
+    }
 \par
 \begin{tabular}{|l|l|l|l|l|l|l|l|r|r|}
     \hline
@@ -31,10 +49,5 @@
 \ifthenelse{\isempty{@itemize:other_equipment@}}{}{\item\textbf{Other}: @itemize:other_equipment@}
 \ifthenelse{\isempty{@armor@@itemize:weapons@@itemize:other_equipment@}}{}{\end{sitemize}}
 \end{multicols}
-\def\currentfillerimagepath{../art/\subtitle/@picture_path@}
-\IfFileExists
-    {\currentfillerimagepath}
-    {\begin{center}\filltopageendgraphics{\currentfillerimagepath}\end{center}} %fill the rest of the page with the image
-    {} %if there was no filler image, do nothing
 \pagebreak[3]
 

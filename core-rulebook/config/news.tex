@@ -195,6 +195,19 @@
 \newcommand{\mod}[2]{\item \textbf{#1}: #2}
 \newcommand{\psicomponent}[4]{\textbf{#1} & #2 & #3 & #4 \\}
 
+%prioritize graphics with fade
+\newcommand{\tryincludewithfade}[2][]{
+	
+	\directlua{
+		newpath=string.gsub("#2", ".png$", ".fade.png");
+		print(newpath);
+		tex.sprint("\\edef\\tmpTryincludewithfade{"..newpath.."}")
+	}
+	\show\tmpTryincludewithfade
+	\IfFileExists{\tmpTryincludewithfade}
+		{\includegraphics[#1]{\tmpTryincludewithfade}}
+		{\includegraphics[#1]{#2}}
+}
 %filler images
 \newcommand{\filltopageendgraphics}[2][]{%
 	\par
