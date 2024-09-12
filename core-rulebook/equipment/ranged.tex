@@ -1,4 +1,4 @@
-\def\rwimport#1{\luaimport{equipment/rangedweapons-#1.csv}{ranged.tpl}{#1}}
+\def\rwimport#1{\luaimport{equipment/rangedweapons-#1.csvin}{ranged.tpl}{#1}}
 \newcommand{\rangesec}[1]{
 	\subsubsection{#1}
 	\vspace{8mm}
@@ -8,10 +8,8 @@
 }
 \section{Ranged}
 \subsection{Weapons}
-%TODO: possibly putting weapons in samepage rather than minipage can fix the text passing the page number
 \rangesec{Pistol}
 \rangesec{Short Rifle}
-%TODO: first long rifle passes the bottom of the page
 \rangesec{Long Rifle}
 \rangesec{Heavy}
 \rangesec{Launcher}
@@ -385,7 +383,7 @@ Ranged weapons have a limited number of mod slots which can each only be used on
 \weaponmod{Energy Shield}
     {Adds a directional PES that covers the user's head and torso.
 	It may cover the whole user instead if used with a tripod.\\
-	Armor: 15 / Threshold: 4}
+	Armor: 15}
     {Core}
     {180}
     {3.8}
@@ -393,8 +391,10 @@ Ranged weapons have a limited number of mod slots which can each only be used on
     {Sophisticated aiming assistance takes care of all the hard work.
         The gun always uses a target value of 65 when taking shots,
         regardless of modifiers or the shooter.
-        It still requires to be pointed in roughly the right direction though
-        and will completely fail under EMP.}
+        It still requires to be pointed in roughly the right direction though,
+        the target has to be visible,
+        and will completely fail under EMP.
+    }
      {Core}
      {190}
      {6.9}

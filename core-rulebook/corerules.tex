@@ -292,7 +292,6 @@
 		these situations are rare and sometimes hard to keep track of.
 	It should be the table’s collective decision how many different modifiers and which of them in particular are being included. Also this section may only offer mechanical solutions; players might come up with way more creative responses that shake up the situation in a way that makes rolling dice unnecessary.
 
-	\pagebreak
 	\input{lists/skillexamples}
 
 	\chapter{Movement}
@@ -556,65 +555,9 @@
 	\section{Basic Questions}
 	Before anyone determines \emph{what} the character is - i.e. create a stat sheet - first it needs to be decided \emph{who} said character is. The following list of 20 questions covers all questions a player or a GM should have concerning a character and will form the basis for character creation from this point forward. Keep them close at every step, as they define who your character is at its core.
 
-	\pagebreak
-
-%TODO: put questions in command
-%	\begin{minipage}{\columnwidth}
-%		\item #1\\
-%		\textit{#2}
-%	\end{minipage}
 	\begin{multicols}{2}
 	\begin{enumerate}
-		\setlength\itemsep{-6mm}
-		\item What does the character look like?\\
-			\textit{Are you large or small?
-				Are you male or female?
-				Can people even tell?
-				What color are your hair and your eyes?
-				How are you built?}
-		\item What first impression does the character leave on strangers?\\
-			\textit{Do you look trustworthy or shady? Are others easily intimidated by you? Do you look deceptively smart or stupid?}
-		\item How did the character grow up?\\
-			\textit{What did you do in your past? What memories will you never forget?}
-		\item Does the character still have relations to people from his past?\\
-			\textit{Do you have parents or siblings and are they alive? What about other relatives, friends or comrades in arms? A rival perhaps? Or what about a lover?}
-		\item Why did the character join the party?\\
-			\textit{What event caused you to give up your previous life? What are you after now; what drives you?}
-		\item Where has the character been already?\\
-			\textit{Have you come around?
-				Where have you been?
-				For what reason do you travel?
-				From where do you take the funds?}
-		\item How does the character regard transhumanism?\\
-			\textit{Are you chromed up? Would you like to? Do you prefer tech or biotech?}
-		\item What’s the character’s opinion on chemical enhancements and recreation?\\
-			\textit{Do you like chems? Do you take some? Or do you think they're dangerous, too many side effects?}
-		\item For who or what would the character risk his life?\\
-			\textit{What is so dear to you that you would risk the only life you have? A person maybe? Or an idea, a dream?}
-		\item What’s the character’s biggest wish?\\
-			\textit{Do you have a dream, something you want to do above all else? Tell me about what you are living for.}
-		\item What’s the character’s biggest fear?\\
-			\textit{What do you fear more than anything? Existential dread? Dying without having made a difference? Losing a loved one? You gotta have something, I know it.}
-		\item What does the character’s morality look like and how law-abiding is he?\\
-			\textit{What do you say, are laws made to be followed or to be broken? Do you rip off others to gain an advantage or do you live for the greater good?}
-		\item Is the character open towards strangers?\\
-			\textit{Do you trust others? Or are they out to get you? What do they have to offer you?}
-		\item How important is life to him?\\
-			\textit{Do you value life?
-				Others' lives or just your own?
-				Would you walk over dead bodies to achieve your goals?}
-		\item What does the character think of animals?\\
-			\textit{Do you like animals? Do you like one in particular? And what about them? Do animals like you?}
-		\item What does the character regard as beautiful?\\
-			\textit{Everyone has something they really like to surround themselves with. What is it for you - paintings, sculptures, music... certain people? What do you like about it?}
-		\item What does the character like to eat and drink? What would he like to try?\\
-			\textit{Have you ever tried anything besides nutrient paste? Do you eat cooked food, perhaps even on a regular basis? And is there something that you'd definitely want to try?}
-		\item What does love look like to the character?\\
-			\textit{What do you feel when you love? Do you even know? Is it something mundane and commonplace or extremely special and precious?}
-		\item Does the character have a dark secret?\\
-			\textit{What is the worst thing you have done or seen? Why did you do it? Why does it haunt you?}
-		\item What character traits define the character?\\
-			\textit{If you had to describe yourself is just a handful of words, which would you choose?}
+		\luaimport{lists/basic-questions.csv}{basic-question.tpl}{lists/qs}
 	\end{enumerate}
 	\end{multicols}
 
@@ -660,7 +603,7 @@
 	\section{Abilities}
 	Some abilities might be interesting for the character as well. Some abilities might already be known from race or background. If those have prerequisites that the character does not fulfill, they are dormant until the character fulfills the prerequisites. A full list of abilities can be found in section \ref{abilitylist}.
 	\section{Shopping trip}
-	Lastly, a character needs some equipment. The amount of money a character starts with is equal to 100 plus their charisma. \\
+	Lastly, a character needs some equipment. The amount of money a character starts with is equal to 200 plus their charisma. \\
 	By default every character will start with clothing fitting of their social standing, former profession and to a degree place of origin.
 	They also generally have a L1NC implant (see p. \pageref{implant:l1nc}).
 	Visit the equipment section below to buy anything beyond that.
@@ -675,7 +618,7 @@
 
 	\input{augs/implants.tex}
 %	TODO: add after chemical rework
-%	\input{augs/chemicals.tex}
+	\input{augs/chemicals.tex}
 
 	\chapter{Lists}
 	\input{lists/status.tex}

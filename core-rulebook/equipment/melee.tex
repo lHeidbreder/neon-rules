@@ -10,13 +10,13 @@ These are not required but add additional unique features to the weapon.
 \subsubsection{Hilts}
 \vspace{8mm}
 \begin{multicols}{2}
-\meleecomponent{Simple hilt}
+\meleecomponent{Simple Hilt}
     {A simple sword hilt. Very versatile.}
     {One-handed; +5 to combat rolls}
     {0,2}
     {3}
     {}
-\meleecomponent{Push hilt}
+\meleecomponent{Push Hilt}
     {A hilt vertical to the blade.
         Biomechanically inferior to a normal hilt in terms of reach and leverage,
         yet somehow preferred by some.}
@@ -24,14 +24,14 @@ These are not required but add additional unique features to the weapon.
     {0,1}
     {4}
     {}
-\meleecomponent{Duelist hilt}
+\meleecomponent{Duelist Hilt}
     {An offensively minded hilt at a slight tilt,
         made to make disarming an opponent much easier.}
     {One-handed; +15 to disarms}
     {0,2}
     {7}
     {}
-\meleecomponent{Caged hilt}
+\meleecomponent{Caged Hilt}
     {Shielding the sword wielding hand in some way is an old idea but,
         like many old ideas, still holds merit this day,
         so this handle was fitted with a protective basket.}
@@ -40,14 +40,14 @@ These are not required but add additional unique features to the weapon.
     {0,4}
     {10}
     {}
-\meleecomponent{Ergonomic hilt}
+\meleecomponent{Ergonomic Hilt}
     {A handle fitting the wielder's hand very closely
         and therefore allowing the user to get a much better feel for the weapon's point.}
     {One-handed; Binding is twice as effective.}
     {0,2}
     {12}
     {}
-\meleecomponent{Simple long hilt}
+\meleecomponent{Simple Long Hilt}
     {A generic two-handed sword hilt offering more leverage than a one-handed hilt.}
     {Two-handed; +5 to combat rolls}
     {0,3}
@@ -65,19 +65,19 @@ These are not required but add additional unique features to the weapon.
 \subsubsection{Shafts}
 \vspace{8mm}
 \begin{multicols}{2}
-\meleecomponent{Short shaft}
+\meleecomponent{Short Shaft}
     {A generic short shaft that can build the basis for a spear, hammer or axe.}
     {One-handed}
     {0,3}
     {4}
     {}
-\meleecomponent{Long shaft}
+\meleecomponent{Long Shaft}
     {A shaft perfect for long spears.}
     {Two-handed}
     {0,5}
     {5}
     {}
-\meleecomponent{Twin shaft}
+\meleecomponent{Twin Shaft}
     {A double-ended spear shaft allowing for two heads to be mounted.
         Not as effective individually but some people like the versatility.}
     {Two-handed; -1 damage; allows to add a second weapon point}
@@ -97,63 +97,71 @@ These are not required but add additional unique features to the weapon.
 \subsubsection{Blades}
 \vspace{8mm}
 \begin{multicols}{2}
-\meleecomponent{No blade}
+\meleecomponent{No Blade}
     {Generally speaking a blade gives great advantages.
         Sometimes however a blade is simply not available but a stick is still a massive upgrade over fists.}
     {The weapon becomes a simple, primitive club.}
     {0}
     {0}
     {}
-\meleecomponent{Knife blade}
+\meleecomponent{Knife Blade}
     {Short, stiff blade. Good penetration, can cut if necessary.}
-    {None
-	%This is supposed to have Piercing
-	%but that only makes sense when range exists
-	%otherwise Mono does the same
+    {
+    	Inconspicuous (when put on a one-handed hilt)
 	}{0,2}
     {7}
     {}
-\meleecomponent{Sword blade}
+\meleecomponent{Sword Blade}
     {A long blade that cuts and stabs well.}
     {+3 damage}
     {0,9}
     {10}
     {}
-\meleecomponent{Sword breaker}
+\meleecomponent{Sword Breaker}
     {A knife blade with two offshoots to make parrying easier.}
     {Protective}
     {0,2}
     {12}
     {}
-\meleecomponent{Inverse blade}
+\meleecomponent{Sword Whip}
+	{A sword blade that can transform into a whip on command.}
+	{
+		Can freely once per combat
+		round swap between a \emph{Sword Blade} and a \emph{Thorn Whip}.
+		It fumbles on any roll of 96+.
+	}
+	{1.1}
+	{42}
+	{}
+\meleecomponent{Inverse Blade}
     {A curved sword blade with its edge on the inside.
         Edge alignment is more difficult but cuts become more devastating.}
     {Add Dex to melee damage bonus calculation}
     {0,9}
     {13}
     {}
-\meleecomponent{Plasma cutter}
+\meleecomponent{Plasma Cutter}
     {A knife-sized blade consisting of finely shaped plasma.
         Cuts through heat much more than force and thereby is easier to use by weaker people.}
     {+6 damage; halve Melee Damage Bonus}
     {0,6}
     {27}
     {}
-\meleecomponent{Chain blade}
+\meleecomponent{Chain Blade}
     {A high-power chainsaw functioning as a sword blade.
         Why someone invented this, no one knows.}
     {Tearing}
     {1,2}
     {23}
     {}
-\meleecomponent{Mono blade}
+\meleecomponent{Mono Blade}
     {Advertised as a near mono-molecular edge,
         this is the sharpest knife blade built yet.}
     {Piercing}
     {1}
     {27}
     {}
-\meleecomponent{Sickle blade}
+\meleecomponent{Sickle Blade}
     {An oddly shaped blade that
         - while having rather short effective range
         - is incredibly hard to fight against.}
@@ -166,20 +174,20 @@ These are not required but add additional unique features to the weapon.
 \subsubsection{Whips}
 \vspace{8mm}
 \begin{multicols}{2}
-\meleecomponent{Bull whip}
+\meleecomponent{Bull Whip}
     {Leather, woven to a rope, making a bad but dirt cheap weapon.}
     {Flexible}
     {0,7}
     {2}
     {}
-\meleecomponent{Thorn whip}
+\meleecomponent{Thorn Whip}
     {Small thorns along the whip increase the damage against tissue
         but even thinner armor or thicker clothing will stop the weapon.}
     {Flexible, Tearing}
     {0,6}
     {12}
     {}
-\meleecomponent{Shock whip}
+\meleecomponent{Shock Whip}
     {A difficult piece of equipment to create:
         coils create a strong electric field while staying flexible enough to whip around
         and not frying itself.}
@@ -193,35 +201,35 @@ These are not required but add additional unique features to the weapon.
 \subsubsection{Heads}
 \vspace{8mm}
 \begin{multicols}{2}
-\meleecomponent{No head}
+\meleecomponent{No Head}
     {While a designated weapon point is generally superior to none,
         no weapon head is superior to no weapon.}
     {The weapon becomes a simple, primitive club.}
     {0}
     {0}
     {}
-\meleecomponent{Hammer head}
+\meleecomponent{Hammer Head}
     {A blunt implement originally designed as a tool,
         later used in a refined form to defeat armor.}
     {Trauma}
     {0,8}
     {8}
     {}
-\meleecomponent{Axe head}
+\meleecomponent{Axe Head}
     {A very top heavy blade.
         Good at splitting more so than cutting.}
     {+3 damage}
     {0,7}
     {9}
     {}
-\meleecomponent{Pick head}
+\meleecomponent{Pick Head}
     {The head on a war pick is designed to defeat armor by breaking through weaker spots.
         Still works good today.}
     {Piercing}
     {0,7}
     {11}
     {}
-\meleecomponent{Spiked head}
+\meleecomponent{Spiked Head}
     {Be it spiked mauls or barbed wire around a stick
         - damage to tissue will be significant.}
     {Tearing}
@@ -233,7 +241,7 @@ These are not required but add additional unique features to the weapon.
 \subsubsection{Core}
 \vspace{8mm}
 \begin{multicols}{2}
-\meleecomponent{Cup holder}
+\meleecomponent{Cup Holder}
     {A cup holder for your weapon.
         Why? No reason, really.}
     {Adds a cup holder}
@@ -262,7 +270,7 @@ These are not required but add additional unique features to the weapon.
     {0,8}
     {22}
     {}
-\meleecomponent{EMP field}
+\meleecomponent{EMP Field}
     {Coils within the weapon emit an electromagnetic field strong enough to interrupt electronic devices.}
     {When activated as a free action,
         the weapon gains \emph{EMP} this round.
@@ -304,7 +312,7 @@ These are not required but add additional unique features to the weapon.
     {0,2}
     {30}
     {}
-\meleecomponent{Rocket booster}
+\meleecomponent{Rocket Booster}
     {Everyone understands that a faster weapon point is more destructive.
         Since too high speeds make edge alignment and controlling the weapon one-handed nearly impossible,
         it's only safe to use on large blunt weapons.}
