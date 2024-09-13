@@ -200,10 +200,9 @@
 	
 	\directlua{
 		newpath=string.gsub("#2", ".png$", ".fade.png");
-		print(newpath);
-		tex.sprint("\\edef\\tmpTryincludewithfade{"..newpath.."}")
+		tex.sprint("\\edef\\tmpTryincludewithfade{"..newpath.."}");
 	}
-	\show\tmpTryincludewithfade
+	\expandafter
 	\IfFileExists{\tmpTryincludewithfade}
 		{\includegraphics[#1]{\tmpTryincludewithfade}}
 		{\includegraphics[#1]{#2}}

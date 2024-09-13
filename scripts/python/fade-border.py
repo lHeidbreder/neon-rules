@@ -1,5 +1,6 @@
 #!/usr/bin/python
 from PIL import Image, ImageDraw
+import re
 
 def parse_arguments():
     from argparse import ArgumentParser
@@ -7,10 +8,10 @@ def parse_arguments():
                 prog="Fade Borders"
                 )
 
-    parser.add_argument("-i", "--in-place", dest="in_place", action="store_true", default=False, help="Edit the file in place, thereby replacing the input file.")
+    parser.add_argument("-i", "--in-place", dest="in_place", action="store_true", default=False, help="Edit the file in place, creating a \".fade.\{ext\}\" file next to the input file.")
     parser.add_argument("-w", "--fade-width", dest="fade_width", type=int, default=5, help="Manually set the fade width in percent. Default is 5.")
     parser.add_argument("input_file")
-    parser.add_argument("output_file")
+    parser.add_argument("-o", "--out", dest="output_file")
 
     global args
     args = parser.parse_args()
@@ -44,7 +45,11 @@ def fade_borders(image_path, output_path, fade_percent):
 if __name__=='__main__':
     parse_arguments()
     if args.in_place:
-        args.output_file=args.input_file
+        args.output_file=re.sub(
+                            r"\.([^/\\.]+)$",
+                            r".fade.\1",
+                            args.input_file
+        )
     if args.output_file is None \
         or args.input_file is None:
         exit(1)
