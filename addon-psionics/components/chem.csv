@@ -1,0 +1,2 @@
+name,group,cost,description,effect,detriment,duration,load,overdose_effect
+Arc,Upper,75,"A red vial, almost the color of blood. It provides enough energy to severely limit the toll the body takes from casting psychic powers.",The effect takes 5 minutes to set in. The next psionic power cast after that has its cost limited to 3.,"If no power is cast during the time, the user suffers \emph{Shock}.",30 minutes,"1 MT, 1 RI",The user's Cassandra implant turns off for D5 days and the user suffers D10 damage (ignoring armor and toughness).
