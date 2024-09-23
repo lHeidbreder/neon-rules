@@ -6,7 +6,13 @@ cut_absolute_path () {
 fade_art () {
   cd "$main_dir/art"
   mapfile -t FADE_FILES < <(python "$main_dir/scripts/python/list-fade-art.py" "$main_dir/scripts/python/fade-art.list")
-  for img in "${FADE_FILES[@]}"; do
+  for imgpath in "${FADE_FILES[@]}"; do
+    if [[ "$(uname -s)" =~ MINGW* ]]; then
+	  # fix the path when running on windows git bash
+      img=$(cygpath -u "${main_dir}/art/${imgpath}")
+	else
+	  img="${main_dir}/art/${imgpath}"
+	fi
     echo "Try Fading $img"
     if [ -f "$img" ]; then
       python "$main_dir/scripts/python/fade-border.py" "-i" "$img"
