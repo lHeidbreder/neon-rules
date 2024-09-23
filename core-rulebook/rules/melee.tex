@@ -5,9 +5,13 @@
 \subsection*{Standard attack}
 A single armed or unarmed melee attack. Attacking a specific location is modified by its size. This is compatible with any maneuver and does not require an ability.
 \subsection*{Sure strike (+20, also uses up reaction)}
-A single melee attack with higher chances to hit. This maneuver \emph{cannot} be combined with any maneuver already requiring more than one action and does itself not require an ability.
+A single melee attack with higher chances to hit.
+This maneuver \emph{cannot} be combined with any maneuver that already requires more than one action,
+	and does itself not require an ability.
 \subsection*{Attack of opportunity (-10, free action)}
-When an enemy passes through or leaves the character’s control area, the character may make a single attack as a free action with a -10 modifier in addition to any other maneuver.\\
+When an enemy passes through or leaves the character’s control area,
+	the character may make a single attack as a free action,
+	with a -10 modifier in addition to any other maneuver.\\
 This may not be combined with any maneuver requiring more than one action.\\
 One attack of opportunity may be made against any one enemy once per combat round.
 \subsection*{Disengage (free action)}
@@ -18,17 +22,32 @@ A skillful attack that is harder to defend against. Defending against this maneu
 \subsection*{Called jab (-10 -half of opponent’s armor)}
 A strike against an armor’s weak points. The attacker picks the location without additional penalty. The attack ignores half the target’s armor.
 \subsection*{Disarm (-10 -X)}
-An attack against the opponent’s grip to get control of his weapon. After failing to parry the defender makes a dexterity check at a penalty equal to the voluntary penalty of the maneuver. On a fail the defender loses her weapon, dropping on the ground. Failing by at least 3 degrees gives the attacker control over the weapon.\\
+An attack against the opponent’s grip to get control of his weapon.
+Following an unsuccessful defense the target makes a dexterity check at a penalty equal to the voluntary penalty of the maneuver.
+On a fail the defender loses her weapon, dropping on the ground.
+Failing by at least 3 degrees gives the attacker control over the weapon.\\
 This maneuver does not deal damage.
 \subsection*{Flurry (-10)}
-Two attacks in quick succession using both hands. Defending against this attack requires two reactions. On a hit the attacker deals damage once with her primary weapon and once with the weapon in her offhand. If she is not carrying a weapon in her offhand, she deals unarmed damage instead.
+Multiple attacks in quick succession.
+For every Degree of Success on the check one hit is scored.
+The defender likewise evades one hit per DoS on his reaction.
+\\%
+This cannot be combined with \emph{Powerstrike}-based maneuvers.
 \subsection*{Piercing thrust (-30 -half of opponent’s armor, also uses up reaction)}
 An all-out stab. The attacker picks the location without additional penalty. The attack ignores both the target's armor and its injury threshold.\\
 Cannot be performed without the corresponding ability.
 \subsection*{Takedown (-10 -X)}
-A sweeping and pushing attack to take the opponent off his legs. If the attack hits, it deals no damage. Instead the defender makes an agility check at a penalty equal to the voluntary penalty on the maneuver. If that fails, he falls on the ground. If it fails by 3 or more degrees, he also drops his weapon.
+A sweeping and pushing attack to take the opponent off his legs.
+Following an unsuccessful defense the target makes
+	an agility check
+	at a penalty equal to the voluntary penalty on the maneuver.
+If this test fails, he falls on the ground.
+If it fails by 3 or more degrees, he also drops his weapon.
+\\%
+This maneuver does not deal damage.
 \subsection*{Shift (-10 -X)}
-Superior footwork (or brute strength) moves an opponent.
+Superior footwork or brute strength may move an opponent.
+\\%
 If the attack hits,
 	the opponent makes a strength check at a penalty equal to the voluntary penalty on the maneuver
 	or be moved by up to a meter per degree of failure in a direction chosen by the attacker.
@@ -37,11 +56,13 @@ Failing by 3 or more degrees means the target also falls prone.
 \label{mvr:powerstrike}
 A strong blow that increases the hit’s damage. For every 5 points of voluntary penalty the damage is increased by one.
 \subsection*{Cleave (-15 per target, also uses up the reaction)}
-A half circle of steel pushing multiple enemies back.
+A half circle of steel, making room, pushing back multiple enemies at once.
 This maneuver can target up to three enemies,
 	so long as they are all within the attacker’s control area.
 A success indicates hits on all targets.\\
-All targets hit will also be pushed back by the attacker’s StrB in meters -1 per size category the target is bigger.\\
+All targets hit will also be pushed back a distance in meters equal to
+	a tenth of the attacker’s Str (rounded down)
+	reduced by 1 per size category the target is bigger than the attacker.\\
 This maneuver is always also a \emph{Knockdown} without additional penalty.
 \subsection*{Stunning Blow (-10 -X)}
 A blunt attack to stun a target.
@@ -70,6 +91,7 @@ If the attack is a success,
 	then damage and AP are doubled.\\
 Cannot be performed without the corresponding ability. This maneuver is always also a \emph{Knockdown} without additional penalty.
 
+%TODO
 \section{Melee reactions}
 \subsection*{Dodge (-10; -0 against unarmed)}
 Evasion without weapons touching. On a success the attack is evaded.\\
@@ -78,50 +100,113 @@ This does not require an ability. It cannot be combined with other maneuvers.
 A basic defense against a melee attack. On a success the attack is evaded.\\
 This does not require an ability.
 \subsection*{Bind (-X)}
-Enter a bind to lead one’s opponent’s weapon and gain an advantage. The next action the character takes has a bonus equal to the voluntary penalty.
+Enter a bind to feel and control one’s opponent’s weapon,
+	gaining a solid advantage.
+The next combat action the character takes against this opponent gains a bonus equal to the voluntary penalty.
 \subsection*{Disarm from reaction (-30 -X)}
 A very risky defense to rid the opponent of their weapon during her attack. If the defense is successful, the attacker makes a dexterity check at a penalty equal to the voluntary penalty of the maneuver. On a fail the attacker loses her weapon, dropping on the ground. Failing by at least 3 degrees gives the defender control over the weapon.
 \subsection*{Intercept (-10, uses attack value)}
 A reckless attack into the opponent's attack. Both the attacker and the defender roll attacks.\\
 If only one attack is successful, that attack deals damage as normal, the other misses.\\
-If both succeed, the one that succeeded better (see p. \pageref{sec:opposedchecks}) deals full damage, while the other one only deals half damage.\\
+If both succeed, the one that wins the Opposition (see p. \pageref{sec:opposedchecks}) deals full damage, while the other one only deals half damage.\\
 Intercepting a \emph{Charge} is at an additional penalty equal to half the character’s courage below 80 but deals additional damage equal to the attacker’s movement speed.
+\\%
+Cannot be performed without the corresponding ability,
+	but can be combined with offensive melee maneuvers.
 \subsection*{Reversal (min -30)}
-A skillful counterattack that exploits an overswing. This maneuver can only be used against any maneuver based on \emph{Powerstrike} and grants a penalty equal to the attacking powerstrike penalty, at least -30.\\
-If the defense is successful, the maneuver also counts as an immediate powerstrike against the original attacker, with a voluntary penalty equal to this maneuver’s penalty, without expending another action. The attack may be parried as normal and may also be subject to Reversal.\\
+A skillful counterattack that exploits an overswing.
+This maneuver can only be used against any maneuver based on \emph{Powerstrike}
+	and grants a penalty equal to the attacking maneuver's penalty, at least -30.
+\\%
+If the defense is successful,
+	the maneuver also counts as an immediate \emph{Powerstrike} against the original attacker,
+	with a voluntary penalty equal to this maneuver’s penalty,
+	without expending another action.
+The attack may be parried as normal
+	and may also be subject to Reversal.
+\\%
 Cannot be performed without the corresponding ability.
 
 \section{Grappling}
 Grappling may be somewhat more complicated than striking due to the amount of options one has and how different these options are to striking: control over someone else and dislocation of opponents or their limbs.
+\begin{exampleblock}
+	\itshape
+	There will not always be an exact fit for your current situation.
+	Stick to the narration
+		and use these maneuvers as guidelines.
+\end{exampleblock}
+Generally - unlike other combat actions -
+	the defender may use his reaction to \emph{Oppose} the grappling test,
+	rather than parrying or dodging the attack.
+
 \subsection*{Hold (-X)}
 A hold is the basis of all grappling. By itself it only stops the opponent from leaving but it is necessary for most other maneuvers to initiate.\\
-To initiate a hold, the character makes a grappling attack. If the character wins, a hold is engaged.\\
+To initiate a hold, the character makes a grappling attack,
+	that may be dodged or parried like normal attacks.
+If the character wins, a hold is engaged.
+\\%
 The attacker gains bonuses equal to X to every action against the target, for as long as the hold remains.\\
 To break free the target makes a grappling check which may be opposed by the character as a reaction. If the target wins, it breaks free.
 \subsection*{Throw}
 The character attempts to lift the target off the ground and forcefully put it back.\\
-The character makes a grappling check which may be opposed by the target as a reaction. If the character wins, the target takes D10+StrB damage with the trauma quality and falls prone (therefore also losing initiative, see p. \pageref{subsec:variableini}).
+The character makes a grappling attack from a \emph{Hold}.
+If he wins,
+	the target takes D10+StrB damage
+	with the \emph{Trauma} special rule
+	and falls prone
+	(therefore also losing initiative, see p. \pageref{subsec:variableini}).
 \subsection*{Lock}
-The character attempts to prevent his opponent from moving freely. Arm locks, leg locks and head locks are common but bear hugs also fall into this category.\\
-To initiate a lock, the character makes a grappling attack roll which may be opposed by the target as a reaction.\\
+The character attempts to prevent his opponent from moving freely.
+Arm locks, leg locks and head locks are obvious and common,
+	but bear hugs also fall into this category.
+\\%
+To initiate a lock, the character makes a grappling attack from a \emph{Hold}.
+\\%
 While the lock is active,
 	the character may use a reaction to interfere with any action taken by the target:
 	the character takes a grappling check as an action
 	and the target’s action is at a -10 penalty per degree of success.\\
-To break free the target may take a -10 grappling check, which may be opposed by the character as a reaction. If the target wins, both return back into the initial hold.
+To break free the target may make a grappling attack at a -10  penalty.
+If the target wins, both return back into the initial hold.
+If he wins by at least 3 DoS, he may break free completely.
 \subsection*{Lever hold}
-While holding an opponent in a lock of some kind, the character may choose to initiate a lever hold as an action. This forfeits the option to control any action in favor of dealing damage to a location every turn.\\
-To initiate a lever hold, the character has to have his target in a lock already and takes a grappling check which may be opposed by the target as a reaction. If the character is successful, a location is determined and a lever hold is initiated.\\
-While the lever hold is active, the character deals 1D5-2+StrB damage to the location, ignoring armor.\\
-To break free the target may make a -20 grappling check, which may be opposed by the character as a reaction. If the target wins, it breaks free.
+While holding an opponent in a Lock of some kind, the character may choose to initiate a lever hold as an action.
+This forfeits the option to control any action in favor of dealing damage to a location every turn.
+\\%
+To initiate a lever hold,
+	the character has to have his target in a \emph{Lock} already
+	and makes a grappling attack.
+If the character is successful,
+	a location is determined (not necessarily randomly)
+	and a lever hold is initiated.
+\\%
+While the lever hold is active,
+	the character deals 1D5+StrB damage to the location,
+	ignoring armor.
+He may do so by spending an action,
+	but without another attack roll.
+\\%
+To break free the target may make a grappling attack at a -20  penalty.
+If the target wins, both return back into the initial hold.
+If he wins by at least 3 DoS, he may break free completely.
 \subsection*{Choke hold}
 Just as common as attacking the opponent's joints is to attack his airways.\\
-To initiate a chokehold the character makes a grappling check which may be opposed by the target as a reaction. If the character wins, the chokehold is initiated.\\
-The chokehold works like a lever hold but instead of dealing damage, it causes \emph{Suffocation} (see p. \pageref{hazards:suffocation}).\\
-To break free the target may make a -20 grappling check, which may be opposed by the character as a reaction. If the target wins, it breaks free.
+To initiate a choke hold the character makes a grappling attack,
+	either from a \emph{Hold},
+	or onto an unsuspecting target.
+If the character wins, the choke hold is initiated.\\
+The choke hold works like a lever hold but instead of dealing damage, it causes \emph{Suffocation} (see p. \pageref{hazards:suffocation}).\\
+To break free the target may make a grappling attack at a -20  penalty.
+If the target wins, both return back into the initial hold.
+If he wins by at least 3 DoS, he may break free completely.
 \subsection*{Move}
 Moving while grappling is hard, even more so if only one party intends to move.\\
-The character makes a grappling check which may be opposed by the target as a reaction. If the character wins, the target is moved up to the difference of DoS in meters or half the amount if on the ground.
+Whenever a character in the grappling wants to move
+	(and his opponents don't...),
+	he makes a grappling attack as a free action,
+	which may be \emph{Opposed} as a free action.
+If the character wins, the target is moved up to the difference of DoS in meters
+	or half the amount if laying on the ground.
 
 \section{Melee dancing}
 When attacking or defending in melee combat,
@@ -130,6 +215,7 @@ After an attack that does not include intentional movement the character
 and his opponent move a meter into a random direction within the same control areas.
 Roll a D10:
 \par
+\begin{exampleblock}
 \begin{multicols}{2}
 \includegraphics[height=\columnwidth,width=\columnwidth]{../art/Core/MeleeDancingCompass.png}
 \columnbreak
@@ -144,6 +230,7 @@ Roll a D10:
 	10:  & forward left
 \end{tabular}
 \end{multicols}
+\end{exampleblock}
 If one (but not all) combatant would slip and fall,
 	he doesn’t move but takes a -20 to physical actions next round,
 	as he regains his footing.

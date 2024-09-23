@@ -4,16 +4,28 @@ The character designates a target and takes aim.
 For every action aiming the character
 	gains a +5 on her next shot against that target,
 	up to +20 for 2 full combat rounds.\\
-The bonus vanishes when her concentration or line of sight is broken, or the target moves more than her effective \emph{Perception} bonus in meters per second.
+The bonus vanishes when her concentration or line of sight is broken,
+	or the target moves more than a tenth of her effective \emph{Perception} in meters per second.
 \par
+\begin{exampleblock}
+	A character with 40 Instinct
+		and Trained Perception (granting +10)
+		would lose her Aim bonus when the target moves faster than
+		5 meters per second
+		(or 18 kilometers an hour).
+\end{exampleblock}
 Without proper installations to assist aiming, only +10 may ever be gained.
-Proper installation generally means a scope with a magnifier of
+Proper installation generally means
+	a properly zeroed and intact sight,
+	with a magnifier of
 	at least 1\%
 	and at most 4\%
 	the distance in meters.\\
 \begin{exampleblock}
 	For example at a distance of 200m the magnifier should lie between
 		2x and 8x.
+	\\%
+	Every weapon is assumed to come with Iron Sights that offer "1x magnification".
 \end{exampleblock}
 This maneuver does not require an ability.
 \subsection*{Brace}
@@ -30,17 +42,59 @@ The required time is reduced by one action per degree of success,
 Failing this test has no negative impact, neither do critical successes or failures have special effects.
 \subsection*{Assisted reload}
 A heavy or launcher weapon can be reloaded with the help of another character instead. In such a case both characters will be occupied for the duration but both characters may reload as a combined action, adding their DoS.
+\\%
+Failed tests and critical results once again do nothing.
+\begin{exampleblock}
+	Two characters are reloading an M2 Brass Storm (18 action reload).
+	\\%
+	One of them rolls 3 DoS, the other fails by 2 DoF.
+	Since failure does not matter, the reload time is reduced to 15 actions.
+\end{exampleblock}
 \subsection*{Single shot}
-The character takes a single shot against an enemy. Aim bonuses are not lost unless the target breaks line of sight or moves very quickly. This does not require an ability.
+The character takes a single shot against an enemy.
+Aim bonuses are not lost from this action.
+This does not require an ability.
 \subsection*{Burst (-10)}
-The character takes a relatively controlled burst of fire against a target. This encompasses everything between automatic pistols, heavy machine guns, flamethrowers and sustained arc rifles, even though some of those might not technically fire in bursts. For every degree of success on the check one additional hit is scored, up to a maximum of the weapon’s rate of fire in total. Aim bonuses are lost after shooting.
+The character takes a relatively controlled burst of fire against a target.
+This encompasses everything between automatic pistols, heavy machine guns, flamethrowers and sustained arc rifles, even though some of those might not technically fire in bursts.
+\\%
+For every degree of success on the check one hit is scored,
+	up to a maximum of the weapon’s rate of fire in total.
+Aim bonuses are lost after shooting.
 \subsection*{Suppression Fire (-20)}
-The character shoots in the general direction of his enemies, expecting them to keep their heads down so as to not lose them. Whether a hit is scored or not, all enemies within an area of roughly twice the bullets fired in meters diameter are making courage checks at a penalty equal to 4 times the bullets fired. On a failure they will not leave cover until they either spend an action to retry the courage test (once per turn) or the suppression ends. Anything threatening them directly in a situation where they are pinned, such as grenades behind their cover, will cause them to suffer from \emph{Fear} (see p. \pageref{feartable}).
+The character shoots in the general direction of his enemies, expecting them to keep their heads down so as to not lose them.
+Whether a hit is scored or not, all enemies within an area of
+	roughly \emph{the bullets fired in meters radius}
+	are making Courage checks at a penalty equal to
+	4 times the bullets fired.
+On a failure they will not leave cover until they either spend an action to retry the courage test (once per turn) or the suppression ends.
+\begin{exampleblock}
+	Julie, armed with her AR-22, faces a group of opponents.
+	Her weapon has a rate of fire of 3.
+	\\%
+	She rolls an attack to suppress her enemies, scoring 1 DoS.
+	She now suppresses an area that is roughly
+		3 meters in radius (or 6 meters diameter)
+		and one enemy in the area takes one hit (as she scored a DoS).
+	\\%
+	All enemies in this area need to make a
+		-12 Courage test
+		(which they may retry as an action)
+		or be forced to stick to cover.
+\end{exampleblock}
+Anything threatening them directly in a situation where they are pinned
+	- such as grenades behind their cover -
+	will cause them to suffer from \emph{Fear} (see p. \pageref{sec:fear}).
 \subsection*{Called Shot (-size modifier)}
 The character targets a specific location. This does not require an ability and may modify another ranged maneuver.
 \subsection*{Reaction: Dodge (-10)}
 A character may attempt to dodge primitive ranged attacks like bows and thrown weapons, as well as move out of blast ranges.\\
-When dodging against single ranged attacks, the attack and defense checks are opposed. If the attacker wins, the target suffers damage. If the defender wins or the test ties, the attack is evaded.\\
-When dodging against multiple ranged attacks, the defender dodges one hit per degree of success. The reaction may still only be taken against a single attacker.\\
+When dodging against single ranged attacks, the attack and defense checks are \emph{Opposed}.
+If the attacker wins, the target suffers damage.
+If the defender wins or the test ties, the attack is evaded.
+\\%
+When dodging against multiple ranged attacks, the defender dodges one hit per Degree of Success.
+The reaction may still only be taken against a single attacker.
+\\%
 When dodging against explosives, a success may increase the distance to the center of the blast by up to DoS.\\
 This maneuver does not require an ability.

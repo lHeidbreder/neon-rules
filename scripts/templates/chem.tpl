@@ -10,9 +10,13 @@
 	\begin{multicols}{2}
 		\paragraph{Effect}
 		@effect@
-		\columnbreak
-		\paragraph{Detriment}
-        @detriment@
+        \ifthenelse{\equal{-}{@detriment@}}
+            {}
+            {
+                \columnbreak
+		        \paragraph{Detriment}
+                @detriment@
+            }
 	\end{multicols}
 	\ifthenelse{\equal{-}{@overdose_effect@}}
 	{}

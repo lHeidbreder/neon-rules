@@ -3,6 +3,19 @@ cut_absolute_path () {
   echo $(perl -le 'use File::Spec; print File::Spec->abs2rel(@ARGV)' $1 ${main_dir})
 }
 
+fade_art () {
+  cd "$main_dir/art"
+  mapfile -t FADE_FILES < <(python "$main_dir/scripts/python/list-fade-art.py" "$main_dir/scripts/python/fade-art.list")
+  for img in "${FADE_FILES[@]}"; do
+    echo "Try Fading $img"
+    if [ -f "$img" ]; then
+      python "$main_dir/scripts/python/fade-border.py" "-i" "$img"
+    else
+      echo "! File does not exist?"
+    fi
+  done
+}
+
 analyse_error () {
   NAME=$( echo $1 | sed 's/.tex$//g' )
   echo "! Error on ${NAME}" 1>&2
@@ -21,6 +34,7 @@ workspace_clean () {
 }
 
 package () {
+  echo "Creating ZIP package"
   cd ${file_output_dir}
   jar Mcf rulepackage.zip .
 }
@@ -42,6 +56,8 @@ mkdir -p $file_output_dir
 mkdir -p $file_output_dir/addons
 mkdir -p $file_output_dir/missions
 find ${file_output_dir} -maxdepth 2 -type f -delete
+
+fade_art
 
 files=(${main_dir}/*/*.tex)
 
