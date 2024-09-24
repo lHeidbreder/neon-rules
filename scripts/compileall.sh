@@ -7,6 +7,8 @@ fade_art () {
   cd "$main_dir/art"
   mapfile -t FADE_FILES < <(python "$main_dir/scripts/python/list-fade-art.py" "$main_dir/scripts/python/fade-art.list")
   for imgpath in "${FADE_FILES[@]}"; do
+    [[ "$imgpath" =~ fade\.[^\.]+$ ]] && continue
+
     if [[ "$(uname -s)" =~ MINGW* ]]; then
 	  # fix the path when running on windows git bash
       img=$(cygpath -u "${main_dir}/art/${imgpath}")
@@ -79,7 +81,7 @@ do
       OUT="${file_output_dir}/missions"
     fi
 
-    #latexmk -f -pdflua -interaction=nonstopmode -output-directory="${OUT}" ${i##*/} 1>> "${console_output_dir}/compile.out" 2>> "${console_output_dir}/compile.err" || analyse_error ${i##*/}
+    latexmk -f -pdflua -interaction=nonstopmode -output-directory="${OUT}" ${i##*/} 1>> "${console_output_dir}/compile.out" 2>> "${console_output_dir}/compile.err" || analyse_error ${i##*/}
     cd $main_dir
 done
 
