@@ -10,14 +10,12 @@ fade_art () {
     if [[ "$(uname -s)" =~ MINGW* ]]; then
 	  # fix the path when running on windows git bash
       img=$(cygpath -u "${main_dir}/art/${imgpath}")
-	else
-	  img="${main_dir}/art/${imgpath}"
-	fi
-    echo "Try Fading $img"
-    if [ -f "$img" ]; then
+	  else
+	    img="${main_dir}/art/${imgpath}"
+	  fi
+    if [ -f "$img" ] && [ ! -f "$(echo "$img" | sed -E 's/.([^\.]+)$/.fade.\1/g')" ]; then
+      echo "Try Fading $img"
       python "$main_dir/scripts/python/fade-border.py" "-i" "$img"
-    else
-      echo "! File does not exist?"
     fi
   done
 }
@@ -81,7 +79,7 @@ do
       OUT="${file_output_dir}/missions"
     fi
 
-    latexmk -f -pdflua -interaction=nonstopmode -output-directory="${OUT}" ${i##*/} 1>> "${console_output_dir}/compile.out" 2>> "${console_output_dir}/compile.err" || analyse_error ${i##*/}
+    #latexmk -f -pdflua -interaction=nonstopmode -output-directory="${OUT}" ${i##*/} 1>> "${console_output_dir}/compile.out" 2>> "${console_output_dir}/compile.err" || analyse_error ${i##*/}
     cd $main_dir
 done
 
