@@ -79,7 +79,7 @@ do
       OUT="${file_output_dir}/missions"
     fi
 
-    #latexmk -f -pdflua -interaction=nonstopmode -output-directory="${OUT}" ${i##*/} 1>> "${console_output_dir}/compile.out" 2>> "${console_output_dir}/compile.err" || analyse_error ${i##*/}
+    latexmk -f -pdflua -interaction=nonstopmode -output-directory="${OUT}" ${i##*/} 1>> "${console_output_dir}/compile.out" 2>> "${console_output_dir}/compile.err" || analyse_error ${i##*/}
     cd $main_dir
 done
 
