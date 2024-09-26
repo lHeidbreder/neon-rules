@@ -283,9 +283,12 @@
 	\chapter{Additional Content}
 	\label{ch:addcontent}
 	\section{Boons}
+	\vspace{4mm}
+	\begin{multicols}{2}
 	\boon{Oozing Power}{When the character gains the ability to use psionics, he figuratively leaks power. All psionics he casts have their intensity increased by 1 level without additional costs but he permanently brings a very obvious effect around him wherever he goes. This may be strong winds, a faint whistling or optical illusions; whatever it may be, it makes it extremely obvious that he is a psionic.}{10}
 	\boon{Psionic Aptitude}{Grants access to an additional discipline; Start the game with the Psionics skill at Trained; Cannot be taken by Vat-grown or AIs}{12}
 	\boon{Psionic Prodigy}{Grants access to up to two additional disciplines; Start with the Psionics skill at Trained; Can only be taken by \emph{Pure} humans.}{25}
+	\end{multicols}
 
 %	\section{Banes}
 %	\boon{Frail Mind}{become vulnerable to Telepathy (+10 to target)}{-3}
@@ -294,6 +297,8 @@
 	\skill{Psionics}{any}{The knowledge to cast psionics. This is just the general skill and routine; to actually be useful a Cassandra implant and the knowledge of disciplines is also required.}
 
 	\section{Abilities}
+	\vspace{6mm}
+	\begin{multicols}{2}
 	\ability{Psionic Discipline}{0}{Psionics Known}{Gain access to the character's first psionic discipline}
 	\ability{Additional Psionic Discipline I}{600}{Psionic discipline}{Gain access to an additional psionic discipline. Costs half for characters with Psionic Aptitude and a third for Psionic Prodigies.}
 	\ability{Additional Psionic Discipline II}{600}{Psionic Aptitude or Psionic Prodigy}{Gain access to a third psionic discipline. Costs two thirds for a Psionic Prodigy.}
@@ -305,8 +310,11 @@
 %TODO: Not a thing
 %Additionally damage caused by the user counts double for the purpose of breaking a psionic's concentration.
 	}
+	\end{multicols}
 
 	\section{Supply}
+	\vspace{8mm}
+	\begin{multicols}{2}
 	\supply{Winston's Detector}
         {\emph{Tool}\\ Allows detection of psionic powers. Anyone can tell when a power is cast within the vicinity but to estimate additional detail requires a test as if the user was a \emph{Blank}, using Logic to replace Psionics.}
         {69}
@@ -315,8 +323,11 @@
         {\emph{Melee Core Component}\\ Immediately after hitting an opponent in melee, the wielder may cast a psionic power with a casting time of 1 action and range touch against the opponent as a free action instead.}
         {57}
         {0,4 kg}
+	\end{multicols}
 
 	\section{Implants}
+	\vspace{4mm}
+	\begin{multicols}{2}
 	\implant{Cassandra Psi-Focus}{\label{cassimplant}
 		A rare, experimental implant to allow a select few individuals to improve their effectiveness in private military operations. It comes with a lot of drawbacks and can only reveal its full potential with certain individuals.}
         {allows access to Psionics}
@@ -351,57 +362,12 @@
         {2 RI, 1 MT}
         {88}
         {-}
-
-%TODO: reactivate after chemical rework
-%	\section{Chemicals}
-%	\subsection{Dissociative}
-%	\subsubsection{Superbia}
-%	Type:\tab tablet/pill\\
-%	Effect:\tab gain +20 to cast\\
-%	Side Effects:\tab increase cost of powers cast by 1\\
-%	Duration:\tab one hour\\
-%	Minor Overdose:\\
-%	\begin{itemize}
-%		\setlength\itemsep{-8mm}
-%		\vspace{-12mm}
-%		\item hallucinations
-%	\end{itemize}
-%	Severe Overdose:\\
-%	\begin{itemize}
-%		\setlength\itemsep{-8mm}
-%		\vspace{-12mm}
-%		\item nausea
-%		\item vomiting
-%		\item blackout
-%	\end{itemize}
-%	OD Resistance:\tab MT\\
-%	Addiction After:\tab 4 overdoses\\
-%	Price:\tab cR 14\\
-%	Weight:\tab 0,01g\\
-%	Notes:\tab extremely rare
-%
-%	\subsection{Sedative}
-%	\subsubsection{Helium Stabilizer}
-%	Type:\tab tablet/pill\\
-%	Effect:\tab all pside effects below 9 are ignored\\
-%	Side Effects:\tab gain -10 to cast\\
-%	Duration:\tab 30 min\\
-%	Minor Overdose:\\
-%	\begin{itemize}
-%		\setlength\itemsep{-8mm}
-%		\vspace{-12mm}
-%		\item loss of casting ability
-%	\end{itemize}
-%	Severe Overdose:\\
-%	\begin{itemize}
-%		\setlength\itemsep{-8mm}
-%		\vspace{-12mm}
-%		\item loss of casting ability
-%	\end{itemize}
-%	OD Resistance:\tab RI\\
-%	Addiction After:\tab - overdoses\\
-%	Price:\tab cR 12\\
-%	Weight:\tab 0,01g\\
-%	Notes:\tab
+	\end{multicols}
+	
+	\section{Chems}
+	\vspace{4mm}
+	\begin{multicols}{2}
+		\luaimport{components/chem.csv}{chem.tpl}{components/chem}
+	\end{multicols}
 
 \end{document}

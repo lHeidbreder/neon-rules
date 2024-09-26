@@ -49,7 +49,12 @@ function itemize(entry)
     end
 
     --sublists
-    rtn = string.gsub(rtn,"::b::","\\begin{itemize}\\setlength\\itemsep{-10mm}\\vspace{-10mm}")
+    rtn = string.gsub(rtn,
+        "::b(-?%d*)::",
+        function(capture)
+            capture_num = tonumber(capture) or -10
+            return "\\begin{itemize}\\setlength\\itemsep{"..capture_num.."mm}\\vspace{"..capture_num.."mm}"
+        end)
     rtn = string.gsub(rtn,"::e::","\\end{itemize}")
 
     return rtn
