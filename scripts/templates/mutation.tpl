@@ -1,6 +1,9 @@
 \subsection*{@name@}
 \refstepcounter{mutations}
 \label{mut:@name@}
+\IfFileExists{../art/\subtitle/mutations/@imgpath@}
+    {\tryincludewithfade[width=\columnwidth]{../art/\subtitle/mutations/@imgpath@}}
+    {}
 \ifthenelse{\isempty{@flavor_text@}}{}{\textit{@flavor_text@}\\}
 @description@
 \par
