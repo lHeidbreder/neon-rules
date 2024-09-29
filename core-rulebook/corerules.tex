@@ -160,11 +160,6 @@
 	\end{itemize}
 	Each characteristic can be increased 5 times by 5 points each by spending XP. Said advancements cost 200, 400, 800, 1200 and 1600XP respectively, making for 4200 in total. These have to be bought in order for any one given characteristic.
 
-	\begin{minipage}{\columnwidth}
-	\section{Characteristic bonuses}
-	Sometimes a mechanic will require a characteristic bonus. This is the characteristic divided by 10 and rounded down - a characteristic of 31 would mean a characteristic bonus of 3 while a characteristic of 49 would result in a bonus of 4. A theoretical characteristic of 125 would result in a characteristic bonus of 12.
-	\end{minipage}
-
 	\section{Derived values}
 	A few additional values are directly derived from the set of characteristics. \\
 	They include the attributes that define \emph{limits for augmentation}:
@@ -394,15 +389,18 @@
 	\label{sec:lethality}
 	There are multiple ways for any living character to die.
 	\paragraph{Critical organ failure}is first. This is achieved by destruction or removal of essential organs. When the torso or head body location is destroyed in a spectacular fashion, the GM may rule that this character has died on the spot.
-	\paragraph{Blood loss}is another way a character may die. When characters start \emph{bleeding lightly} as determined by degradation or GM discretion, they have ConB minutes (or Con*2 rounds) before unconsciousness sets in.
-	They then have another ConB*9 seconds (or ConB*3 rounds) before they irrevocably bleed out. When \emph{bleeding severely} the character only has ConB*3 seconds (or ConB rounds) before unconsciousness sets in.
-	After that he can be saved for only ConB+D5 rounds or bleed to death.
+	\paragraph{Blood loss}is another way a character may die. When characters start \emph{bleeding lightly} as determined by degradation or GM discretion, they have their Injury Threshold in minutes (or twice their Con in combat rounds) before unconsciousness sets in.
+	They then have another 9 times their Injury Threshold in seconds (or three times their Injury Threshold in combat rounds) before they irrevocably bleed out.
+    When \emph{bleeding severely} the character only has three times their Injury Threshold in seconds (or a third in combat rounds) before unconsciousness sets in.
+	After that he can be saved for only D5 + their Injury Threshold in combat rounds or bleed to death.
 	\begin{exampleblock}
 		Note that “light” and “severe” bleeding are distinctions within game mechanics;
 		both are actually quite severe, a matter of life and death.
 	\end{exampleblock}
 	With basic medical knowledge (a medication check +40, if in doubt) a character can stop another from bleeding out. That character needs to be right next to the patient and cannot perform any other actions other than holding the wound shut.
-	\paragraph{Overexertion} is often overlooked but can very well be lethal. Generally if a character’s exhaustion surpasses their ConB, they collapse, recovering from one level per 2 hours of rest. If the character manages to surpass 3 times her ConB, the character collapses but does not recover naturally anymore. Whether the character can be saved at that point, is up to the GM.\\
+	\paragraph{Overexertion} is often overlooked but can very well be lethal. Generally if a character’s exhaustion surpasses their Injury Threshold, they collapse, recovering from one level per 2 hours of rest.
+    If the character manages to surpass 3 times her Injury Threshold, the character collapses but does not recover naturally anymore.
+    Whether the character can be saved at that point, is up to the GM.\\
 	Note that overexertion is generally a very slow process
 		and - unless he is forced to continue or using strong painkillers -
 		anyone can slow down before reaching dangerous levels of exhaustion.
