@@ -8,8 +8,8 @@ Pistol,Little Lucifer,"A one-handed liquid propellant. While it is knows as a fl
 Pistol,OH-VLS,"A small laser pistol. Adjustable, conceilable and lightweight.",2,1D10+10,1,35,16,small fuel cell,4,Rending,60,"0,6"
 Pistol,Newton Pistol Mk2,The smallest mass drivers ever built. Shoots very small metal fragments.,2,1D10+2,8,30,30,small shard block,8,,35,"2,1"
 Pistol,Newton Pistol Mk5,A forearm-sized magnetic accelerator shooting metal fragments.,1,1D10+2,12,35,30,small shard block,8,,175,"2,6"
-Pistol,Mk1 Shock Pistol,A modified taser. Very much lethal.,1,2D5,0,20,8,small fuel cell,5,EMP; Stun (4),50,"0,4"
-Pistol,Scattershock,A wide-arcing shock pistol.,2,3D5,0,15,6,small fuel cell,5,Scatter; EMP; Stun (3),180,"0,6"
+Pistol,Mk1 Shock Pistol,A modified taser. Very much lethal.,1,2D5,0,20,8,small fuel cell,5,Stun (2),50,"0,4"
+Pistol,Scattershock,A wide-arcing shock pistol.,2,3D5,0,15,6,small fuel cell,5,Scatter; Stun (2),180,"0,6"
 Short Rifle,MS Shotgun,A double-barrel shotgun with shortened barrels to facilitate pellet spread.,1,2D10+3,1,40,2,12gauge,2,Reliable; Scatter; Single Loader,175,3
 Short Rifle,SBAR-22,A rifle caliber fired from a short system. Warning: only buy this if you don’t own a dog!,3,2D10+2,6,50,30,6.3mm,4,,510,"3,5"
 Short Rifle,MP15,A pistol caliber fired from a small rifle frame.,4,2D10+3,1,30,25,7.2mm,3,,165,"2,8"
@@ -18,7 +18,7 @@ Short Rifle,OH-VLS Conversion,A conversion kit to turn an OH-VLS into a small la
 Short Rifle,Newton Pistol Repeater,A conversion kit for low powered Newton Pistols to increase fire rate.,4,1D10+3,12,45,30,small shard block,8,Upgrade (Newton Pistol Mk2),145,"3,6"
 Short Rifle,Scatter Rail,A small mass driver with increased bore and decreased barrel length to achieve shotgun-like ballistics.,1,2D10+2,8,35,6,small shard block,3,Scatter,170,"4,2"
 Short Rifle,Crossbow,"A medieval weapon with a trigger, accelerating sharp sticks.",1,1D10+4,0,50,1,crossbow bolt,6,Silenced; ignores PES,35,3
-Short Rifle,Scattershock Conversion,"A conversion kit for the Scattershock to feed from larger fuel cells. Increases size, mag size and range.",2,3D5,0,25,16,medium fuel cell,5,Scatter; EMP; Stun (3); Upgrade (Scattershock),280,"2,1"
+Short Rifle,Scattershock Conversion,"A conversion kit for the Scattershock to feed from larger fuel cells. Increases size, mag size and range.",2,3D5,0,25,16,medium fuel cell,5,Scatter; Stun (2); Upgrade (Scattershock),280,"2,1"
 Long Rifle,AR-22,"A full-sized, modular rifle platform, used often and by a variety of people and for a variety of situations.",3,2D10+3,11,70,30,6.3mm,6,,510,"3,8"
 Long Rifle,M282 SSW,"A bulky, belt-fed fire support weapon with high ammunition capacity.",6,2D10+3,11,70,120,6.3mm,14,Bulky,520,7
 Long Rifle,Mk3 Tankgewehr,"An insanely high-caliber, long barrel rifle made to fight heavy armor. Carries a lot of energy over comparatively small distances.",1,3D10+3,30,220,1,15x132mm,10,,2100,"16,6"
@@ -32,8 +32,8 @@ Long Rifle,M4 Silver Crow,"A handheld, semi automatic mass driver. Very powerful
 Long Rifle,R235 SSW,"A fully automatic mass driver, for when squad support is two rooms over.",5,2D10+4,16,220,180,large shard block,18,,530,"15,6"
 Long Rifle,R13 Armor Cracker,"A handheld, long range mass driver",1,1D5+18,35,1400,7,large shard block,16,,460,"23,9"
 Long Rifle,FG-9,"A rifle firing high energetic, self-stabilized plasma that destabilizes and explodes on impact. The energy release is highly unpredictable.",1,4D10+6,1,40,10,large fuel cell,16,Blast (3); EMP; Stun (2),1800,"6,3"
-Long Rifle,Choke M3 Arc Rifle,An arc rifle with comparatively little spread to increase range.,2,3D10,0,60,10,large fuel cell,12,EMP; Stun (3); Scatter,480,"4,1"
-Long Rifle,Choke F3 Arc Thrower,An arc rifle with a large spread made for crowd suppression.,2,5D5,0,30,10,large fuel cell,10,EMP; Stun (2); Spray,470,"3,9"
+Long Rifle,Choke M3 Arc Rifle,An arc rifle with comparatively little spread to increase range.,2,3D10,0,60,10,large fuel cell,12,Stun (3); Scatter,480,"4,1"
+Long Rifle,Choke F3 Arc Thrower,An arc rifle with a large spread made for crowd suppression.,2,5D5,0,30,10,large fuel cell,10,Stun (3); Spray,470,"3,9"
 Heavy,M2 Brass Storm,A high-caliber machine gun with notoriously high fire-rate.,8,2D10+4,10,180,120,11.8x112mm,18,,540,"42,7"
 Heavy,M36 Chain Cannon,A heavy machine gun with an external cycler. Reduced fire rate when compared to the M2 but renowned for unrivaled reliability. It is extremely heavy and cannot reasonably be called portable.,5,2D10+4,10,180,120,11.8x112mm,18,Reliable,500,"69,2"
 Heavy,RM4 Chain Shotgun,"An automatic, belt fed shotgun known for its high maintenance need.",4,4D5+6,4,80,80,12gauge,18,Scatter,480,"28,4"

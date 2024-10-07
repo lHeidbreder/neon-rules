@@ -5,7 +5,11 @@
     Cost: cR @cost@
         \ifthenelse{\equal{-}{@load@}}{}{; Load: @load@}
 	\\%
-	Lasts for \textit{@duration@}
+	\ifthenelse{\equal{immediate}{@duration@}}{
+    \textit{Immediate effect}
+    }{
+    Lasts for \textit{@duration@}
+    }
 	\par%
 	\begin{multicols}{2}
 		\paragraph{Effect}
