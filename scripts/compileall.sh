@@ -13,7 +13,7 @@ fade_art () {
 	  else
 	    img="${main_dir}/art/${imgpath}"
 	  fi
-    if [ -f "$img" ] && [ ! -f "$(echo "$img" | sed -E 's/.([^\.]+)$/.fade.\1/g')" ]; then
+    if [ -f "$img" ] && [[ ! "$img" =~ .fade.[^.]+$ ]] && [ ! -f "$(echo "$img" | sed -E 's/.([^\.]+)$/.fade.\1/g')" ]; then
       echo "Try Fading $img"
       python "$main_dir/scripts/python/fade-border.py" "-i" "$img"
     fi

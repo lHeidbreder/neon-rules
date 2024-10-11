@@ -137,6 +137,16 @@
 	\end{multicols}
 
 	\section{Races}
+	\subsection*{At a glance}
+	\providecommand{\tmplastgroup}{}
+	\begin{center}
+		\begin{tabularx}{0.7\textwidth}{X|rr}
+			Race & Cost & Page \\
+			\hline%
+			\luaimport{ai-races.csv}{race-sum.tpl}{airaces-summary}
+		\end{tabularx}
+	\end{center}
+	\subsection*{In detail}
 	\luaimport{ai-races.csv}{race.tpl}{airaces}
 	
 	\section{Banes}

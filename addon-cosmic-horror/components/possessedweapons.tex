@@ -1,6 +1,6 @@
 \section{Possessed Weapons}
 \label{sec:possessedweapon}
-\subsection*{Binding}
+\subsection{Binding}
 Unlike living creatures an inanimate object always has to have a demon bound to it ritually
 - as Demons are not interested in objects and objects cannot invite Demons.
 \par
@@ -17,7 +17,7 @@ If the total ever falls below 0, however,
 	the leader is stunned for D5 rounds
 	and the demon is \emph{frenzied}.
 
-\subsection*{Distortions}
+\subsection{Distortions}
 When a demon possesses a weapon, it gains unfathomable new abilities and its outward appearance is drastically warped.
 It can no longer be disassembled, becomes very resistant or outright immune to most damage, regenerates like a living creature and requires no maintenance.
 \par
@@ -43,3 +43,42 @@ Apply all of the remaining effects.
 \label{sec:traits}
 \luaimport{components/weapontraits.csv}{arcanum.tpl}{possessedweapontraits}
 %TODO: page filler - "demonic possessed sword"
+
+\subsection{Erosion}
+The demon can gradually break the Binding
+	or the user can loosen it voluntarily,
+	making the weapon more powerful by setting free more of the demon's might.
+\\%
+\begin{sitemize}
+	\item Whenever the wielder suffers \emph{Corruption},
+		he needs to win an opposed Courage test against the demon.
+		He gains +5 for every Binding Strength currently on the weapon.
+		\\%
+		On a failure the Binding Strength is reduced by 1.
+	\item The same applies when the wielder suffers from \emph{Shock}
+		or other, equally strong emotions.
+	\item The wielder may focus to release more power as an action.
+		\\%
+		He needs to win an opposed Courage test against the demon,
+		gaining the same bonus.
+		If he wins, the Binding Strength is reduced by 1.
+		If he fails, the demon uses the opportunity
+		and the Binding Strength is reduced by 2 instead.
+\end{sitemize}
+\par%
+\needspace{20mm}
+When the Binding Strength erodes,
+	the wielder immediately draws a Tarot card
+	and applies the result.
+\\%
+Any rules that allow re-rolls of dice
+	allow discarding and re-drawing this card.
+Just like re-rolling dice, the card may not be re-drawn more than once.
+And just like when creating the weapon in the first place,
+	the wielder does not learn the effect before it is applied.
+\par%
+When the Binding Strength reaches 0, the demon is set free.
+When the Binding is broken voluntarily in a prepared ritual area,
+	the demon may immediately be bound again to the same object.
+When the Binding is broken involuntarily though,
+	the weapon breaks apart.

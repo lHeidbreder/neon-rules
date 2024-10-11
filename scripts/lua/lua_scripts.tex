@@ -2,10 +2,15 @@
 % Second arg: the template path
 \directlua{dofile("../scripts/lua/csv-importer.lua")}
 \newcommand{\luaimport}[3]{
-	\directlua{importfrom("#1", "../scripts/templates/#2", "#3")}
+	\directlua{importfrom(\luastring{#1}, \luastring{../scripts/templates/#2}, \luastring{#3})}
     \input{#3.texin}
+}
+
+\directlua{dofile("../scripts/lua/util.lua")}
+\newcommand{\makelabelfromkey}[2][]{
+	\directlua{makelabel(\luastring{#1},\luastring{#2})}
 }
 
 %itemize for psionics
 \directlua{dofile("../scripts/lua/psionics.lua")}
-\newcommand{\psitemize}[1]{\vspace{-2mm} \begin{itemize} \directlua{psitemize("#1")} \end{itemize}}
+\newcommand{\psitemize}[1]{\vspace{-2mm} \begin{itemize} \directlua{psitemize(\luastring{#1})} \end{itemize}}

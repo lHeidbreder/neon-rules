@@ -70,8 +70,11 @@
 \usepackage{zref-savepos,graphicx}
 
 %lua scripts
+\usepackage{luacode}
 \input{../scripts/lua/lua_scripts.tex}
 
 %load hyperref last
 \usepackage[bookmarks=true,colorlinks=true,linkcolor=Blue]{hyperref}
 
+%whenever a new ref is required, step this counter
+\newcounter{tmpcntr}

@@ -18,7 +18,10 @@
     A less than reputable doctor may offer to implant more, looking to make some quick money. Potential side effects are vastly unpredictable and wild, and usually don't last long, as the patient will not last long.
 
     \chapter{Augments}
+    \vspace{-10mm}
     \section{Cybernetics}
+    \vspace{5mm}
+    \begin{multicols}{2}
     \implant{Aegis Shield Arms}
         {Created by a private military contractor its blueprints are eagerly protected. Those who can get their hands on a set however have been reported to rival LEGION detachments in firefights, if those reports are to be trusted.}
         {grants 2 additional parry actions against either range or melee when taking a defensive stance}
@@ -68,9 +71,14 @@
     	{A pain inducer implanted directly into the brain.
     		Even the most iron-willed of individuals will eventually go berserk.}
     	{Penalties from pain are doubled.
-    		When provoked or in distress the user needs to succeed in a Restraint test
-    		- this test takes a penalty equal to the amount of days since he was last frenzied.
-    		On a failure he is frenzied for about an hour, at least as long as he is in combat.}
+    		Tests to prevent \emph{Frenzy} take a penalty equal to
+    		the amount of days since the user was last \emph{Frenzied}.
+    		\\
+    		When provoked, in distress or straight up entering combat, the user needs to pass a \emph{Restraint} test
+    		(which he may refuse)
+    		- on a failure he is \emph{Frenzied} for as long as he is in combat,
+    		or until he is \emph{Stunned} (against which he gains a +20 bonus to resist).
+    		}
     	{brain}
     	{1 RI}
     	{55}
@@ -94,12 +102,22 @@
         {2 RI, 1 MT}
         {190}
         {Cheap, Compartment, Wrongly fitted, Powerful, Tough, Inconspicuous, Perfect fit, Integrated Weaponry}
+    \end{multicols}
 
     \section{Biotech}
+    \vspace{5mm}
+    \begin{multicols}{2}
     \implant{Fire Breath}
         {An additional organ similar to toxin sacs but producing highly flammable liquids instead. The user may spit out said liquid - in a manner not unlike vomiting - up to a few meters and an implant at the tip of the tongue allows ignition.}
-        {gain access to the following weapon profile twice per day:
-    	\par\hspace*{10mm} Shots: 3; Damage: 1D10+2; Range: 4m; Flame, Scatter, Spray
+        {The user gains access to the following weapon profile twice per day:
+    	\par%
+    	\begin{itemize}
+    		\item Shots: 3
+    		\item Damage: 1D10+2
+    		\item Range: 4m
+    		\item Flame, Scatter, Spray
+    	\end{itemize}
+	    It uses Ranged Combat Training (Integrated Weaponry).
         }
         {exotic}
         {2 MT}
@@ -151,5 +169,5 @@
     	{2 MT}
     	{cR 545}
     	{Integrated Weaponry (ranged weapon with spray rule), Perfect fit, Wrongly fitted}
-
+	\end{multicols}
 \end{document}

@@ -1,5 +1,22 @@
+\section{Backgrounds}
+\label{sec:backgroundlist}
+%TODO: this is not required until there are more backgrounds
+%\subsection*{At a glance}
+%\providecommand{\tmplastgroup}{}
+%\begin{center}
+%	\begin{tabularx}{0.7\textwidth}{X|rr}
+%		Background & Cost & Page \\
+%		\hline
+%		\luaimport{components/backgrounds.csv}{race-sum.tpl}{bg-summary}
+%	\end{tabularx}
+%\end{center}
+%\subsection*{In detail}
+\luaimport{components/backgrounds.csv}{race.tpl}{bgs}
+
 \section{Boons}
 \boon{Blessed Birth}{The character starts with a random \hyperref[ch:mutation]{mutation} and 3 corruption.}{6}
+\boon{Mutation Prone}{The character gains a Mutation every 7 corruption (rather than 10).}{6}
+\boon{Mutation Resistant}{The character gains a Mutation every 14 corruption (rather than 10).}{3}
 \section{Banes}
 \bane{Mark of Sacrifice}
 	{The character bears the mark of sacrifice somewhere on his body.
@@ -11,7 +28,7 @@
 	}
 	{7}
 	{}
-\bane{Watched}
+\bane{Voidscarred}
 	{Otherworldly entities are aware of the character.
 		He always has at least 2 Insight.
 		May be taken multiple times to increase the amount (2, 4, 6...).}
@@ -25,6 +42,7 @@
 		he makes a Con test at a penalty
 		equal to 3 times the corruption.
 		On a success the corruption gain is reduced by DoS, to a minimum of 0.}
+\pagebreak%quick fix
 \section{Bestiary}
 \subsection{Traits}
 \begin{tabularx}{\columnwidth}{l|X}

@@ -1,4 +1,7 @@
 \paragraph*{@name@ \ifthenelse{\isempty{@variant@}}{}{/ @variant@} (@cost@ GP)}
+\stepcounter{tmpcntr}
+\phantomsection
+\makelabelfromkey[race]{@name@@variant@}
 \textit{@flavor_text@}\par
 %\ifthenelse{\isempty{@cr@@int@@ins@@ch@@dex@@ag@@con@@str@}}{}{
 \begin{tabular}{|l|l|l|l|l|l|l|l|}
