@@ -96,10 +96,10 @@
 		Class & Test & Cost &  \\ \hline
 		\psicomponent{Negligible}{+30}{-1}{1, independent of DoS}
 		\psicomponent{Weak}{+20}{+/-0}{2 + DoS}
-		\psicomponent{Average}{+/-0}{+/-0}{2D10 + DoS}
-		\psicomponent{Substantial}{-10}{+1}{5 + 2 per DoS}
-		\psicomponent{Powerful}{-20}{+2}{12 + 5 per DoS}
-		\psicomponent{Overwhelming}{-30}{+3}{25 + 10 per DoS}
+		\psicomponent{Average}{+/-0}{+/-0}{2D10}
+		\psicomponent{Substantial}{-10}{+1}{10 + 2 per DoS}
+		\psicomponent{Powerful}{-20}{+2}{18 + 5 per DoS}
+		\psicomponent{Overwhelming}{-30}{+3}{35 + 10 per DoS}
 	\end{tabularx}
 	\subsection{Cast Time}
 	Rome was not built in a day, neither was a mind of steel cracked in seconds. Generally, the longer the caster takes, the easier the power will be; any longer than half an hour under normal circumstances will make things harder however, since no human can focus for that long.
@@ -330,25 +330,37 @@
 	\ability{Additional Psionic Discipline II}{600}{Psionic Aptitude or Psionic Prodigy}{Gain access to a third psionic discipline. Costs two thirds for a Psionic Prodigy.}
 	\ability{Additional Psionic Discipline III}{600}{Psionics Prodigy}{Gain access to a fourth psionic discipline.}
 	\ability{Combat Caster}{500}{Psionics Trained}{Gain +5 to powers with a Cast Time of \emph{Quick} or shorter.}
-%TODO: basically replaces Blank
-%	\ability{Sixth Sense}{250}{Psionics Trained}{When a psi power is cast within 20 meters, the character may make a Psionics test as a free action. On a success he gains some insight like the discipline, the cost, the caster, the target, one for success and one additional per DoS.}
-	\ability{Mage Slayer}{400}{Sixth Sense or Witchseeker implant}{The user gains an attack of opportunity when he starts casting in the user's melee reach.
-%TODO: Not a thing
-%Additionally damage caused by the user counts double for the purpose of breaking a psionic's concentration.
+	\ability{Sixth Sense}{250}{Psionics Trained}{
+		When a psi power is cast within 20 meters,
+		the character may make a Psionics test as a free action.
+		On a success he learns the rough direction and distance of the active power.
+	}
+	\ability{Mage Slayer}{400}{Sixth Sense}{
+		The user gains an attack of opportunity
+		when a target starts casting a psi power in the user's melee reach.
+		\\%
+		On a hit the user and the target make an opposed Psionics test.
+		If the user wins,
+			the target has to end some of his currently active psi powers, one per DoS.
 	}
 	\end{multicols}
 
 	\section{Supply}
 	\vspace{8mm}
 	\begin{multicols}{2}
-	\supply{Winston's Detector}
-        {\emph{Tool}\\ Allows detection of psionic powers. Anyone can tell when a power is cast within the vicinity but to estimate additional detail requires a test as if the user was a \emph{Blank}, using Logic to replace Psionics.}
+	\supply{Winston's Detector}{
+		\emph{Tool}\\
+		Allows detection of psionic powers.
+		Anyone using this detector can tell when a power is cast within the vicinity (a 20m radius).
+        To estimate additional detail requires a test
+        	as if the user was a \emph{Blank},
+        	using Logic to replace Psionics.}
         {69}
-        {0,3 kg}
+        {0,3}
 	\supply{Psi Core}
         {\emph{Melee Core Component}\\ Immediately after hitting an opponent in melee, the wielder may cast a psionic power with a casting time of 1 action and range touch against the opponent as a free action instead.}
         {57}
-        {0,4 kg}
+        {0,4}
 	\end{multicols}
 
 	\section{Implants}
@@ -383,13 +395,18 @@
         {Perfect fit, Aesthetic, Wrongly fitted, Inconspicuous}
 	\implant{"Witchseeker" Psi-Focus}
         {A Winston's Detector implanted into the brain, feeding its readings directly to the brain of the user, and a modified Cassandra Focus. Depending on how it is implanted, the sensation may be experienced as a new type of smell, a specific sound or even visible as a faint mist. Extremely rare military hardware which gives "witchseeker" psi hunters their name.}
-        {Allows access to Psionics but limits the user to the \emph{Blank} discipline. Grants +10 to Psionics.}
+        {
+        	Allows access to Psionics
+        	but limits the user to the \emph{Blank} discipline.
+        	Grants +10 to Psionics.
+        }
         {brain}
         {2 RI, 1 MT}
-        {188}
+        {488}
         {-}
 	\end{multicols}
 	
+	\pagebreak%quick fix
 	\section{Chems}
 	\vspace{4mm}
 	\begin{multicols}{2}
