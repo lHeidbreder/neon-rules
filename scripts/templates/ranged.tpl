@@ -3,6 +3,7 @@
 		\textbf{\ul{@name@}}\\
 		\textit{@flavor_text@}\\
 		\ifthenelse{\isempty{@weight@}}{}{\textbf{Weight}: @weight@ kg\\}
+		\ifthenelse{\isempty{@price@}}{}{\textbf{Availability}: \directlua{tex.print(6-tierfromcost(@price@))}\\}
 		\ifthenelse{\isempty{@price@}}{}{\textbf{Price}: cR @price@\\}
 		\ifthenelse{\isempty{@shots@}}{}{\textbf{Shots}: @shots@\\}
         \textbf{Damage}: \ifthenelse{\isempty{@damage@}}{0}{@damage@}\\
