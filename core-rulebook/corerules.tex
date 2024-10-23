@@ -1,7 +1,7 @@
 %TODO:
 %- add *twocolumn* option
 %- remove 12pt (default is 10pt)
-\documentclass[12pt,a4paper,openany,dvipsnames]{book}
+\documentclass[11pt,a4paper,openany,dvipsnames]{book}
 \pagestyle{plain}
 
 \input{config/packages.tex}
@@ -186,6 +186,7 @@
 			up to spontaneous fatal cardiac arrest.
 	}
 
+	\needspace{20mm}
 	They also encompass \emph{combat-related values}:
 	\derivedvalue{Base Melee Combat}{(Cr+Ins+Ag+Str)/3}{
 		The value representing the character’s basic skill in melee combat,
@@ -300,15 +301,21 @@
 	\section{Walking, running, sprinting}
 	Characters move at different speeds, starting with a casual stroll and ending in a full-power short distance sprint.\\
 	\textbf{Walking speed} is about 3-4km/h, 1m/s or 3m per turn for a normal human being. Being larger or smaller might affect this but to a generally negligible degree. It is not exhausting and most things are not impaired at this speed.\\
-	\textbf{Running speed} is half a character’s movement speed in meters per second. At this speed most things and most notably combat actions take a -20 penalty. It is also exhausting after a while, so every \sim 5 minutes a jogging character takes a level of exhaustion.\\
-	A normal character’s \textbf{sprint speed} in meters per second is given by their derived value movement speed.
+	\textbf{Running speed} is half a character’s movement speed in meters per second.
+	At this speed most things - most notably combat actions - take a -20 penalty.
+	It is also exhausting after a while, so every \sim 5 minutes a jogging character takes a level of exhaustion.\\
+	A character’s \textbf{sprint speed} in meters per second is equal to their derived value movement speed.
 	At this speed most actions (most notably all combat actions)
 		take a -40 penalty
 		or might, as per GM discretion, be completely impossible
 		- firing machine guns while sprinting might be more than difficult due to their bulk for example.
 	A sprinting character takes a level of exhaustion every other round.
 	\section{Marching}
-	For the most part getting access to vehicular transport is easy enough. In some instances though it might be necessary to take longer marches on foot. Normal groups travel at roughly 30 kilometers a day or 40 if they push themselves. Marching is exhausting and every traveler will gain D5 levels of exhaustion (or D5+2 if they're pushing), adjusted depending on their journey.
+	For the most part getting access to vehicular transport is easy enough.
+	In some instances though it might be necessary to take longer marches on foot.
+	Normal groups travel at roughly 30 kilometers a day or 40 if they push themselves.
+	\\%
+	Marching is exhausting and every traveler will gain D5 levels of exhaustion (or D5+2 if they're pushing), adjusted depending on their journey.
 	\section{Climbing, jumping, leaping}
 	Sometimes getting from point A to point B becomes difficult when they are on different elevations. It might also be necessary to cross over obstacles in one’s way and do so fast.\\
 	\textbf{Climbing} works just as walking or running would,
@@ -627,7 +634,6 @@
 	\chapter{Equipment}
 	\input{lists/specialrules.tex}
 	\input{equipment/availability.tex}
-	\pagebreak %quick fix
 	\input{equipment/supply.tex}
 	\input{equipment/services.tex}
 	\input{equipment/ranged.tex}
@@ -635,7 +641,6 @@
 	\input{equipment/defense.tex}
 
 	\input{augs/implants.tex}
-	\pagebreak %quick fix
 	\input{augs/chemicals.tex}
 
 	\chapter{Lists}

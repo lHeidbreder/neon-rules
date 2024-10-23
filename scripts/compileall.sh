@@ -1,5 +1,6 @@
 #!/bin/bash
 DEFAULT_GOALS="CLEAN FADE COMPILE PACKAGE"
+ALL_GOALS="XCLEAN CLEAN FADE COMPILE PACKAGE"
 
 cut_absolute_path () {
   echo $(perl -le 'use File::Spec; print File::Spec->abs2rel(@ARGV)' $1 ${main_dir})
@@ -97,7 +98,7 @@ file_output_dir="${main_dir}/_rulepackage"
 
 # handle help dialog
 if [[ $(echo $@ | tr '[:lower:]' '[:upper:]') == *HELP* ]]; then
-  echo "Usage: $0 [HELP | XCLEAN | CLEAN | FADE | COMPILE | PACKAGE]"
+  echo "Usage: $0 [HELP | XCLEAN | CLEAN | FADE | COMPILE | PACKAGE | ALL]"
   echo "Just running $0 is equal to $0 ${DEFAULT_GOALS}"
   echo
   echo "Goals:"
@@ -107,6 +108,7 @@ if [[ $(echo $@ | tr '[:lower:]' '[:upper:]') == *HELP* ]]; then
   echo "FADE    - Add faded borders to art, in accordance with 'scripts/python/fade-art.list'."
   echo "COMPILE - Run prep script and compile PDFs." #split these two
   echo "PACKAGE - Create a zip package of compiled PDFs."
+  echo "ALL     - Run all goals, aside from HELP goal."
 
   exit 0
 fi
@@ -117,24 +119,27 @@ GOALS=$(echo "$@" | tr '[:lower:]' '[:upper:]')
 if [[ $# -eq 0 ]]; then
   GOALS=$DEFAULT_GOALS
 fi
+if [[ $GOALS == *ALL* ]]; then
+  GOALS=$ALL_GOALS
+fi
 echo "Goals: $GOALS"
 
 for goal in $GOALS; do
   echo -e "\e[0;36mRunning goal: $goal\e[0m"
   case "$goal" in
-    XCLEAN)
+    XCLEAN | ALL)
       workspace_clean
       ;;
-    CLEAN)
+    CLEAN | ALL)
       clean
       ;;
-    FADE)
+    FADE | ALL)
       fade_art
       ;;
-    COMPILE)
+    COMPILE | ALL)
       compile
       ;;
-    PACKAGE)
+    PACKAGE | ALL)
       package
       ;;
     *)
