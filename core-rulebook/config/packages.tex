@@ -38,15 +38,15 @@
 \def\titleshadowcolor{cyan}
 \usepackage{shadowtext}
 \newcommand{\glowup}[2][cyan]{
-    \shadowoffset{1.5pt}
+    \shadowoffset{1.8pt}
     \shadowcolor{#1}
     \shadowtext{#2}
 }
 \title{
-    \glowup[\titleshadowcolor]{\textcolor{\titletextcolor}{Neon Pen and Paper - \subtitle}}
+    \glowup[\titleshadowcolor]{\Huge \textcolor{\titletextcolor}{Neon Pen and Paper - \subtitle}}
 }
-\author{\glowup[\titleshadowcolor]{\textcolor{\titletextcolor}{Fr0sty}}}
-\date{\glowup[\titleshadowcolor]{\textcolor{\titletextcolor}{\today}}}
+\author{\glowup[\titleshadowcolor]{\large \textcolor{\titletextcolor}{Fr0sty}}}
+\date{\glowup[\titleshadowcolor]{\large \textcolor{\titletextcolor}{\today}}}
 
 %Fonts
 \usepackage{fontspec}
@@ -68,7 +68,7 @@
 \usepackage{needspace}
 \titleformat{\chapter}{\needspace{20mm} \heading\huge\bfseries}{\thechapter}{20pt}{}%\Huge}
 \titleformat{\section}{\needspace{20mm} \subheading}{\thetitle}{18pt}{}
-\titleformat{\subsection}{\needspace{20mm} \parhead}{\thetitle}{16pt}{}
+\titleformat{\subsection}{\needspace{10mm} \parhead}{\thetitle}{16pt}{}
 
 %filler images
 \usepackage{zref-savepos,graphicx}

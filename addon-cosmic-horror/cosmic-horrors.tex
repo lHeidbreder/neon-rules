@@ -88,6 +88,7 @@
 	
 	\chapter{Mutation}
 	\label{ch:mutation}
+	\vspace{-20mm}%quick fix
 	Every now and then a character may be forced to mutate.
 	Roll a D100, divide by 2 and consult the table below.
 	The result may be modified by a tenth of the character's insight at the time of mutation.
@@ -104,6 +105,7 @@
 	\section*{Mutations}
 	\vspace{4mm}
 	\begin{multicols}{2}
+		\raggedcolumns
 		\newcounter{mutations} %fixes hyperref links
 		\luaimport{components/mutations.csv}{mutation.tpl}{mutations}
 	\end{multicols}
