@@ -126,10 +126,16 @@
 	\end{minipage}
 	\par
 }
+%TODO: move to template import
 \newcommand{\weaponmod}[5]{
 	\begin{minipage}{\columnwidth}
 		\textbf{\ul{#1}}\\
 		\textit{#3}; \textit{cR #4}; \textit{#5 kg}\\
+        %TODO: in the line above, only show "kg" if #5 is only a number
+        %for that i need to build a new test for xifthen:
+        %\newtest{\matches}[2]{
+        %    \expandafter \directlua{*see if string in #1 matches regex in #2, then tex.sprint either true or false*}
+        %}
 		#2
 	\end{minipage}
 	\par
@@ -201,7 +207,7 @@
 
 %prioritize graphics with fade
 \newcommand{\tryincludewithfade}[2][]{
-	
+
 	\directlua{
 		newpath=string.gsub("#2", ".png$", ".fade.png");
 		tex.sprint("\\edef\\tmpTryincludewithfade{"..newpath.."}");

@@ -56,7 +56,7 @@
     @itemize:disallowed_backgrounds@
     \end{itemize} }
 \end{multicols*}
-\def\currentfillerimagepath{../art/\subtitle/@picture_path@}
+\def\currentfillerimagepath{../art/\subtitle/races/@picture_path@}
 \IfFileExists
     {\currentfillerimagepath}
     {\begin{center}\filltopageendgraphics{\currentfillerimagepath}\end{center}} %fill the rest of the page with the image

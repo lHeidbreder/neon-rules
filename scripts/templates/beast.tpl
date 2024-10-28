@@ -21,6 +21,10 @@
         \end{center}
         \end{multicols}
     }{
+        \ifthenelse{\isempty{@difficulty_social@ @difficulty_combat@}}{}{\textbf{Difficulty}: }
+        \ifthenelse{\isempty{@difficulty_social@}}{}{Social @difficulty_social@ / }
+        \ifthenelse{\isempty{@difficulty_combat@}}{}{Combat @difficulty_combat@}
+        \par
         \textit{@flavor_text@}
     }
 \end{minipage}

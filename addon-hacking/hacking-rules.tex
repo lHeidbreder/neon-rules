@@ -3,17 +3,23 @@
 \input{../core-rulebook/config/packages.tex}
 
 \def\subtitle{Hacking and Diving}
-\def\modifiedlincname{modified L1NC} %TODO
+\def\modifiedlincname{modified L1NC} %TODO: rename?
 \def\hackingskill{Computer Operation} %TODO: rename, e.g. to "Machine Persuasion"
 
 \begin{document}
 	\input{../core-rulebook/config/frontpages.tex}
-	
+
 	\chapter{On Hacking in this book}
 	The following hacking rules are in replacement of the ones in the core rules.
 	This is to give them more depth and make them more of a focal point mechanically.
+	\par
+    Hacking is magic, in the broadest sense:
+    It requires rare wizards or sorcerers to perform,
+    and it greatly shifts the balance of power.
+    These people will be sought after by criminal syndicates and corps alike,
+    and have to be ever vigilant.
 	%TODO: very little for one chapter
-	
+
 	\chapter{Types of attacks}
 	\section{AR Attacks}
 	Attacking the AR supplements the AR with wrong information to display.
@@ -46,7 +52,7 @@
 		Dives are lengthy processes.
 		The rules are meant to be used as set pieces or whole missions themselves.
 	\end{exampleblock}
-	
+
 	\chapter{AR Attacks}
 	\section{Prerequisites}
 	To perform AR Attacks, the character needs a \modifiedlincname\ and the necessary experience with AR technology,
@@ -62,7 +68,7 @@
 		The attack takes 2 actions to perform.
 		\\%
 		The larger and more detailed the illusion is supposed to be, the harder it will be to create.
-		For more details see section \ref{sec:spellbook} below.
+		For more details see section \ref{sec:arspellbook} below.
 	\paragraph{Area Effects}
 		All L1NCs in the area are affected by the user's hack.
 		\\%
@@ -73,12 +79,12 @@
 		Effecting an area is much harder and suffers a -20.
 		The attack also now takes 4 actions to perform.
 	\section{Spellbook}
-	\label{sec:spellbook}
+	\label{sec:arspellbook}
 	\vspace{5mm}
 	\begin{multicols}{2}
 		\luaimport{components/arspells.csv}{arspell.tpl}{components/arspells}
 	\end{multicols}
-	
+
 	\chapter{Deep Attacks}
 	\section{Prerequisites}
 	The user needs a \modifiedlincname\ and the necessary experience to dive, represented by the ability \emph{Diver I} (p. \pageref{ability:diveri}).
@@ -88,14 +94,16 @@
 	\section{Goals}
 	The target of such an attack is a single service or closed system, such as door controls or a surveillance system.
 	The goal can be to open or close, activate or deactivate, or hijack and control the system.
-	%TODO: what to roll?
-	%TODO: how difficult is each effect?
+	\\%
+    Performing a deep attack requires an action to connect (possibly in conjunction with a \emph{Grappling} test),
+    and an action to perform the attack - requiring a \emph{\hackingskill} test at a given penalty (see below).
 	\section{Spellbook}
-	%TODO: spells
-	%- disable device
-	%- steal data from device
-	%- control device
-	
+	\label{sec:arspellbook}
+    \vspace{5mm}
+    \begin{multicols}{2}
+        \luaimport{components/deepspells.csv}{arspell.tpl}{components/deepspells}
+    \end{multicols}
+
 	\chapter{Deep Dive}
 	\section{Prerequisites}
 	A Deep Dive requires a \emph{diving rig} (see chapter \ref{ch:rigs}) and the necessary experience to navigate the Deep, represented by \emph{Diver II} (p. \pageref{ability:diverii}).
@@ -124,11 +132,12 @@
 		The higher the alertness, the more of these devices will appear where they weren't previously.
 		\\%
 		ACMs look to identify,
-			and either "physically" remove the intruders from the premises or neutralize them to cancel their connection.
+			and either "physically" remove the intruders from the premises
+            or completely neutralize them to cancel their connection.
 		Advanced ACMs may radically shift the environment to do so.
-		\begin{exampleblock}
-			%TODO: getting seen
-		\end{exampleblock}
+%		\begin{exampleblock}
+%			%TODO: getting seen
+%		\end{exampleblock}
 	\paragraph{Defenders}
 		roam a service looking for both bugs as well as intruders, trying to locate and neutralize them.
 		Divers can patrol areas that ACMs cannot easily cover, and make intuitive decisions on how to approach different anomalies.
@@ -139,9 +148,25 @@
 		Just like an intruder, a defender can also be "neutralized".
 		He is not booted from the service for good, however, and may reconnect after a short while
 			- giving the intruders a small time frame to act.
-%	\section{Combat}
-%	TODO
-	
+	\section{Combat}
+    \subsection*{Preparation}
+    When entering the Deep Net,
+        divers may bring one melee and one ranged weapon with them
+        - these are obviously not actual weapons but representations of aggressive code fragments.
+    Depending on the type of code, the weapon will change,
+        i.e. larger weapons are easily detectable attacks by ACMs and other divers,
+        but deal more damage if they hit.
+    \subsection*{Encounter}
+    A combat encounter for untrained divers works just like in reality.
+    For trained divers, however, things work somewhat differently.
+    \\%
+    All divers who have the \emph{Diver II} ability gain an additional action per combat round.
+    They can use this action to shift the environment.
+    For possible effects and penalties refer to the AR and Deep spellbooks.
+    \\%
+    Defenders gain +20 to these required tests.
+    They also may alert the ACM, which they don't have to roll for at all.
+
 	\chapter{Building a Rig}
 	\label{ch:rigs}
 	\section{Energy Limits}

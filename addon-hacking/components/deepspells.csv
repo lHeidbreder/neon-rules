@@ -1,0 +1,6 @@
+name,penalty,duration,effect
+Disable,$\pm$0,DoS minutes,The device or system is disabled for the duration.
+Theft,-10,variable time,Steal data from the device or system. Depending on the data retrieved this may take from seconds to multiple minutes. The user can generally estimate how long the theft will take depending on the data he intends to steal.
+Override,-10,DoS hours,"Alter a device’s or system’s directions. This can include white-listing himself and his allies in a security system, or changing the pitch of a voice being broadcast."
+Control,-20,the duration of the connection,Control the device or system directly. The actions the given device or system can take are up to the GM.
+Mole,-20,until it’s used,"Plant a piece of scrap code in the system. Unless the system is checked thoroughly for some reason, the code is generally undetectable. \\ Any time the user tries to access the system, he gains +30 to his \hackingskill, until the scrap code is purged."
