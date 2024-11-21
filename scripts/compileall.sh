@@ -35,6 +35,7 @@ clean () {
   mkdir -p $file_output_dir
   mkdir -p $file_output_dir/addons
   mkdir -p $file_output_dir/missions
+  mkdir -p $file_output_dir/supplements
   find ${file_output_dir} -maxdepth 2 -type f -delete
 }
 
@@ -72,6 +73,8 @@ compile () {
       OUT="${file_output_dir}/addons"
     elif [[ ${i%/*.tex} =~ missions$ ]]; then
       OUT="${file_output_dir}/missions"
+    elif [[ ${i%/*.tex} =~ supplements$ ]]; then
+      OUT="${file_output_dir}/supplements"
     fi
 
     latexmk -f -pdflua -interaction=nonstopmode -output-directory="${OUT}" ${i##*/} 1>> "${console_output_dir}/compile.out" 2>> "${console_output_dir}/compile.err" || analyse_error ${i##*/}
