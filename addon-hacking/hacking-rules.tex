@@ -3,55 +3,173 @@
 \input{../core-rulebook/config/packages.tex}
 
 \def\subtitle{Hacking and Diving}
+\def\modifiedlincname{modified L1NC} %TODO
+\def\hackingskill{Computer Operation} %TODO: rename, e.g. to "Machine Persuasion"
 
 \begin{document}
 	\input{../core-rulebook/config/frontpages.tex}
 	
-	\chapter{On Diving}
-	People use the AR Net to interface with the Deep Net.
-	It always surrounds you, it is easy to use - that's its core principles.
-	A chosen few, however, pass the AR, interfacing with the Deep Net personally.
+	\chapter{On Hacking in this book}
+	The following hacking rules are in replacement of the ones in the core rules.
+	This is to give them more depth and make them more of a focal point mechanically.
+	%TODO: very little for one chapter
+	
+	\chapter{Types of attacks}
+	\section{AR Attacks}
+	Attacking the AR supplements the AR with wrong information to display.
+	These attacks can be targeted either at one person or at every person in the area.
 	\par
-	Anyone can technically dive into the Deep, given he has the required equipment.
-	However, the feeling is overwhelming for most, ranging from unpleasant to outright nauseating.
+	These attacks are fast and only require a wireless connection to the AR using a \modifiedlincname,
+		but they can only modify the display.
+	At most these attacks can blind or deafen people for a moment.
+	Usually they produce illusions, share information or control traffic.
+	They may also track every \emph{standard} L1NC in the vicinity - other hackers are generally immune against this simple ping.
 	\\%
-	A special type of person will feel a strange comfort,
-		feeling truly alive for the first time,
-		even getting addicted to the feeling.
-	
-	\chapter{Setup}
-	\input{components/setup.tex}
-	
-	\chapter{Casual Dive}
-	%TODO: meet people relatively anonymously
-	%equivalent of addresses exists to schedule a meeting
-	
-	\chapter{Hacking}
-	%TODO
-	\section{Parties}
-	\paragraph{The Attacker}
-		attempts to access a system.
-		He has the option to either "sneak around" or to break through the defenses.
-		Once he is discovered he can either make one last push or try to escape.
-	\paragraph{The Defender}
-		%TODO
-	\paragraph{Automated Defenses}
-		%TODO
+	If they last too long, authorities will notice and begin to track the user.
+	\section{Deep Attacks}
+	Deep Attacks target services and systems that aren't directly controlled by the AR.
 	\par
-	Any party may consist of one or more members.
-	If either side has no members, the result is obviously predetermined.
-	\section{Actions}
-	%TODO
+	They require a physical connection and a decent amount of experience.
+	They are, however, also much more powerful, as they can grant access to devices.
+	This may allow opening electronic door locks, hijacking camera feeds, or disabling sirens.
+	\section{Deep Dive}
+	A Deep Dive is a long-form Deep Attack.
+	The goal is to enter the service through the Deep from a remote location.
+	\par
+	They require a lot of equipment and experience to perform, and they are very risky.
+	\\%
+	Goals are plentiful and reach from corporate espionage to sabotage by denial of service.
+	\begin{exampleblock}
+		\itshape
+		GM Note:
+		\\%
+		Dives are lengthy processes.
+		The rules are meant to be used as set pieces or whole missions themselves.
+	\end{exampleblock}
 	
+	\chapter{AR Attacks}
+	\section{Prerequisites}
+	To perform AR Attacks, the character needs a \modifiedlincname\ and the necessary experience with AR technology,
+		represented by the ability \emph{Misinformer} (p. \pageref{ability:misinformer}).
+	Experience in \emph{Computer Operation} obviously does not hurt.
+	\section{Goals}
+	AR Attacks can achieve two things:
+	\paragraph{Targeted Effects}
+		A single person is targeted to suffer some effect.
+		\\%
+		The user makes a \emph{\hackingskill} test.
+		The target opposes the test using \emph{Perception}.
+		The attack takes 2 actions to perform.
+		\\%
+		The larger and more detailed the illusion is supposed to be, the harder it will be to create.
+		For more details see section \ref{sec:spellbook} below.
+	\paragraph{Area Effects}
+		All L1NCs in the area are affected by the user's hack.
+		\\%
+		The user makes a \emph{\hackingskill} test.
+		Everyone in the vicinity may oppose the test using \emph{Perception}
+			- on a success they recognize the illusion as misinformation and are essentially unaffected.
+		\\%
+		Effecting an area is much harder and suffers a -20.
+		The attack also now takes 4 actions to perform.
+	\section{Spellbook}
+	\label{sec:spellbook}
+	\vspace{5mm}
+	\begin{multicols}{2}
+		\luaimport{components/arspells.csv}{arspell.tpl}{components/arspells}
+	\end{multicols}
+	
+	\chapter{Deep Attacks}
+	\section{Prerequisites}
+	The user needs a \modifiedlincname\ and the necessary experience to dive, represented by the ability \emph{Diver I} (p. \pageref{ability:diveri}).
+	In addition any Deep Attack requires a physical connection
+		- either through an external device
+		or an implant (e.g. a Subdermal Jack, p. \pageref{implant:subdermaljack}).
+	\section{Goals}
+	The target of such an attack is a single service or closed system, such as door controls or a surveillance system.
+	The goal can be to open or close, activate or deactivate, or hijack and control the system.
+	%TODO: what to roll?
+	%TODO: how difficult is each effect?
+	\section{Spellbook}
+	%TODO: spells
+	%- disable device
+	%- steal data from device
+	%- control device
+	
+	\chapter{Deep Dive}
+	\section{Prerequisites}
+	A Deep Dive requires a \emph{diving rig} (see chapter \ref{ch:rigs}) and the necessary experience to navigate the Deep, represented by \emph{Diver II} (p. \pageref{ability:diverii}).
+	If a group dives together, at least one needs the ability, but the other may follow along and act as long as their leader is still with them.
+	\section{Sensation}
+	Services in the Deep are translated into human sensations.
+	This means any service will appear like an area that its creator is familiar with
+		- e.g. office buildings, cave systems, or medieval fantasy marketplaces.
+	\section{Goals}
+	\paragraph{Attackers}
+		enter a service, looking for a representation of their target.
+		They interact with this target in a way that mimics what they want to achieve.
+		\begin{exampleblock}
+			Our protagonists enter a security service in search for a database,
+				which they find in form of a file drawer.
+			Within this drawer they find their likenesses and toss them into a shredder.
+			They are then removed from this security service's database.
+		\end{exampleblock}
+	\paragraph{ACM}
+		- \emph{Automated Counter Measures} - are the native defense mechanism of any service.
+		ACMs have a level of alertness.
+		The more anomalies (bugs or intrusions) they identify, the slower the service will become,
+			as more resources are diverted to the ACMs.
+		\\%
+		ACMs usually appear to divers as cameras, scanners, turrets and other automated defense systems.
+		The higher the alertness, the more of these devices will appear where they weren't previously.
+		\\%
+		ACMs look to identify,
+			and either "physically" remove the intruders from the premises or neutralize them to cancel their connection.
+		Advanced ACMs may radically shift the environment to do so.
+		\begin{exampleblock}
+			%TODO: getting seen
+		\end{exampleblock}
+	\paragraph{Defenders}
+		roam a service looking for both bugs as well as intruders, trying to locate and neutralize them.
+		Divers can patrol areas that ACMs cannot easily cover, and make intuitive decisions on how to approach different anomalies.
+		\\%
+		A service with one or a team of multiple divers on standby will be alerted by the ACM at some point.
+		Corpo systems are generally always staffed.
+		\\%
+		Just like an intruder, a defender can also be "neutralized".
+		He is not booted from the service for good, however, and may reconnect after a short while
+			- giving the intruders a small time frame to act.
+%	\section{Combat}
+%	TODO
+	
+	\chapter{Building a Rig}
+	\label{ch:rigs}
+	\section{Energy Limits}
+	Powering a massive rig is not possible everywhere.
+	More importantly, booting up a rig causes a massive power spike in the grid, very noticeable on surveillance.
+	This may put the divers on a time crunch that's much tighter than acceptable.
+	\par
+	While in civilization, once the energy demand surpasses 2, surveillance systems will slowly start to pick up on the rig as an unknown anomaly.
+	Anyone who can take readings of the power grid will take notice when energy demand reaches 6, and can guess that it's a rig.
+	The surveyors' reactions can vary widely.
+	\begin{exampleblock}
+		\itshape
+		Technically space can be a limiting factor, as some components may be quite large.
+		Considering how much size varies between components, this limit will not receive numbers.
+	\end{exampleblock}
+	\section{Access Point}
+	The rig's heart is an access point.
+	It translates the Deep into human-understandable sensations, and the human mind into instructions.
+	Divers need a physical connection to this device to use it.
+	\section{Bench}
+	A diver has to lay down to prevent falling over.
+	While technically the floor is viable, spasms during the dive can hurt.
+	Special ergonomic benches can mitigate some of that damage,
+		while being submerged in a nutrient vat not only reduces injury risk but can also extend the maximum time of the dive.
+	\section{Peripherals}
+	Further hardware may be attached to the access point to alter the behavior during the dive.
+	More powerful access points - while requiring more energy - can support more peripherals.
+
 	\chapter{Additional Content}
-	\section{Abilities}
-	%TODO:
-	%Diver - needs to require a basic ability, can only be acquired after at least the first dive; diving without gives which penalties/restrictions?
-	\section{L1NC Implants}
-	\label{sec:modifiedl1ncs}
-	%TODO
-%	\section{Specialized Implants}
-%	%TODO
-	\section{Rigs}
-	%TODO
+	\input{components/additionalcontent.tex}
 \end{document}

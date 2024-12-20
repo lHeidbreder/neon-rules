@@ -1,0 +1,169 @@
+\section{Abilities}
+\ability{Diver I}{300}{\hackingskill Trained}{Allows the user to perform Deep Attacks given proper equipment.}
+\ability{Diver II}{300}{}{Allows the user to perform Deep Dives as a leader.}
+\ability{Misinformer}{250}{\hackingskill Trained}{Allows the user to perform AR Attacks given a \modifiedlincname.}
+
+\section{Rigs}
+\subsection{Access Points}
+\supply{Mariner Deep AP v2}
+	{The simplest access point available.
+		Energy demand 2, allows a single connection.}
+	{20}
+	{2}
+\supply{Tenebris Covert AP}
+	{An access point including a set of capacitors, making it harder to detect for a while.
+		For one hour the energy demand is 1, afterwards the device has to be recharged or it becomes 3.
+		Allows a single connection.}
+	{120}
+	{2}
+\supply{Collective Consciousness Group AP}
+	{A multipurpose access point supporting multiple connections in various ways.
+		\\%
+		The first use-case is allowing a group of people to dive simultaneously.
+		The have to access the same service, but can easily find each other within the Deep, allowing inexperienced divers at least some orientation.
+		For this use-case it allows up to six simultaneous connections and it has an energy demand of 1 per user, with a minimum of 3.
+		\\%
+		The second use-case is two divers connecting to each other's consciousness.
+		It becomes almost impossible to lie to each other
+		- all \emph{Interrogation} tests may be assisted using \emph{\hackingskill} as a free action, in addition to normal assistance.
+		Alternatively two divers getting physical with one another can drastically increase the intensity of the experience.
+		\\%
+		When used in either of these ways, it allows for up to three connections and has an energy demand of 2.}
+	{500}
+	{5}
+\subsection{External Connectors}
+\supply{L1NC Adapter}
+	{A wireless adapter that allows any L1NC user to connect to a given rig's access point.}
+	{20}
+	{1}
+\supply{NerveGear}
+	{A headset that allows anyone, L1NC user or not, to perform dives.}
+	{50}
+	{1}
+\subsection{Benches}
+\supply{Bathtub}
+	{A bathtub is much safer than just laying on the floor.
+		Any damage the user would take during the dive is halved.
+		}
+	{50}
+	{140}
+\supply{Ergonomic Bench}
+	{A bench specifically designed for cyber-security specialists on long dives.
+		Any physical damage the user would take during the dive is reduced to a quarter.
+		}
+	{180}
+	{80}
+\supply{Nutrient Vat}
+	{A diver can be encased in a vat filled with a breathable nutrient solution.
+		In addition to all the benefits of an ergonomic bench this allows the user to stay in the Deep for hours on end
+		- potentially indefinitely, if someone renews the solution every now and again.
+		\\%
+		This module increases energy demand by 1.}
+	{515}
+	{350}
+\subsection{Modules}
+\begin{exampleblock}
+	Unless stated otherwise, every module increases Energy Demand by 1.
+\end{exampleblock}
+\supply{Vitals Monitor}
+	{Reads out vital data from all connected divers.
+		Gives sentinels the option to intervene if necessary and is required for many other modules.
+	}
+	{165}
+	{8}
+\supply{Autoinjector}
+	{An autoinjector is connected to a bench or nutrient vat, as well as a vitals monitor.
+		It can be loaded with 3 doses of any chemicals that can be injected on command by the diver.
+	}
+	{180}
+	{6}
+\supply{Emergency Coolant}
+	{Twice each dive all physical damage from an attack is negated.
+	}
+	{50}
+	{6}
+\supply{Software Vault}
+	{A storage device that can provide 3 software fragments.
+		All connected divers have access to the fragments in the vault.
+	}
+	{190}
+	{14}
+\supply{Balance Capacitors}
+	{For two hours the energy demand decreases by 1.
+		The capacitors then have to be recharged.}
+	{175}
+	{25}
+\supply{Mirror Proxy}
+	{Connects one diver to the Deep a second time.
+		If the diver gets forcefully disconnected, he may swap to the backup connection and return to full strength.
+		\\%
+		Energy Demand increases by 2.
+	}
+	{1900}
+	{2}
+
+\section{Implants}
+\subsection{\modifiedlincname}
+\implant{Space Invader}
+	{A simple \modifiedlincname\ that does nothing special besides opening up the world.}
+	{The user can perform AR attacks.}
+	{brain}
+	{1 RI}
+	{480}
+	{Cheap}
+\implant{Mirage}
+	{A \modifiedlincname\ with a focus on visual hallucinations.}
+	{The user can perform AR attacks.
+		When causing visual hallucinations with the attack, the user gains +10 to required rolls.}
+	{brain}
+	{2 RI}
+	{520}
+	{Cheap}
+\implant{Puppet Strings}
+	{Technically a \modifiedlincname, but built for the sole purpose of connecting with another person, to give them some control and share sensory impressions.
+		The user experiences numbness, the other party experiences both his own and the user's full senses.
+	}
+	{Resisting a wish of a connected other party requires a \emph{Restraint} test at -20.
+		Trying to remember what happened during the connection requires an \emph{Int} test at -10.}
+	{-}
+	{1 MT}
+	{160}
+	{Cheap, Wrongly Fitted}
+\subsection{Misc}
+\implant{Subdermal Jack}
+	{A connector at the tip of one's finger or within the wrist that connects the device to a secured and safe part of the brain.
+		The implant is extremely potent but very exhausting to use due to all the translation that has to take place between brain and computing device.}
+	{The user gains +30 to \hackingskill tests while diving and does not require an external connector on his rig.
+		The implant is unnoticeable while not in use (or during an autopsy).}
+	{-}
+	{3 RI}
+	{185}
+	{Cheap, Perfect fit, Wrongly fitted}
+\implant{Spellbook}
+	{A data storage container within the brain, allowing code fragments to be brought into a dive and triggered in an emergency.}
+	{The user can bring 4 fragments into any dive.
+		Using this implant requires the user to have an implanted connector and a \modifiedlincname.}
+	{brain}
+	{1 RI}
+	{490}
+	{Cheap, Perfect fit, Wrongly fitted}
+
+\section{Software Fragments}
+\supply{Ace}
+	{A very special code fragment exploiting a specific security flaw.
+		This works once and once only.
+		\\%
+		The user may re-roll one failed test during the dive.
+		Afterwards the code fragment is generally useless.}
+	{48}
+	{-}
+\supply{Decoy}
+{Play your intrusion off as a bug.
+	Reduce the alert level of an ACM by 1.
+	Can only be used once per system.}
+{48}
+{-}
+\supply{Sanity Booster}
+	{While diving, one of the character's characteristics is improved by 5.}
+	{48}
+	{-}

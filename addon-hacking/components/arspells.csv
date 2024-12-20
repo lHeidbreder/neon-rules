@@ -1,0 +1,5 @@
+name,penalty,duration,effect,multipletargets
+Blind,-10,DoS actions,Fully blind a target by stacking junk images all over its vision.,this hack cannot be used.
+Broadcast,+10,the length of the message,Display yourself on a surface and communicate with the target. During this time any diver may look for the hacker by opposing the user’s test using his own \hackingskill +10.,"everyone in the vicinity can see the broadcast, but divers searching for the user gain an additional +20."
+Misinform,$\pm$0,15 minutes,"Overwrite the info displayed on a news board. For the new information to sound believable, the user must pass a \emph{Stories} test in addition to his \hackingskill.","the duration is reduced to one minute and the \emph{Stories} test takes a -10 penalty, representing more people being critical of the message."
+Wall,$\pm$0,one minute,Construct a two-dimensional wall up to 2 by 2 meters in size.,this hack takes an additional -20 penalty.
