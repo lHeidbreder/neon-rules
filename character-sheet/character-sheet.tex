@@ -5,18 +5,8 @@
 \usepackage{multicol}
 \usepackage{forloop}
 \usepackage{longtable}
-\usepackage[]{geometry}
+\usepackage[margin=20mm]{geometry}
 \newsavebox\ltmcbox
-
-%margins
-\def\heightmarge{30mm}
-\addtolength{\textheight}{\heightmarge}
-%\addtolength{\topmargin}{-1\dimexpr \heightmarge \relax}
-%\addtolength{\bottommargin}{-1\heightmarge}
-\def\sidemarge{0mm}
-\addtolength{\textwidth}{2\dimexpr\oddsidemargin-\sidemarge\relax}
-\setlength\oddsidemargin{\sidemarge}
-\setlength\evensidemargin{\sidemarge}
 
 \input{../core-rulebook/config/packages.tex}
 \directlua{dofile("../scripts/lua/csv-importer.lua")}
@@ -36,6 +26,12 @@
 		Augments: & \TextField[width=0.3\textwidth, name=augs#1]{} \\
 		Mods: & \TextField[width=0.3\textwidth, name=augmods#1]{}
 	\end{tabular}
+	\par
+}
+\newcommand{\mutbodylocation}[1]{%
+	\textbf{\large#1 Mutations}\\
+	\vspace{2mm}
+	\TextField[width=0.3\textwidth, name=mut#1, multiline]{}
 	\par
 }
 \newcommand{\meleeweapon}[1]{
@@ -123,7 +119,9 @@
 \input{components/page5.tex}
 \pagebreak
 %addons
+%do shells need a page? AI does not need the normal HP
 \input{components/pageaddon_psionics}
-%TODO: AI page for shells
+\newpage
+\input{components/pageaddon_cosmic-horrors}
 
 \end{document}

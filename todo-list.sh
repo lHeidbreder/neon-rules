@@ -5,8 +5,9 @@ SEARCHREGEX='todo|fixme|quick ?fix'
 
 if [ "$1" = "list" ]
 then FILENAME="$(printf '%(%Y-%m-%d)T\n' -1).todo"
-grep -ri -E "$SEARCHREGEX" **/*.{tex,csv,tpl,lua} |
-	sort |
+grep -nri -E "$SEARCHREGEX" **/*.{tex,csv,tpl,lua} |
+    sort -t ':' -k 2 -n | # order numerically by line number (specific)
+	sort -t ':' -k 1 | # order by document (generic)
 	awk -F'/' 'NR == 1 || $1 != prev {if (NR != 1) print ""; prev = $1} {print}' | # add empty lines between new folders
 	tee $FILENAME | # write to file
 	sed '/^\s*$/d' | wc -l | sed 's/.*/\n& entries/' >> $FILENAME # add amount of entries to bottom

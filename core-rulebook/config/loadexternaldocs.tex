@@ -1,0 +1,37 @@
+%Alternative, in Lua:
+%find all .tex files in project directory
+%search for aux files in current directory (_rulepackage) and subdirectories
+%if not found: search for aux file in project directory and subdirectories
+%load all external docs found
+
+\newcommand{\loadeddoc}{false}
+%CORE
+\IfFileExists{../_rulepackage/corerules.aux}{
+	\externaldocument[core-]{../_rulepackage/corerules}
+	\wlog{Loading <../\_rulepackage/corerules>}
+	\renewcommand{\loadeddoc}{true}
+}{}
+\ifthenelse{
+	\equal{\loadeddoc}{false}
+}{
+	\IfFileExists{../core-rulebook/corerules.aux}{
+		\externaldocument[core-]{../core-rulebook/corerules}
+		\wlog{Loading <../core-rulebook/corerules>}
+	}{}
+}{}
+
+%GM
+\renewcommand{\loadeddoc}{false}
+\IfFileExists{../_rulepackage/gm-companion.aux}{
+	\externaldocument[gm-]{../_rulepackage/gm-companion}
+	\wlog{Loading <../\_rulepackage/gm-companion>}
+	\renewcommand{\loadeddoc}{true}
+}{}
+\ifthenelse{
+	\equal{\loadeddoc}{false}
+}{
+	\IfFileExists{../gm-companion/gm-companion.aux}{
+		\externaldocument[gm-]{../gm-companion/gm-companion}
+		\wlog{Loading <../gm-companion/gm-companion>}
+	}{}
+}{}

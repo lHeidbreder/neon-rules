@@ -126,16 +126,22 @@
 	\end{minipage}
 	\par
 }
-%TODO: move to template import
+\newcommand{\ifIsNumericThen}[2]{%
+	\directlua{%
+		ifisnumericprint(\luastring{#1}, \luastring{#2})
+	}%
+}
 \newcommand{\weaponmod}[5]{
 	\begin{minipage}{\columnwidth}
-		\textbf{\ul{#1}}\\
-		\textit{#3}; \textit{cR #4}; \textit{#5 kg}\\
-        %TODO: in the line above, only show "kg" if #5 is only a number
-        %for that i need to build a new test for xifthen:
-        %\newtest{\matches}[2]{
-        %    \expandafter \directlua{*see if string in #1 matches regex in #2, then tex.sprint either true or false*}
-        %}
+		\textbf{\ul{#1}}
+		\\%
+		\begin{tabularx}{\columnwidth}{lX}
+			Slots & \ifthenelse{\isempty{#3}}{}{\textit{#3}} \\
+			Price & \textit{\ifIsNumericThen{#4}{cR }#4} \\
+			Weight & \textit{#5\ifIsNumericThen{#5}{ kg}}
+		\end{tabularx}
+		\hrule
+		\vspace{2mm}
 		#2
 	\end{minipage}
 	\par

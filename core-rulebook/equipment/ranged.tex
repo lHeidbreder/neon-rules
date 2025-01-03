@@ -331,39 +331,38 @@ Ranged weapons have a limited number of mod slots which can each only be used on
     {A technological marvel increasing a weapon's fire rate by 50\%,
         rounded down, if it already has a fire rate of 2 or more.}
     {Core}
-    {equal to 80\% of the weapon}
+    {80\% of the weapon}
     {0.9}
 \weaponmod{Multi Barrel}
     {Adds an additional barrel feeding from the same magazine
         to double the amount of hits and ammo spent at an additional -10 penalty to hit.
         Only works if the weapon has a capacity of at least 2.}
     {Core}
-    {equal to 60\% of the weapon}
+    {60\% of the weapon}
     {0.55}
 \weaponmod{Heatsink}
-    {A \emph{Powered} weapon gains reliable.
-        Its weight increases by 20\%.}
+    {A \emph{Powered} weapon gains \emph{Reliable}.}
     {Core}
-    {equal to 40\% of the weapon}
-    {20\% of the weapons weight} %TODO: "kg" is added after, this needs a fix
+    {40\% of the weapon}
+    {20\% of the weapons weight}
 \weaponmod{Backblast Refunneling}
     {It halves the Backblast range to increase the weapon's range by 50\%.
         The additional rumble gives a penalty equal to half of the user's strength below 70.}
     {Core}
-    {equal to 60\% of the weapon}
+    {60\% of the weapon}
     {0.4}
 \weaponmod{Gim-barrel}
     {A self-stabilizing barrel halves penalties from shooting while moving as well as Burst actions.
         It doubles the weapon's weight and decreases aim bonus by 5 when not using a rest.}
     {Core, Barrel}
-    {equal to 80\% of the weapon}
-    {100\%} %TODO: "kg" is added after, this needs a fix
+    {80\% of the weapon}
+    {100\% of the weapon}
 \weaponmod{Biocoding}
     {A trigger lock reading biometric data of the user.
         The weapon can only be used when wielded by a user
         who was registered during building of the weapon.
         It cannot be removed or reprogrammed without destroying the weapon.}
-    {none}
+    {}
     {20}
     {0.24}
 \weaponmod{Vehicle Lock-on}
@@ -372,13 +371,11 @@ Ranged weapons have a limited number of mod slots which can each only be used on
         when taking at least one round to aim.
         Flares don't disrupt targeting but static smoke will.}
     {Core}
-    {equal to 80\% of the weapon}
+    {80\% of the weapon}
     {3.4}
 \weaponmod{Heat Seeker}
     {Adds heat-based targeting assistance systems,
-        thereby granting +15 to shoot targets warmer than their surroundings
-        but -15 to shoot targets colder than their surroundings.}
-        %TODO: is this how thermal targeting should work?
+        thereby granting +15 to shooting targets significantly warmer or colder than their surroundings.}
     {Core}
     {280}
     {2.3}
@@ -395,7 +392,7 @@ Ranged weapons have a limited number of mod slots which can each only be used on
         regardless of modifiers or the shooter.
         It still requires to be pointed in roughly the right direction though,
         the target has to be visible,
-        and will completely fail under EMP.
+        and the system will completely fail under EMP.
     }
      {Core}
      {190}
@@ -587,8 +584,7 @@ Weight and bulk are given in the weight that one "standard magazine" - as used i
 \begin{multicols}{2}
 \ammo{Standard Issue}{-}{cR 34}{1}{3.2kg}{0.2}
 \ammo{Crude}{-50\% mag size, jams on 91 and above}{cR 5}{2}{3.2kg}{0.2}
-\ammo{Osmium Alloy}{+D10 damage, -2 AP}{cR 60}{2}{6.2kg}{0.5}
-%TODO: absurd on rapid fire weapons?
+\ammo{Osmium Alloy}{+D10 damage, -2 AP}{cR 140}{2}{6.2kg}{0.5}
 \end{multicols}
 
 %	Grenades

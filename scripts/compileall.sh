@@ -61,6 +61,8 @@ fade_art () {
 compile () {
   files=(${main_dir}/*/*.tex)
 
+  for RUNNAME in Initial XR; do #run twice to get cross-references correct
+    echo -e "\e[0;31m$RUNNAME run\e[0m"
   for i in ${files[@]}
   do
     cd ${i%/*.tex}
@@ -79,6 +81,7 @@ compile () {
 
     latexmk -f -pdflua -interaction=nonstopmode -output-directory="${OUT}" ${i##*/} 1>> "${console_output_dir}/compile.out" 2>> "${console_output_dir}/compile.err" || analyse_error ${i##*/}
     cd $main_dir
+  done
   done
 
   #Delete all non-pdf files

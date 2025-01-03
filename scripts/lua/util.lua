@@ -1,3 +1,10 @@
+function ifisnumericprint(pstring, pthen)
+    numregex = "^%d*%.?%d+$"
+    if string.match(pstring, numregex) then
+        tex.sprint(pthen)
+    end
+end
+
 function makekeyforlabel(prefix, pkey)
     local key = pkey:
             gsub("%s+", ""):

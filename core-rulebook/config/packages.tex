@@ -1,6 +1,8 @@
 %TODO: move documentclass definition here
 %head is almost the same almost everywhere: `head -n 1 */*.tex`
 %exception is the character sheet - don't overwrite that one
+%\documentclass[11pt,a4paper,openany,usenames,dvipsnames]{book}
+%\pagestyle{plain}
 
 \usepackage[english]{babel}
 \usepackage{xifthen}
@@ -76,6 +78,11 @@
 %lua scripts
 \usepackage{luacode}
 \input{../scripts/lua/lua_scripts.tex}
+
+%cross-references between documents
+%use ref* and its variants to avoid hyperref links
+\usepackage{xr}
+\input{../core-rulebook/config/loadexternaldocs.tex}
 
 %load hyperref last
 \usepackage[bookmarks=true,colorlinks=true,linkcolor=Blue]{hyperref}
