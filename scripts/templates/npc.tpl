@@ -5,5 +5,11 @@
 \vspace{-5mm}
 \paragraph{Appearance:}
 @appearance@%
-\ifthenelse{\isempty{@appearance@}}{}{\par \vspace{-6mm}}
+\ifthenelse{\isempty{@description@}}{}{\par \vspace{-6mm}}
 @description@
+\ifthenelse{\isempty{@stats@}}{}{
+    \vspace{0mm} %somehow this actually does something?
+    \hrule
+    \vspace{-6mm}
+    @stats@
+}

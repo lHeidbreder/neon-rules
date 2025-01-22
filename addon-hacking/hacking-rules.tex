@@ -3,9 +3,10 @@
 \input{../core-rulebook/config/packages.tex}
 
 \def\subtitle{Hacking and Diving}
-\def\modifiedlincname{modified L1NC} %TODO: rename?
-\def\hackingskill{Computer Operation} %TODO: rename, e.g. to "Machine Persuasion"
+\def\modifiedlincname{Sp1ke}
+\def\hackingskill{Cybercraft}
 
+%TODO: needs cover image
 \begin{document}
 	\input{../core-rulebook/config/frontpages.tex}
 
@@ -19,6 +20,13 @@
     \\%
     These people will be sought after and hunted by criminal syndicates and greedy corps alike,
     and have to be ever vigilant.
+    \par
+	\begin{exampleblock}
+		This book will refer to \emph{\modifiedlincname}.
+		This is a slang term for a wide variety of modified L1NC implants,
+			that specifically pass the usual safety measures
+			- in exchange it allows an experienced hacker to modify the AR around them.
+	\end{exampleblock}
 	
 	\chapter{Types of attacks}
 	\section{AR Attacks}
@@ -57,7 +65,7 @@
 	\section{Prerequisites}
 	To perform AR Attacks, the character needs a \modifiedlincname\ and the necessary experience with AR technology,
 		represented by the ability \emph{Misinformer} (p. \pageref{ability:misinformer}).
-	Experience in \emph{Computer Operation} obviously does not hurt.
+	Experience in \emph{\hackingskill} obviously does not hurt.
 	\section{Goals}
 	AR Attacks can achieve two things:
 	\paragraph{Targeted Effects}
@@ -204,5 +212,6 @@
 	More powerful access points - while requiring more energy - can support more peripherals.
 
 	\chapter{Additional Content}
+	\input{components/prefabchars.tex}
 	\input{components/additionalcontent.tex}
 \end{document}
