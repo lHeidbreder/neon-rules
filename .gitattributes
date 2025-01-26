@@ -1,3 +1,4 @@
+* text=auto
 art/** filter=lfs diff=lfs merge=lfs -text
 core-rulebook/config/fonts/* filter=lfs diff=lfs merge=lfs -text
 *.png filter=lfs diff=lfs merge=lfs -text
