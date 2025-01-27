@@ -17,7 +17,7 @@
     \end{itemize} }
 \ifthenelse{\isempty{@itemize:skills@@itemize:abilities@@itemize:boons@@itemize:banes@@itemize:traits@@itemize:usual_backgrounds@@itemize:disallowed_backgrounds@}}{}{\hrulefill}
 \vspace{4mm}
-\begin{multicols*}{2}
+\begin{multicols}{2}
 \ifthenelse{\isempty{@itemize:skills@}}{}{ \textbf{Skills:}
     \begin{itemize}
     \setlength\itemsep{-10mm} \vspace{-8mm}
@@ -55,10 +55,9 @@
     \setlength\itemsep{-10mm} \vspace{-8mm}
     @itemize:disallowed_backgrounds@
     \end{itemize} }
-\end{multicols*}
+\end{multicols}
 \def\currentfillerimagepath{../art/\subtitle/races/@picture_path@}
 \IfFileExists
     {\currentfillerimagepath}
     {\begin{center}\filltopageendgraphics{\currentfillerimagepath}\end{center}} %fill the rest of the page with the image
-    {} %if there was no filler image, do nothing
-\pagebreak
+    {\pagebreak} %if there was no filler image, break manually
