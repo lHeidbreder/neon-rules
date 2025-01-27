@@ -4,6 +4,7 @@
     \\%
     Cost: cR @cost@
         \ifthenelse{\equal{-}{@load@}}{}{; Load: @load@}
+		\ifthenelse{\isempty{@availability@}}{}{; \textit{Availability: @availability@}\\}
 	\\%
 	\ifthenelse{\equal{immediate}{@duration@}}{
     \textit{Immediate effect}

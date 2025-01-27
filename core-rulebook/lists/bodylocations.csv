@@ -1,0 +1,7 @@
+body,name,hp,bottomroll,toproll
+human,Head,15,1,10
+human,Right Arm,15,11,25
+human,Left Arm,15,26,40
+human,Body,25,41,70
+human,Right Leg,15,71,85
+human,Left Leg,15,86,100

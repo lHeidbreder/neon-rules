@@ -1,0 +1,42 @@
+name,effect,price,slots,powered,weight
+Ablative Coating,"A heat dispersing coat, layered upon the armor, that increases armor against laser and other heat-based weaponry by 20%.",40,1,N,0.6 kg
+Auto-Injector,"On the press of a button, detection of a certain type of stress or a similar trigger, this mod introduces a prepared dosage of an injection-type chemical into the wearer's bloodstream. Can hold up to 3 cartridges.",24,1,N,0.8 kg
+Auto-Loader,"A reload assistance system added to the outer thighs which halves reload times for magazine-fed pistols (without the \emph{Single Loader} rule). When present on both legs, this will allow reloading both guns while dual wielding. ",14,1,N,1.2 kg
+Booster Sheath,"A melee weapon can be draw from this sheath in a free action. When combined with Quick Draw a weapon draw from this sheath can be combined with one non-flurry attack as a free action. When the armor mod is also powered, this attack gains 4 damage.",24,1,N,1.4 kg
+Brace Assist,The character may brace as a free action. Moving still stops bracing.,34,2,N,2.6 kg
+CBRN (Helmet),"A hazard prevention system containing a CBRN unit, rebreather and redundancies for each subsystem.",112,2,N,1.4 kg
+Cigarette Lighter Adapter,Adds an outlet to light cigarettes on.,3,1,Y,0 kg
+Deafen Suppressor,Grants +20 to tests to resist deafening and disorientation. Grants -5 to auditory perception.,18,1,N,0.2 kg
+Discardable Plate,"Adds an outer layer that can be discarded easily. Useful when on fire or drenched in acid. When hit by a weapon with \emph{Rending}, the plate is destroyed, but the armor is unharmed. ",12,1,N,1.4 kg
+Energy Rotella,Projects a small shield over the user's arm that can be used to cover one location in addition to the arm it's attached to. Has 12 armor and a threshold of 7.,50,1,Y,1.1 kg
+Faraday Cage,Reduces EMP duration by 8 rounds and grants +30 to resist electricity-related Stun rules.,62,1,N,18.8 kg
+Final Hour Chip,"Once the wearer's vital signs cease, the armor self-destructs violently, dealing damage like a 40mm thermite grenade, except with a 6m Blast radius instead. Requires a vital monitor.",170,0,Y,0.1 kg
+Flare Launcher,Turns Vehicle Lock-on bonuses into penalties. Has 3 flares and takes a minute to refill. ,48,3,Y,2.1 kg
+Flash Visor,Adds flash glass goggles to the helmet.,31,1,N,"0,6 kg"
+Flashlight,"Adds a flashlight and its related bonuses, without the need to use your hands. Hitting the location the active flashlight is attached to is at no penalty for low light or location. ",65,1,N,1.1 kg
+Ghillie,"Adds a Ghillie Cloak to the armor, offering a +20 Bonus to Camouflage when used in matching surroundings.",6,0,N,1.5 kg
+Grappling Hook,"Adds a reusable grappling hook to the armor. Works like an integrated crossbow using grappling hook ammunition.\\ This is a very niche upgrade, as the grappling hook requires power but can only hold up to 250 kg of weight.",55,1,Y,5.9 kg
+HUD,"Adds a heads up display to the helmet visor. Can be wired to display basically any device, but does not come with input peripherals.",4,1,N,0.8 kg
+Inertia Dampeners,"A marvel of technology allowing rapid changes in velocity. Fall damage is reduced and the Trauma rule is ignored. Depending on the situation this may have other bonuses, e.g. in fast vehicles.",189,3,Y,26 kg
+Tacpad,Adds a data pad the the armor's forearm.,22,1,N,1.1 kg
+Integrated Weapon,Any one-handed melee or pistol type weapon can be affixed to an arm. Pistols now use Ranged Combat Training (Integrated Weaponry). One-handed melee weapons may use Melee Combat Training (Striking) or their normal skill depending on how they are installed.\\ Removes the Inconspicuous rule.,weapon + 10%,1,N,weapon +10%
+Intercom,An inbuilt communication device using very strong encryption. Different intercoms need to be grouped at a computing device equipped for the task before being able to communicate among each other safely.,28,1,N,0.2 kg
+Jump Pack,"A backpack-like armor attachment containing boosters to increase jump height, leap length, allow some amount of control in the air or stop hitting the floor at a violently rapid pace. Requires Pilot (Jetpack) to steer.\\ Height: increases the jump height by a factor of 3, reduced by 0.5 for every full 100 kg the wearer weighs, becoming useless at 400kg\\ Control: can decrease fall damage by 4 dice, reduced by 1 for every full 100 kg the wearer weighs, becoming useless at 400kg\\ Ground Slam: doubles fall damage but enables a Charge with a speed of 10 times meters fallen and Blast (1)",82,2,N,32 kg
+Medic Container,"Fits one pack of wound sealant foam or wound dressing, a field surgery or stitch kit, 5 doses of any medicine and a thermal blanket. Any equipment stored here can be drawn as a free action.",21,1,N,1.2 kg
+Medical HUD,"When a patient has an accessible vital monitor, this device gives much more detailed information, thereby improving medical tests by +20.",36,2,N,0.8 kg
+Nanomesh Undersuit,The minimum armor the wearer can be reduced to (by e.g. maneuvers) is 8 in any location that is covered by the modded piece of armor.,43,0,N,2.3 kg
+Night Vision,A night vision device included in the helmet.,14,1,N,0.7 kg
+Odysseus Nav System,"A display that includes many forms of navigation systems, granting a +10 to driving and +20 to navigation tests.",28,1,N,1.3 kg
+Oversized Mag Holster,Hooks to hold a taped or drum mag,16,1,N,0.2 kg
+Photo-Reactive Panels,"While powered, the armor will automatically match the surroundings. This grants the same benefits as the \emph{Ghillie} armor mod. ",55,0,Y,0.8 kg
+Piezoelectric Exo-Frame,"Carries the armor's weight.\\ When struck by an EMP, it grants a -20 penalty to all physical actions taken and deals D10+6 damage ignoring armor to all the wearer's locations every round.",190,2,Y,18 kg
+Power Pack,Adds a generator to non-powered armor to accommodate armor mods requiring power.,45,2,N,14 kg
+Radar,A small radar device detecting moving objects in the vicinity. Detecting someone sneaking around is at a +40 bonus. Has a range of 40m.,78,2,N,11 kg
+Servo Exo-Frame,"A replacement for the more prevalent piezoelectric exo-frame. It is less potent, carrying only 3/4 of the armor's weight but won't harm the wearer in case of an EMP and instead just shut off.",8,0,Y,18 kg
+Spring Charge (arm),Increases Strength for quick tasks like punching or throwing by 20.,54,1,Y,1.2 kg
+Spring Charge (leg),Increases Strength for quick tasks like jumping or kicking by 20.,58,1,Y,1.5 kg
+Temperature Regulators,"Tries to keep the armor's internals at around room temperature, preventing heat stroke and hypothermia in all but the harsh wastelands. ",24,1,N,0.8 kg
+TROPHY ADS,"The TROPHY Active Defense System shoots projectiles out of the air that travel at least 5m/s, are between 2cm and 10cm across and within 10m of the wearer. Explosives are usually just destroyed while incendiaries still spill. Holds 6 cartridges of 11.8x45mm ammo and takes a minute to refill.",54,4,N,2.1 kg
+Up-Armor,Additional armor plates that increase the location's armor by 1.,22,1,N,2 kg
+Vacuum Seal,"Seals the armor to prevent any gas leaking, like air flowing outside or hydrogen cyanide inside.",32,0,N,1.1 kg
+Vital Monitor,Tracks the wearer's vital data. A abbreviation can be made accessible over network.,8,0,N,1.6 kg

@@ -1,6 +1,6 @@
 #!/bin/bash
-DEFAULT_GOALS="CLEAN FADE COMPILE PACKAGE"
-ALL_GOALS="XCLEAN CLEAN FADE COMPILE PACKAGE"
+DEFAULT_GOALS="CLEAN FADE PREP COMPILE PACKAGE"
+ALL_GOALS="XCLEAN CLEAN FADE PREP COMPILE PACKAGE"
 
 cut_absolute_path () {
   echo $(perl -le 'use File::Spec; print File::Spec->abs2rel(@ARGV)' $1 ${main_dir})
@@ -57,6 +57,23 @@ fade_art () {
   done
 }
 
+#goal: PREP
+prep () {
+  files=(${main_dir}/*/*.tex)
+
+  for i in ${files[@]}
+  do
+    cd ${i%/*.tex}
+    if [ -f prep.sh ]; 
+    then
+      echo "Running ${i%/*.tex}/prep.sh"
+      bash prep.sh
+    fi
+
+    cd $main_dir
+  done
+}
+
 #goal: COMPILE
 compile () {
   files=(${main_dir}/*/*.tex)
@@ -66,8 +83,8 @@ compile () {
   for i in ${files[@]}
   do
     cd ${i%/*.tex}
-    if [ -f prep.sh ]; 
-    then bash prep.sh; fi
+    #if [ -f prep.sh ]; 
+    #then bash prep.sh; fi
     echo "Compiling: ${i##*/}"
 
     OUT="${file_output_dir}"
@@ -92,7 +109,13 @@ compile () {
 package () {
   echo "Creating ZIP package"
   cd ${file_output_dir}
-  jar Mcf rulepackage.zip .
+  if command -v -- "jar" &> /dev/null; then
+    jar Mcf rulepackage.zip .
+  elif command -v -- "" &> /dev/null; then
+    zip -r rulepackage.zip .
+  else
+    python3 -c "import shutil; shutil.make_archive('rulepackage', 'zip', '.')"
+  fi
 }
 
 
@@ -104,7 +127,7 @@ file_output_dir="${main_dir}/_rulepackage"
 
 # handle help dialog
 if [[ $(echo $@ | tr '[:lower:]' '[:upper:]') == *HELP* ]]; then
-  echo "Usage: $0 [HELP | XCLEAN | CLEAN | FADE | COMPILE | PACKAGE | ALL]"
+  echo "Usage: $0 [HELP | XCLEAN | CLEAN | FADE | PREP | COMPILE | PACKAGE | ALL]"
   echo "Just running $0 is equal to $0 ${DEFAULT_GOALS}"
   echo
   echo "Goals:"
@@ -112,6 +135,7 @@ if [[ $(echo $@ | tr '[:lower:]' '[:upper:]') == *HELP* ]]; then
   echo "XCLEAN  - Full git clean."
   echo "CLEAN   - Remove and set up new compiler output folders."
   echo "FADE    - Add faded borders to art, in accordance with 'scripts/python/fade-art.list'."
+  #echo "PREP   - "
   echo "COMPILE - Run prep script and compile PDFs." #split these two
   echo "PACKAGE - Create a zip package of compiled PDFs."
   echo "ALL     - Run all goals, aside from HELP goal."
@@ -133,19 +157,22 @@ echo "Goals: $GOALS"
 for goal in $GOALS; do
   echo -e "\e[0;36mRunning goal: $goal\e[0m"
   case "$goal" in
-    XCLEAN | ALL)
+    XCLEAN)
       workspace_clean
       ;;
-    CLEAN | ALL)
+    CLEAN)
       clean
       ;;
-    FADE | ALL)
+    FADE)
       fade_art
       ;;
-    COMPILE | ALL)
+    PREP)
+      prep
+      ;;
+    COMPILE)
       compile
       ;;
-    PACKAGE | ALL)
+    PACKAGE)
       package
       ;;
     *)

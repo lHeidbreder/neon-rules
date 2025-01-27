@@ -9,6 +9,7 @@
 }
 \begin{minipage}{\columnwidth}
     \textbf{\ul{@type@:}} @effect@\\
+    \ifthenelse{\isempty{@availability@}}{}{\textbf{Availability}: @availability@ \\}
     \textbf{Price}: cR @price@; \textbf{Unit of sale}: @unitofsale@\\
     \textbf{Weight/Bulk}: @weight@
     \ifthenelse{\isempty{@per@}}{each}{per @per@}

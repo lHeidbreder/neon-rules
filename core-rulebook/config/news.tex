@@ -48,18 +48,20 @@
 	\end{minipage}
     \par
 }
-\newcommand{\supply}[4]{
+\newcommand{\supply}[5]{
 	\begin{minipage}{\columnwidth}
 		\textbf{\ul{#1}}\\
+		\ifthenelse{\isempty{#5}}{}{\textit{Availability: #5}\\}
 		\textit{Price: cR #3}\\
 		\textit{Weight: #4 kg}\\
 		#2
 	\end{minipage}
     \par
 }
-\newcommand{\service}[4]{
+\newcommand{\service}[5]{
 	\begin{minipage}{\columnwidth}
 		\textbf{\ul{#1}}\\
+		\ifthenelse{\isempty{#5}}{}{\textit{Availability: #5}\\}
 		#2\\
 		\textit{Cost:} #3 per #4
 	\end{minipage}
@@ -146,37 +148,13 @@
 	\end{minipage}
 	\par
 }
-\newcommand{\meleecomponent}[6]{
+\newcommand{\meleecomponent}[7]{
 	\begin{minipage}{\columnwidth}
 		\textbf{\ul{#1:}}\\
 		\textit{#2}\\
 		\textbf{Weight}: #4 kg; \textbf{Price}: cR #5\ifthenelse{\isempty{#6}}{}{; \textbf{Requirement}: #6}\\
+		\ifthenelse{\isempty{#7}}{}{\textit{Availability:} #7\\}
 		\textbf{Effect}: #3
-	\end{minipage}
-	\par
-}
-\newcommand{\armor}[9]{
-	\begin{minipage}{\columnwidth}
-		\textbf{\ul{#1}} (covers: #6)\\
-		\begin{tabular}{|r|r|r|r|}
-			\hline
-			Head & Chest & Arms & Legs\\
-			\hline
-			#2 & #3 & #4 & #5\\
-			\hline
-		\end{tabular}\par
-		\vspace{2mm}
-		\textit{Price:} cR #8; \textit{Weight:} #9 kg\\
-		#7
-	\end{minipage}
-	\par
-}
-\newcommand{\armormod}[6]{
-	\begin{minipage}{\columnwidth}
-		\textbf{\ul{#1}}\\
-		#2\\
-		\textit{Price:} #3; \textit{Weight:} #6\\
-		\textit{Mod points:} #4\ifthenelse{\isequivalentto{N}{#5}}{}{; Requires power source}
 	\end{minipage}
 	\par
 }

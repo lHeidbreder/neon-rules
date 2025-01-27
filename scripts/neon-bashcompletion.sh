@@ -1,6 +1,6 @@
 _compileall()
 {
-    _goals="XCLEAN CLEAN FADE COMPILE PACKAGE ALL"
+    _goals="XCLEAN CLEAN FADE PREP COMPILE PACKAGE ALL"
 
     local cur
     COMPREPLY=()

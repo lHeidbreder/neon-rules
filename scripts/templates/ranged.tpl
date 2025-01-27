@@ -3,11 +3,14 @@
 		\textbf{\ul{@name@}}\\
 		\textit{@flavor_text@}\\
 		\ifthenelse{\isempty{@weight@}}{}{\textbf{Weight}: @weight@ kg\\}
+		\ifthenelse{\isempty{@availability@}}
+			{\directlua{tex.print("\\edef\\availval{"..6-tierfromcost("@price@").."}")}}
+			{\def\availval{@availability@}}
 		\ifthenelse{
-			\isempty{@price@} \OR \equal{\directlua{tex.print(6-tierfromcost("@price@"))}}{0}
+			\isempty{\availval} \OR \equal{\availval}{0}
 			}
 			{}
-			{\textbf{Availability}: \directlua{tex.print(6-tierfromcost("@price@"))}\\}
+			{\textbf{Availability}: \availval \\}
 		\ifthenelse{\isempty{@price@}}{}{\textbf{Price}: cR @price@\\}
 		\ifthenelse{\isempty{@shots@}}{}{\textbf{Shots}: @shots@\\}
         \textbf{Damage}: \ifthenelse{\isempty{@damage@}}{0}{@damage@}\\

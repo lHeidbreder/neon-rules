@@ -253,6 +253,9 @@
 	\label{eds-explanation}
 	In addition to directly applicable fields characters may be trained in, they also have more general, broader knowledge.
 	While this might not replace a skill, it might assist them in many different fields, adding their modifier to any test the GM deems applicable.
+	Any test may benefit from multiple applicable educations,
+		but the skill bonus may at most be doubled.
+	\par%
 	Educations are extremely diverse, so this is just a small list of examples:\\ \\
 	\begin{tabular*}{\textwidth}{|l|@{\extracolsep{\fill}}r|}
 		\hline
@@ -371,21 +374,17 @@
 		A simple ranged attack. The hit roll is a 37, so the location is a 73, therefore hitting the right leg.\\
 		Attacks scoring multiple hits may use the same location for convenience or roll different locations for all additional hits. You should probably decide which way you take \emph{before} it comes up at the table.
 	\end{exampleblock}
-	\par
+	\vspace{-5mm}
 	\begin{minipage}{\columnwidth}
 		\begin{tabularx}{\columnwidth}{Xcr}
-%			\hline
 			Locations & HP & Random \\ \hline
-			Head      & 15 &   1-10 \\ %\hline
-			Right Arm & 15 &  11-25 \\ %\hline
-			Left Arm  & 15 &  26-40 \\ %\hline
-			Body      & 25 &  41-70 \\ %\hline
-			Right Leg & 15 &  71-85 \\ %\hline
-			Left Leg  & 15 & 86-100 \\ %\hline
+			\luaimport{lists/bodylocations.csv}{bodylocation-table.tpl}{lists/bodylocations}%
 		\end{tabularx}
 	\end{minipage}
+	\vspace{-8mm}
 	\section{Degradation}
-	For every full 20\% of location HP lost, the character takes a -10 penalty to all tests when using this body part. For the head and body locations that is every action.
+	For every full 20\% of location HP lost, the character takes a -5 penalty to all tests when using this body part.
+	For the \emph{head} and \emph{body} locations that is every action.
 	When the head is struck, base initiative is reduced by 1 and D5 temporary initiative is lost, which may be regained through the “Gather Senses” action.
 	\par
 	When 60\% is lost, light bleeding begins and at 80\% severe bleeding sets in. At more than 100\% the body part is lost or crippled, more in need of repair rather than healing. Details are up to GM discretion.
@@ -537,9 +536,12 @@
 
 	\chapter{Character Creation}
 	\section{Prefabs}
-	If you want to skip character creation and dive right into play, choose one of the prefab characters below.
+	If you want to skip character creation and dive right into play, choose one of the prefab characters.
 	They use the same rules any other character is created with
 		and they have no leftover XP (unless otherwise specified, of course).
+	All characteristic advancements are included in their characteristics.
+	All weapons come loaded using the default ammunition type.
+	All other ammo is in addition.
 	\\
 	You can find them starting at page \pageref{sec:pfchars}.
 
@@ -627,6 +629,7 @@
 	\input{augs/chemicals.tex}
 
 	\chapter{Lists}
+	\input{lists/bodylocations-human-summary.tex}
 	\input{lists/status.tex}
 	\input{lists/skills.tex}
 	\input{lists/abilities.tex}

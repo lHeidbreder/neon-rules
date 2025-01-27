@@ -2,7 +2,9 @@
 \subsection*{@name@}
 \textit{\hackingskill\ @penalty@}
 \\%
-\textbf{For @duration@:}
+\ifthenelse{\isempty{@duration@}}{}{
+    \textbf{For @duration@:}
+}
 \\%
 {
 	\itshape

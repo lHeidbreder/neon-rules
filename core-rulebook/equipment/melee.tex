@@ -8,9 +8,9 @@ These are not required but add additional unique features to the weapon.
 \subsection{Base Damage}
 Melee weapons deal damage based on their size.
 \begin{sitemize}
+	\item \emph{Unarmed fists} deal 1D5 + the user's melee damage.
 	\item \emph{One-handed melee weapons} deal 1D10 + the user's melee damage bonus.
 	\item \emph{Two-handed weapons} deal 2D10 + the user's melee damage bonus.
-	\item \emph{Unarmed fists} deal 1D5 + the user's melee damage.
 \end{sitemize}
 \subsection{Components}
 \subsubsection{Hilts}
@@ -22,6 +22,7 @@ Melee weapons deal damage based on their size.
     {0,2}
     {3}
     {}
+    {}
 \meleecomponent{Push Hilt}
     {A hilt vertical to the blade.
         Biomechanically inferior to a normal hilt in terms of reach and leverage,
@@ -30,12 +31,14 @@ Melee weapons deal damage based on their size.
     {0,1}
     {4}
     {}
+    {}
 \meleecomponent{Duelist Hilt}
     {An offensively minded hilt at a slight tilt,
         made to make disarming an opponent much easier.}
     {One-handed; +15 to disarms}
     {0,2}
     {7}
+    {}
     {}
 \meleecomponent{Caged Hilt}
     {Shielding the sword wielding hand in some way is an old idea but,
@@ -46,6 +49,7 @@ Melee weapons deal damage based on their size.
     {0,4}
     {10}
     {}
+    {}
 \meleecomponent{Ergonomic Hilt}
     {A handle fitting the wielder's hand very closely
         and therefore allowing the user to get a much better feel for the weapon's point.}
@@ -53,11 +57,13 @@ Melee weapons deal damage based on their size.
     {0,2}
     {12}
     {}
+    {}
 \meleecomponent{Simple Long Hilt}
     {A generic two-handed sword hilt offering more leverage than a one-handed hilt.}
     {Two-handed; +5 to combat rolls}
     {0,3}
     {4}
+    {}
     {}
 \meleecomponent{Giant Hilt}
     {A massive sword hilt.
@@ -66,6 +72,7 @@ Melee weapons deal damage based on their size.
     {3}
     {35}
     {}
+    {}
 \end{multicols}
 
 \subsubsection{Shafts}
@@ -73,30 +80,34 @@ Melee weapons deal damage based on their size.
 \begin{multicols}{2}
 \meleecomponent{Short Shaft}
     {A generic short shaft that can build the basis for a spear, hammer or axe.}
-    {One-handed}
+    {One-handed; +10 to attacks, -10 to defense}
     {0,3}
     {4}
     {}
+    {}
 \meleecomponent{Long Shaft}
     {A shaft perfect for long spears.}
-    {Two-handed}
+    {Two-handed; +10 to attacks, -10 to defense}
     {0,5}
     {5}
+    {}
     {}
 \meleecomponent{Twin Shaft}
     {A double-ended spear shaft allowing for two heads to be mounted.
         Not as effective individually but some people like the versatility.}
-    {Two-handed; -1 damage; allows to add a second weapon point}
+    {Two-handed; allows to add a second weapon point}
     {0,5}
     {11}
+    {}
     {}
 \meleecomponent{Rifle}
     {A weapon mount for the tip of a gun.
         While a little bit outdated,
         making an improvised spear can be much more effective than using the knife on its own.}
-    {Two-handed; -5 to melee combat rolls and aim actions with the rifle}
+    {Two-handed; -5 to both melee combat rolls and aim actions with the rifle}
     {-}
     {-/-}
+    {}
     {}
 \end{multicols}
 
@@ -110,6 +121,7 @@ Melee weapons deal damage based on their size.
     {0}
     {0}
     {}
+    {}
 \meleecomponent{Knife Blade}
     {Short, stiff blade. Good penetration, can cut if necessary.}
     {
@@ -117,17 +129,20 @@ Melee weapons deal damage based on their size.
 	}{0,2}
     {7}
     {}
+    {}
 \meleecomponent{Sword Blade}
     {A long blade that cuts and stabs well.}
     {+3 damage}
     {0,9}
     {10}
     {}
+    {}
 \meleecomponent{Sword Breaker}
     {A knife blade with two offshoots to make parrying easier.}
     {Protective}
     {0,2}
     {12}
+    {}
     {}
 \meleecomponent{Sword Whip}
 	{A sword blade that can transform into a whip on command.}
@@ -139,12 +154,14 @@ Melee weapons deal damage based on their size.
 	{1.1}
 	{42}
 	{}
+	{}
 \meleecomponent{Inverse Blade}
     {A curved sword blade with its edge on the inside.
         Edge alignment is more difficult but cuts become more devastating.}
     {Add Dex to melee damage bonus calculation}
     {0,9}
     {13}
+    {}
     {}
 \meleecomponent{Plasma Cutter}
     {A knife-sized blade consisting of finely shaped plasma.
@@ -153,12 +170,14 @@ Melee weapons deal damage based on their size.
     {0,6}
     {27}
     {}
+    {}
 \meleecomponent{Chain Blade}
     {A high-power chainsaw functioning as a sword blade.
         Why someone invented this, no one knows.}
     {Tearing}
     {1,2}
     {23}
+    {}
     {}
 \meleecomponent{Mono Blade}
     {Advertised as a near mono-molecular edge,
@@ -167,6 +186,7 @@ Melee weapons deal damage based on their size.
     {1}
     {27}
     {}
+    {}
 \meleecomponent{Sickle Blade}
     {An oddly shaped blade that
         - while having rather short effective range
@@ -174,6 +194,7 @@ Melee weapons deal damage based on their size.
     {parries of 86+ against this weapon always fail}
     {1}
     {17}
+    {}
     {}
 \end{multicols}
 
@@ -186,12 +207,14 @@ Melee weapons deal damage based on their size.
     {0,7}
     {2}
     {}
+    {}
 \meleecomponent{Thorn Whip}
     {Small thorns along the whip increase the damage against tissue
         but even thinner armor or thicker clothing will stop the weapon.}
     {Flexible, Tearing}
     {0,6}
     {12}
+    {}
     {}
 \meleecomponent{Shock Whip}
     {A difficult piece of equipment to create:
@@ -200,6 +223,7 @@ Melee weapons deal damage based on their size.
     {Flexible, Stun (2)}
     {0,8}
     {27}
+    {}
     {}
 \end{multicols}
 
@@ -213,6 +237,7 @@ Melee weapons deal damage based on their size.
     {0}
     {0}
     {}
+    {}
 \meleecomponent{Hammer Head}
     {A blunt implement originally designed as a tool,
         later used in a refined form to defeat armor.}
@@ -220,11 +245,13 @@ Melee weapons deal damage based on their size.
     {0,8}
     {8}
     {}
+    {}
 \meleecomponent{Telescoping Baton}
 	{A blunt instrument that can be reduced to the size of the hilt.}
 	{Inconspicuous (on one-handed hilts)}
 	{0.8}
 	{9}
+	{}
 	{}
 \meleecomponent{Axe Head}
     {A very top heavy blade.
@@ -233,6 +260,7 @@ Melee weapons deal damage based on their size.
     {0,7}
     {9}
     {}
+    {}
 \meleecomponent{Pick Head}
     {The head on a war pick is designed to defeat armor by breaking through weaker spots.
         Still works good today.}
@@ -240,12 +268,14 @@ Melee weapons deal damage based on their size.
     {0,7}
     {11}
     {}
+    {}
 \meleecomponent{Spiked Head}
     {Be it spiked mauls or barbed wire around a stick
         - damage to tissue will be significant.}
     {Tearing}
     {0,8}
     {11}
+    {}
     {}
 \end{multicols}
 
@@ -259,11 +289,13 @@ Melee weapons deal damage based on their size.
     {0,1}
     {2}
     {}
+    {}
 \meleecomponent{Bipod}
     {Legend has it that bipods on knives allow stabbing helicopters to death.}
     {+2 to intimidation if the weapon is visible}
     {0,8}
     {6}
+    {}
     {}
 \meleecomponent{Dripper}
     {Stiletto knives delivering toxins are as infamous as they are rare.
@@ -273,6 +305,7 @@ Melee weapons deal damage based on their size.
     {0,7}
     {14}
     {Blade}
+    {}
 \meleecomponent{Shock Wire}
     {An energy source is added inside the weapon, electrifying it.
         On an already electrical weapon it is possible to direct the electrical field in a manner
@@ -281,6 +314,7 @@ Melee weapons deal damage based on their size.
     {0,8}
     {22}
     {}
+    {}
 \meleecomponent{EMP Field}
     {Coils within the weapon emit an electromagnetic field strong enough to interrupt electronic devices.}
     {When activated as a free action,
@@ -288,6 +322,7 @@ Melee weapons deal damage based on their size.
         Takes a small fuel cell and 8 actions to recharge.}
     {0,8}
     {22}
+    {}
     {}
 \meleecomponent{Shotgun}
     {A single shot 12gauge launcher attached to a hammerhead.
@@ -300,6 +335,7 @@ Melee weapons deal damage based on their size.
     {0,6}
     {23}
     {Hammer}
+    {}
 \meleecomponent{Ripper Field Generator}
     {Lovingly dubbed "Ripper Field" by mobsters,
         this projected force field tears at otherwise stable matter,
@@ -312,6 +348,7 @@ Melee weapons deal damage based on their size.
     {0,8}
     {28}
     {Blade}
+    {}
 \meleecomponent{IED}
     {An IED on a stick, what do you expect?
         Quite dangerous, quite destructive.}
@@ -323,6 +360,7 @@ Melee weapons deal damage based on their size.
     {0,2}
     {30}
     {}
+    {}
 \meleecomponent{Rocket Booster}
     {Everyone understands that a faster weapon point is more destructive.
         Since too high speeds make edge alignment and controlling the weapon one-handed nearly impossible,
@@ -331,6 +369,7 @@ Melee weapons deal damage based on their size.
     {1,1}
     {32}
     {Two-handed axe or hammer}
+    {}
 \meleecomponent{Thunder Field}
     {A massive repulsor field
         - normally used to block mortar fire
@@ -345,4 +384,5 @@ Melee weapons deal damage based on their size.
     {3,2}
     {38}
     {Two-handed blunt weapon}
+    {}
 \end{multicols}
