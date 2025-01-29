@@ -1,5 +1,7 @@
 Core/races/*.png
 Cosmic Horrors/bestiary/*.png
+Cosmic Horrors/mutations/*.png
+Cosmic Horrors/anomalies/*.png
 Cosmic Horrors/intro-filler.png
 Cosmic Horrors/demon-*.png
 prefabs/*.png

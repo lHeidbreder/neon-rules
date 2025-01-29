@@ -26,3 +26,10 @@ so long as you can leave out some of them without breaking the game.
 Package into different modules all the sets of rules that
 don't need one another
 and that don't need to be core rules.
+
+## Intuitivity over Tailor-made Solutions
+**Not every aspect needs its own special rule.**  
+In concept having individual rules for specific cases sounds helpful.
+In practice such rules are often mixed up and confused,
+or outright ignored.
+So if something is similar *enough*, it should receive the same ruling.
