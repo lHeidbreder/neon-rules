@@ -1,0 +1,68 @@
+\pagenumbering{gobble}
+\newgeometry{margin=0.3cm}
+
+\newlength{\neontitlewidth}
+\settowidth{\neontitlewidth}{NEON TTRPG}
+\newlength{\neonsubtitlewidth}
+\settowidth{\neonsubtitlewidth}{\subtitle}
+\def\coverborderthickness{1mm}
+\def\coverbordercolor{ProcessBlue}
+
+\begin{center}
+\IfFileExists{\coverimgpath}{\ThisCenterWallPaper{1}{\coverimgpath}}{}
+\begin{tikzpicture}
+	
+	%conf
+	\coordinate (toptextanchor)
+		at ( $ (current page.north) - (7.3,1) $ )
+	;
+	\coordinate (bottomtextanchor)
+		at ( $ (current page.south east) - (3.3,-1) $ )
+	;
+	
+	%TITLE
+	\node [white,
+		scale=5,
+		anchor=west,
+		inner sep=0pt,
+	]
+		at ( $ (toptextanchor) - (0,0.3) $ )
+		{NEON TTRPG}
+	;
+	%SUBTITLE
+	\node [white,
+		scale=4,
+		anchor=east,
+		inner sep=0pt,
+	]
+		at ( $ (bottomtextanchor) + (0,0.3) $ )
+		{\subtitle}
+	;
+	
+	%LEFT
+	\draw [\coverbordercolor,
+		line width=\coverborderthickness,
+	]
+	(toptextanchor)
+	-- ( $ (current page.north west) + (3,-1) $)
+	-- ++(-2,-2)
+	-- ( $ (current page.south west) + (1,3) $ )
+	-- ++(2,-2)
+	-- ( $ (bottomtextanchor) - (4\neonsubtitlewidth,0) $)
+	;
+	
+	%RIGHT
+	\draw [\coverbordercolor,
+		line width=\coverborderthickness,
+	]
+	( $ (toptextanchor) + (5\neontitlewidth,0) $)
+	-- ( $ (current page.north east) - (3,1) $)
+	-- ++(2,-2)
+	-- ( $ (current page.south east) - (1,-3) $ )
+	-- ++(-2,-2)
+	-- (bottomtextanchor)
+	;
+	
+\end{tikzpicture}
+
+\end{center}\restoregeometry
