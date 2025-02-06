@@ -1,20 +1,22 @@
-\pagenumbering{gobble}
-\newgeometry{margin=0.3cm}
-
+\newgeometry{
+	margin=0.3cm,
+%	bottom=0cm,
+}
+%
 \newlength{\neontitlewidth}
 \settowidth{\neontitlewidth}{NEON TTRPG}
 \newlength{\neonsubtitlewidth}
 \settowidth{\neonsubtitlewidth}{\subtitle}
 \def\coverborderthickness{1mm}
 \def\coverbordercolor{ProcessBlue}
-
+%
 \begin{center}
 \IfFileExists{\coverimgpath}{\ThisCenterWallPaper{1}{\coverimgpath}}{}
 \begin{tikzpicture}
 	
 	%conf
 	\coordinate (toptextanchor)
-		at ( $ (current page.north) - (7.3,1) $ )
+		at ( $ (current page.north west) + (3.3,-1) $ )
 	;
 	\coordinate (bottomtextanchor)
 		at ( $ (current page.south east) - (3.3,-1) $ )
@@ -63,6 +65,6 @@
 	-- (bottomtextanchor)
 	;
 	
-\end{tikzpicture}
-
-\end{center}\restoregeometry
+\end{tikzpicture}%
+\end{center}%
+\restoregeometry%

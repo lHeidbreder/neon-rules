@@ -1,6 +1,8 @@
-{
-	\heading
-	\input{../core-rulebook/config/coverpage.tex}
-}
-\pagenumbering{arabic}
+\pagestyle{empty}
+\heading
+\input{../core-rulebook/config/coverpage.tex}
+\normalfont
+%Grouping the lines above to reset all config breaks the table of content
+%I have no idea why, and don't have the energy to figure it out
+
 {\hypersetup{hidelinks} \tableofcontents}
