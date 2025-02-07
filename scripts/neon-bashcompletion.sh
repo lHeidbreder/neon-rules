@@ -4,7 +4,7 @@ _compileall()
 
     local cur
     COMPREPLY=()
-    cur="${COMP_WORDS[COMP_CWORD]}"
+    cur=$( echo "${COMP_WORDS[COMP_CWORD]}" | tr '[:lower:]' '[:upper:]' )
     COMPREPLY=( $(compgen -W "${_goals}" -- ${cur}) )
 
     return 0

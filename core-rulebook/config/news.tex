@@ -148,17 +148,6 @@
 	\end{minipage}
 	\par
 }
-%TODO: remove
-\newcommand{\meleecomponent}[7]{
-	\begin{minipage}{\columnwidth}
-		\textbf{\ul{#1:}}\\
-		\textit{#2}\\
-		\textbf{Weight}: #4 kg; \textbf{Price}: cR #5\ifthenelse{\isempty{#6}}{}{; \textbf{Requirement}: #6}\\
-		\ifthenelse{\isempty{#7}}{}{\textit{Availability:} #7\\}
-		\textbf{Effect}: #3
-	\end{minipage}
-	\par
-}
 \newcommand{\implant}[7]{
 	\begin{minipage}{\columnwidth}
 		\refstepcounter{tmpcntr}
