@@ -135,8 +135,8 @@ if [[ $(echo $@ | tr '[:lower:]' '[:upper:]') == *HELP* ]]; then
   echo "XCLEAN  - Full git clean."
   echo "CLEAN   - Remove and set up new compiler output folders."
   echo "FADE    - Add faded borders to art, in accordance with 'scripts/python/fade-art.list'."
-  #echo "PREP   - "
-  echo "COMPILE - Run prep script and compile PDFs." #split these two
+  echo "PREP	- Run prep scripts."
+  echo "COMPILE - Compile PDFs."
   echo "PACKAGE - Create a zip package of compiled PDFs."
   echo "ALL     - Run all goals, aside from HELP goal."
 

@@ -56,8 +56,11 @@
     @itemize:disallowed_backgrounds@
     \end{itemize} }
 \end{multicols}
+\par
 \def\currentfillerimagepath{../art/\subtitle/races/@picture_path@}
 \IfFileExists
     {\currentfillerimagepath}
     {\begin{center}\filltopageendgraphics{\currentfillerimagepath}\end{center}} %fill the rest of the page with the image
-    {\pagebreak} %if there was no filler image, break manually
+    {} %if there was no filler image, break manually
+\clearpage
+
