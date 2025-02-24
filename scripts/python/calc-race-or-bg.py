@@ -1,0 +1,120 @@
+#!/usr/bin/env python3
+import re
+import csv
+
+import os
+from pathlib import Path
+root_path = Path(re.sub(r"(?<=neon-rules/).*$", "", os.path.realpath(__file__)))
+
+def dbgprint(v):
+    if args.debug: print(">>DEBUG - " + str(v))
+def try_access_key(dict: dict, key):
+    if key in dict.keys():
+        return dict[key]
+    return None
+
+# CLI ARGS
+from argparse import ArgumentParser
+parser = ArgumentParser()
+parser.add_argument('file')
+parser.add_argument('-r', '--israce', action='store_true')
+parser.add_argument('-v','--debug',action='store_true')
+args = parser.parse_args()
+dbgprint(f"Running in {'RACE' if args.israce else 'BACKGROUND'} calculation mode")
+
+# GLOBALS
+char_factor = 0.8
+free_characteristics = 200 if args.israce else 0 # 200 points of characteristics free for races
+free_xp_in_skills = 0 if args.israce else 2200 # 2200 XP worth for free on backgrounds
+
+known_boons = None
+known_banes = None
+known_abilities = None
+def load_cost_file(path: str) -> dict:
+    rtn = {}
+    with open(path) as fhandle:
+        reader = csv.DictReader(fhandle)
+        for line in reader:
+            rtn[line['name']] = line['cost']
+    dbgprint("Loaded: " + str(rtn))
+    return rtn
+
+def lookup(dict: dict, key):
+    if key not in dict.keys():
+        return int(dict[re.sub('\(.*?\)$','',key).strip()])
+    return int(dict[key])
+
+def lookup_boon_cost(key: str) -> int:
+    if not key: return 0
+    global known_boons
+    if known_boons is None:
+        known_boons = load_cost_file(root_path/"core-rulebook"/"lists"/"boons.csv")
+    return lookup(known_boons, key)
+
+def lookup_bane_cost(key: str) -> int:
+    if not key: return 0
+    global known_banes
+    if known_banes is None:
+        known_banes = load_cost_file(root_path/"core-rulebook"/"lists"/"banes.csv")
+    return lookup(known_banes, key)
+
+def lookup_ability_cost(key: str) -> int:
+    if not key: return 0
+    global known_abilities
+    if known_abilities is None:
+        known_abilities = load_cost_file(root_path/"core-rulebook"/"lists"/"maneuver-abilities.csv") | \
+                            load_cost_file(root_path/"core-rulebook"/"lists"/"abilities.csv")
+    return lookup(known_abilities, key)
+
+def parseint(val) -> int:
+    return int(val) if val else 0
+
+###STEPS###
+# open CSV
+with open(args.file) as fhandle:
+    reader = csv.DictReader(fhandle)
+    for line in reader:
+        calculated_cost = 0
+
+        # calculate the cost as the sum of:
+        characteristics = sum([parseint(line[c]) for c in ('cr','int','ins','ch','dex','ag','con','str')])
+        characteristics += sum([parseint(e) for e in re.findall(r"(?<=\+)\d+", line['itemize:other_modifiers'] or "")])
+        dbgprint(f"Characteristics: {characteristics}")
+        calculated_cost += (characteristics-free_characteristics)*char_factor
+
+        # (XP cost of skills)/250
+        # TODO: This does not parse correctly. I will consider it close enough for now.
+        cost = []
+        for e in re.findall(r"(?<=\+)\d+", line['itemize:skills'] or ""):
+            cost.append(sum([200*(parseint(l)+1) for l in range(parseint(e))])) # "l+1" because range starts at 0 and is exclusive at the end
+        dbgprint(f"Skills: {cost} XP")
+        calculated_cost += (sum(cost)-free_xp_in_skills)/250
+
+        # (XP cost of abilities)/125
+        abilitycost = 0
+        if not try_access_key(line,'abilitycostoverride'):
+            for e in line['itemize:abilities'].split(';'):
+                abilitycost += lookup_ability_cost(e)
+        else: abilitycost = int(try_access_key(line,'abilitycostoverride') or 0)
+        dbgprint(f"Abilities: {abilitycost} XP")
+        calculated_cost += abilitycost/125
+
+        # (GP cost of Boons-Banes)/3
+        booncost = 0
+        if not try_access_key(line,'booncostoverride'):
+            for e in line['itemize:boons'].split(';'):
+                booncost += lookup_boon_cost(e)
+        else: booncost = int(try_access_key(line,'booncostoverride') or 0)
+        dbgprint(f"Boons: {booncost}")
+        banecost = 0
+        if not try_access_key(line,'banecostoverride'):
+            for e in line['itemize:banes'].split(';'):
+                banecost += lookup_bane_cost(e)
+        else: banecost = int(try_access_key(line,'banecostoverride') or 0)
+        dbgprint(f"Banes: {banecost}")
+        calculated_cost += (booncost-banecost)/3
+
+        variant = (" - " + line['variant']) if ('variant' in line.keys() and line['variant'] is not None) else ""
+        verdict = "close enough" if round(calculated_cost) == int(line['cost'] or 0) else "\033[91mtoo far\033[0m"
+        print(f"{line['name']}{variant}: {round(calculated_cost,2):0.2f} (currently {line['cost']}, {verdict})")
+        dbgprint("\n")
