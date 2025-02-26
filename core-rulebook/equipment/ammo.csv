@@ -95,12 +95,12 @@ Medium Fuel Cells,Unstable,On a hit roll above 95 causes the weapon's damage wit
 Large Fuel Cells,Standard Issue,-,16,1,1.5kg,0.5,4
 Large Fuel Cells,Unstable,On a hit roll above 95 causes the weapon's damage with Blast (1) centered on the shooter.,11,1,1.5kg,0.5,4
 Small Shard Blocks,Standard Issue,-,2,1,300g,1,5
-Small Shard Blocks,Crude,"-50\% mag size, jams on 91 and above",3,5,300g,1,6
+Small Shard Blocks,Crude,"-50% mag size, jams on 91 and above",3,5,300g,1,6
 Large Shard Blocks,Standard Issue,-,4,1,1.8kg,0.5,4
-Large Shard Blocks,Crude,"-50\% mag size, jams on 91 and above",6,5,1.8kg,0.5,4
+Large Shard Blocks,Crude,"-50% mag size, jams on 91 and above",6,5,1.8kg,0.5,4
 Large Shard Blocks,Osmium Alloy,"+D5 damage, -2 AP",10,1,3.6kg,0.5,3
 Vehicle Shard Blocks,Standard Issue,-,12,1,3.2kg,0.2,2
-Vehicle Shard Blocks,Crude,"-50\% mag size, jams on 91 and above",15,2,3.2kg,0.2,3
+Vehicle Shard Blocks,Crude,"-50% mag size, jams on 91 and above",15,2,3.2kg,0.2,3
 Vehicle Shard Blocks,Osmium Alloy,"+D10 damage, -2 AP",35,1,6.2kg,0.5,1
 20mm grenades,Fragmentation,2D10+2 | 2 AP | Blast (6),20,1,120g,0.5,3
 20mm grenades,High Explosive,2D10+6 | 5 AP | Blast (2),20,1,120g,0.5,3

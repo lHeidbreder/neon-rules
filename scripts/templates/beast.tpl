@@ -10,7 +10,9 @@
         \ifthenelse{\isempty{@difficulty_social@}}{}{Social @difficulty_social@ / }
         \ifthenelse{\isempty{@difficulty_combat@}}{}{Combat @difficulty_combat@}
         \par
-        \textit{@flavor_text@}
+        \begin{flavorblock}
+            @flavor_text@
+        \end{flavorblock}
         \columnbreak
         \begin{center}
             \tryincludewithfade
@@ -25,7 +27,9 @@
         \ifthenelse{\isempty{@difficulty_social@}}{}{Social @difficulty_social@ / }
         \ifthenelse{\isempty{@difficulty_combat@}}{}{Combat @difficulty_combat@}
         \par
-        \textit{@flavor_text@}
+        \begin{flavorblock}
+            @flavor_text@
+        \end{flavorblock}
     }
 \end{minipage}
 \par

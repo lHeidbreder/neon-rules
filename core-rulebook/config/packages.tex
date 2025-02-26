@@ -33,6 +33,8 @@
             right color = CornflowerBlue!30] (current page.south west)rectangle (current page.north east);
     \end{tikzpicture}}
 } %taken from https://tex.stackexchange.com/questions/82206/background-color-gradient-for-entire-document
+%flavor text bg
+\usepackage{tcolorbox}
 
 % Title Image
 \usepackage{wallpaper}
@@ -85,7 +87,9 @@
 %cross-references between documents
 %use ref* and its variants to avoid hyperref links
 \usepackage{xr}
-\input{../core-rulebook/config/loadexternaldocs.tex}
+%\input{../core-rulebook/config/loadexternaldocs.tex}
+\newcommand{\loadeddoc}{false}
+\luaimport{../externaldocs.csvin}{externaldoc.tpl}{xr}
 
 %load hyperref last
 \usepackage[bookmarks=true,colorlinks=true,linkcolor=Blue]{hyperref}

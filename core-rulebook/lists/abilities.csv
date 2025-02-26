@@ -2,7 +2,7 @@ name,cost,prerequisites,effect
 Advanced Parry,400,Overly Cautious,"When parrying multiple hits, distribute DoS among any amount of attackers. Still requires more DoS than the opponent for single hits. Can also parry Flexible weapons."
 Alpha Strike,500,"From the shadows, no Beta Strike",Successfully attacking an unaware target automatically hits critically.
 Assassin Strike,350,Acrobatics Trained,Scoring a critical hit or deathblow in melee allows the character to move up to his speed in meters right away without provoking opportunity attacks.
-Augsmith,350,"Mechanics Experienced, Bio-Maintenance Experienced",The character is capable of repairing cybernetic implants.
+Augsmith,350,"Mechanics Experienced, Bio-Maintenance Experienced",The character is capable of making and repairing cybernetic implants.
 Bar Fighter,250,Quaffing Trained,Ignore \emph{Improvised} penalties.
 Battle Mind,400,Intelligence 40,The character may add a tenth of his Intelligence to \emph{Base Initiative}.
 Battle Sense,500,Perception Trained,"Adds a fifth of Perception Bonus (2, 4, or 8) to initiative. Doubles penalties to attacks of opportunity against the character."

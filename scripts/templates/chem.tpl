@@ -1,8 +1,9 @@
-\begin{minipage}{\columnwidth}
     \subsection*{@name@}
-    \textit{@description@}
-    \\%
-    Cost: cR @cost@
+    \begin{flavorblock}
+		\itshape
+        @description@
+    \end{flavorblock}
+	Cost: cR @cost@
         \ifthenelse{\equal{-}{@load@}}{}{; Load: @load@}
 		\ifthenelse{\isempty{@availability@}}{}{; \textit{Availability: @availability@}\\}
 	\\%
@@ -33,6 +34,4 @@
         \paragraph{Overdose}
 		@overdose_effect@
 	}
-\end{minipage}
 \par
-

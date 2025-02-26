@@ -38,16 +38,20 @@
 
 %Narrative
 \renewcommand{\loadeddoc}{false}
-\IfFileExists{../_rulepackage/narrative-rules.aux}{
-	\externaldocument[narrative-]{../_rulepackage/narrative-rules}
+\IfFileExists{../_rulepackage/addons/narrative-rules.aux}{
+	\externaldocument[narrative-]{../_rulepackage/addons/narrative-rules}
 	\wlog{Loading <../\_rulepackage/narrative-rules>}
 	\renewcommand{\loadeddoc}{true}
-}{}
+}{
+	\wlog{File <../_rulepackage/addons/narrative-rules> does not exist}
+}
 \ifthenelse{
 	\equal{\loadeddoc}{false}
 }{
 	\IfFileExists{../addon-narrative/narrative-rules.aux}{
 		\externaldocument[narrative-]{../addon-narrative/narrative-rules}
 		\wlog{Loading <../addon-narrative/narrative-rules>}
-	}{}
+	}{
+		\wlog{File <../addon-narrative/narrative-rules> does not exist}
+	}
 }{}

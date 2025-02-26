@@ -1,21 +1,22 @@
-\paragraph*{@name@ \ifthenelse{\isempty{@variant@}}{}{/ @variant@} (@cost@ GP)}
+\subsection*{@name@ \ifthenelse{\isempty{@variant@}}{}{/ @variant@} (@cost@ GP)}
 \stepcounter{tmpcntr}
 \phantomsection
 \makelabelfromkey[race]{@name@@variant@}
-\textit{@flavor_text@}\par
-%\ifthenelse{\isempty{@cr@@int@@ins@@ch@@dex@@ag@@con@@str@}}{}{
+\par%
+\begin{flavorblock}
+    @flavor_text@
+\end{flavorblock}
 \begin{tabular}{|l|l|l|l|l|l|l|l|}
     \hline
     Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
     @cr@ & @int@ & @ins@ & @ch@ & @dex@ & @ag@ & @con@ & @str@ \\ \hline
 \end{tabular}\par
-%}
 \ifthenelse{\isempty{@itemize:other_modifiers@}}{}{\vspace{-8mm} \noindent\textbf{Other modifiers:}
     \begin{itemize}
     \setlength\itemsep{-10mm} \vspace{-8mm}
     @itemize:other_modifiers@
     \end{itemize} }
-\ifthenelse{\isempty{@itemize:skills@@itemize:abilities@@itemize:boons@@itemize:banes@@itemize:traits@@itemize:usual_backgrounds@@itemize:disallowed_backgrounds@}}{}{\hrulefill}
+\ifthenelse{\isempty{@itemize:skills@@itemize:abilities@@itemize:boons@@itemize:banes@@itemize:traits@@itemize:usual_backgrounds@@itemize:disallowed_backgrounds@}}{}{}
 \vspace{4mm}
 \begin{multicols}{2}
 \ifthenelse{\isempty{@itemize:skills@}}{}{ \textbf{Skills:}
@@ -60,7 +61,12 @@
 \def\currentfillerimagepath{../art/\subtitle/races/@picture_path@}
 \IfFileExists
     {\currentfillerimagepath}
-    {\begin{center}\filltopageendgraphics{\currentfillerimagepath}\end{center}} %fill the rest of the page with the image
+    {
+        \begin{center}
+        \filltopageendgraphics{\currentfillerimagepath}
+        \end{center}
+        \clearpage
+    } %fill the rest of the page with the image
     {} %if there was no filler image, break manually
-\clearpage
-
+%\clearpage
+\hrulefill

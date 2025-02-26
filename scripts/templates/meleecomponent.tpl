@@ -1,8 +1,9 @@
 \begin{minipage}{\columnwidth}
 	\textbf{\ul{@name@:}}
     \\%
-	\textit{@flavor@}
-    \\%
+    \begin{flavorblock}
+	    @flavor@
+    \end{flavorblock}
 	\textbf{Price}: cR @price@
     \ifthenelse{\isempty{@availability@}}{}{ / \textbf{Availability:} @availability@}
 	\\%

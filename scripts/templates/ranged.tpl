@@ -1,7 +1,9 @@
 \vspace{2mm}
 	\begin{minipage}{\columnwidth}
 		\textbf{\ul{@name@}}\\
-		\textit{@flavor_text@}\\
+		\begin{flavorblock}
+			@flavor_text@
+		\end{flavorblock}
 		\ifthenelse{\isempty{@weight@}}{}{\textbf{Weight}: @weight@ kg\\}
 		\ifthenelse{\isempty{@availability@}}
 			{\directlua{tex.print("\\edef\\availval{"..6-tierfromcost("@price@").."}")}}

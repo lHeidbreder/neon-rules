@@ -1,6 +1,8 @@
 \begin{minipage}{\columnwidth}
 \subsection*{@series@ \ifthenelse{\isempty{@variant@}}{}{- @variant@}}
-\textit{@flavor_text@}\par
+\begin{flavorblock}
+    @flavor_text@
+\end{flavorblock}
 \vspace{2mm}
 \begin{tabular}{|l|l|l|l|}
     \hline

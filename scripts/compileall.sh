@@ -61,6 +61,9 @@ fade_art () {
 prep () {
   files=(${main_dir}/*/*.tex)
 
+  #general prep
+  python "${main_dir}/scripts/python/collect-external-docs.py"
+
   for i in ${files[@]}
   do
     cd ${i%/*.tex}
@@ -78,13 +81,14 @@ prep () {
 compile () {
   files=(${main_dir}/*/*.tex)
 
+  # clean and regenerate build meta data
+  bash -c "${main_dir}/scripts/make-build-info.sh"
+
   for RUNNAME in Initial XR; do #run twice to get cross-references correct
     echo -e "\e[0;31m$RUNNAME run\e[0m"
   for i in ${files[@]}
   do
     cd ${i%/*.tex}
-    #if [ -f prep.sh ]; 
-    #then bash prep.sh; fi
     echo "Compiling: ${i##*/}"
 
     OUT="${file_output_dir}"
@@ -142,7 +146,6 @@ if [[ $(echo $@ | tr '[:lower:]' '[:upper:]') == *HELP* ]]; then
 
   exit 0
 fi
-
 
 # run by goals
 GOALS=$(echo "$@" | tr '[:lower:]' '[:upper:]')
