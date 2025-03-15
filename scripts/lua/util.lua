@@ -67,3 +67,13 @@ function tprint (tbl, indent)
     toprint = toprint .. string.rep(" ", indent-2) .. "}"
     return toprint
   end
+
+function iscurrentdoc (title)
+  if title == tex.jobtitle then
+    tex.print("true") 
+    return true
+  else
+    tex.print("false")
+    return false
+  end
+end

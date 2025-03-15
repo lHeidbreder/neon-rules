@@ -69,4 +69,4 @@
     } %fill the rest of the page with the image
     {} %if there was no filler image, break manually
 %\clearpage
-\hrulefill
+\conditionalhrule

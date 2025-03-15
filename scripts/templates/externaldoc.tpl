@@ -1,4 +1,7 @@
-\renewcommand{\loadeddoc}{false}
+% skip if we're loading the current document
+\renewcommand{\loadeddoc}{
+	\expandafter\directlua{iscurrentdoc(\luastring{@book@})}
+}
 \IfFileExists{../_rulepackage/@package_path@/@book@.aux}{
 	\externaldocument[@prefix@-]{../_rulepackage/@package_path@/@book@}
 	\wlog{Loading <../\_rulepackage/@package_path@/@book@>}

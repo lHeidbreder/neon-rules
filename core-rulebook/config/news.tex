@@ -41,7 +41,16 @@
 
 %Custom Commands
 \newcommand{\ul}[1]{\underline{\smash{#1}}}
-\newcommand{\breakline}{\vspace{.5cm} \hrule width \columnwidth \relax}
+%% Add an hrule, only if it is not the first page content
+%FIXME: does not work
+\newcommand{\conditionalhrule}{%
+	\ifhmode
+	\ifdim\lastskip=0pt
+	\else
+	\hrule
+	\fi
+	\fi
+}
 \newcommand{\derivedvalue}[3]{
 	\begin{samepage}
 	\subsubsection{#1 \textsubscript{\textlangle#2\textrangle}}
