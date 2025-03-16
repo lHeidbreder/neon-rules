@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Hacker - Black Hat",
+        "cost": "4",
+        "cr": "",
+        "int": "",
+        "ins": "",
+        "ch": "",
+        "dex": "",
+        "ag": "",
+        "con": "",
+        "str": "",
+        "itemize:other_modifiers": [
+            ""
+        ],
+        "itemize:skills": [
+            "Deception +1",
+            "Stealth +2",
+            "Wirewalk +3",
+            "Education: Cryptography +3"
+        ],
+        "itemize:abilities": [
+            ""
+        ],
+        "abilitycostoverride": "",
+        "itemize:boons": [
+            ""
+        ],
+        "booncostoverride": "",
+        "itemize:banes": [
+            ""
+        ],
+        "banecostoverride": "",
+        "flavor_text": "Corporate hacking, blackmailing or juvenile curiosity and too much contact with cyberspace can lead someone to become a black hat. Their acts are malicious and their allegiance lies with money. More often than not they are in the process of fleeing from authorities or corporations.",
+        "Example equipment": "",
+        "Notes": ""
+    },
+    {
+        "name": "Hacker - White Hat",
+        "cost": "3",
+        "cr": "",
+        "int": "",
+        "ins": "",
+        "ch": "",
+        "dex": "",
+        "ag": "",
+        "con": "",
+        "str": "",
+        "itemize:other_modifiers": [
+            ""
+        ],
+        "itemize:skills": [
+            "Wirewalk +3",
+            "Educations (one +3, the other +2): ::b:: \\item Cryptography \\item Law ::e::"
+        ],
+        "itemize:abilities": [
+            ""
+        ],
+        "abilitycostoverride": "",
+        "itemize:boons": [
+            ""
+        ],
+        "booncostoverride": "",
+        "itemize:banes": [
+            ""
+        ],
+        "banecostoverride": "",
+        "flavor_text": "As opposed to black hats, white hats are trying to find weaknesses in systems so they can fix them. Their actions are generally benevolent in nature but they also rarely work unpaid.",
+        "Example equipment": "",
+        "Notes": ""
+    }
+]

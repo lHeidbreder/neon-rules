@@ -1,0 +1,289 @@
+[
+    {
+        "name": "The Pack Man",
+        "cr": "30",
+        "int": "30",
+        "ins": "40",
+        "ch": "40",
+        "dex": "40",
+        "ag": "60",
+        "con": "35",
+        "str": "35",
+        "race": "Pure",
+        "background": "Courier",
+        "itemize:boons": [
+            "Aptitude (Ag)",
+            "Nimble"
+        ],
+        "itemize:banes": [
+            "Arrogance 35",
+            "Debt (cR 2000)",
+            "Delusions of Grandeur 30",
+            "Impatient 25",
+            "Impulsive"
+        ],
+        "itemize:skills": [
+            "Athletics Trained",
+            "Climbing Trained",
+            "Deception Known",
+            "Drive (Bike) Trained",
+            "Sleight of Hand Known",
+            "Stealth Known",
+            "Perception Experienced",
+            "Melee Training (One-Handed Blade) Known",
+            "Dodge Trained"
+        ],
+        "itemize:abilities": [
+            "Flip Up",
+            "Overly Cautious"
+        ],
+        "itemize:traits": [
+            ""
+        ],
+        "itemize:equipment": [
+            "inconspicuous Jump Joints",
+            "EMP shiv (simple hilt, knife blade, EMP Field)",
+            "one small fuel cell",
+            "leftover money: cR 21"
+        ]
+    },
+    {
+        "name": "Wire",
+        "cr": "35",
+        "int": "50",
+        "ins": "50",
+        "ch": "35",
+        "dex": "35",
+        "ag": "40",
+        "con": "32",
+        "str": "25",
+        "race": "Transspecies - Feline",
+        "background": "Hacker - Black Hat",
+        "itemize:boons": [
+            "Balance",
+            "Dark Vision",
+            "Ambidextrous",
+            "Big Spender II"
+        ],
+        "itemize:banes": [
+            "Second-class Citizen",
+            "Vanity 20",
+            "Addiction (Speed)",
+            "Bathophobia 30",
+            "Caring 35",
+            "Curiosity 40"
+        ],
+        "itemize:skills": [
+            "Acrobatics Known",
+            "Commerce Untrained",
+            "Wirewalk Experienced",
+            "Cryptography Known",
+            "Security Trained",
+            "Stealth Trained",
+            "Ranged Training (Pistol) Known"
+        ],
+        "itemize:abilities": [
+            "Battle Mind",
+            "Light Sleeper",
+            "Misinformer"
+        ],
+        "itemize:traits": [
+            ""
+        ],
+        "itemize:equipment": [
+            "cheap Space Invader",
+            "one dose of Speed",
+            "leftover money: cR 25"
+        ]
+    },
+    {
+        "name": "Doc Jones",
+        "cr": "38",
+        "int": "55",
+        "ins": "42",
+        "ch": "38",
+        "dex": "55",
+        "ag": "38",
+        "con": "38",
+        "str": "37",
+        "race": "Vat-grown - Adaptive",
+        "background": "Doctor",
+        "itemize:boons": [
+            "Nerves of Steel 2",
+            "Adaptable Circulation 1"
+        ],
+        "itemize:banes": [
+            "Slave Mentality 25",
+            "Bad Reputation 4",
+            "Blood Lust 40",
+            "Evil Monologue",
+            "Scrooge 40",
+            "Trigger Phrase",
+            "Ugly"
+        ],
+        "itemize:skills": [
+            "Appeal Known",
+            "Bio-Maintenance Trained",
+            "Restraint Trained",
+            "Chemistry Trained",
+            "Melee Training (Striking) Trained",
+            "Deception Known"
+        ],
+        "itemize:abilities": [
+            "Stabilization",
+            "MVR: Powerstrike",
+            "MVR: Stunning Blow"
+        ],
+        "itemize:traits": [
+            "one Str Advancement"
+        ],
+        "itemize:equipment": [
+            "Baton (simple hilt, telescoping baton)",
+            "Mk IIa PES Prototype",
+            "Stitch Kit",
+            "one dose of Method",
+            "one dose of Speed",
+            "one dose of Regenerex",
+            "leftover money: cR 39"
+        ]
+    },
+    {
+        "name": "CJ",
+        "cr": "42",
+        "int": "30",
+        "ins": "45",
+        "ch": "30",
+        "dex": "30",
+        "ag": "40",
+        "con": "42",
+        "str": "42",
+        "race": "Pure",
+        "background": "Driver, Broad Education: Bodyguard",
+        "itemize:boons": [
+            ""
+        ],
+        "itemize:banes": [
+            "Bad Reputation 3",
+            "Belief in Authority 40",
+            "Bound by Principle (complete loyalty)",
+            "Agoraphobia 45"
+        ],
+        "itemize:skills": [
+            "Ranged Training (Pistol) Trained",
+            "Melee Training (One-handed Club) Trained",
+            "Melee Training (Grappling) Known",
+            "Perception Known",
+            "Drive (Car) Experienced",
+            "Drive (Heavy) Trained",
+            "Navigation (Ground) Trained",
+            "Navigation (Underground) Trained",
+            "Restraint Trained",
+            "Melee Training (Striking) Experienced"
+        ],
+        "itemize:abilities": [
+            "Hand-to-hand Basics",
+            "Overly Cautious",
+            "Where it hurts",
+            "MVR: Powerstrike",
+            "MVR: Attack of Opportunity"
+        ],
+        "itemize:traits": [
+            ""
+        ],
+        "itemize:equipment": [
+            "Tenadermis",
+            "Amber Bull",
+            "30 shots of 7.2mm AP",
+            "one dose of Regenerex",
+            "leftover money: cR 7"
+        ]
+    },
+    {
+        "name": "Awe",
+        "cr": "35",
+        "int": "39",
+        "ins": "56",
+        "ch": "55",
+        "dex": "27",
+        "ag": "32",
+        "con": "32",
+        "str": "22",
+        "race": "Trans-species - Generic (bunny)",
+        "background": "Performer",
+        "itemize:boons": [
+            "Big Spender 2",
+            "Euphonia",
+            "Outstanding Sense (Hearing)",
+            "Looker"
+        ],
+        "itemize:banes": [
+            "Addiction (Raze)",
+            "Delusions of Grandeur 20",
+            "Second-class citizen",
+            "Vanity 20"
+        ],
+        "itemize:skills": [
+            "Acrobatics Trained",
+            "Appeal Experienced",
+            "Athletics Known",
+            "Deception Known",
+            "Education: Etiquette 2",
+            "Education: Entertainment 2",
+            "Perception Trained",
+            "Ranged Weapon Training (Pistol) Known",
+            "Voice Athlete Experienced"
+        ],
+        "itemize:abilities": [
+            ""
+        ],
+        "itemize:traits": [
+            ""
+        ],
+        "itemize:equipment": [
+            "Armored Suit (mod: Up-Armor - zone: arms)",
+            "Chemical Light Sticks",
+            "Duct Tape",
+            "Lighter",
+            "M10 with two magazines",
+            "Rape Whistle",
+            "two doses of Raze",
+            "SOS Knife Kit",
+            "small Tactical Softcase",
+            "Voice Modulator perfect fit",
+            "Wound dressing",
+            "Wound Sealant Foam",
+            "Leftover money: cR 18"
+        ]
+    },
+    {
+        "name": "%TODO: skills contain educations; will all have to be redone",
+        "cr": "",
+        "int": "",
+        "ins": "",
+        "ch": "",
+        "dex": "",
+        "ag": "",
+        "con": "",
+        "str": "",
+        "race": "",
+        "background": "",
+        "itemize:boons": [
+            ""
+        ],
+        "itemize:banes": [
+            ""
+        ],
+        "itemize:skills": [
+            ""
+        ],
+        "itemize:abilities": [
+            ""
+        ],
+        "itemize:traits": [
+            ""
+        ],
+        "itemize:equipment": [
+            ""
+        ]
+    }
+]

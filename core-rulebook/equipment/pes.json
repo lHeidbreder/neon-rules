@@ -1,0 +1,101 @@
+[
+    {
+        "name": "Mk IIa PES Prototype",
+        "armor": "8",
+        "threshold": "3",
+        "price": "55",
+        "weight": "1.9",
+        "special": "",
+        "availability": "3"
+    },
+    {
+        "name": "Mk IIIa Retail-Ready PES",
+        "armor": "15",
+        "threshold": "4",
+        "price": "160",
+        "weight": "1.2",
+        "special": "Inconspicuous",
+        "availability": "4"
+    },
+    {
+        "name": "Mk III Projected Armor",
+        "armor": "24",
+        "threshold": "5",
+        "price": "450",
+        "weight": "2.6",
+        "special": "",
+        "availability": "3"
+    },
+    {
+        "name": "Mk IVa Heavy Prototype",
+        "armor": "30",
+        "threshold": "5",
+        "price": "510",
+        "weight": "1.2",
+        "special": "blocks ranged attacks going out",
+        "availability": "2"
+    },
+    {
+        "name": "Mk IV Heavy PES",
+        "armor": "32",
+        "threshold": "5",
+        "price": "460",
+        "weight": "5.8",
+        "special": "Cumbersome",
+        "availability": "2"
+    },
+    {
+        "name": "Projected Bunker Shielding",
+        "armor": "64",
+        "threshold": "7",
+        "price": "2300",
+        "weight": "350",
+        "special": "incredibly large, 8m radius",
+        "availability": "2"
+    },
+    {
+        "name": "Rumble Energy Shielding",
+        "armor": "12",
+        "threshold": "4",
+        "price": "160",
+        "weight": "1.4",
+        "special": "triggers on melee attacks as well",
+        "availability": "3"
+    },
+    {
+        "name": "MagMA Heat Shield",
+        "armor": "18",
+        "threshold": "4",
+        "price": "430",
+        "weight": "1.4",
+        "special": "halves fire damage",
+        "availability": "3"
+    },
+    {
+        "name": "EOD Energy Shielding",
+        "armor": "20",
+        "threshold": "4",
+        "price": "480",
+        "weight": "1.2",
+        "special": "armor doubled against dispersed damage (all attacks with \\emph{Scatter} or \\emph{Blast} rules)",
+        "availability": "3"
+    },
+    {
+        "name": "Unstable PES",
+        "armor": "15",
+        "threshold": "5",
+        "price": "164",
+        "weight": "0.7",
+        "special": "shocks surroundings (excluding the wearer) when triggered: Blast (1), EMP, Stun (2)",
+        "availability": "2"
+    },
+    {
+        "name": "Energy Rotella",
+        "armor": "16",
+        "threshold": "4",
+        "price": "150",
+        "weight": "1.1",
+        "special": "only shields one arm, like a conventional shield",
+        "availability": "3"
+    }
+]

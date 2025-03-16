@@ -60,7 +60,7 @@ function itemize(entry)
     return rtn
 end
 
-function importfrom(csvpath, templatepath, outpath)
+function importfromCSV(csvpath, templatepath, outpath)
 
     -- exit if file exists
     f=io.open(outpath..".texin","r")

@@ -1,0 +1,191 @@
+[
+    {
+        "name": "Extension / Additional Story",
+        "flavor_text": "Increases size capacity; may at most double the base size in most cases; its cost is limited to be the location's original cost at most.",
+        "size": "-4",
+        "concealment": "-2",
+        "defense": "-1",
+        "cost": "5000",
+        "group": "Basic"
+    },
+    {
+        "name": "Facade",
+        "flavor_text": "Increase concealment by masking the base's true purpose.",
+        "size": "2",
+        "concealment": "2",
+        "defense": "0",
+        "cost": "300",
+        "group": "Concealment"
+    },
+    {
+        "name": "Fabrication Plant",
+        "flavor_text": "Produces a certain type of synthetic components automatically. Produces a net value of roughly cR 100 daily, given it is continuously supplied.",
+        "size": "4",
+        "concealment": "-1",
+        "defense": "-2",
+        "cost": "160000",
+        "group": "Crafting"
+    },
+    {
+        "name": "Forge",
+        "flavor_text": "Enables Forge crafting. The size and cost depends on the forge's size.",
+        "size": "1 / 2 / 4",
+        "concealment": "-2",
+        "defense": "-2",
+        "cost": "120 / 1,600 / 13,800",
+        "group": "Crafting"
+    },
+    {
+        "name": "Lab",
+        "flavor_text": "Enables Chemical crafting. The size and cost depends on the lab's size.",
+        "size": "1 / 2 / 4",
+        "concealment": "-2",
+        "defense": "-2",
+        "cost": "120 / 1,600 / 13,800",
+        "group": "Crafting"
+    },
+    {
+        "name": "Plantation",
+        "flavor_text": "Produces a certain type of natural components automatically. Produces a net value of roughly cR 100 daily, given it is continuously supplied.",
+        "size": "4",
+        "concealment": "-1",
+        "defense": "-2",
+        "cost": "160000",
+        "group": "Crafting"
+    },
+    {
+        "name": "Vehicle Bay",
+        "flavor_text": "Enables Vehicle repairs and modification",
+        "size": "4",
+        "concealment": "-2",
+        "defense": "-1",
+        "cost": "860",
+        "group": "Crafting"
+    },
+    {
+        "name": "EMI Dynamo",
+        "flavor_text": "Allows EM pulse in defense situations",
+        "size": "1",
+        "concealment": "-3",
+        "defense": "1",
+        "cost": "2800",
+        "group": "Defense"
+    },
+    {
+        "name": "Life Support Systems",
+        "flavor_text": "Removes dependency on outside world for clean water, food and air",
+        "size": "1",
+        "concealment": "-1",
+        "defense": "1",
+        "cost": "400 per location's size point",
+        "group": "Defense"
+    },
+    {
+        "name": "Hidden Pathways",
+        "flavor_text": "Allows circling around or escaping from the enemy in defense situations",
+        "size": "0",
+        "concealment": "0",
+        "defense": "1",
+        "cost": "320",
+        "group": "Defense"
+    },
+    {
+        "name": "Surveillance System",
+        "flavor_text": "Prevents being infiltrated",
+        "size": "1",
+        "concealment": "-1",
+        "defense": "1",
+        "cost": "2600",
+        "group": "Defense"
+    },
+    {
+        "name": "Turret Grid",
+        "flavor_text": "Adds allied turrets in defense situations",
+        "size": "1",
+        "concealment": "-3",
+        "defense": "2",
+        "cost": "3800",
+        "group": "Defense"
+    },
+    {
+        "name": "Comms Network",
+        "flavor_text": "Allows safe communication during preparation, internally and externally. Anyone trying to break encryption takes an additional -20 penalty.",
+        "size": "1",
+        "concealment": "0",
+        "defense": "1",
+        "cost": "1250",
+        "group": "Preparation"
+    },
+    {
+        "name": "Data Center",
+        "flavor_text": "Allows advanced data mining",
+        "size": "1",
+        "concealment": "-1",
+        "defense": "-1",
+        "cost": "750",
+        "group": "Preparation"
+    },
+    {
+        "name": "Equipment Stash",
+        "flavor_text": "Allows safe storage of various types of equipment",
+        "size": "2",
+        "concealment": "0",
+        "defense": "1",
+        "cost": "40",
+        "group": "Preparation"
+    },
+    {
+        "name": "Hidden Stash",
+        "flavor_text": "Allows safe storage of items that won't easily be found by a search",
+        "size": "0",
+        "concealment": "0",
+        "defense": "1",
+        "cost": "80",
+        "group": "Preparation"
+    },
+    {
+        "name": "Holding Facility",
+        "flavor_text": "Allows safe storage of prisoners and people of interest; 2 cells each",
+        "size": "1",
+        "concealment": "-2",
+        "defense": "-1",
+        "cost": "400",
+        "group": "Preparation"
+    },
+    {
+        "name": "Living Quarters / R\\&R",
+        "flavor_text": "Improves recovery through relaxation. All natural healing tests gain +10 and recovery time is reduced by half.",
+        "size": "1",
+        "concealment": "2",
+        "defense": "-1",
+        "cost": "100",
+        "group": "Preparation"
+    },
+    {
+        "name": "Medical Facilities",
+        "flavor_text": "Increases regeneration of health. All medical attention tests to regenerate HP gain +10.",
+        "size": "1",
+        "concealment": "-1",
+        "defense": "-1",
+        "cost": "900",
+        "group": "Preparation"
+    },
+    {
+        "name": "MedEvac / ER",
+        "flavor_text": "If during a mission a character is mortally wounded, he may be extracted and survive the encounter. He will however be traumatized and gain a Bane worth roughly 4 GP.",
+        "size": "4",
+        "concealment": "-3",
+        "defense": "1",
+        "cost": "4600",
+        "group": "Preparation"
+    },
+    {
+        "name": "Aug Surgery",
+        "flavor_text": "Allows implantation surgery.",
+        "size": "2",
+        "concealment": "-2",
+        "defense": "-1",
+        "cost": "1600",
+        "group": "Preparation"
+    }
+]

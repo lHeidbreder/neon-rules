@@ -1,0 +1,14 @@
+[
+    {
+        "skill": "Psionics",
+        "subtype": "",
+        "difficulty": "",
+        "key": "",
+        "common_characteristic": "any",
+        "short_description": "",
+        "long_description": "The knowledge to cast psionics. This is just the general skill and routine; to actually be useful a Cassandra implant and the knowledge of disciplines is also required.",
+        "itemize:example_eds": [
+            ""
+        ]
+    }
+]

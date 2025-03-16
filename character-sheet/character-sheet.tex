@@ -9,7 +9,7 @@
 %\usepackage[noxcolor]{svg}
 \newsavebox\ltmcbox
 
-\input{../core-rulebook/config/packages.tex}
+\usepackage{../core-rulebook/config/packages}
 \directlua{dofile("../scripts/lua/csv-importer.lua")}
 \newcommand{\generalskills}{\directlua{noncombat_skills("../core-rulebook/lists/skills.csv")}}
 \newcommand{\meleecombatskills}{\directlua{combat_skills("../core-rulebook/lists/skills.csv", "Melee")}}

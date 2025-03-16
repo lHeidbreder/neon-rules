@@ -1,0 +1,457 @@
+[
+    {
+        "group": "casual",
+        "name": "Biker helmet",
+        "head": "3",
+        "chest": "0",
+        "arms": "0",
+        "legs": "0",
+        "covers": "head",
+        "mods": "1",
+        "Itemize:effect": [
+            "+10 to Drive(Bike) checks"
+        ],
+        "price": "35",
+        "weight": "1.5",
+        "availability": "5"
+    },
+    {
+        "group": "casual",
+        "name": "Armored suit",
+        "head": "0",
+        "chest": "3",
+        "arms": "2",
+        "legs": "3",
+        "covers": "torso, arms, legs",
+        "mods": "1",
+        "Itemize:effect": [
+            "Inconspicuous"
+        ],
+        "price": "45",
+        "weight": "2",
+        "availability": "4"
+    },
+    {
+        "group": "casual",
+        "name": "Tough coat",
+        "head": "0",
+        "chest": "2",
+        "arms": "1",
+        "legs": "1",
+        "covers": "torso, arms",
+        "mods": "0",
+        "Itemize:effect": [
+            "Inconspicuous"
+        ],
+        "price": "35",
+        "weight": "2",
+        "availability": "6"
+    },
+    {
+        "group": "casual",
+        "name": "Flak jacket",
+        "head": "0",
+        "chest": "4",
+        "arms": "4",
+        "legs": "1",
+        "covers": "torso, arms",
+        "mods": "1",
+        "Itemize:effect": [
+            "Light"
+        ],
+        "price": "55",
+        "weight": "2",
+        "availability": "4"
+    },
+    {
+        "group": "casual",
+        "name": "Tough pants",
+        "head": "0",
+        "chest": "0",
+        "arms": "0",
+        "legs": "2",
+        "covers": "legs",
+        "mods": "0",
+        "Itemize:effect": [
+            "Inconspicuous"
+        ],
+        "price": "40",
+        "weight": "1.5",
+        "availability": "6"
+    },
+    {
+        "group": "helmets",
+        "name": "Blast helmet",
+        "head": "14",
+        "chest": "0",
+        "arms": "0",
+        "legs": "0",
+        "covers": "head",
+        "mods": "1",
+        "Itemize:effect": [
+            "immune to Trauma"
+        ],
+        "price": "230",
+        "weight": "8",
+        "availability": "3"
+    },
+    {
+        "group": "helmets",
+        "name": "Improvised helmet",
+        "head": "5",
+        "chest": "0",
+        "arms": "0",
+        "legs": "0",
+        "covers": "head",
+        "mods": "0",
+        "Itemize:effect": [
+            "Improvised"
+        ],
+        "price": "25",
+        "weight": "3",
+        "availability": "6"
+    },
+    {
+        "group": "helmets",
+        "name": "Banshee helmet",
+        "head": "6",
+        "chest": "1",
+        "arms": "0",
+        "legs": "0",
+        "covers": "head",
+        "mods": "1",
+        "Itemize:effect": [
+            "Light",
+            "inbuilt spotter target assist system"
+        ],
+        "price": "250",
+        "weight": "2",
+        "availability": "3"
+    },
+    {
+        "group": "helmets",
+        "name": "Flak helmet",
+        "head": "8",
+        "chest": "0",
+        "arms": "0",
+        "legs": "0",
+        "covers": "head",
+        "mods": "0",
+        "Itemize:effect": [
+            ""
+        ],
+        "price": "160",
+        "weight": "1.5",
+        "availability": "4"
+    },
+    {
+        "group": "helmets",
+        "name": "Ghost helmet",
+        "head": "6",
+        "chest": "0",
+        "arms": "0",
+        "legs": "0",
+        "covers": "head",
+        "mods": "1",
+        "Itemize:effect": [
+            "Light",
+            "Can project a holographic image onto the helmet, granting +10 to Intimidation when active and visible."
+        ],
+        "price": "210",
+        "weight": "5",
+        "availability": "3"
+    },
+    {
+        "group": "helmets",
+        "name": "EVA helmet",
+        "head": "5",
+        "chest": "0",
+        "arms": "0",
+        "legs": "0",
+        "covers": "head",
+        "mods": "1",
+        "Itemize:effect": [
+            "vac-sealed"
+        ],
+        "price": "210",
+        "weight": "2",
+        "availability": "3"
+    },
+    {
+        "group": "helmets",
+        "name": "Argus helmet",
+        "head": "10",
+        "chest": "0",
+        "arms": "0",
+        "legs": "0",
+        "covers": "head",
+        "mods": "1",
+        "Itemize:effect": [
+            "inbuilt explosives detection assistant"
+        ],
+        "price": "230",
+        "weight": "9",
+        "availability": "3"
+    },
+    {
+        "group": "body",
+        "name": "EOD armor",
+        "head": "3",
+        "chest": "20",
+        "arms": "18",
+        "legs": "2",
+        "covers": "torso, arms",
+        "mods": "1",
+        "Itemize:effect": [
+            "Bulky"
+        ],
+        "price": "550",
+        "weight": "36",
+        "availability": "3"
+    },
+    {
+        "group": "body",
+        "name": "Banshee suit",
+        "head": "0",
+        "chest": "10",
+        "arms": "7",
+        "legs": "0",
+        "covers": "torso, arms",
+        "mods": "2",
+        "Itemize:effect": [
+            "Light",
+            "inbuilt climbing gear"
+        ],
+        "price": "530",
+        "weight": "4",
+        "availability": "3"
+    },
+    {
+        "group": "body",
+        "name": "Improvised vest",
+        "head": "0",
+        "chest": "9",
+        "arms": "0",
+        "legs": "0",
+        "covers": "torso",
+        "mods": "0",
+        "Itemize:effect": [
+            "Improvised"
+        ],
+        "price": "35",
+        "weight": "3.5",
+        "availability": "6"
+    },
+    {
+        "group": "body",
+        "name": "Stab vest",
+        "head": "0",
+        "chest": "9",
+        "arms": "0",
+        "legs": "0",
+        "covers": "torso",
+        "mods": "0",
+        "Itemize:effect": [
+            "immune to Piercing rule"
+        ],
+        "price": "85",
+        "weight": "3.5",
+        "availability": "6"
+    },
+    {
+        "group": "body",
+        "name": "Flak vest",
+        "head": "0",
+        "chest": "12",
+        "arms": "0",
+        "legs": "0",
+        "covers": "torso",
+        "mods": "1",
+        "Itemize:effect": [
+            ""
+        ],
+        "price": "480",
+        "weight": "4",
+        "availability": "5"
+    },
+    {
+        "group": "body",
+        "name": "UA pauldrons",
+        "head": "0",
+        "chest": "0",
+        "arms": "10",
+        "legs": "0",
+        "covers": "arms",
+        "mods": "0",
+        "Itemize:effect": [
+            ""
+        ],
+        "price": "390",
+        "weight": "3.5",
+        "availability": "3"
+    },
+    {
+        "group": "body",
+        "name": "Ghost suit",
+        "head": "0",
+        "chest": "10",
+        "arms": "7",
+        "legs": "0",
+        "covers": "torso, arms",
+        "mods": "2",
+        "Itemize:effect": [
+            "does not stop a skin-tight holoprojector",
+            "includes piezoelectric exo-frame"
+        ],
+        "price": "530",
+        "weight": "12",
+        "availability": "3"
+    },
+    {
+        "group": "body",
+        "name": "Locust armor",
+        "head": "0",
+        "chest": "8",
+        "arms": "0",
+        "legs": "2",
+        "covers": "torso",
+        "mods": "2",
+        "Itemize:effect": [
+            "includes jump pack"
+        ],
+        "price": "540",
+        "weight": "38",
+        "availability": "3"
+    },
+    {
+        "group": "body",
+        "name": "Node armor",
+        "head": "0",
+        "chest": "14",
+        "arms": "4",
+        "legs": "0",
+        "covers": "torso, arms",
+        "mods": "3",
+        "Itemize:effect": [
+            "can carry AI",
+            "includes piezoelectric exo-frame"
+        ],
+        "price": "590",
+        "weight": "14",
+        "availability": "3"
+    },
+    {
+        "group": "body",
+        "name": "EVA suit",
+        "head": "0",
+        "chest": "3",
+        "arms": "3",
+        "legs": "3",
+        "covers": "torso, arms, legs",
+        "mods": "2",
+        "Itemize:effect": [
+            "vac-sealed"
+        ],
+        "price": "600",
+        "weight": "2.5",
+        "availability": "3"
+    },
+    {
+        "group": "body",
+        "name": "Shadow suit",
+        "head": "0",
+        "chest": "3",
+        "arms": "3",
+        "legs": "3",
+        "covers": "torso, arms, legs",
+        "mods": "1",
+        "Itemize:effect": [
+            "The wearer gains +20 to hide, and is at a -10 to hit in low-light and darkness."
+        ],
+        "price": "480",
+        "weight": "2.8",
+        "availability": "4"
+    },
+    {
+        "group": "leg",
+        "name": "Blast greaves",
+        "head": "0",
+        "chest": "1",
+        "arms": "0",
+        "legs": "18",
+        "covers": "legs",
+        "mods": "0",
+        "Itemize:effect": [
+            ""
+        ],
+        "price": "230",
+        "weight": "10",
+        "availability": "3"
+    },
+    {
+        "group": "leg",
+        "name": "Banshee greaves",
+        "head": "0",
+        "chest": "0",
+        "arms": "0",
+        "legs": "6",
+        "covers": "legs",
+        "mods": "1",
+        "Itemize:effect": [
+            "Light"
+        ],
+        "price": "190",
+        "weight": "2",
+        "availability": "3"
+    },
+    {
+        "group": "leg",
+        "name": "Flak greaves",
+        "head": "0",
+        "chest": "0",
+        "arms": "0",
+        "legs": "10",
+        "covers": "legs",
+        "mods": "0",
+        "Itemize:effect": [
+            ""
+        ],
+        "price": "150",
+        "weight": "2.5",
+        "availability": "4"
+    },
+    {
+        "group": "leg",
+        "name": "Ghost greaves",
+        "head": "0",
+        "chest": "0",
+        "arms": "0",
+        "legs": "6",
+        "covers": "legs",
+        "mods": "1",
+        "Itemize:effect": [
+            "Light",
+            "halves penalties from noise on sneaking"
+        ],
+        "price": "220",
+        "weight": "6",
+        "availability": "3"
+    },
+    {
+        "group": "leg",
+        "name": "Locust greaves",
+        "head": "0",
+        "chest": "0",
+        "arms": "0",
+        "legs": "6",
+        "covers": "legs",
+        "mods": "1",
+        "Itemize:effect": [
+            "Light",
+            "reduces fall damage to a quarter"
+        ],
+        "price": "210",
+        "weight": "5.5",
+        "availability": "3"
+    }
+]

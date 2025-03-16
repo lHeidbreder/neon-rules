@@ -1,0 +1,372 @@
+[
+    {
+        "name": "Ablative Skin",
+        "type": "Cybernetic",
+        "flavor_text": "A mesh, added on top of the skin, that helps resisting against heat and fire based injury.",
+        "effect": "Halves heat and fire damage (except lasers). Cannot catch on fire.",
+        "slot": "skin",
+        "load": "1 RI",
+        "cost": "180",
+        "mods": "Wrongly fitted, Perfect fit, Inconspicuous, Aesthetic"
+    },
+    {
+        "name": "Bionic Cardiovascular Enhancements",
+        "type": "Cybernetic",
+        "flavor_text": "A cybernetic cardiovascular replacement. Can withstand more strain than the body's natural systems.",
+        "effect": "Increases MT by 1. May be implanted up to 3 times.",
+        "slot": "-",
+        "load": "1 RI",
+        "cost": "150",
+        "mods": "Wrongly fitted, Inconspicuous, Perfect fit"
+    },
+    {
+        "name": "Bionic Extremity",
+        "type": "Cybernetic",
+        "flavor_text": "A cybernetic body part to replace a lost one",
+        "effect": "The body part won't bleed and can't receive biotech implants or benefit from them.",
+        "slot": "one extremity",
+        "load": "1 RI",
+        "cost": "50",
+        "mods": "Cheap, Compartment, Wrongly fitted, Powerful, Tough, Inconspicuous, Perfect fit, Integrated Weaponry"
+    },
+    {
+        "name": "Climbing Arm",
+        "type": "Cybernetic",
+        "flavor_text": "Cybernetic arms with a strong grip that can lock their fingers in position to prevent all exhaustion from holding on to ledges.",
+        "effect": "Grants a +15 bonus to climbing tests and tests made to resist being disarmed.",
+        "slot": "one arm",
+        "load": "1 RI",
+        "cost": "210",
+        "mods": "Cheap, Compartment, Wrongly fitted, Powerful, Tough, Inconspicuous, Perfect fit, Integrated Weaponry"
+    },
+    {
+        "name": "Deadeye",
+        "type": "Cybernetic",
+        "flavor_text": "A holographic eye implant that grants many features like magnification and a range finder to assist in marksmanship",
+        "effect": "Aim actions grant an additional +10 to the following shot. The target can move at any speed and the aim bonus is not lost, as long as it remains visible. The character can only benefit from one Deadeye.",
+        "slot": "one eye",
+        "load": "2 RI",
+        "cost": "360",
+        "mods": "Cheap, Wrongly fitted, Perfect fit"
+    },
+    {
+        "name": "Decentralized Muscle Processors",
+        "type": "Cybernetic",
+        "flavor_text": "Muscle memory was taken literally with this enhancement. Reactions are now partially calculated near the acting muscle fibers.",
+        "effect": "Grants +20 to all reaction tests. Enables the user to parry non-primitive ranged weapons. Feinting against the user is twice as effective.",
+        "slot": "nervous system",
+        "load": "5 RI",
+        "cost": "560",
+        "mods": "Cheap, Wrongly fitted, Inconspicuous, Perfect fit"
+    },
+    {
+        "name": "Jump Joints",
+        "type": "Cybernetic",
+        "flavor_text": "Cybernetic loaded joints and leg bones that greatly increase jump height. No world records have been made using a set of these however - not for a lack of effectiveness, they were banned in sports before they were ever used.",
+        "effect": "Jump and leap distances are doubled. Halves distance for calculation of fall damage when landing in a controlled way.",
+        "slot": "both legs",
+        "load": "3 RI",
+        "cost": "460",
+        "mods": "Aesthetic, Cheap, Inconspicuous, Perfect fit, Powerful, Tough, Wrongly fitted, Compartment"
+    },
+    {
+        "name": "L1NC",
+        "type": "Cybernetic",
+        "flavor_text": " The Level One Neural Connector, likely the most common implant out there. It's relatively cheap and connects the user to the global AR network. With it the world becomes a vibrant place of color and music.",
+        "effect": "The user is connected to the global AR network. Most important information is shared through it: Shopping windows, guides, traffic signs, to name a few. People without this implant essentially live in another world, and are generally suspicious within the city. \\\\ Due to its importance, the L1NC has been optimized to the extreme. It is the safest implant out there, having almost no load on the body. It is also shielded from EMP. ",
+        "slot": "-",
+        "load": "-",
+        "cost": "45 (but free at character creation)",
+        "mods": "None"
+    },
+    {
+        "name": "Lifter Arms",
+        "type": "Cybernetic",
+        "flavor_text": "Arm and back implants that improve slow, sustained strength feats like lifting objects",
+        "effect": "Str for the purpose of determining carry weight, and on tests for slow feats of strength is increased by 40.",
+        "slot": "both arms, chest",
+        "load": "2 RI, 1 MT",
+        "cost": "470",
+        "mods": "Cheap, Compartment, Wrongly fitted, Powerful, Tough, Perfect fit"
+    },
+    {
+        "name": "Neural Vault",
+        "type": "Cybernetic",
+        "flavor_text": "A brain implant that represses all but the most necessary emotions",
+        "effect": "The character gains the benefits of \\emph{Broken}, stacking with the ability. He may never benefit from any positive disposition.",
+        "slot": "brain",
+        "load": "3 RI",
+        "cost": "420",
+        "mods": "Wrongly fitted, Inconspicuous, Perfect fit"
+    },
+    {
+        "name": "Pain Inhibitors",
+        "type": "Cybernetic",
+        "flavor_text": "An implant that suppresses all pain reception, enabling fighting way beyond mortal limits.",
+        "effect": "The user suffers no pain or related effects. Due to removal of a natural inhibitor, the character suffers D5-2 dmg to a random location and D5 exhaustion at the end of every day he is active, ignoring injury threshold.",
+        "slot": "brain",
+        "load": "3 RI",
+        "cost": "230",
+        "mods": "Wrongly fitted, Inconspicuous, Perfect fit"
+    },
+    {
+        "name": "Protected Senses",
+        "type": "Cybernetic",
+        "flavor_text": "Sensory overload can be a detriment to many professionals, from soldiers to thieves. This augment protects from such occurrences at some loss to the sense's accuracy",
+        "effect": "Grants +20 to resist overstimulation like blinding, deafening or pain. Using the associated sense suffers a -10.",
+        "slot": "one tagged senses",
+        "load": "1 RI",
+        "cost": "180",
+        "mods": "Cheap, Wrongly fitted, Perfect fit"
+    },
+    {
+        "name": "Quick Replacement Extremity",
+        "type": "Cybernetic",
+        "flavor_text": "A cheap cybernetic arm that can quickly be replaced with a new, undamaged one without taking much time getting used to.",
+        "effect": "The body part won't bleed and can't receive biotech implants or benefit from them. Zone HP is reduced to 20%. As long as the interface is not destroyed, an extremity can be replaced in 15 seconds (5 rounds). \\\\ Note: most mods are applied to the mount point but some may be applied to the limb instead as per GM discretion",
+        "slot": "one extremity",
+        "load": "1 RI",
+        "cost": "40 to install the interface; cR 20 per limb",
+        "mods": "Cheap, Compartment, Wrongly fitted, Powerful, Tough, Inconspicuous, Perfect fit"
+    },
+    {
+        "name": "Rayleigh Fibers",
+        "type": "Cybernetic",
+        "flavor_text": "An enhancement over the natural nervous system to massively increase reaction speed",
+        "effect": "Grants +10 to all reaction tests. The character can dodge or parry non-primitive ranged weapons.",
+        "slot": "nervous system",
+        "load": "5 RI",
+        "cost": "530",
+        "mods": "Cheap, Wrongly fitted, Perfect fit"
+    },
+    {
+        "name": "Skin-Tight Holoprojector",
+        "type": "Cybernetic",
+        "flavor_text": "Technically not just one but a set of holographic projectors, that obscure the user's movements and make it hard to track exactly what someone is doing.",
+        "effect": "Grants -20 to attacks and parries against the user. The user suffers -20 to any tests made to hide while active. It can be activated as an action. \\\\ It has no effect when wearing armor or thick clothing.",
+        "slot": "skin",
+        "load": "4 RI",
+        "cost": "480",
+        "mods": "Wrongly fitted, Perfect fit, Aesthetic"
+    },
+    {
+        "name": "Subdermal Data Storage",
+        "type": "Cybernetic",
+        "flavor_text": "A large data storage implanted within the body. Nearly impossible to detect, great for smuggling data.",
+        "effect": "The user always has data storage at hand. The connector can be found with a -30 Investigation test - if it is technically possible.",
+        "slot": "brain",
+        "load": "1 RI",
+        "cost": "150",
+        "mods": "Cheap, Inconspicuous, Perfect fit, Wrongly fitted"
+    },
+    {
+        "name": "Thermal Vision",
+        "type": "Cybernetic",
+        "flavor_text": "An implant that allows interpretation of infrared light as visible light",
+        "effect": "Allows the user to see IR light like heat sources and IR lasers. This may grant +20 to finding hidden people.",
+        "slot": "one eye",
+        "load": "2 RI",
+        "cost": "240",
+        "mods": "Cheap, Inconspicuous, Perfect fit, Wrongly fitted"
+    },
+    {
+        "name": "Voice Modulator",
+        "type": "Cybernetic",
+        "flavor_text": "Adjustments to the voice box allow a user to reform the vocal cords, allowing for potentially flawless imitation - at least in terms of sound.",
+        "effect": "Vocal Deceive, Intimidate or Performance tests gain +20.",
+        "slot": "lungs",
+        "load": "2 RI",
+        "cost": "440",
+        "mods": "Cheap, Inconspicuous, Perfect fit, Wrongly fitted"
+    },
+    {
+        "name": "Bone Casing",
+        "type": "Cybernetic",
+        "flavor_text": "Half cybernetic, half bioengineered hardened casing for the human skeleton",
+        "effect": "Grants 6 armor to the location. Swimming tests suffer a -15 penalty and weight is increased by 10%.",
+        "slot": "one tagged bone",
+        "load": "1 MT",
+        "cost": "220",
+        "mods": "Wrongly fitted; Perfect fit"
+    },
+    {
+        "name": "Compound Eyes",
+        "type": "Biotech",
+        "flavor_text": "Fly-like eyes that, while reducing some detail, give the user a much larger field of view.",
+        "effect": "Grants the user +30 to tests against being ambushed or surprised. The user's control area increases to 270\u00b0. Visual perception when looking for details suffers a -10.",
+        "slot": "both eyes",
+        "load": "1 RI, 2 MT",
+        "cost": "400",
+        "mods": "Cheap, Wrongly fitted, Perfect fit"
+    },
+    {
+        "name": "Extradextrous Arm",
+        "type": "Biotech",
+        "flavor_text": "An arm featuring increased flexibility and improved tactile sense but somewhat lacking in raw strength.",
+        "effect": "The user gains +10 Dex, -10 Str and +20 to tactile perception using this arm.",
+        "slot": "one arm",
+        "load": "1 MT",
+        "cost": "180",
+        "mods": "Cheap, Wrongly fitted, Perfect fit, Powerful, Tough, Inconspicuous, Integrated Weaponry"
+    },
+    {
+        "name": "Flexible Bone Mesh",
+        "type": "Biotech",
+        "flavor_text": "An injection that adds some flex to the user's bones, granting better movement but an overall weaker frame.",
+        "effect": "Grants +20 to most acrobatics checks and all tests to squeeze through small spaces or out of grapples. The user suffers -10 to resist getting knocked down. The zone's HP are halved.",
+        "slot": "one tagged bone",
+        "load": "1 MT",
+        "cost": "180",
+        "mods": "Wrongly fitted, Perfect fit, Tough"
+    },
+    {
+        "name": "Gills",
+        "type": "Biotech",
+        "flavor_text": "Implanted additional gills to provide another source of oxygen.",
+        "effect": "Allows the character to breathe under water.",
+        "slot": "lungs",
+        "load": "2 MT",
+        "cost": "260",
+        "mods": "Wrongly fitted, Perfect fit, Inconspicuous"
+    },
+    {
+        "name": "Gyro Legs",
+        "type": "Biotech",
+        "flavor_text": "Flexible legs with ingenious stabilizing technology are installed into the user's lower body, offering incredible balance without requiring any mental capacity.",
+        "effect": "The character can now stand up in half the time (an action turns into a free action), won't fall over by himself and gains a +20 bonus to resist being knocked over. However he can no longer wear normal shoes.",
+        "slot": "both legs",
+        "load": "2 MT",
+        "cost": "390",
+        "mods": "Cheap, Wrongly fitted, Perfect fit, Powerful, Tough"
+    },
+    {
+        "name": "High-performance senses",
+        "type": "Biotech",
+        "flavor_text": "In the animal kingdom heightened senses are frequently the difference between life and death. Generally human brains cannot handle the sudden increase in stimulus that well.",
+        "effect": "Grants +20 to perception tests using one particular sense. The user suffers -10 to tests resisting overstimulation (like blinding, deafening or pain).",
+        "slot": "one tagged senses",
+        "load": "1 RI, 1 MT",
+        "cost": "180",
+        "mods": "Cheap, Wrongly fitted, Perfect fit, Inconspicuous"
+    },
+    {
+        "name": "Metabolism Booster",
+        "type": "Biotech",
+        "flavor_text": "Efficiently closing wounds always was import to humans. This rare implant can enhance natural healing but is quite inefficient and requires a lot of additional chemical energy.",
+        "effect": "Once per day, if the character is not already malnourished or starving, the character may take 15 minutes of rest to gain natural healing and restore 2D5 exhaustion. The user will become extremely hungry afterwards and take a -20 penalty to most actions until he gets a meal.",
+        "slot": "all inner organs",
+        "load": "3 MT",
+        "cost": "380",
+        "mods": "Wrongly fitted, Perfect fit"
+    },
+    {
+        "name": "Mucus Gland",
+        "type": "Biotech",
+        "flavor_text": "An engineered gland producing thick mucus. While it stinks, it is very resistant.",
+        "effect": "The character gains 3 temporary HP on every zone, which don't contribute to degradation when lost. When they are lost, it takes a minute for them to regenerate. The user suffers the effects of Bane: Terrible Odor and Bane: Ugly.",
+        "slot": "skin",
+        "load": "2 MT",
+        "cost": "230",
+        "mods": "Wrongly fitted, Perfect fit"
+    },
+    {
+        "name": "Oxygen Tanks",
+        "type": "Biotech",
+        "flavor_text": "Additional organs that save oxygen and reduce the feeling of exhaustion.",
+        "effect": "The user's exhaustion threshold is doubled.",
+        "slot": "lungs",
+        "load": "1 MT",
+        "cost": "180",
+        "mods": "Wrongly fitted, Perfect fit"
+    },
+    {
+        "name": "Pheromone Glands",
+        "type": "Biotech",
+        "flavor_text": "Airborne pheromones as a means of communication are a staple in the animal kingdom. While humans can't quite use it to communicate, this augment allows subtle manipulation during swaying attempts.",
+        "effect": "Grants +20 to all friendly social tests - the bonus is +40 instead in enclosed rooms without airflow. If either the target or the user wears vac-sealed armor, the augment has no effect.",
+        "slot": "skin",
+        "load": "3 MT",
+        "cost": "240",
+        "mods": "Wrongly fitted, Perfect fit, Inconspicuous, Aesthetic"
+    },
+    {
+        "name": "Radiation Proofing",
+        "type": "Biotech",
+        "flavor_text": "An under-skin mesh that blocks many forms of harmful radiation.",
+        "effect": "Grants +40 to tests to resist radiation poisoning and +30 to tests against getting shocked. The user's augments are immune to EMP.",
+        "slot": "skin",
+        "load": "2 MT",
+        "cost": "160",
+        "mods": "Wrongly fitted, Perfect fit, Inconspicuous, Aesthetic"
+    },
+    {
+        "name": "Reprocessor Stomach",
+        "type": "Cybernetic",
+        "flavor_text": "A recycler squeezing the last nutrients from food waste. One of the only cybernetics straining medical toughness.",
+        "effect": "The speed of starvation is reduced to a quarter.",
+        "slot": "-",
+        "load": "1 MT",
+        "cost": "220",
+        "mods": "Cheap, Wrongly fitted, Perfect fit"
+    },
+    {
+        "name": "Shadow Runners",
+        "type": "Biotech",
+        "flavor_text": "Very springy leg replacements, making it much easier to walk silently.",
+        "effect": "Sound-related penalties on sneaking tests are halved, at least reduced by 10.",
+        "slot": "both legs",
+        "load": "3 MT",
+        "cost": "380",
+        "mods": "Wrongly fitted, Perfect fit, Tough, Powerful, Inconspicuous"
+    },
+    {
+        "name": "Shielded Nerves",
+        "type": "Biotech",
+        "flavor_text": "An enhancement to the user's nervous system designed to bear larger loads. While it replaces a large part of the nervous system, it is compatible with any other augment.",
+        "effect": "Increases RI by 1. May be implanted up to 3 times.",
+        "slot": "-",
+        "load": "1 MT",
+        "cost": "150",
+        "mods": "Wrongly fitted, Perfect fit"
+    },
+    {
+        "name": "Tenadermis",
+        "type": "Biotech",
+        "flavor_text": "An engineered gland that creates a thick, tough layer just below the skin.",
+        "effect": "Grants +15 natural armor. It removes all sense of touch, effectively granting the effects of \\emph{Bane: No tactile sense}. Penalties from additional worn armor are doubled. ",
+        "slot": "skin",
+        "load": "3 MT",
+        "cost": "280",
+        "mods": "Wrongly fitted, Perfect fit, Inconspicuous, Aesthetic"
+    },
+    {
+        "name": "Toxin Filters",
+        "type": "Biotech",
+        "flavor_text": "A very large group of various replacements that remove toxic substances from all parts of the body.",
+        "effect": "The user becomes immune to almost all toxins. This includes the detriments of any chems.",
+        "slot": "all inner organs",
+        "load": "5 MT",
+        "cost": "220",
+        "mods": "Wrongly fitted, Perfect fit, Tough, Inconspicuous"
+    },
+    {
+        "name": "Vat-grown Body Part",
+        "type": "Biotech",
+        "flavor_text": "A biological body part grown in a vat, usually grown from the patient's own DNA. Just as good as the original.",
+        "effect": "A lost or broken body part is restored back to normal. \\\\% It is possible to grow an exact clone. This takes very long (\\sim 4 months) but does not use any MT.",
+        "slot": "one tagged extremity",
+        "load": "1 MT",
+        "cost": "50",
+        "mods": "Cheap, Wrongly fitted, Perfect fit, Powerful, Tough, Integrated Weaponry"
+    },
+    {
+        "name": "Wound Sealant Foam Gland",
+        "type": "Biotech",
+        "flavor_text": "An engineered gland that releases blood clotting foam when injured to prevent large amounts of blood loss.",
+        "effect": "All bleeding is stopped the moment it begins. Chems last twice as long. These effects, as well as half the implant\u2019s load, are inhibited by most common anesthetics.",
+        "slot": "skin",
+        "load": "4 MT",
+        "cost": "220",
+        "mods": "Wrongly fitted, Perfect fit"
+    }
+]

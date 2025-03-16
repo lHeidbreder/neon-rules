@@ -19,7 +19,7 @@
 }
 \newenvironment{flavorblock}{
 	\begin{tcolorbox}[
-		colback=Dandelion!30,
+		colback=Gray!30,
 		boxrule=0.2mm,
 		boxsep=0pt,
 		sharp corners
@@ -44,11 +44,9 @@
 %% Add an hrule, only if it is not the first page content
 %FIXME: does not work
 \newcommand{\conditionalhrule}{%
-	\ifhmode
-	\ifdim\lastskip=0pt
+	\ifnum\prevdepth=0
 	\else
-	\hrule
-	\fi
+		\hrule
 	\fi
 }
 \newcommand{\derivedvalue}[3]{

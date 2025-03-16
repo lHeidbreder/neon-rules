@@ -2,7 +2,7 @@
 % Second arg: the template path
 \directlua{dofile("../scripts/lua/csv-importer.lua")}
 \newcommand{\luaimport}[3]{
-	\directlua{importfrom(\luastring{#1}, \luastring{../scripts/templates/#2}, \luastring{#3})}
+	\directlua{importfromCSV(\luastring{#1}, \luastring{../scripts/templates/#2}, \luastring{#3})}
     \input{#3.texin}
 }
 

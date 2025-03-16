@@ -1,0 +1,705 @@
+[
+    {
+        "name": "Pure",
+        "variant": "",
+        "cost": "0",
+        "flavor_text": "The average human lives in overcrowded, artificially lit megacities dominated by towering corporate skyscrapers and pervasive surveillance. Most people work repetitive jobs for powerful megacorps or hustle in the shadows, navigating a life of constant economic struggle and societal decay.",
+        "cr": "25",
+        "int": "25",
+        "ins": "25",
+        "ch": "25",
+        "dex": "25",
+        "ag": "25",
+        "con": "25",
+        "str": "25",
+        "itemize:other_modifiers": [
+            ""
+        ],
+        "itemize:skills": [
+            ""
+        ],
+        "itemize:abilities": [
+            ""
+        ],
+        "itemize:boons": [
+            ""
+        ],
+        "booncostoverride": "",
+        "itemize:banes": [
+            ""
+        ],
+        "banecostoverride": "",
+        "itemize:traits": [
+            ""
+        ],
+        "itemize:usual_backgrounds": [
+            "any"
+        ],
+        "itemize:disallowed_backgrounds": [
+            ""
+        ],
+        "picture_path": ""
+    },
+    {
+        "name": "Trans-species",
+        "variant": "Generic",
+        "cost": "1",
+        "flavor_text": "Trans-species humans have changed their bodies to resemble a humanoid version of some animal. Roughly every decade a new wave of trans-species humans rises in pop culture, looked upon suspiciously from all those that are not part of the movement themselves.\\\\These changes come with qualities and drawbacks related to the animal in question, as well as general physical weakening and sterility.",
+        "cr": "22",
+        "int": "22",
+        "ins": "36",
+        "ch": "22",
+        "dex": "22",
+        "ag": "22",
+        "con": "22",
+        "str": "22",
+        "itemize:other_modifiers": [
+            "one except Instinct +5"
+        ],
+        "itemize:skills": [
+            "Perception +2"
+        ],
+        "itemize:abilities": [
+            ""
+        ],
+        "itemize:boons": [
+            "Big Spender 2",
+            "Outstanding Sense (any one)"
+        ],
+        "booncostoverride": "13",
+        "itemize:banes": [
+            "Second-class Citizen"
+        ],
+        "banecostoverride": "",
+        "itemize:traits": [
+            ""
+        ],
+        "itemize:usual_backgrounds": [
+            "Gambler",
+            "Laborer",
+            "Performer",
+            "Wastelander",
+            "Academic",
+            "Shark",
+            "Soldier"
+        ],
+        "itemize:disallowed_backgrounds": [
+            ""
+        ],
+        "picture_path": ""
+    },
+    {
+        "name": "Trans-species",
+        "variant": "Avian",
+        "cost": "3",
+        "flavor_text": "A human that has undergone surgery and gene therapy to attain some bird-like features. Generally that is good eyesight but it might also encompass a feather coat.",
+        "cr": "22",
+        "int": "22",
+        "ins": "35",
+        "ch": "22",
+        "dex": "22",
+        "ag": "30",
+        "con": "22",
+        "str": "22",
+        "itemize:other_modifiers": [
+            ""
+        ],
+        "itemize:skills": [
+            "Perception +1",
+            "Survival +1"
+        ],
+        "itemize:abilities": [
+            ""
+        ],
+        "itemize:boons": [
+            "Nimble",
+            "Outstanding Sense (Sight)"
+        ],
+        "booncostoverride": "",
+        "itemize:banes": [
+            "Second-class Citizen"
+        ],
+        "banecostoverride": "",
+        "itemize:traits": [
+            ""
+        ],
+        "itemize:usual_backgrounds": [
+            "Courier",
+            "Driver",
+            "Gambler",
+            "Laborer",
+            "Performer",
+            "Wastelander",
+            "Academic",
+            "Shark",
+            "Soldier"
+        ],
+        "itemize:disallowed_backgrounds": [
+            ""
+        ],
+        "picture_path": ""
+    },
+    {
+        "name": "Trans-species",
+        "variant": "Canine",
+        "cost": "1",
+        "flavor_text": "A human that through gene therapy and surgery has attained dog-like features. These are cosmetic changes and an outstanding sense of smell.\\\\\tThese types of people are generally more obedient after their transformation. Due to this and their sharp senses, they are often employed by private investigators.",
+        "cr": "25",
+        "int": "22",
+        "ins": "35",
+        "ch": "30",
+        "dex": "20",
+        "ag": "25",
+        "con": "20",
+        "str": "22",
+        "itemize:other_modifiers": [
+            ""
+        ],
+        "itemize:skills": [
+            "Perception +2"
+        ],
+        "itemize:abilities": [
+            ""
+        ],
+        "itemize:boons": [
+            "Outstanding Sense (Smell)"
+        ],
+        "booncostoverride": "",
+        "itemize:banes": [
+            "Second-class Citizen",
+            "Slave Mentality 20"
+        ],
+        "banecostoverride": "9",
+        "itemize:traits": [
+            ""
+        ],
+        "itemize:usual_backgrounds": [
+            "Gambler",
+            "Investigator",
+            "Laborer",
+            "Performer",
+            "Wastelander"
+        ],
+        "itemize:disallowed_backgrounds": [
+            "Academic",
+            "Shark",
+            "Soldier"
+        ],
+        "picture_path": "transspecies-canine.png"
+    },
+    {
+        "name": "Trans-species",
+        "variant": "Castorimorpha",
+        "cost": "3",
+        "flavor_text": "A human that through gene therapy and surgery has attained beaver-like features. These are some cosmetic changes, an affinity for swimming and a more agile but weaker body.",
+        "cr": "22",
+        "int": "25",
+        "ins": "30",
+        "ch": "25",
+        "dex": "20",
+        "ag": "30",
+        "con": "25",
+        "str": "22",
+        "itemize:other_modifiers": [
+            ""
+        ],
+        "itemize:skills": [
+            "Swimming +1"
+        ],
+        "itemize:abilities": [
+            ""
+        ],
+        "itemize:boons": [
+            "Diver's Lung",
+            "Nimble"
+        ],
+        "booncostoverride": "",
+        "itemize:banes": [
+            "Second-class Citizen"
+        ],
+        "banecostoverride": "",
+        "itemize:traits": [
+            ""
+        ],
+        "itemize:usual_backgrounds": [
+            "Laborer",
+            "Performer",
+            "Wastelander"
+        ],
+        "itemize:disallowed_backgrounds": [
+            "Academic",
+            "Shark",
+            "Soldier"
+        ],
+        "picture_path": ""
+    },
+    {
+        "name": "Trans-species",
+        "variant": "Elf",
+        "cost": "0",
+        "flavor_text": "Among all trans-species transformations this is by far the most expensive and complicated, due to how difficult creating the necessary material is. However due to the very fine process, some who undergo the procedure may keep just a small part of their fertility. They are also by far the least looked down upon.",
+        "cr": "22",
+        "int": "25",
+        "ins": "28",
+        "ch": "25",
+        "dex": "25",
+        "ag": "28",
+        "con": "20",
+        "str": "20",
+        "itemize:other_modifiers": [
+            ""
+        ],
+        "itemize:skills": [
+            "Acrobatics +1",
+            "Appeal +1"
+        ],
+        "itemize:abilities": [
+            ""
+        ],
+        "itemize:boons": [
+            "Outstanding Sense (any one)",
+            "Looker"
+        ],
+        "booncostoverride": "",
+        "itemize:banes": [
+            ""
+        ],
+        "banecostoverride": "",
+        "itemize:traits": [
+            ""
+        ],
+        "itemize:usual_backgrounds": [
+            "Escort",
+            "Performer"
+        ],
+        "itemize:disallowed_backgrounds": [
+            ""
+        ],
+        "picture_path": "transspecies-elf.png"
+    },
+    {
+        "name": "Trans-species",
+        "variant": "Feline",
+        "cost": "6",
+        "flavor_text": "The oldest form of trans-species humans, someone that has undergone gene therapy to attain some cat-like features. They come to see very well in the dark and gain a superior sense of balance.\\\\However they also become playful and particularly dislike hard or dirty work, which is why of all trans-humans they are likely the most trafficked, usually just as status symbols.",
+        "cr": "20",
+        "int": "25",
+        "ins": "35",
+        "ch": "25",
+        "dex": "25",
+        "ag": "30",
+        "con": "22",
+        "str": "20",
+        "itemize:other_modifiers": [
+            ""
+        ],
+        "itemize:skills": [
+            "Acrobatics +1"
+        ],
+        "itemize:abilities": [
+            ""
+        ],
+        "itemize:boons": [
+            "Balance",
+            "Dark Vision"
+        ],
+        "booncostoverride": "",
+        "itemize:banes": [
+            "Second-class Citizen",
+            "Vanity 20"
+        ],
+        "banecostoverride": "9",
+        "itemize:traits": [
+            ""
+        ],
+        "itemize:usual_backgrounds": [
+            "Escort",
+            "Laborer",
+            "Performer",
+            "Wastelander"
+        ],
+        "itemize:disallowed_backgrounds": [
+            "Academic",
+            "Shark",
+            "Soldier"
+        ],
+        "picture_path": ""
+    },
+    {
+        "name": "Trans-species",
+        "variant": "Piscean",
+        "cost": "2",
+        "flavor_text": "By far the rarest form of trans-species humans, these people have acquired some fish-like attributes. The skin is covered in scales, the breathing can partially be substituted by gills.",
+        "cr": "22",
+        "int": "22",
+        "ins": "30",
+        "ch": "22",
+        "dex": "22",
+        "ag": "30",
+        "con": "22",
+        "str": "22",
+        "itemize:other_modifiers": [
+            ""
+        ],
+        "itemize:skills": [
+            "Perception +1",
+            "Swimming +1"
+        ],
+        "itemize:abilities": [
+            ""
+        ],
+        "itemize:boons": [
+            "Dark Vision",
+            "Diver's Lung",
+            "Natural Armor 2"
+        ],
+        "booncostoverride": "26",
+        "itemize:banes": [
+            "Second-class Citizen"
+        ],
+        "banecostoverride": "",
+        "itemize:traits": [
+            ""
+        ],
+        "itemize:usual_backgrounds": [
+            "Gambler",
+            "Laborer",
+            "Performer",
+            "Wastelander"
+        ],
+        "itemize:disallowed_backgrounds": [
+            "Academic",
+            "Soldier"
+        ],
+        "picture_path": ""
+    },
+    {
+        "name": "Trans-species",
+        "variant": "Reptilian",
+        "cost": "0",
+        "flavor_text": "Sometimes regarded as the odd one out even among trans-species, these people chose to gain reptilian qualities like scales, an inclination to climb and even higher reflexes than other trans-humans.\\\\While other trans-species might pass as some sort of costume, these changes are absolutely unmistakable.",
+        "cr": "22",
+        "int": "22",
+        "ins": "35",
+        "ch": "20",
+        "dex": "20",
+        "ag": "25",
+        "con": "25",
+        "str": "20",
+        "itemize:other_modifiers": [
+            ""
+        ],
+        "itemize:skills": [
+            "Climbing +1",
+            "Perception +1"
+        ],
+        "itemize:abilities": [
+            "Overly Cautious"
+        ],
+        "itemize:boons": [
+            "Natural Armor 4"
+        ],
+        "booncostoverride": "24",
+        "itemize:banes": [
+            "Second-class Citizen",
+            "Impaired Sense (Touch)"
+        ],
+        "banecostoverride": "",
+        "itemize:traits": [
+            ""
+        ],
+        "itemize:usual_backgrounds": [
+            "Gambler",
+            "Laborer",
+            "Performer",
+            "Wastelander"
+        ],
+        "itemize:disallowed_backgrounds": [
+            "Academic",
+            "Shark",
+            "Soldier"
+        ],
+        "picture_path": ""
+    },
+    {
+        "name": "Trans-species",
+        "variant": "Ungulate",
+        "cost": "2",
+        "flavor_text": "Through gene therapy and surgery this person has taken on cow-like features. Most of the changes are of cosmetic nature, but most of them are tougher than the average human.\\\\Likely for both of those reasons these people are often employed as cheap workforce for dangerous, exhausting jobs.",
+        "cr": "22",
+        "int": "22",
+        "ins": "30",
+        "ch": "25",
+        "dex": "22",
+        "ag": "22",
+        "con": "30",
+        "str": "28",
+        "itemize:other_modifiers": [
+            ""
+        ],
+        "itemize:skills": [
+            "Athletics +1",
+            "Restraint +1"
+        ],
+        "itemize:abilities": [
+            ""
+        ],
+        "itemize:boons": [
+            "Poison Resistance"
+        ],
+        "booncostoverride": "",
+        "itemize:banes": [
+            "Second-class Citizen"
+        ],
+        "banecostoverride": "",
+        "itemize:traits": [
+            ""
+        ],
+        "itemize:usual_backgrounds": [
+            "Gambler",
+            "Laborer",
+            "Performer",
+            "Wastelander"
+        ],
+        "itemize:disallowed_backgrounds": [
+            "Academic",
+            "Shark",
+            "Soldier"
+        ],
+        "picture_path": ""
+    },
+    {
+        "name": "Vat-grown",
+        "variant": "Adaptive",
+        "cost": "26",
+        "flavor_text": "Artificially grown, these humans are created to serve a single person or institution for generally a single purpose. They are superior to normal humans in almost every way, except they usually intentionally lack some creative thought and can't reproduce due to how unique their genetic material is.\\\\They don't strive to raise in social classes or to improve their living situation much due to inbuilt programming and are very obedient unless their master wishes specifically for creative thought.",
+        "cr": "28",
+        "int": "28",
+        "ins": "28",
+        "ch": "28",
+        "dex": "28",
+        "ag": "28",
+        "con": "28",
+        "str": "28",
+        "itemize:other_modifiers": [
+            "any one +4",
+            "another one +4"
+        ],
+        "itemize:skills": [
+            ""
+        ],
+        "itemize:abilities": [
+            ""
+        ],
+        "itemize:boons": [
+            "3 levels between: ::b:: \\item Adaptable Circulation \\item Nerves of Steel ::e::"
+        ],
+        "booncostoverride": "6",
+        "itemize:banes": [
+            "Slave Mentality 25"
+        ],
+        "banecostoverride": "5",
+        "itemize:traits": [
+            ""
+        ],
+        "itemize:usual_backgrounds": [
+            ""
+        ],
+        "itemize:disallowed_backgrounds": [
+            "Child Soldier",
+            "Orphan",
+            "Shark"
+        ],
+        "picture_path": ""
+    },
+    {
+        "name": "Vat-grown",
+        "variant": "Biocomputer",
+        "cost": "24",
+        "flavor_text": "Created with incredible intelligence they are grown to serve as generals, advisers and assistants. The only limit to their incredible intellect is usually jokes.",
+        "cr": "30",
+        "int": "40",
+        "ins": "30",
+        "ch": "25",
+        "dex": "25",
+        "ag": "25",
+        "con": "25",
+        "str": "25",
+        "itemize:other_modifiers": [
+            ""
+        ],
+        "itemize:skills": [
+            "Logic +1",
+            "one Education +2",
+            "another Education +2"
+        ],
+        "itemize:abilities": [
+            ""
+        ],
+        "itemize:boons": [
+            ""
+        ],
+        "booncostoverride": "",
+        "itemize:banes": [
+            "Slave Mentality 25"
+        ],
+        "banecostoverride": "5",
+        "itemize:traits": [
+            ""
+        ],
+        "itemize:usual_backgrounds": [
+            "Academic",
+            "Hacker"
+        ],
+        "itemize:disallowed_backgrounds": [
+            "Child Soldier",
+            "Orphan",
+            "Shark"
+        ],
+        "picture_path": ""
+    },
+    {
+        "name": "Vat-grown",
+        "variant": "Crafter",
+        "cost": "27",
+        "flavor_text": "Blessed with incredible dexterity, they are created to create. The basic muscle memory to build a certain thing is ingrained during the building process and they have an easy time learning more craftsmanship.",
+        "cr": "25",
+        "int": "30",
+        "ins": "30",
+        "ch": "25",
+        "dex": "40",
+        "ag": "25",
+        "con": "25",
+        "str": "30",
+        "itemize:other_modifiers": [
+            ""
+        ],
+        "itemize:skills": [
+            "Craftsmanship +2"
+        ],
+        "itemize:abilities": [
+            ""
+        ],
+        "itemize:boons": [
+            "Outstanding Sense (Touch)"
+        ],
+        "booncostoverride": "",
+        "itemize:banes": [
+            "Slave Mentality 25"
+        ],
+        "banecostoverride": "5",
+        "itemize:traits": [
+            ""
+        ],
+        "itemize:usual_backgrounds": [
+            "Academic",
+            "Doctor",
+            "Engineer",
+            "Laborer",
+            "Porcupine"
+        ],
+        "itemize:disallowed_backgrounds": [
+            "Child Soldier",
+            "Orphan",
+            "Shark"
+        ],
+        "picture_path": ""
+    },
+    {
+        "name": "Vat-grown",
+        "variant": "Social",
+        "cost": "26",
+        "flavor_text": "Built for any type of social role, these specimen are generally ordered by members of high society to fulfill a certain job, be it as an escort, as a salesperson or as some sort of investigator.\\\\Since those jobs can be fulfilled sufficiently by normal humans and growing people is not cheap, these types are rare.",
+        "cr": "30",
+        "int": "30",
+        "ins": "30",
+        "ch": "40",
+        "dex": "25",
+        "ag": "25",
+        "con": "25",
+        "str": "25",
+        "itemize:other_modifiers": [
+            ""
+        ],
+        "itemize:skills": [
+            "Appeal +1",
+            "Deception +1",
+            "Intimidate +1"
+        ],
+        "itemize:abilities": [
+            ""
+        ],
+        "itemize:boons": [
+            "one of: ::b:: \\item Smoking \\item Social Chameleon ::e::"
+        ],
+        "booncostoverride": "10",
+        "itemize:banes": [
+            "Slave Mentality 25",
+            "Vanity 30"
+        ],
+        "banecostoverride": "11",
+        "itemize:traits": [
+            ""
+        ],
+        "itemize:usual_backgrounds": [
+            "Escort",
+            "Fence",
+            "Investigator",
+            "Performer"
+        ],
+        "itemize:disallowed_backgrounds": [
+            "Child Soldier",
+            "Orphan",
+            "Shark"
+        ],
+        "picture_path": ""
+    },
+    {
+        "name": "Vat-grown",
+        "variant": "Warrior",
+        "cost": "30",
+        "flavor_text": "The most common vat-grown human. The fight against terrorists for governments, against governments for insurgents or against whoever pays the least, but they are also employed as high-society bouncers and bodyguards.",
+        "cr": "35",
+        "int": "20",
+        "ins": "25",
+        "ch": "20",
+        "dex": "20",
+        "ag": "30",
+        "con": "35",
+        "str": "35",
+        "itemize:other_modifiers": [
+            "Con or Str +8"
+        ],
+        "itemize:skills": [
+            "Melee Combat Training +1: ::b:: \\item Striking \\item Grappling ::e::",
+            "Education: Home Security +1"
+        ],
+        "itemize:abilities": [
+            ""
+        ],
+        "itemize:boons": [
+            "Two of: ::b:: \\item Combat Academic \\item Iron Resilience \\item Stoic \\item Tough as nails ::e::"
+        ],
+        "booncostoverride": "24",
+        "itemize:banes": [
+            "Slave Mentality 30"
+        ],
+        "banecostoverride": "6",
+        "itemize:traits": [
+            ""
+        ],
+        "itemize:usual_backgrounds": [
+            "Bodyguard",
+            "Bouncer",
+            "Mercenary",
+            "Soldier",
+            "Terrorist"
+        ],
+        "itemize:disallowed_backgrounds": [
+            "Child Soldier",
+            "Orphan",
+            "Shark"
+        ],
+        "picture_path": ""
+    }
+]

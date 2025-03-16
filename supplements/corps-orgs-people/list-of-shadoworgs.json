@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Div/Null",
+        "altname": "Division Null, The Division",
+        "description": "The Division is a decentralized, anonymous syndicate of data anarchists, cyber-hackers, and rogue AI developers. United by a vision of \u201cinformation freedom,\u201d the Network operates outside of any corporate or governmental structure, favoring open data and unrestricted information. They\u2019re responsible for some of the world\u2019s most disruptive data breaches and are behind many of the public leaks exposing corporate corruption.",
+        "activities": "Hacking, digital sabotage, corporate espionage, data liberation.",
+        "goals": "Division Null\u2019s philosophy is rooted in dismantling corporate control over information, believing that true freedom can only exist in an open-information society. They seek to expose the truths corporations hide and return control of data to the people. However, some argue that their actions merely destabilize society and create chaos, often leaving vulnerable people in the crossfire.",
+        "structure": "The Division has no central hierarchy. Instead, it\u2019s comprised of cells known as \u201cnodes,\u201d each operating independently and communicating through secure channels. Major decisions are made by anonymous votes among node leaders, and, in true anarchist fashion, they enforce no codes of loyalty or obligation.",
+        "tactics": "Div/Null uses blackmail, leaks, and massive data dumps to destabilize powerful corporations, especially those involved in information monopolies like Hyperion Global Networks. Occasionally, they will work with sympathetic whistleblowers within corporations but are just as likely to expose them if it serves their goals. ",
+        "logo_path": ""
+    },
+    {
+        "name": "Eclipse Syndicate",
+        "altname": "",
+        "description": "The Eclipse Syndicate is a powerful crime cartel with roots going back to organized crime families. Over time, they\u2019ve evolved into a hyper-sophisticated criminal network, specializing in illicit markets and weaponized espionage. Unlike other shadow organizations, Eclipse operates more like a corporation than a gang, with departments specializing in arms trading, synthetic drug manufacturing, black-market cybernetics, and corporate manipulation.",
+        "activities": "Smuggling, arms and cyberware trafficking, corporate infiltration, assassination.",
+        "goals": "Eclipse seeks to undermine corporate power by controlling the underground markets that feed the corporations\u2019 vices. Their end goal is to control and regulate the illicit economy, building an empire where they determine who receives the tech, drugs, and weapons corporations try to keep out of public hands.",
+        "structure": "The Syndicate is governed by an executive board called the Council of Nine, made up of crime lords and high-level ex-corporate executives. These council members hold significant influence, even over government officials, and their extensive network of spies and enforcers keep rival syndicates at bay.",
+        "tactics": "Eclipse uses a combination of corruption, violence, and manipulation to maintain dominance. They leverage black-market cyberware and bio-augmentation tech to gain access to influential corporate and political figures, often providing mercenaries and cybercriminals to megacorps under discreet agreements.",
+        "logo_path": ""
+    },
+    {
+        "name": "Quiet Dawn",
+        "altname": "",
+        "description": "The Quiet Dawn is a secretive society that believes in the ethical and spiritual advancement of humankind through controlled use of biotechnological enhancements and cybernetics. Unlike the megacorporations, who commercialize biotech and cyberware, the Quiet Dawn hoards its own unique enhancements, which they believe are necessary for a \"higher human evolution.\"",
+        "activities": "Genetic experimentation, covert medical research, bio-modification trafficking, recruitment.",
+        "goals": "The Quiet Dawn seeks to guide humanity toward a transhumanist ideal but believes this should be carefully controlled by an enlightened few. They believe that only by controlling the next phase of human evolution can they save society from falling into technocratic despair.",
+        "structure": "Organized into \u201cCircles\u201d of members, with each Circle representing a different level of knowledge and trust. Only the innermost Circle, known as \u201cThe Dawn\u2019s Eye,\u201d is privy to the true extent of their agenda and the most advanced biotechnological secrets.",
+        "tactics": "Quiet Dawn operates through subtlety, rarely using violence and preferring persuasion, social infiltration, and blackmail. They quietly fund biotech startups and recruit researchers from within corporations like Solace MedCorp, promising them the chance to work on hidden, groundbreaking projects. While they rarely engage in combat, their agents are often enhanced with unique, experimental bio-augmentations that make them powerful operatives.",
+        "logo_path": ""
+    },
+    {
+        "name": "Iron Pact",
+        "altname": "",
+        "description": "The Iron Pact is an alliance of ex-military leaders, intelligence agents, and veteran operatives disillusioned with corporate control and determined to reclaim some form of traditional order. They are a highly organized paramilitary organization that often acts as a shadow government, controlling territory in the more lawless regions and occasionally engaging in direct conflict with corporate PMCs.",
+        "activities": "Guerilla warfare, asset raids, territory control, resistance coordination.",
+        "goals": "The Pact wants to re-establish autonomous zones where corporate influence is limited, enforcing their own strict code of law and justice. They see themselves as a moral counterweight to the unchecked corporate power structure, believing that corporations are destroying society and enslaving humanity.",
+        "structure": "The Pact is structured like a military organization, with clear chains of command. At the top are a select few former generals and intelligence officers, known as the \u201cCouncil of Steel.\u201d Regional commanders enforce orders locally, and each division is highly disciplined.",
+        "tactics": "The Iron Pact uses sabotage, ambushes, and propaganda to disrupt corporate operations. They have covert alliances with anti-corporate groups and rebellious employees within the megacorps, and they use intercepted corporate intelligence to strike precisely. Although less technologically advanced than corporate PMCs, they make up for it with disciplined tactics, operational secrecy, and a strong ideological drive.",
+        "logo_path": ""
+    },
+    {
+        "name": "Obsidian Eye",
+        "altname": "",
+        "description": "The Obsidian Eye is a deep-cover intelligence network that claims to be the \u201cwatchers of watchers.\u201d They operate in the shadows, focusing on gathering and trading information about the megacorporations and other shadow organizations. No one knows if they\u2019re a rogue government agency, a corporate intelligence faction, or an independent spy network, but their influence is pervasive and feared.",
+        "activities": "Intelligence gathering, blackmail, strategic disinformation, and cyber infiltration.",
+        "goals": "The Obsidian Eye\u2019s goal is to know everything happening in the world of power players, and to use that information to maintain a delicate balance of power. They exploit the vulnerabilities of corporations and shadow groups alike, ensuring no single entity gains dominance.",
+        "structure": "The Eye is structured around \u201ccells\u201d of agents known as \u201cOperatives,\u201d each unaware of other cells to protect against infiltration. At the top are a select few known only as \u201cThe Overseers,\u201d who seem to know almost everything about anyone in power.",
+        "tactics": "Obsidian Eye brokers information to the highest bidder or uses it to blackmail powerful figures to its own ends. They exploit LEGION\u2019s missions, corporate rivalries, and other conflicts to gather intelligence, often ensuring one side has just enough of an advantage to keep ongoing conflicts at a controlled level. They are known to sell data or trade information, creating a convoluted network of covert deals that leave most in a state of perpetual suspicion.",
+        "logo_path": ""
+    },
+    {
+        "name": "Sons of Aether",
+        "altname": "",
+        "description": "This shadow organization is a cult-like collective of radicals and fanatics devoted to \u201cliberating\u201d society from corporate technological dependence. They believe that humanity is losing its identity to machines and augments, and they view this corporate-technological domination as a desecration of human essence.",
+        "activities": "Terrorist attacks, anti-cybertech propaganda, sabotage of biotech facilities, community infiltration.",
+        "goals": "The Sons of Aether\u2019s goal is to sever society\u2019s reliance on cybernetics, implants, and biotech enhancements, often resorting to violent methods to achieve it. They believe in humanity's return to \u201cnatural\u201d roots and reject corporate influence as a form of enslavement.",
+        "structure": "The Sons operate in independent \u201cCovens\u201d led by charismatic, anti-corporate zealots. Each Coven has autonomy over its actions but reports to a shadowy council of \u201cHigh Sons,\u201d each believed to be a master of social manipulation and insurgency.",
+        "tactics": "The Sons of Aether focus on symbolic violence, often staging public acts of sabotage against corporate facilities to instill fear in those reliant on technology. They\u2019re known for implanting insurgents in high-profile corporations and then having them sabotage systems from the inside. The Sons of Aether spread their philosophy via encrypted digital pamphlets, sermons, and broadcasts, hoping to ignite a broader anti-tech revolution.",
+        "logo_path": ""
+    }
+]

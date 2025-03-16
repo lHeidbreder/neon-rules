@@ -1,0 +1,110 @@
+[
+    {
+        "name": "MVR: Attack of Opportunity",
+        "cost": "150",
+        "prerequisites": "Instinct 30, Agility 30",
+        "effect": "Allows the use of the maneuver \\emph{Attack of Opportunity} at normal penalties."
+    },
+    {
+        "name": "MVR: Bind",
+        "cost": "200",
+        "prerequisites": "Instinct 35, Dexterity 35",
+        "effect": "Allows the use of the maneuver \\emph{Bind} at normal penalties."
+    },
+    {
+        "name": "MVR: Burst",
+        "cost": "200",
+        "prerequisites": "Dexterity 30, Strength 35",
+        "effect": "Allows the use of the maneuver \\emph{Burst} at normal penalties."
+    },
+    {
+        "name": "MVR: Called Jab",
+        "cost": "100",
+        "prerequisites": "Maneuver: Feint, Perception Known",
+        "effect": "Allows the use of the maneuver \\emph{Called Jab} at normal penalties."
+    },
+    {
+        "name": "MVR: Charge",
+        "cost": "100",
+        "prerequisites": "Maneuver: Knockdown, Agility 40",
+        "effect": "Allows the use of the maneuver \\emph{Charge} at normal penalties."
+    },
+    {
+        "name": "MVR: Cleave",
+        "cost": "100",
+        "prerequisites": "Maneuver: Knockdown, Courage 40, Instinct 40",
+        "effect": "Allows the use of the maneuver \\emph{Cleave} at normal penalties."
+    },
+    {
+        "name": "MVR: Crushing Blow",
+        "cost": "300",
+        "prerequisites": "Maneuver: Powerstrike, Courage 50, Strength 60",
+        "effect": "Allows the use of the maneuver \\emph{Crushing Blow} at normal penalties."
+    },
+    {
+        "name": "MVR: Disarm",
+        "cost": "100",
+        "prerequisites": "Maneuver: Feint, Maneuver: Bind",
+        "effect": "Allows the use of the maneuver \\emph{Disarm} at normal penalties."
+    },
+    {
+        "name": "MVR: Feint",
+        "cost": "200",
+        "prerequisites": "Dexterity 35, Agility 35",
+        "effect": "Allows the use of the maneuver \\emph{Feint} at normal penalties."
+    },
+    {
+        "name": "MVR: Flurry",
+        "cost": "100",
+        "prerequisites": "Maneuver: Feint, Dual Wield (Melee)",
+        "effect": "Allows the use of the maneuver \\emph{Flurry} at normal penalties."
+    },
+    {
+        "name": "MVR: Intercept",
+        "cost": "100",
+        "prerequisites": "Maneuver: Bind, Courage 50",
+        "effect": "Allows the use of the maneuver \\emph{Intercept} at normal penalties."
+    },
+    {
+        "name": "MVR: Knockdown",
+        "cost": "100",
+        "prerequisites": "Maneuver: Powerstrike, Strength 45",
+        "effect": "Allows the use of the maneuver \\emph{Knockdown} at normal penalties."
+    },
+    {
+        "name": "MVR: Piercing Thrust",
+        "cost": "300",
+        "prerequisites": "Maneuver: Called Jab, Courage 40, Dexterity 40",
+        "effect": "Allows the use of the maneuver \\emph{Piercing Thrust} at normal penalties."
+    },
+    {
+        "name": "MVR: Powerstrike",
+        "cost": "200",
+        "prerequisites": "Strength 35",
+        "effect": "Allows the use of the maneuver \\emph{Powerstrike} at normal penalties."
+    },
+    {
+        "name": "MVR: Reversal",
+        "cost": "300",
+        "prerequisites": "Maneuver: Intercept, Courage 60, Instinct 50",
+        "effect": "Allows the use of the maneuver \\emph{Reversal} at normal penalties."
+    },
+    {
+        "name": "MVR: Shift",
+        "cost": "100",
+        "prerequisites": "Maneuver: Feint, Instinct 40, Dexterity 35, Agility 35",
+        "effect": "Allows the use of the maneuver \\emph{Shift} at normal penalties."
+    },
+    {
+        "name": "MVR: Stunning Blow",
+        "cost": "100",
+        "prerequisites": "Maneuver: Powerstrike, Intelligence 35",
+        "effect": "Allows the use of the maneuver \\emph{Stunning Blow} at normal penalties."
+    },
+    {
+        "name": "MVR: Takedown",
+        "cost": "100",
+        "prerequisites": "Maneuver: Feint, Agility or Strength 40",
+        "effect": "Allows the use of the maneuver \\emph{Takedown} at normal penalties."
+    }
+]

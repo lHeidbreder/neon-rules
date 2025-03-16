@@ -1,0 +1,148 @@
+[
+    {
+        "series": "Basic",
+        "flavor_text": "A strike suit is the pinnacle of armor creation, sporting heavy plates that rival APCs, HUD, intercom and vitals monitors for perfect remote support as well as a lightweight, piezoelectric exoframe to carry its own weight and even boost the wearer's physical capabilities.",
+        "head_armor": "16",
+        "body_armor": "22",
+        "arm_armor": "20",
+        "leg_armor": "20",
+        "movement_speed": "0",
+        "stat_bonus": "20",
+        "mod_slots": "4",
+        "weight": "300",
+        "variant": "",
+        "itemize:further_modifiers": [
+            "Intercom",
+            "Vitals monitor",
+            "HUD",
+            "Final Hour chip"
+        ]
+    },
+    {
+        "series": "Mars",
+        "flavor_text": "A CQC type platform sporting increased mobility but reduced leg protection and many slots to integrate weaponry.",
+        "head_armor": "16",
+        "body_armor": "22",
+        "arm_armor": "20",
+        "leg_armor": "16",
+        "movement_speed": "1",
+        "stat_bonus": "20",
+        "mod_slots": "6",
+        "weight": "300",
+        "variant": "",
+        "itemize:further_modifiers": [
+            "2 armor mod points can only be used for integrated weaponry",
+            "cannot be fitted with ranged modules"
+        ]
+    },
+    {
+        "series": "Vulcanus",
+        "flavor_text": "Tough fire support platform including additional armoring in its front and powerful stabilizers that allow the use of high caliber, rapid fire ranged weaponry. Its high weight, low mobility and low versatility with respect to the tight spaces of most AOs today make this type a rare choice.",
+        "head_armor": "22",
+        "body_armor": "22",
+        "arm_armor": "24",
+        "leg_armor": "24",
+        "movement_speed": "-2",
+        "stat_bonus": "20",
+        "mod_slots": "3",
+        "weight": "660",
+        "variant": "",
+        "itemize:further_modifiers": [
+            "The stat-bonus can only be applied to STR",
+            "Has 6 additional armor in the front.",
+            "Increases the user\u2019s size by 1.",
+            "Allows the use of any infantry weapon one-handed without penalty (aside from bows as the body does not work that way).",
+            "Allows the use of oversized weapons two-handed",
+            "Weapons always count as braced."
+        ]
+    },
+    {
+        "series": "Minerva",
+        "flavor_text": "A type of reconnaissance platform that is fitted with short range lifeform scanners and interface components for all common wired and wireless networks. Highly customizable.",
+        "head_armor": "16",
+        "body_armor": "22",
+        "arm_armor": "20",
+        "leg_armor": "20",
+        "movement_speed": "0",
+        "stat_bonus": "20",
+        "mod_slots": "6",
+        "weight": "300",
+        "variant": "",
+        "itemize:further_modifiers": [
+            "modular interface device that may connect to basically any device and network",
+            "20m life form scanner that pierces 30 armor worth of cover"
+        ]
+    },
+    {
+        "series": "Diana",
+        "flavor_text": "A direct successor to the original series of strike suits made for long range assassination, wetwork and sabotage. It comes with an advanced HUD and target acquisition by default and additionally is the most adaptable of all series.",
+        "head_armor": "12",
+        "body_armor": "18",
+        "arm_armor": "16",
+        "leg_armor": "16",
+        "movement_speed": "0",
+        "stat_bonus": "20",
+        "mod_slots": "8",
+        "weight": "300",
+        "variant": "",
+        "itemize:further_modifiers": [
+            "Grants +20 to tracking targets you have data on.",
+            "Reduces penalties on called shots by 10."
+        ]
+    },
+    {
+        "series": "Mercury",
+        "flavor_text": "An experimental platform with vastly inferior armor but integrated jet boosters to allow for improved movement options in hit-and-run missions.",
+        "head_armor": "8",
+        "body_armor": "14",
+        "arm_armor": "12",
+        "leg_armor": "12",
+        "movement_speed": "2",
+        "stat_bonus": "20",
+        "mod_slots": "4",
+        "weight": "300",
+        "variant": "",
+        "itemize:further_modifiers": [
+            "The user may move up to 5 meters during a Dodge reaction.",
+            "As an action the user may triple movement speed, jump height or leap distance. He may do so once every other turn while in an atmosphere that contains high concentrations of nitrogen - otherwise he can do it once."
+        ]
+    },
+    {
+        "series": "Venus",
+        "flavor_text": "The most lightweight strike suit series, sometimes not even recognizable as power armor depending on its specific design. It was built for unseen infiltration but is sometimes overshadowed by Minerva series platforms, due to the inbuilt connection systems.",
+        "head_armor": "6",
+        "body_armor": "12",
+        "arm_armor": "10",
+        "leg_armor": "10",
+        "movement_speed": "1",
+        "stat_bonus": "20",
+        "mod_slots": "5",
+        "weight": "180",
+        "variant": "",
+        "itemize:further_modifiers": [
+            "Sensory filters grant +20 to hearing tests.",
+            "The wearer counts as being barefoot for the purposes of sneaking.",
+            "Photo-Reactive Panels",
+            "A Skin-Tight Holoprojector implant is not inhibited by this armor."
+        ]
+    },
+    {
+        "series": "Jupiter",
+        "flavor_text": "A platform built for CBRN operation and extremely dense magnetic fields. It is nigh immune to EMPs and has the best redundancies of all strike suits.",
+        "head_armor": "16",
+        "body_armor": "22",
+        "arm_armor": "20",
+        "leg_armor": "20",
+        "movement_speed": "0",
+        "stat_bonus": "20",
+        "mod_slots": "4",
+        "weight": "300",
+        "variant": "",
+        "itemize:further_modifiers": [
+            "CBRN Unit",
+            "Faraday Cage",
+            "vac-seal",
+            "All of these systems include redundancies, making them really hard to fail completely."
+        ]
+    }
+]

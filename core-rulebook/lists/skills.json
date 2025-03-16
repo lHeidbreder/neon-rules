@@ -1,0 +1,589 @@
+[
+    {
+        "skill": "Acrobatics",
+        "subtype": "",
+        "difficulty": "Basic",
+        "key": "acrobatics",
+        "common_characteristic": "Agility",
+        "short_description": "Control over one's body and the ability to move elegantly",
+        "long_description": "The mastery of body movement - flipping over rooftops, squeezing through vents, and breaking falls to die another day.",
+        "itemize:example_eds": [
+            ""
+        ]
+    },
+    {
+        "skill": "Animal Handling",
+        "subtype": "",
+        "difficulty": "Basic",
+        "key": "animals",
+        "common_characteristic": "Charisma",
+        "short_description": "Interaction with animals; calming them down, taming and training them",
+        "long_description": "Calming, taming, training anything from pets and drones mimicking organic behavior to escaped lab experiments and the feral beasts of the wastelands.",
+        "itemize:example_eds": [
+            "Hippology",
+            "Taming"
+        ]
+    },
+    {
+        "skill": "Appeal",
+        "subtype": "",
+        "difficulty": "Basic",
+        "key": "appeal",
+        "common_characteristic": "Charisma",
+        "short_description": "Any attempt to charm or convince someone that at least outwardly happens in good blood",
+        "long_description": "Charming, seducing and manipulating those of lesser mind. The key is being subtle and they\u2019ll be none the wiser.",
+        "itemize:example_eds": [
+            "Corpo Etiquette",
+            "Religion"
+        ]
+    },
+    {
+        "skill": "Athletics",
+        "subtype": "",
+        "difficulty": "Basic",
+        "key": "athletics",
+        "common_characteristic": "Strength",
+        "short_description": "Lifting, pushing, running, jumping; anything built on directed strength",
+        "long_description": "A display of pure strength, be it scaling arcos, tearing open doors, or dying to radiation rather than drowning in the wasteland waters.",
+        "itemize:example_eds": [
+            "Climbing",
+            "Swimming"
+        ]
+    },
+    {
+        "skill": "Bio-Maintenance",
+        "subtype": "",
+        "difficulty": "Advanced",
+        "key": "medication",
+        "common_characteristic": "Intelligence / Dexterity",
+        "short_description": "Knowledge about anatomy and healing of biological bodies",
+        "long_description": "The skill of applying anatomical and biochemical knowledge. Mostly used to keep people alive.",
+        "itemize:example_eds": [
+            "Chemistry",
+            "Anatomy"
+        ]
+    },
+    {
+        "skill": "Craftsmanship",
+        "subtype": "",
+        "difficulty": "Advanced",
+        "key": "crafting",
+        "common_characteristic": "Dexterity",
+        "short_description": "Making stuff",
+        "long_description": "Any creative handiwork falls here - from making makeshift equipment or shelter, up to mixing chems and even augsmithing.",
+        "itemize:example_eds": [
+            "Smithing",
+            "Tailoring"
+        ]
+    },
+    {
+        "skill": "Deception",
+        "subtype": "",
+        "difficulty": "Basic",
+        "key": "deceive",
+        "common_characteristic": "Charisma",
+        "short_description": "Telling lies",
+        "long_description": "Lies and half-truths made believable. Passing as someone else, passing something as something else - often an easy way out of or deeper into a bad situation.",
+        "itemize:example_eds": [
+            "Law",
+            "Voice Athlete"
+        ]
+    },
+    {
+        "skill": "Dodge",
+        "subtype": "",
+        "difficulty": "Basic",
+        "key": "dodge",
+        "common_characteristic": "Agility",
+        "short_description": "Evading attacks by moving out of the way",
+        "long_description": "Dodging is physically evading harm. This can be an attack, an explosion, or something more natural like falling objects or sudden vehicles.",
+        "itemize:example_eds": [
+            ""
+        ]
+    },
+    {
+        "skill": "Drive",
+        "subtype": "Air",
+        "difficulty": "Advanced",
+        "key": "drive-air",
+        "common_characteristic": "Agility",
+        "short_description": "Operating flying vehicles",
+        "long_description": "The knowledge of how to control - and, more importantly, safely land - airborne vehicles like planes, helis and VTOLs.",
+        "itemize:example_eds": [
+            "VTOL mechanics",
+            "Meteorology"
+        ]
+    },
+    {
+        "skill": "Drive",
+        "subtype": "Aquatic",
+        "difficulty": "Advanced",
+        "key": "drive-sea",
+        "common_characteristic": "Agility",
+        "short_description": "Operating a boat or similar vehicle",
+        "long_description": "Expertise in controlling motorboats and submersibles, how they work and how to get them to move in a desired direction.",
+        "itemize:example_eds": [
+            "Hydrodynamics",
+            "Meteorology"
+        ]
+    },
+    {
+        "skill": "Drive",
+        "subtype": "Ground",
+        "difficulty": "Advanced",
+        "key": "drive-ground",
+        "common_characteristic": "Agility",
+        "short_description": "Operating cars, bikes, tanks",
+        "long_description": "If self-driving fails or a car is hotwired, the character still knows to handle herself \u2013 even at speed, under pressure, under fire.",
+        "itemize:example_eds": [
+            "Bike Racing",
+            "Electronics"
+        ]
+    },
+    {
+        "skill": "Drive",
+        "subtype": "Space",
+        "difficulty": "Advanced",
+        "key": "drive-space",
+        "common_characteristic": "Agility",
+        "short_description": "Operating spacecraft",
+        "long_description": "Controlling spacecraft is incredibly tricky - due to getting a feel for orbital mechanics, absurd speeds and lack of friction among other factors, this task is often relegated to AI.",
+        "itemize:example_eds": [
+            "Orbital Mechanics",
+            "Rocket Science"
+        ]
+    },
+    {
+        "skill": "Estimation",
+        "subtype": "",
+        "difficulty": "Basic",
+        "key": "estimate",
+        "common_characteristic": "Instinct",
+        "short_description": "Quickly guessing amounts, weight, size, distance and more",
+        "long_description": "The ability to guess amounts, weight, size, distance or prices, to name a few, with relative accuracy. Usually this is only necessary outside of one\u2019s comfort zone - a gunsmith estimating a revolver's price might not necessarily need this.",
+        "itemize:example_eds": [
+            "Statistics",
+            "Trading"
+        ]
+    },
+    {
+        "skill": "Interrogation",
+        "subtype": "",
+        "difficulty": "Basic",
+        "key": "interrogation",
+        "common_characteristic": "Instinct",
+        "short_description": "Asking the right questions and understanding the opposition",
+        "long_description": "Asking the right questions and reading facial expressions, eye movement, voice tone to determine truth or lie or anything in between.",
+        "itemize:example_eds": [
+            "Fear",
+            "Social Engineering"
+        ]
+    },
+    {
+        "skill": "Intimidation",
+        "subtype": "",
+        "difficulty": "Basic",
+        "key": "intimidation",
+        "common_characteristic": "Courage",
+        "short_description": "Threatening others to avoid actually having to go through with the threat",
+        "long_description": "The art of skillfully threatening others to avoid actually having to go through with the threat \u2013 preying on fear to keep you alive.",
+        "itemize:example_eds": [
+            "Fear",
+            "Law"
+        ]
+    },
+    {
+        "skill": "Logic",
+        "subtype": "",
+        "difficulty": "Advanced",
+        "key": "logic",
+        "common_characteristic": "Intelligence",
+        "short_description": "Combine knowledge and work with patterns",
+        "long_description": "Logic is the ability to dissect, combine, extract information rationally and quickly, or detect patterns where others do not.",
+        "itemize:example_eds": [
+            "any Education, if the goal is testing knowledge in that field"
+        ]
+    },
+    {
+        "skill": "Navigation",
+        "subtype": "Air",
+        "difficulty": "Basic",
+        "key": "nav-air",
+        "common_characteristic": "Intelligence / Instinct",
+        "short_description": "Finding one's way in a certain environment",
+        "long_description": "Navigation in the air is difficult and relies on good sense of both distance and direction. It may be easier when sun, moon, stars or large landmarks on the ground are visible.",
+        "itemize:example_eds": [
+            "Geography",
+            "Air Traffic Control"
+        ]
+    },
+    {
+        "skill": "Navigation",
+        "subtype": "Ground",
+        "difficulty": "Basic",
+        "key": "nav-ground",
+        "common_characteristic": "Intelligence / Instinct",
+        "short_description": "Finding one's way in a certain environment",
+        "long_description": "Navigation on the ground is the most common type of navigation. It helps finding one's way on foot or in earthbound vehicles.",
+        "itemize:example_eds": [
+            "Geography",
+            "Parkour"
+        ]
+    },
+    {
+        "skill": "Navigation",
+        "subtype": "Sea",
+        "difficulty": "Basic",
+        "key": "nav-sea",
+        "common_characteristic": "Intelligence / Instinct",
+        "short_description": "Finding one's way in a certain environment",
+        "long_description": "Navigation on the sea relies on reading maps and a compass. It is possible to make good educated guesses by using celestial bodies as well.",
+        "itemize:example_eds": [
+            "Geography",
+            "Marine Biology"
+        ]
+    },
+    {
+        "skill": "Navigation",
+        "subtype": "Space",
+        "difficulty": "Basic",
+        "key": "nav-space",
+        "common_characteristic": "Intelligence / Instinct",
+        "short_description": "Finding one's way in a certain environment",
+        "long_description": "Navigation through the void of space without equipment is almost impossible due to how vast space is. This skill represents finding the shortest and safest path given such instruments.",
+        "itemize:example_eds": [
+            "Geography",
+            "Astronomy"
+        ]
+    },
+    {
+        "skill": "Navigation",
+        "subtype": "Underground",
+        "difficulty": "Basic",
+        "key": "nav-underground",
+        "common_characteristic": "Intelligence / Instinct",
+        "short_description": "Finding one's way in a certain environment",
+        "long_description": "Navigating through underground complexes is quite difficult, as there are very few landmarks. It requires good memory or a map and good sense of distance.",
+        "itemize:example_eds": [
+            "Geography",
+            "Civil Engineering"
+        ]
+    },
+    {
+        "skill": "Perception",
+        "subtype": "",
+        "difficulty": "Basic",
+        "key": "perception",
+        "common_characteristic": "Instinct",
+        "short_description": "Perceiving things and noticing details",
+        "long_description": "A nose for the fine details, an eye for the interesting. Sharp senses are key to staying alive.",
+        "itemize:example_eds": [
+            ""
+        ]
+    },
+    {
+        "skill": "Performance",
+        "subtype": "",
+        "difficulty": "Advanced",
+        "key": "performance",
+        "common_characteristic": "Agility / Charisma",
+        "short_description": "Forms of artistic expression",
+        "long_description": "Performance is any form of performing art - dancing, singing, theatre, just to name a few. A core skill for any idol and other stars ready to burn up.",
+        "itemize:example_eds": [
+            "Ballroom",
+            "Voice Athlete"
+        ]
+    },
+    {
+        "skill": "Quaffing",
+        "subtype": "",
+        "difficulty": "Advanced",
+        "key": "quaffing",
+        "common_characteristic": "Constitution",
+        "short_description": "Drinking to your heart's desire",
+        "long_description": "Quaffing, getting wrecked, hammered, tanked, any of the above - this represents the ability to hold one\u2019s liquor.",
+        "itemize:example_eds": [
+            ""
+        ]
+    },
+    {
+        "skill": "Restraint",
+        "subtype": "",
+        "difficulty": "Basic",
+        "key": "restraint",
+        "common_characteristic": "Courage / Constitution",
+        "short_description": "The ability to push through pain and strong emotions",
+        "long_description": "Discipline and self-control - suppressing impulses, resisting fear, or enduring pain and psychological warfare.",
+        "itemize:example_eds": [
+            "Fear",
+            "Pain"
+        ]
+    },
+    {
+        "skill": "Sleight of Hand",
+        "subtype": "",
+        "difficulty": "Basic",
+        "key": "sleightofhand",
+        "common_characteristic": "Dexterity",
+        "short_description": "Card tricks, pickpocketing, lockpicking; anything requiring both delicate fingers as well as good distractions",
+        "long_description": "Any task that requires delicate fingers and a good distraction, from card tricks to pickpocketing. Picking locks is part of this skill as well.",
+        "itemize:example_eds": [
+            "Locksmithing",
+            "Stage Magic"
+        ]
+    },
+    {
+        "skill": "Stealth",
+        "subtype": "",
+        "difficulty": "Basic",
+        "key": "stealth",
+        "common_characteristic": "Intelligence / Agility",
+        "short_description": "Hiding things or oneself",
+        "long_description": "Vanishing into the dark, immersing into a crowd, disappearing into the unknown - hiding is a tried and true form of increasing one\u2019s longevity.",
+        "itemize:example_eds": [
+            ""
+        ]
+    },
+    {
+        "skill": "Survival",
+        "subtype": "",
+        "difficulty": "Basic",
+        "key": "survival",
+        "common_characteristic": "Instinct / Dexterity",
+        "short_description": "Finding food, building shelter and the most basic, improvised equipment",
+        "long_description": "A catchall for any skill required for wasteland survival: finding something edible and clean water, building improvised shelters and the most basic equipment.",
+        "itemize:example_eds": [
+            "Herbalism",
+            "Zoology"
+        ]
+    },
+    {
+        "skill": "Wirewalk",
+        "subtype": "",
+        "difficulty": "Advanced",
+        "key": "wirewalk",
+        "common_characteristic": "Intelligence",
+        "short_description": "Using computers and computer-like interfaces to their fullest",
+        "long_description": "Wirewalk means interacting with cybersystems and the nets - anything from finding gigs in the Deep to entering corpo structures.",
+        "itemize:example_eds": [
+            "Cryptography",
+            "Statistics"
+        ]
+    },
+    {
+        "skill": "Melee Combat Training",
+        "subtype": "Grappling",
+        "difficulty": "Basic",
+        "key": "melee-grapple",
+        "common_characteristic": "Melee Base",
+        "short_description": "Skill with a certain group of melee weapons",
+        "long_description": "Grappling is unarmed or assisted close quarters combat that mainly acts to change positions in combat, be that throwing the enemy on the floor, a table or off a balcony, climbing a very large foe, or getting the enemy into a lock.",
+        "itemize:example_eds": [
+            ""
+        ]
+    },
+    {
+        "skill": "Melee Combat Training",
+        "subtype": "One-handed Blade",
+        "difficulty": "Basic",
+        "key": "melee-ohblade",
+        "common_characteristic": "Melee Base",
+        "short_description": "Skill with a certain group of melee weapons",
+        "long_description": "Fighting with cutting implements - usually swords, the kings of melee weapons, or axes, likely the most useful tool since the dawn of tools.",
+        "itemize:example_eds": [
+            ""
+        ]
+    },
+    {
+        "skill": "Melee Combat Training",
+        "subtype": "One-handed Club",
+        "difficulty": "Basic",
+        "key": "melee-ohclub",
+        "common_characteristic": "Melee Base",
+        "short_description": "Skill with a certain group of melee weapons",
+        "long_description": "Clubs are any and all blunt weapons with some sort of shaft: hammers, maces, the humble stick.",
+        "itemize:example_eds": [
+            ""
+        ]
+    },
+    {
+        "skill": "Melee Combat Training",
+        "subtype": "One-handed Thrusting",
+        "difficulty": "Basic",
+        "key": "melee-knife",
+        "common_characteristic": "Melee Base",
+        "short_description": "Skill with a certain group of melee weapons",
+        "long_description": "Knife fighting involves short, bladed and pointy implements. These can be proper combat knives or improvised weapons like kitchen knives or shards of glass.",
+        "itemize:example_eds": [
+            ""
+        ]
+    },
+    {
+        "skill": "Melee Combat Training",
+        "subtype": "Striking",
+        "difficulty": "Basic",
+        "key": "melee-strike",
+        "common_characteristic": "Melee Base",
+        "short_description": "Skill with a certain group of melee weapons",
+        "long_description": "Striking is the unarmed discipline concerned with short, fast body contact to induce blunt force trauma, be that punches, knees, kicks or headbutts. This may be assisted using fist knives or brass knuckles.",
+        "itemize:example_eds": [
+            ""
+        ]
+    },
+    {
+        "skill": "Melee Combat Training",
+        "subtype": "Two-handed Blade",
+        "difficulty": "Basic",
+        "key": "melee-thblade",
+        "common_characteristic": "Melee Base",
+        "short_description": "Skill with a certain group of melee weapons",
+        "long_description": "Much like knives swords are bladed, generally pointy implements, only longer. This grants an advantage in reach and damage potential, but is less suitable for swinging in close quarters.",
+        "itemize:example_eds": [
+            ""
+        ]
+    },
+    {
+        "skill": "Melee Combat Training",
+        "subtype": "Two-handed Club",
+        "difficulty": "Basic",
+        "key": "melee-thclub",
+        "common_characteristic": "Melee Base",
+        "short_description": "Skill with a certain group of melee weapons",
+        "long_description": "Large, blunt objects have historically been very effective. They are also easily improvised.",
+        "itemize:example_eds": [
+            ""
+        ]
+    },
+    {
+        "skill": "Melee Combat Training",
+        "subtype": "Two-handed Thrusting",
+        "difficulty": "Basic",
+        "key": "melee-spear",
+        "common_characteristic": "Melee Base",
+        "short_description": "Skill with a certain group of melee weapons",
+        "long_description": "Long stabbing implements like spears and sharp pipes. Good point control requires both hands, but they offer great reach and penetrative power.",
+        "itemize:example_eds": [
+            ""
+        ]
+    },
+    {
+        "skill": "Melee Combat Training",
+        "subtype": "Whip",
+        "difficulty": "Basic",
+        "key": "melee-whip",
+        "common_characteristic": "Melee Base",
+        "short_description": "Skill with a certain group of melee weapons",
+        "long_description": "Whips as a category encompass every weapon that flexes: actual whips and crops, but also flails and nunchucks, even though those weapons have drastically different fighting styles. ",
+        "itemize:example_eds": [
+            ""
+        ]
+    },
+    {
+        "skill": "Ranged Combat Training",
+        "subtype": "Bow",
+        "difficulty": "Basic",
+        "key": "ranged-bow",
+        "common_characteristic": "Ranged Base",
+        "short_description": "Skill with a certain group of ranged weapons",
+        "long_description": "Bows require a flexing shaft and a string which is pulled using one's back muscle and, when released, will shoot an element at whatever it was pointed at. Even with pulley systems it requires a lot of physical fitness.",
+        "itemize:example_eds": [
+            ""
+        ]
+    },
+    {
+        "skill": "Ranged Combat Training",
+        "subtype": "Heavy Weapon",
+        "difficulty": "Basic",
+        "key": "ranged-heavy",
+        "common_characteristic": "Ranged Base",
+        "short_description": "Skill with a certain group of ranged weapons",
+        "long_description": "Explosive launchers encompass rocket and grenade launchers, mortars and anything else that propels large high-explosives at an enemy. This also helps estimate explosion radii and colleteral damages.",
+        "itemize:example_eds": [
+            ""
+        ]
+    },
+    {
+        "skill": "Ranged Combat Training",
+        "subtype": "Integrated Weaponry",
+        "difficulty": "Basic",
+        "key": "ranged-integrated",
+        "common_characteristic": "Ranged Base",
+        "short_description": "Skill with a certain group of ranged weapons",
+        "long_description": "Weaponry built into armor or implants - being controlled via L1NC - requires specialized training to use effectively.",
+        "itemize:example_eds": [
+            ""
+        ]
+    },
+    {
+        "skill": "Ranged Combat Training",
+        "subtype": "Launcher",
+        "difficulty": "Basic",
+        "key": "ranged-launcher",
+        "common_characteristic": "Ranged Base",
+        "short_description": "Skill with a certain group of ranged weapons",
+        "long_description": "Launchers throw large, usually explosive projectiles at an enemy. They are decently heavy and generally require a specialized soldier.",
+        "itemize:example_eds": [
+            ""
+        ]
+    },
+    {
+        "skill": "Ranged Combat Training",
+        "subtype": "Long rifle",
+        "difficulty": "Basic",
+        "key": "ranged-rifle",
+        "common_characteristic": "Ranged Base",
+        "short_description": "Skill with a certain group of ranged weapons",
+        "long_description": "Long rifles are anything firing high-power charges accurately over great distances. Long barrels, scopes and bipods can make these weapons cumbersome for everyday life.",
+        "itemize:example_eds": [
+            ""
+        ]
+    },
+    {
+        "skill": "Ranged Combat Training",
+        "subtype": "Pistol",
+        "difficulty": "Basic",
+        "key": "ranged-pistol",
+        "common_characteristic": "Ranged Base",
+        "short_description": "Skill with a certain group of ranged weapons",
+        "long_description": "Pistols are easily conceilable, fire low-power charges and, if absolutely necessary, can be fired with one hand.",
+        "itemize:example_eds": [
+            ""
+        ]
+    },
+    {
+        "skill": "Ranged Combat Training",
+        "subtype": "Short rifle",
+        "difficulty": "Basic",
+        "key": "ranged-smg",
+        "common_characteristic": "Ranged Base",
+        "short_description": "Skill with a certain group of ranged weapons",
+        "long_description": "Short rifles is a catchall term for anything that is not cumbersome like a long rifle but not as small and low-powered that it is very easily conceilable or able to be fired with one hand. This includes small shotguns, submachineguns and short barrel rifles.",
+        "itemize:example_eds": [
+            ""
+        ]
+    },
+    {
+        "skill": "Ranged Combat Training",
+        "subtype": "Throwing weapon",
+        "difficulty": "Basic",
+        "key": "ranged-throw",
+        "common_characteristic": "Ranged Base",
+        "short_description": "Skill with a certain group of ranged weapons",
+        "long_description": "Throwing objects is the easiest way to get a range advantage over an opponent. This includes throwing knives, shuriken and the humble stone among others.",
+        "itemize:example_eds": [
+            ""
+        ]
+    },
+    {
+        "skill": "Ranged Combat Training",
+        "subtype": "Reload",
+        "difficulty": "Basic",
+        "key": "ranged-reload",
+        "common_characteristic": "Dexterity",
+        "short_description": "Reloading a ranged weapon",
+        "long_description": "Reloading weapons - this mostly means ranged weapons, but some melee components may require reloading as well.",
+        "itemize:example_eds": [
+            ""
+        ]
+    }
+]

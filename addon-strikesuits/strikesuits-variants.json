@@ -1,0 +1,155 @@
+[
+    {
+        "variant": "Guts",
+        "series": "Mars",
+        "flavor_text": "Built as a proof of concept this overengineered powerarmor utilizes modified Vulcanus series stabilizers to allow for oversized melee weapons to be used",
+        "head_armor": "16",
+        "body_armor": "22",
+        "arm_armor": "20",
+        "leg_armor": "16",
+        "movement_speed": "-1",
+        "stat_bonus": "30",
+        "mod_slots": "4",
+        "weight": "540",
+        "itemize:further_modifiers": [
+            "can use Mech-sized melee weapons",
+            "stat bonus can only apply to STR"
+        ]
+    },
+    {
+        "variant": "Seraph",
+        "series": "Mars",
+        "flavor_text": "Smaller weapons offer a few key advantages: they are lighter, less bulky and can more easily be used in confined spaces. Since it is more difficult to use two weapons simultaneously, this suit features a band of niche support systems like fisheye target acquisition systems for such a combatant.",
+        "head_armor": "16",
+        "body_armor": "22",
+        "arm_armor": "20",
+        "leg_armor": "16",
+        "movement_speed": "1",
+        "stat_bonus": "20",
+        "mod_slots": "6",
+        "weight": "300",
+        "itemize:further_modifiers": [
+            "Reduces dual wielding penalties by 10.",
+            "Increases the control area by 40 degrees.",
+            "Decreases visual perception when looking for small details by 5."
+        ]
+    },
+    {
+        "variant": "Linebreaker",
+        "series": "Vulcanus",
+        "flavor_text": "In the most desperate days of the old war people were thrown at opposing forces in a twisted attempt to stop more loss of life. This armor contains sufficient counter measures against horde type attacks to the point where a single trained soldier could break a whole offense. Ever since such tactics became unnecessary, it has fallen out of fashion.",
+        "head_armor": "22",
+        "body_armor": "22",
+        "arm_armor": "26",
+        "leg_armor": "26",
+        "movement_speed": "-2",
+        "stat_bonus": "20",
+        "mod_slots": "1",
+        "weight": "660",
+        "itemize:further_modifiers": [
+            "integrated Hailfire",
+            "Reduces penalties of long and extreme range attacks by 10."
+        ]
+    },
+    {
+        "variant": "Bunkerbuster",
+        "series": "Vulcanus",
+        "flavor_text": "Being more resistant to shrapnel, ricochets and fire, this suit was created as a heavy armor CQC alternative to the melee focussed Mars series. Since it is larger, more cumbersome, susceptible to simple traps like sinkholes and flamethrowers cause too much colleteral damage, it is chosen less often.",
+        "head_armor": "22",
+        "body_armor": "28",
+        "arm_armor": "26",
+        "leg_armor": "26",
+        "movement_speed": "-2",
+        "stat_bonus": "20",
+        "mod_slots": "3",
+        "weight": "760",
+        "itemize:further_modifiers": [
+            "immune to fire-based damage",
+            "The series' additional front armor counts everywhere (which is included in the armor table)."
+        ]
+    },
+    {
+        "variant": "Wraith",
+        "series": "Diana",
+        "flavor_text": "High armor targets can require special armament. To avoid having to use large and cumbersome weapons, this variant features a threat analysis system that highlights weaknesses and speeds up engage or disengage management.",
+        "head_armor": "14",
+        "body_armor": "18",
+        "arm_armor": "16",
+        "leg_armor": "16",
+        "movement_speed": "0",
+        "stat_bonus": "20",
+        "mod_slots": "5",
+        "weight": "300",
+        "itemize:further_modifiers": [
+            "threat assessment system"
+        ]
+    },
+    {
+        "variant": "%Fury",
+        "series": "Diana",
+        "flavor_text": "Large parts of the world are uninhabitable: cosmic rays hitting the surface almost unimpeded, lingering radiation from various catastrophes or nature trying to reclaim territory by inventing all kinds of toxins. Operating in such an environment requires a certain skill set, a keen mind - and a piece of armor like this.",
+        "head_armor": "12",
+        "body_armor": "18",
+        "arm_armor": "16",
+        "leg_armor": "16",
+        "movement_speed": "0",
+        "stat_bonus": "20",
+        "mod_slots": "8",
+        "weight": "300",
+        "itemize:further_modifiers": [
+            "Includes primary through tertiary rebreathers and life support systems.",
+            "Has 15 shielding against EMP."
+        ]
+    },
+    {
+        "variant": "Wompa",
+        "series": "Minerva",
+        "flavor_text": "Frontline logistics and pioneering require specialized training and equipment. This variant is outfitted with improved computing devices, redundant short and long-range communication devices and improved cyber security measures.",
+        "head_armor": "16",
+        "body_armor": "22",
+        "arm_armor": "20",
+        "leg_armor": "20",
+        "movement_speed": "0",
+        "stat_bonus": "20",
+        "mod_slots": "4",
+        "weight": "300",
+        "itemize:further_modifiers": [
+            "Includes redundant, fail-safe short range communication devices.",
+            "processing power +25",
+            "May be inhabited by strong AI.",
+            "Unauthorized access to connected devices takes ten times as long."
+        ]
+    },
+    {
+        "variant": "Giger",
+        "series": "Minerva",
+        "flavor_text": "Recon is not restricted to earth\u2019s surface. Many places that may require prospectors or scouts are unlivable. For radioactive wastelands many different setups have been used but the vacuum of space has never been navigated as effortlessly.",
+        "head_armor": "16",
+        "body_armor": "22",
+        "arm_armor": "20",
+        "leg_armor": "20",
+        "movement_speed": "0",
+        "stat_bonus": "20",
+        "mod_slots": "5",
+        "weight": "300",
+        "itemize:further_modifiers": [
+            "Fully vacuum sealed with 24 hours of life support."
+        ]
+    },
+    {
+        "variant": "Arclight",
+        "series": "Mercury",
+        "flavor_text": "Arclight suits favor speed and agility over everything, enhancing on the experimental Mercury thrusters by improved running assistance systems. Soldiers have complained about the feeling of the armor breaking apart under the stress of these incredible speeds, but so far no incidents were recorded.",
+        "head_armor": "8",
+        "body_armor": "10",
+        "arm_armor": "12",
+        "leg_armor": "12",
+        "movement_speed": "3",
+        "stat_bonus": "30",
+        "mod_slots": "3",
+        "weight": "300",
+        "itemize:further_modifiers": [
+            "Its stat bonus can only apply to AG."
+        ]
+    }
+]

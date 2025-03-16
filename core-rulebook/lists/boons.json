@@ -1,0 +1,236 @@
+[
+    {
+        "name": "Adaptable Circulation",
+        "effect": "Medical Toughness is increased by 1. Can be taken multiple times.",
+        "cost": "2",
+        "cost_addendum": "each"
+    },
+    {
+        "name": "Ambidextrous",
+        "effect": "The character can use either hand equally good. Dual Wielding and Maneuver: Flurry only cost half. When combined with Dual Wielding, removes penalties for dual wielding melee weapons and pistols completely.",
+        "cost": "12",
+        "cost_addendum": ""
+    },
+    {
+        "name": "Aptitude",
+        "effect": "Adds +5 to a characteristic which doesn't count against investment limits. Can be taken multiple times but only once per characteristic.",
+        "cost": "10",
+        "cost_addendum": ""
+    },
+    {
+        "name": "Balance",
+        "effect": "Tests to prevent falling over are at a +20. Improves on Steadfast and doesn't stack.",
+        "cost": "10",
+        "cost_addendum": ""
+    },
+    {
+        "name": "Battle Trance",
+        "effect": "The character can enter a battle trance. This takes two actions and causes one level of exhaustion. The character becomes frenzied but can identify friend and foe and return to normal by spending two actions.",
+        "cost": "12",
+        "cost_addendum": ""
+    },
+    {
+        "name": "Big Spender",
+        "effect": "The character gains additional equipment worth up to \\(2 * Ch * level\\) of this boon. The money can only be spent at character creation and unused credits are wasted. Equipment may as always be restricted by the GM. Cannot be combined with Destitute.",
+        "cost": "3",
+        "cost_addendum": "each"
+    },
+    {
+        "name": "Born Hero",
+        "effect": "The character counts as having all prerequisites for the Abilities Heroic, On your feet! and Personified Inspiration. These abilities only cost half as much.",
+        "cost": "6",
+        "cost_addendum": ""
+    },
+    {
+        "name": "Broad Education",
+        "effect": "The character may choose a second background and gain its skill bonuses as well.",
+        "cost": "17",
+        "cost_addendum": "+ new background"
+    },
+    {
+        "name": "Combat Academic",
+        "effect": "All maneuver abilities only cost 25% of their original cost.",
+        "cost": "10",
+        "cost_addendum": ""
+    },
+    {
+        "name": "Dark Vision",
+        "effect": "The character only takes half penalties in low light but normal penalties in complete darkness.",
+        "cost": "10",
+        "cost_addendum": ""
+    },
+    {
+        "name": "Diver's Lung",
+        "effect": "The character may hold her breath twice as long.",
+        "cost": "4",
+        "cost_addendum": ""
+    },
+    {
+        "name": "Euphonia",
+        "effect": "The character has a beautiful voice. He gains a +10 to social interaction tests when the other party can hear him. This also makes Voice Athlete a basic skill.",
+        "cost": "10",
+        "cost_addendum": ""
+    },
+    {
+        "name": "Formal Education",
+        "effect": "Grants 50 XP to be spent only on educations. Can be taken multiple times.",
+        "cost": "1",
+        "cost_addendum": "each"
+    },
+    {
+        "name": "Fortune's Child",
+        "effect": "Every session the character may re-roll one of her dice rolls or one that she is directly affected by.",
+        "cost": "10",
+        "cost_addendum": ""
+    },
+    {
+        "name": "Giant",
+        "effect": "The character becomes two categories larger. He is easier to hit, has more melee range, is faster and more imposing.",
+        "cost": "10",
+        "cost_addendum": ""
+    },
+    {
+        "name": "Good Reputation",
+        "effect": "The character has some sort of good reputation, either from well known deeds or from known genetic markers. If he is talking to someone who knows of this, he gains a bonus equal to 5 times the boon's level. Can be taken up to level 10.",
+        "cost": "2",
+        "cost_addendum": "each"
+    },
+    {
+        "name": "Heroic Characteristic",
+        "effect": "Whenever a character succeeds at a test against his Heroic Characteristic, he scores an additional 2 DoS. This requires an Aptitude in the same characteristic already.",
+        "cost": "6",
+        "cost_addendum": ""
+    },
+    {
+        "name": "Iron Resilience",
+        "effect": "Degradation from wounds is reduced by one step. Bleeding starts as normal.",
+        "cost": "10",
+        "cost_addendum": ""
+    },
+    {
+        "name": "Large",
+        "effect": "The character becomes a category larger. He is easier to hit, has more melee range, is faster and more imposing.",
+        "cost": "5",
+        "cost_addendum": ""
+    },
+    {
+        "name": "Looker",
+        "effect": "The character is beautiful. She gains +5 to social interaction tests. Not compatible with Smoking, Ugly and Physically Repulsive.",
+        "cost": "5",
+        "cost_addendum": ""
+    },
+    {
+        "name": "Low Libido",
+        "effect": "The character has very little interest in getting frisky. This makes it near impossible for him to be involved in seduction attempts on either side, adding a -25 penalty to seduction tests targeting him or being performed by him.",
+        "cost": "5",
+        "cost_addendum": ""
+    },
+    {
+        "name": "Natural Armor",
+        "effect": "The character has natural armor covering her skin. Adds +1 armor to every location and can be taken up to 8 times.",
+        "cost": "6",
+        "cost_addendum": "each"
+    },
+    {
+        "name": "Nerves Of Steel",
+        "effect": "Rayleigh Index is increased by 1. Can be taken multiple times.",
+        "cost": "2",
+        "cost_addendum": "each"
+    },
+    {
+        "name": "Night Vision",
+        "effect": "The character only takes half penalties in complete darkness and no penalties in low light.",
+        "cost": "18",
+        "cost_addendum": ""
+    },
+    {
+        "name": "Nimble",
+        "effect": "Speed is increased by 1 and dodging penalties are reduced by 10.",
+        "cost": "10",
+        "cost_addendum": ""
+    },
+    {
+        "name": "Outstanding Sense",
+        "effect": "Grants +20 to tests based on the chosen sense. Counts as a Trained Sense for the purposes of prerequisites, the bonuses will however still add up. Not compatible with Impaired Sense for the same sense.",
+        "cost": "7",
+        "cost_addendum": ""
+    },
+    {
+        "name": "Personal Possession",
+        "effect": "The character owns a very special, valuable (up to 800cr) item with not only large material but especially high sentimental value. This may include sets of items such as two bionic arms, but those are are up to GM discretion even more than usual.",
+        "cost": "8",
+        "cost_addendum": ""
+    },
+    {
+        "name": "Pleasant Smell",
+        "effect": "If the target of a character's charming social test can smell the character, the character gains +10. Not compatible with Terrible odor.",
+        "cost": "7",
+        "cost_addendum": ""
+    },
+    {
+        "name": "Poison Resistance",
+        "effect": "When the character starts being effected by a chem, he may make a Con test. On a success he ignores the effects.",
+        "cost": "4",
+        "cost_addendum": ""
+    },
+    {
+        "name": "Privileged Access",
+        "effect": "The character gains a 25% discount for license-free equipment made by a certain company. During character creation this bonus is 50% instead to account for sales in the past. He also has access to limited, rare equipment made and/or sold by the company. Any roll for Availability (see p. \\pageref{sec:availability}) gains a +1 (again specific to the trade partner). Requires Good Reputation with that company / salesman.",
+        "cost": "7",
+        "cost_addendum": ""
+    },
+    {
+        "name": "Quick Regeneration",
+        "effect": "Grants +30 to natural regeneration tests.",
+        "cost": "10",
+        "cost_addendum": ""
+    },
+    {
+        "name": "Smoking",
+        "effect": "The character is extremely physically attractive or otherwise imposing. He gains +15 to social interaction tests but -20 to hide because his appearance is extremely memorable and outstanding. Not compatible with Looker, Ugly and Physically repulsive. If the character already is a Looker, this can replace it for 7 GP.",
+        "cost": "12",
+        "cost_addendum": ""
+    },
+    {
+        "name": "Social Chameleon",
+        "effect": "The character has extreme ease fitting into any social group. Trying to pass as someone of a different class, sex, origin, and so on gain +40.",
+        "cost": "8",
+        "cost_addendum": ""
+    },
+    {
+        "name": "Stoic",
+        "effect": "Halves net penalties or doubles net bonuses on fear tests.",
+        "cost": "18",
+        "cost_addendum": ""
+    },
+    {
+        "name": "Superior Balance",
+        "effect": "Tests to prevent falling over are at a +30. Improves on Balance and doesn't stack.",
+        "cost": "16",
+        "cost_addendum": ""
+    },
+    {
+        "name": "Tough As Nails",
+        "effect": "The character can continue acting while bleeding until completely bled out. He never starts \\emph{severe bleeding}.",
+        "cost": "12",
+        "cost_addendum": ""
+    },
+    {
+        "name": "Unbridled Rage",
+        "effect": "Any check to enter a berserk or frenzy state is at a +20 and any check to resist or return from such a state is at a -20.",
+        "cost": "3",
+        "cost_addendum": ""
+    },
+    {
+        "name": "Unrivaled Flexibility",
+        "effect": "Agile without peer, it\u2019s easy for the character to squeeze through tight spaces. He gains a +30 when attempting to release himself from holds or to escape from being tied up.",
+        "cost": "15",
+        "cost_addendum": ""
+    },
+    {
+        "name": "Veteran",
+        "effect": "The character is older and more experienced. He gains his background's skill bonuses again, up to the skill's maximum.",
+        "cost": "17",
+        "cost_addendum": "+ new background"
+    }
+]

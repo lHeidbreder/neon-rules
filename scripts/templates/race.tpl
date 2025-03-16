@@ -1,11 +1,28 @@
+\begin{samepage}
 \subsection*{@name@ \ifthenelse{\isempty{@variant@}}{}{/ @variant@} (@cost@ GP)}
 \stepcounter{tmpcntr}
 \phantomsection
 \makelabelfromkey[race]{@name@@variant@}
 \par%
-\begin{flavorblock}
-    @flavor_text@
-\end{flavorblock}
+\def\currentfillerimagepath{../art/\subtitle/races/@picture_path@}
+\IfFileExists
+    {\currentfillerimagepath}
+    {
+        \vspace{5mm}
+        \begin{multicols}{2}
+            \includegraphics[width=\columnwidth]{\currentfillerimagepath}
+            \columnbreak
+            \begin{flavorblock}
+                @flavor_text@
+            \end{flavorblock}
+        \end{multicols}
+    }{
+        \begin{flavorblock}
+            @flavor_text@
+        \end{flavorblock}
+    }
+\end{samepage}
+\par
 \begin{tabular}{|l|l|l|l|l|l|l|l|}
     \hline
     Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
@@ -58,15 +75,4 @@
     \end{itemize} }
 \end{multicols}
 \par
-\def\currentfillerimagepath{../art/\subtitle/races/@picture_path@}
-\IfFileExists
-    {\currentfillerimagepath}
-    {
-        \begin{center}
-        \filltopageendgraphics{\currentfillerimagepath}
-        \end{center}
-        \clearpage
-    } %fill the rest of the page with the image
-    {} %if there was no filler image, break manually
-%\clearpage
 \conditionalhrule

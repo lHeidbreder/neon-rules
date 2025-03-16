@@ -1,0 +1,40 @@
+[
+    {
+        "name": "Witchseeker Novitiate",
+        "picture_path": "",
+        "cost": "6",
+        "cr": "2",
+        "int": "2",
+        "ins": "2",
+        "ch": "",
+        "dex": "",
+        "ag": "",
+        "con": "2",
+        "str": "",
+        "itemize:other_modifiers": [
+            ""
+        ],
+        "itemize:skills": [
+            "Interrogation +2",
+            "Perception +1",
+            "Psionics +2",
+            "Restraint +1"
+        ],
+        "itemize:abilities": [
+            ""
+        ],
+        "itemize:boons": [
+            ""
+        ],
+        "booncostoverride": "6",
+        "itemize:banes": [
+            ""
+        ],
+        "itemize:traits": [
+            "Witchseekers start with a \u201cWitchseeker\" Psi-Focus"
+        ],
+        "flavor_text": "Called to action whenever psionics are faced, they do their job quick, efficient, and usually discreet. \\\\\"Cut the thought, cleanse the soul. Destroy the mind, the body dies.\"",
+        "Example equipment": "",
+        "Notes": "6 GP in Boons stem from a virtual Big Spender 2, paying for the Implant"
+    }
+]

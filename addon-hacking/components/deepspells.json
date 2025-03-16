@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Sniff",
+        "penalty": "-X",
+        "duration": "",
+        "effect": "Search through a system suspected to have been tampered with. Any active spell in that system with fewer DoS than this one\u2019s are identified."
+    },
+    {
+        "name": "Disable",
+        "penalty": "$\\pm$0",
+        "duration": "DoS minutes",
+        "effect": "The device or system is disabled for the duration."
+    },
+    {
+        "name": "Theft",
+        "penalty": "-10",
+        "duration": "variable time",
+        "effect": "Steal data from the device or system. Depending on the data retrieved this may take from seconds to multiple minutes. The user can generally estimate how long the theft will take depending on the data he intends to steal."
+    },
+    {
+        "name": "Override",
+        "penalty": "-10",
+        "duration": "DoS hours",
+        "effect": "Alter a device\u2019s or system\u2019s directions. This can include white-listing himself and his allies in a security system, or changing the pitch of a voice being broadcast."
+    },
+    {
+        "name": "Trace",
+        "penalty": "-10",
+        "duration": "",
+        "effect": "Target an active spell you know of. The source opposes this test at +0. On a success the user identifies the source and its location."
+    },
+    {
+        "name": "Control",
+        "penalty": "-20",
+        "duration": "the duration of the connection",
+        "effect": "Control the device or system directly. The actions the given device or system can take are up to the GM."
+    },
+    {
+        "name": "Mole",
+        "penalty": "-20",
+        "duration": "until it\u2019s used",
+        "effect": "Plant a piece of scrap code in the system. Unless the system is checked thoroughly for some reason, the code is generally undetectable. \\\\ Any time the user tries to access the system, he gains +30 to his \\hackingskill, until the scrap code is purged."
+    }
+]
