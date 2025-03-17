@@ -10,6 +10,7 @@
 \newsavebox\ltmcbox
 
 \usepackage{../core-rulebook/config/packages}
+%FIXME: only place that still requires the old importer
 \directlua{dofile("../scripts/lua/csv-importer.lua")}
 \newcommand{\generalskills}{\directlua{noncombat_skills("../core-rulebook/lists/skills.csv")}}
 \newcommand{\meleecombatskills}{\directlua{combat_skills("../core-rulebook/lists/skills.csv", "Melee")}}

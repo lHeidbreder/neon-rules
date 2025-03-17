@@ -10,7 +10,7 @@
 %	\end{tabularx}
 %\end{center}
 %\subsection*{In detail}
-\luaimport{components/backgrounds.csv}{race.tpl}{bgs}
+\luaimport{components/backgrounds.json}{race.tpl}{bgs}
 
 \section{Boons}
 \boon{Blessed Birth}{The character starts with a \hyperref[ch:mutation]{mutation} and 3 corruption.}{6}
@@ -38,7 +38,7 @@
 	{each}
 \section{Skills}
 \edef\lastskill{x}
-\luaimport{components/skills.csv}{skill-desc.tpl}{components/skills}
+\luaimport{components/skills.json}{skill-desc.tpl}{components/skills}
 \section{Abilities}
 \ability{Steeled}
 	{400}
@@ -59,4 +59,4 @@
 \end{tabularx}
 
 \subsection{Creatures}
-\luaimport{components/bestiary.csv}{beast.tpl}{components/horrorbestiary}
+\luaimport{components/bestiary.json}{beast.tpl}{components/horrorbestiary}

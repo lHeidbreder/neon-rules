@@ -6,5 +6,3 @@ cd ../prefabs/
 python ../../scripts/python/split_csv.py prefab-stats.csv name
 cd ../lists/
 python ../../scripts/python/split_csv.py bodylocations.csv body
-cd ../augs/
-python ../../scripts/python/split_csv.py implants.csv type

@@ -70,7 +70,7 @@ function tprint (tbl, indent)
 
 function iscurrentdoc (title)
   if title == tex.jobtitle then
-    tex.print("true") 
+    tex.print("true")
     return true
   else
     tex.print("false")

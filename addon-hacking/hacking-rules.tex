@@ -1,6 +1,6 @@
 \documentclass[12pt,a4paper,openany,usenames,dvipsnames]{book}
-\usepackage{../core-rulebook/config/news}
 \usepackage{../core-rulebook/config/packages}
+\usepackage{../core-rulebook/config/news}
 
 \def\subtitle{Diving}
 \def\modifiedlincname{Sp1ke}
@@ -89,7 +89,7 @@
 	\label{sec:arspellbook}
 	\vspace{5mm}
 	\begin{multicols}{2}
-		\luaimport{components/arspells.csv}{arspell.tpl}{components/arspells}
+		\luaimport{components/arspells.json}{arspell.tpl}{components/arspells}
 	\end{multicols}
 
 	\chapter{Deep Attacks}
@@ -108,7 +108,7 @@
 	\label{sec:deepspellbook}
     \vspace{5mm}
     \begin{multicols}{2}
-        \luaimport{components/deepspells.csv}{arspell.tpl}{components/deepspells}
+        \luaimport{components/deepspells.json}{arspell.tpl}{components/deepspells}
     \end{multicols}
 
 	\chapter{Deep Dive}

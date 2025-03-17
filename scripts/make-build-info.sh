@@ -9,7 +9,7 @@ TARGET_FILE="${MAIN_DIR}/core-rulebook/config/builddata.texin"
 COPYRIGHT_NOTICE="" #FIXME
 HOST_URL="github.com/lheidbreder/neon-rules" # TODO: can I get the url from somewhere?
 GIT_COMMIT=$(git log --pretty=format:'%H' -n 1) # lowercase h for short commit, uppercase for long commit
-CHANGED_FILES=$(git diff HEAD --name-only)
+CHANGED_FILES=$(git diff HEAD --name-only | sed -e 's/_/\\_/g') # escape underscores for tex or every build will break
 TIME=$(date)
 
 # gather misc info

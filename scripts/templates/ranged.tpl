@@ -1,7 +1,6 @@
 \vspace{2mm}
 	\begin{minipage}{\columnwidth}
-		\textbf{\ul{@name@}}\\
-		\begin{flavorblock}
+		\begin{flavorblock}[@name@]
 			@flavor_text@
 		\end{flavorblock}
 		\ifthenelse{\isempty{@weight@}}{}{\textbf{Weight}: @weight@ kg\\}

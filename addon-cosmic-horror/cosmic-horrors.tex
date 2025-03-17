@@ -1,6 +1,6 @@
 \documentclass[11pt,a4paper,openany]{book}
-\usepackage{../core-rulebook/config/news}
 \usepackage{../core-rulebook/config/packages}
+\usepackage{../core-rulebook/config/news}
 
 \def\subtitle{Cosmic Horrors}
 
@@ -98,7 +98,7 @@
 	\begin{multicols}{2}
 		\begin{enumerate}
 			\setlength\itemsep{-10mm}
-			\luaimport{components/mutations.csv}{mutation-tableentry.tpl}{muttable}
+			\luaimport{components/mutations.json}{mutation-tableentry.tpl}{muttable}
 		\end{enumerate}
 	\end{multicols}
 	
@@ -107,7 +107,7 @@
 	\begin{multicols}{2}
 		\raggedcolumns
 		\newcounter{mutations} %fixes hyperref links
-		\luaimport{components/mutations.csv}{mutation.tpl}{mutations}
+		\luaimport{components/mutations.json}{mutation.tpl}{mutations}
 	\end{multicols}
 	
 	\chapter{Rituals}

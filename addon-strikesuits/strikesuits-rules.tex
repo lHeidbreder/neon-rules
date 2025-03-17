@@ -1,6 +1,6 @@
 \documentclass[12pt,a4paper,openany,usenames,dvipsnames]{book}
-\usepackage{../core-rulebook/config/news}
 \usepackage{../core-rulebook/config/packages}
+\usepackage{../core-rulebook/config/news}
 
 \def\subtitle{Strike Suits}
 
@@ -107,7 +107,7 @@
 	
     \begin{multicols}{2}
     	\raggedcolumns
-    	\luaimport{strikesuits-series.csv}{strikesuit.tpl}{series}
+    	\luaimport{strikesuits-series.json}{strikesuit.tpl}{series}
     \end{multicols}
     
     \pagebreak
@@ -120,7 +120,7 @@
     
     \begin{multicols}{2}
     	\raggedcolumns
-    	\luaimport{strikesuits-variants.csv}{strikesuit.tpl}{variants}
+    	\luaimport{strikesuits-variants.json}{strikesuit.tpl}{variants}
     \end{multicols}
     
     \chapter{Piloting a Strike Suit}

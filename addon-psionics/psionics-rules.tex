@@ -1,7 +1,7 @@
 \documentclass[12pt,a4paper,openany,usenames,dvipsnames]{book}
 
-\usepackage{../core-rulebook/config/news}
 \usepackage{../core-rulebook/config/packages}
+\usepackage{../core-rulebook/config/news}
 
 \def\subtitle{Psionics}
 
@@ -300,7 +300,7 @@
 %		\end{tabularx}
 %	\end{center}
 %	\subsection*{In detail}
-	\luaimport{components/backgrounds.csv}{race.tpl}{bgs}
+	\luaimport{components/backgrounds.json}{race.tpl}{bgs}
 	
 	\section{Boons}
 	\vspace{4mm}
@@ -323,7 +323,7 @@
 
 	\section{Skills}
 	\edef\lastskill{x}
-	\luaimport{components/skills.csv}{skill-desc.tpl}{components/skills}
+	\luaimport{components/skills.json}{skill-desc.tpl}{components/skills}
 
 	\section{Abilities}
 	\vspace{6mm}
@@ -370,15 +370,15 @@
 
 	\clearpage %quickfix
 	\section{Implants}
-	\vspace{4mm}
+	\def\lastcategory{-}
 	\begin{multicols}{2}
-		\luaimport{components/implants.csv}{implant.tpl}{components/implants}
+		\luaimport{components/implants.json}{implant.tpl}{components/implants}
 	\end{multicols}
 	
 	\section{Chems}
 	\vspace{4mm}
 	\begin{multicols}{2}
-		\luaimport{components/chem.csv}{chem.tpl}{components/chem}
+		\luaimport{components/chem.json}{chem.tpl}{components/chem}
 	\end{multicols}
 
 	\IfFileExists{../core-rulebook/config/builddata.texin}{\input{../core-rulebook/config/builddata.texin}}{ }

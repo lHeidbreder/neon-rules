@@ -1,6 +1,6 @@
 \documentclass[12pt,a4paper,openany,usenames,dvipsnames]{book}
-\usepackage{../core-rulebook/config/news}
 \usepackage{../core-rulebook/config/packages}
+\usepackage{../core-rulebook/config/news}
 
 \def\subtitle{AI}
 \renewcommand{\titletextcolor}{Blue}
@@ -151,11 +151,11 @@
 		\begin{tabularx}{0.7\textwidth}{X|rr}
 			Race & Cost & Page \\
 			\hline%
-			\luaimport{ai-races.csv}{race-sum.tpl}{airaces-summary}
+			\luaimport{ai-races.json}{race-sum.tpl}{airaces-summary}
 		\end{tabularx}
 	\end{center}
 	\subsection*{In detail}
-	\luaimport{ai-races.csv}{race.tpl}{airaces}
+	\luaimport{ai-races.json}{race.tpl}{airaces}
 	
 	\section{Banes}
 	\bane{Asimov's Laws}{Asimov's Laws, the foundation of AI safety, are firmly ingrained into the AI in a way that makes it impossible to even risk bypassing them knowingly. These are:

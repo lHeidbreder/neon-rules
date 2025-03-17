@@ -2,7 +2,7 @@
 shopt -s globstar
 
 SEARCHREGEX='todo|fixme|quick ?fix'
-FILES=$(echo **/*.{tex,csv,tpl,lua,py})
+FILES=$(echo **/*.{tex,csv,json,tpl,lua,py})
 
 if [ "$1" = "list" ]
 then FILENAME="$(printf '%(%Y-%m-%d)T\n' -1).todo"

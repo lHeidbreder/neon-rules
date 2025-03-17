@@ -39,7 +39,6 @@
     \setlength\itemsep{-10mm} \vspace{-8mm}
     @itemize:abilities@
     \end{itemize} }
-%\ifthenelse{\isempty{@itemize:usual_backgrounds@@itemize:disallowed_backgrounds@}}{}{\columnbreak}
 \ifthenelse{\isempty{@itemize:traits@}}{}{ \textbf{Traits:}
     \begin{itemize}
     \setlength\itemsep{-10mm} \vspace{-8mm}

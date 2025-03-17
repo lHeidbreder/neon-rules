@@ -1,6 +1,5 @@
 \begin{minipage}{\columnwidth}
-    \textbf{@name@}\\
-    \begin{flavorblock}
+    \begin{flavorblock}[@name@]
         @flavor_text@
     \end{flavorblock}
 	Size: @size@\\

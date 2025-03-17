@@ -1,7 +1,5 @@
 \begin{minipage}{\columnwidth}
-	\textbf{\ul{@name@:}}
-    \\%
-    \begin{flavorblock}
+    \begin{flavorblock}[@name@]
 	    @flavor@
     \end{flavorblock}
 	\textbf{Price}: cR @price@

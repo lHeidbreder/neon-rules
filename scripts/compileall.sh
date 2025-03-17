@@ -63,6 +63,7 @@ prep () {
 
   #general prep
   python "${main_dir}/scripts/python/collect-external-docs.py"
+  if [ ! -d "${main_dir}/scripts/dependencies" ]; then bash -c "${main_dir}/scripts/load-dependencies.sh"; fi
 
   for i in ${files[@]}
   do

@@ -286,6 +286,7 @@ _rulepackage/
 *.texin
 *.csvin
 *.fade.png
+scripts/dependencies/
 
 # csv import temp files
 */out.txt

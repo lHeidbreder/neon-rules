@@ -1,8 +1,8 @@
 \documentclass[11pt,a4paper,openany,dvipsnames]{book}
 \pagestyle{plain}
 
-\usepackage{../core-rulebook/config/news}
 \usepackage{../core-rulebook/config/packages}
+\usepackage{../core-rulebook/config/news}
 
 % Title definition
 \def\subtitle{Core}
@@ -402,7 +402,7 @@
 	\begin{minipage}{\columnwidth}
 		\begin{tabularx}{\columnwidth}{Xcr}
 			Locations & HP & Random \\ \hline
-			\luaimport{lists/bodylocations.csv}{bodylocation-table.tpl}{lists/bodylocations}%
+			\luaimport{lists/bodylocations.json}{bodylocation-table.tpl}{lists/bodylocations}%
 		\end{tabularx}
 	\end{minipage}
 	\vspace{-8mm}
@@ -583,7 +583,7 @@
 	\begin{multicols}{2}
 	\begin{enumerate}
 		\newcommand{\lastcategory}{-}
-		\luaimport{lists/basic-questions.csv}{basic-question.tpl}{lists/qs}
+		\luaimport{lists/basic-questions.json}{basic-question.tpl}{lists/qs}
 	\end{enumerate}
 	\end{multicols}
 

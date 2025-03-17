@@ -140,6 +140,16 @@
         "mods": "Cheap, Wrongly fitted, Perfect fit"
     },
     {
+        "name": "Reprocessor Stomach",
+        "type": "Cybernetic",
+        "flavor_text": "A recycler squeezing the last nutrients from food waste. One of the only cybernetics straining medical toughness.",
+        "effect": "The speed of starvation is reduced to a quarter.",
+        "slot": "-",
+        "load": "1 MT",
+        "cost": "220",
+        "mods": "Cheap, Wrongly fitted, Perfect fit"
+    },
+    {
         "name": "Skin-Tight Holoprojector",
         "type": "Cybernetic",
         "flavor_text": "Technically not just one but a set of holographic projectors, that obscure the user's movements and make it hard to track exactly what someone is doing.",
@@ -181,7 +191,7 @@
     },
     {
         "name": "Bone Casing",
-        "type": "Cybernetic",
+        "type": "Biotech",
         "flavor_text": "Half cybernetic, half bioengineered hardened casing for the human skeleton",
         "effect": "Grants 6 armor to the location. Swimming tests suffer a -15 penalty and weight is increased by 10%.",
         "slot": "one tagged bone",
@@ -300,16 +310,6 @@
         "mods": "Wrongly fitted, Perfect fit, Inconspicuous, Aesthetic"
     },
     {
-        "name": "Reprocessor Stomach",
-        "type": "Cybernetic",
-        "flavor_text": "A recycler squeezing the last nutrients from food waste. One of the only cybernetics straining medical toughness.",
-        "effect": "The speed of starvation is reduced to a quarter.",
-        "slot": "-",
-        "load": "1 MT",
-        "cost": "220",
-        "mods": "Cheap, Wrongly fitted, Perfect fit"
-    },
-    {
         "name": "Shadow Runners",
         "type": "Biotech",
         "flavor_text": "Very springy leg replacements, making it much easier to walk silently.",
@@ -353,7 +353,7 @@
         "name": "Vat-grown Body Part",
         "type": "Biotech",
         "flavor_text": "A biological body part grown in a vat, usually grown from the patient's own DNA. Just as good as the original.",
-        "effect": "A lost or broken body part is restored back to normal. \\\\% It is possible to grow an exact clone. This takes very long (\\sim 4 months) but does not use any MT.",
+        "effect": "A lost or broken body part is restored back to normal. \\\\ It is possible to grow an exact clone. This takes very long (\\sim 4 months) but does not use any MT.",
         "slot": "one tagged extremity",
         "load": "1 MT",
         "cost": "50",

@@ -17,8 +17,12 @@
 	\end{minipage}
 	\par
 }
-\newenvironment{flavorblock}{
+\newenvironment{flavorblock}[1][]{
 	\begin{tcolorbox}[
+		title=#1,
+		coltitle=ProcessBlue!60,
+		toptitle=1mm,
+		bottomtitle=1mm,
 		colback=Gray!30,
 		boxrule=0.2mm,
 		boxsep=0pt,
@@ -243,4 +247,12 @@
 	\textit{#2}
 	\\%
 	#3
+}
+
+%mdframed styles
+\mdfdefinestyle{objectframe}{
+	skipabove=5mm,
+	skipbelow=5mm,
+	innertopmargin=8mm,
+	backgroundcolor=cyan!15,
 }
