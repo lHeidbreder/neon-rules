@@ -14,7 +14,7 @@
         "type": "Cybernetic",
         "flavor_text": "A cybernetic cardiovascular replacement. Can withstand more strain than the body's natural systems.",
         "effect": "Increases MT by 1. May be implanted up to 3 times.",
-        "slot": "-",
+        "slot": "",
         "load": "1 RI",
         "cost": "150",
         "mods": "Wrongly fitted, Inconspicuous, Perfect fit"
@@ -74,8 +74,8 @@
         "type": "Cybernetic",
         "flavor_text": " The Level One Neural Connector, likely the most common implant out there. It's relatively cheap and connects the user to the global AR network. With it the world becomes a vibrant place of color and music.",
         "effect": "The user is connected to the global AR network. Most important information is shared through it: Shopping windows, guides, traffic signs, to name a few. People without this implant essentially live in another world, and are generally suspicious within the city. \\\\ Due to its importance, the L1NC has been optimized to the extreme. It is the safest implant out there, having almost no load on the body. It is also shielded from EMP. ",
-        "slot": "-",
-        "load": "-",
+        "slot": "",
+        "load": "",
         "cost": "45 (but free at character creation)",
         "mods": "None"
     },
@@ -144,7 +144,7 @@
         "type": "Cybernetic",
         "flavor_text": "A recycler squeezing the last nutrients from food waste. One of the only cybernetics straining medical toughness.",
         "effect": "The speed of starvation is reduced to a quarter.",
-        "slot": "-",
+        "slot": "",
         "load": "1 MT",
         "cost": "220",
         "mods": "Cheap, Wrongly fitted, Perfect fit"
@@ -324,7 +324,7 @@
         "type": "Biotech",
         "flavor_text": "An enhancement to the user's nervous system designed to bear larger loads. While it replaces a large part of the nervous system, it is compatible with any other augment.",
         "effect": "Increases RI by 1. May be implanted up to 3 times.",
-        "slot": "-",
+        "slot": "",
         "load": "1 MT",
         "cost": "150",
         "mods": "Wrongly fitted, Perfect fit"

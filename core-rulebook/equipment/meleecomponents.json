@@ -114,7 +114,7 @@
         "name": "Rifle",
         "flavor": "A weapon mount for the tip of a gun. While a little bit outdated, making an improvised spear can be much more effective than using the knife on its own.",
         "effect": "Two-handed; -5 to both melee combat rolls and aim actions with the rifle",
-        "weight": "-",
+        "weight": "",
         "price": "-/-",
         "requirement": "",
         "availability": ""

@@ -296,3 +296,4 @@ scripts/dependencies/
 
 # Working files
 *~lock*
+.vscode/

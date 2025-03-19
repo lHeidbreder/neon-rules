@@ -1,11 +1,13 @@
 \needspace{20mm}
 \begin{mdframed}[
 	style=objectframe,
+	needspace=40mm,
+	frametitlefont=\parhead\bfseries,
 	frametitle=@name@,
 ]
 	\begin{multicols}{2}
 		Cost: cR @cost@ \\
-		\ifthenelse{\equal{-}{@load@}}{}{Load: @load@ \\}
+		\ifthenelse{\isempty{@load@}}{}{Load: @load@ \\}
 		\ifthenelse{\isempty{@availability@}}{}{\textit{Availability: @availability@}\\}
 		\ifthenelse{\equal{immediate}{@duration@}}{
 			\textit{Immediate effect}
@@ -21,7 +23,7 @@
 	\begin{multicols}{2}
 		\paragraph{Effect}
 		@effect@
-        \ifthenelse{\equal{-}{@detriment@}}
+        \ifthenelse{\isempty{@detriment@}}
             {}
             {
                 \columnbreak
@@ -29,7 +31,7 @@
                 @detriment@
             }
 	\end{multicols}
-	\ifthenelse{\equal{-}{@overdose_effect@}}
+	\ifthenelse{\isempty{@overdose_effect@}}
 	{}
 	{
 		\vspace{-8mm}

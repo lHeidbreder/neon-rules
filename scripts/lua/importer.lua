@@ -71,6 +71,9 @@ end
 
 function write_to_file(path, text)
     local out = io.open(path, "a")
+    if out == nil then
+        error("Cannot write to " .. path)
+    end
     out:write(text)
     io.close(out)
 end

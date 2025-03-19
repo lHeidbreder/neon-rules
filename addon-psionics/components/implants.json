@@ -6,13 +6,13 @@
         "slot": "brain",
         "load": "2 RI, 2 MT",
         "cost": "465",
-        "mods": "-"
+        "mods": ""
     },
     {
         "name": "Psi Amp",
         "flavor_text": "An amplifier for psionics, more rare than the Focus implant itself, even comparatively. They have to be attuned to improve a certain discipline rather than just all psionics to be used safely.",
         "effect": "gain +5 to cast a certain discipline; may be taken multiple times",
-        "slot": "-",
+        "slot": "",
         "load": "1 RI",
         "cost": "55",
         "mods": "Perfect fit"
@@ -24,7 +24,7 @@
         "slot": "chest",
         "load": "3 MT",
         "cost": "470",
-        "mods": "-"
+        "mods": ""
     },
     {
         "name": "Null Mesh",
@@ -42,6 +42,6 @@
         "slot": "brain",
         "load": "2 RI, 1 MT",
         "cost": "488",
-        "mods": "-"
+        "mods": ""
     }
 ]

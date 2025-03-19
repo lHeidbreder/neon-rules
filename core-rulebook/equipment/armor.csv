@@ -1,4 +1,4 @@
-group,name,head,chest,arms,legs,covers,mods,Itemize:effect,price,weight,availability
+group,name,head,chest,arms,legs,covers,mods,itemize:effect,price,weight,availability
 casual,Biker helmet,3,0,0,0,head,1,+10 to Drive(Bike) checks,35,1.5,5
 casual,Armored suit,0,3,2,3,"torso, arms, legs",1,Inconspicuous,45,2,4
 casual,Tough coat,0,2,1,1,"torso, arms",0,Inconspicuous,35,2,6

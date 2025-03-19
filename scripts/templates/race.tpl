@@ -1,5 +1,9 @@
-\begin{samepage}
-\subsection*{@name@ \ifthenelse{\isempty{@variant@}}{}{/ @variant@} (@cost@ GP)}
+\begin{mdframed}[
+    style=objectframe,
+    needspace=0.6\columnwidth,
+    frametitlefont=\parhead\bfseries,
+    frametitle={@name@ \ifthenelse{\isempty{@variant@}}{}{/ @variant@} (@cost@ GP)},
+]
 \stepcounter{tmpcntr}
 \phantomsection
 \makelabelfromkey[race]{@name@@variant@}
@@ -21,8 +25,6 @@
             @flavor_text@
         \end{flavorblock}
     }
-\end{samepage}
-\par
 \begin{tabular}{|l|l|l|l|l|l|l|l|}
     \hline
     Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
@@ -74,5 +76,5 @@
     @itemize:disallowed_backgrounds@
     \end{itemize} }
 \end{multicols}
+\end{mdframed}
 \par
-\conditionalhrule

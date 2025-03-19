@@ -17,12 +17,12 @@
             "Deception +1",
             "Stealth +2",
             "Wirewalk +3",
-            "Education: Cryptography +3"
+            "Education: Cryptography +2"
         ],
         "itemize:abilities": [
-            ""
+            "one of: ::b:: \\item Diver I \\item Misinformer ::e::"
         ],
-        "abilitycostoverride": "",
+        "abilitycostoverride": "300",
         "itemize:boons": [
             ""
         ],
@@ -37,7 +37,7 @@
     },
     {
         "name": "Hacker - White Hat",
-        "cost": "3",
+        "cost": "4",
         "cr": "",
         "int": "",
         "ins": "",
@@ -50,13 +50,14 @@
             ""
         ],
         "itemize:skills": [
+            "Appeal +2",
             "Wirewalk +3",
-            "Educations (one +3, the other +2): ::b:: \\item Cryptography \\item Law ::e::"
+            "Educations (one +2, the other +1): ::b:: \\item Cryptography \\item Law ::e::"
         ],
         "itemize:abilities": [
-            ""
+            "one of: ::b:: \\item Diver I \\item Misinformer ::e::"
         ],
-        "abilitycostoverride": "",
+        "abilitycostoverride": "300",
         "itemize:boons": [
             ""
         ],

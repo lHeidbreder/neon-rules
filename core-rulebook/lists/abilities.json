@@ -20,7 +20,7 @@
     {
         "name": "Augsmith",
         "cost": "350",
-        "prerequisites": "Mechanics Experienced, Bio-Maintenance Experienced",
+        "prerequisites": "Craftsmanship Experienced, Bio-Maintenance Experienced",
         "effect": "The character is capable of making and repairing cybernetic implants."
     },
     {

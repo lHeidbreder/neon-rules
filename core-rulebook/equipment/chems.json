@@ -8,8 +8,8 @@
         "effect": "The user only pays half as much XP to increase his physical characteristics. ",
         "detriment": "The user permanently loses 0.1 MT for every 100 XP he saved from this chem.",
         "duration": "one development cycle",
-        "load": "-",
-        "overdose_effect": "-"
+        "load": "",
+        "overdose_effect": ""
     },
     {
         "name": "Static",
@@ -20,8 +20,8 @@
         "effect": "The user only pays half as much XP to increase his mental characteristics. ",
         "detriment": "The user permanently loses 0.1 RI for every 100 XP he saved from this chem.",
         "duration": "one development cycle",
-        "load": "-",
-        "overdose_effect": "-"
+        "load": "",
+        "overdose_effect": ""
     },
     {
         "name": "Alcohol",
@@ -29,7 +29,7 @@
         "cost": "25",
         "availability": "6",
         "description": "A common recreational drug to forget your sorrows.",
-        "effect": "The user's Con and Cr are increased by 10. He also gains +10 to Occultism tests.",
+        "effect": "The user's Con and Cr are increased by 10.",
         "detriment": "The user's Int, Ins, Ch, Dex, Ag is reduced by 5, and he takes -10 to most actions.",
         "duration": "1 hour",
         "load": "1 MT",
@@ -44,8 +44,8 @@
         "effect": "The user gains +1 to both RI and MT. Multiple uses increase the effect, not the duration.",
         "detriment": "The user's natural regeneration is reduced by 1 per dose.\\\\When the effect ends - and the user then surpasses his limits - he needs to take an additional dose immediately or suffer the effects associated with too many implants.",
         "duration": "one month",
-        "load": "-",
-        "overdose_effect": "-"
+        "load": "",
+        "overdose_effect": ""
     },
     {
         "name": "Morphine",
@@ -165,7 +165,7 @@
         "detriment": "When the effect runs out, the user goes catatonic. 4 days later he dies, unless another dose is administered. \\\\ There is no antidote for Luciferium. Additional doses only reset the timer - the effects or load do not add up.",
         "duration": "one week",
         "load": "2 MT, 2 RI",
-        "overdose_effect": "-"
+        "overdose_effect": ""
     },
     {
         "name": "Antidote",
@@ -176,8 +176,8 @@
         "effect": "Immediately ends another chem's effect.",
         "detriment": "Any given antidote only works against a single type of chem - an antidote against \\emph{Morphine} won't stop \\emph{Method}.",
         "duration": "immediate",
-        "load": "-",
-        "overdose_effect": "-"
+        "load": "",
+        "overdose_effect": ""
     },
     {
         "name": "Strychnine",
@@ -188,7 +188,7 @@
         "effect": "The user becomes weaker - he loses 5 Str per half hour. Once Str reaches 0, he starts to suffocate.",
         "detriment": "The user experiences seizures and convulsions that worsen with time.",
         "duration": "24 hours",
-        "load": "1 MT, 1 RI",
+        "load": "4 MT, 4 RI",
         "overdose_effect": "The user immediately begins to suffocate."
     },
     {
@@ -197,10 +197,10 @@
         "cost": "130",
         "availability": "2",
         "description": "Comes either as a colorless gas with a barely detectable bitter almondy smell, or as a capsule of white crystalline powder.",
-        "effect": "The user enters cellular suffocation - he suffers one damage to every location every minute.",
-        "detriment": "The user continuously suffers brain damage. His Int is permanently reduced by 2 every minute.",
+        "effect": "The user enters cellular suffocation - he suffers one damage to every location every 10 seconds (3 combat rounds).",
+        "detriment": "The user continuously suffers brain damage. His Int is permanently reduced by 2 every 10 seconds (3 combat rounds).",
         "duration": "24 hours",
-        "load": "1 MT, 1 RI",
+        "load": "4 MT, 4 RI",
         "overdose_effect": "The user suffers severe, immediate brain damage. He permanently loses 2D10 Int."
     },
     {
@@ -209,10 +209,10 @@
         "cost": "180",
         "availability": "3",
         "description": "A vial of yellowy-tinted liquid. Extremely deadly.",
-        "effect": "The user is completely paralyzed and goes into cardiac arrest. He requires medical assistance within a number of rounds equal to his constitution or he expires.",
-        "detriment": "-",
+        "effect": "The user is paralyzed and begins to suffocate.",
+        "detriment": "",
         "duration": "24 hours",
-        "load": "2 MT, 1 RI",
-        "overdose_effect": "-"
+        "load": "5 MT, 4 RI",
+        "overdose_effect": "The user is completely paralyzed and goes into cardiac arrest. He requires medical assistance within a number of rounds equal to his constitution or he expires."
     }
 ]

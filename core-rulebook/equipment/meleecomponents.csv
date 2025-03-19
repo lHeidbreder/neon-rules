@@ -10,7 +10,7 @@ hilt,Giant Hilt,A massive sword hilt. This has no utility for humans and exists 
 shaft,Short Shaft,"A generic short shaft that can build the basis for a spear, hammer or axe.","One-handed; +10 to attacks, -10 to defense",0.3,12,,5
 shaft,Long Shaft,A shaft perfect for long spears.,"Two-handed; +10 to attacks, -10 to defense",0.5,12,,5
 shaft,Twin Shaft,A double-ended spear shaft allowing for two heads to be mounted. Not as effective individually but some people like the versatility.,Two-handed; allows to add a second weapon point,0.5,18,,3
-shaft,Rifle,"A weapon mount for the tip of a gun. While a little bit outdated, making an improvised spear can be much more effective than using the knife on its own.",Two-handed; -5 to both melee combat rolls and aim actions with the rifle,-,-/-,,
+shaft,Rifle,"A weapon mount for the tip of a gun. While a little bit outdated, making an improvised spear can be much more effective than using the knife on its own.",Two-handed; -5 to both melee combat rolls and aim actions with the rifle,,-/-,,
 blade,No Blade,Generally speaking a blade gives great advantages. Sometimes however a blade is simply not available but a stick is still a massive upgrade over fists.,"The weapon becomes a simple, primitive, generally quite short blunt instrument.",0,0,,
 blade,Knife Blade,"Short, stiff blade. Good penetration, can cut if necessary.",Inconspicuous (when put on a one-handed hilt),0.2,30,,5
 blade,Sword Blade,A long blade that cuts and stabs well.,+3 damage,0.9,35,,4

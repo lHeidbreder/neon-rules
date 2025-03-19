@@ -12,9 +12,11 @@
 	\begin{flavorblock}[@name@]
         @flavor_text@
     \end{flavorblock}
-	\vspace{-5mm}
 	\textit{Effect}: @effect@\\
-	\textit{Price:} cR @cost@; \textit{Load:} @load@\ifthenelse{\isequivalentto{-}{@slot@}}{}{; \textit{Slot:} @slot@}\\
+	\textit{Price:} cR @cost@;
+	\ifthenelse{\NOT \isempty{@load@}}{\textit{Load:} @load@}{}
+	\ifthenelse{\NOT \isempty{@slot@}}{; \textit{Slot:} @slot@}{}
+	\\%
 	\textit{Available Mods:} @mods@
 \renewcommand{\lastcategory}{@type@}
 \par
