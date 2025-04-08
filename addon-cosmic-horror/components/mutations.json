@@ -260,7 +260,7 @@
     {
         "name": "Torso Mouth",
         "flavor_text": "The ravenous appetite of otherworldly forces necessitates the manifestation of a jaw beyond the realm of earthly norms\u2014a formidable maw, expansive and lined with formidable teeth, ready to sate the hunger that transcends the boundaries of mortal understanding.",
-        "description": "The character develops a massive mouth on his torso. He also gains the Hungry Bane or increases it by one step.",
+        "description": "The character develops a massive maw on his torso. He gains the Hungry Bane or increases it by one step. The maw has the DEADLY MELEE trait, if the character manages to attack with it.",
         "imgpath": ""
     },
     {

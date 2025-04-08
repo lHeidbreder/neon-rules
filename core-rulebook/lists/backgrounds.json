@@ -132,7 +132,7 @@
             "one Melee Combat Training +2",
             "one Melee Combat Training +1: ::b::\\item Striking \\item Grappling ::e::",
             "Educations: ::b::",
-            "Command +1",
+            "Military Command +1",
             "Fortification +1 ::e::"
         ],
         "itemize:abilities": [
@@ -336,7 +336,7 @@
     },
     {
         "name": "Fence",
-        "cost": "6",
+        "cost": "3",
         "cr": "",
         "int": "",
         "ins": "2",
@@ -351,8 +351,9 @@
         "itemize:skills": [
             "Appeal +1",
             "Deception +2",
-            "Sleight of Hand +2",
-            "Education: Commerce +3"
+            "Estimate +2",
+            "Sleight of Hand +1",
+            "Education: Commerce +1"
         ],
         "itemize:abilities": [
             ""
@@ -729,7 +730,7 @@
             "any armed Melee Combat Training +1",
             "one Melee Combat Training +1: ::b::\\item Striking \\item Grappling::e::",
             "Educations: ::b::",
-            "Command +2",
+            "Military Command +2",
             "Demolition +2 ::e::"
         ],
         "itemize:abilities": [

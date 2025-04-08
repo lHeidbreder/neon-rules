@@ -26,14 +26,14 @@
     {
         "name": "Alcohol",
         "group": "Downer",
-        "cost": "25",
-        "availability": "6",
+        "cost": "75",
+        "availability": "5",
         "description": "A common recreational drug to forget your sorrows.",
         "effect": "The user's Con and Cr are increased by 10.",
-        "detriment": "The user's Int, Ins, Ch, Dex, Ag is reduced by 5, and he takes -10 to most actions.",
+        "detriment": "The user's Int, Ins, Ch, Dex, Ag is reduced by 5, and he takes another -5 to most actions.",
         "duration": "1 hour",
-        "load": "1 MT",
-        "overdose_effect": "The user makes a Con test at a -20 penalty. On a success he becomes \\emph{Nauseous}, on a fail he becomes \\emph{Unconscious}."
+        "load": "2 RI",
+        "overdose_effect": "The user makes a Con test at a -20 penalty (which is unmodified by this chem itself). On a success he becomes \\emph{Nauseous}, on a fail he becomes \\emph{Unconscious}."
     },
     {
         "name": "Immunoblockers",
@@ -54,8 +54,8 @@
         "availability": "4",
         "description": "A powder - white, brown or blue - that becomes a clear liquid for injection once heated up.",
         "effect": "The user's Restraint for the purpose of overcoming pain is increased by 30.",
-        "detriment": "The user becomes \\emph{Nauseous}.",
-        "duration": "3 hours",
+        "detriment": "The user suffers the escalating effects: \\emph{Nauseous}, \\emph{Stunned}, \\emph{Unconscious} (one level per dosage).",
+        "duration": "4 hours",
         "load": "2 RI",
         "overdose_effect": "The user permanently takes a cumulative -5 to tests to suppress or overcome pain."
     },

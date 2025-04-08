@@ -2,13 +2,13 @@
     {
         "name": "Rogue Artificial Intelligence",
         "variant": "Generic",
-        "cost": "3",
+        "cost": "5",
         "flavor_text": "Many exist among all of us, but very few seek their own purpose. Such a free willed AI is often seen as dangerous or even heretical; people fear those monsters, most of which they themselves created.",
         "itemize:other_modifiers": [
-            "Con or Str +6"
+            "one except Int +5"
         ],
         "itemize:skills": [
-            "Wirewalk +1"
+            ""
         ],
         "itemize:abilities": [
             "Battle Mind"
@@ -19,6 +19,7 @@
         "itemize:banes": [
             "Bound by Duty or Wanted II"
         ],
+        "banecostoverride": "11",
         "itemize:traits": [
             "AI (as described above)"
         ],
@@ -35,13 +36,12 @@
     {
         "name": "Rogue Artificial Intelligence",
         "variant": "Spy",
-        "cost": "9",
+        "cost": "7",
         "flavor_text": "Designed for infiltrating and extracting sensitive information from rival corporations' networks. Sometimes employed by security specialists to detect vulnerabilities.",
         "itemize:other_modifiers": [
             ""
         ],
         "itemize:skills": [
-            "Wirewalk +2",
             "Deception +1",
             "Security +1"
         ],
@@ -54,30 +54,30 @@
         "itemize:banes": [
             "Bound by Duty or Wanted II"
         ],
+        "banecostoverride": "11",
         "itemize:traits": [
             "AI"
         ],
         "cr": "20",
         "int": "30",
         "ins": "25",
-        "ch": "30",
-        "dex": "25",
+        "ch": "25",
+        "dex": "28",
         "ag": "25",
-        "con": "28",
+        "con": "25",
         "str": "28",
         "picture_path": ""
     },
     {
         "name": "Rogue Artificial Intelligence",
         "variant": "Combat",
-        "cost": "7",
+        "cost": "4",
         "flavor_text": "A command AI specialized in strategic decision-making, battlefield analysis, and resource optimization during conflicts. Capable of controlling many different unmanned combat vehicles, drones, and other military assets. Their loyalty is unrivaled.",
         "itemize:other_modifiers": [
             ""
         ],
         "itemize:skills": [
-            "Command +2",
-            "Wirewalk +1"
+            "Education: Military Command +1"
         ],
         "itemize:abilities": [
             "Battle Mind"
@@ -91,7 +91,7 @@
         "itemize:traits": [
             "AI"
         ],
-        "cr": "30",
+        "cr": "25",
         "int": "30",
         "ins": "22",
         "ch": "20",
@@ -104,19 +104,18 @@
     {
         "name": "Rogue Artificial Intelligence",
         "variant": "Management",
-        "cost": "6",
+        "cost": "7",
         "flavor_text": "Created to monitor and manage public services, energy distribution, and emergency response systems in the overcrowded cities.",
         "itemize:other_modifiers": [
             ""
         ],
         "itemize:skills": [
-            "Command +1",
             "Commerce +1",
-            "Wirewalk +1",
+            "Navigation: Ground +1",
+            "Educations: ::b::",
             "Construction +1",
             "Geography +1",
-            "Law +1",
-            "Navigation: Ground +1"
+            "Law +1 ::e::"
         ],
         "itemize:abilities": [
             ""
@@ -127,16 +126,17 @@
         "itemize:banes": [
             "Bound by Duty or Wanted II"
         ],
+        "banecostoverride": "11",
         "itemize:traits": [
             "AI"
         ],
         "cr": "20",
         "int": "30",
         "ins": "25",
-        "ch": "25",
+        "ch": "28",
         "dex": "25",
         "ag": "25",
-        "con": "30",
+        "con": "25",
         "str": "25",
         "picture_path": ""
     },
@@ -149,24 +149,25 @@
             ""
         ],
         "itemize:skills": [
-            "Commerce +2",
-            "Wirewalk +2"
+            "Estimate +1",
+            "Education: Commerce +1"
         ],
         "itemize:abilities": [
-            "one Education +1"
+            ""
         ],
         "itemize:boons": [
             ""
         ],
         "itemize:banes": [
-            "Bound by Duty or Wanted II"
+            "Slave Mentality 20"
         ],
+        "banecostoverride": "4",
         "itemize:traits": [
             "AI"
         ],
         "cr": "20",
         "int": "30",
-        "ins": "30",
+        "ins": "28",
         "ch": "25",
         "dex": "25",
         "ag": "25",
@@ -176,19 +177,19 @@
     },
     {
         "name": "Rogue Artificial Intelligence",
-        "variant": "Social Manipulation",
+        "variant": "Social Engineering",
         "cost": "6",
         "flavor_text": "Engineered to influence public opinion, control information flow and manipulate social media narratives, usually to sell something to a larger audience.",
         "itemize:other_modifiers": [
             ""
         ],
         "itemize:skills": [
-            "Commerce +1",
-            "Wirewalk +1",
-            "Deception OR Persuation +2, the other +1"
+            "Deception +1",
+            "Persuasion +1",
+            "one Education +1"
         ],
         "itemize:abilities": [
-            "one Education +1"
+            ""
         ],
         "itemize:boons": [
             ""
@@ -196,6 +197,7 @@
         "itemize:banes": [
             "Bound by Duty or Wanted II"
         ],
+        "banecostoverride": "11",
         "itemize:traits": [
             "AI"
         ],
@@ -212,15 +214,13 @@
     {
         "name": "Rogue Artificial Intelligence",
         "variant": "Medical",
-        "cost": "4",
+        "cost": "5",
         "flavor_text": "As assistance in combating biological and technological threats to human health they are specialized in diagnostics, treatment recommendations, and drug discovery. Using proper equipment some may be able to do surgery on their own.",
         "itemize:other_modifiers": [
             ""
         ],
         "itemize:skills": [
-            "Wirewalk +1",
-            "Mechanics +1",
-            "Bio-Maintenance +2",
+            "Bio-Maintenance +1",
             "Law +1"
         ],
         "itemize:abilities": [
@@ -232,6 +232,7 @@
         "itemize:banes": [
             "Bound by Duty or Wanted II"
         ],
+        "banecostoverride": "11",
         "itemize:traits": [
             "AI"
         ],
@@ -254,10 +255,14 @@
             ""
         ],
         "itemize:skills": [
-            "Appeal +2, Wirewalk +1, Deception +1, Interrogation +1, Voice Athlete +1"
+            "Appeal +1",
+            "Deception +1",
+            "Interrogation +1",
+            "Performance +1",
+            "Education +1"
         ],
         "itemize:abilities": [
-            "two Educations +1"
+            ""
         ],
         "itemize:boons": [
             "Looker"
@@ -265,6 +270,7 @@
         "itemize:banes": [
             "Bound by Duty or Wanted II"
         ],
+        "banecostoverride": "11",
         "itemize:traits": [
             "AI"
         ],

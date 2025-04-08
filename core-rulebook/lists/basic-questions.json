@@ -17,7 +17,7 @@
     {
         "category": "Past",
         "question": "How did the character grow up?",
-        "example": "What did you do in your past? What memories will you never forget?"
+        "example": "What did you do in your past? What memories will you never forget? What rumors have spread about you?"
     },
     {
         "category": "Past",
@@ -37,7 +37,7 @@
     {
         "category": "Enhancement",
         "question": "How does the character regard transhumanism?",
-        "example": "Are you chromed up? Would you like to? Do you prefer tech or biotech?"
+        "example": "What separates human and machine?"
     },
     {
         "category": "Enhancement",

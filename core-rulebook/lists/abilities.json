@@ -86,8 +86,8 @@
     {
         "name": "Calming Presence",
         "cost": "200",
-        "prerequisites": "Command Trained, Calming Focus",
-        "effect": "The character may take an action to make a command test at a +20 bonus. For every degree of success all allies he addresses gain a +10 to tests to resist fear and pinning."
+        "prerequisites": "Appeal Experienced, Calming Focus",
+        "effect": "The character may take an action to make an Appeal test at a +20 bonus. For every degree of success all allies he addresses gain a +10 to tests to resist fear and pinning."
     },
     {
         "name": "Clear Target",
@@ -265,9 +265,9 @@
     },
     {
         "name": "On Your Feet!",
-        "cost": "100",
-        "prerequisites": "Command Trained, Heroic",
-        "effect": "The character may take an action to make a command check. On a success an ally gains a +5 per degree of success to any action following the character's orders."
+        "cost": "200",
+        "prerequisites": "Intimidation Trained, Heroic",
+        "effect": "The character may take an action to make an Intimidation. On a success an ally gains a +5 per Degree of Success to any action following the character's orders."
     },
     {
         "name": "One-Man Artillery",
@@ -410,7 +410,7 @@
     {
         "name": "Tactical Advance",
         "cost": "350",
-        "prerequisites": "Command Known",
+        "prerequisites": "Stealth Experienced",
         "effect": "While advancing carefully from one cover to the next over a distance of MS meters in one turn, the character counts as in cover for the whole way."
     },
     {
@@ -453,7 +453,7 @@
         "name": "Unquestioned",
         "cost": "500",
         "prerequisites": "Reliable Reputation",
-        "effect": "Penalties to Command tests resulting from disbelief in authority (e.g. represented by Rebel or some Bound by Principle) do not apply."
+        "effect": "Penalties to Social Tests resulting from the target's disbelief in authority (e.g. represented by Rebel or some Bound by Principle) do not apply."
     },
     {
         "name": "Unrestrained Reflexes",

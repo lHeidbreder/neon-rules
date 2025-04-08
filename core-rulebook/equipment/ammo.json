@@ -792,7 +792,7 @@
     {
         "caliber": "Small Fuel Tanks",
         "type": "Water",
-        "effect": "1 dmg, 0 AP, Trauma, Stun (*the original amount of damage dice)",
+        "effect": "1 dmg, ignores armor, Stun (*the original amount of damage dice). The target makes an Athletics Test or falls prone.",
         "price": "8",
         "unitofsale": "1",
         "weight": "13kg",
@@ -832,7 +832,7 @@
     {
         "caliber": "Medium Fuel Tanks",
         "type": "Water",
-        "effect": "1 dmg, 0 AP, Trauma, Stun (*the original amount of damage dice)",
+        "effect": "1 dmg, ignores armor, Stun (*the original amount of damage dice). The target makes a -10 Athletics Test or falls prone.",
         "price": "17",
         "unitofsale": "1",
         "weight": "25kg",
@@ -872,7 +872,7 @@
     {
         "caliber": "Large Fuel Tanks",
         "type": "Water",
-        "effect": "1 dmg, 0 AP, Trauma, Stun (*the original amount of damage dice)",
+        "effect": "1 dmg, ignores armor, Stun (*the original amount of damage dice). The target makes a -20 Athletics Test or falls prone.",
         "price": "32",
         "unitofsale": "1",
         "weight": "62.5kg",
