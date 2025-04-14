@@ -17,18 +17,18 @@
         ],
         "itemize:banes": [
             "Arrogance 35",
-            "Debt (cR 2000)",
+            "Debt (cR 2500)",
             "Delusions of Grandeur 30",
             "Impatient 25",
             "Impulsive"
         ],
         "itemize:skills": [
             "Athletics Trained",
-            "Climbing Trained",
+            "Acrobatics Trained",
             "Deception Known",
             "Drive (Bike) Trained",
             "Sleight of Hand Known",
-            "Stealth Known",
+            "Stealth Trained",
             "Perception Experienced",
             "Melee Training (One-Handed Blade) Known",
             "Dodge Trained"
@@ -75,17 +75,18 @@
         ],
         "itemize:skills": [
             "Acrobatics Known",
-            "Commerce Untrained",
             "Wirewalk Experienced",
-            "Cryptography Known",
-            "Security Trained",
             "Stealth Trained",
-            "Ranged Training (Pistol) Known"
+            "Ranged Training (Pistol) Known",
+            "Education: Commerce Familiar",
+            "Education: Cryptography Informed"
         ],
         "itemize:abilities": [
             "Battle Mind",
+            "Diver I",
+            "Hax0r e1337",
             "Light Sleeper",
-            "Misinformer"
+            "Snapshot"
         ],
         "itemize:traits": [
             ""
@@ -114,7 +115,7 @@
         ],
         "itemize:banes": [
             "Slave Mentality 25",
-            "Bad Reputation 4",
+            "Bad Reputation 3",
             "Blood Lust 40",
             "Evil Monologue",
             "Scrooge 40",
@@ -124,12 +125,15 @@
         "itemize:skills": [
             "Appeal Known",
             "Bio-Maintenance Trained",
+            "craftsmanship Known",
+            "Deception Known",
+            "Perception Known",
             "Restraint Trained",
-            "Chemistry Trained",
             "Melee Training (Striking) Trained",
-            "Deception Known"
+            "Education Chemistry Informed"
         ],
         "itemize:abilities": [
+            "Battle Mind",
             "Stabilization",
             "MVR: Powerstrike",
             "MVR: Stunning Blow"
@@ -160,7 +164,9 @@
         "race": "Pure",
         "background": "Driver, Broad Education: Bodyguard",
         "itemize:boons": [
-            ""
+            "Balance",
+            "Fortune's Child",
+            "Outstanding Sense (Sight)"
         ],
         "itemize:banes": [
             "Bad Reputation 3",
@@ -175,6 +181,7 @@
             "Perception Known",
             "Drive (Car) Experienced",
             "Drive (Heavy) Trained",
+            "Drive (Bike) Trained",
             "Navigation (Ground) Trained",
             "Navigation (Underground) Trained",
             "Restraint Trained",
@@ -214,7 +221,7 @@
             "Big Spender 2",
             "Euphonia",
             "Outstanding Sense (Hearing)",
-            "Looker"
+            "Smoking"
         ],
         "itemize:banes": [
             "Addiction (Raze)",
@@ -227,14 +234,14 @@
             "Appeal Experienced",
             "Athletics Known",
             "Deception Known",
-            "Education: Etiquette 2",
-            "Education: Entertainment 2",
             "Perception Trained",
             "Ranged Weapon Training (Pistol) Known",
-            "Voice Athlete Experienced"
+            "Education: Etiquette Informed",
+            "Education: Entertainment Informed",
+            "Education: Voice Athlete Informed"
         ],
         "itemize:abilities": [
-            ""
+            "Battle Sense"
         ],
         "itemize:traits": [
             ""
@@ -250,40 +257,9 @@
             "SOS Knife Kit",
             "small Tactical Softcase",
             "Voice Modulator perfect fit",
-            "Wound dressing",
+            "Wound Dressing",
             "Wound Sealant Foam",
             "Leftover money: cR 18"
-        ]
-    },
-    {
-        "name": "%TODO: skills contain educations; will all have to be redone",
-        "cr": "",
-        "int": "",
-        "ins": "",
-        "ch": "",
-        "dex": "",
-        "ag": "",
-        "con": "",
-        "str": "",
-        "race": "",
-        "background": "",
-        "itemize:boons": [
-            ""
-        ],
-        "itemize:banes": [
-            ""
-        ],
-        "itemize:skills": [
-            ""
-        ],
-        "itemize:abilities": [
-            ""
-        ],
-        "itemize:traits": [
-            ""
-        ],
-        "itemize:equipment": [
-            ""
         ]
     }
 ]

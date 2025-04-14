@@ -285,6 +285,7 @@ file_output/
 _rulepackage/
 *.texin
 *.csvin
+*.jsonin
 *.fade.png
 scripts/dependencies/
 
