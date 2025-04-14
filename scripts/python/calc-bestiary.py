@@ -146,7 +146,10 @@ def qualifier_to_levels(qualifier: str) -> int:
         case "trained" | "informed": return 2
         case "experienced" | "knowledgable": return 3
         case "mastered": return 4
-    return 0
+    try:
+        return int(qualifier)
+    except ValueError:
+        return 0
 #endregion
 
 header = ("Name", "Social", "Current", "Combat", "Current")
@@ -162,8 +165,7 @@ with open(args.file) as fhandle:
 
         #social
         characteristics = (parseint(line['cr']) + parseint(line['ch']))/10 #TODO: add instinct?
-        #skills = parseint(line['sum:social_skills']) #TODO: get dynamically?
-        skills = sum_up_entry(social_skills, line['itemize:skills']) if line['sum:social_skills'] in ('',None) else parseint(line['sum:social_skills'])
+        skills = sum_up_entry(social_skills, line['itemize:skills']) if try_access_key(line,'sum:social_skills') in ('',None) else parseint(line['sum:social_skills'])
         dbgprint(f"Social Skills: {skills}")
         social = (characteristics+skills)/social_divisor
 
@@ -173,7 +175,6 @@ with open(args.file) as fhandle:
         characteristics = ( parseint(line['cr']) + parseint(line['int']) + parseint(line['ins']) + parseint(line['dex']) + parseint(line['str']) )/5
         dbgprint(f"Characterisitics: {characteristics}")
         skills = 5 * sum_up_entry(combat_skills, line['itemize:skills']) + parseint(line['avg_raw_dmg'])
-        #skills = 5 * parseint(line['sum:combat_skills']) + parseint(line['avg_raw_dmg']) #TODO: get dynamically?
         dbgprint(f"Combat Skills: {skills}")
         traits = parseint(line['positive_traits-negative_traits'])/10 + 1 #TODO: can be negative? #TODO: get dynamically?
         dbgprint(f"Traits: {traits}")
