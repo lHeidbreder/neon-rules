@@ -1,7 +1,9 @@
 [
     {
         "name": "Fire Breath",
-        "flavor_text": "An additional organ similar to toxin sacs but producing highly flammable liquids instead. The user may spit out said liquid - in a manner not unlike vomiting - up to a few meters and an implant at the tip of the tongue allows ignition.",
+        "market_name": "TODO",
+        "slogan": "TODO",
+        "flavor_text": "TODO",
         "effect": "The user gains access to the following weapon profile twice per day: \\columnbreak \\begin{sitemize} \\item Shots: 3 \\item Damage: 1D10+2 \\item Range: 4m \\item Flame, Scatter, Spray \\end{sitemize} It uses Ranged Combat Training (Integrated Weaponry). ",
         "slot": "exotic",
         "load": "2 MT",
@@ -11,7 +13,9 @@
     },
     {
         "name": "Hematophagia",
-        "flavor_text": "A conversion of large parts of the human metabolism.",
+        "market_name": "TODO",
+        "slogan": "TODO",
+        "flavor_text": "TODO",
         "effect": "The user may drink untreated blood to substitute water and food consumption. Poison and extremely heavy pollutants may still cause poisoning.",
         "slot": "exotic",
         "load": "1 MT",
@@ -20,7 +24,9 @@
     },
     {
         "name": "Reactive Resilience Layer",
-        "flavor_text": "A dense mesh just below the skin that repels attacks. To avoid unwanted side effects this requires conscious effort to activate - otherwise it was found to notably obstruct movement.",
+        "market_name": "TODO",
+        "slogan": "TODO",
+        "flavor_text": "TODO",
         "effect": "When taking a defensive stance, the user may make a free toughness test to reduce the damage of an incoming hit by its DoS. The user takes a level of exhaustion per hit taken.",
         "slot": "skin, exotic",
         "load": "2 RI, 3 MT",
@@ -29,7 +35,9 @@
     },
     {
         "name": "Smoke Vents",
-        "flavor_text": "A defensive implant created in a project that was originally inspired by an octopus' ink blast. It grants the skin the ability to emit a dark smoke about once every 20 hours, giving the user time to escape perilous situations.",
+        "market_name": "TODO",
+        "slogan": "TODO",
+        "flavor_text": "TODO",
         "effect": "cause a Blast (3), Smoke effect around the character up to once a day",
         "slot": "skin, exotic",
         "load": "1 MT",
@@ -38,7 +46,9 @@
     },
     {
         "name": "Tail Spike",
-        "flavor_text": "A biological tail with a stinger. It's fully articulate but not exactly precise.",
+        "market_name": "TODO",
+        "slogan": "TODO",
+        "flavor_text": "TODO",
         "effect": "allows a new combat action: tail attack (unarmed attack with piercing quality; is at -10 to evade); if the character also has Venom Sacs, the attack applies this toxin; resistance is at an additional -10",
         "slot": "tail, exotic",
         "load": "1 MT",
@@ -47,7 +57,9 @@
     },
     {
         "name": "Venom Sacs",
-        "flavor_text": "Small sacs filled with toxin produced within the body. Without other implants it has to be vomited up regularly in a painful emptying process as to not spill into the rest of the body and suffer from guaranteed overdoses.",
+        "market_name": "TODO",
+        "slogan": "TODO",
+        "flavor_text": "TODO",
         "effect": "Produces and stores one type of chemical. Which chemicals are available is up to the GM. \\\\% It produces one dose per week and stores up to 3 at a time. If more are produced than can be stored, the user suffers its effects, detriments and overdose effects.",
         "slot": "exotic",
         "load": "2 MT",

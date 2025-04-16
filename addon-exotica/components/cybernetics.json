@@ -1,7 +1,9 @@
 [
     {
         "name": "Aegis Shield Arms",
-        "flavor_text": "Created by a private military contractor its blueprints are eagerly protected. Those who can get their hands on a set however have been reported to rival LEGION detachments in firefights, if those reports are to be trusted.",
+        "market_name": "TODO",
+        "slogan": "TODO",
+        "flavor_text": "TODO",
         "effect": "grants 2 additional parry actions against either range or melee when taking a defensive stance",
         "slot": "chest, exotic",
         "load": "2 RI, 2 MT",
@@ -10,7 +12,9 @@
     },
     {
         "name": "Balance Tail",
-        "flavor_text": "An implanted, long and fine, gyroscopic tail to improve balance. Much more effective as a cybernetic compared to biotech.",
+        "market_name": "TODO",
+        "slogan": "TODO",
+        "flavor_text": "TODO",
         "effect": "grants +20 to all tests to prevent falling over",
         "slot": "tail, exotic",
         "load": "1 MT",
@@ -19,7 +23,9 @@
     },
     {
         "name": "Mechanical Tail",
-        "flavor_text": "Some people, who want trans-species operations but physically can't safely make it through bio-engineering, get themselves a cybernetic tail instead of a biological one. Recovering from the operation is said to wreck the body with extreme back pain and it does not offer benefit over a biological tail.",
+        "market_name": "TODO",
+        "slogan": "TODO",
+        "flavor_text": "TODO",
         "effect": "allows a new combat action: tail attack (unarmed attack with flexible quality; is at -10 to evade)",
         "slot": "tail, exotic",
         "load": "2 RI, 1 MT",
@@ -28,7 +34,9 @@
     },
     {
         "name": "Mechanical Tendrils",
-        "flavor_text": "Thin, agile, tentacle-like bionic limbs. Since the human brain can only really deal with two arms and two legs, any additional limbs - especially such exotic, flexible ones - make movement harder. But since their load is so low, many of them may be taken safely.",
+        "market_name": "TODO",
+        "slogan": "TODO",
+        "flavor_text": "TODO",
         "effect": "Adds a additional combat action each round - which may be either an unarmed attack with the Flexible quality, or a Parry. This action suffers a -10 penalty. \\\\% This implant can be taken once per by size category (e.g. 4 for average humans, 3 for small, 6 for huge characters).",
         "slot": "tail, exotic",
         "load": "1/2 RI, 1/2 MT, rounded up",
@@ -37,16 +45,20 @@
     },
     {
         "name": "Mind Screws",
-        "flavor_text": "A pain inducer implanted directly into the brain. Even the most iron-willed of individuals will eventually go berserk.",
+        "market_name": "TODO",
+        "slogan": "TODO",
+        "flavor_text": "TODO",
         "effect": "Penalties from pain are doubled. Tests to prevent \\emph{Frenzy} take a penalty equal to the amount of days since the user was last \\emph{Frenzied}. \\\\ When provoked, in distress or straight up entering combat, the user needs to pass a \\emph{Restraint} test (which he may refuse) - on a failure he is \\emph{Frenzied} for as long as he is in combat, or until he is \\emph{Stunned} (against which he gains a +20 bonus to resist). ",
         "slot": "brain",
         "load": "1 RI",
         "cost": "55",
-        "mods": "-"
+        "mods": null
     },
     {
         "name": "Neural Supercharger / \"Wings of Light\"",
-        "flavor_text": "A spine replacement improving physical capabilities and reaction speed, granting the feeling of time freezing around oneself. It is as invasive as it is effective.",
+        "market_name": "TODO",
+        "slogan": "TODO",
+        "flavor_text": "TODO",
         "effect": "On use (as a free action during declaration) this grants an additional action and doubles MS for one combat round. While this is active, the character can dodge or parry non-primitive ranged weapons. Each use causes D10-(unused RI) exhaustion. May be used each combat round.",
         "slot": "nervous system, exotic",
         "load": "3 RI, 2 MT",
@@ -55,7 +67,9 @@
     },
     {
         "name": "Splitting Arms",
-        "flavor_text": "Inspired by a popular, old scifi movie this implant allows additional limbs without being particularly obvious under long sleeves. Using more than two arms takes a lot out of the human brain, so delicate tasks become more difficult.",
+        "market_name": "TODO",
+        "slogan": "TODO",
+        "flavor_text": "TODO",
         "effect": "this arm can split into two arms with 3 digits each; grants an additional action if it can be performed simultaneously; all actions taken while the arm is split are at an additional -5 penalty",
         "slot": "arm, exotic",
         "load": "2 RI, 1 MT",

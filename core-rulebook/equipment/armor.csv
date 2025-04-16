@@ -17,7 +17,7 @@ body,Improvised vest,0,9,0,0,torso,0,Improvised,35,3.5,6
 body,Stab vest,0,9,0,0,torso,0,immune to Piercing rule,85,3.5,6
 body,Flak vest,0,12,0,0,torso,1,,480,4,5
 body,UA pauldrons,0,0,10,0,arms,0,,390,3.5,3
-body,Ghost suit,0,10,7,0,"torso, arms",2,does not stop a skin-tight holoprojector;includes piezoelectric exo-frame,530,12,3
+body,Ghost suit,0,10,7,0,"torso, arms",2,does not stop a Holoskin;includes piezoelectric exo-frame,530,12,3
 body,Locust armor,0,8,0,2,torso,2,includes jump pack,540,38,3
 body,Node armor,0,14,4,0,"torso, arms",3,can carry AI;includes piezoelectric exo-frame,590,14,3
 body,EVA suit,0,3,3,3,"torso, arms, legs",2,vac-sealed,600,2.5,3
