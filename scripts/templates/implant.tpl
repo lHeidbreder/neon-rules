@@ -1,5 +1,6 @@
 \ifthenelse{
 	\NOT \equal{\lastcategory}{@type@}
+	\AND \NOT \isempty{@type@}
 }{
 	\end{multicols}
 	\subsection{@type@}
@@ -17,6 +18,6 @@
 	\ifthenelse{\NOT \isempty{@load@}}{\textit{Load:} @load@}{}
 	\ifthenelse{\NOT \isempty{@slot@}}{; \textit{Slot:} @slot@}{}
 	\\%
-	\textit{Available Mods:} @mods@
+	\ifthenelse{\NOT \isempty{@mods@}}{\textit{Available Mods:} @mods@}{}
 \renewcommand{\lastcategory}{@type@}
 \par

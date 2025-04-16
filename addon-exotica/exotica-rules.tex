@@ -18,148 +18,18 @@
     A less than reputable doctor may offer to implant more, looking to make some quick money. Potential side effects are vastly unpredictable and wild, and usually don't last long, as the patient will not last long.
 
     \chapter{Augments}
+    \newcommand{\lastcategory}{-}
     \vspace{-10mm}
     \section{Cybernetics}
     \vspace{5mm}
     \begin{multicols}{2}
-    \implant{Aegis Shield Arms}
-        {Created by a private military contractor its blueprints are eagerly protected. Those who can get their hands on a set however have been reported to rival LEGION detachments in firefights, if those reports are to be trusted.}
-        {grants 2 additional parry actions against either range or melee when taking a defensive stance}
-        {chest, exotic}
-        {2 RI, 2 MT}
-        {505}
-        {Cheap, Integrated Weaponry, Perfect fit, Powerful, Tough, Wrongly fitted}
-    \implant{Balance Tail}
-        {An implanted, long and fine, gyroscopic tail to improve balance. Much more effective as a cybernetic compared to biotech.}
-        {grants +20 to all tests to prevent falling over}
-        {tail, exotic}
-        {1 MT}
-        {175}
-        {Cheap, Integrated Weaponry, Perfect fit, Wrongly fitted, Compartment}
-    \implant{Mechanical Tail}
-        {Some people, who want trans-species operations but physically can't safely make it through bio-engineering, get themselves a cybernetic tail instead of a biological one. Recovering from the operation is said to wreck the body with extreme back pain and it does not offer benefit over a biological tail.}
-        {allows a new combat action: tail attack (unarmed attack with flexible quality; is at -10 to evade)}
-        {tail, exotic}
-        {2 RI, 1 MT}
-        {180}
-        {Cheap, Integrated Weaponry, Perfect fit, Powerful, Tough, Wrongly fitted, Compartment}
-    \implant{Mechanical Tendrils}
-	    {Thin, agile, tentacle-like bionic limbs.
-	    	Since the human brain can only really deal with two arms and two legs, any additional limbs
-	    		- especially such exotic, flexible ones - make movement harder.
-    		But since their load is so low, many of them may be taken safely.}
-    	{Adds a additional combat action each round
-    		- which may be either an unarmed attack with the Flexible quality,
-    		or a Parry.
-    		This action suffers a -10 penalty.
-    		\\%
-    	This implant can be taken once per by size category (e.g. 4 for average humans, 3 for small, 6 for huge characters).}
-    	{tail, exotic}
-    	{1/2 RI, 1/2 MT, rounded up}
-    	{195}
-    	{Cheap, Integrated Weaponry, Perfect fit, Powerful, Tough, Wrongly fitted, Compartment}
-    \implant{Mind Screws}
-    	{A pain inducer implanted directly into the brain.
-    		Even the most iron-willed of individuals will eventually go berserk.}
-    	{Penalties from pain are doubled.
-    		Tests to prevent \emph{Frenzy} take a penalty equal to
-    		the amount of days since the user was last \emph{Frenzied}.
-    		\\
-    		When provoked, in distress or straight up entering combat, the user needs to pass a \emph{Restraint} test
-    		(which he may refuse)
-    		- on a failure he is \emph{Frenzied} for as long as he is in combat,
-    		or until he is \emph{Stunned} (against which he gains a +20 bonus to resist).
-    		}
-    	{brain}
-    	{1 RI}
-    	{55}
-    	{-}
-    \implant{Neural Supercharger / "Wings of Light"}
-    	{A spine replacement improving physical capabilities and reaction speed,
-    		granting the feeling of time freezing around oneself.
-    		It is as invasive as it is effective.}
-    	{On use (as a free action during declaration) this grants an additional action and doubles MS for one combat round.
-    		While this is active, the character can dodge or parry non-primitive ranged weapons.
-    		Each use causes D10-(unused RI) exhaustion.
-    		May be used each combat round.}
-    	{nervous system, exotic}
-    	{3 RI, 2 MT}
-    	{520}
-    	{Perfect Fit, Wrongly Fitted}
-    \implant{Splitting Arms}
-        {Inspired by a popular, old scifi movie this implant allows additional limbs without being particularly obvious under long sleeves. Using more than two arms takes a lot out of the human brain, so delicate tasks become more difficult.}
-        {this arm can split into two arms with 3 digits each; grants an additional action if it can be performed simultaneously; all actions taken while the arm is split are at an additional -5 penalty}
-        {arm, exotic}
-        {2 RI, 1 MT}
-        {190}
-        {Cheap, Compartment, Wrongly fitted, Powerful, Tough, Inconspicuous, Perfect fit, Integrated Weaponry}
+    	\luaimport{components/cybernetics.json}{implant.tpl}{components/cyber}
     \end{multicols}
 
     \section{Biotech}
     \vspace{5mm}
     \begin{multicols}{2}
-    \implant{Fire Breath}
-        {An additional organ similar to toxin sacs but producing highly flammable liquids instead. The user may spit out said liquid - in a manner not unlike vomiting - up to a few meters and an implant at the tip of the tongue allows ignition.}
-        {The user gains access to the following weapon profile twice per day:
-    	\par%
-    	\begin{itemize}
-    		\item Shots: 3
-    		\item Damage: 1D10+2
-    		\item Range: 4m
-    		\item Flame, Scatter, Spray
-    	\end{itemize}
-	    It uses Ranged Combat Training (Integrated Weaponry).
-        }
-        {exotic}
-        {2 MT}
-        {185}
-        {Perfect fit, Wrongly fitted}
-	\implant{Hematophagia}
-        {A conversion of large parts of the human metabolism.}
-        {The user may drink untreated blood to substitute water and food consumption. Poison and extremely heavy pollutants may still cause poisoning.}
-        {exotic}
-        {1 MT}
-        {170}
-        {-}
-    \implant{Reactive Resilience Layer}
-    	{A dense mesh just below the skin that repels attacks.
-    		To avoid unwanted side effects this requires conscious effort to activate
-    		- otherwise it was found to notably obstruct movement.}
-    	{When taking a defensive stance, the user may make a free toughness test to reduce the damage of an incoming hit by its DoS. The user takes a level of exhaustion per hit taken.}
-    	{skin, exotic}
-    	{2 RI, 3 MT}
-    	{180}
-    	{Perfect Fit, Wrongly Fitted}
-    \implant{Smoke Vents}
-        {A defensive implant created in a project that was originally inspired by an octopus' ink blast. It grants the skin the ability to emit a dark smoke about once every 20 hours, giving the user time to escape perilous situations.}
-        {cause a Blast (3), Smoke effect around the character up to once a day}
-        {skin, exotic}
-        {1 MT}
-        {60}
-        {Cheap, Perfect fit, Wrongly fitted}
-    \implant{Tail Spike}
-        {A biological tail with a stinger. It's fully articulate but not exactly precise.}
-        {allows a new combat action: tail attack (unarmed attack with piercing quality; is at -10 to evade); if the character also has Venom Sacs, the attack applies this toxin; resistance is at an additional -10}
-        {tail, exotic}
-        {1 MT}
-        {175}
-        {Cheap, Integrated Weaponry, Perfect fit, Powerful, Tough, Wrongly fitted, Compartment}
-    \implant{Venom Sacs}
-    	{Small sacs filled with toxin produced within the body.
-    		Without other implants it has to be vomited up
-    		regularly in a painful emptying process
-    		as to not spill into the rest of the body
-    		and suffer from guaranteed overdoses.}
-    	{Produces and stores one type of chemical.
-    		Which chemicals are available is up to the GM.
-    		\\%
-    		It produces one dose per week and stores up to 3 at a time.
-    		If more are produced than can be stored,
-    			the user suffers its effects, detriments and overdose effects.}
-    	{exotic}
-    	{2 MT}
-    	{cR 545}
-    	{Integrated Weaponry (ranged weapon with spray rule), Perfect fit, Wrongly fitted}
+    	\luaimport{components/biotech.json}{implant.tpl}{components/bio}
 	\end{multicols}
 
 	\chapter{Patches}
