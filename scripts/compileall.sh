@@ -116,7 +116,7 @@ package () {
   cd ${file_output_dir}
   if command -v -- "jar" &> /dev/null; then
     jar Mcf rulepackage.zip .
-  elif command -v -- "" &> /dev/null; then
+  elif command -v -- "zip" &> /dev/null; then
     zip -r rulepackage.zip .
   else
     python3 -c "import shutil; shutil.make_archive('rulepackage', 'zip', '.')"

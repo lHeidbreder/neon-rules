@@ -287,7 +287,6 @@ _rulepackage/
 *.csvin
 *.jsonin
 *.fade.png
-scripts/dependencies/
 
 # csv import temp files
 */out.txt

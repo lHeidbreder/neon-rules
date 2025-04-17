@@ -73,40 +73,6 @@
         "avg_raw_dmg": ""
     },
     {
-        "name": "%Echo Mind",
-        "Group": "Demon",
-        "picture_path": "",
-        "flavor_text": "An entity comprised of fragmented faces and distorted memories, constantly shifting and merging. It appears as a walking amalgamation of countless identities.",
-        "difficulty_social": "0",
-        "difficulty_combat": "0",
-        "hit_locations": "Headless Hexaped",
-        "size": "Small",
-        "hp": "88.00%",
-        "armor": "",
-        "avg_armor": "",
-        "cr": "",
-        "int": "",
-        "ins": "",
-        "ch": "",
-        "dex": "",
-        "ag": "",
-        "con": "",
-        "str": "",
-        "melee": "0",
-        "range": "0",
-        "itemize:skills": [
-            ""
-        ],
-        "sum:combat_skills": "",
-        "sum:social_skills": "",
-        "itemize:traits": [
-            ""
-        ],
-        "positive_traits-negative_traits": "",
-        "weapons": "",
-        "avg_raw_dmg": ""
-    },
-    {
         "name": "Nullshade",
         "Group": "Demon",
         "picture_path": "nullshade.png",
@@ -259,40 +225,6 @@
         "avg_raw_dmg": ""
     },
     {
-        "name": "%Cognitron Parasite",
-        "Group": "Demon",
-        "picture_path": "",
-        "flavor_text": "A mass of interconnected tendrils that infiltrate the minds of individuals, with a central core that pulses with malevolent energy. %TODO: unhappy with this",
-        "difficulty_social": "0",
-        "difficulty_combat": "0",
-        "hit_locations": "Worm",
-        "size": "Puny",
-        "hp": "66.00%",
-        "armor": "",
-        "avg_armor": "",
-        "cr": "",
-        "int": "",
-        "ins": "",
-        "ch": "",
-        "dex": "",
-        "ag": "",
-        "con": "",
-        "str": "",
-        "melee": "0",
-        "range": "0",
-        "itemize:skills": [
-            ""
-        ],
-        "sum:combat_skills": "",
-        "sum:social_skills": "",
-        "itemize:traits": [
-            ""
-        ],
-        "positive_traits-negative_traits": "",
-        "weapons": "",
-        "avg_raw_dmg": ""
-    },
-    {
         "name": "Despair Strider",
         "Group": "Mutant",
         "picture_path": "despair-strider.png",
@@ -325,40 +257,6 @@
             "INCORPOREAL"
         ],
         "positive_traits-negative_traits": "2",
-        "weapons": "",
-        "avg_raw_dmg": ""
-    },
-    {
-        "name": "%Memory Wraith",
-        "Group": "Demon",
-        "picture_path": "",
-        "flavor_text": "Phantom-like entities with fragmented faces and ephemeral bodies that appear to be constantly dissolving. They emit a faint, haunting hum.",
-        "difficulty_social": "0",
-        "difficulty_combat": "0",
-        "hit_locations": "Human",
-        "size": "Average",
-        "hp": "100.00%",
-        "armor": "",
-        "avg_armor": "",
-        "cr": "",
-        "int": "",
-        "ins": "",
-        "ch": "",
-        "dex": "",
-        "ag": "",
-        "con": "",
-        "str": "",
-        "melee": "0",
-        "range": "0",
-        "itemize:skills": [
-            ""
-        ],
-        "sum:combat_skills": "",
-        "sum:social_skills": "",
-        "itemize:traits": [
-            ""
-        ],
-        "positive_traits-negative_traits": "",
         "weapons": "",
         "avg_raw_dmg": ""
     },
