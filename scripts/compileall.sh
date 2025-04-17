@@ -115,7 +115,7 @@ package () {
   echo "Creating ZIP package"
   cd ${file_output_dir}
   if command -v -- "jar" &> /dev/null; then
-    jar Mcf rulepackage.zip .
+    jar Mvcf rulepackage.zip .
   elif command -v -- "zip" &> /dev/null; then
     zip -r rulepackage.zip .
   else
@@ -126,7 +126,7 @@ package () {
 
 shopt -s nullglob
 shopt -s globstar
-main_dir="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )/.."
+main_dir=$(echo "$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )/.." | sed -E 's~/\w+/\.\.~~')
 console_output_dir="${main_dir}/scripts/compiler_output"
 file_output_dir="${main_dir}/_rulepackage"
 
