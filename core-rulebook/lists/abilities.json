@@ -195,7 +195,7 @@
         "name": "Hand-To-Hand Basics",
         "cost": "250",
         "prerequisites": "Combat Training (Striking or Grappling) Trained",
-        "effect": "When fighting armed enemies, the character counts as armed as well."
+        "effect": "When fighting armed enemies, the character counts as armed as well. Unarmed fighting loses the \\emph{Improvised} rule."
     },
     {
         "name": "Hax0r e1337",
