@@ -89,7 +89,7 @@
         "cost": "75",
         "availability": "3",
         "description": "A light powder to be rubbed into the gums. Tastes of and feels like chalk.",
-        "effect": "The user appears less threatening: his Charisma is increased by 5. His opponents are not willing to attack him unprovoked.",
+        "effect": "The user appears less threatening: his Charisma is increased by 30. His opponents are not willing to attack him unprovoked.",
         "detriment": "The user does not gain damage reduction from Con.",
         "duration": "1 hour",
         "load": "1 MT, 2 RI",

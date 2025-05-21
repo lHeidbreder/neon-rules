@@ -7,7 +7,7 @@
 	(covers: @covers@)\\
 	\begin{tabular}{|r|r|r|r|}
 		\hline
-		Head & Chest & Arms & Legs\\
+		Head & Torso & Arms & Legs\\
 		\hline
 		@head@ & @chest@ & @arms@ & @legs@\\
 		\hline

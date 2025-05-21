@@ -1,4 +1,19 @@
 %Custom Environments
+
+%% A simple item environment that lists the items inline, separated by comma
+\NewDocumentEnvironment{commalist}{+b}
+{
+	\def\myseparator{}%
+	\renewcommand{\item}[1][]{%
+		\unskip
+		\ifx\myseparator\empty
+		\else,
+		\fi
+		\def\myseparator{, }
+		\ignorespaces
+	}
+}%
+{#1}
 \newenvironment{exampleblock}[1][1]
 {
 	\par

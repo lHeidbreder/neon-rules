@@ -193,7 +193,7 @@
         "type": "blade",
         "name": "Chain Blade",
         "flavor": "A high-power chainsaw functioning as a sword blade. Why someone invented this, no one knows.",
-        "effect": "Tearing",
+        "effect": "Tearing, Rending",
         "weight": "1.2",
         "price": "40",
         "requirement": "",

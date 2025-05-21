@@ -65,7 +65,7 @@
     },
     {
         "name": "Discardable Plate",
-        "effect": "Adds an outer layer that can be discarded easily. Useful when on fire or drenched in acid. When hit by a weapon with \\emph{Rending}, the plate is destroyed, but the armor is unharmed. ",
+        "effect": "Adds an outer layer that can be discarded easily. Useful when on fire or drenched in acid. When hit by a weapon with \\emph{Rending}, the plate is a separate layer of 3 armor - unless fully pierced, only this plate is destroyed. ",
         "price": "12",
         "slots": "1",
         "powered": "N",
