@@ -16,8 +16,8 @@ blade,Knife Blade,"Short, stiff blade. Good penetration, can cut if necessary.",
 blade,Sword Blade,A long blade that cuts and stabs well.,+3 damage,0.9,35,,4
 blade,Sword Breaker,A knife blade with two offshoots to make parrying easier.,Protective,0.2,40,,4
 blade,Sword Whip,A sword blade that can transform into a whip on command., Can freely once per combat round swap between a \emph{Sword Blade} and a \emph{Thorn Whip}. It fumbles on any roll of 96+. ,1.1,40,,3
-blade,Inverse Blade,A curved sword blade with its edge on the inside. Edge alignment is more difficult but cuts become more devastating.,Add Dex to melee damage bonus calculation,0.9,40,,3
-blade,Plasma Cutter,A knife-sized blade consisting of finely shaped plasma. Cuts through heat much more than force and thereby is easier to use by weaker people.,+6 damage; halve Melee Damage Bonus,0.6,40,,3
+blade,Inverse Blade,A curved sword blade with its edge on the inside. Edge alignment is more difficult but cuts become more devastating.,Add extra damage equal to \emph{Dex/10},0.9,40,,3
+blade,Plasma Cutter,A knife-sized blade consisting of finely shaped plasma. Cuts through heat much more than force and thereby is easier to use by weaker people.,Increases damage by 7, but removes Melee Damage Bonus.,0.6,40,,3
 blade,Chain Blade,"A high-power chainsaw functioning as a sword blade. Why someone invented this, no one knows.",Tearing,1.2,40,,3
 blade,Mono Blade,"Advertised as a near mono-molecular edge, this is the sharpest knife blade built yet.",Piercing,1,40,,3
 blade,Sickle Blade,An oddly shaped blade that - while having rather short effective range - is incredibly hard to fight against.,parries of 86+ against this weapon always fail,1,40,,3
