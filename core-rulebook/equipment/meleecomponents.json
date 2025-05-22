@@ -43,7 +43,7 @@
         "type": "hilt",
         "name": "Caged Hilt",
         "flavor": "Shielding the sword wielding hand in some way is an old idea but, like many old ideas, still holds merit this day, so this handle was fitted with a protective basket.",
-        "effect": "One-handed; Disarming the wielder is at a -20; The wielding hand (location: arm) has +3 armor",
+        "effect": "One-handed; Disarming the wielder suffers a -20. The wielding hand (location: arm) has +3 armor. The weapon (generally) cannot be \\emph{Inconspicuous}.",
         "weight": "0.4",
         "price": "18",
         "requirement": "",
