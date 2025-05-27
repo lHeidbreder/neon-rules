@@ -90,10 +90,10 @@
         "type": "Cybernetic",
         "slogan": "Replace. Recover. Remain.",
         "flavor_text": "Be ready for any danger, again and again. With its design, we reduce operational costs for healthcare providers, contributing to more efficient care delivery.",
-        "effect": "The body part won't bleed and can't receive biotech implants or benefit from them. Zone HP is reduced to 20%. As long as the interface is not destroyed, an extremity can be replaced in 15 seconds (5 rounds). \\\\ Note: most mods are applied to the mount point but some may be applied to the limb instead as per GM discretion",
+        "effect": "The body part won't bleed and can't receive biotech implants or benefit from them. Zone HP is reduced to 20%. As long as the interface is not destroyed, an extremity can be replaced in 15 seconds (5 rounds). Such replacement limbs cost cR 20. \\\\ Note: most mods are applied to the mount point but some may be applied to the limb instead as per GM discretion",
         "slot": "one extremity",
         "load": "1 RI",
-        "cost": "40 to install the interface; cR 20 per limb",
+        "cost": "60",
         "mods": "Cheap, Compartment, Wrongly fitted, Powerful, Tough, Inconspicuous, Perfect fit"
     },
     {
@@ -102,10 +102,10 @@
         "type": "Cybernetic",
         "slogan": "Enter the world - become a part.",
         "flavor_text": "As the indispensable foundation for total neuro-digital integration, the Level One Neural Connector enables seamless biocircuit access, cybernetic compatibility, and real-time connection to the AR Net. With L1NC, the world doesn't just appear - it responds.",
-        "effect": "The user is connected to the global AR network. Most important information is shared through it: Shopping windows, guides, traffic signs, to name a few. People without this implant essentially live in another world, and are generally suspicious within the city. \\\\ Due to its importance, the L1NC has been optimized to the extreme. It is the safest implant out there, having almost no load on the body. It is also shielded from EMP. ",
+        "effect": "The user is connected to the global AR network. Most important information is shared through it: Shopping windows, guides, traffic signs, to name a few. People without this implant essentially live in another world, and are generally suspicious within the city. \\\\ Due to its importance, the L1NC has been optimized to the extreme. It is the safest implant out there, having almost no load on the body. It is also shielded from EMP. This implant is free at character creation, and every person is assumed to have one.",
         "slot": null,
         "load": null,
-        "cost": "45 (but free at character creation)",
+        "cost": "45",
         "mods": "None"
     },
     {
