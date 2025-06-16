@@ -102,7 +102,7 @@
         "availability": "4",
         "description": "A fine, light red powder that glitters in the light. Tends to cause a slight nose bleed.",
         "effect": "Perception is increased by 30.",
-        "detriment": "Penalties from pain are doubled.",
+        "detriment": "Resisting Overstimulation suffers a -30 penalty and its effects last twice as long",
         "duration": "1 hour",
         "load": "1 RI",
         "overdose_effect": "A random one of the user's senses becomes \\emph{Impaired} from overexposure. If it is already impaired, it is completely lost."
