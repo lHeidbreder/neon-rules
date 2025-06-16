@@ -1,7 +1,7 @@
 [
     {
         "name": "Ablative Coating",
-        "effect": "A heat dispersing coat, layered upon the armor, that increases armor against laser and other heat-based weaponry by 20%.",
+        "effect": "A heat dispersing coat, layered upon the armor, that increases armor against laser and other heat-based weaponry by 50%. It also makes the armor immune to the \\emph{Sticky} rule.",
         "price": "40",
         "slots": "1",
         "powered": "N",

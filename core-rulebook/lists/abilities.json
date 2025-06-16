@@ -159,7 +159,7 @@
         "name": "Fighting Retreat",
         "cost": "400",
         "prerequisites": "Battle Sense",
-        "effect": "Allows a single attack to be made when disengaging. This attack counts as being performed in movement."
+        "effect": "Allows a single standard melee attack to be made when disengaging. This attack counts as being performed in movement."
     },
     {
         "name": "Flip Up",

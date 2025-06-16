@@ -65,7 +65,7 @@
         "cost": "70",
         "availability": "3",
         "description": "A light blue drink with a metallic taste. High quality products will have small flakes that feel terrible in the throat.",
-        "effect": "After 2 combat rounds: The user gains D10 armor. Good quality product - usually sold at triple the price - will always grant 10.",
+        "effect": "After 2 combat rounds: The user gains D10 natural armor. Good quality product - usually sold at triple the price - will always grant 10.",
         "detriment": "The user's Ranged Base, Dex and Ag are reduced by D10.",
         "duration": "3 hours",
         "load": "2 MT",

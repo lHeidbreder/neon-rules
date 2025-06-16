@@ -298,7 +298,7 @@
         "mag": "1",
         "ammo": "crossbow bolt",
         "reload": "6",
-        "special_rules": "Silenced",
+        "special_rules": "Silenced, Reliable",
         "price": "35",
         "weight": "3",
         "availability": "2"
@@ -810,7 +810,7 @@
         "mag": "1",
         "ammo": "arrow",
         "reload": "1",
-        "special_rules": "Silenced",
+        "special_rules": "Silenced, Reliable",
         "price": "35",
         "weight": "1,5",
         "availability": "2"
@@ -826,7 +826,7 @@
         "mag": "1",
         "ammo": "arrow",
         "reload": "1",
-        "special_rules": "Silenced; Suffers a penalty to hit equal to the user\u2019s strength below 40.",
+        "special_rules": "Silenced, Reliable; Suffers a penalty to hit equal to the user\u2019s strength below 40.",
         "price": "30",
         "weight": "3,2",
         "availability": "2"
