@@ -1,24 +1,11 @@
-\def\rwimport#1{\luaimport{equipment/rangedweapons-#1.csvin}{ranged.tpl}{#1}}
-\newcommand{\rangesec}[1]{
-	\subsubsection{#1}
-	\vspace{8mm}
-	\begin{multicols}{2}
-	\rwimport{#1}
-	\end{multicols}
-}
 \pagebreak %quickfix
 \section{Ranged}
 \label{sec:rangedweapons}
 \subsection{Weapons}
-\rangesec{Pistol}
-\rangesec{Short Rifle}
-\pagebreak %quickfix
-\rangesec{Long Rifle}
-\rangesec{Heavy}
-\rangesec{Launcher}
-\rangesec{Bow}
-\rangesec{Throwing}
-\rangesec{Traps}
+\newcommand{\lastgroup}{ }
+\begin{multicols}{2}
+	\luaimport{equipment/rangedweapons.json}{ranged.tpl}{equipment/ranged}
+\end{multicols}
 
 \subsection{Mods}
 \subsubsection{Constraints}

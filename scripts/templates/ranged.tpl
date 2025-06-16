@@ -1,4 +1,13 @@
 \vspace{2mm}
+\ifthenelse{\equal{\lastgroup}{@group@}}{}{
+    \end{multicols}
+    \par
+}
+\ifthenelse{\equal{\lastgroup}{@group@}}{}{
+    \subsubsection{@group@}
+    \vspace{8mm}
+    \begin{multicols}{2}
+}
 	\begin{minipage}{\columnwidth}
 		\begin{flavorblock}[@name@]
 			@flavor_text@
@@ -24,3 +33,4 @@
 		\ifthenelse{\isempty{@special_rules@}}{}{\textbf{Special Rules}: @special_rules@}
 	\end{minipage}
 	\par
+\renewcommand{\lastgroup}{@group@}
