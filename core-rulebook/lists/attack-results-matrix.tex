@@ -1,0 +1,30 @@
+\section{Attack-Defense Matrix} %TODO: name properly
+\label{attack-defense-matrix}
+
+Attack in head column, Defense in head row.
+\par
+\begin{tabularx}{\textwidth}{l|XXXX}
+	& Crit Fail & Fail & Success & Crit Success \\
+	\hline
+	Crit Fail & Nothing & Nothing & Small attack advantage & Big defense advantage \\
+	Fail & Simple hit & Nothing & Nothing & Small defense advantage \\
+	Success & Small attack advantage & Simple hit & Nothing & Nothing \\
+	Crit Success & Big attack advantage & Small attack advantage & Simple hit & Nothing
+\end{tabularx}
+
+
+\begin{sitemize}
+\item \textbf{Small attack advantage:}
+	The attack deals double damage.
+\item \textbf{Big attack advantage:}
+	The attack deals triple damage.
+\vspace{1mm}
+\hrule
+\vspace{1mm}
+\item \textbf{Small defense advantage:}
+	The attacker suffers the defender's weapon damage when in melee.
+	At range the attacker's weapon jams.
+\item \textbf{Big defense advantage:}
+	The attacker is disarmed (or, alternatively, knocked prone) and suffers the defender's weapon damage when in melee.
+	At range the attacker's weapon jams and cooks off, dealing its damage to the attacker.
+\end{sitemize}
