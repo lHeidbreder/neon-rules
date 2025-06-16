@@ -25,7 +25,7 @@
     },
     {
         "name": "Booster Sheath",
-        "effect": "A melee weapon can be draw from this sheath in a free action. When combined with Quick Draw a weapon draw from this sheath can be combined with one non-flurry attack as a free action. When the armor mod is also powered, this attack gains 4 damage.",
+        "effect": "A melee weapon can be draw from this sheath in a free action. When combined with Quick Draw, drawing a weapon from this sheath may be combined with a single standard attack as a free action. When the armor mod is also powered, the attack may be any maneuver instead.",
         "price": "24",
         "slots": "1",
         "powered": "N",
