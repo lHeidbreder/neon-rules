@@ -4,6 +4,7 @@
 }{
 	\end{multicols}
 	\subsection{@type@}
+	\label{implants-@type@}
 	\vspace{5mm}
 	\begin{multicols}{2}
 }{}
