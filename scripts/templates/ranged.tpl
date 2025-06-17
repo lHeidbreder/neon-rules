@@ -4,6 +4,7 @@
     \par
 }
 \ifthenelse{\equal{\lastgroup}{@group@}}{}{
+	\needspace{0.5\textheight}
     \subsubsection{@group@}
     \vspace{8mm}
     \begin{multicols}{2}

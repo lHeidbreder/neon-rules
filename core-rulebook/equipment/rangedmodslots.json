@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Pistol",
+        "itemize:slots": [
+            "Upper Rail",
+            "Lower Rail",
+            "Barrel",
+            "Muzzle",
+            "Core"
+        ]
+    },
+    {
+        "name": "Rifle",
+        "itemize:slots": [
+            "Upper Rail",
+            "Lower Rail",
+            "Two Side Rails",
+            "Barrel",
+            "Muzzle",
+            "Core"
+        ]
+    },
+    {
+        "name": "Heavy / Launcher",
+        "itemize:slots": [
+            "Upper Rail",
+            "Lower Rail",
+            "Lower Rail (restricted to bipod / tripod)",
+            "Two Side Rails",
+            "Barrel",
+            "Muzzle",
+            "Core"
+        ]
+    },
+    {
+        "name": "Bow",
+        "itemize:slots": [
+            "Upper Rail",
+            "Core"
+        ]
+    }
+]

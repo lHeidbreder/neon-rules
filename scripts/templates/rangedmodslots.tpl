@@ -1,0 +1,9 @@
+\begin{mdframed}[
+	style=objectframe,
+	frametitle={@name@:},
+]
+\vspace{2mm}
+\begin{sitemize}
+	@itemize:slots@
+\end{sitemize}
+\end{mdframed}
