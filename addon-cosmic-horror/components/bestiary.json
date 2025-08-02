@@ -5,7 +5,7 @@
         "picture_path": "cyren.png",
         "flavor_text": "The Cyren is a haunting figure that appears as a tall, slender woman shrouded in an aura of eerie luminescence. Despite her humanoid form, there is an unmistakable air of surreal power that surrounds her, hinting at her connection to forces beyond comprehension.",
         "difficulty_social": "5",
-        "difficulty_combat": "3",
+        "difficulty_combat": "4",
         "hit_locations": "Human",
         "size": "Tall",
         "hp": "150.00%",
@@ -26,7 +26,8 @@
             "Deception Experienced",
             "Interrogation Trained",
             "Education: Voice Athlete Informed",
-            "Combat (Striking, Grappling) Trained"
+            "Grappling Combat Training Trained",
+            "Striking Combat Training Trained"
         ],
         "itemize:traits": [
             "DEADLY MELEE",
@@ -43,7 +44,7 @@
         "picture_path": "",
         "flavor_text": "A titanic, shadowy figure with elongated limbs and a cloak made of swirling cosmic energy. Its face is obscured by a shifting void, and its presence induces a deep sense of despair.",
         "difficulty_social": "4",
-        "difficulty_combat": "11",
+        "difficulty_combat": "13",
         "hit_locations": "Human",
         "size": "Enormous",
         "hp": "300.00%",
@@ -60,8 +61,9 @@
         "melee": "65",
         "range": "50",
         "itemize:skills": [
-            "Two Combat Training (Striking and Grappling) Experienced",
-            "Intimidate Mastered"
+            "Grappling Combat Training Experienced",
+            "Striking Combat Training Experienced",
+            "Intimidation Mastered"
         ],
         "itemize:traits": [
             "DEADLY MELEE",
@@ -117,7 +119,7 @@
         "picture_path": "",
         "flavor_text": "A mirage-like figure with an ever-changing form, appearing as a distorted reflection of those who gaze upon it. It leaves a trail of ephemeral echoes as it moves.",
         "difficulty_social": "3",
-        "difficulty_combat": "2",
+        "difficulty_combat": "3",
         "hit_locations": "Human",
         "size": "Average",
         "hp": "100.00%",
@@ -136,7 +138,7 @@
         "itemize:skills": [
             "Appeal Experienced",
             "Deception Experienced",
-            "Combat Training (Grappling) Trained"
+            "Grappling Combat Training Trained"
         ],
         "sum:combat_skills": "2",
         "sum:social_skills": "2",
@@ -154,7 +156,7 @@
         "picture_path": "",
         "flavor_text": "A hooded figure composed of fractured clocks and timepieces, with skeletal hands reaching out from within the flowing robes. It leaves a trail of distorted temporal echoes in its wake.",
         "difficulty_social": "4",
-        "difficulty_combat": "5",
+        "difficulty_combat": "6",
         "hit_locations": "Human",
         "size": "Tall",
         "hp": "150.00%",
@@ -171,7 +173,7 @@
         "melee": "72",
         "range": "67",
         "itemize:skills": [
-            "Combat Training (Two-handed Blade) Experienced",
+            "Two-handed Blade Combat Training Experienced",
             "Animal Handling Trained"
         ],
         "sum:combat_skills": "3",
@@ -211,7 +213,7 @@
         "itemize:skills": [
             "Wirewalk Trained",
             "Logic Trained",
-            "Intimidate Experienced",
+            "Intimidation Experienced",
             "Education: Mechanics Familiar"
         ],
         "sum:combat_skills": "2",
