@@ -7,7 +7,9 @@
         "slogan": "Eliminate pionics. Eliminate risk.",
         "effect": " Allows access to Psionics but limits the user to the \\emph{Blank} discipline. Grants +10 to Psionics.",
         "slot": "brain",
-        "load": "2 RI, 1 MT",
+        "load": "@RI@ RI, @MT@ MT",
+        "RI": 2,
+        "MT": 1,
         "cost": "488",
         "mods": null,
         "_comment": null
@@ -20,7 +22,9 @@
         "slogan": "Elevated capabilities securing the future.",
         "effect": "allows access to Psionics",
         "slot": "brain",
-        "load": "2 RI, 2 MT",
+        "load": "@RI@ RI, @MT@ MT",
+        "RI": 2,
+        "MT": 2,
         "cost": "465",
         "mods": null,
         "_comment": null
@@ -33,7 +37,9 @@
         "slogan": "A strategic investment in operational longevity.",
         "effect": "Psionics cast by the wearer or targeting him suffer a -30 penalty.",
         "slot": "skin",
-        "load": "1 MT",
+        "load": "@MT@ MT",
+        "RI": 0,
+        "MT": 1,
         "cost": "55",
         "mods": "Perfect fit, Aesthetic, Wrongly fitted, Inconspicuous"
     },
@@ -45,7 +51,7 @@
         "flavor_text": "Optimal psionic performance necessitates strategic amplification. This micro-engineered device, seamlessly interfacing with the Cassandra Focus, dynamically modulates psychic energy flow, mitigating instability and maximizing projection intensity.",
         "effect": "The user gains +10 to cast powers of a certain discipline. This may be taken multiple times, for different disciplines.",
         "slot": null,
-        "load": "1 RI",
+        "load": "@RI@ RI",
         "cost": "55",
         "mods": "Perfect fit"
     },
@@ -57,7 +63,9 @@
         "slogan": "Optimized resilience.",
         "effect": "Reduce cost of powers by 2, down to a minimum of 0.",
         "slot": "chest",
-        "load": "3 MT",
+        "load": "@MT@ MT",
+        "RI": 0,
+        "MT": 3,
         "cost": "470",
         "mods": null,
         "_comment": null
