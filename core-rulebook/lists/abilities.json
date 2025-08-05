@@ -382,7 +382,7 @@
         "name": "Supreme Awareness",
         "cost": "350",
         "prerequisites": "Instinct 55 or Light Sleeper",
-        "effect": "Roll twice when determining initiative or \\{Gathering Senses}, picking the higher result."
+        "effect": "Roll twice when determining initiative or \\emph{Gathering Senses}, picking the higher result."
     },
     {
         "name": "Tactical Advance",
