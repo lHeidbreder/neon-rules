@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+#Example usage:
+#   find -name '*background*.json' -exec python scripts/python/calc-race-or-bg.py {} \;
+#   find -name '*race*json' -exec python scripts/python/calc-race-or-bg.py -r {} \;
+
 from typing import List
 
 import re
@@ -47,9 +51,12 @@ def load_cost_file(path: Path) -> dict:
     return rtn
 
 def lookup(dict: dict, key):
-    if key not in dict.keys():
-        return int(dict[re.sub('\(.*?\)$','',key).strip()])
-    return int(dict[key])
+    if key in dict.keys():
+        return int(dict[key])
+    stripped_key = re.sub('\(.*?\)$','',key).strip()
+    if stripped_key in dict.keys():
+        return int(dict[stripped_key])
+    return 0
 
 def lookup_boon_cost(key: str) -> int:
     if not key: return 0
@@ -145,7 +152,9 @@ with open(args.file) as fhandle:
         # cost of traits, if given
         traitcost = 0
         if not try_access_key(line, 'traitcostoverride'):
-            for e in (line['itemize:traits'].split(';') if isinstance(line['itemize:traits'], str) else line['itemize:traits']):
+            traits = line['itemize:traits'] if 'itemize:traits' in line.keys() else []
+            for e in (traits.split(';') if isinstance(traits, str) else traits):
+                dbgprint(e)
                 traitcost += lookup_trait_cost(e)
         else: traitcost = try_access_key(line, 'traitcostoverride')
         dbgprint(f"Trait Cost: {traitcost}")
