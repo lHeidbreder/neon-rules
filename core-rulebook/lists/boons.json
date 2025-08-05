@@ -19,7 +19,7 @@
     },
     {
         "name": "Augmented",
-        "effect": "The characters starts the game with augmentation. Limits depend on the boon's level: \\begin{enumerate} \\item 1 RI+MT, cR 150 \\item 2 RI+MT, cR 350 \\item 4 RI/MT, cR 600 \\end{enumerate}",
+        "effect": "The characters starts the game with augmentation. Limits depend on the boon's level: \\begin{enumerate} \\item 1 RI/MT, cR 150 \\item 2 RI/MT, cR 350 \\item 4 RI/MT, cR 600 \\end{enumerate}",
         "cost": "6/15/30",
         "cost_addendum": null,
         "_comment": null
