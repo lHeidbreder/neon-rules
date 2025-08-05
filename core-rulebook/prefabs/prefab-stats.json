@@ -41,10 +41,9 @@
             ""
         ],
         "itemize:equipment": [
-            "inconspicuous Jump Joints",
-            "EMP shiv (simple hilt, knife blade, EMP Field)",
-            "one small fuel cell",
-            "leftover money: cR 21"
+            "wrongly fitted Cat Legs",
+            "shiv (simple hilt, knife blade)",
+            "leftover money: cR 7"
         ]
     },
     {
@@ -92,9 +91,12 @@
             ""
         ],
         "itemize:equipment": [
-            "cheap Space Invader",
-            "one dose of Speed",
-            "leftover money: cR 25"
+            "Space Invader",
+            "Subdermal Jack",
+            "two doses of Speed",
+            "Mk IIa PES Prototype",
+            "M10",
+            "leftover money: cR 5"
         ]
     },
     {
@@ -148,7 +150,9 @@
             "one dose of Method",
             "one dose of Speed",
             "one dose of Regenerex",
-            "leftover money: cR 39"
+            "one dose of Raze",
+            "one dose of Sunshine",
+            "leftover money: cR 8"
         ]
     },
     {
@@ -198,11 +202,11 @@
             ""
         ],
         "itemize:equipment": [
-            "Tenadermis",
+            "Armor Skin",
             "Amber Bull",
             "30 shots of 7.2mm AP",
             "one dose of Regenerex",
-            "leftover money: cR 7"
+            "leftover money: cR 11"
         ]
     },
     {
@@ -247,19 +251,13 @@
             ""
         ],
         "itemize:equipment": [
-            "Armored Suit (mod: Up-Armor - zone: arms)",
-            "Chemical Light Sticks",
-            "Duct Tape",
+            "Mk IIa PES Prototype",
             "Lighter",
             "M10 with two magazines",
             "Rape Whistle",
             "two doses of Raze",
-            "SOS Knife Kit",
-            "small Tactical Softcase",
-            "Voice Modulator perfect fit",
-            "Wound Dressing",
-            "Wound Sealant Foam",
-            "Leftover money: cR 18"
+            "Voice Makeup",
+            "Leftover money: cR 15"
         ]
     }
 ]
