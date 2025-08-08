@@ -30,7 +30,7 @@ dbgprint(f"Running in {'RACE' if args.israce else 'BACKGROUND'} calculation mode
 
 # GLOBALS
 char_factor = 0.8
-free_characteristics = 200 if args.israce else 0 # 200 points of characteristics free for races
+FREE_CHARACTERISTIC = 25 if args.israce else 0 # base characteristic is 25 each, anything beyond costs
 free_xp_in_skills = 0 if args.israce else 2200 # 2200 XP worth for free on backgrounds
 
 known_boons = None
@@ -53,7 +53,7 @@ def load_cost_file(path: Path) -> dict:
 def lookup(dict: dict, key):
     if key in dict.keys():
         return int(dict[key])
-    stripped_key = re.sub('\(.*?\)$','',key).strip()
+    stripped_key = re.sub(r'\(.*?\)$','',key).strip()
     if stripped_key in dict.keys():
         return int(dict[stripped_key])
     return 0
@@ -111,11 +111,12 @@ with open(args.file) as fhandle:
     for line in reader:
         calculated_cost = 0
 
-        # calculate the cost as the sum of:
-        characteristics = sum([parseint(line[c]) for c in ('cr','int','ins','ch','dex','ag','con','str')])
-        characteristics += sum([parseint(e) for e in re.findall(r"(?<=\+)\d+", restitch_iterable(line['itemize:other_modifiers'] or ""))])
+        char_keys = ('cr','int','ins','ch','dex','ag','con','str')
+        avg_other_modifiers = sum([parseint(e) for e in re.findall(r"(?<=\+)\d+", restitch_iterable(line['itemize:other_modifiers'] or ""))]) / len(char_keys)
+        characteristics = [parseint(line[c])+avg_other_modifiers for c in char_keys]
+        characteristics = [0.1*pow(c-FREE_CHARACTERISTIC, 2) for c in characteristics]
         dbgprint(f"Characteristics: {characteristics}")
-        calculated_cost += (characteristics-free_characteristics)*char_factor
+        calculated_cost += sum(characteristics)
 
         # (XP cost of skills)/250
         # TODO: This does not parse correctly. I will consider it close enough for now.
