@@ -29,7 +29,7 @@ args = parser.parse_args()
 dbgprint(f"Running in {'RACE' if args.israce else 'BACKGROUND'} calculation mode")
 
 # GLOBALS
-char_factor = 0.8
+MAX_DEVIATION: float = 0.3
 FREE_CHARACTERISTIC = 25 if args.israce else 0 # base characteristic is 25 each, anything beyond costs
 free_xp_in_skills = 0 if args.israce else 2200 # 2200 XP worth for free on backgrounds
 
@@ -104,6 +104,10 @@ def restitch_iterable(iterable: List | str) -> str:
         return str
     return ';'.join(iterable)
 
+def characteristic_cost(characteristic: int) -> float:
+    cost = 0.1*pow(characteristic-FREE_CHARACTERISTIC, 2)
+    return cost if characteristic > FREE_CHARACTERISTIC else -cost
+
 ###STEPS###
 # open CSV
 with open(args.file) as fhandle:
@@ -114,7 +118,7 @@ with open(args.file) as fhandle:
         char_keys = ('cr','int','ins','ch','dex','ag','con','str')
         avg_other_modifiers = sum([parseint(e) for e in re.findall(r"(?<=\+)\d+", restitch_iterable(line['itemize:other_modifiers'] or ""))]) / len(char_keys)
         characteristics = [parseint(line[c])+avg_other_modifiers for c in char_keys]
-        characteristics = [0.1*pow(c-FREE_CHARACTERISTIC, 2) for c in characteristics]
+        characteristics = [characteristic_cost(c) for c in characteristics]
         dbgprint(f"Characteristics: {characteristics}")
         calculated_cost += sum(characteristics)
 
@@ -162,6 +166,7 @@ with open(args.file) as fhandle:
         calculated_cost += traitcost
 
         variant = (" - " + line['variant']) if ('variant' in line.keys() and line['variant'] is not None) else ""
-        verdict = "close enough" if round(calculated_cost) == int(line['cost'] or 0) else "\033[91mtoo far\033[0m"
+        deviation = abs(calculated_cost - int(line['cost'] or 0))
+        verdict = "close enough" if deviation <= MAX_DEVIATION else "\033[91mtoo far\033[0m"
         print(f"{line['name']}{variant}: {round(calculated_cost,2):0.2f} (currently {line['cost']}, {verdict})")
         dbgprint("\n")
