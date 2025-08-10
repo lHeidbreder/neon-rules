@@ -50,7 +50,7 @@
     },
     {
         "name": "Broad Education",
-        "effect": "The character may choose a second background and gain its skill bonuses as well.",
+        "effect": "The character may choose a second background and gain its bonuses as well. Bonuses to skills are added, but may not exceed +3.",
         "cost": "17",
         "cost_addendum": "+ new background"
     },
@@ -236,7 +236,7 @@
     },
     {
         "name": "Veteran",
-        "effect": "The character is older and more experienced. He gains his background's skill bonuses again, up to the skill's maximum.",
+        "effect": "The character is older and more experienced. He gains his background's bonuses again. Bonuses to skills are added up, but are limited to +3.",
         "cost": "17",
         "cost_addendum": "+ new background"
     }
