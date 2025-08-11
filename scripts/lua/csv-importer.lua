@@ -108,16 +108,22 @@ function importfromCSV(csvpath, templatepath, outpath)
     for key, line in pairs(lines) do
         local filledtemplate = template
         
-        for j=1,table.getn(headers) do
-            
-            if line[j] == nil then
-                line[j] = ""
+        local MAX_ITERATIONS = 3
+        for k=1,MAX_ITERATIONS do
+            for j=1,table.getn(headers) do
+                
+                if line[j] == nil then
+                    line[j] = ""
+                end
+                
+                --escape "%" for both lua and latex
+                line[j] = string.gsub(line[j], "%%", "\\%%%%")
+                
+                filledtemplate = string.gsub(filledtemplate, "@"..headers[j].."@", line[j])
             end
-            
-            --escape "%" for both lua and latex
-            line[j] = string.gsub(line[j], "%%", "\\%%%%")
-            
-            filledtemplate = string.gsub(filledtemplate, "@"..headers[j].."@", line[j])
+            if not string.match(filledtemplate, "@[^%s@]*@") then
+                break
+            end
         end
 		
 		--clean every pattern without matching column
