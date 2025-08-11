@@ -12,7 +12,7 @@
 \end{tabular}
 \\
 \begin{tabular}{ll}
-\textbf{Race} & @race@ \\
+\textbf{Anthrotype} & @race@ \\
 \textbf{Background} & @background@
 \end{tabular}
 \end{center}
