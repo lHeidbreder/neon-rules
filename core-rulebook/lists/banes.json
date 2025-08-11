@@ -155,7 +155,7 @@
     },
     {
         "name": "Dietary Rules",
-        "effect": "The character will only eat certain things due to personal reasons. Whenever the character is forced to eat something that does not align with his values, e.g. as to not starve to death, this infers penalties equal to the bane's value.",
+        "effect": "The character will only eat certain things due to personal reasons. Whenever the character is forced to eat something that does not align with his values, e.g. as to not starve to death, he will suffer general penalties of at least -30 resulting from guilt.",
         "cost": "5",
         "cost_addendum": "",
         "note": ""
