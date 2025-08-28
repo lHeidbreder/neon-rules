@@ -3,6 +3,7 @@
 	\AND \NOT \isempty{@type@}
 }{
 	\end{multicols}
+	\needspace{50mm}
 	\subsection{@type@}
 	\label{implants-@type@}
 	\vspace{5mm}

@@ -1,6 +1,6 @@
 \begin{mdframed}[
     style=objectframe,
-    needspace=0.6\columnwidth,
+    needspace=0.4\columnwidth,
     frametitlefont=\parhead\bfseries,
     frametitle={@name@ \ifthenelse{\isempty{@variant@}}{}{/ @variant@} (@cost@ GP)},
 ]
