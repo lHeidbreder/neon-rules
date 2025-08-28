@@ -17,8 +17,8 @@
     },
     {
         "name": "Auto-Loader",
-        "effect": "A reload assistance system added to the outer thighs which halves reload times for magazine-fed pistols (without the \\emph{Single Loader} rule). When present on both legs, this will allow reloading both guns while dual wielding. ",
-        "price": "14",
+        "effect": "An automated reload assistance system. When used, the character's \\emph{Reload} skill may be placed by the Auto-Loader's target value 50.",
+        "price": "40",
         "slots": "1",
         "powered": "N",
         "weight": "1.2 kg"
