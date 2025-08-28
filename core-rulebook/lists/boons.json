@@ -7,8 +7,8 @@
     },
     {
         "name": "Ambidextrous",
-        "effect": "The character can use either hand equally good. Dual Wielding and Maneuver: Flurry only cost half. When combined with Dual Wielding, removes penalties for dual wielding melee weapons and pistols completely.",
-        "cost": "12",
+        "effect": "The character can use either hand equally good. The abilities \\emph{Dual Wielding} and \\emph{Maneuver: Flurry} only cost half.",
+        "cost": "5",
         "cost_addendum": ""
     },
     {

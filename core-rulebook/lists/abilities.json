@@ -117,7 +117,7 @@
         "name": "Dual Wielding",
         "cost": "250",
         "prerequisites": "Instinct 30, Dexterity 40",
-        "effect": "Halves penalties for dual wielding. Has to be taken once for melee and once for ranged separately."
+        "effect": "Halves penalties for dual wielding, reducing them by at least 10. Has to be taken once for melee and once for ranged separately."
     },
     {
         "name": "Earth Shaker",
@@ -250,6 +250,12 @@
         "cost": "500",
         "prerequisites": "Intelligence 45",
         "effect": "The character can add their Education's full bonus, regardless of it surpassing the Skill's bonus."
+    },
+    {
+        "name": "Off-Hand Expert",
+        "cost": 400,
+        "prerequisites": null,
+        "effect": "The character suffers no penalties from using her off-hand."
     },
     {
         "name": "On Your Feet!",
