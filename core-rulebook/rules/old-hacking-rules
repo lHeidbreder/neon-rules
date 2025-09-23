@@ -1,0 +1,18 @@
+
+	\chapter{Hacking}
+	\section{Basics}
+	Any piece of cyberware that in some way has a connection to another device may attempt a hacking attack. If someone is monitoring the target device, that person may defend or counterattack.\\
+	The attacker’s goal is to reduce the target devices’ \emph{integrity} to 0, working much like damage in combat. If the integrity reaches 0, the attacker gains access to read, write and execute. Attacking gains a modifier called the attacking device’s \emph{processing power}.\\
+	The device protects itself by means summarized as “\emph{firewall}”, working much like a character’s damage threshold.
+	\section{Actions}
+	Any action when hacking is an extended action, requiring a full combat round or more. They can also often times not be interrupted.
+	\subsection*{Attack}
+	When attacking a device, the character may once per turn spend an action to attack.
+	He makes a Computer Operation check,
+		dealing 1D5+DoS to the target’s integrity,
+		reduced by the target’s firewall.
+	Failing critically locks the attacking device out of the target device indefinitely.
+	\subsection*{Restore}
+	As a defender - instead of counterattacking - may restore integrity to the target of the attack. As an action once per turn the defender may make a Computer Operation test to restore 2+DoS integrity.
+	\subsection*{Pull the plug}
+	Obviously any contender can disconnect the device from the network if it is physically accessible. This immediately stops the hacking attempt and may have - potentially devastating - side effects, which are up to the GM.

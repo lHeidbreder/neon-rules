@@ -1,0 +1,1562 @@
+[
+    {
+        "caliber": "7.2mm",
+        "type": "FMJ",
+        "effect": "-",
+        "price": "2",
+        "unitofsale": "30",
+        "weight": "4g",
+        "per": "40",
+        "availability": "5"
+    },
+    {
+        "caliber": "7.2mm",
+        "type": "AP",
+        "effect": "-1 dmg, +4 AP",
+        "price": "4",
+        "unitofsale": "30",
+        "weight": "4g",
+        "per": "40",
+        "availability": "4"
+    },
+    {
+        "caliber": "7.2mm",
+        "type": "Hot Load",
+        "effect": "+1 dmg, +4 AP, +15 on hearing checks to identify the shooter's position",
+        "price": "12",
+        "unitofsale": "30",
+        "weight": "4g",
+        "per": "40",
+        "availability": "3"
+    },
+    {
+        "caliber": "7.2mm",
+        "type": "Hot AP",
+        "effect": "+10 AP, +15 on hearing checks to identify the shooter's position",
+        "price": "16",
+        "unitofsale": "30",
+        "weight": "4g",
+        "per": "40",
+        "availability": "3"
+    },
+    {
+        "caliber": "7.2mm",
+        "type": "JSP",
+        "effect": "+2 dmg, -3 AP",
+        "price": "4",
+        "unitofsale": "30",
+        "weight": "4g",
+        "per": "40",
+        "availability": "4"
+    },
+    {
+        "caliber": "7.2mm",
+        "type": "JHP",
+        "effect": "+4 dmg, -6 AP",
+        "price": "8",
+        "unitofsale": "30",
+        "weight": "4g",
+        "per": "40",
+        "availability": "3"
+    },
+    {
+        "caliber": "7.2mm",
+        "type": "Cold Load",
+        "effect": "-3 dmg, -3 AP, -15 on hearing checks to identify the shooter's position",
+        "price": "5",
+        "unitofsale": "30",
+        "weight": "4g",
+        "per": "40",
+        "availability": "4"
+    },
+    {
+        "caliber": "7.2mm",
+        "type": "Cold AP",
+        "effect": "-4 dmg, -15 on hearing checks to identify the shooter's position",
+        "price": "5",
+        "unitofsale": "30",
+        "weight": "4g",
+        "per": "40",
+        "availability": "3"
+    },
+    {
+        "caliber": "7.2mm",
+        "type": "Cold JSP",
+        "effect": "-6 AP, -15 on hearing checks to identify the shooter's position",
+        "price": "8",
+        "unitofsale": "30",
+        "weight": "4g",
+        "per": "40",
+        "availability": "3"
+    },
+    {
+        "caliber": "7.2mm",
+        "type": "Cold JHP",
+        "effect": "+2 dmg, -8 AP, -15 on hearing checks to identify the shooter's position",
+        "price": "10",
+        "unitofsale": "30",
+        "weight": "4g",
+        "per": "40",
+        "availability": "3"
+    },
+    {
+        "caliber": "7.2mm",
+        "type": "Incendiary",
+        "effect": "-2 AP, will ignite flammable materials hit",
+        "price": "8",
+        "unitofsale": "30",
+        "weight": "4g",
+        "per": "40",
+        "availability": "3"
+    },
+    {
+        "caliber": "7.2mm",
+        "type": "Rubber Rounds",
+        "effect": "-10 dmg, 0 AP, Stun (2), every hit against the target's head reduces it's initiative by D5-1",
+        "price": "2",
+        "unitofsale": "30",
+        "weight": "4g",
+        "per": "40",
+        "availability": "4"
+    },
+    {
+        "caliber": "7.2mm",
+        "type": "Shock",
+        "effect": "-4 dmg, -5 AP, Stun (4), EMP",
+        "price": "25",
+        "unitofsale": "5",
+        "weight": "4g",
+        "per": "40",
+        "availability": "2"
+    },
+    {
+        "caliber": "7.2mm",
+        "type": "Tracer",
+        "effect": "grants a +10 bonus to hit for others shooting at the same target during this turn",
+        "price": "2",
+        "unitofsale": "5",
+        "weight": "4g",
+        "per": "40",
+        "availability": "4"
+    },
+    {
+        "caliber": "11.8x45mm",
+        "type": "FMJ",
+        "effect": "-",
+        "price": "3",
+        "unitofsale": "20",
+        "weight": "22g",
+        "per": "40",
+        "availability": "5"
+    },
+    {
+        "caliber": "11.8x45mm",
+        "type": "AP",
+        "effect": "-1 dmg, +4 AP",
+        "price": "6",
+        "unitofsale": "20",
+        "weight": "22g",
+        "per": "40",
+        "availability": "4"
+    },
+    {
+        "caliber": "11.8x45mm",
+        "type": "Hot Load",
+        "effect": "+1 dmg, +4 AP, +15 on hearing checks to identify the shooter's position",
+        "price": "18",
+        "unitofsale": "20",
+        "weight": "22g",
+        "per": "40",
+        "availability": "3"
+    },
+    {
+        "caliber": "11.8x45mm",
+        "type": "Hot AP",
+        "effect": "+10 AP, +15 on hearing checks to identify the shooter's position",
+        "price": "24",
+        "unitofsale": "20",
+        "weight": "22g",
+        "per": "40",
+        "availability": "3"
+    },
+    {
+        "caliber": "11.8x45mm",
+        "type": "JSP",
+        "effect": "+2 dmg, -3 AP",
+        "price": "6",
+        "unitofsale": "20",
+        "weight": "22g",
+        "per": "40",
+        "availability": "4"
+    },
+    {
+        "caliber": "11.8x45mm",
+        "type": "JHP",
+        "effect": "+4 dmg, -6 AP",
+        "price": "12",
+        "unitofsale": "20",
+        "weight": "22g",
+        "per": "40",
+        "availability": "3"
+    },
+    {
+        "caliber": "11.8x45mm",
+        "type": "Cold Load",
+        "effect": "-3 dmg, -3 AP, -15 on hearing checks to identify the shooter's position",
+        "price": "8",
+        "unitofsale": "20",
+        "weight": "22g",
+        "per": "40",
+        "availability": "4"
+    },
+    {
+        "caliber": "11.8x45mm",
+        "type": "Cold AP",
+        "effect": "-4 dmg, -15 on hearing checks to identify the shooter's position",
+        "price": "8",
+        "unitofsale": "20",
+        "weight": "22g",
+        "per": "40",
+        "availability": "3"
+    },
+    {
+        "caliber": "11.8x45mm",
+        "type": "Cold JSP",
+        "effect": "-6 AP, -15 on hearing checks to identify the shooter's position",
+        "price": "12",
+        "unitofsale": "20",
+        "weight": "22g",
+        "per": "40",
+        "availability": "3"
+    },
+    {
+        "caliber": "11.8x45mm",
+        "type": "Cold JHP",
+        "effect": "+2 dmg, -8 AP, -15 on hearing checks to identify the shooter's position",
+        "price": "15",
+        "unitofsale": "20",
+        "weight": "22g",
+        "per": "40",
+        "availability": "3"
+    },
+    {
+        "caliber": "11.8x45mm",
+        "type": "Incendiary",
+        "effect": "-2 AP, will ignite flammable materials hit",
+        "price": "12",
+        "unitofsale": "20",
+        "weight": "22g",
+        "per": "40",
+        "availability": "3"
+    },
+    {
+        "caliber": "11.8x45mm",
+        "type": "Rubber Rounds",
+        "effect": "-10 dmg, 0 AP, Stun (2), every hit against the target's head reduces it's initiative by D5-1",
+        "price": "3",
+        "unitofsale": "20",
+        "weight": "22g",
+        "per": "40",
+        "availability": "4"
+    },
+    {
+        "caliber": "11.8x45mm",
+        "type": "Shock",
+        "effect": "-4 dmg, -5 AP, Stun (4), EMP",
+        "price": "38",
+        "unitofsale": "5",
+        "weight": "22g",
+        "per": "40",
+        "availability": "2"
+    },
+    {
+        "caliber": "11.8x45mm",
+        "type": "Tracer",
+        "effect": "grants a +10 bonus to hit for others shooting at the same target during this turn",
+        "price": "3",
+        "unitofsale": "5",
+        "weight": "22g",
+        "per": "40",
+        "availability": "4"
+    },
+    {
+        "caliber": "6.3mm",
+        "type": "FMJ",
+        "effect": "-",
+        "price": "4",
+        "unitofsale": "40",
+        "weight": "8.6g",
+        "per": "30",
+        "availability": "5"
+    },
+    {
+        "caliber": "6.3mm",
+        "type": "AP",
+        "effect": "-1 dmg, +4 AP",
+        "price": "8",
+        "unitofsale": "40",
+        "weight": "8.6g",
+        "per": "30",
+        "availability": "4"
+    },
+    {
+        "caliber": "6.3mm",
+        "type": "Hot Load",
+        "effect": "+1 dmg, +4 AP, +15 on hearing checks to identify the shooter's position",
+        "price": "24",
+        "unitofsale": "40",
+        "weight": "8.6g",
+        "per": "30",
+        "availability": "3"
+    },
+    {
+        "caliber": "6.3mm",
+        "type": "Hot AP",
+        "effect": "+10 AP, +15 on hearing checks to identify the shooter's position",
+        "price": "32",
+        "unitofsale": "40",
+        "weight": "8.6g",
+        "per": "30",
+        "availability": "3"
+    },
+    {
+        "caliber": "6.3mm",
+        "type": "JSP",
+        "effect": "+2 dmg, -3 AP",
+        "price": "8",
+        "unitofsale": "40",
+        "weight": "8.6g",
+        "per": "30",
+        "availability": "4"
+    },
+    {
+        "caliber": "6.3mm",
+        "type": "JHP",
+        "effect": "+4 dmg, -6 AP",
+        "price": "16",
+        "unitofsale": "40",
+        "weight": "8.6g",
+        "per": "30",
+        "availability": "3"
+    },
+    {
+        "caliber": "6.3mm",
+        "type": "Cold Load",
+        "effect": "-3 dmg, -3 AP, -15 on hearing checks to identify the shooter's position",
+        "price": "8",
+        "unitofsale": "40",
+        "weight": "8.6g",
+        "per": "30",
+        "availability": "4"
+    },
+    {
+        "caliber": "6.3mm",
+        "type": "Cold AP",
+        "effect": "-4 dmg, -15 on hearing checks to identify the shooter's position",
+        "price": "10",
+        "unitofsale": "40",
+        "weight": "8.6g",
+        "per": "30",
+        "availability": "3"
+    },
+    {
+        "caliber": "6.3mm",
+        "type": "Cold JSP",
+        "effect": "-6 AP, -15 on hearing checks to identify the shooter's position",
+        "price": "8",
+        "unitofsale": "40",
+        "weight": "8.6g",
+        "per": "30",
+        "availability": "3"
+    },
+    {
+        "caliber": "6.3mm",
+        "type": "Cold JHP",
+        "effect": "+2 dmg, -8 AP, -15 on hearing checks to identify the shooter's position",
+        "price": "14",
+        "unitofsale": "40",
+        "weight": "8.6g",
+        "per": "30",
+        "availability": "3"
+    },
+    {
+        "caliber": "6.3mm",
+        "type": "Incendiary",
+        "effect": "-2 AP, will ignite flammable materials hit",
+        "price": "16",
+        "unitofsale": "40",
+        "weight": "8.6g",
+        "per": "30",
+        "availability": "3"
+    },
+    {
+        "caliber": "6.3mm",
+        "type": "Rubber Rounds",
+        "effect": "-10 dmg, 0 AP, Stun (2), every hit against the target's head reduces it's initiative by D5-1",
+        "price": "4",
+        "unitofsale": "40",
+        "weight": "8.6g",
+        "per": "30",
+        "availability": "4"
+    },
+    {
+        "caliber": "6.3mm",
+        "type": "Shock",
+        "effect": "-4 dmg, -5 AP, Stun (4), EMP",
+        "price": "50",
+        "unitofsale": "5",
+        "weight": "8.6g",
+        "per": "30",
+        "availability": "2"
+    },
+    {
+        "caliber": "6.3mm",
+        "type": "Tracer",
+        "effect": "grants a +10 bonus to hit for others shooting at the same target during this turn",
+        "price": "4",
+        "unitofsale": "5",
+        "weight": "8.6g",
+        "per": "30",
+        "availability": "4"
+    },
+    {
+        "caliber": "6.3mm",
+        "type": "Shield Breaker",
+        "effect": "-3 dmg, Disrupt",
+        "price": "38",
+        "unitofsale": "5",
+        "weight": "8.6g",
+        "per": "30",
+        "availability": "2"
+    },
+    {
+        "caliber": "11.8x112mm",
+        "type": "FMJ",
+        "effect": "-",
+        "price": "4",
+        "unitofsale": "10",
+        "weight": "50g",
+        "per": "5",
+        "availability": "4"
+    },
+    {
+        "caliber": "11.8x112mm",
+        "type": "AP",
+        "effect": "-1 dmg, +4 AP",
+        "price": "8",
+        "unitofsale": "10",
+        "weight": "50g",
+        "per": "5",
+        "availability": "4"
+    },
+    {
+        "caliber": "11.8x112mm",
+        "type": "Hot Load",
+        "effect": "+1 dmg, +4 AP, +15 on hearing checks to identify the shooter's position",
+        "price": "24",
+        "unitofsale": "10",
+        "weight": "50g",
+        "per": "5",
+        "availability": "3"
+    },
+    {
+        "caliber": "11.8x112mm",
+        "type": "Hot AP",
+        "effect": "+10 AP, +15 on hearing checks to identify the shooter's position",
+        "price": "32",
+        "unitofsale": "10",
+        "weight": "50g",
+        "per": "5",
+        "availability": "3"
+    },
+    {
+        "caliber": "11.8x112mm",
+        "type": "JSP",
+        "effect": "+2 dmg, -3 AP",
+        "price": "8",
+        "unitofsale": "10",
+        "weight": "50g",
+        "per": "5",
+        "availability": "4"
+    },
+    {
+        "caliber": "11.8x112mm",
+        "type": "JHP",
+        "effect": "+4 dmg, -6 AP",
+        "price": "16",
+        "unitofsale": "10",
+        "weight": "50g",
+        "per": "5",
+        "availability": "3"
+    },
+    {
+        "caliber": "11.8x112mm",
+        "type": "Cold Load",
+        "effect": "-3 dmg, -3 AP, -15 on hearing checks to identify the shooter's position",
+        "price": "8",
+        "unitofsale": "10",
+        "weight": "50g",
+        "per": "5",
+        "availability": "3"
+    },
+    {
+        "caliber": "11.8x112mm",
+        "type": "Cold AP",
+        "effect": "-4 dmg, -15 on hearing checks to identify the shooter's position",
+        "price": "10",
+        "unitofsale": "10",
+        "weight": "50g",
+        "per": "5",
+        "availability": "2"
+    },
+    {
+        "caliber": "11.8x112mm",
+        "type": "Cold JSP",
+        "effect": "-6 AP, -15 on hearing checks to identify the shooter's position",
+        "price": "8",
+        "unitofsale": "10",
+        "weight": "50g",
+        "per": "5",
+        "availability": "2"
+    },
+    {
+        "caliber": "11.8x112mm",
+        "type": "Cold JHP",
+        "effect": "+2 dmg, -8 AP, -15 on hearing checks to identify the shooter's position",
+        "price": "14",
+        "unitofsale": "10",
+        "weight": "50g",
+        "per": "5",
+        "availability": "2"
+    },
+    {
+        "caliber": "11.8x112mm",
+        "type": "Incendiary",
+        "effect": "-2 AP, will ignite flammable materials hit",
+        "price": "16",
+        "unitofsale": "10",
+        "weight": "50g",
+        "per": "5",
+        "availability": "3"
+    },
+    {
+        "caliber": "11.8x112mm",
+        "type": "Rubber Rounds",
+        "effect": "-10 dmg, 0 AP, Stun (2), every hit against the target's head reduces it's initiative by D5-1",
+        "price": "4",
+        "unitofsale": "10",
+        "weight": "50g",
+        "per": "5",
+        "availability": "4"
+    },
+    {
+        "caliber": "11.8x112mm",
+        "type": "Shock",
+        "effect": "-4 dmg, -5 AP, Stun (4), EMP",
+        "price": "50",
+        "unitofsale": "1",
+        "weight": "50g",
+        "per": "5",
+        "availability": "1"
+    },
+    {
+        "caliber": "11.8x112mm",
+        "type": "Tracer",
+        "effect": "grants a +10 bonus to hit for others shooting at the same target during this turn",
+        "price": "4",
+        "unitofsale": "5",
+        "weight": "50g",
+        "per": "5",
+        "availability": "4"
+    },
+    {
+        "caliber": "11.8x112mm",
+        "type": "Shield Breaker",
+        "effect": "-3 dmg, Disrupt",
+        "price": "38",
+        "unitofsale": "1",
+        "weight": "50g",
+        "per": "5",
+        "availability": "1"
+    },
+    {
+        "caliber": "15x132mm",
+        "type": "FMJ",
+        "effect": "-",
+        "price": "8",
+        "unitofsale": "5",
+        "weight": "85g",
+        "per": "4",
+        "availability": "4"
+    },
+    {
+        "caliber": "15x132mm",
+        "type": "AP",
+        "effect": "-1 dmg, +4 AP",
+        "price": "16",
+        "unitofsale": "5",
+        "weight": "85g",
+        "per": "4",
+        "availability": "3"
+    },
+    {
+        "caliber": "15x132mm",
+        "type": "Hot Load",
+        "effect": "+1 dmg, +4 AP, +15 on hearing checks to identify the shooter's position",
+        "price": "48",
+        "unitofsale": "5",
+        "weight": "85g",
+        "per": "4",
+        "availability": "2"
+    },
+    {
+        "caliber": "15x132mm",
+        "type": "Hot AP",
+        "effect": "+10 AP, +15 on hearing checks to identify the shooter's position",
+        "price": "64",
+        "unitofsale": "5",
+        "weight": "85g",
+        "per": "4",
+        "availability": "2"
+    },
+    {
+        "caliber": "15x132mm",
+        "type": "JSP",
+        "effect": "+2 dmg, -3 AP",
+        "price": "16",
+        "unitofsale": "5",
+        "weight": "85g",
+        "per": "4",
+        "availability": "3"
+    },
+    {
+        "caliber": "15x132mm",
+        "type": "JHP",
+        "effect": "+4 dmg, -6 AP",
+        "price": "32",
+        "unitofsale": "5",
+        "weight": "85g",
+        "per": "4",
+        "availability": "2"
+    },
+    {
+        "caliber": "15x132mm",
+        "type": "Incendiary",
+        "effect": "-2 AP, will ignite flammable materials hit",
+        "price": "32",
+        "unitofsale": "5",
+        "weight": "85g",
+        "per": "4",
+        "availability": "2"
+    },
+    {
+        "caliber": "15x132mm",
+        "type": "Rubber Rounds",
+        "effect": "-10 dmg, 0 AP, Stun (4), every hit against the target's head reduces it's initiative by D10",
+        "price": "8",
+        "unitofsale": "5",
+        "weight": "85g",
+        "per": "4",
+        "availability": "0"
+    },
+    {
+        "caliber": "15x132mm",
+        "type": "Shock",
+        "effect": "-4 dmg, -5 AP, Stun (4), EMP",
+        "price": "80",
+        "unitofsale": "1",
+        "weight": "85g",
+        "per": "4",
+        "availability": "1"
+    },
+    {
+        "caliber": "15x132mm",
+        "type": "Tracer",
+        "effect": "grants a +10 bonus to hit for others shooting at the same target during this turn",
+        "price": "8",
+        "unitofsale": "5",
+        "weight": "85g",
+        "per": "4",
+        "availability": "3"
+    },
+    {
+        "caliber": "12gauge",
+        "type": "Buckshot",
+        "effect": "-",
+        "price": "2",
+        "unitofsale": "10",
+        "weight": "42g",
+        "per": "8",
+        "availability": "5"
+    },
+    {
+        "caliber": "12gauge",
+        "type": "Birdshot",
+        "effect": "halves damage, ignores all negative size modifiers",
+        "price": "2",
+        "unitofsale": "10",
+        "weight": "42g",
+        "per": "8",
+        "availability": "5"
+    },
+    {
+        "caliber": "12gauge",
+        "type": "Incendiary",
+        "effect": "-2 dmg, -4 AP, ignites flammable materials hit",
+        "price": "4",
+        "unitofsale": "10",
+        "weight": "42g",
+        "per": "8",
+        "availability": "4"
+    },
+    {
+        "caliber": "12gauge",
+        "type": "Breaching Round",
+        "effect": "+3 dmg, +4 AP, halved range",
+        "price": "5",
+        "unitofsale": "10",
+        "weight": "42g",
+        "per": "8",
+        "availability": "3"
+    },
+    {
+        "caliber": "12gauge",
+        "type": "Slug",
+        "effect": "+2 AP, removes Scatter, doubles range",
+        "price": "2",
+        "unitofsale": "10",
+        "weight": "42g",
+        "per": "8",
+        "availability": "5"
+    },
+    {
+        "caliber": "12gauge",
+        "type": "Fragmentation Slug",
+        "effect": "removes Scatter but adds Blast (2) rule, doubles range",
+        "price": "8",
+        "unitofsale": "10",
+        "weight": "42g",
+        "per": "8",
+        "availability": "2"
+    },
+    {
+        "caliber": "12gauge",
+        "type": "Incendiary Slug",
+        "effect": "+1 AP, removes Scatter, doubles range, ignites flammable objects hit",
+        "price": "4",
+        "unitofsale": "10",
+        "weight": "42g",
+        "per": "8",
+        "availability": "3"
+    },
+    {
+        "caliber": "12gauge",
+        "type": "EMP Slug",
+        "effect": "-2 dmg, EMP, removes Scatter, doubles range",
+        "price": "12",
+        "unitofsale": "1",
+        "weight": "42g",
+        "per": "8",
+        "availability": "1"
+    },
+    {
+        "caliber": "12gauge",
+        "type": "Rubber Slug",
+        "effect": "-2 dmg, -6 AP, removes Scatter, doubles range, Stun (2)",
+        "price": "2",
+        "unitofsale": "10",
+        "weight": "42g",
+        "per": "8",
+        "availability": "5"
+    },
+    {
+        "caliber": "Small Fuel Tanks",
+        "type": "Napalm",
+        "effect": "ignites flammable surfaces and sticks even to non-flammable ones",
+        "price": "32",
+        "unitofsale": "1",
+        "weight": "10kg",
+        "per": "",
+        "availability": "3"
+    },
+    {
+        "caliber": "Small Fuel Tanks",
+        "type": "White Phosphorus",
+        "effect": "halves range, burns for a D5 minutes, ignites flammable surfaces and sticks even to non-flammable ones, cannot be extinguished by water",
+        "price": "64",
+        "unitofsale": "1",
+        "weight": "20kg",
+        "per": "",
+        "availability": "2"
+    },
+    {
+        "caliber": "Small Fuel Tanks",
+        "type": "Water",
+        "effect": "1 dmg, ignores armor, Stun (*the original amount of damage dice). The target makes an Athletics Test or falls prone.",
+        "price": "8",
+        "unitofsale": "1",
+        "weight": "13kg",
+        "per": "",
+        "availability": "5"
+    },
+    {
+        "caliber": "Small Fuel Tanks",
+        "type": "Liquid Helium",
+        "effect": "halves range, causes D5 exhaustion per hit",
+        "price": "64",
+        "unitofsale": "1",
+        "weight": "13kg",
+        "per": "",
+        "availability": "2"
+    },
+    {
+        "caliber": "Medium Fuel Tanks",
+        "type": "Napalm",
+        "effect": "ignites flammable surfaces",
+        "price": "61",
+        "unitofsale": "1",
+        "weight": "20kg",
+        "per": "",
+        "availability": "3"
+    },
+    {
+        "caliber": "Medium Fuel Tanks",
+        "type": "White Phosphorus",
+        "effect": "halves range, burns for a D5 minutes, ignites flammable surfaces and sticks even to non-flammable ones",
+        "price": "122",
+        "unitofsale": "1",
+        "weight": "40kg",
+        "per": "",
+        "availability": "2"
+    },
+    {
+        "caliber": "Medium Fuel Tanks",
+        "type": "Water",
+        "effect": "1 dmg, ignores armor, Stun (*the original amount of damage dice). The target makes a -10 Athletics Test or falls prone.",
+        "price": "17",
+        "unitofsale": "1",
+        "weight": "25kg",
+        "per": "",
+        "availability": "5"
+    },
+    {
+        "caliber": "Medium Fuel Tanks",
+        "type": "Liquid Helium",
+        "effect": "halves range, causes D5 exhaustion per hit",
+        "price": "122",
+        "unitofsale": "1",
+        "weight": "25kg",
+        "per": "",
+        "availability": "2"
+    },
+    {
+        "caliber": "Large Fuel Tanks",
+        "type": "Napalm",
+        "effect": "ignites flammable surfaces",
+        "price": "150",
+        "unitofsale": "1",
+        "weight": "50kg",
+        "per": "",
+        "availability": "3"
+    },
+    {
+        "caliber": "Large Fuel Tanks",
+        "type": "White Phosphorus",
+        "effect": "halves range, burns for a D5 minutes, ignites flammable surfaces and sticks even to non-flammable ones",
+        "price": "300",
+        "unitofsale": "1",
+        "weight": "100kg",
+        "per": "",
+        "availability": "1"
+    },
+    {
+        "caliber": "Large Fuel Tanks",
+        "type": "Water",
+        "effect": "1 dmg, ignores armor, Stun (*the original amount of damage dice). The target makes a -20 Athletics Test or falls prone.",
+        "price": "32",
+        "unitofsale": "1",
+        "weight": "62.5kg",
+        "per": "",
+        "availability": "4"
+    },
+    {
+        "caliber": "Large Fuel Tanks",
+        "type": "Liquid Helium",
+        "effect": "halves range, causes D10 exhaustion per hit",
+        "price": "300",
+        "unitofsale": "1",
+        "weight": "62.5kg",
+        "per": "",
+        "availability": "1"
+    },
+    {
+        "caliber": "Small Fuel Cells",
+        "type": "Standard Issue",
+        "effect": "-",
+        "price": "5",
+        "unitofsale": "1",
+        "weight": "250g",
+        "per": "2",
+        "availability": "5"
+    },
+    {
+        "caliber": "Small Fuel Cells",
+        "type": "Unstable",
+        "effect": "On a hit roll above 95 causes the weapon's damage with Blast (1) centered on the shooter.",
+        "price": "2",
+        "unitofsale": "1",
+        "weight": "250g",
+        "per": "2",
+        "availability": "6"
+    },
+    {
+        "caliber": "Medium Fuel Cells",
+        "type": "Standard Issue",
+        "effect": "-",
+        "price": "8",
+        "unitofsale": "1",
+        "weight": "750g",
+        "per": "",
+        "availability": "4"
+    },
+    {
+        "caliber": "Medium Fuel Cells",
+        "type": "Unstable",
+        "effect": "On a hit roll above 95 causes the weapon's damage with Blast (1) centered on the shooter.",
+        "price": "4",
+        "unitofsale": "1",
+        "weight": "750g",
+        "per": "",
+        "availability": "5"
+    },
+    {
+        "caliber": "Large Fuel Cells",
+        "type": "Standard Issue",
+        "effect": "-",
+        "price": "16",
+        "unitofsale": "1",
+        "weight": "1.5kg",
+        "per": "0.5",
+        "availability": "4"
+    },
+    {
+        "caliber": "Large Fuel Cells",
+        "type": "Unstable",
+        "effect": "On a hit roll above 95 causes the weapon's damage with Blast (1) centered on the shooter.",
+        "price": "11",
+        "unitofsale": "1",
+        "weight": "1.5kg",
+        "per": "0.5",
+        "availability": "4"
+    },
+    {
+        "caliber": "Small Shard Blocks",
+        "type": "Standard Issue",
+        "effect": "-",
+        "price": "2",
+        "unitofsale": "1",
+        "weight": "300g",
+        "per": "1",
+        "availability": "5"
+    },
+    {
+        "caliber": "Small Shard Blocks",
+        "type": "Crude",
+        "effect": "-50% mag size, jams on 91 and above",
+        "price": "3",
+        "unitofsale": "5",
+        "weight": "300g",
+        "per": "1",
+        "availability": "6"
+    },
+    {
+        "caliber": "Large Shard Blocks",
+        "type": "Standard Issue",
+        "effect": "-",
+        "price": "4",
+        "unitofsale": "1",
+        "weight": "1.8kg",
+        "per": "0.5",
+        "availability": "4"
+    },
+    {
+        "caliber": "Large Shard Blocks",
+        "type": "Crude",
+        "effect": "-50% mag size, jams on 91 and above",
+        "price": "6",
+        "unitofsale": "5",
+        "weight": "1.8kg",
+        "per": "0.5",
+        "availability": "4"
+    },
+    {
+        "caliber": "Large Shard Blocks",
+        "type": "Osmium Alloy",
+        "effect": "+D5 damage, -2 AP",
+        "price": "10",
+        "unitofsale": "1",
+        "weight": "3.6kg",
+        "per": "0.5",
+        "availability": "3"
+    },
+    {
+        "caliber": "Vehicle Shard Blocks",
+        "type": "Standard Issue",
+        "effect": "-",
+        "price": "12",
+        "unitofsale": "1",
+        "weight": "3.2kg",
+        "per": "0.2",
+        "availability": "2"
+    },
+    {
+        "caliber": "Vehicle Shard Blocks",
+        "type": "Crude",
+        "effect": "-50% mag size, jams on 91 and above",
+        "price": "15",
+        "unitofsale": "2",
+        "weight": "3.2kg",
+        "per": "0.2",
+        "availability": "3"
+    },
+    {
+        "caliber": "Vehicle Shard Blocks",
+        "type": "Osmium Alloy",
+        "effect": "+D10 damage, -2 AP",
+        "price": "35",
+        "unitofsale": "1",
+        "weight": "6.2kg",
+        "per": "0.5",
+        "availability": "1"
+    },
+    {
+        "caliber": "20mm grenades",
+        "type": "Fragmentation",
+        "effect": "2D10+2 | 2 AP | Blast (6)",
+        "price": "20",
+        "unitofsale": "1",
+        "weight": "120g",
+        "per": "0.5",
+        "availability": "3"
+    },
+    {
+        "caliber": "20mm grenades",
+        "type": "High Explosive",
+        "effect": "2D10+6 | 5 AP | Blast (2)",
+        "price": "20",
+        "unitofsale": "1",
+        "weight": "120g",
+        "per": "0.5",
+        "availability": "3"
+    },
+    {
+        "caliber": "20mm grenades",
+        "type": "Thermobaric",
+        "effect": "3D10 | 2 AP | Blast (10) | heat-based, ignores all cover and non-vacuum-sealed or natural armor",
+        "price": "100",
+        "unitofsale": "1",
+        "weight": "120g",
+        "per": "0.5",
+        "availability": "1"
+    },
+    {
+        "caliber": "20mm grenades",
+        "type": "Incendiary",
+        "effect": "D10+2 | 0 AP | Blast (8) | ignites all flammable objects in the radius",
+        "price": "20",
+        "unitofsale": "1",
+        "weight": "120g",
+        "per": "0.5",
+        "availability": "2"
+    },
+    {
+        "caliber": "20mm grenades",
+        "type": "Buckshot Canister",
+        "effect": "2D10+3 | 5 AP | Scatter",
+        "price": "15",
+        "unitofsale": "1",
+        "weight": "120g",
+        "per": "0.5",
+        "availability": "3"
+    },
+    {
+        "caliber": "20mm grenades",
+        "type": "Slug",
+        "effect": "2D5+8 | 8 AP",
+        "price": "15",
+        "unitofsale": "1",
+        "weight": "120g",
+        "per": "0.5",
+        "availability": "3"
+    },
+    {
+        "caliber": "20mm grenades",
+        "type": "Smoke",
+        "effect": "0 | 0 AP | Blast (8), Smoke",
+        "price": "10",
+        "unitofsale": "1",
+        "weight": "120g",
+        "per": "0.5",
+        "availability": "4"
+    },
+    {
+        "caliber": "20mm grenades",
+        "type": "Flashbang",
+        "effect": "0 | 0 AP | Blast (12), Flash",
+        "price": "15",
+        "unitofsale": "1",
+        "weight": "120g",
+        "per": "0.5",
+        "availability": "3"
+    },
+    {
+        "caliber": "20mm grenades",
+        "type": "EMP",
+        "effect": "0 | 0 AP | Blast (4), EMP",
+        "price": "180",
+        "unitofsale": "1",
+        "weight": "120g",
+        "per": "0.5",
+        "availability": "1"
+    },
+    {
+        "caliber": "20mm grenades",
+        "type": "Tear Gas",
+        "effect": "0 | 0 AP | Blast (6), Smoke, Stun (0), ignores cover and non-vacuum-sealed armor, Stun is applied every round in the Smoke",
+        "price": "20",
+        "unitofsale": "1",
+        "weight": "120g",
+        "per": "0.5",
+        "availability": "3"
+    },
+    {
+        "caliber": "20mm grenades",
+        "type": "Rubber Slug",
+        "effect": "1D10+3 | 2 AP | Stun (5), hits to the head cause 2D5 initiative loss",
+        "price": "15",
+        "unitofsale": "1",
+        "weight": "120g",
+        "per": "0.5",
+        "availability": "4"
+    },
+    {
+        "caliber": "20mm grenades",
+        "type": "Riot Foam",
+        "effect": "0 | 0 AP | Blast (12), Sticky",
+        "price": "20",
+        "unitofsale": "1",
+        "weight": "120g",
+        "per": "0.5",
+        "availability": "4"
+    },
+    {
+        "caliber": "20mm grenades",
+        "type": "Signal Smoke",
+        "effect": "0 | 0 AP | Blast (4) | a smoke spewer to signal allies; comes in various colors",
+        "price": "10",
+        "unitofsale": "1",
+        "weight": "120g",
+        "per": "0.5",
+        "availability": "5"
+    },
+    {
+        "caliber": "20mm grenades",
+        "type": "Parachute Flare",
+        "effect": "D5 | 0 AP | a signal flare that burns for 3 minutes and falls at 1 meter per 3 seconds (or 1 round)",
+        "price": "15",
+        "unitofsale": "1",
+        "weight": "120g",
+        "per": "0.5",
+        "availability": "5"
+    },
+    {
+        "caliber": "20mm grenades",
+        "type": "Infrared Illuminator",
+        "effect": "1 | 0 AP | a large chemlight that emits infrared light in a very large area",
+        "price": "15",
+        "unitofsale": "1",
+        "weight": "120g",
+        "per": "0.5",
+        "availability": "4"
+    },
+    {
+        "caliber": "40mm grenades",
+        "type": "Fragmentation",
+        "effect": "2D10+7 | 2 AP | Blast (9)",
+        "price": "40",
+        "unitofsale": "1",
+        "weight": "230g",
+        "per": "1",
+        "availability": "3"
+    },
+    {
+        "caliber": "40mm grenades",
+        "type": "High Explosive",
+        "effect": "3D10+6 | 5 AP | Blast (3)",
+        "price": "40",
+        "unitofsale": "1",
+        "weight": "230g",
+        "per": "1",
+        "availability": "3"
+    },
+    {
+        "caliber": "40mm grenades",
+        "type": "Thermobaric",
+        "effect": "4D10 | 2 AP | Blast (15) | heat-based, ignores all cover and non-vacuum-sealed armor",
+        "price": "200",
+        "unitofsale": "1",
+        "weight": "230g",
+        "per": "1",
+        "availability": "1"
+    },
+    {
+        "caliber": "40mm grenades",
+        "type": "Incendiary",
+        "effect": "D10+3 | 0 AP | Blast (12) | ignites all flammable objects in the radius",
+        "price": "40",
+        "unitofsale": "1",
+        "weight": "230g",
+        "per": "1",
+        "availability": "2"
+    },
+    {
+        "caliber": "40mm grenades",
+        "type": "Buckshot Canister",
+        "effect": "3D10+3 | 5 AP | Scatter",
+        "price": "30",
+        "unitofsale": "1",
+        "weight": "230g",
+        "per": "1",
+        "availability": "3"
+    },
+    {
+        "caliber": "40mm grenades",
+        "type": "Slug",
+        "effect": "2D10+9 | 9 AP",
+        "price": "30",
+        "unitofsale": "1",
+        "weight": "230g",
+        "per": "1",
+        "availability": "3"
+    },
+    {
+        "caliber": "40mm grenades",
+        "type": "Smoke",
+        "effect": "0 | 0 AP | Blast (12), Smoke",
+        "price": "20",
+        "unitofsale": "1",
+        "weight": "230g",
+        "per": "1",
+        "availability": "4"
+    },
+    {
+        "caliber": "40mm grenades",
+        "type": "Flashbang",
+        "effect": "0 | 0 AP | Blast (18), Flash",
+        "price": "30",
+        "unitofsale": "1",
+        "weight": "230g",
+        "per": "1",
+        "availability": "3"
+    },
+    {
+        "caliber": "40mm grenades",
+        "type": "EMP",
+        "effect": "0 | 0 AP | Blast (9), EMP",
+        "price": "360",
+        "unitofsale": "1",
+        "weight": "230g",
+        "per": "1",
+        "availability": "1"
+    },
+    {
+        "caliber": "40mm grenades",
+        "type": "Tear Gas",
+        "effect": "0 | 0 AP | Blast (8), Smoke, Stun (0), ignores cover and non-vacuum-sealed armor, Stun is applied every round in the Smoke",
+        "price": "40",
+        "unitofsale": "1",
+        "weight": "230g",
+        "per": "1",
+        "availability": "3"
+    },
+    {
+        "caliber": "40mm grenades",
+        "type": "Rubber Slug",
+        "effect": "2D10+3 | 2 AP | Stun (7), hits to the head cause 2D10 initiative loss",
+        "price": "30",
+        "unitofsale": "1",
+        "weight": "230g",
+        "per": "1",
+        "availability": "4"
+    },
+    {
+        "caliber": "40mm grenades",
+        "type": "Signal Smoke",
+        "effect": "0 | 0 AP | Blast (4) | a smoke spewer to signal allies that lasts for a few minutes; comes in various colors",
+        "price": "20",
+        "unitofsale": "1",
+        "weight": "230g",
+        "per": "1",
+        "availability": "4"
+    },
+    {
+        "caliber": "40mm grenades",
+        "type": "Parachute Flare",
+        "effect": "D5+1 | 0 AP | a signal flare that burns for 5 minutes and falls at 1 meter per 3 seconds (or 1 round)",
+        "price": "30",
+        "unitofsale": "1",
+        "weight": "230g",
+        "per": "1",
+        "availability": "4"
+    },
+    {
+        "caliber": "40mm grenades",
+        "type": "Thermite",
+        "effect": "6D10+10 | 25 AP | Blast (3) | takes two rounds to get going, then burns for one minute dealing its damage every round; sticks to rough surfaces",
+        "price": "360",
+        "unitofsale": "1",
+        "weight": "230g",
+        "per": "1",
+        "availability": "2"
+    },
+    {
+        "caliber": "Micro Missiles",
+        "type": "Fragmentation",
+        "effect": "Blast (2)",
+        "price": "80",
+        "unitofsale": "4",
+        "weight": "1kg",
+        "per": "0.5",
+        "availability": "3"
+    },
+    {
+        "caliber": "Micro Missiles",
+        "type": "High Explosive",
+        "effect": "-1D10 dmg | +8 AP",
+        "price": "80",
+        "unitofsale": "4",
+        "weight": "1kg",
+        "per": "0.5",
+        "availability": "3"
+    },
+    {
+        "caliber": "Micro Missiles",
+        "type": "Incendiary",
+        "effect": "-3 dmg | -3 AP | Blast (1), ignites flammable objects",
+        "price": "80",
+        "unitofsale": "4",
+        "weight": "1kg",
+        "per": "0.5",
+        "availability": "2"
+    },
+    {
+        "caliber": "Small Rockets",
+        "type": "HEAT",
+        "effect": "4D10+5 dmg | 6 AP | Blast (3)",
+        "price": "80",
+        "unitofsale": "1",
+        "weight": "2kg",
+        "per": "0.5",
+        "availability": "3"
+    },
+    {
+        "caliber": "Small Rockets",
+        "type": "High Explosive",
+        "effect": "4D10+2 dmg | 3 AP | Blast (6)",
+        "price": "80",
+        "unitofsale": "1",
+        "weight": "2kg",
+        "per": "0.5",
+        "availability": "3"
+    },
+    {
+        "caliber": "Small Rockets",
+        "type": "Fragmentation",
+        "effect": "3D10+8 dmg | 2 AP | Blast (8)",
+        "price": "80",
+        "unitofsale": "1",
+        "weight": "2kg",
+        "per": "0.5",
+        "availability": "3"
+    },
+    {
+        "caliber": "Small Rockets",
+        "type": "Incendiary",
+        "effect": "2D10+5 dmg | 2 AP | Blast (6) | ignites flammable objects",
+        "price": "110",
+        "unitofsale": "1",
+        "weight": "2kg",
+        "per": "0.5",
+        "availability": "2"
+    },
+    {
+        "caliber": "Small Rockets",
+        "type": "Incendiary Fragmentation",
+        "effect": "3D10+5 dmg | 2 AP | Blast (8) | ignites flammable objects",
+        "price": "170",
+        "unitofsale": "1",
+        "weight": "2kg",
+        "per": "0.5",
+        "availability": "2"
+    },
+    {
+        "caliber": "Small Rockets",
+        "type": "Thermobaric",
+        "effect": "4D10+8 dmg | 3 AP | Blast (12) | heat-based, ignores all cover and non-vacuum-sealed armor",
+        "price": "400",
+        "unitofsale": "1",
+        "weight": "2kg",
+        "per": "0.5",
+        "availability": "1"
+    },
+    {
+        "caliber": "Small Rockets",
+        "type": "Thermite",
+        "effect": "6D10+10 | 25 AP | Blast (4) | takes two rounds to get going, then burns for one minute dealing its damage every round; sticks to rough surfaces",
+        "price": "400",
+        "unitofsale": "1",
+        "weight": "2kg",
+        "per": "0.5",
+        "availability": "1"
+    },
+    {
+        "caliber": "Small Rockets",
+        "type": "Kinetic Penetrator",
+        "effect": "4D10+5 dmg | 14 AP",
+        "price": "110",
+        "unitofsale": "1",
+        "weight": "2kg",
+        "per": "0.5",
+        "availability": "3"
+    },
+    {
+        "caliber": "Large Rockets",
+        "type": "HEAT",
+        "effect": "4D10+6 dmg | 8 AP | Blast (6)",
+        "price": "120",
+        "unitofsale": "1",
+        "weight": "3.5kg",
+        "per": "0.25",
+        "availability": "3"
+    },
+    {
+        "caliber": "Large Rockets",
+        "type": "High Explosive",
+        "effect": "4D10+4 dmg | 5 AP | Blast (8)",
+        "price": "120",
+        "unitofsale": "1",
+        "weight": "3.5kg",
+        "per": "0.25",
+        "availability": "3"
+    },
+    {
+        "caliber": "Large Rockets",
+        "type": "Fragmentation",
+        "effect": "3D10+11 dmg | 3 AP | Blast (10)",
+        "price": "120",
+        "unitofsale": "1",
+        "weight": "3.5kg",
+        "per": "0.25",
+        "availability": "3"
+    },
+    {
+        "caliber": "Large Rockets",
+        "type": "Incendiary",
+        "effect": "2D10+8 dmg | 2 AP | Blast (8) | ignites flammable objects",
+        "price": "180",
+        "unitofsale": "1",
+        "weight": "3.5kg",
+        "per": "0.25",
+        "availability": "2"
+    },
+    {
+        "caliber": "Large Rockets",
+        "type": "Incendiary Fragmentation",
+        "effect": "3D10+8 dmg | 3 AP | Blast (10) | ignites flammable objects",
+        "price": "260",
+        "unitofsale": "1",
+        "weight": "3.5kg",
+        "per": "0.25",
+        "availability": "2"
+    },
+    {
+        "caliber": "Large Rockets",
+        "type": "Thermobaric",
+        "effect": "5D10+10 dmg | 5 AP | Blast (18) | heat-based, ignores all cover and non-vacuum-sealed armor",
+        "price": "600",
+        "unitofsale": "1",
+        "weight": "3.5kg",
+        "per": "0.25",
+        "availability": "1"
+    },
+    {
+        "caliber": "Large Rockets",
+        "type": "Thermite",
+        "effect": "6D10+10 | 25 AP | Blast (6) | takes two rounds to get going, then burns for one minute dealing its damage every round; sticks to rough surfaces",
+        "price": "600",
+        "unitofsale": "1",
+        "weight": "3.5kg",
+        "per": "0.25",
+        "availability": "1"
+    },
+    {
+        "caliber": "Large Rockets",
+        "type": "Kinetic Penetrator",
+        "effect": "4D10+8 dmg | 18 AP",
+        "price": "180",
+        "unitofsale": "1",
+        "weight": "3.5kg",
+        "per": "0.25",
+        "availability": "3"
+    },
+    {
+        "caliber": "Arrow / Bolt",
+        "type": "Broadhead",
+        "effect": "-",
+        "price": "1",
+        "unitofsale": "20",
+        "weight": "30g",
+        "per": "10",
+        "availability": "5"
+    },
+    {
+        "caliber": "Arrow / Bolt",
+        "type": "AP",
+        "effect": "-1 dmg, +3 AP",
+        "price": "1",
+        "unitofsale": "20",
+        "weight": "30g",
+        "per": "10",
+        "availability": "4"
+    },
+    {
+        "caliber": "Arrow / Bolt",
+        "type": "Shield Breaker",
+        "effect": "-1 dmg, Disrupt",
+        "price": "25",
+        "unitofsale": "3",
+        "weight": "30g",
+        "per": "10",
+        "availability": "2"
+    },
+    {
+        "caliber": "Arrow / Bolt",
+        "type": "Syringer",
+        "effect": "-3 dmg, +1 AP, contains an empty vial to be filled with poisons or other injections that are released into a biological target when hit",
+        "price": "15",
+        "unitofsale": "3",
+        "weight": "30g",
+        "per": "10",
+        "availability": "3"
+    },
+    {
+        "caliber": "Arrow / Bolt",
+        "type": "Grapple",
+        "effect": "-4 dmg, 0 AP, half range; the mechanized grapple attaches to a rope and holds on most surfaces, except e.g. very sturdy metals or fragile materials like glass",
+        "price": "15",
+        "unitofsale": "3",
+        "weight": "30g",
+        "per": "10",
+        "availability": "3"
+    }
+]

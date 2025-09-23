@@ -1,0 +1,471 @@
+[
+    {
+        "name": "Advanced Parry",
+        "cost": "400",
+        "prerequisites": "Overly Cautious",
+        "effect": "When parrying multiple hits, distribute DoS among any amount of attackers. Penalties (e.g. resulting from \\emph{Feint}) are summed up."
+    },
+    {
+        "name": "Alpha Strike",
+        "cost": "500",
+        "prerequisites": "From The Shadows, no Beta Strike",
+        "effect": "Successfully attacking an unaware target automatically hits critically."
+    },
+    {
+        "name": "Assassin Strike",
+        "cost": "350",
+        "prerequisites": "Acrobatics Trained",
+        "effect": "Scoring a critical hit or deathblow in melee allows the character to move up to his speed in meters right away without provoking opportunity attacks."
+    },
+    {
+        "name": "Augsmith",
+        "cost": "350",
+        "prerequisites": "Craftsmanship Experienced, Bio-Maintenance Experienced",
+        "effect": "The character is capable of making and repairing cybernetic implants."
+    },
+    {
+        "name": "Bar Fighter",
+        "cost": "250",
+        "prerequisites": "Quaffing Trained",
+        "effect": "Ignore \\emph{Improvised} penalties. This obviously does not make the object more durable."
+    },
+    {
+        "name": "Battle Mind",
+        "cost": "400",
+        "prerequisites": "Intelligence 40",
+        "effect": "The character may add a tenth of his Intelligence to \\emph{Base Initiative}."
+    },
+    {
+        "name": "Battle Sense",
+        "cost": "500",
+        "prerequisites": "Perception Trained",
+        "effect": "Adds a fifth of Perception Bonus (2, 4, or 8) to initiative. Doubles penalties to attacks of opportunity against the character."
+    },
+    {
+        "name": "Beta Strike",
+        "cost": "500",
+        "prerequisites": "Constitution 40, no Alpha Strike",
+        "effect": "The user gains +10 to hit any character that has already attacked him during this combat encounter."
+    },
+    {
+        "name": "Blind Fighting",
+        "cost": "300",
+        "prerequisites": "Trained Sense: Hearing",
+        "effect": "Limits the penalties for being blinded in melee combat to -10."
+    },
+    {
+        "name": "Blurry",
+        "cost": "400",
+        "prerequisites": "Acrobatics Trained, Athletics Trained",
+        "effect": "While sprinting the character imposes a -20 to everyone trying to hit him."
+    },
+    {
+        "name": "Broken",
+        "cost": "450",
+        "prerequisites": "Courage 40",
+        "effect": "Grants +30 to fear and pinning tests, but doubles penalties from bad reputation or disposition."
+    },
+    {
+        "name": "Butcher",
+        "cost": "400",
+        "prerequisites": "no Earth Shaker",
+        "effect": "Base damage dealt with blades is increased by 1 for one-handed weapons and 2 for two-handed weapons."
+    },
+    {
+        "name": "Calming Presence",
+        "cost": "300",
+        "prerequisites": "Appeal Experienced, Calming Focus",
+        "effect": "The character may take an action to make an Appeal test at a +20 bonus. For every degree of success all allies he addresses gain a +10 to tests to resist fear and pinning."
+    },
+    {
+        "name": "Clear Target",
+        "cost": "300",
+        "prerequisites": "Ranged Base 30",
+        "effect": "Halves penalties for attacking small targets with ranged attacks."
+    },
+    {
+        "name": "Clotter",
+        "cost": "400",
+        "prerequisites": "Constitution 55",
+        "effect": "When starting to bleed, make a toughness check at a -10 penalty. On a success the character doesn't bleed."
+    },
+    {
+        "name": "Combat Focus",
+        "cost": "350",
+        "prerequisites": "Courage 40",
+        "effect": "While in combat, re-roll one failed fear or pinning test per turn."
+    },
+    {
+        "name": "Companion",
+        "cost": "200",
+        "prerequisites": "per GM discretion",
+        "effect": "The character may adopt a small companion. Details can be found in the GM companion."
+    },
+    {
+        "name": "Dominion",
+        "cost": "350",
+        "prerequisites": "Supreme Awareness",
+        "effect": "When taking a Defensive Stance and not moving, the control area is increased to 360°. The character may also take Attacks of Opportunity against \\emph{disengaging} enemies."
+    },
+    {
+        "name": "Drunken Master",
+        "cost": "400",
+        "prerequisites": "Bar Fighter",
+        "effect": "Limits the penalty to melee combat resulting from chemical detriments to -10. While intoxicated he himself is at a -20 to hit and can use maneuvers as normal.\\\\ Costs half as much for \\textit{balanced} characters."
+    },
+    {
+        "name": "Dual Wielding",
+        "cost": "250",
+        "prerequisites": "Instinct 30, Dexterity 40",
+        "effect": "Halves penalties for dual wielding, reducing them by at least 10. Has to be taken once for melee and once for ranged separately."
+    },
+    {
+        "name": "Earth Shaker",
+        "cost": "400",
+        "prerequisites": "no Butcher",
+        "effect": "Base damage dealt with blunt weapons is increased by 1 for one-handed weapons or 2 for two-handed weapons."
+    },
+    {
+        "name": "Executioner",
+        "cost": "250",
+        "prerequisites": "Trained Sense: Smell",
+        "effect": "Grants +10 to hit bleeding targets."
+    },
+    {
+        "name": "Expert Wrestler",
+        "cost": "350",
+        "prerequisites": "Melee Combat Training (Grappling) Experienced",
+        "effect": "The character is incredibly well-trained in grappling. He can initiate a Hold as a free action, as a part of another grappling maneuver."
+    },
+    {
+        "name": "Face Breaker",
+        "cost": "300",
+        "prerequisites": "Dexterity 30, Agility 30, Stunning Blow",
+        "effect": "Grants unarmed strikes the \\emph{Trauma} special rule."
+    },
+    {
+        "name": "Fighting Retreat",
+        "cost": "400",
+        "prerequisites": "Battle Sense",
+        "effect": "Allows a single standard melee attack to be made when disengaging. This attack counts as being performed in movement."
+    },
+    {
+        "name": "Flip Up",
+        "cost": "300",
+        "prerequisites": "Acrobatics Trained",
+        "effect": "When standing up, reduce the time it takes by an action: prone to standing now takes one action or a free action and a successful agility test."
+    },
+    {
+        "name": "Focused Frenzy",
+        "cost": "350",
+        "prerequisites": "Instinct 30, Intelligence 40, no Unbridled Rage",
+        "effect": "When the character is made to go berserk by some means, they can identify friend and foe. When no foes are left and the \\emph{Frenzy} does not end, friends still become valid targets."
+    },
+    {
+        "name": "Formation",
+        "cost": "300",
+        "prerequisites": "Intelligence 35",
+        "effect": "When taking Combined Actions, everyone involved is granted a +10, up to +30 when three or more characters have Formation. When \\emph{Unbreakable Bond} partners also have Formation, those two gain an additional +10."
+    },
+    {
+        "name": "From The Shadows",
+        "cost": "250",
+        "prerequisites": "Overly Cautious",
+        "effect": "During the first round of combat the character has 6 additional initiative, unless the character was ambushed or similarly caught off guard."
+    },
+    {
+        "name": "Gruesome",
+        "cost": "500",
+        "prerequisites": "Intimidation Experienced",
+        "effect": "When destroying body locations or landing a killing blow, the character makes an \\emph{Intimidation} test with a bonus equal to twice the last attack's damage. All enemies must make a Fear test, suffering a penalty equal to 10 + 5 per DoS."
+    },
+    {
+        "name": "Hand-To-Hand Basics",
+        "cost": "250",
+        "prerequisites": "Combat Training (Striking or Grappling) Trained",
+        "effect": "When fighting armed enemies, the character counts as armed as well. Unarmed fighting loses the \\emph{Improvised} rule."
+    },
+    {
+        "name": "Hax0r e1337",
+        "cost": "400",
+        "prerequisites": "Wirewalk Experienced",
+        "effect": "Add two Degrees of Success to any Wirewalk tests to crack other devices or protect your own."
+    },
+    {
+        "name": "Heroic",
+        "cost": "400",
+        "prerequisites": "Courage 40",
+        "effect": "Grants +15 to resist Fear and Pinning."
+    },
+    {
+        "name": "High Noon",
+        "cost": "500",
+        "prerequisites": "Combat Training (Pistol) Experienced, Quick Draw",
+        "effect": "When drawing a pistol, the character may take a single shot as part of the drawing action."
+    },
+    {
+        "name": "Iron Fist",
+        "cost": "400",
+        "prerequisites": "Hand-to-hand Basics, Maneuver: Stunning Blow",
+        "effect": "Unarmed strikes may now count as a having Stun(0) without inferring a penalty."
+    },
+    {
+        "name": "Lead Storm",
+        "cost": "350",
+        "prerequisites": "Strength 45",
+        "effect": "Weapons with a fire rate of more than 1 which are not launchers may be \\emph{braced} as part of an \\emph{Aim} action."
+    },
+    {
+        "name": "Light Sleeper",
+        "cost": "250",
+        "prerequisites": "Overly Cautious",
+        "effect": "The character may benefit from \\emph{Overly Cautious} when sleeping or intoxicated."
+    },
+    {
+        "name": "Marksman",
+        "cost": "300",
+        "prerequisites": "Perception Experienced",
+        "effect": "Halves penalties for long ranges."
+    },
+    {
+        "name": "Medical Insight",
+        "cost": "400",
+        "prerequisites": "Bio-Maintenance Experienced",
+        "effect": "Doubles the degrees of success on Bio-Maintenance tests to help others recover."
+    },
+    {
+        "name": "Mighty Companion",
+        "cost": "500",
+        "prerequisites": "per GM discretion",
+        "effect": "The character may adopt a powerful companion. Details can be found in the GM companion."
+    },
+    {
+        "name": "Mobile Combat",
+        "cost": "250",
+        "prerequisites": "Dexterity 30, Agility 40",
+        "effect": "Halves penalties for fighting while moving. This includes a Charge maneuver's flat penalty if the character also has \\emph{Maneuver: Charge}."
+    },
+    {
+        "name": "Natural Geek",
+        "cost": "500",
+        "prerequisites": "Intelligence 45",
+        "effect": "The character can add their Education's full bonus, regardless of it surpassing the Skill's bonus."
+    },
+    {
+        "name": "Off-Hand Expert",
+        "cost": 400,
+        "prerequisites": null,
+        "effect": "The character suffers no penalties from using her off-hand."
+    },
+    {
+        "name": "On Your Feet!",
+        "cost": "200",
+        "prerequisites": "Intimidation Trained, Heroic",
+        "effect": "The character may take an action to make an Intimidation. On a success an ally gains a +5 per Degree of Success to any action following the character's orders."
+    },
+    {
+        "name": "One-Man Artillery",
+        "cost": "350",
+        "prerequisites": "Strength 45",
+        "effect": "Launchers may be \\emph{braced} as part of an \\emph{Aim} action."
+    },
+    {
+        "name": "Overly Cautious",
+        "cost": "300",
+        "prerequisites": "Instinct 30",
+        "effect": "The character becomes jittery or nervous, but when attacked he can ignore \\emph{Unaware} conditions by passing a +20 Perception check, so long as he is not asleep, intoxicated or otherwise impaired."
+    },
+    {
+        "name": "Perfectionist Craftsman",
+        "cost": "400",
+        "prerequisites": "Craftsmanship Experienced",
+        "effect": "Doubles the degrees of success on crafting tests.",
+        "_comment": "TODO: move to crafting addon"
+    },
+    {
+        "name": "Personified Inspiration",
+        "cost": "500",
+        "prerequisites": "Charisma 40, Heroic",
+        "effect": "When the character does a daring or heroic deed, all allies present are immune to fear and pinning for the rest of the encounter or scene. Whatever counts as daring or heroic is up to GM discretion."
+    },
+    {
+        "name": "Precision Strike",
+        "cost": "300",
+        "prerequisites": "Melee Base 30",
+        "effect": "Halves penalties for attacking small targets with melee attacks."
+    },
+    {
+        "name": "Protective Stance",
+        "cost": "250",
+        "prerequisites": "Instinct 40, Constitution 40",
+        "effect": "When taking a Defensive Stance, the character may turn active actions into reactions without penalties and he may parry for allies within his melee range."
+    },
+    {
+        "name": "Provoke",
+        "cost": "350",
+        "prerequisites": "Courage 45",
+        "effect": "The character may taunt an enemy as an action, making a fitting skill test opposed by the target's \\emph{Restraint}. If the character wins, the target must attack the character at the next opportunity."
+    },
+    {
+        "name": "Quick Draw",
+        "cost": "250",
+        "prerequisites": "Dexterity 30, Agility 30",
+        "effect": "Draw smaller equipment pieces, pistols and one-handed melee weapons as a free action."
+    },
+    {
+        "name": "Rapid Reload",
+        "cost": "300",
+        "prerequisites": "Dexterity 40, Reload Experienced",
+        "effect": "When reducing reload time to below 1 action, reload as a free action."
+    },
+    {
+        "name": "Reliable Reputation",
+        "cost": "200",
+        "prerequisites": "Charisma 40, no Broken",
+        "effect": "Halves penalties from bad disposition, so long diplomacy is at all still possible."
+    },
+    {
+        "name": "Render",
+        "cost": "400",
+        "prerequisites": "Strength 55",
+        "effect": "When dealing damage with the \\emph{Tearing} rule, roll an additional dice. Still only keep one."
+    },
+    {
+        "name": "Revenge",
+        "cost": "400",
+        "prerequisites": null,
+        "effect": "When taking damage from a direct attack while \\emph{frenzied}, you may forego one of your actions later in the combat round to immediately attack the offending enemy."
+    },
+    {
+        "name": "Ripper",
+        "cost": "350",
+        "prerequisites": "Render",
+        "effect": "When dealing damage with the Tearing rule and rolling doubles, you may choose those two dice (instead of keeping just one)."
+    },
+    {
+        "name": "Sidearm",
+        "cost": "250",
+        "prerequisites": "Dual Wielding Melee \\& Ranged",
+        "effect": "When attacking in melee combat with a melee weapon in one hand and a pistol in the other, the character takes no penalties from shooting in melee combat."
+    },
+    {
+        "name": "Skull Taker",
+        "cost": "500",
+        "prerequisites": "Clear Target or Precision Strike",
+        "effect": "Removes penalties from calling hit locations for ranged attacks (when combined with Clear Target) or melee attacks (when combined with Precision Strike)."
+    },
+    {
+        "name": "Snapshot",
+        "cost": "350",
+        "prerequisites": "Steady Aim",
+        "effect": "Aiming bonuses accumulate twice as fast."
+    },
+    {
+        "name": "Stabilization",
+        "cost": "300",
+        "prerequisites": "Bio-Maintenance Trained",
+        "effect": "The character is able to staunch light bleeding on others in one round without equipment."
+    },
+    {
+        "name": "Steadfast",
+        "cost": "200",
+        "prerequisites": "Agility 30, Constitution 30",
+        "effect": "Tests to prevent falling gain a +10."
+    },
+    {
+        "name": "Steady Aim",
+        "cost": "250",
+        "prerequisites": "Intelligence 40, Strength 30",
+        "effect": "When aiming, line of sight may be broken for a round without aiming being interrupted. By GM discretion this may count even longer if the target is moving particularly predictably."
+    },
+    {
+        "name": "Strong Back",
+        "cost": "350",
+        "prerequisites": "Strength 55",
+        "effect": "The character's carry weight is increased by half."
+    },
+    {
+        "name": "Supreme Awareness",
+        "cost": "350",
+        "prerequisites": "Instinct 55 or Light Sleeper",
+        "effect": "Roll twice when determining initiative or \\emph{Gathering Senses}, picking the higher result."
+    },
+    {
+        "name": "Tactical Advance",
+        "cost": "350",
+        "prerequisites": "Stealth Experienced",
+        "effect": "While advancing carefully from one cover to the next over a distance of \\emph{MS} meters in one turn, the character counts as in cover for the whole way."
+    },
+    {
+        "name": "The Best Defense",
+        "cost": "300",
+        "prerequisites": "Courage 40",
+        "effect": "Reduces offensive penalties of Defensive Stance by 20."
+    },
+    {
+        "name": "Thick Skull",
+        "cost": "400",
+        "prerequisites": "Constitution 50",
+        "effect": "Grants immunity to the \\emph{Trauma} special rule and resisting the \\emph{Stun} special rule gains +10."
+    },
+    {
+        "name": "Threatening Presence",
+        "cost": "450",
+        "prerequisites": "Intimidation +10, no Calming Presence",
+        "effect": "Impose a -15 penalty to enemies' tests against Fear and Intimidation."
+    },
+    {
+        "name": "Too Angry To Die",
+        "cost": "200",
+        "prerequisites": "Courage 40, Constitution 40",
+        "effect": "While \\emph{frenzied}, the character has to take at least 8 damage at once or lose his head in order to die. Bleeding out only starts when the character stops frenzying, but he will in this case be unconscious when frenzy ends."
+    },
+    {
+        "name": "Trained Sense",
+        "cost": "250",
+        "prerequisites": "Perception Trained",
+        "effect": "Grants a +10 bonus to sensory checks using that sense. May be acquired once for every sense."
+    },
+    {
+        "name": "Unbreakable Bond",
+        "cost": "250",
+        "prerequisites": "being good friends; if one is \\emph{Clumsy} and the other is \\emph{Cursed by Fortuna}, the cost is only 100 XP",
+        "effect": "When around one particular close friend, that friend may make a +20 charisma check as a free action and every degree of success gives the character +10 to resist fear and pinning, as well as potentially the effects of disabling characteristics. If both of them have Unbreakable Bond, the bonus to the charisma check is +40 instead."
+    },
+    {
+        "name": "Unquestioned",
+        "cost": "500",
+        "prerequisites": "Reliable Reputation",
+        "effect": "Penalties to Social Tests resulting from the target's disbelief in authority (e.g. represented by Rebel or some Bound by Principle) do not apply."
+    },
+    {
+        "name": "Unrestrained Reflexes",
+        "cost": "300",
+        "prerequisites": "Agility 35, Dodge Trained",
+        "effect": "The character may make an additional dodge action using the same reaction. This may happen once per turn."
+    },
+    {
+        "name": "Vault",
+        "cost": "300",
+        "prerequisites": "Agility 30, Strength 30",
+        "effect": "The character can use suitable objects or features in the environment to double jump height and leap length during movement without slowing down."
+    },
+    {
+        "name": "Volume of Fire",
+        "cost": "350",
+        "prerequisites": "Ranged Combat Training (Heavy) Known",
+        "effect": "When using a weapon with a rate of fire above 1 to take a standard shot, the character may spend more ammunition to gain a +5 to hit per shot fired after the first, up to the weapon's rate of fire."
+    },
+    {
+        "name": "Walk It Off",
+        "cost": "350",
+        "prerequisites": "Constitution 40",
+        "effect": "The character can continue acting while bleeding, until completely bled out. If combined with \\emph{Tough as Nails}, the character may enter a \\emph{Frenzy} when bleeding as well."
+    },
+    {
+        "name": "Where It Hurts",
+        "cost": "400",
+        "prerequisites": "Hand-to-hand Basics, Strength 40",
+        "effect": "The character's unarmed attacks may gain the \\emph{Tearing} special rule."
+    }
+]

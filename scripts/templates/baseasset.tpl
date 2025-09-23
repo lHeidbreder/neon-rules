@@ -1,7 +1,8 @@
 \begin{minipage}{\columnwidth}
-    \textbf{@name@}\\
-    \textit{@flavor_text@}\\
-    Size: @size@\\
+    \begin{flavorblock}[@name@]
+        @flavor_text@
+    \end{flavorblock}
+	Size: @size@\\
     Concealment: @concealment@\\
     Defense: @defense@\\
     \textit{Cost:} @cost@

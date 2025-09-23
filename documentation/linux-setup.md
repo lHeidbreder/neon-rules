@@ -14,6 +14,6 @@ Run `./scripts/compileall.sh` to run all preparation scripts.
 If it does not, you are already done here.
 
 Now, to download all dependencies, run
-`cd character-sheet && latexmk -pdflua -interaction=nonstopmode character-sheet.tex`  
+`cd character-sheet && texliveonfly -c lualatex character-sheet.tex`  
 Return to the base directory and run the compile script again and the errors should be gone:
 `cd .. && ./scripts/compileall.sh`

@@ -1,0 +1,278 @@
+%Custom Environments
+
+%% A simple item environment that lists the items inline, separated by comma
+\NewDocumentEnvironment{commalist}{+b}
+{
+	\def\myseparator{}%
+	\renewcommand{\item}[1][]{%
+		\unskip
+		\ifx\myseparator\empty
+		\else,
+		\fi
+		\def\myseparator{, }
+		\ignorespaces
+	}
+}%
+{#1}
+\newenvironment{exampleblock}[1][1]
+{
+	\par
+	\vspace{-5mm}
+	\hfill
+	\begin{minipage}
+%		{\dimexpr\columnwidth-#1cm}
+		{0.9\columnwidth}
+	\begin{mdframed}[
+		backgroundcolor=Gray!65,
+		rightline=false,
+		topline=false
+		]
+}{
+	\end{mdframed}
+	\end{minipage}
+	\par
+}
+\newenvironment{flavorblock}[1][]{
+	\begin{tcolorbox}[
+		title=#1,
+		coltitle=ProcessBlue!60,
+		toptitle=1mm,
+		bottomtitle=1mm,
+		colback=Gray!30,
+		boxrule=0.2mm,
+		boxsep=0pt,
+		sharp corners
+	]
+	\itshape
+}{
+	\end{tcolorbox}
+}
+
+%%shortened itemize
+\newenvironment{sitemize}[1][10]
+{
+	\begin{itemize}
+	\vspace{-#1mm}
+	\setlength\itemsep{-#1mm}
+}{
+	\end{itemize}
+}
+
+%Custom Commands
+\newcommand{\ul}[1]{\underline{\smash{#1}}}
+%% Add an hrule, only if it is not the first page content
+%FIXME: does not work
+\newcommand{\conditionalhrule}{%
+	\ifnum\prevdepth=0
+	\else
+		\hrule
+	\fi
+}
+\newcommand{\derivedvalue}[3]{
+	\begin{samepage}
+	\subsubsection{#1 \textsubscript{\textlangle#2\textrangle}}
+	\hfill
+	\begin{minipage}{\dimexpr\columnwidth-1cm}
+		#3
+	\end{minipage}
+	\end{samepage}
+	\par
+}
+\newcommand{\specialrule}[2]{
+	\begin{minipage}{\columnwidth}
+		\textbf{\ul{#1:}}\\
+		#2
+	\end{minipage}
+    \par
+}
+\newcommand{\supply}[5]{
+	\begin{minipage}{\columnwidth}
+		\textbf{\ul{#1}}\\
+		\ifthenelse{\isempty{#5}}{}{\textit{Availability: #5}\\}
+		\textit{Price: cR #3}\\
+		\textit{Weight: #4 kg}\\
+		#2
+	\end{minipage}
+    \par
+}
+\newcommand{\service}[5]{
+	\begin{minipage}{\columnwidth}
+		\textbf{\ul{#1}}\\
+		\ifthenelse{\isempty{#5}}{}{\textit{Availability: #5}\\}
+		#2
+		\par
+		\textit{Cost:} #3 per #4
+	\end{minipage}
+	\par
+}
+\newcommand{\statuseffect}[2]{
+%	\begin{minipage}{\columnwidth}
+	\needspace{10mm}
+		\textbf{\ul{#1:}}\\
+		#2\\
+%	\end{minipage}
+%	\vspace{5mm}
+	\par
+	\vspace{-10mm}
+}
+\newcommand{\ability}[4]{
+	\begin{minipage}{\columnwidth}
+		\refstepcounter{tmpcntr}
+		\makelabelfromkey[ability]{#1}
+		\textbf{\ul{#1}} (#2 XP)\\
+		\textit{Prerequisites}: #3\\
+		\textit{Effect}:\\
+		#4\\
+	\end{minipage}
+}
+\newcommand{\maneuver}[3]{
+	\begin{minipage}{\columnwidth}
+		\textbf{\ul{MVR: #1}} (#2 XP)\\
+		\textit{Prerequisites: #3\\}
+		Effect:\\
+		Allows the use of the maneuver \emph{#1} at normal penalties.\\
+	\end{minipage}
+}
+\newcommand{\boon}[4][]{
+	\begin{minipage}{\columnwidth}
+		\makelabelfromkey[boon]{#2}
+		\textbf{\ul{\smash{#2}}} \mbox{(#4 GP\ifthenelse{\isempty{#1}}{}{ }#1)}\\
+		#3
+	\end{minipage}
+	\par
+}
+\newcommand{\bane}[4]{
+	\boon[#4]{#1}{#2}{#3}
+}
+\newcommand{\rangedweapon}[9]{
+	\vspace{2mm}
+	\begin{minipage}{\columnwidth}
+		\textbf{\ul{#1}}\\
+		\textit{#2}\\
+		\textbf{Weight}: #9\\
+		\textbf{Price}: #8\\
+		#3\\
+		\textbf{Mag}: #5\\
+		\textbf{Reload}: \mbox{#6 actions}\\
+		\textbf{Range}: #4\\
+		\ifthenelse{\isempty{#7}}{}{\textbf{Special Rules}: #7}
+	\end{minipage}
+	\par
+}
+\newcommand{\ifIsNumericThen}[2]{%
+	\directlua{%
+		ifisnumericprint(\luastring{#1}, \luastring{#2})
+	}%
+}
+\newcommand{\weaponmod}[5]{
+	\begin{minipage}{\columnwidth}
+		\textbf{\ul{#1}}
+		\\%
+		\begin{tabularx}{\columnwidth}{lX}
+			Slots & \ifthenelse{\isempty{#3}}{}{\textit{#3}} \\
+			Price & \textit{\ifIsNumericThen{#4}{cR }#4} \\
+			Weight & \textit{#5\ifIsNumericThen{#5}{ kg}}
+		\end{tabularx}
+		\hrule
+		\vspace{2mm}
+		#2
+	\end{minipage}
+	\par
+}
+\newcommand{\implant}[7]{
+	\begin{minipage}{\columnwidth}
+		\refstepcounter{tmpcntr}
+		\makelabelfromkey[implant]{#1}
+		\textbf{#1}\\
+		\textit{#2}\\
+		\textit{Effect}: #3\\
+		\textit{Price:} cR #6; \textit{Load:} #5\ifthenelse{\isequivalentto{-}{#4}}{}{; \textit{Slot:} #4}\\
+		\textit{Available Mods:} #7
+	\end{minipage}
+	\par
+}
+\newcommand{\augmod}[3]{
+	\begin{minipage}{\columnwidth}
+		\textbf{#1}\\
+		#2\\
+		\textit{Cost:} #3
+	\end{minipage}
+	\par
+}
+\newcommand{\mod}[2]{\item \textbf{#1}: #2}
+\newcommand{\psicomponent}[4]{\textbf{#1} & #2 & #3 & #4 \\}
+
+%prioritize graphics with fade
+\newcommand{\tryincludewithfade}[2][]{
+
+	\directlua{
+		newpath=string.gsub("#2", ".png$", ".fade.png");
+		tex.sprint("\\edef\\tmpTryincludewithfade{"..newpath.."}");
+	}
+	\expandafter
+	\IfFileExists{\tmpTryincludewithfade}
+		{\includegraphics[#1]{\tmpTryincludewithfade}}
+		{\includegraphics[#1]{#2}}
+}
+%filler images
+\newcommand{\filltopageendgraphics}[2][]{%
+	\par
+	\zsaveposy{top-\thepage}% Mark (baseline of) top of image
+	\vfill
+	\zsaveposy{bottom-\thepage}% Mark (baseline of) bottom of image
+	\smash{\tryincludewithfade[height=\dimexpr\zposy{top-\thepage}sp-\zposy{bottom-\thepage}sp\relax,#1]{#2}}%
+	\par
+}
+
+%Base Building
+\newcommand{\baselocation}[6]{
+	\begin{minipage}{\columnwidth}
+		\textbf{#1}\\
+		Size: #3; Concealment: #4; Defense: #5\\
+		Conditions: #6\\
+		\textit{Cost:} cR #2
+	\end{minipage}
+	\par
+}
+\newcommand{\baseasset}[6]{
+	\begin{minipage}{\columnwidth}
+		\textbf{#1}\\
+		\textit{#2}\\
+		Size: #3\\
+		Concealment: #4\\
+		Defense: #5\\
+		\textit{Cost:} cR #6
+	\end{minipage}
+	\par
+}
+
+%Narrative
+\newcommand{\nrule}[3]{
+	\begin{minipage}{\columnwidth}
+		\section{#1}
+		\textit{#2}\\
+		\vspace{8mm}
+		\begin{exampleblock}
+			#3
+		\end{exampleblock}
+	\end{minipage}
+	\par
+}
+
+%GM
+\newcommand{\missiontype}[3]{
+	\item
+	\textbf{#1}:
+	\textit{#2}
+	\\%
+	#3
+}
+
+%mdframed styles
+\mdfdefinestyle{objectframe}{
+	skipabove=5mm,
+	skipbelow=5mm,
+	innertopmargin=8mm,
+	backgroundcolor=cyan!15,
+	needspace=20mm,
+}

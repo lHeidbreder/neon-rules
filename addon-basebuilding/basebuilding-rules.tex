@@ -1,6 +1,6 @@
 \documentclass[12pt,a4paper,openany,usenames,dvipsnames]{book}
-\input{../core-rulebook/config/news.tex}
-\input{../core-rulebook/config/packages.tex}
+\usepackage{../core-rulebook/config/packages}
+\usepackage{../core-rulebook/config/news}
 
 \def\subtitle{Base Building}
 
@@ -94,8 +94,8 @@
 	\subsection{Crafting} \vspace{5mm}
 	\begin{multicols}{2}
 	\baseasset{Fabrication Plant}{Produces a certain type of synthetic components automatically. Produces a net value of roughly cR 100 daily, given it is continuously supplied.}{4}{-1}{-2}{160,000}
-	\baseasset{Forge}{Enables Forge crafting. The Size and Cost depends on the forge's size.}{1 / 2 / 4}{-2}{-2}{120 / 1,600 / 13,800}
-	\baseasset{Lab}{Enables Chemical crafting. The Size and Cost depends on the lab's size.}{1 / 2 / 4}{-2}{-2}{120 / 1,600 / 13,800}
+	\baseasset{Forge}{Enables Forge crafting. Depending on size and cost, this is a garage, smithy or industrial forge.}{1 / 2 / 4}{-2}{-2}{120 / 1,600 / 13,800}
+	\baseasset{Lab}{Enables Chemical crafting. Depending on size and cost, this is a kitchen, brewery or industrial lab.}{1 / 2 / 4}{-2}{-2}{120 / 1,600 / 13,800}
 	\baseasset{Plantation}{Produces a certain type of natural components automatically. Produces a net value of roughly cR 100 daily, given it is continuously supplied.}{4}{-1}{-2}{160,000}
 	\baseasset{Vehicle Bay}{Enables Vehicle repairs and modification.}{4}{-2}{-1}{860}
 	\end{multicols}
@@ -122,4 +122,5 @@
 	\baseasset{Aug Surgery}{Allows implantation surgery.}{2}{-2}{-1}{1,600}
 	\end{multicols}
 
+	\IfFileExists{../core-rulebook/config/builddata.texin}{\input{../core-rulebook/config/builddata.texin}}{ }
 \end{document}

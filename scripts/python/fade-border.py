@@ -8,7 +8,7 @@ def parse_arguments():
                 prog="Fade Borders"
                 )
 
-    parser.add_argument("-i", "--in-place", dest="in_place", action="store_true", default=False, help="Edit the file in place, creating a \".fade.\{ext\}\" file next to the input file.")
+    parser.add_argument("-i", "--in-place", dest="in_place", action="store_true", default=False, help=r"Edit the file in place, creating a \".fade.{ext}\" file next to the input file.")
     parser.add_argument("-w", "--fade-width", dest="fade_width", type=int, default=5, help="Manually set the fade width in percent. Default is 5.")
     parser.add_argument("input_file")
     parser.add_argument("-o", "--out", dest="output_file")

@@ -1,6 +1,6 @@
 \documentclass[12pt,a4paper,openany,usenames,dvipsnames]{book}
-\input{../core-rulebook/config/news.tex}
-\input{../core-rulebook/config/packages.tex}
+\usepackage{../core-rulebook/config/packages}
+\usepackage{../core-rulebook/config/news}
 
 \def\subtitle{Strike Suits}
 
@@ -10,7 +10,11 @@
 	\chapter{Introduction}
 	A marvel of technological advancement, these powered armors offer vastly improved physical capabilities as well as a near skintight bunker. Many different series are in production and each of them offers many different variants to guarantee versatility for almost any feasible area of operation.\par
 	Any strike suit is built specifically for its pilot. These pilots are born either highly qualified or extremely privileged and are trained by many specialists; the cheapest part of their journey. The really expensive part is their equipment: weapons, augments, each modified, specialized ammunition, scanners and the list goes on - culminating in their armor.\par
-	Depending on their field of expertise, the armor series and variant is picked as detailed below. Note that due to how expensive and rare this type of equipment is, it is also extremely rare and hard to acquire, as even if a suit could be obtained from a dead pilot, the armor likely would not fit.
+	Depending on their field of expertise, the armor series and variant is picked as detailed in chapter \ref{ch:building}.
+	Note that due to how expensive and rare this type of equipment is,
+		it is also extremely rare and hard to acquire,
+		as even if a suit could be obtained from a dead pilot,
+		the armor likely would not fit.
 	
 	\chapter{Development History}
 	Rome was not built in a day. Neither were such marvels thought up in a day. Many iterations existed before.
@@ -20,19 +24,71 @@
 	Massive powered mechs made to carry loads. Compared to forklifts these can turn on the spot, move freely even on sand and are a little more flexible in how containers are arranged, but it is notably slower.
 	\par
 	%TODO: make vehicle when those have rules
-	\armor{Power Loader}{2}{2}{2}{2}{vehicle}{MS 2m/s, 180 Str, Size: Hulking}{1300}{1100}
+	\begin{minipage}{\columnwidth}
+		\textbf{\ul{Power Loader}}\\
+		\begin{tabular}{|r|r|r|r|}
+			\hline
+			Head & Chest & Arms & Legs\\
+			\hline
+			2 & 2 & 2 & 2\\
+			\hline
+		\end{tabular}\par
+		\vspace{2mm}
+		\textit{Price:} cR 1300; \textit{Weight:} 1100 kg\\
+		\begin{sitemize}
+			\item MS set to 2m/s
+			\item Str set to 180
+			\item Size: Hulking
+		\end{sitemize}
+	\end{minipage}
 	\section{Powered Exo-Skeleton}
 	Initially built for military usage, allowing squad support soldiers to carry larger amounts of ammunition, this has found use in many fields of human society. They are large, relatively loud and slow down movement, but they are also very stable and allow a lot of extra weight capacity.
 	\par
-	\armor{Lifter Skeleton}{0}{1}{1}{1}{None}{-30 to Stealth tests, Size increased by one category, -2 MS, +50kg carry weight}{1200}{500}
+	\begin{minipage}{\columnwidth}
+		\textbf{\ul{Lifter Exoskeleton}}\\
+		\begin{tabular}{|r|r|r|r|}
+			\hline
+			Head & Chest & Arms & Legs\\
+			\hline
+			0 & 1 & 1 & 1\\
+			\hline
+		\end{tabular}\par
+		\vspace{2mm}
+		\textit{Price:} cR 1200; \textit{Weight:} 500 kg\\
+		\begin{itemize}
+			\item -30 to Stealth tests
+			\item MS reduced by 2
+			\item Carry weight increased by 50kg
+			\item Size increased by one category
+		\end{itemize}
+	\end{minipage}
 	\section{Semi-Powered Armor}
 	An improvement over a powered exo-skeleton, in that this piece of equipment is armor first and utility second. This piece is not quite as cumbersome and loud, also the mechanical parts are protected by the armor plates.
 	\par
-	
-	\armor{Semi-Powered Armor}{0}{12}{10}{10}{torso, arms, legs}{-2 MS, +20 Str}{1500}{550}
+	\begin{minipage}{\columnwidth}
+		\textbf{\ul{Semi-Powered Armor}} (covers: torso, arms, legs)\\
+		\begin{tabular}{|r|r|r|r|}
+			\hline
+			Head & Chest & Arms & Legs\\
+			\hline
+			0 & 12 & 10 & 10\\
+			\hline
+		\end{tabular}\par
+		\vspace{2mm}
+		\textit{Price:} cR 1500; \textit{Weight:} 550 kg\\
+		\begin{itemize}
+			\item MS reduced by 2
+			\item Str increased by 20
+		\end{itemize}
+	\end{minipage}
 	\chapter{Building a Strike Suit}
+	\label{ch:building}
 	\section{Common Features}
-	Every Strike Suit has a few similar properties, referred to as the \emph{Baseline}. These common aspects are then modified by the series and variant, as well as custom modifications.\par
+	Every Strike Suit has a few similar properties, referred to as the \emph{Baseline}.
+	These common aspects are then modified by the series and variant,
+	as well as custom modifications.
+	\par%
+	\vspace{-3mm} %quickfix
 	\begin{itemize}
 		\setlength\itemsep{-5mm}
 		\item Every Strike Suit has very thick armor plates. Usually arms and legs sport 20 armor, the head has 16 and the torso makes it to 22.
@@ -44,14 +100,14 @@
 		\item The greatest downside to strike suits is the fact that vehicle lock-on works against such a piece of armor, making them a priority target out in the open.
 	\end{itemize}
 	\par
-	Such a marvel of technology requires strong connections to powerful people and a fair sum of money - production cost alone is at around cR 1800.
+	Such a marvel of technology requires strong connections to powerful people and a fair sum of money - production cost alone is at around cR 18000.
 
 	\section{Series}
 	Every strike suit is constructed to fulfill a specific purpose. This means that every piece of armor has to belong to a specific series of strike suit, specialized in various areas of operation.
 	
     \begin{multicols}{2}
     	\raggedcolumns
-    	\luaimport{strikesuits-series.csv}{strikesuit.tpl}{series}
+    	\luaimport{strikesuits-series.json}{strikesuit.tpl}{series}
     \end{multicols}
     
     \pagebreak
@@ -64,7 +120,7 @@
     
     \begin{multicols}{2}
     	\raggedcolumns
-    	\luaimport{strikesuits-variants.csv}{strikesuit.tpl}{variants}
+    	\luaimport{strikesuits-variants.json}{strikesuit.tpl}{variants}
     \end{multicols}
     
     \chapter{Piloting a Strike Suit}
@@ -76,4 +132,5 @@
     	\item \emph{Without pilot implants} the strike suit will not move at all.
     \end{itemize}
     
+	\IfFileExists{../core-rulebook/config/builddata.texin}{\input{../core-rulebook/config/builddata.texin}}{ }
 \end{document}

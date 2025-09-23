@@ -1,8 +1,27 @@
 \vspace{2mm}
+\ifthenelse{\equal{\lastgroup}{@group@}}{}{
+    \end{multicols}
+    \par
+}
+\ifthenelse{\equal{\lastgroup}{@group@}}{}{
+	\needspace{0.5\textheight}
+    \subsubsection{@group@}
+    \vspace{8mm}
+    \begin{multicols}{2}
+}
 	\begin{minipage}{\columnwidth}
-		\textbf{\ul{@name@}}\\
-		\textit{@flavor_text@}\\
+		\begin{flavorblock}[@name@]
+			@flavor_text@
+		\end{flavorblock}
 		\ifthenelse{\isempty{@weight@}}{}{\textbf{Weight}: @weight@ kg\\}
+		\ifthenelse{\isempty{@availability@}}
+			{\directlua{tex.print("\\edef\\availval{"..6-tierfromcost("@price@").."}")}}
+			{\def\availval{@availability@}}
+		\ifthenelse{
+			\isempty{\availval} \OR \equal{\availval}{0}
+			}
+			{}
+			{\textbf{Availability}: \availval \\}
 		\ifthenelse{\isempty{@price@}}{}{\textbf{Price}: cR @price@\\}
 		\ifthenelse{\isempty{@shots@}}{}{\textbf{Shots}: @shots@\\}
         \textbf{Damage}: \ifthenelse{\isempty{@damage@}}{0}{@damage@}\\
@@ -15,3 +34,4 @@
 		\ifthenelse{\isempty{@special_rules@}}{}{\textbf{Special Rules}: @special_rules@}
 	\end{minipage}
 	\par
+\renewcommand{\lastgroup}{@group@}

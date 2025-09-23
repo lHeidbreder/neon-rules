@@ -1,74 +1,20 @@
-\def\rwimport#1{\luaimport{equipment/rangedweapons-#1.csvin}{ranged.tpl}{#1}}
-\newcommand{\rangesec}[1]{
-	\subsubsection{#1}
-	\vspace{8mm}
-	\begin{multicols}{2}
-	\rwimport{#1}
-	\end{multicols}
-}
+\pagebreak %quickfix
 \section{Ranged}
+\label{sec:rangedweapons}
 \subsection{Weapons}
-\rangesec{Pistol}
-\rangesec{Short Rifle}
-\rangesec{Long Rifle}
-\rangesec{Heavy}
-\rangesec{Launcher}
-\rangesec{Bow}
-\rangesec{Throwing}
-\rangesec{Traps}
+\newcommand{\lastgroup}{ }
+\begin{multicols}{2}
+	\luaimport{equipment/rangedweapons.json}{ranged.tpl}{equipment/ranged}
+\end{multicols}
 
+\newpage
 \subsection{Mods}
 \subsubsection{Constraints}
 Ranged weapons have a limited number of mod slots which can each only be used once - at some point the weapon becomes unwieldy or the space is simply used up. When in question, apply common sense.
 \par
 
 \begin{multicols}{2}
-\textbf{Pistols:}
-\vspace{-8mm}
-\begin{itemize}
-	\setlength\itemsep{-8mm}
-	\item Upper Rail
-	\item Lower Rail
-	\item Barrel
-	\item Muzzle
-	\item Core
-\end{itemize}
-
-\vspace{-5mm}
-\textbf{Rifle:}
-\vspace{-8mm}
-\begin{itemize}
-	\setlength\itemsep{-8mm}
-	\item Upper Rail
-	\item Lower Rail
-	\item Two Side Rails
-	\item Barrel
-	\item Muzzle
-	\item Core
-\end{itemize}
-
-\vspace{-5mm}
-\textbf{Heavy Weapon / Launcher:}
-\vspace{-8mm}
-\begin{itemize}
-	\setlength\itemsep{-8mm}
-	\item Upper Rail
-	\item Lower Rail
-	\item Lower Rail (restricted to bipod / tripod)
-	\item Two Side Rails
-	\item Barrel
-	\item Muzzle
-	\item Core
-\end{itemize}
-
-\vspace{-5mm}
-\textbf{Bow:}
-\vspace{-8mm}
-\begin{itemize}
-	\setlength\itemsep{-8mm}
-	\item Upper Rail
-	\item Core
-\end{itemize}
+	\luaimport{equipment/rangedmodslots.json}{rangedmodslots.tpl}{equipment/rangedmodslots}
 \end{multicols}
 
 \subsubsection{Optics}
@@ -277,7 +223,7 @@ Ranged weapons have a limited number of mod slots which can each only be used on
 \weaponmod{Drum-Mag}
     {A massive spiral magazine that triples mag size
         but jams on 96+ and also doesn't fit in normal mag pouches,
-        therefore need to be carried in backpacks.}
+        therefore needs to be carried in backpacks.}
     {Ballistic Magazine}
     {34}
     {-}
@@ -329,39 +275,38 @@ Ranged weapons have a limited number of mod slots which can each only be used on
     {A technological marvel increasing a weapon's fire rate by 50\%,
         rounded down, if it already has a fire rate of 2 or more.}
     {Core}
-    {equal to 80\% of the weapon}
+    {80\% of the weapon}
     {0.9}
 \weaponmod{Multi Barrel}
     {Adds an additional barrel feeding from the same magazine
         to double the amount of hits and ammo spent at an additional -10 penalty to hit.
         Only works if the weapon has a capacity of at least 2.}
     {Core}
-    {equal to 60\% of the weapon}
+    {60\% of the weapon}
     {0.55}
 \weaponmod{Heatsink}
-    {A \emph{Powered} weapon gains reliable.
-        Its weight increases by 20\%.}
+    {A \emph{Powered} weapon gains \emph{Reliable}.}
     {Core}
-    {equal to 40\% of the weapon}
-    {20\% of the weapons weight} %TODO: "kg" is added after, this needs a fix
+    {40\% of the weapon}
+    {20\% of the weapons weight}
 \weaponmod{Backblast Refunneling}
     {It halves the Backblast range to increase the weapon's range by 50\%.
         The additional rumble gives a penalty equal to half of the user's strength below 70.}
     {Core}
-    {equal to 60\% of the weapon}
+    {60\% of the weapon}
     {0.4}
 \weaponmod{Gim-barrel}
     {A self-stabilizing barrel halves penalties from shooting while moving as well as Burst actions.
         It doubles the weapon's weight and decreases aim bonus by 5 when not using a rest.}
     {Core, Barrel}
-    {equal to 80\% of the weapon}
-    {100\%} %TODO: "kg" is added after, this needs a fix
+    {80\% of the weapon}
+    {100\% of the weapon}
 \weaponmod{Biocoding}
     {A trigger lock reading biometric data of the user.
         The weapon can only be used when wielded by a user
         who was registered during building of the weapon.
         It cannot be removed or reprogrammed without destroying the weapon.}
-    {none}
+    {}
     {20}
     {0.24}
 \weaponmod{Vehicle Lock-on}
@@ -370,13 +315,11 @@ Ranged weapons have a limited number of mod slots which can each only be used on
         when taking at least one round to aim.
         Flares don't disrupt targeting but static smoke will.}
     {Core}
-    {equal to 80\% of the weapon}
+    {80\% of the weapon}
     {3.4}
 \weaponmod{Heat Seeker}
     {Adds heat-based targeting assistance systems,
-        thereby granting +15 to shoot targets warmer than their surroundings
-        but -15 to shoot targets colder than their surroundings.}
-        %TODO: is this how thermal targeting should work?
+        thereby granting +15 to shooting targets significantly warmer or colder than their surroundings.}
     {Core}
     {280}
     {2.3}
@@ -393,7 +336,7 @@ Ranged weapons have a limited number of mod slots which can each only be used on
         regardless of modifiers or the shooter.
         It still requires to be pointed in roughly the right direction though,
         the target has to be visible,
-        and will completely fail under EMP.
+        and the system will completely fail under EMP.
     }
      {Core}
      {190}
@@ -406,279 +349,10 @@ First, in bold, there is the type designation. This is little more than an ident
 Secondly after the colon you find the effect. These are all changes this type of ammunition has as opposed to the basic weapon profile.\\
 The price is the price per box off ammunition; every box contains an amount of ammunition equal to the value given at "Unit of sale". For ballistic ammo a single unit is one bullet, for others it is one full load of the weapon.\\
 Weight and bulk are given in the weight that one "standard magazine" - as used in storage capacities - weighs.
-%	Pistols
+%Need to manually add the first heading or my template breaks
+\newcommand{\lastcaliber}{7.2mm}
 \subsubsection{7.2mm}
 \vspace{8mm}
 \begin{multicols}{2}
-    %TODO: make this an import, remove "cR" from the price data
-\ammo{FMJ}{-}{cR 2}{30}{4g}{40}
-\ammo{AP}{-1 dmg, +4 AP}{cR 3}{30}{4g}{40}
-\ammo{Hot Load}{+1 dmg, +4 AP, +15 on hearing checks to identify the shooter's position}{cR 4}{30}{4g}{40}
-\ammo{Hot AP}{+10 AP, +15 on hearing checks to identify the shooter's position}{cR 6}{30}{4g}{40}
-\ammo{JSP}{+2 dmg, -3 AP}{cR 3}{30}{4g}{40}
-\ammo{JHP}{+4 dmg, -6 AP}{cR 4}{30}{4g}{40}
-\ammo{Shock}{-4 dmg, -5 AP, Stun (4), EMP}{cR 6}{30}{4g}{40}
-\ammo{Cold Load}{-3 dmg, -3 AP, -15 on hearing checks to identify the shooter's position}{cR 3}{30}{4g}{40}
-\ammo{Cold AP}{-4 dmg, -15 on hearing checks to identify the shooter's position}{cR 4}{30}{4g}{40}
-\ammo{Cold JSP}{-6 AP, -15 on hearing checks to identify the shooter's position}{cR 4}{30}{4g}{40}
-\ammo{Cold JHP}{+2 dmg, -8 AP, -15 on hearing checks to identify the shooter's position}{cR 6}{30}{4g}{40}
-\ammo{Incendiary}{-2 AP, will ignite flammable materials hit}{cR 3}{30}{4g}{40}
-\ammo{Tracer}{grants a +10 bonus to hit for others aiming at the same target during this turn}{cR 4}{30}{4g}{40}
-\ammo{Rubber Rounds}{-10 dmg, 0 AP, Stun (2), every hit against the target's head reduces it's initiative by D5-1}{cR 2}{30}{4g}{40}
-\end{multicols}
-\subsubsection{11.8x45mm}
-\vspace{8mm}
-\begin{multicols}{2}
-\ammo{FMJ}{-}{cR 3}{20}{22g}{40}
-\ammo{AP}{-1 dmg, +4 AP}{cR 5}{20}{22g}{40}
-\ammo{Hot Load}{+1 dmg, +4 AP, +15 on hearing checks to identify the shooter's position}{cR 6}{20}{22g}{40}
-\ammo{Hot AP}{+10 AP, +15 on hearing checks to identify the shooter's position}{cR 9}{20}{22g}{40}
-\ammo{JSP}{+2 dmg, -3 AP}{cR 5}{20}{22g}{40}
-\ammo{JHP}{+4 dmg, -6 AP}{cR 6}{20}{22g}{40}
-\ammo{Shock}{-4 dmg, -5 AP, Stun (4), EMP}{cR 9}{20}{22g}{40}
-\ammo{Cold Load}{-3 dmg, -3 AP, -15 on hearing checks to identify the shooter's position}{cR 5}{20}{22g}{40}
-\ammo{Cold AP}{-4 dmg, -15 on hearing checks to identify the shooter's position}{cR 6}{20}{22g}{40}
-\ammo{Cold JSP}{-6 AP, -15 on hearing checks to identify the shooter's position}{cR 6}{20}{22g}{40}
-\ammo{Cold JHP}{+2 dmg, -8 AP, -15 on hearing checks to identify the shooter's position}{cR 9}{20}{22g}{40}
-\ammo{Incendiary}{-2 AP, will ignite flammable materials hit}{cR 5}{20}{22g}{40}
-\ammo{Tracer}{grants a +10 bonus to hit for others aiming at the same target during this turn}{cR 6}{20}{22g}{40}
-\ammo{Rubber Rounds}{-10 dmg, 0 AP, Stun (2), every hit against the target's head reduces it's initiative by D5-1}{cR 3}{20}{22g}{40}
-\end{multicols}
-
-%	Rifles
-\subsubsection{6.3mm}
-\vspace{8mm}
-\begin{multicols}{2}
-\ammo{FMJ}{-}{cR 2}{30}{8.6g}{30}
-\ammo{AP}{-1 dmg, +4 AP}{cR 3}{30}{8.6g}{30}
-\ammo{Hot Load}{+1 dmg, +4 AP, +15 on hearing checks to identify the shooter's position}{cR 4}{30}{8.6g}{30}
-\ammo{Hot AP}{+10 AP, +15 on hearing checks to identify the shooter's position}{cR 6}{30}{8.6g}{30}
-\ammo{JSP}{+2 dmg, -3 AP}{cR 3}{30}{8.6g}{30}
-\ammo{JHP}{+4 dmg, -6 AP}{cR 4}{30}{8.6g}{30}
-\ammo{Shield Breaker}{-3 dmg, Disrupt}{cR 55}{30}{8.6g}{30}
-\ammo{Shock}{-4 dmg, -5 AP, Stun (4), EMP}{cR 6}{30}{8.6g}{30}
-\ammo{Cold Load}{-3 dmg, -3 AP, -15 on hearing checks to identify the shooter's position}{cR 3}{30}{8.6g}{30}
-\ammo{Cold AP}{-4 dmg, -15 on hearing checks to identify the shooter's position}{cR 4}{30}{8.6g}{30}
-\ammo{Cold JSP}{-6 AP, -15 on hearing checks to identify the shooter's position}{cR 4}{30}{8.6g}{30}
-\ammo{Cold JHP}{+2 dmg, -8 AP, -15 on hearing checks to identify the shooter's position}{cR 6}{30}{8.6g}{30}
-\ammo{Incendiary}{-2 AP, will ignite flammable materials hit}{cR 3}{30}{8.6g}{30}
-\ammo{Tracer}{grants a +10 bonus to hit for others aiming at the same target during this turn}{cR 4}{30}{8.6g}{30}
-\ammo{Rubber Rounds}{-10 dmg, 0 AP, Stun (2), every hit against the target's head reduces it's initiative by D5-1}{cR 2}{30}{8.6g}{30}
-\end{multicols}
-\subsubsection{11.8x112mm}
-\vspace{8mm}
-\begin{multicols}{2}
-\ammo{FMJ}{-}{cR 4}{20}{50g}{5}
-\ammo{AP}{-1 dmg, +4 AP}{cR 6}{20}{50g}{5}
-\ammo{Hot Load}{+1 dmg, +4 AP, +15 on hearing checks to identify the shooter's position}{cR 8}{20}{50g}{5}
-\ammo{Hot AP}{+10 AP, +15 on hearing checks to identify the shooter's position}{cR 12}{20}{50g}{5}
-\ammo{JSP}{+2 dmg, -3 AP}{cR 6}{20}{50g}{5}
-\ammo{JHP}{+4 dmg, -6 AP}{cR 8}{20}{50g}{5}
-\ammo{Shield Breaker}{-3 dmg, Disrupt}{cR 78}{20}{50g}{5}
-\ammo{Shock}{-4 dmg, -5 AP, Stun (4), EMP}{cR 12}{20}{50g}{5}
-\ammo{Cold Load}{-3 dmg, -3 AP, -15 on hearing checks to identify the shooter's position}{cR 6}{20}{50g}{5}
-\ammo{Cold AP}{-4 dmg, -15 on hearing checks to identify the shooter's position}{cR 8}{20}{50g}{5}
-\ammo{Cold JSP}{-6 AP, -15 on hearing checks to identify the shooter's position}{cR 8}{20}{50g}{5}
-\ammo{Cold JHP}{+2 dmg, -8 AP, -15 on hearing checks to identify the shooter's position}{cR 12}{20}{50g}{5}
-\ammo{Incendiary}{-2 AP, will ignite flammable materials hit}{cR 6}{20}{50g}{5}
-\ammo{Tracer}{grants a +10 bonus to hit for others aiming at the same target during this turn}{cR 8}{20}{50g}{5}
-\ammo{Rubber Rounds}{-10 dmg, 0 AP, Stun (2), every hit against the target's head reduces it's initiative by D5-1}{cR 4}{20}{50g}{5}
-\end{multicols}
-\subsubsection{15x132mm}
-\vspace{8mm}
-\begin{multicols}{2}
-\ammo{FMJ}{-}{cR 5}{5}{85g}{4}
-\ammo{AP}{-1 dmg, +4 AP}{cR 8}{5}{85g}{4}
-\ammo{Hot Load}{+1 dmg, +4 AP, +15 on hearing checks to identify the shooter's position}{cR 10}{5}{85g}{4}
-\ammo{Hot AP}{+10 AP, +15 on hearing checks to identify the shooter's position}{cR 15}{5}{85g}{4}
-\ammo{JSP}{+2 dmg, -3 AP}{cR 8}{5}{85g}{4}
-\ammo{JHP}{+4 dmg, -6 AP}{cR 10}{5}{85g}{4}
-\ammo{Shock}{-4 dmg, -5 AP, Stun (4), EMP}{cR 15}{5}{85g}{4}
-\ammo{Cold Load}{-3 dmg, -3 AP, -15 on hearing checks to identify the shooter's position}{cR 8}{5}{85g}{4}
-\ammo{Cold AP}{-4 dmg, -15 on hearing checks to identify the shooter's position}{cR 10}{5}{85g}{4}
-\ammo{Cold JSP}{-6 AP, -15 on hearing checks to identify the shooter's position}{cR 10}{5}{85g}{4}
-\ammo{Cold JHP}{+2 dmg, -8 AP, -15 on hearing checks to identify the shooter's position}{cR 15}{5}{85g}{4}
-\ammo{Incendiary}{-2 AP, will ignite flammable materials hit}{cR 8}{5}{85g}{4}
-\ammo{Tracer}{grants a +10 bonus to hit for others aiming at the same target during this turn}{cR 10}{5}{85g}{4}
-\ammo{Rubber Rounds}{-10 dmg, 0 AP, Stun (2), every hit against the target's head reduces it's initiative by D10-1}{cR 5}{5}{85g}{4}
-\end{multicols}
-
-%	Shotgun
-\subsubsection{12gauge}
-\vspace{8mm}
-\begin{multicols}{2}
-\ammo{Buckshot}{-}{cR 3}{24}{42g}{8}
-\ammo{Birdshot}{halves damage, ignores all negative size modifiers}{cR 2}{24}{42g}{8}
-\ammo{Incendiary}{-2 dmg, -4 AP, ignites flammable materials hit}{cR 3}{24}{42g}{8}
-\ammo{Breaching Round}{+3 dmg, +4 AP, halved range}{cR 5}{24}{42g}{8}
-\ammo{Slug}{+2 AP, removes Scatter, doubles range}{cR 3}{24}{42g}{8}
-\ammo{Fragmentation Slug}{removes Scatter but adds Blast (2) rule, doubles range}{cR 6}{24}{42g}{8}
-\ammo{Incendiary Slug}{+1 AP, removes Scatter, doubles range, ignites flammable objects hit}{cR 4}{24}{42g}{8}
-\ammo{EMP Slug}{-2 dmg, EMP, removes Scatter, doubles range}{cR 9}{24}{42g}{8}
-\ammo{Rubber Slug}{-2 dmg, -6 AP, removes Scatter, doubles range, Stun (2)}{cR 3}{24}{42g}{8}
-\end{multicols}
-
-%	Fuel Tank
-\subsubsection{Small Fuel Tanks}
-\vspace{8mm}
-\begin{multicols}{2}
-\ammo{Napalm}{ignites flammable surfaces and sticks even to non-flammable ones}{cR 32}{1}{10kg}{}
-\ammo{White Phosphorus}{halves range, burns for a D5 minutes, ignites flammable surfaces and sticks even to non-flammable ones, cannot be extinguished by water}{cR 64}{1}{20kg}{}
-\ammo{Water}{1 dmg, 0 AP, Trauma, Stun (*the original amount of damage dice)}{cR 8}{1}{13kg}{}
-\ammo{Liquid Helium}{halves range, causes D5 exhaustion per hit}{cR 64}{1}{13kg}{}
-\end{multicols}
-
-\subsubsection{Medium Fuel Tanks}
-\vspace{8mm}
-\begin{multicols}{2}
-\ammo{Napalm}{ignites flammable surfaces}{cR 61}{1}{20kg}{}
-\ammo{White Phosphorus}{halves range, burns for a D5 minutes, ignites flammable surfaces and sticks even to non-flammable ones}{cR 122}{1}{40kg}{}
-\ammo{Water}{1 dmg, 0 AP, Trauma, Stun (*the original amount of damage dice)}{cR 17}{1}{25kg}{}
-\ammo{Liquid Helium}{halves range, causes D5 exhaustion per hit}{cR 122}{1}{25kg}{}
-\end{multicols}
-
-\subsubsection{Large Fuel Tanks}
-\vspace{8mm}
-\begin{multicols}{2}
-\ammo{Napalm}{ignites flammable surfaces}{cR 150}{1}{50kg}{}
-\ammo{White Phosphorus}{halves range, burns for a D5 minutes, ignites flammable surfaces and sticks even to non-flammable ones}{cR 300}{1}{100kg}{}
-\ammo{Water}{1 dmg, 0 AP, Trauma, Stun (*the original amount of damage dice)}{cR 32}{1}{62.5kg}{}
-\ammo{Liquid Helium}{halves range, causes D10 exhaustion per hit}{cR 300}{1}{62.5kg}{}
-\end{multicols}
-
-%	Fuel Cells
-\subsubsection{Small Fuel Cells}
-\vspace{8mm}
-\begin{multicols}{2}
-\ammo{Standard Issue}{-}{cR 9}{1}{250g}{2}
-\ammo{Unstable}{On a hit roll above 95 causes the weapon's damage with Blast (1) around the shooter.}{cR 5}{1}{250g}{2}
-\end{multicols}
-\subsubsection{Medium Fuel Cells}
-\vspace{8mm}
-\begin{multicols}{2}
-\ammo{Standard Issue}{-}{cR 15}{1}{750g}{}
-\ammo{Unstable}{On a hit roll above 95 causes the weapon's damage with Blast (1) around the shooter.}{cR 8}{1}{750g}{}
-\end{multicols}
-\subsubsection{Large Fuel Cells}
-\vspace{8mm}
-\begin{multicols}{2}
-\ammo{Standard Issue}{-}{cR 21}{1}{1.5kg}{0.5}
-\ammo{Unstable}{On a hit roll above 95 causes the weapon's damage with Blast (1) around the shooter.}{cR 11}{1}{1.5kg}{0.5}
-\end{multicols}
-
-%	Mass Driver Blocks
-\subsubsection{Small Shard Blocks}
-\vspace{8mm}
-\begin{multicols}{2}
-\ammo{Standard Issue}{-}{cR 13}{1}{300g}{1}
-\ammo{Crude}{-50\% mag size, jams on 91 and above}{cR 2}{1}{300g}{1}
-\end{multicols}
-\subsubsection{Large Shard Blocks}
-\vspace{8mm}
-\begin{multicols}{2}
-\ammo{Standard Issue}{-}{cR 21}{1}{1.8kg}{0.5}
-\ammo{Crude}{-50\% mag size, jams on 91 and above}{cR 2}{2}{1.8kg}{0.5}
-\ammo{Osmium Alloy}{+D5 damage, -2 AP}{cR 42}{1}{3.6kg}{0.5}
-\end{multicols}
-\subsubsection{Vehicle Shard Blocks}
-\vspace{8mm}
-\begin{multicols}{2}
-\ammo{Standard Issue}{-}{cR 34}{1}{3.2kg}{0.2}
-\ammo{Crude}{-50\% mag size, jams on 91 and above}{cR 5}{2}{3.2kg}{0.2}
-\ammo{Osmium Alloy}{+D10 damage, -2 AP}{cR 60}{2}{6.2kg}{0.5}
-%TODO: absurd on rapid fire weapons?
-\end{multicols}
-
-%	Grenades
-\subsubsection{20mm grenades}
-\vspace{8mm}
-\begin{multicols}{2}
-\ammo{Fragmentation}{2D10+2 | 2 AP | Blast (6)}{cR 60}{1}{120g}{0.5}
-\ammo{High Explosive}{2D10+6 | 5 AP | Blast (2)}{cR 60}{1}{120g}{0.5}
-\ammo{Thermobaric}{3D10 | 2 AP | Blast (10) | heat-based, ignores all cover and non-vacuum-sealed or natural armor}{cR 96}{1}{120g}{0.5}
-\ammo{Incendiary}{D10+2 | 0 AP | Blast (8) | ignites all flammable objects in the radius}{cR 60}{1}{120g}{0.5}
-\ammo{Buckshot Canister}{2D10+3 | 5 AP | Scatter}{cR 75}{1}{120g}{0.5}
-\ammo{Slug}{2D5+8 | 8 AP}{cR 75}{1}{120g}{0.5}
-\ammo{Smoke}{0 | 0 AP | Blast (8), Smoke}{cR 45}{1}{120g}{0.5}
-\ammo{Flashbang}{0 | 0 AP | Blast (12), Flash}{cR 45}{1}{120g}{0.5}
-\ammo{EMP}{0 | 0 AP | Blast (6), EMP}{cR 80}{1}{120g}{0.5}
-\ammo{Tear Gas}{0 | 0 AP | Blast (6), Smoke, Stun (0), ignores cover and non-vacuum-sealed armor, Stun is applied every round in the Smoke}{cR 45}{1}{120g}{0.5}
-\ammo{Rubber Slug}{1D10+3 | 2 AP | Stun (5), hits to the head cause 2D5 initiative loss}{cR 50}{1}{120g}{0.5}
-\ammo{Riot Foam}{0 | 0 AP | Blast (12), Sticky}{cR 20}{1}{120g}{0.5}
-\ammo{Signal Smoke}{0 | 0 AP | Blast (4) | a smoke spewer to signal allies; comes in various colors}{cR 38}{1}{120g}{0.5}
-\ammo{Parachute Flare}{D5 | 0 AP | a signal flare that burns for 3 minutes and falls at 1 meter per 3 seconds (or 1 round)}{cR 40}{1}{120g}{0.5}
-\ammo{Infrared Illuminator}{1 | 0 AP | a large chemlight that emits infrared light in a very large area}{cR 42}{1}{120g}{0.5}
-\end{multicols}
-\subsubsection{40mm grenades}
-\vspace{8mm}
-\begin{multicols}{2}
-\ammo{Fragmentation}{2D10+7 | 2 AP | Blast (9)}{cR 78}{1}{230g}{1}
-\ammo{High Explosive}{3D10+6 | 5 AP | Blast (3)}{cR 78}{1}{230g}{1}
-\ammo{Thermobaric}{4D10 | 2 AP | Blast (15) | heat-based, ignores all cover and non-vacuum-sealed armor}{cR 125}{1}{230g}{1}
-\ammo{Incendiary}{D10+3 | 0 AP | Blast (12) | ignites all flammable objects in the radius}{cR 78}{1}{230g}{1}
-\ammo{Buckshot Canister}{3D10+3 | 5 AP | Scatter}{cR 98}{1}{230g}{1}
-\ammo{Slug}{2D10+9 | 9 AP}{cR 98}{1}{230g}{1}
-\ammo{Smoke}{0 | 0 AP | Blast (12), Smoke}{cR 59}{1}{230g}{1}
-\ammo{Flashbang}{0 | 0 AP | Blast (18), Flash}{cR 59}{1}{230g}{1}
-\ammo{EMP}{0 | 0 AP | Blast (9), EMP}{cR 104}{1}{230g}{1}
-\ammo{Tear Gas}{0 | 0 AP | Blast (8), Smoke, Stun (0), ignores cover and non-vacuum-sealed armor, Stun is applied every round in the Smoke}{cR 59}{1}{230g}{1}
-\ammo{Rubber Slug}{2D10+3 | 2 AP | Stun (7), hits to the head cause 2D10 initiative loss}{cR 65}{1}{230g}{1}
-\ammo{Signal Smoke}{0 | 0 AP | Blast (4) | a smoke spewer to signal allies that lasts for a few minutes; comes in various colors}{cR 49}{1}{230g}{1}
-\ammo{Parachute Flare}{D5+1 | 0 AP | a signal flare that burns for 5 minutes and falls at 1 meter per 3 seconds (or 1 round)}{cR 52}{1}{230g}{1}
-\ammo{Thermite}{6D10+10 | 25 AP | Blast (3) | takes two rounds to get going, then burns for one minute dealing its damage every round; sticks to rough surfaces}{cR 156}{1}{230g}{1}
-\end{multicols}
-
-%	Rockets
-\subsubsection{Micro Missiles}
-\vspace{8mm}
-\begin{multicols}{2}
-\ammo{Fragmentation}{-}{cR 84}{4}{1kg}{0.5}
-\ammo{High Explosive}{-1D10 dmg | +8 AP}{cR 88}{4}{1kg}{0.5}
-\ammo{Incendiary}{-3 dmg | -3 AP | ignites flammable objects}{cR 76}{4}{1kg}{0.5}
-\end{multicols}
-\subsubsection{Small Rockets}
-\vspace{8mm}
-\begin{multicols}{2}
-\ammo{HEAT}{4D10+5 dmg | 6 AP | Blast (5)}{cR 124}{1}{2kg}{0.5}
-\ammo{High Explosive}{4D10+2 dmg | 3 AP | Blast (6)}{cR 99}{1}{2kg}{0.5}
-\ammo{Fragmentation}{3D10+8 dmg | 2 AP | Blast (8)}{cR 99}{1}{2kg}{0.5}
-\ammo{Incendiary}{2D10+5 dmg | 2 AP | Blast (6) | ignites flammable objects}{cR 112}{1}{2kg}{0.5}
-\ammo{Incendiary Fragmentation}{3D10+5 dmg | 2 AP | Blast (8) | ignites flammable objects}{cR 134}{1}{2kg}{0.5}
-\ammo{Thermobaric}{4D10+8 dmg | 3 AP | Blast (12) | heat-based, ignores all cover and non-vacuum-sealed armor}{cR 201}{1}{2kg}{0.5}
-\ammo{Thermite}{6D10+10 | 25 AP | Blast (4) | takes two rounds to get going, then burns for one minute dealing its damage every round; sticks to rough surfaces}{cR 179}{1}{2kg}{0.5}
-\ammo{Kinetic Penetrator}{4D10+5 dmg | 14 AP}{cR 201}{1}{2kg}{0.5}
-\end{multicols}
-\subsubsection{Large Rockets}
-\vspace{8mm}
-\begin{multicols}{2}
-\ammo{HEAT}{4D10+6 dmg | 8 AP | Blast (6)}{cR 168}{1}{3.5kg}{0.25}
-\ammo{High Explosive}{4D10+4 dmg | 5 AP | Blast (8)}{cR 134}{1}{3.5kg}{0.25}
-\ammo{Fragmentation}{3D10+11 dmg | 3 AP | Blast (10)}{cR 134}{1}{3.5kg}{0.25}
-\ammo{Incendiary}{2D10+8 dmg | 2 AP | Blast (8) | ignites flammable objects}{cR 151}{1}{3.5kg}{0.25}
-\ammo{Incendiary Fragmentation}{3D10+8 dmg | 3 AP | Blast (10) | ignites flammable objects}{cR 181}{1}{3.5kg}{0.25}
-\ammo{Thermobaric}{5D10+10 dmg | 5 AP | Blast (18) | heat-based, ignores all cover and non-vacuum-sealed armor}{cR 272}{1}{3.5kg}{0.25}
-\ammo{Thermite}{6D10+10 | 25 AP | Blast (6) | takes two rounds to get going, then burns for one minute dealing its damage every round; sticks to rough surfaces}{cR 242}{1}{3.5kg}{0.25}
-\ammo{Kinetic Penetrator}{4D10+8 dmg | 18 AP}{cR 272}{1}{3.5kg}{0.25}
-\end{multicols}
-
-%	Arrows / Bolts
-\subsubsection{Arrows}
-\vspace{8mm}
-\begin{multicols}{2}
-\ammo{Broadhead}{-}{cR 1}{25}{30g}{10}
-\ammo{AP}{-1 dmg, +3 AP}{cR 1}{25}{30g}{10}
-\ammo{Shield Breaker}{-1 dmg, Disrupt}{cR 12}{25}{30g}{10}
-\ammo{Syringer}{-3 dmg, +1 AP, contains an empty vial to be filled with poisons or other injections that are released into a biological target when hit}{cR 3}{25}{30g}{10}
-\ammo{Grapple}{-4 dmg, 0 AP, half range; the mechanized grapple attaches to a rope and holds on most surfaces but e.g. very sturdy metals or fragile materials like glass}{cR 6}{1}{30g}{10}
-\end{multicols}
-
-\needspace{30mm}
-\subsubsection{Bolts}
-\vspace{8mm}
-\begin{multicols}{2}
-\ammo{Broadhead}{-}{cR 1}{25}{30g}{10}
-\ammo{AP}{-1 dmg, +3 AP}{cR 1}{25}{30g}{10}
-\ammo{Shield Breaker}{-1 dmg, Disrupt}{cR 12}{25}{30g}{10}
-\ammo{Syringer}{-3 dmg, +1 AP, contains an empty vial to be filled with poisons or other injections that are released into a biological target when hit}{cR 3}{25}{30g}{10}
-\ammo{Grapple}{-4 dmg, 0 AP, half range; the mechanized grapple attaches to a rope and holds on most surfaces but e.g. very sturdy metals or fragile materials like glass}{cR 6}{1}{30g}{10}
+	\luaimport{equipment/ammo.json}{ammo.tpl}{ammo}
 \end{multicols}

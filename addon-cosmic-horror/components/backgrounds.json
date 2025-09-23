@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Cult Child",
+        "picture_path": "",
+        "cost": "2",
+        "cr": "5",
+        "int": "",
+        "ins": "-2",
+        "ch": "-2",
+        "dex": "",
+        "ag": "",
+        "con": "5",
+        "str": "",
+        "itemize:other_modifiers": [
+            ""
+        ],
+        "itemize:skills": [
+            "one Melee Combat Training +1",
+            "one Ranged Combat Training +1",
+            "Occultism +2",
+            "Survival +3"
+        ],
+        "itemize:abilities": [
+            ""
+        ],
+        "itemize:boons": [
+            ""
+        ],
+        "itemize:banes": [
+            "Superstition 30"
+        ],
+        "banecostoverride": "6",
+        "flavor_text": "Born into what most people would consider a bizarre world, these children live in a different world. They are jaded beyond most people and often consider themselves chosen - and some of them might actually be. Very few people understand these children's truly alien mind.",
+        "Example equipment": "",
+        "Notes": ""
+    }
+]

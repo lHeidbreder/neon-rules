@@ -5,20 +5,13 @@
 \usepackage{multicol}
 \usepackage{forloop}
 \usepackage{longtable}
+\usepackage[margin=20mm]{geometry}
+%\usepackage[noxcolor]{svg}
 \newsavebox\ltmcbox
 
-%margins
-\def\heightmarge{30mm}
-\addtolength{\textheight}{\heightmarge}
-\addtolength{\topmargin}{-1\dimexpr \heightmarge \relax}
-%\addtolength{\bottommargin}{-1\heightmarge}
-\def\sidemarge{0mm}
-\addtolength{\textwidth}{2\dimexpr\oddsidemargin-\sidemarge\relax}
-\setlength\oddsidemargin{\sidemarge}
-\setlength\evensidemargin{\sidemarge}
-
-\input{../core-rulebook/config/packages.tex}
-\directlua{dofile("../scripts/lua/csv-importer.lua")}
+\usepackage{../core-rulebook/config/packages}
+%FIXME: only place that still requires the old importer
+\directlua{require("../scripts/lua/csv-importer.lua")}
 \newcommand{\generalskills}{\directlua{noncombat_skills("../core-rulebook/lists/skills.csv")}}
 \newcommand{\meleecombatskills}{\directlua{combat_skills("../core-rulebook/lists/skills.csv", "Melee")}}
 \newcommand{\rangedcombatskills}{\directlua{combat_skills("../core-rulebook/lists/skills.csv", "Ranged")}}
@@ -35,6 +28,12 @@
 		Augments: & \TextField[width=0.3\textwidth, name=augs#1]{} \\
 		Mods: & \TextField[width=0.3\textwidth, name=augmods#1]{}
 	\end{tabular}
+	\par
+}
+\newcommand{\mutbodylocation}[1]{%
+	\textbf{\large#1 Mutations}\\
+	\vspace{2mm}
+	\TextField[width=0.3\textwidth, name=mut#1, multiline]{}
 	\par
 }
 \newcommand{\meleeweapon}[1]{
@@ -95,7 +94,7 @@
 }
 
 \def\inputfield#1{ \TextField[width=0.3\columnwidth, bordercolor=black, name=#1]{} }
-\def\charfield#1{ \TextField[width=10mm, name=#1]{} }
+\def\charfield#1{ \TextField[width=15mm, name=#1]{} }
 \def\textbox#1{ \TextField[name=#1, multiline, width=\columnwidth, height=5.5\baselineskip]{} }
 \def\skillcheckbox#1{\CheckBox[name=#1]{}}%,height=0.4\baselineskip,width=0.8\baselineskip]{}}
 
@@ -122,7 +121,9 @@
 \input{components/page5.tex}
 \pagebreak
 %addons
+%do shells need a page? AI does not need the normal HP
 \input{components/pageaddon_psionics}
-%TODO: AI page for shells
+\newpage
+\input{components/pageaddon_cosmic-horrors}
 
 \end{document}

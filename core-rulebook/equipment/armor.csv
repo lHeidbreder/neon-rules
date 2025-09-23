@@ -1,0 +1,29 @@
+group,name,head,chest,arms,legs,covers,mods,itemize:effect,price,weight,availability
+casual,Biker helmet,3,0,0,0,head,1,+10 to Drive(Bike) checks,35,1.5,5
+casual,Armored suit,0,3,2,3,"torso, arms, legs",1,Inconspicuous,45,2,4
+casual,Tough coat,0,2,1,1,"torso, arms",0,Inconspicuous,35,2,6
+casual,Flak jacket,0,4,4,1,"torso, arms",1,Light,55,2,4
+casual,Tough pants,0,0,0,2,legs,0,Inconspicuous,40,1.5,6
+helmets,Blast helmet,14,0,0,0,head,1,immune to Trauma,230,8,3
+helmets,Improvised helmet,5,0,0,0,head,0,Improvised,25,3,6
+helmets,Banshee helmet,6,1,0,0,head,1,Light;inbuilt spotter target assist system,250,2,3
+helmets,Flak helmet,8,0,0,0,head,0,,160,1.5,4
+helmets,Ghost helmet,6,0,0,0,head,1,"Light; Can project a holographic image onto the helmet, granting +10 to Intimidation when active and visible.",210,5,3
+helmets,EVA helmet,5,0,0,0,head,1,vac-sealed,210,2,3
+helmets,Argus helmet,10,0,0,0,head,1,inbuilt explosives detection assistant,230,9,3
+body,EOD armor,3,20,18,2,"torso, arms",1,Bulky,550,36,3
+body,Banshee suit,0,10,7,0,"torso, arms",2,Light;inbuilt climbing gear,530,4,3
+body,Improvised vest,0,9,0,0,torso,0,Improvised,35,3.5,6
+body,Stab vest,0,9,0,0,torso,0,immune to Piercing rule,85,3.5,6
+body,Flak vest,0,12,0,0,torso,1,,480,4,5
+body,UA pauldrons,0,0,10,0,arms,0,,390,3.5,3
+body,Ghost suit,0,10,7,0,"torso, arms",2,does not stop a Holoskin;includes piezoelectric exo-frame,530,12,3
+body,Locust armor,0,8,0,2,torso,2,includes jump pack,540,38,3
+body,Node armor,0,14,4,0,"torso, arms",3,can carry AI;includes piezoelectric exo-frame,590,14,3
+body,EVA suit,0,3,3,3,"torso, arms, legs",2,vac-sealed,600,2.5,3
+body,Shadow suit,0,3,3,3,"torso, arms, legs",1,"The wearer gains +20 to hide, and is at a -10 to hit in low-light and darkness.",480,2.8,4
+leg,Blast greaves,0,1,0,18,legs,0,,230,10,3
+leg,Banshee greaves,0,0,0,6,legs,1,Light,190,2,3
+leg,Flak greaves,0,0,0,10,legs,0,,150,2.5,4
+leg,Ghost greaves,0,0,0,6,legs,1,Light;halves penalties from noise on sneaking,220,6,3
+leg,Locust greaves,0,0,0,6,legs,1,Light;reduces fall damage to a quarter,210,5.5,3

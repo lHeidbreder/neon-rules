@@ -1,0 +1,200 @@
+[
+    {
+        "number": "0",
+        "arcanum": "The Fool",
+        "upright_meaning": "Youth",
+        "upright": "The wielder does not age. Wounds, however, always scar.",
+        "reversed_meaning": "Distraction",
+        "reversed": "When possible, the wielder has to attack different targets every round.",
+        "img_path": ""
+    },
+    {
+        "number": "1",
+        "arcanum": "The Magician",
+        "upright_meaning": "Concentration",
+        "upright": "The wielder's intelligence is increased by his Insight.",
+        "reversed_meaning": "Manipulation",
+        "reversed": "The wielder suffers a penalty to defend against trickery and ambushes equal to twice his Insight.",
+        "img_path": ""
+    },
+    {
+        "number": "2",
+        "arcanum": "The High Priestess",
+        "upright_meaning": "Knowledge",
+        "upright": "The weapon is a source of Insight (up to a maximum of 5).",
+        "reversed_meaning": "Unwanted Attention",
+        "reversed": "The wielder gains a penalty to Stealth equal to his Insight.",
+        "img_path": ""
+    },
+    {
+        "number": "3",
+        "arcanum": "The Empress",
+        "upright_meaning": "Beauty",
+        "upright": "The wielder is unnaturally beautiful; his charisma is increased by his Insight. The weapon always catches an onlooker's eye and refuses to be hidden.",
+        "reversed_meaning": "Hesitation",
+        "reversed": "The weapon almost refuses to be drawn. It may only be drawn in response to overt aggression and only as a last resort.",
+        "img_path": ""
+    },
+    {
+        "number": "4",
+        "arcanum": "The Emperor",
+        "upright_meaning": "Protectiveness",
+        "upright": "The wielder gains a bonus to parrying equal to his Insight whenever he protects the helpless.",
+        "reversed_meaning": "Lack of Control",
+        "reversed": "Fear penalties are doubled around the weapon (roughly a 100m radius).",
+        "img_path": ""
+    },
+    {
+        "number": "5",
+        "arcanum": "The Hierophant",
+        "upright_meaning": "Commitment",
+        "upright": "The wielder suffers -30 to using any weapon other than this one for half a year after usage.",
+        "reversed_meaning": "Role Reversal",
+        "reversed": "While carrying the weapon, the wielder's unarmed attacks deal an additional D10 damage.",
+        "img_path": ""
+    },
+    {
+        "number": "6",
+        "arcanum": "The Lovers",
+        "upright_meaning": "Soulmates",
+        "upright": "The weapon refuses to be wielded by anyone but the summoner, leader of the binding ritual or similar person.",
+        "reversed_meaning": "Disharmony",
+        "reversed": "The weapon chooses a wielder. Once it gets fed up, it chooses a new one or specifically refuses the last one.",
+        "img_path": ""
+    },
+    {
+        "number": "7",
+        "arcanum": "The Chariot",
+        "upright_meaning": "Determination",
+        "upright": "After failing a specific attack (a simple attack, a specific maneuver, a called shot...), gain +10 to repeating the same action next round.",
+        "reversed_meaning": "Aggression",
+        "reversed": "The wielder suffers from Fear whenever she retreats.",
+        "img_path": ""
+    },
+    {
+        "number": "8",
+        "arcanum": "Strength",
+        "upright_meaning": "Power",
+        "upright": "The weapon deals additional melee damage equal to the wielder's Insight.",
+        "reversed_meaning": "Weakness",
+        "reversed": "The weapon always needs to be braced before shooting in ranged. It cannot be used to feint in melee.",
+        "img_path": ""
+    },
+    {
+        "number": "9",
+        "arcanum": "The Hermit",
+        "upright_meaning": "Enlightenment",
+        "upright": "The wielder only reduces his Courage by 1 for every 2 Insight.",
+        "reversed_meaning": "Isolation",
+        "reversed": "If the wielder fights alone, he suffers -20 to all tests.",
+        "img_path": ""
+    },
+    {
+        "number": "10",
+        "arcanum": "Wheel of Fortune",
+        "upright_meaning": "Change of Fate",
+        "upright": "The wielder may reroll one attack per session. Whenever he does, he gains 1 Corruption.",
+        "reversed_meaning": "Disorder",
+        "reversed": "The first successful attack each session using this weapon needs to be rerolled.",
+        "img_path": ""
+    },
+    {
+        "number": "11",
+        "arcanum": "Justice",
+        "upright_meaning": "Truth",
+        "upright": "Anyone lying to the wielder must first pass an unmodified Courage test or swallow their words.",
+        "reversed_meaning": "Retribution",
+        "reversed": "Whenever the weapon deals damage, the wielder takes 1 damage ignoring armor and toughness.",
+        "img_path": ""
+    },
+    {
+        "number": "12",
+        "arcanum": "The Hanged Man",
+        "upright_meaning": "Trapping",
+        "upright": "When the wielder wishes to retreat from combat, he makes a Cr test. If he fails, he suffers D5 Corruption and does not retreat.",
+        "reversed_meaning": "Apathy",
+        "reversed": "If the wielder is confronted with one or more sources of Fear during combat, he only tests once when combat is over and only against the strongest source.",
+        "img_path": ""
+    },
+    {
+        "number": "13",
+        "arcanum": "Death",
+        "upright_meaning": "Beginning",
+        "upright": "Whenever someone dies to a wound caused by this weapon, there is a chance for an otherworldly creature to enter reality. That chance is equal to the victim\u2019s highest characteristic.",
+        "reversed_meaning": "Status Quo",
+        "reversed": "Anyone trying to move the wielder against his will suffers D5 Insight.",
+        "img_path": ""
+    },
+    {
+        "number": "14",
+        "arcanum": "Temperance",
+        "upright_meaning": "Peace",
+        "upright": "Any attacker must succeed on a Cr test at a penalty equal to the wielder's Insight to attack him unprovoked.",
+        "reversed_meaning": "Excess",
+        "reversed": "All combat actions have a \\emph{minimum} penalty equal to the wielder's Insight. Maneuvers with equal or higher penalties are not affected.",
+        "img_path": ""
+    },
+    {
+        "number": "15",
+        "arcanum": "The Devil",
+        "upright_meaning": "Violence",
+        "upright": "The wielder has to fight - at least to first blood - once every week or suffer 2 Corruption every day thereafter.",
+        "reversed_meaning": "Reclaimation",
+        "reversed": "When the wielder has more severe injuries than his opponent, he gains +10 to combat actions.",
+        "img_path": ""
+    },
+    {
+        "number": "16",
+        "arcanum": "The Tower",
+        "upright_meaning": "Destruction",
+        "upright": "The first hit the wielder takes every session deals double damage.",
+        "reversed_meaning": "Resistance",
+        "reversed": "The weapon ignores all supernatural armor, and both armor and toughness of supernatural creatures.",
+        "img_path": ""
+    },
+    {
+        "number": "17",
+        "arcanum": "The Star",
+        "upright_meaning": "Renewal",
+        "upright": "The wielder regenerates naturally every 8 hours, even without rest. He still gets tired.",
+        "reversed_meaning": "Monotony",
+        "reversed": "The wielder may only use a single type of maneuver in each combat, e.g. only Powerstrikes.",
+        "img_path": ""
+    },
+    {
+        "number": "18",
+        "arcanum": "The Moon",
+        "upright_meaning": "Intuition",
+        "upright": "The wielder adds half of his Insight to initiative.",
+        "reversed_meaning": "Truth",
+        "reversed": "Everyone knows what the wielder will do next. He always counts as having the lowest initiative for the purpose of declaration.",
+        "img_path": ""
+    },
+    {
+        "number": "19",
+        "arcanum": "The Sun",
+        "upright_meaning": "Freedom",
+        "upright": "The wielder is immune to Attacks of Opportunity.",
+        "reversed_meaning": "Ego",
+        "reversed": "If after combat the wielder did not perform a heroic deed, nor dealt the highest damage, he needs to test against Fear and gains D5-1 Insight.",
+        "img_path": ""
+    },
+    {
+        "number": "20",
+        "arcanum": "Judgement",
+        "upright_meaning": "Awakening",
+        "upright": "The wielder can reroll one failed Restraint test against a Disabling Characteristic.",
+        "reversed_meaning": "Self-doubt",
+        "reversed": "Whenever the wielder fumbles in combat, he suffers from Fear.",
+        "img_path": ""
+    },
+    {
+        "number": "21",
+        "arcanum": "The World",
+        "upright_meaning": "Success",
+        "upright": "Once per combat the wielder may take a third action during one round.",
+        "reversed_meaning": "Burden",
+        "reversed": "The weapon always at least requires half the user's carry weight to wield.",
+        "img_path": ""
+    }
+]

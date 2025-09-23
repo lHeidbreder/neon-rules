@@ -1,0 +1,73 @@
+[
+    {
+        "name": "Aegis Arcology Solutions",
+        "itemize:other_names": [
+            "AAS",
+            "Aegis"
+        ],
+        "industry": "AAS mainly supplies infrastructure, offering real estate, and services in city planning as well as security.",
+        "operations": "Aegis builds and manages sprawling self-contained urban complexes called \"arcolopolises\" (commonly called \u201carco\u201d/\u201darcos\") where millions of people live, work, and consume. Each complex includes residential units, corporate offices, shopping districts, schools, and medical facilities, essentially serving as walled, secluded cities.",
+        "rise": "During a period of unprecedented urban overcrowding and rampant pollution, traditional cities couldn't handle the demand for space and resources. Governments allowed Aegis to experiment with high-density, controlled environments. As social instability grew, AAS took over more housing, infrastructure, and, eventually, public services, justifying the transition as \u201cfor the public good.\u201d Now, Aegis essentially owns most of the world\u2019s largest metropolitan areas.",
+        "ceo_name": "Simon Diego Santos",
+        "ceo_description": "An engineer visionary in his mid 60s, who worked all his life to reach the top, allegedly. He himself pushed several innovations in the nutrient paste network after suffering severe food poisoning and is considered a \u201cpeople\u2019s person\u201d in the media at large."
+    },
+    {
+        "name": "NeuraVast Industries",
+        "itemize:other_names": [
+            "NVI"
+        ],
+        "industry": "NVI creates biotechnology for the purposes neural augmentation or entertainment.",
+        "operations": "NeuraVast specializes in cerebral implants, brain-machine interfaces, and augmented reality. They sell most common neuro-enhancements to improve cognition, memory retention, and virtual immersion.",
+        "rise": "Originally an advanced medical company, NeuraVast grew after creating life-saving neural implants. Eventually, they pivoted to making luxury consumer products, promising users enhanced intelligence and memory. As the global workforce demanded smarter employees, NeuraVast implants became a necessity for many jobs, eventually for everyday life as of their public release of L1NC.",
+        "ceo_name": "Dr Katya Andreeva",
+        "ceo_description": "Andreeva is an ambitious ex-politician. She obsessed with image, both her own as well as the company\u2019s, making sure to always choose her words carefully."
+    },
+    {
+        "name": "XyloGen Enterprises",
+        "itemize:other_names": [
+            "Xylo",
+            "Gen-tech"
+        ],
+        "industry": "Xylo mainly manages large-scale agriculture, offering services in genetic engineering of plants and livestock.",
+        "operations": "XyloGen is a biotech firm specializing in gene-editing, agriculture, and synthetic food production. They provide genetically modified foods that can grow in extreme conditions and high-efficiency vat-grown meat and cloned livestock.",
+        "rise": "XyloGen\u2019s rise began with the climate crisis. As global food supplies dwindled, they pioneered hyper-resilient crops and livestock. At first, they seemed like heroes, feeding millions. But the catch? XyloGen\u2019s modified crops are designed to be infertile, ensuring that farmers must buy seeds from them every season. They now control much of the world's food supply and hold the patent on essential nutrient modifications, dictating diet and nutrition for billions.",
+        "ceo_name": "Dr Karl Paul Becker",
+        "ceo_description": "Becker is a very controversial figure, as his initiatives massively improved the global availability of nutrient paste, but many mistrust his background in workplace stimulant research."
+    },
+    {
+        "name": "Solace MedCorp",
+        "itemize:other_names": [
+            "Solace",
+            "Sol"
+        ],
+        "industry": "Solace provides all types of healthcare solutions.",
+        "operations": "Solace provides privatized healthcare services, pharmaceuticals, and life-extending treatments for the wealthy, as well as basic-level treatments for the poor, mainly through subscription-based \"health-as-a-service\" models.",
+        "rise": "Solace started as a specialized clinic offering advanced treatments to only the wealthy. When government healthcare systems worldwide crumbled, Solace began offering subscription-based healthcare to the masses, integrating low-cost clinics with higher-end medical centers. The poor became locked into costly plans, while the rich received gene therapies, organ cloning, and immortality treatments. Now, Solace controls life expectancy itself, as people pay more to unlock better health coverage and treatment tiers.",
+        "ceo_name": "Brian and Andrew Whitman",
+        "ceo_description": "The Whitman brothers have been at the top of Solace for close to 3 decades. They are known to make tough decisions and get things done."
+    },
+    {
+        "name": "Hyperion Global Networks",
+        "itemize:other_names": [
+            "Hyperion",
+            "Hog Net"
+        ],
+        "industry": "Hyperion offers communication and data services. They are also the largest developer of AI technology.",
+        "operations": "Hyperion controls nearly all global telecommunications, internet, and satellite data networks. They provide infrastructure for the web, personal devices, and cloud data storage.",
+        "rise": "Hyperion began as a telecom provider, expanding during a worldwide communication boom. As physical and digital borders blurred, Hyperion developed and monopolized the data highways that support society\u2019s digital backbone. They introduced \"data access\" as a utility\u2014ensuring everyone is connected for a price. They also influence politics and media by controlling content delivery and filtering information for governments under the guise of \"cybersecurity.\"",
+        "ceo_name": "Frederic Martin",
+        "ceo_description": "Martin is a connoisseur of fine dining. On his initiative Hyperion started the moonshot project \u201cLazarus\u201d, attempting to immortalize humans by creating AI from their memories."
+    },
+    {
+        "name": "Hale Collective Finance",
+        "itemize:other_names": [
+            "Hale Collective",
+            "Hale"
+        ],
+        "industry": "Hale is the largest global provider of financial services and credit.",
+        "operations": "Hale handles financial services, credit, and automated personal finance algorithms that manage people's finances and debt. They control the \"Loyalty Credit,\" a universal currency accepted across major nations.",
+        "rise": "Hale grew out of a series of economic crises where national currencies fluctuated uncontrollably. They issued \"Loyalty Credits,\" a stable universal currency based on purchasing behavior and loyalty to specific brands or actions, earning favor from struggling governments and populations. Now, people\u2019s credit score and standing with Hale control their quality of life, and most transactions rely on Loyalty Credits, making Hale\u2019s economic policies as powerful as a nation\u2019s.",
+        "ceo_name": "Adam Robin Smith",
+        "ceo_description": "Not just a CEO, but also a political scientist and influential content creator. He uses real investment advice as a funnel into the company\u2019s services."
+    }
+]

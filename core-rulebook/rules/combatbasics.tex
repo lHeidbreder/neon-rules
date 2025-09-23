@@ -9,17 +9,17 @@ In \emph{ascending} order all characters exclaim their plans for the combat roun
 \begin{exampleblock}
 	\itshape
 	Three contenders are involved in a fight.\\
-	Jane has 8 initiative after hitting her head multiple times, making her the slowest, therefore first to declare. She intends to pick up a weapon from the floor and whack Paul over the head.\\
-	Anne, with an initiative of 12 is next in line. Since she fears being attacked and severely injured before she can attack, she will block twice. As to not cause attacks of opportunity, she does not move.\\
-	Paul is the fastest with an initiative of 16 and therefore declares last. Knowing he's at a disadvantage, he disengages and moves away, keeping one reaction for the attack he knows is coming.
+	Haelee has 8 initiative after hitting her head multiple times, making her the slowest, therefore first to declare. She intends to pick up a weapon from the floor and whack Kaydin over the head.\\
+	Jynna, with an initiative of 12 is next in line. Since she fears being attacked and severely injured before she can attack, she will block twice. As to not cause attacks of opportunity, she does not move.\\
+	Kaydin is the fastest with an initiative of 16 and therefore declares last. Knowing he's at a disadvantage, he disengages and moves away, keeping one reaction for the attack he knows is coming.
 \end{exampleblock}
 \subsection{Action Phase}
 In \emph{descending} order all characters resolve their actions. Depending on the actions that resolve earlier, some declared actions may become invalid due to ranges and line of sight - this is the main advantage of being faster in combat.
 \begin{exampleblock}
 	\itshape
-	First Paul, the fastest combatant, resolves his actions. He takes a disengaging stance as to not suffer attacks of opportunity and runs.\\
-	Anne, having prepared to block or evade, essentially skips her turn.\\
-	Lastly, Jane moves after Paul and attacks. She's attacking in movement unexpectedly and therefore has to deal with a -20 in addition to the modifiers she already has.
+	First Kaydin, the fastest combatant, resolves his actions. He takes a disengaging stance as to not suffer attacks of opportunity and runs.\\
+	Jynna, having prepared to block or evade, essentially skips her turn.\\
+	Lastly, Haelee moves after Kaydin and attacks. She's attacking in movement unexpectedly and therefore has to deal with a -20 in addition to the modifiers she already has.
 \end{exampleblock}
 \subsection{Variable Initiative}
 \label{subsec:variableini}
@@ -27,11 +27,26 @@ Initiative is variable. When a character is disorientated by being blinded, stun
 \\%
 Unlike a reduced Base Initiative, this may be regained by taking the \emph{Gather Senses} action.
 \section{Control area}
-Every combatant has a \emph{control area}, which is 120° in front of the character and within melee range. \\
+Every combatant has a \emph{control area},
+which is 120° in front of the character
+and within melee reach.
+\\%
 When fighting multiple enemies in melee
 	that are not all within the character's control area,
 	he takes -20 to all tests in that combat encounter.
 This is in addition to being outnumbered.
+\section{Ranges}
+%Melee reach still standing out
+Ranged weapons have multiple different ranges.
+The range given in the Equipment (see p. \pageref{sec:rangedweapons}) is considered \emph{Effective Range}.
+\\%
+Beyond that are \emph{Long} and \emph{Extreme Range},
+	up to two times or four times the effective range respectively.
+\\%
+Below that you have \emph{Close Range},
+which is up to half the weapon's effective range,
+and \emph{Point Blank Range},
+which is identical with melee reach.
 \section{Actions}
 Every character has 2 actions per combat round, \emph{in addition} to being allowed to move. Remember that all actions are happening simultaneously and some actions might be more difficult to do while moving.\\
 There are two types of combat actions: active actions and reactions.
@@ -43,6 +58,13 @@ Actions are interchangeable:
 Turning actions has to be \emph{declared}.
 \section{Free actions}
 Free actions can be used at any time and don't use up an action. Free actions cannot be used to interrupt another character that has higher initiative. Any character is generally limited to one of any free action, e.g. a character cannot drop to the ground, stand up using an action and drop back down again. Remember that a round of combat is about 3 seconds long - when in doubt, apply common sense.
+\section{Attack and Defense}
+For an attack the attacker and defender make an Opposed Test (see p. \pageref{sec:opposedchecks}).
+If the attacker wins, the target is hit.
+If the defender wins or the result is inconclusive (i.e. both tests yield the same result),
+	the attack does not connect in any meaningful way.
+\par
+This also means that a "failed" test may still result in a hit if the defense was much worse.
 \section{Maneuver basics}
 A maneuver describes a combat action a character can take.
 These actions might look differently or be executed in a different way,
@@ -69,12 +91,31 @@ When attacking a group of targets or one large target in \emph{ranged} combat,
 Depending on the overall target size a bonus to hit given on the Size-table (p. \pageref{sizestable}) is inferred.
 If the target is a group, the individual target is determined randomly if necessary.\\
 Attacking a single target in a large, moving group is impossible and the target will have to either be lured out or hit by chance or explosives.
-\section{Dual-wielding}
+\section{Handedness and Dual-wielding}
+Unless a character has the \emph{Ambidextrous} Boon,
+he is either right or left hand dominant.
+Using the wrong hand will infer a -10 to any combat action,
+with the exception of defensive actions using a \emph{Protective} weapon.
+\begin{multicols}{2}
+	\textbf{In Melee combat} using a two-handed weapon in one hand suffers a -30 penalty.
+	Dual-wielding two one-handed weapons infers -30,
+	attempting to dual-wield two two-handed weapons even infers -60.
+	\par%
+	\columnbreak
+	\textbf{In Ranged combat} using pistols one-handed infers a -10 penalty.
+	Small rifles may be used one-handed at -30.
+	Any others suffer -60 or are completely impossible.
+	\\%
+	When dual-wield pistols, the character suffers -30.
+	Small rifles suffer -60 when dual-wielding.
+	Anything bigger cannot be dual-wielded.
+\end{multicols}
+These modifiers are in addition to the off-hand penalty.
+\par%
 When wielding two weapons,
-	the character may attack or defend using both weapons pending just one action.
-Using one-handed weapons infers a -30,
-	using two-handed weapons infers -60.
-Additionally, attacking different targets suffers a -10 penalty.\\
+the character may attack or defend using both weapons pending just one action.
+The character may attack different targets,
+but suffers another -10 penalty.\\
 Attacking or parrying twice is not possible in turned actions,
 	i.e. dual-wielders cannot attack or parry 4 times per turn.
 \section{Combined actions}
@@ -86,13 +127,12 @@ The team may then distribute all Degrees of Success among each other freely, all
 	Three people participate in a combined action. Two of them succeed, with 3 and 4 DoS respectively. The last one fails with 3 DoF.\\
 	In total the group scores (7-3=) 4 DoS,
 		which they can distribute among themselves freely.
-	Any test that scores 0 DoS after distribution indicates an irrelevant failure.
-	\\%
-	If the total DoS score less than 0,
-		the action results in some undesirable outcome.
-	Details should depend on how bad the result was
-		and are up to the GM.
+	Any combined test that scores 0 DoS after distribution indicates an irrelevant failure.
 \end{exampleblock}
+If the total DoS score less than 0,
+	the action results in some undesirable outcome.
+Details should depend on how bad the result was
+	and are up to the GM.
 \section{Damage and armor}
 When a character takes a hit that is not defended against, first worn armor and cover are reduced by the attack's armor penetration, down to a minimum of 0. \\
 The leftover armor and the target’s injury threshold then reduce the attack’s damage, again down to a minimum of 0. \\
@@ -104,7 +144,9 @@ Any leftover damage is then applied to the hit location
 	The defender wears "armor" with an armor value of 4 and sits behind a thin wall with armor value of 8, for a total of 12. His Injury Threshold is 3.\\
 	The effective armor is reduced to 6. Now both the armor and the Injury Threshold is deducted from the damage, so the hit deals (15-6-3=) 6 damage in total.
 	\par
+	\vspace{2mm}
 	\hrule
+	\vspace{2mm}
 	Another hit from the same weapon against the target without cover:
 	The attack deals 15 damage and has 6 AP.
 	The defender still wears 4 points of armor and that is his total this time.
@@ -119,8 +161,10 @@ Any object blocking line of sight is considered \emph{Concealment}. Attacking a 
 \\%
 Cover degrades. For every 5 points of damage a section of cover blocks, the armor it provides is reduced by 1. If a section of cover functions as both cover and concealment, the concealing effect stops when roughly 25\% of armor remains. When in doubt, apply common sense and let the GM make an executive decision.
 \par
+\needspace{30mm}
 Examples for cover by material:
-\\
+\par%
+\vspace{-8mm}
 \begin{tabular}{ll}
 	Material & Armor per cm \\ \hline
 	Light: Wood, Plastic & 2 \\

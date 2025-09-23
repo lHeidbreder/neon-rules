@@ -1,0 +1,57 @@
+[
+    {
+        "name": "Forgive-Forget",
+        "group": "Downer",
+        "cost": "45",
+        "description": "A lorazepam-based compound drug that causes short-term memory loss and relaxation that was created for anti-incursion operations.",
+        "effect": "The user immediately decreases his Insight by 2D5+2. Disabling Characteristics are reduced by 2.",
+        "detriment": "The user has difficulty recalling information. He suffers -15 to Int tests that are involved in memory in some kind.",
+        "duration": "2 hours",
+        "load": "1 MT, 1 RI",
+        "overdose_effect": "The user suffers anterograde amnesia. The next time he pays XP to gain improvements, those costs are doubled."
+    },
+    {
+        "name": "Luna",
+        "group": "Downer",
+        "cost": "70",
+        "description": "A central nervous system suppressants that dissociates the user from reality and unreality alike, but also makes the user very tired.",
+        "effect": "The user only gains half as much Insight as usual.",
+        "detriment": "The user falls into a dreamless sleep when he stops being active.",
+        "duration": "2 hours",
+        "load": "1 RI",
+        "overdose_effect": "The user permanently suffers from \\emph{Insomnia}."
+    },
+    {
+        "name": "Purity",
+        "group": "Downer",
+        "cost": "130",
+        "description": "An angelic white powder. Rubbed in the gums it offers strong protection against mutation.",
+        "effect": "The user's corruption gain is reduced by his Injury Threshold.",
+        "detriment": "\\emph{(The substance puts extremely high load on the user's body.)}",
+        "duration": "12 hours",
+        "load": "3 MT, 3 RI",
+        "overdose_effect": "A random implant is immediately and violently rejected, and leaves the body if possible."
+    },
+    {
+        "name": "Vision",
+        "group": "Upper",
+        "cost": "75",
+        "description": "A bioluminescent injection, glowing in all colors of the rainbow.",
+        "effect": "The user falls into a semi-lucid trance. During this time all interaction with the supernatural gains a +20 bonus and the user gains D5 Insight.",
+        "detriment": "All mundane tasks suffer a -20 penalty.",
+        "duration": "2 hours",
+        "load": "2 RI",
+        "overdose_effect": "The user gains D5+1 corruption."
+    },
+    {
+        "name": "Dust",
+        "group": "Upper",
+        "cost": "130",
+        "description": "Lazuli blue powder that catches fire in sunlight.",
+        "effect": "The user gains the DEMONIC and DEADLY NATURAL WEAPON traits. He cannot gain Insight nor corruption during this time.",
+        "detriment": "At the end of the duration, the user gains D10 corruption and suffers from \\emph{Shock}.",
+        "duration": "2 hours",
+        "load": "2 MT",
+        "overdose_effect": "The user becomes INCORPOREAL for an hour. His equipment does not. Physical ailments (like bleeding and other overdoses) do not stop."
+    }
+]

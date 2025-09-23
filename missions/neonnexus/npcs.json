@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Evelyn \"Dusk\" Voss",
+        "label": "dusk",
+        "role": "Porcupine, fixer.",
+        "appearance": "Female, 32, visible sensory augmentation.",
+        "description": "The fixer who hires the players. Tough, no-nonsense, cybernetically enhanced. Does not even try to look trustworthy.",
+        "stats": "Dusk is a \\emph{Gang Boss}. She has the \\emph{Conniving} Nemesis Ability.\\\\She has a cR 550 bounty on her head for corporate espionage, courtesy of Hyperion."
+    },
+    {
+        "name": "Rika",
+        "label": "rika",
+        "role": "Hacker, provides critical information.",
+        "appearance": "Female, young, appears only in video or projection, hides her face.",
+        "description": "A notorious hacker with valuable information on the Nexus. Does not like to show her face and may just be a rogue AI.",
+        "stats": ""
+    },
+    {
+        "name": "Dr. Alden Hayes",
+        "label": "hayes",
+        "role": "Hyperion scientist working on the chip.",
+        "appearance": "Male, 54, bio-engineered arm replacements and unblinking cybernetic eyes.",
+        "description": "A lead Hyperion scientist working tirelessly on the AI chip.",
+        "stats": ""
+    }
+]

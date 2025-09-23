@@ -1,6 +1,7 @@
 \documentclass[12pt,a4paper,openany]{book}
-\input{../core-rulebook/config/news.tex}
-\input{../core-rulebook/config/packages.tex}
+\usepackage{../core-rulebook/config/packages}
+\usepackage{../core-rulebook/config/news}
+\raggedbottom
 
 \def\subtitle{Neon Nexus}
 
@@ -16,4 +17,6 @@
 	\input{neonnexus/index.tex}
 	
 	\input{neonnexus/credits.tex}
+
+	\IfFileExists{../core-rulebook/config/builddata.texin}{\input{../core-rulebook/config/builddata.texin}}{ }
 \end{document}

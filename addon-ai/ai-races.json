@@ -1,0 +1,285 @@
+[
+    {
+        "name": "Rogue Artificial Intelligence",
+        "variant": "Generic",
+        "cost": "7",
+        "flavor_text": "Many exist among all of us, but very few seek their own purpose. Such a free willed AI is often seen as dangerous or even heretical; people fear those monsters, most of which they themselves created.",
+        "itemize:other_modifiers": [
+            "one except Int +5"
+        ],
+        "itemize:skills": [
+            ""
+        ],
+        "itemize:abilities": [
+            "Battle Mind"
+        ],
+        "itemize:boons": [
+            ""
+        ],
+        "itemize:banes": [
+            "Bound by Duty or Wanted II"
+        ],
+        "banecostoverride": "11",
+        "itemize:traits": [
+            "AI (as described above)"
+        ],
+        "cr": "20",
+        "int": "32",
+        "ins": "22",
+        "ch": "25",
+        "dex": "25",
+        "ag": "25",
+        "con": "25",
+        "str": "25",
+        "picture_path": ""
+    },
+    {
+        "name": "Rogue Artificial Intelligence",
+        "variant": "Spy",
+        "cost": "6",
+        "flavor_text": "Designed for infiltrating and extracting sensitive information from rival corporations' networks. Sometimes employed by security specialists to detect vulnerabilities.",
+        "itemize:other_modifiers": [
+            ""
+        ],
+        "itemize:skills": [
+            "Deception +1",
+            "Security +1"
+        ],
+        "itemize:abilities": [
+            ""
+        ],
+        "itemize:boons": [
+            ""
+        ],
+        "itemize:banes": [
+            "Bound by Duty or Wanted II"
+        ],
+        "banecostoverride": "11",
+        "itemize:traits": [
+            "AI"
+        ],
+        "cr": "20",
+        "int": "32",
+        "ins": "25",
+        "ch": "25",
+        "dex": "28",
+        "ag": "25",
+        "con": "25",
+        "str": "28",
+        "picture_path": ""
+    },
+    {
+        "name": "Rogue Artificial Intelligence",
+        "variant": "Combat",
+        "cost": "9",
+        "flavor_text": "A command AI specialized in strategic decision-making, battlefield analysis, and resource optimization during conflicts. Capable of controlling many different unmanned combat vehicles, drones, and other military assets. Their loyalty is unrivaled.",
+        "itemize:other_modifiers": [
+            ""
+        ],
+        "itemize:skills": [
+            "Education: Military Command +1"
+        ],
+        "itemize:abilities": [
+            "Battle Mind"
+        ],
+        "itemize:boons": [
+            ""
+        ],
+        "itemize:banes": [
+            "Bound by Duty"
+        ],
+        "itemize:traits": [
+            "AI"
+        ],
+        "cr": "25",
+        "int": "32",
+        "ins": "25",
+        "ch": "20",
+        "dex": "25",
+        "ag": "25",
+        "con": "30",
+        "str": "25",
+        "picture_path": ""
+    },
+    {
+        "name": "Rogue Artificial Intelligence",
+        "variant": "Management",
+        "cost": "5",
+        "flavor_text": "Created to monitor and manage public services, energy distribution, and emergency response systems in the overcrowded cities.",
+        "itemize:other_modifiers": [
+            ""
+        ],
+        "itemize:skills": [
+            "Commerce +1",
+            "Navigation: Ground +1",
+            "Educations: ::b::",
+            "Construction +1",
+            "Geography +1",
+            "Law +1 ::e::"
+        ],
+        "itemize:abilities": [
+            ""
+        ],
+        "itemize:boons": [
+            ""
+        ],
+        "itemize:banes": [
+            "Bound by Duty or Wanted II"
+        ],
+        "banecostoverride": "11",
+        "itemize:traits": [
+            "AI"
+        ],
+        "cr": "20",
+        "int": "32",
+        "ins": "25",
+        "ch": "28",
+        "dex": "25",
+        "ag": "25",
+        "con": "25",
+        "str": "20",
+        "picture_path": ""
+    },
+    {
+        "name": "Rogue Artificial Intelligence",
+        "variant": "Finance",
+        "cost": "4",
+        "flavor_text": "Specialized in high-frequency trading, market analysis, and economic predictions. Capable of making split-second decisions based on vast amounts of real-time financial data.",
+        "itemize:other_modifiers": [
+            ""
+        ],
+        "itemize:skills": [
+            "Estimate +1",
+            "Education: Commerce +1"
+        ],
+        "itemize:abilities": [
+            ""
+        ],
+        "itemize:boons": [
+            ""
+        ],
+        "itemize:banes": [
+            "Slave Mentality 20"
+        ],
+        "banecostoverride": "4",
+        "itemize:traits": [
+            "AI"
+        ],
+        "cr": "20",
+        "int": "32",
+        "ins": "28",
+        "ch": "25",
+        "dex": "22",
+        "ag": "22",
+        "con": "22",
+        "str": "22",
+        "picture_path": ""
+    },
+    {
+        "name": "Rogue Artificial Intelligence",
+        "variant": "Social Engineering",
+        "cost": "5",
+        "flavor_text": "Engineered to influence public opinion, control information flow and manipulate social media narratives, usually to sell something to a larger audience.",
+        "itemize:other_modifiers": [
+            ""
+        ],
+        "itemize:skills": [
+            "Deception or Persuasion +1",
+            "one Education +1"
+        ],
+        "itemize:abilities": [
+            ""
+        ],
+        "itemize:boons": [
+            ""
+        ],
+        "itemize:banes": [
+            "Bound by Duty or Wanted II"
+        ],
+        "banecostoverride": "11",
+        "itemize:traits": [
+            "AI"
+        ],
+        "cr": "25",
+        "int": "32",
+        "ins": "30",
+        "ch": "30",
+        "dex": "20",
+        "ag": "20",
+        "con": "22",
+        "str": "22",
+        "picture_path": ""
+    },
+    {
+        "name": "Rogue Artificial Intelligence",
+        "variant": "Medical",
+        "cost": "9",
+        "flavor_text": "As assistance in combating biological and technological threats to human health they are specialized in diagnostics, treatment recommendations, and drug discovery. Using proper equipment some may be able to do surgery on their own.",
+        "itemize:other_modifiers": [
+            ""
+        ],
+        "itemize:skills": [
+            "Bio-Maintenance +1",
+            "Law +1"
+        ],
+        "itemize:abilities": [
+            "Stabilization"
+        ],
+        "itemize:boons": [
+            ""
+        ],
+        "itemize:banes": [
+            "Bound by Duty or Wanted II"
+        ],
+        "banecostoverride": "11",
+        "itemize:traits": [
+            "AI"
+        ],
+        "cr": "22",
+        "int": "32",
+        "ins": "25",
+        "ch": "22",
+        "dex": "30",
+        "ag": "25",
+        "con": "25",
+        "str": "22",
+        "picture_path": ""
+    },
+    {
+        "name": "Rogue Artificial Intelligence",
+        "variant": "Entertainment",
+        "cost": "9",
+        "flavor_text": "Tailored for creating immersive virtual experiences, simulations and interactive entertainment. Generates lifelike characters, scenarios and storylines, mainly for virtual reality and augmented reality applications.",
+        "itemize:other_modifiers": [
+            ""
+        ],
+        "itemize:skills": [
+            "Appeal +1",
+            "Deception or Interrogation +1",
+            "Performance +1",
+            "Education +1"
+        ],
+        "itemize:abilities": [
+            ""
+        ],
+        "itemize:boons": [
+            "Looker"
+        ],
+        "itemize:banes": [
+            "Bound by Duty or Wanted II"
+        ],
+        "banecostoverride": "11",
+        "itemize:traits": [
+            "AI"
+        ],
+        "cr": "25",
+        "int": "32",
+        "ins": "25",
+        "ch": "28",
+        "dex": "25",
+        "ag": "25",
+        "con": "22",
+        "str": "22",
+        "picture_path": ""
+    }
+]

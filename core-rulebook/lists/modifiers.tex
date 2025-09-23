@@ -20,57 +20,7 @@
 		Difficulty: Trivial     & +60            \\ \hline
 	\end{tabular}
 \end{center}
-\subsection{Melee Combat}
-\begin{tabularx}{\textwidth}{|X|l|l|}
-	\hline
-	\ul{Situation} & \ul{Modifier} & \ul{Keyword} \\ \hline
-	%TODO: there's no melee reach rules
-%	The character attacks below his optimum & -20 & Distance \\ \hline
-%	The character is attacking slightly outside of reach. & -20 & Distance \\ \hline
-	The character is fighting in strong winds, heavy rain or on slippery ground. & -10 & Environment \\ \hline
-	The character tries to attack or parry while prone. & -10 & Environment \\ \hline
-	The character is fighting a character in mist, fog or smoke. & -20 & Environment \\ \hline
-	The character tries to dodge while prone. & -20 & Environment \\ \hline
-	The character is fighting in knee deep snow or water. & -30 & Environment \\ \hline
-	Fighting an armed opponent while unarmed. & -10 & Equipment \\ \hline
-	The character is attempting to use two knives or a sword and a knife at once. & -10 & Equipment \\ \hline
-	The character attempts to use a spear one-handed. & -20 & Equipment \\ \hline
-	The character is attempting to use two spears at once. & -40 & Equipment \\ \hline
-	The character is outnumbered 2 to 1. & -10 & Numbers \\ \hline
-	The character and his allies outnumber the enemy 2 to 1. & +10 & Numbers \\ \hline
-	Not all enemy combatants are within the character's control area. & -20 & Target \\ \hline
-	The character is attacking a kneeling target. & +10 & Target \\ \hline
-	The character attacks a stunned target & +20 & Target \\ \hline
-	The character is attacking a prone target. & +20 & Target \\ \hline
-	The character attacks an unaware target. & +30 & Target \\ \hline
-\end{tabularx}
-\subsection{Ranged Combat}
-\begin{tabularx}{\textwidth}{|X|l|l|}
-	\hline
-	\ul{Situation} & \ul{Modifier} & \ul{Keyword} \\ \hline
-	The character is shooting over extreme range. & -50 & Distance \\ \hline
-	The character is shooting over long range. & -20 & Distance \\ \hline
-	The character shoots over short range. & +10 & Distance \\ \hline
-	The character shoots at point blank range. & +30 & Distance \\ \hline
-	The character attempts to use a pistol one-handed. & -10 & Dual-wielding \\ \hline
-	The character is attempting to use two pistols at once. & -20 & Dual-wielding \\ \hline
-	The character attempts to use a small rifle one-handed. & -30 & Dual-wielding \\ \hline
-	The character attempts to use another weapon one-handed. & -60 & Dual-wielding \\ \hline
-	The character is attempting to use two small rifles at once. & -40 & Dual-wielding \\ \hline
-	The character is fighting in strong winds, heavy rain or on slippery ground. Multiple may stack. & -10 & Environment \\ \hline
-	The character tries to dodge while prone. & -20 & Environment \\ \hline
-	The character is attacking a specific enemy caught up in melee combat or he himself is caught in melee combat. & -30 & Environment \\ \hline
-	The character is attempting to fire blindly at an enemy he knows the rough location of. & -30 & Environment \\ \hline
-	The character is fighting in knee deep snow or water. & -30 & Environment \\ \hline
-	The character is shooting at a character in mist, fog or smoke. & -30 & Environment \\ \hline
-	The character is using a long weapon in somewhat confined spaces like a house. & -20 & Environment \\ \hline
-	The character is using smgs in very tight corridors or tunnels. & -20 & Environment \\ \hline
-	The character shoots from the higher ground. & +10 & Environment \\ \hline
-	The character is shooting a prone target. & -20 & Target \\ \hline
-	The character is shooting a crouching target. & -10 & Target \\ \hline
-	The character attacks a stunned target. & +20 & Target \\ \hline
-	The character attacks an unaware target. & +30 & Target \\ \hline
-\end{tabularx}
+
 \subsection{Social}
 \begin{tabularx}{\textwidth}{|X|r|l|}
 	\hline
@@ -88,6 +38,62 @@
 	Performing a simple magic trick to draw one person's attention. & +10 & Sleight of hand \\ \hline
 \end{tabularx}
 
+\subsection{Melee Combat}
+\begin{tabularx}{\textwidth}{|X|l|l|}
+	\hline
+	\ul{Situation} & \ul{Modifier} & \ul{Keyword} \\ \hline
+	%there's no melee reach rules yet
+%	The character attacks below his optimum & -20 & Distance \\ \hline
+%	The character is attacking slightly outside of reach. & -20 & Distance \\ \hline
+	The character is fighting in strong winds, heavy rain or on slippery ground. & -10 & Environment \\ \hline
+	The character tries to attack or parry while prone. & -10 & Environment \\ \hline
+	The character is attacking on the move. & -20 & Environment \\ \hline
+	The character is fighting a character in low light, mist, fog or smoke. & -20 & Environment \\ \hline
+	The character tries to dodge while prone. & -20 & Environment \\ \hline
+	The character is fighting in knee deep snow or water. & -30 & Environment \\ \hline
+	Trying to fight in total darkness or while blinded. & -60 & Environment \\ \hline
+	Fighting an armed opponent while unarmed. & -10 & Equipment \\ \hline
+	The character is attempting to use two one-handed weapons at once. & -30 & Equipment \\ \hline
+	The character is attempting to use two two-handed weapons at once. & -60 & Equipment \\ \hline
+	The character is outnumbered 2 to 1. & -10 & Numbers \\ \hline
+	The character and his allies outnumber the enemy 2 to 1. & +10 & Numbers \\ \hline
+	Not all enemy combatants are within the character's control area. & -20 & Target \\ \hline
+	Standing outside of the target's control area. & +20 & Target \\ \hline
+	The character is attacking a kneeling target. & +10 & Target \\ \hline
+	The character attacks a stunned target & +20 & Target \\ \hline
+	The character is attacking a prone target. & +20 & Target \\ \hline
+	The character attacks an unaware target. & +30 & Target \\ \hline
+\end{tabularx}
+
+\subsection{Ranged Combat}
+\begin{tabularx}{\textwidth}{|X|l|l|}
+	\hline
+	\ul{Situation} & \ul{Modifier} & \ul{Keyword} \\ \hline
+	The character is shooting over extreme range. & -50 & Distance \\ \hline
+	The character is shooting over long range. & -20 & Distance \\ \hline
+	The character shoots over short range. & +10 & Distance \\ \hline
+	The character shoots at point blank range, while not being engaged in melee combat. & +30 & Distance \\ \hline
+	The character attempts to use a pistol one-handed. & -10 & Dual-wielding \\ \hline
+	The character is attempting to use two pistols at once. & -30 & Dual-wielding \\ \hline
+	The character attempts to use a small rifle one-handed. & -30 & Dual-wielding \\ \hline
+	The character attempts to use another weapon one-handed. & -60 & Dual-wielding \\ \hline
+	The character is attempting to use two small rifles at once. & -60 & Dual-wielding \\ \hline
+	The character is fighting in strong winds, heavy rain or on slippery ground. Multiple may stack. & -10 & Environment \\ \hline
+	The character is attacking on the move. & -20 & Environment \\ \hline
+	The character tries to dodge while prone. & -20 & Environment \\ \hline
+	The character is attacking a specific enemy caught up in melee combat or he himself is caught in melee combat. & -30 & Environment \\ \hline
+	The character is attempting to fire blindly at an enemy he knows the rough location of. & -30 & Environment \\ \hline
+	The character is fighting in knee deep snow or water. & -30 & Environment \\ \hline
+	The character is shooting at a character in low light, mist, fog or smoke. & -30 & Environment \\ \hline
+	The character is using a long weapon in somewhat confined spaces like a house. & -20 & Environment \\ \hline
+	The character is using smgs in very tight corridors or tunnels. & -20 & Environment \\ \hline
+	The character shoots from the higher ground. & +10 & Environment \\ \hline
+	The character is shooting a prone target. & -20 & Target \\ \hline
+	The character is shooting a crouching target. & -10 & Target \\ \hline
+	The character attacks a stunned target. & +20 & Target \\ \hline
+	The character attacks an unaware target. & +30 & Target \\ \hline
+\end{tabularx}
+
 \subsection{Exploration}
 \begin{tabularx}{\textwidth}{|X|l|l|}
 	\hline
@@ -100,9 +106,8 @@
 	Controlling a civilian vehicle at low speeds. & +40 & Drive / pilot \\ \hline
 	Making out sounds with an engine humming on an idle car right next to the character or light animal chatter in the background. & -10 & Perception \\ \hline
 	Trying to make out sounds in a firefight or riot. & -20 & Perception \\ \hline
-	Trying to see something or fight in low light or against light. & -20 & Perception \\ \hline
+	Trying to see something in low light or against light. & -20 & Perception \\ \hline
 	Trying to make out sounds in a street war. & -40 & Perception \\ \hline
-	Trying to fight in total darkness or while blinded. & -60 & Perception \\ \hline
 	Trying to make out sounds with large explosions going off. & -60 & Perception \\ \hline
 	Listening for footsteps on sandy ground. & +0 & Perception \\ \hline
 	Listening for footsteps on wet ground. & +15 & Perception \\ \hline
@@ -125,24 +130,24 @@
 	Trying to sneak while barefoot or wearing very light footwear. & +0 & Stealth \\ \hline
 	Trying to hide while crouching in place. & +10 & Stealth \\ \hline
 	Trying to hide while laying prone in place. & +30 & Stealth \\ \hline
-	Distracting someone & +20 & Deceive \\ \hline
-	Telling half-truths and partial lies & +10 & Deceive \\ \hline
-	Telling lies and complete untruths & -10 & Deceive \\ \hline
-	Gaslighting someone in their own area of expertise & -50 & Deceive \\ \hline
+	Distracting someone & +20 & Deception \\ \hline
+	Telling half-truths and partial lies & +10 & Deception \\ \hline
+	Telling lies and complete untruths & -10 & Deception \\ \hline
+	Gaslighting someone in their own area of expertise & -50 & Deception \\ \hline
 \end{tabularx}
 
 \subsection{Craftsmanship}
 \begin{tabularx}{\textwidth}{|X|l|l|}
 	\hline
 	\ul{Situation} & \ul{Modifier} & \ul{Focused skill} \\ \hline
-	Creating or repairing equipment with only insufficient or improvised tools. & -20 & Mechanics \\ \hline
-	Trying to fix unknown technology. & -40 & Mechanics \\ \hline
-	Attempting to repair and use damaged weapon attachments. & +10 & Mechanics \\ \hline
-	Repairing a damaged vehicle with the necessary tools. & +20 & Mechanics \\ \hline
-	Repairing simple circuitry or devices like antennas. & +30 & Mechanics \\ \hline
-	Picking more secure locks like found on motorized vehicles. & -10 & Security \\ \hline
-	Defusing an old landmine. & -30 & Security \\ \hline
-	Setting up a tripwire or trapping a door. & +10 & Security \\ \hline
+	Creating or repairing equipment with only insufficient or improvised tools. & -20 & Craftsmanship \\ \hline
+	Trying to fix unknown technology. & -40 & Craftsmanship \\ \hline
+	Attempting to repair and use damaged weapon attachments. & +10 & Craftsmanship \\ \hline
+	Repairing a damaged vehicle with the necessary tools. & +20 & Craftsmanship \\ \hline
+	Repairing simple circuitry or devices like antennas. & +30 & Craftsmanship \\ \hline
+	Picking more secure locks like found on motorized vehicles. & -10 & Sleight of hand \\ \hline
+	Defusing an old landmine. & -30 & Sleight of hand \\ \hline
+	Setting up a tripwire or trapping a door. & +10 & Sleight of hand \\ \hline
 	Picking a simple lock like found on a bicycle. & +20 & Sleight of hand \\ \hline
 %	Strategically placing a simple lock or chain. & +60 & Security \\ \hline
 \end{tabularx}

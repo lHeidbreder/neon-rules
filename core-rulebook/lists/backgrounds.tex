@@ -1,4 +1,17 @@
+\begin{minipage}{\textwidth}
 \section{Backgrounds}
 \label{sec:backgroundlist}
 
-\luaimport{lists/backgrounds.csv}{race.tpl}{bgs}
+\subsection*{At a glance}
+\providecommand{\tmplastgroup}{}
+\begin{center}
+\begin{tabularx}{0.7\textwidth}{X|rr}
+	Background & Cost & Page \\
+	\hline
+	\luaimport{lists/backgrounds.json}{race-sum.tpl}{bg-summary}
+\end{tabularx}
+\end{center}
+\end{minipage}
+\clearpage
+\subsection*{In detail}
+\luaimport{lists/backgrounds.json}{race.tpl}{bgs}

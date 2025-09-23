@@ -1,6 +1,6 @@
-\documentclass[12pt,a4paper,openany]{book}
-\input{../core-rulebook/config/news.tex}
-\input{../core-rulebook/config/packages.tex}
+\documentclass[11pt,a4paper,openany]{book}
+\usepackage{../core-rulebook/config/packages}
+\usepackage{../core-rulebook/config/news}
 
 \def\subtitle{Cosmic Horrors}
 
@@ -66,12 +66,10 @@
 	\section{Corruption}
 	\subsection{Gaining Corruption}
 	Corruption is gained when the dark powers try to enter a mortal body.
-	\vspace{-8mm}
-	\begin{itemize}
-		\setlength\itemsep{-8mm}
-		\item In areas with a lot of presence characters gain up to 1 corruption per hour.
+	\begin{sitemize}[8]
+		\item In areas with a lot of such presence, characters gain up to 1 corruption per hour.
 		\item Participating in or crashing rituals, which ask for some outer entity's favor, will cause D5 corruption.
-	\end{itemize}
+	\end{sitemize}
 	\subsection{Reducing Corruption}
 	Corruption is basically permanent.
 	It reduces by 1 per 2 years without contact to the Eldritch.
@@ -90,6 +88,7 @@
 	
 	\chapter{Mutation}
 	\label{ch:mutation}
+	\vspace{-20mm}%quick fix
 	Every now and then a character may be forced to mutate.
 	Roll a D100, divide by 2 and consult the table below.
 	The result may be modified by a tenth of the character's insight at the time of mutation.
@@ -99,15 +98,16 @@
 	\begin{multicols}{2}
 		\begin{enumerate}
 			\setlength\itemsep{-10mm}
-			\luaimport{components/mutations.csv}{mutation-tableentry.tpl}{muttable}
+			\luaimport{components/mutations.json}{mutation-tableentry.tpl}{muttable}
 		\end{enumerate}
 	\end{multicols}
 	
 	\section*{Mutations}
 	\vspace{4mm}
 	\begin{multicols}{2}
+		\raggedcolumns
 		\newcounter{mutations} %fixes hyperref links
-		\luaimport{components/mutations.csv}{mutation.tpl}{mutations}
+		\luaimport{components/mutations.json}{mutation.tpl}{mutations}
 	\end{multicols}
 	
 	\chapter{Rituals}
@@ -151,7 +151,14 @@
 		\item Summon a creature into real space or become possessed.
 	\end{sitemize}
 	\section{The Ritual}
-	When preparation is done, the ritual then takes a few hours and a Philosophy test. The test may be modified by the tribute, potentially by the request and the leading character's Insight (one-to-one).
+	When preparation is done, the ritual then takes a few hours and an Occultism test.
+	The test may be modified by
+	\begin{sitemize}
+		\item the tribute
+		\item the request
+	\end{sitemize}
+	\vspace{-8mm}
+	The test does not suffer from the reduction in Cr from Insight.
 	\par
 	During the performance of the ritual the participants will slowly unravel a small portion of the great Beyond, gaining them 2D10 Insight.\\
 	If the ritual is successful, all participants are touched by untethered blasphemy, gaining D5 corruption.
@@ -200,4 +207,6 @@
 	
 	\chapter{Credits}
 	\input{components/credits.tex}
+
+	\IfFileExists{../core-rulebook/config/builddata.texin}{\input{../core-rulebook/config/builddata.texin}}{ }
 \end{document}

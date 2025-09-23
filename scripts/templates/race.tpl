@@ -1,20 +1,43 @@
-\paragraph*{@name@ \ifthenelse{\isempty{@variant@}}{}{/ @variant@} (@cost@ GP)}
-\textit{@flavor_text@}\par
-%\ifthenelse{\isempty{@cr@@int@@ins@@ch@@dex@@ag@@con@@str@}}{}{
+\begin{mdframed}[
+    style=objectframe,
+    needspace=0.4\columnwidth,
+    frametitlefont=\parhead\bfseries,
+    frametitle={@name@ \ifthenelse{\isempty{@variant@}}{}{/ @variant@} (@cost@ GP)},
+]
+\stepcounter{tmpcntr}
+\phantomsection
+\makelabelfromkey[race]{@name@@variant@}
+\par%
+\def\currentfillerimagepath{../art/\subtitle/races/@picture_path@}
+\IfFileExists
+    {\currentfillerimagepath}
+    {
+        \vspace{5mm}
+        \begin{multicols}{2}
+            \includegraphics[width=\columnwidth]{\currentfillerimagepath}
+            \columnbreak
+            \begin{flavorblock}
+                @flavor_text@
+            \end{flavorblock}
+        \end{multicols}
+    }{
+        \begin{flavorblock}
+            @flavor_text@
+        \end{flavorblock}
+    }
 \begin{tabular}{|l|l|l|l|l|l|l|l|}
     \hline
     Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
     @cr@ & @int@ & @ins@ & @ch@ & @dex@ & @ag@ & @con@ & @str@ \\ \hline
 \end{tabular}\par
-%}
 \ifthenelse{\isempty{@itemize:other_modifiers@}}{}{\vspace{-8mm} \noindent\textbf{Other modifiers:}
     \begin{itemize}
     \setlength\itemsep{-10mm} \vspace{-8mm}
     @itemize:other_modifiers@
     \end{itemize} }
-\ifthenelse{\isempty{@itemize:skills@@itemize:abilities@@itemize:boons@@itemize:banes@@itemize:traits@@itemize:usual_backgrounds@@itemize:disallowed_backgrounds@}}{}{\hrulefill}
+\ifthenelse{\isempty{@itemize:skills@@itemize:abilities@@itemize:boons@@itemize:banes@@itemize:traits@@itemize:usual_backgrounds@@itemize:disallowed_backgrounds@}}{}{}
 \vspace{4mm}
-\begin{multicols*}{2}
+\begin{multicols}{2}
 \ifthenelse{\isempty{@itemize:skills@}}{}{ \textbf{Skills:}
     \begin{itemize}
     \setlength\itemsep{-10mm} \vspace{-8mm}
@@ -52,10 +75,6 @@
     \setlength\itemsep{-10mm} \vspace{-8mm}
     @itemize:disallowed_backgrounds@
     \end{itemize} }
-\end{multicols*}
-\def\currentfillerimagepath{../art/\subtitle/@picture_path@}
-\IfFileExists
-    {\currentfillerimagepath}
-    {\begin{center}\filltopageendgraphics{\currentfillerimagepath}\end{center}} %fill the rest of the page with the image
-    {} %if there was no filler image, do nothing
-\pagebreak
+\end{multicols}
+\end{mdframed}
+\par

@@ -285,6 +285,7 @@ file_output/
 _rulepackage/
 *.texin
 *.csvin
+*.jsonin
 *.fade.png
 
 # csv import temp files
@@ -295,3 +296,5 @@ _rulepackage/
 
 # Working files
 *~lock*
+.vscode/
+*.tmp

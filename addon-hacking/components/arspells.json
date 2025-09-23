@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Blind",
+        "penalty": "-10",
+        "duration": "DoS actions",
+        "effect": "Fully blind a target by stacking junk images all over its vision.",
+        "multipletargets": "this hack cannot be used."
+    },
+    {
+        "name": "Broadcast",
+        "penalty": "+10",
+        "duration": "the length of the message",
+        "effect": "Display yourself on a surface and communicate with the target. During this time any diver may look for the hacker by opposing the user\u2019s test using his own \\hackingskill +10.",
+        "multipletargets": "everyone in the vicinity can see the broadcast, but divers searching for the user gain an additional +20."
+    },
+    {
+        "name": "Misinform",
+        "penalty": "$\\pm$0",
+        "duration": "15 minutes",
+        "effect": "Overwrite the info displayed on a news board. For the new information to sound believable, the user must pass a \\emph{Stories} test in addition to his \\hackingskill.",
+        "multipletargets": "the duration is reduced to one minute and the \\emph{Stories} test takes a -10 penalty, representing more people being critical of the message."
+    },
+    {
+        "name": "Wall",
+        "penalty": "$\\pm$0",
+        "duration": "one minute",
+        "effect": "Construct a two-dimensional wall up to 2 by 2 meters in size.",
+        "multipletargets": "this hack takes an additional -20 penalty."
+    }
+]

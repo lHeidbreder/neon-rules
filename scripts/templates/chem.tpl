@@ -1,16 +1,29 @@
-\begin{minipage}{\columnwidth}
-    \subsection*{@name@}
-    \textit{@description@}
-    \\%
-    Cost: cR @cost@
-        \ifthenelse{\equal{-}{@load@}}{}{; Load: @load@}
-	\\%
-	Lasts for \textit{@duration@}
+\needspace{20mm}
+\begin{mdframed}[
+	style=objectframe,
+	needspace=40mm,
+	frametitlefont=\parhead\bfseries,
+	frametitle=@name@,
+]
+	\begin{multicols}{2}
+		Cost: cR @cost@ \\
+		\ifthenelse{\isempty{@load@}}{}{Load: @load@ \\}
+		\ifthenelse{\isempty{@availability@}}{}{\textit{Availability: @availability@}\\}
+		\ifthenelse{\equal{immediate}{@duration@}}{
+			\textit{Immediate effect}
+		}{
+			Lasts for \textit{@duration@}
+		}
+		\columnbreak
+		\begin{flavorblock}
+			@description@
+		\end{flavorblock}
+	\end{multicols}
 	\par%
 	\begin{multicols}{2}
 		\paragraph{Effect}
 		@effect@
-        \ifthenelse{\equal{-}{@detriment@}}
+        \ifthenelse{\isempty{@detriment@}}
             {}
             {
                 \columnbreak
@@ -18,16 +31,13 @@
                 @detriment@
             }
 	\end{multicols}
-	\ifthenelse{\equal{-}{@overdose_effect@}}
+	\ifthenelse{\isempty{@overdose_effect@}}
 	{}
 	{
-		\par%
-		\vspace{5mm}
-		\hrule
-		\vspace{5mm}%
+		\vspace{-8mm}
         \paragraph{Overdose}
 		@overdose_effect@
 	}
-\end{minipage}
 \par
-
+\end{mdframed}
+\par

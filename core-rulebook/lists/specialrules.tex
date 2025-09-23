@@ -1,31 +1,48 @@
 \section{Special Rules}
 \vspace{10mm}
 \begin{multicols}{2}
-%\specialrule{Adjustable}{Allows spending double ammunition for double range. Shooting two full rounds like this deals the weapon's damage to the weapon and the user.}
 \specialrule{Backblast (X)}{Everyone behind the shooter in a cone - X meters in length and X/2 meters in base diameter - takes half the weapon damage as if hit by a weapon with the Blast rule.
 	If a wall blocks the cone, the area becomes Blast(X) centered on - and including - the user instead.}
 \specialrule{Blast (X)}{Every character inside the area - a circle X meters in radius - takes a hit.
 	For every 2 meters inside the Blast radius the target is,
 	one additional location is hit,
 	up to every location once.}
-\specialrule{Bulky}{Cannot be carried in holsters, slings or on mag holsters.}
+\specialrule{Bulky}{Cannot be carried in holsters, slings or such.}
 \specialrule{Cerberus Infection}{When touching an open wound, such as when dealing damage with an attack, the target makes a Constitution test at a -20 penalty. On a failure the target is infected by the Cerberus fungus. Small creatures like mice will simply die.}
 \specialrule{Cumbersome}{Halves speed of the wearer/user and grants -10 to all physical actions.}
 \specialrule{Disrupt}{Turns off PES for D5 rounds after a hit.}
 \specialrule{EMP}{Causes 2D10 rounds of EMP (p. \pageref{hazards:cbrn}).}
 \specialrule{Flame}{Sets ablaze any flammable surfaces and objects it hits.}
 \specialrule{Flash}{Any affected character looking at the source makes an Ins test at -10 or becomes Blinded for DoF+2 rounds.
-	In addition any affected character within half range makes a Con test at -10 or becomes deafened for DoF+2 rounds.
-	Any affected character with a third becomes Stunned instead of deafened.}
-\specialrule{Flexible}{The weapon cannot be parried. It only gains half of the normal melee damage bonus.}
+	In addition any affected character within half range makes a Con test at -10 or becomes Deafened for DoF+2 rounds.
+	Any affected character with a third becomes both Stunned and Deafened.
+	\\%
+	See p. \pageref{sec:status} for status effects.
+}
+\specialrule{Flexible}{The weapon cannot be parried. It does not gain the Melee Damage Bonus.}
 \specialrule{Improvised}{
 	Does not require familiarity,
 	but instead always invokes -10 penalty.
 	It is also \emph{Unreliable}
 	and usually breaks apart on a fumble.}
-\specialrule{Multitargeting}{Only one attack is rolled and its hits can be split freely among many targets.}
+\specialrule{Inconspicuous}{
+	The weapon is easier to hide or pass off as something else.
+	Depending on the weapon its user gets a +30 bonus to
+	either \emph{Sleight of Hand} tests to hide the weapon
+	or to \emph{Deception} tests to pass it off as something harmless instead.
+}
+\specialrule{Light}{
+	The equipment is much lighter or otherwise easier to handle than comparative equipment.
+	Penalties resulting from encumbrance don't apply, so long as the armor is of the right size.
+}
+\specialrule{Multitargeting}
+	{This weapon cannot perform single attacks;
+		it is limited to \emph{Bursts}.
+		\\%
+		The attack's hits can be split freely among any valid targets,
+			so long as they are roughly in the same direction.}
 \specialrule{Oversized}{Way too large to be used by humans.}
-\specialrule{Piercing}{The user's StrB is added to the weapon's AP.}
+\specialrule{Piercing}{The user's Melee Damage Bonus is added to the weapon's AP as well.}
 \specialrule{Powered}{Requires an external power source to function.}
 \specialrule{Protective}{Made for defense: -10 to hit, -2 damage, but +20 to parry.}
 \specialrule{Reliable}{Can't jam (instead just indicates a miss) and is more resilient to damage.}
@@ -33,14 +50,32 @@
 	it deals no damage to the target.
 	Instead the armor is burnt away
 	and reduced by the damage that would have been dealt until it is repaired.
-	This will only affect solid armor, not energy shields.}
+	This will only affect solid armor, not energy shields, nor does it affect natural armor.}
 \specialrule{Scatter}{+10 to hit at short to extreme range, no AP at long and extreme range, +1d10 dmg when shooting in point blank range}
 \specialrule{Single Loader}{Reloading may be interrupted after each bullet. The given reload time is a single round of ammunition. \\
 	A Reload test - instead of reducing the reload time - increases the amount of shells reloaded during the loading time, but is at a penalty equal to 5 times the reload time.}
 \specialrule{Smoke}{The area inside and behind the smoke is fully concealed. Smoke usually remains dense for a minute and lasts for another as slightly obscuring; this will be reduced in wind or active ventilation, or increased in a fully sealed room.}
 \specialrule{Spray}{Ignores half of non-sealed armor and all but full cover.}
-\specialrule{Stun (X)}{If the target fails a constitution check at a penalty equal to 10 times X, he becomes stunned for DoF rounds.}
-\specialrule{Tearing}{Roll an additional damage dice and drop the lowest. Armor (after AP) is twice as effective.}
+\specialrule{Sticky}{
+	A sticky substance stops the targets' resistance
+		without crippling them.
+	All targets hit suffer -30 penalties to physical actions
+		and have their movement reduced to a quarter.
+	\\%
+	The substance cannot be removed with water
+		but is susceptible to many common solvents.
+	The substance can also be removed by
+		removing the surface it sticks to
+		(e.g. using discardable plates or by undressing).
+	Trying to scrape the substance off may be possible
+		but will take at least half an hour.
+}
+\specialrule{Stun (X)}{
+	If the attack pierces the target's armor
+	and the target fails a constitution check at a penalty equal to 10 times X,
+	he becomes Stunned (p. \pageref{sec:status}) for DoF rounds.
+}
+\specialrule{Tearing}{Roll an additional damage dice and drop the lowest.}
 \specialrule{Trauma}{When attacking the head location, halve the target's armor. Also halves Stunning Strike penalties.}
 \specialrule{Unreliable}{The weapon is a liability more often than not.
 	It fumbles at any roll of 96+.}

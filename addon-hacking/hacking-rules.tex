@@ -1,0 +1,218 @@
+\documentclass[12pt,a4paper,openany,usenames,dvipsnames]{book}
+\usepackage{../core-rulebook/config/packages}
+\usepackage{../core-rulebook/config/news}
+
+\def\subtitle{Diving}
+\def\modifiedlincname{Sp1ke}
+\def\hackingskill{Wirewalk}
+
+\begin{document}
+	\input{../core-rulebook/config/frontpages.tex}
+
+	\chapter{On Hacking in this book}
+	The following hacking rules are in replacement of the ones in the core rules.
+	This is to give them more depth and make them more of a focal point mechanically.
+	\par
+    Hacking is magic, in the broadest sense:
+    It requires rare sorcerers to perform,
+    and it greatly shifts the very fragile balance of power.
+    \\%
+    These people will be sought after and hunted by criminal syndicates and greedy corps alike,
+    and have to be ever vigilant.
+    \par
+	\begin{exampleblock}
+		This book will refer to \emph{\modifiedlincname}.
+		This is a slang term for a wide variety of modified L1NC implants,
+			that specifically pass the usual safety measures
+			- in exchange it allows an experienced hacker to modify the AR around them.
+	\end{exampleblock}
+	
+	\chapter{Types of attacks}
+	\section{AR Attacks}
+	Attacking the AR supplements the AR with wrong information to display.
+	These attacks can be targeted either at one person or at every person in the area.
+	\par
+	These attacks are fast and only require a wireless connection to the AR using a \modifiedlincname,
+		but they can only modify the display.
+	At most these attacks can blind or deafen people for a moment.
+	Usually they produce illusions, share information or control traffic.
+	They may also track every \emph{standard} L1NC in the vicinity - other hackers are generally immune against this simple ping.
+	\\%
+	If they last too long, authorities will notice and begin to track the user.
+	\section{Deep Attacks}
+	Deep Attacks target services and systems that aren't directly controlled by the AR.
+	\par
+	They require a physical connection and a decent amount of experience.
+	They are, however, also much more powerful, as they can grant access to devices.
+	This may allow opening electronic door locks, hijacking camera feeds, or disabling sirens.
+	\section{Deep Dive}
+	A Deep Dive is a long-form Deep Attack.
+	The goal is to enter the service through the Deep from a remote location.
+	\par
+	They require a lot of equipment and experience to perform, and they are very risky.
+	\\%
+	Goals are plentiful and reach from corporate espionage to sabotage by denial of service.
+	\begin{exampleblock}
+		\itshape
+		GM Note:
+		\\%
+		Dives are lengthy processes.
+		The rules are meant to be used as set pieces or whole missions themselves.
+	\end{exampleblock}
+
+	\chapter{AR Attacks}
+	\section{Prerequisites}
+	To perform AR Attacks, the character needs a \modifiedlincname\ and the necessary experience with AR technology,
+		represented by the ability \emph{Misinformer} (p. \pageref{ability:misinformer}).
+	Experience in \emph{\hackingskill} obviously does not hurt.
+	\section{Goals}
+	AR Attacks can achieve two things:
+	\paragraph{Targeted Effects}
+		A single person is targeted to suffer some effect.
+		\\%
+		The user makes a \emph{\hackingskill} test.
+		The target opposes the test using \emph{Perception}.
+		The attack takes 2 actions to perform.
+		\\%
+		The larger and more detailed the illusion is supposed to be, the harder it will be to create.
+		For more details see section \ref{sec:arspellbook} below.
+	\paragraph{Area Effects}
+		All L1NCs in the area are affected by the user's hack.
+		\\%
+		The user makes a \emph{\hackingskill} test.
+		Everyone in the vicinity may oppose the test using \emph{Perception}
+			- on a success they recognize the illusion as misinformation and are essentially unaffected.
+		\\%
+		Effecting an area is much harder and suffers a -20.
+		The attack also now takes 4 actions to perform.
+	\section{Spellbook}
+	\label{sec:arspellbook}
+	\vspace{5mm}
+	\begin{multicols}{2}
+		\luaimport{components/arspells.json}{arspell.tpl}{components/arspells}
+	\end{multicols}
+
+	\chapter{Deep Attacks}
+	\section{Prerequisites}
+	The user needs a \modifiedlincname\ and the necessary experience to dive, represented by the ability \emph{Diver I} (p. \pageref{ability:diveri}).
+	In addition any Deep Attack requires a physical connection
+		- either through an external device
+		or an implant (e.g. a Subdermal Jack, p. \pageref{implant:subdermaljack}).
+	\section{Goals}
+	The target of such an attack is a single service or closed system, such as door controls or a surveillance system.
+	The goal can be to open or close, activate or deactivate, or hijack and control the system.
+	\\%
+    Performing a deep attack requires an action to connect (possibly in conjunction with a \emph{Grappling} test),
+    and an action to perform the attack - requiring a \emph{\hackingskill} test at a given penalty (see below).
+	\section{Spellbook}
+	\label{sec:deepspellbook}
+    \vspace{5mm}
+    \begin{multicols}{2}
+        \luaimport{components/deepspells.json}{arspell.tpl}{components/deepspells}
+    \end{multicols}
+
+	\chapter{Deep Dive}
+	\section{Prerequisites}
+	A Deep Dive requires a \emph{diving rig} (see chapter \ref{ch:rigs}) and the necessary experience to navigate the Deep, represented by \emph{Diver II} (p. \pageref{ability:diverii}).
+	If a group dives together, at least one needs the ability, but the other may follow along and act as long as their leader is still with them.
+	\section{Sensation}
+	Services in the Deep are translated into human sensations.
+	This means any service will appear like an area that its creator is familiar with
+		- e.g. office buildings, cave systems, or medieval fantasy marketplaces.
+	\section{Goals}
+	\paragraph{Attackers}
+		enter a service, looking for a representation of their target.
+		They interact with this target in a way that mimics what they want to achieve.
+		\begin{exampleblock}
+			Our protagonists enter a security service in search for a database,
+				which they find in form of a file drawer.
+			Within this drawer they find their likenesses and toss them into a shredder.
+			They are then removed from this security service's database.
+		\end{exampleblock}
+	\paragraph{ACM}
+		- \emph{Automated Counter Measures} - are the native defense mechanism of any service.
+		ACMs have a level of alertness.
+		The more anomalies (bugs or intrusions) they identify, the slower the service will become,
+			as more resources are diverted to the ACMs.
+		\\%
+		ACMs usually appear to divers as cameras, scanners, turrets and other automated defense systems.
+		The higher the alertness, the more of these devices will appear where they weren't previously.
+		\\%
+		ACMs look to identify,
+			and either "physically" remove the intruders from the premises
+            or completely neutralize them to cancel their connection.
+		Advanced ACMs may radically shift the environment to do so.
+		\begin{exampleblock}
+			\itshape
+			Kid and Shiv attempt to break into a local news provider.
+			Initially things go smoothly,
+				but while trying to plant false info,
+				they make a mistake and get picked up.
+			As the ACM increases in alertness,
+				the service's normal process slows down visibly,
+				lots of cameras show up in the simulation,
+				and a security diver is en route.
+		\end{exampleblock}
+	\paragraph{Defenders}
+		roam a service looking for both bugs as well as intruders, trying to locate and neutralize them.
+		Divers can patrol areas that ACMs cannot easily cover, and make intuitive decisions on how to approach different anomalies.
+		\\%
+		A service with one or a team of multiple divers on standby will be alerted by the ACM at some point.
+		Corpo systems are generally always staffed.
+		\\%
+		Just like an intruder, a defender can also be "neutralized".
+		He is not booted from the service for good, however, and may reconnect after a short while
+			- giving the intruders a small time frame to act.
+	\section{Combat}
+    \subsection*{Preparation}
+    When entering the Deep Net,
+        divers may bring one melee and one ranged weapon with them
+        - these are obviously not actual weapons but representations of aggressive code fragments.
+    Depending on the type of code, the weapon will change,
+        i.e. larger weapons are easily detectable attacks by ACMs and other divers,
+        but deal more damage if they hit.
+    \subsection*{Encounter}
+    A combat encounter for untrained divers works just like in reality.
+    For trained divers, however, things work somewhat differently.
+    \\%
+    All divers who have the \emph{Diver II} ability gain an additional action per combat round.
+    They can use this action to shift the environment.
+    For possible effects and penalties refer to the AR and Deep spellbooks.
+    \\%
+    Defenders gain +20 to these required tests.
+    They also may alert the ACM, which they don't have to roll for at all.
+
+	\chapter{Building a Rig}
+	\label{ch:rigs}
+	\section{Energy Limits}
+	Powering a massive rig is not possible everywhere.
+	More importantly, booting up a rig causes a massive power spike in the grid, very noticeable on surveillance.
+	This may put the divers on a time crunch that's much tighter than acceptable.
+	\par
+	While in civilization, once the energy demand surpasses 2, surveillance systems will slowly start to pick up on the rig as an unknown anomaly.
+	Anyone who can take readings of the power grid will take notice when energy demand reaches 6, and can guess that it's a rig.
+	The surveyors' reactions can vary widely.
+	\begin{exampleblock}
+		\itshape
+		Technically space can be a limiting factor, as some components may be quite large.
+		Considering how much size varies between components, this limit will not receive numbers.
+	\end{exampleblock}
+	\section{Access Point}
+	The rig's heart is an access point.
+	It translates the Deep into human-understandable sensations, and the human mind into instructions.
+	Divers need a physical connection to this device to use it.
+	\section{Bench}
+	A diver has to lay down to prevent falling over.
+	While technically the floor is viable, spasms during the dive can hurt.
+	Special ergonomic benches can mitigate some of that damage,
+		while being submerged in a nutrient vat not only reduces injury risk but can also extend the maximum time of the dive.
+	\section{Peripherals}
+	Further hardware may be attached to the access point to alter the behavior during the dive.
+	More powerful access points - while requiring more energy - can support more peripherals.
+
+	\chapter{Additional Content}
+	\input{components/prefabchars.tex}
+	\input{components/additionalcontent.tex}
+
+	\IfFileExists{../core-rulebook/config/builddata.texin}{\input{../core-rulebook/config/builddata.texin}}{ }
+\end{document}

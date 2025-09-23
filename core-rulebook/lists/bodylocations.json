@@ -1,0 +1,44 @@
+[
+    {
+        "body": "human",
+        "name": "Head",
+        "hp": "15",
+        "bottomroll": "1",
+        "toproll": "10"
+    },
+    {
+        "body": "human",
+        "name": "Right Arm",
+        "hp": "15",
+        "bottomroll": "11",
+        "toproll": "25"
+    },
+    {
+        "body": "human",
+        "name": "Left Arm",
+        "hp": "15",
+        "bottomroll": "26",
+        "toproll": "40"
+    },
+    {
+        "body": "human",
+        "name": "Body",
+        "hp": "25",
+        "bottomroll": "41",
+        "toproll": "70"
+    },
+    {
+        "body": "human",
+        "name": "Right Leg",
+        "hp": "15",
+        "bottomroll": "71",
+        "toproll": "85"
+    },
+    {
+        "body": "human",
+        "name": "Left Leg",
+        "hp": "15",
+        "bottomroll": "86",
+        "toproll": "100"
+    }
+]

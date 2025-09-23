@@ -49,13 +49,18 @@ function itemize(entry)
     end
 
     --sublists
-    rtn = string.gsub(rtn,"::b::","\\begin{itemize}\\setlength\\itemsep{-10mm}\\vspace{-10mm}")
+    rtn = string.gsub(rtn,
+        "::b(-?%d*)::",
+        function(capture)
+            capture_num = tonumber(capture) or -10
+            return "\\begin{itemize}\\setlength\\itemsep{"..capture_num.."mm}\\vspace{"..capture_num.."mm}"
+        end)
     rtn = string.gsub(rtn,"::e::","\\end{itemize}")
 
     return rtn
 end
 
-function importfrom(csvpath, templatepath, outpath)
+function importfromCSV(csvpath, templatepath, outpath)
 
     -- exit if file exists
     f=io.open(outpath..".texin","r")
@@ -103,16 +108,22 @@ function importfrom(csvpath, templatepath, outpath)
     for key, line in pairs(lines) do
         local filledtemplate = template
         
-        for j=1,table.getn(headers) do
-            
-            if line[j] == nil then
-                line[j] = ""
+        local MAX_ITERATIONS = 3
+        for k=1,MAX_ITERATIONS do
+            for j=1,table.getn(headers) do
+                
+                if line[j] == nil then
+                    line[j] = ""
+                end
+                
+                --escape "%" for both lua and latex
+                line[j] = string.gsub(line[j], "%%", "\\%%%%")
+                
+                filledtemplate = string.gsub(filledtemplate, "@"..headers[j].."@", line[j])
             end
-            
-            --escape "%" for both lua and latex
-            line[j] = string.gsub(line[j], "%%", "\\%%%%")
-            
-            filledtemplate = string.gsub(filledtemplate, "@"..headers[j].."@", line[j])
+            if not string.match(filledtemplate, "@[^%s@]*@") then
+                break
+            end
         end
 		
 		--clean every pattern without matching column
@@ -209,32 +220,6 @@ function combat_skills(filepath, filter)
         ::continue0::
     end
 end
-
--- Taken from https://stackoverflow.com/questions/41942289/display-contents-of-tables-in-lua
-function tprint (tbl, indent)
-    if not indent then indent = 0 end
-    local toprint = string.rep(" ", indent) .. "{\r\n"
-    indent = indent + 2 
-    for k, v in pairs(tbl) do
-      toprint = toprint .. string.rep(" ", indent)
-      if (type(k) == "number") then
-        toprint = toprint .. "[" .. k .. "] = "
-      elseif (type(k) == "string") then
-        toprint = toprint  .. k ..  "= "   
-      end
-      if (type(v) == "number") then
-        toprint = toprint .. v .. ",\r\n"
-      elseif (type(v) == "string") then
-        toprint = toprint .. "\"" .. v .. "\",\r\n"
-      elseif (type(v) == "table") then
-        toprint = toprint .. tprint(v, indent + 2) .. ",\r\n"
-      else
-        toprint = toprint .. "\"" .. tostring(v) .. "\",\r\n"
-      end
-    end
-    toprint = toprint .. string.rep(" ", indent-2) .. "}"
-    return toprint
-  end
 
 function writetofile(path, text)
     local out = io.open(path, "a")

@@ -1,0 +1,35 @@
+\documentclass[11pt,a4paper,openany,dvipsnames]{book}
+\pagestyle{plain}
+
+\usepackage{../core-rulebook/config/packages}
+\usepackage{../core-rulebook/config/news}
+
+% Title definition
+\def\subtitle{Orgs and People}
+
+\begin{document}
+	\input{../core-rulebook/config/frontpages.tex}
+	
+	\chapter{Megacorporations}
+	Massive complexes of flowing money, spitting out endless goods for endless consumption.
+	\\%
+	Their power exceeds the governments'.
+	Any attempt so far to limit the corps' influence over the lives of the people has been met with withdrawal of service, putting more pressure on the governments, catching everyday citizens in the crossfire.
+	\input{corps-orgs-people/list-of-megacorps.tex}
+	
+	\chapter{PMCs}
+	\input{corps-orgs-people/list-of-pmcs.tex}
+	\input{corps-orgs-people/the-legion.tex}
+	
+	\chapter{Shadow Organizations}
+	\input{corps-orgs-people/list-of-shadoworgs.tex}
+	
+	\chapter{Legends}
+	Few make it past a simple life without taking lead to the dome.
+	Even fewer become more than a shadow in the city's neon lights - a name, a memory.
+	\\%
+	While most of these became legends only after they expired, some may still be out there, in the shadows, awaiting the time for their return.
+	\input{corps-orgs-people/list-of-legends.tex}
+	
+	\IfFileExists{../core-rulebook/config/builddata.texin}{\input{../core-rulebook/config/builddata.texin}}{ }
+\end{document}

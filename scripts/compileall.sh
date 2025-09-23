@@ -1,23 +1,9 @@
 #!/bin/bash
+DEFAULT_GOALS="CLEAN FADE PREP COMPILE PACKAGE"
+ALL_GOALS="XCLEAN CLEAN FADE PREP COMPILE PACKAGE"
+
 cut_absolute_path () {
   echo $(perl -le 'use File::Spec; print File::Spec->abs2rel(@ARGV)' $1 ${main_dir})
-}
-
-fade_art () {
-  cd "$main_dir/art"
-  mapfile -t FADE_FILES < <(python "$main_dir/scripts/python/list-fade-art.py" "$main_dir/scripts/python/fade-art.list")
-  for imgpath in "${FADE_FILES[@]}"; do
-    if [[ "$(uname -s)" =~ MINGW* ]]; then
-	  # fix the path when running on windows git bash
-      img=$(cygpath -u "${main_dir}/art/${imgpath}")
-	  else
-	    img="${main_dir}/art/${imgpath}"
-	  fi
-    if [ -f "$img" ] && [ ! -f "$(echo "$img" | sed -E 's/.([^\.]+)$/.fade.\1/g')" ]; then
-      echo "Try Fading $img"
-      python "$main_dir/scripts/python/fade-border.py" "-i" "$img"
-    fi
-  done
 }
 
 analyse_error () {
@@ -31,45 +17,79 @@ analyse_error () {
   mv ${OUT}/${NAME}.log ${console_output_dir}/
 }
 
+#goal: XCLEAN
 workspace_clean () {
   git checkout .
   git clean -Xf
   git clean -xf
 }
 
-package () {
-  echo "Creating ZIP package"
-  cd ${file_output_dir}
-  jar Mcf rulepackage.zip .
+#goal: CLEAN
+clean () {
+  mkdir -p $console_output_dir
+  rm ${console_output_dir}/compile.out
+  touch ${console_output_dir}/compile.out
+  rm ${console_output_dir}/compile.err
+  touch ${console_output_dir}/compile.err
+
+  mkdir -p $file_output_dir
+  mkdir -p $file_output_dir/addons
+  mkdir -p $file_output_dir/missions
+  mkdir -p $file_output_dir/supplements
+  find ${file_output_dir} -maxdepth 2 -type f -delete
 }
 
+#goal: FADE
+fade_art () {
+  cd "$main_dir/art"
+  mapfile -t FADE_FILES < <(python "$main_dir/scripts/python/list-fade-art.py" "$main_dir/scripts/python/fade-art.list")
+  for imgpath in "${FADE_FILES[@]}"; do
+    if [[ "$(uname -s)" =~ MINGW* ]]; then
+	  # fix the path when running on windows git bash
+      img=$(cygpath -u "${main_dir}/art/${imgpath}")
+	  else
+	    img="${main_dir}/art/${imgpath}"
+	  fi
+    if [ -f "$img" ] && [[ ! "$img" =~ .fade.[^.]+$ ]] && [ ! -f "$(echo "$img" | sed -E 's/.([^\.]+)$/.fade.\1/g')" ]; then
+      echo "Try Fading $img"
+      python "$main_dir/scripts/python/fade-border.py" "-i" "$img"
+    fi
+  done
+}
 
-shopt -s nullglob
-shopt -s globstar
-main_dir="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )/.."
+#goal: PREP
+prep () {
+  files=(${main_dir}/*/*.tex)
 
-console_output_dir="${main_dir}/scripts/compiler_output"
-mkdir -p $console_output_dir
-rm ${console_output_dir}/compile.out
-touch ${console_output_dir}/compile.out
-rm ${console_output_dir}/compile.err
-touch ${console_output_dir}/compile.err
+  #general prep
+  python "${main_dir}/scripts/python/collect-external-docs.py"
+  if [ ! -d "${main_dir}/scripts/dependencies" ]; then bash -c "${main_dir}/scripts/load-dependencies.sh"; fi
 
-file_output_dir="${main_dir}/_rulepackage"
-mkdir -p $file_output_dir
-mkdir -p $file_output_dir/addons
-mkdir -p $file_output_dir/missions
-find ${file_output_dir} -maxdepth 2 -type f -delete
-
-fade_art
-
-files=(${main_dir}/*/*.tex)
-
-for i in ${files[@]}
-do
+  for i in ${files[@]}
+  do
     cd ${i%/*.tex}
     if [ -f prep.sh ]; 
-    then bash prep.sh; fi
+    then
+      echo "Running ${i%/*.tex}/prep.sh"
+      bash prep.sh
+    fi
+
+    cd $main_dir
+  done
+}
+
+#goal: COMPILE
+compile () {
+  files=(${main_dir}/*/*.tex)
+
+  # clean and regenerate build meta data
+  bash -c "${main_dir}/scripts/make-build-info.sh"
+
+  for RUNNAME in Initial XR; do #run twice to get cross-references correct
+    echo -e "\e[0;31m$RUNNAME run\e[0m"
+  for i in ${files[@]}
+  do
+    cd ${i%/*.tex}
     echo "Compiling: ${i##*/}"
 
     OUT="${file_output_dir}"
@@ -77,14 +97,90 @@ do
       OUT="${file_output_dir}/addons"
     elif [[ ${i%/*.tex} =~ missions$ ]]; then
       OUT="${file_output_dir}/missions"
+    elif [[ ${i%/*.tex} =~ supplements$ ]]; then
+      OUT="${file_output_dir}/supplements"
     fi
 
-    #latexmk -f -pdflua -interaction=nonstopmode -output-directory="${OUT}" ${i##*/} 1>> "${console_output_dir}/compile.out" 2>> "${console_output_dir}/compile.err" || analyse_error ${i##*/}
+    latexmk -f -pdflua -interaction=nonstopmode -output-directory="${OUT}" ${i##*/} 1>> "${console_output_dir}/compile.out" 2>> "${console_output_dir}/compile.err" || analyse_error ${i##*/}
     cd $main_dir
+  done
+  done
+
+  #Delete all non-pdf files
+  find ${file_output_dir} -maxdepth 2 -type f -not -name '*.pdf' -delete
+}
+
+#goal: PACKAGE
+package () {
+  echo "Creating ZIP package"
+  cd ${file_output_dir}
+  if command -v -- "jar" &> /dev/null; then
+    jar Mvcf rulepackage.zip .
+  elif command -v -- "zip" &> /dev/null; then
+    zip -r rulepackage.zip .
+  else
+    python3 -c "import shutil; shutil.make_archive('rulepackage', 'zip', '.')"
+  fi
+}
+
+
+shopt -s nullglob
+shopt -s globstar
+main_dir=$(echo "$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )/.." | sed -E 's~/\w+/\.\.~~')
+console_output_dir="${main_dir}/scripts/compiler_output"
+file_output_dir="${main_dir}/_rulepackage"
+
+# handle help dialog
+if [[ $(echo $@ | tr '[:lower:]' '[:upper:]') == *HELP* ]]; then
+  echo "Usage: $0 [HELP | XCLEAN | CLEAN | FADE | PREP | COMPILE | PACKAGE | ALL]"
+  echo "Just running $0 is equal to $0 ${DEFAULT_GOALS}"
+  echo
+  echo "Goals:"
+  echo "HELP    - Immediately show this dialog and exit."
+  echo "XCLEAN  - Full git clean."
+  echo "CLEAN   - Remove and set up new compiler output folders."
+  echo "FADE    - Add faded borders to art, in accordance with 'scripts/python/fade-art.list'."
+  echo "PREP	- Run prep scripts."
+  echo "COMPILE - Compile PDFs."
+  echo "PACKAGE - Create a zip package of compiled PDFs."
+  echo "ALL     - Run all goals, aside from HELP goal."
+
+  exit 0
+fi
+
+# run by goals
+GOALS=$(echo "$@" | tr '[:lower:]' '[:upper:]')
+if [[ $# -eq 0 ]]; then
+  GOALS=$DEFAULT_GOALS
+fi
+if [[ $GOALS == *ALL* ]]; then
+  GOALS=$ALL_GOALS
+fi
+echo "Goals: $GOALS"
+
+for goal in $GOALS; do
+  echo -e "\e[0;36mRunning goal: $goal\e[0m"
+  case "$goal" in
+    XCLEAN)
+      workspace_clean
+      ;;
+    CLEAN)
+      clean
+      ;;
+    FADE)
+      fade_art
+      ;;
+    PREP)
+      prep
+      ;;
+    COMPILE)
+      compile
+      ;;
+    PACKAGE)
+      package
+      ;;
+    *)
+      echo "Unknown option, skipping $goal"
+      ;;
+  esac
 done
-
-#Delete all non-pdf files
-find ${file_output_dir} -maxdepth 2 -type f -not -name '*.pdf' -delete
-
-#Create ship-ready package
-package

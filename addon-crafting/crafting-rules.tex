@@ -1,6 +1,6 @@
 \documentclass[12pt,a4paper,openany,usenames,dvipsnames]{book}
-\input{../core-rulebook/config/news.tex}
-\input{../core-rulebook/config/packages.tex}
+\usepackage{../core-rulebook/config/packages}
+\usepackage{../core-rulebook/config/news}
 
 \def\subtitle{Crafting}
 
@@ -16,7 +16,7 @@
 		are rather heavy on mechanics and very "numbery".
 		It is only advised to use them if that is desired for one reason or another.
 		Don't add them just to make creating objects more tedious
-			and only use them if there is a chance of failure.
+			and only use them if there is a consequence to failure.
 	\end{exampleblock}
 
 	\chapter{Preparation}
@@ -56,7 +56,9 @@
 
 	\chapter{Material acquisition}
 	Acquiring materials without really good connections or your own production facilities needs two things: money and time.\\
-	To buy materials, the character collects a point pool of 25 DoS through \emph{Commerce} checks.
+	To buy materials, the character collects a point pool of 25 DoS through commercial checks.
+	They might be \emph{Appeal, Interrogation, Wirewalk} or many other ways indicating the search for good deals.
+	\\%
 	Every successful check adds points into the pool equal to its DoS.
 	Every check, successful or not,
 		takes at least 4 hours to usually one day,
@@ -77,20 +79,23 @@
 	\end{exampleblock}
 
 	\chapter{Processing}
+	\vspace{-10mm}%quickfix, otherwise there's one line on the last page
 	Finally the actual crafting process begins.
 	The character makes a Dexterity-based test against his crafting skill at a given penalty.
 	Every test takes one day of work.
 	Every successful test collects points equal to its DoS.
+	Critical successes add at least half of the initially required DoS.
+	\\%
 	When a given pool size is reached, work is finished.\par
 	The penalty to the crafting test and size of the point pool vary greatly depending on the object that’s being created. The table below shows the formulas for penalty first and point pool second:
 	\par
 	\begin{tabularx}{\columnwidth}{X|ll}
 		Category & Penalty & Pool Size \\ \hline
 		Weapons & 4 * damage dice & flat DMG + half AP \\
-		Ammo & price per bullet & 10 * unit of sale \\
+		Ammo & - & 30 / unit of sale (min 1) \\
 		Armor & 3 * Mod points (+15 if powered) & 2 * avg armor \\
 		PES & 2 * dmg threshold & 2 * armor \\
-%		Chemicals & 3 * duration in hours & price (per dosage) \\ %TODO: add after chemical rework
+		Chemicals & 10 * total load & half price \\
 		Augments & 6 * (original RI+MT) & price (after mods) / 10 \\
 		Misc & - & price / 5
 	\end{tabularx}\par
@@ -99,4 +104,6 @@
 	Failing by 3 or more degrees removes D10 points that have been collected previously from the pool.
 	Severe mistakes - or just many of them - of 5 degrees of failure or by simply falling below 0 points in the pool cause half of the material to be lost, e.g. as clippings or filings.
 	Failing critically causes loss of all material in as spectacular a fashion as befitting of the character, tools and the materials were lost.
+
+	\IfFileExists{../core-rulebook/config/builddata.texin}{\input{../core-rulebook/config/builddata.texin}}{ }
 \end{document}

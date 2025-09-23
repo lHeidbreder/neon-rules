@@ -5,337 +5,46 @@ A melee weapon needs a grip. Swords, knives and whips have \emph{hilts}, while h
 The weapon point is the second component. Swords, knives and spears have \emph{blades}; axes and hammers have \emph{heads} and \emph{whips} have their own category.\\
 Lastly every melee weapon may also have a \emph{core} component.
 These are not required but add additional unique features to the weapon.
+\subsection{Base Damage}
+Melee weapons deal damage based on their size.
+\begin{sitemize}
+	\item \emph{Unarmed fists} deal 1D5 + the user's Melee Damage Bonus, and are \emph{Improvised}.
+	\item \emph{One-handed melee weapons} deal 1D10 + the user's Melee Damage Bonus.
+	\item \emph{Two-handed weapons} deal 2D10 + the user's Melee Damage Bonus.
+\end{sitemize}
 \subsection{Components}
 \subsubsection{Hilts}
 \vspace{8mm}
 \begin{multicols}{2}
-\meleecomponent{Simple Hilt}
-    {A simple sword hilt. Very versatile.}
-    {One-handed; +5 to combat rolls}
-    {0,2}
-    {3}
-    {}
-\meleecomponent{Push Hilt}
-    {A hilt vertical to the blade.
-        Biomechanically inferior to a normal hilt in terms of reach and leverage,
-        yet somehow preferred by some.}
-    {One-handed; weapon uses Melee Combat Training (Striking) instead}
-    {0,1}
-    {4}
-    {}
-\meleecomponent{Duelist Hilt}
-    {An offensively minded hilt at a slight tilt,
-        made to make disarming an opponent much easier.}
-    {One-handed; +15 to disarms}
-    {0,2}
-    {7}
-    {}
-\meleecomponent{Caged Hilt}
-    {Shielding the sword wielding hand in some way is an old idea but,
-        like many old ideas, still holds merit this day,
-        so this handle was fitted with a protective basket.}
-    {One-handed; Disarming the wielder is at a -20;
-        The wielding hand (location: arm) has +3 armor}
-    {0,4}
-    {10}
-    {}
-\meleecomponent{Ergonomic Hilt}
-    {A handle fitting the wielder's hand very closely
-        and therefore allowing the user to get a much better feel for the weapon's point.}
-    {One-handed; Binding is twice as effective.}
-    {0,2}
-    {12}
-    {}
-\meleecomponent{Simple Long Hilt}
-    {A generic two-handed sword hilt offering more leverage than a one-handed hilt.}
-    {Two-handed; +5 to combat rolls}
-    {0,3}
-    {4}
-    {}
-\meleecomponent{Giant Hilt}
-    {A massive sword hilt.
-        This has no utility for humans and exists more for smiths to boast.}
-    {Oversized}
-    {3}
-    {35}
-    {}
+\luaimport{equipment/meleecomponents-hilt.csvin}{meleecomponent.tpl}{equipment/meleecomponent-hilt}
 \end{multicols}
 
 \subsubsection{Shafts}
 \vspace{8mm}
 \begin{multicols}{2}
-\meleecomponent{Short Shaft}
-    {A generic short shaft that can build the basis for a spear, hammer or axe.}
-    {One-handed}
-    {0,3}
-    {4}
-    {}
-\meleecomponent{Long Shaft}
-    {A shaft perfect for long spears.}
-    {Two-handed}
-    {0,5}
-    {5}
-    {}
-\meleecomponent{Twin Shaft}
-    {A double-ended spear shaft allowing for two heads to be mounted.
-        Not as effective individually but some people like the versatility.}
-    {Two-handed; -1 damage; allows to add a second weapon point}
-    {0,5}
-    {11}
-    {}
-\meleecomponent{Rifle}
-    {A weapon mount for the tip of a gun.
-        While a little bit outdated,
-        making an improvised spear can be much more effective than using the knife on its own.}
-    {Two-handed; -5 to melee combat rolls and aim actions with the rifle}
-    {-}
-    {-/-}
-    {}
+\luaimport{equipment/meleecomponents-shaft.csvin}{meleecomponent.tpl}{equipment/meleecomponent-shaft}
 \end{multicols}
 
 \subsubsection{Blades}
 \vspace{8mm}
 \begin{multicols}{2}
-\meleecomponent{No Blade}
-    {Generally speaking a blade gives great advantages.
-        Sometimes however a blade is simply not available but a stick is still a massive upgrade over fists.}
-    {The weapon becomes a simple, primitive club.}
-    {0}
-    {0}
-    {}
-\meleecomponent{Knife Blade}
-    {Short, stiff blade. Good penetration, can cut if necessary.}
-    {
-    	Inconspicuous (when put on a one-handed hilt)
-	}{0,2}
-    {7}
-    {}
-\meleecomponent{Sword Blade}
-    {A long blade that cuts and stabs well.}
-    {+3 damage}
-    {0,9}
-    {10}
-    {}
-\meleecomponent{Sword Breaker}
-    {A knife blade with two offshoots to make parrying easier.}
-    {Protective}
-    {0,2}
-    {12}
-    {}
-\meleecomponent{Sword Whip}
-	{A sword blade that can transform into a whip on command.}
-	{
-		Can freely once per combat
-		round swap between a \emph{Sword Blade} and a \emph{Thorn Whip}.
-		It fumbles on any roll of 96+.
-	}
-	{1.1}
-	{42}
-	{}
-\meleecomponent{Inverse Blade}
-    {A curved sword blade with its edge on the inside.
-        Edge alignment is more difficult but cuts become more devastating.}
-    {Add Dex to melee damage bonus calculation}
-    {0,9}
-    {13}
-    {}
-\meleecomponent{Plasma Cutter}
-    {A knife-sized blade consisting of finely shaped plasma.
-        Cuts through heat much more than force and thereby is easier to use by weaker people.}
-    {+6 damage; halve Melee Damage Bonus}
-    {0,6}
-    {27}
-    {}
-\meleecomponent{Chain Blade}
-    {A high-power chainsaw functioning as a sword blade.
-        Why someone invented this, no one knows.}
-    {Tearing}
-    {1,2}
-    {23}
-    {}
-\meleecomponent{Mono Blade}
-    {Advertised as a near mono-molecular edge,
-        this is the sharpest knife blade built yet.}
-    {Piercing}
-    {1}
-    {27}
-    {}
-\meleecomponent{Sickle Blade}
-    {An oddly shaped blade that
-        - while having rather short effective range
-        - is incredibly hard to fight against.}
-    {parries of 86+ against this weapon always fail}
-    {1}
-    {17}
-    {}
+\luaimport{equipment/meleecomponents-blade.csvin}{meleecomponent.tpl}{equipment/meleecomponent-blade}
 \end{multicols}
 
 \subsubsection{Whips}
 \vspace{8mm}
 \begin{multicols}{2}
-\meleecomponent{Bull Whip}
-    {Leather, woven to a rope, making a bad but dirt cheap weapon.}
-    {Flexible}
-    {0,7}
-    {2}
-    {}
-\meleecomponent{Thorn Whip}
-    {Small thorns along the whip increase the damage against tissue
-        but even thinner armor or thicker clothing will stop the weapon.}
-    {Flexible, Tearing}
-    {0,6}
-    {12}
-    {}
-\meleecomponent{Shock Whip}
-    {A difficult piece of equipment to create:
-        coils create a strong electric field while staying flexible enough to whip around
-        and not frying itself.}
-    {Flexible, Stun (2)}
-    {0,8}
-    {27}
-    {}
+\luaimport{equipment/meleecomponents-whip.csvin}{meleecomponent.tpl}{equipment/meleecomponent-whip}
 \end{multicols}
 
 \subsubsection{Heads}
 \vspace{8mm}
 \begin{multicols}{2}
-\meleecomponent{No Head}
-    {While a designated weapon point is generally superior to none,
-        no weapon head is superior to no weapon.}
-    {The weapon becomes a simple, primitive club.}
-    {0}
-    {0}
-    {}
-\meleecomponent{Hammer Head}
-    {A blunt implement originally designed as a tool,
-        later used in a refined form to defeat armor.}
-    {Trauma}
-    {0,8}
-    {8}
-    {}
-\meleecomponent{Telescoping Baton}
-	{A blunt instrument that can be reduced to the size of the hilt.}
-	{Inconspicuous (on one-handed hilts)}
-	{0.8}
-	{9}
-	{}
-\meleecomponent{Axe Head}
-    {A very top heavy blade.
-        Good at splitting more so than cutting.}
-    {+3 damage}
-    {0,7}
-    {9}
-    {}
-\meleecomponent{Pick Head}
-    {The head on a war pick is designed to defeat armor by breaking through weaker spots.
-        Still works good today.}
-    {Piercing}
-    {0,7}
-    {11}
-    {}
-\meleecomponent{Spiked Head}
-    {Be it spiked mauls or barbed wire around a stick
-        - damage to tissue will be significant.}
-    {Tearing}
-    {0,8}
-    {11}
-    {}
+\luaimport{equipment/meleecomponents-head.csvin}{meleecomponent.tpl}{equipment/meleecomponent-head}
 \end{multicols}
 
 \subsubsection{Core}
 \vspace{8mm}
 \begin{multicols}{2}
-\meleecomponent{Cup Holder}
-    {A cup holder for your weapon.
-        Why? No reason, really.}
-    {Adds a cup holder}
-    {0,1}
-    {2}
-    {}
-\meleecomponent{Bipod}
-    {Legend has it that bipods on knives allow stabbing helicopters to death.}
-    {+2 to intimidation if the weapon is visible}
-    {0,8}
-    {6}
-    {}
-\meleecomponent{Dripper}
-    {Stiletto knives delivering toxins are as infamous as they are rare.
-        However some shady individuals do use such weaponry.}
-    {Adds an injector to the weapon the applies a prepared dose of
-        an injection type chemical to the target on hit.}
-    {0,7}
-    {14}
-    {Blade}
-\meleecomponent{Shock Wire}
-    {An energy source is added inside the weapon, electrifying it.
-        On an already electrical weapon it is possible to direct the electrical field in a manner
-        that will disrupt energy shielding.}
-    {Stun (2); If the weapon already has Stun (2 or more), it also gains Disrupt.}
-    {0,8}
-    {22}
-    {}
-\meleecomponent{EMP Field}
-    {Coils within the weapon emit an electromagnetic field strong enough to interrupt electronic devices.}
-    {When activated as a free action,
-        the weapon gains \emph{EMP} this round.
-        Takes a small fuel cell and 8 actions to recharge.}
-    {0,8}
-    {22}
-    {}
-\meleecomponent{Shotgun}
-    {A single shot 12gauge launcher attached to a hammerhead.
-        It might as well be an improvised explosive device
-        and is as dangerous for the target as for the user and weapon.}
-    {Add a single-shot shotgun to the head,
-        increasing damage by 2D10 for one hit.
-        That hit can only be a single or sure strike.
-        Takes 5 actions to reload.}
-    {0,6}
-    {23}
-    {Hammer}
-\meleecomponent{Ripper Field Generator}
-    {Lovingly dubbed "Ripper Field" by mobsters,
-        this projected force field tears at otherwise stable matter,
-        making it very easy to cut through tough material.
-        The field itself is not very stable however
-        and can only be kept alive for a few seconds.}
-    {When activated as a free action,
-        the weapon gains +4 AP for 4 rounds.
-        Takes a small fuel cell and 8 actions to recharge.}
-    {0,8}
-    {28}
-    {Blade}
-\meleecomponent{IED}
-    {An IED on a stick, what do you expect?
-        Quite dangerous, quite destructive.}
-    {The weapon gains \emph{Improvised}.
-        An attack with this weapon causes an explosion equal to a 40mm HE grenade,
-        generally destroying the weapon.\\
-        If the target wears an active PES,
-        only he is hit and the damage is doubled.}
-    {0,2}
-    {30}
-    {}
-\meleecomponent{Rocket Booster}
-    {Everyone understands that a faster weapon point is more destructive.
-        Since too high speeds make edge alignment and controlling the weapon one-handed nearly impossible,
-        it's only safe to use on large blunt weapons.}
-    {Allows the wielder to forego a second action to gain D10 additional damage.}
-    {1,1}
-    {32}
-    {Two-handed axe or hammer}
-\meleecomponent{Thunder Field}
-    {A massive repulsor field
-        - normally used to block mortar fire
-        - is strapped to a club or hammer for some reason.
-        It now lacks precision and battery life
-        but makes up for it by causing additional work for janitors.}
-    {When activated as a free action,
-        any target hit and possible targets up to one meter removed
-        are thrown 3D10 meters away from the wielder,
-        reduced by 1 meter per 50kg it weighs.
-        Takes a small fuel cell and 8 actions to reload.}
-    {3,2}
-    {38}
-    {Two-handed blunt weapon}
+\luaimport{equipment/meleecomponents-core.csvin}{meleecomponent.tpl}{equipment/meleecomponent-core}
 \end{multicols}

@@ -1,0 +1,14 @@
+[
+    {
+        "skill": "Occultism",
+        "subtype": "",
+        "difficulty": "Advanced",
+        "key": "",
+        "common_characteristic": "Intelligence",
+        "short_description": "Knowledge and handling of the otherworldly.",
+        "long_description": "",
+        "itemize:example_eds": [
+            ""
+        ]
+    }
+]

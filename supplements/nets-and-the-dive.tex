@@ -1,0 +1,24 @@
+\documentclass[12pt,a4paper,openany,usenames,dvipsnames]{book}
+\usepackage{../core-rulebook/config/packages}
+\usepackage{../core-rulebook/config/news}
+
+\def\subtitle{Networks}
+
+\begin{document}
+	\input{../core-rulebook/config/frontpages.tex}
+	
+	\chapter{Nets}
+	\section{AR Net}
+	\input{nets-and-the-dive/ar-net.tex}
+	
+	\section{Deep Net}
+	\input{nets-and-the-dive/deep-net.tex}
+	
+	\section{Hive Net}
+	\input{nets-and-the-dive/legion-hive-net.tex}
+	
+	\chapter{Dive}
+	\input{nets-and-the-dive/dive.tex}
+	
+	\IfFileExists{../core-rulebook/config/builddata.texin}{\input{../core-rulebook/config/builddata.texin}}{ }
+\end{document}

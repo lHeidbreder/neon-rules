@@ -1,0 +1,330 @@
+[
+    {
+        "name": "Ablative Coating",
+        "effect": "A heat dispersing coat, layered upon the armor, that increases armor against laser and other heat-based weaponry by 50%. It also makes the armor immune to the \\emph{Sticky} rule.",
+        "price": "40",
+        "slots": "1",
+        "powered": "N",
+        "weight": "0.6 kg"
+    },
+    {
+        "name": "Auto-Injector",
+        "effect": "On the press of a button, detection of a certain type of stress or a similar trigger, this mod introduces a prepared dosage of an injection-type chemical into the wearer's bloodstream. Can hold up to 3 cartridges.",
+        "price": "24",
+        "slots": "1",
+        "powered": "N",
+        "weight": "0.8 kg"
+    },
+    {
+        "name": "Auto-Loader",
+        "effect": "An automated reload assistance system. When used, the character's \\emph{Reload} skill may be placed by the Auto-Loader's target value 50.",
+        "price": "40",
+        "slots": "1",
+        "powered": "N",
+        "weight": "1.2 kg"
+    },
+    {
+        "name": "Booster Sheath",
+        "effect": "A melee weapon can be draw from this sheath in a free action. When combined with Quick Draw, drawing a weapon from this sheath may be combined with a single standard attack as a free action. When the armor mod is also powered, the attack may be any maneuver instead.",
+        "price": "24",
+        "slots": "1",
+        "powered": "N",
+        "weight": "1.4 kg"
+    },
+    {
+        "name": "Brace Assist",
+        "effect": "The character may brace as a free action. Moving still stops bracing.",
+        "price": "34",
+        "slots": "2",
+        "powered": "N",
+        "weight": "2.6 kg"
+    },
+    {
+        "name": "CBRN (Helmet)",
+        "effect": "A hazard prevention system containing a CBRN unit, rebreather and redundancies for each subsystem.",
+        "price": "112",
+        "slots": "2",
+        "powered": "N",
+        "weight": "1.4 kg"
+    },
+    {
+        "name": "Cigarette Lighter Adapter",
+        "effect": "Adds an outlet to light cigarettes on.",
+        "price": "3",
+        "slots": "1",
+        "powered": "Y",
+        "weight": "0 kg"
+    },
+    {
+        "name": "Deafen Suppressor",
+        "effect": "Grants +20 to tests to resist deafening and disorientation. Grants -5 to auditory perception.",
+        "price": "18",
+        "slots": "1",
+        "powered": "N",
+        "weight": "0.2 kg"
+    },
+    {
+        "name": "Discardable Plate",
+        "effect": "Adds an outer layer that can be discarded easily. Useful when on fire or drenched in acid. When hit by a weapon with \\emph{Rending}, the plate is a separate layer of 3 armor - unless fully pierced, only this plate is destroyed. ",
+        "price": "12",
+        "slots": "1",
+        "powered": "N",
+        "weight": "1.4 kg"
+    },
+    {
+        "name": "Energy Rotella",
+        "effect": "Projects a small shield over the user's arm that can be used to cover one location in addition to the arm it's attached to. Has 12 armor and a threshold of 7.",
+        "price": "50",
+        "slots": "1",
+        "powered": "Y",
+        "weight": "1.1 kg"
+    },
+    {
+        "name": "Faraday Cage",
+        "effect": "Reduces EMP duration by 8 rounds and grants +30 to resist electricity-related Stun rules.",
+        "price": "62",
+        "slots": "1",
+        "powered": "N",
+        "weight": "18.8 kg"
+    },
+    {
+        "name": "Final Hour Chip",
+        "effect": "Once the wearer's vital signs cease, the armor self-destructs violently, dealing damage like a 40mm thermite grenade, except with a 6m Blast radius instead. Requires a vital monitor.",
+        "price": "170",
+        "slots": "0",
+        "powered": "Y",
+        "weight": "0.1 kg"
+    },
+    {
+        "name": "Flare Launcher",
+        "effect": "Turns Vehicle Lock-on bonuses into penalties. Has 3 flares and takes a minute to refill. ",
+        "price": "48",
+        "slots": "3",
+        "powered": "Y",
+        "weight": "2.1 kg"
+    },
+    {
+        "name": "Flash Visor",
+        "effect": "Adds flash glass goggles to the helmet.",
+        "price": "31",
+        "slots": "1",
+        "powered": "N",
+        "weight": "0,6 kg"
+    },
+    {
+        "name": "Flashlight",
+        "effect": "Adds a flashlight and its related bonuses, without the need to use your hands. Hitting the location the active flashlight is attached to is at no penalty for low light or location. ",
+        "price": "65",
+        "slots": "1",
+        "powered": "N",
+        "weight": "1.1 kg"
+    },
+    {
+        "name": "Ghillie",
+        "effect": "Adds a Ghillie Cloak to the armor, offering a +20 Bonus to Camouflage when used in matching surroundings.",
+        "price": "6",
+        "slots": "0",
+        "powered": "N",
+        "weight": "1.5 kg"
+    },
+    {
+        "name": "Grappling Hook",
+        "effect": "Adds a reusable grappling hook to the armor. Works like an integrated crossbow using grappling hook ammunition.\\\\ This is a very niche upgrade, as the grappling hook requires power but can only hold up to 250 kg of weight.",
+        "price": "55",
+        "slots": "1",
+        "powered": "Y",
+        "weight": "5.9 kg"
+    },
+    {
+        "name": "HUD",
+        "effect": "Adds a heads up display to the helmet visor. Can be wired to display basically any device, but does not come with input peripherals.",
+        "price": "4",
+        "slots": "1",
+        "powered": "N",
+        "weight": "0.8 kg"
+    },
+    {
+        "name": "Inertia Dampeners",
+        "effect": "A marvel of technology allowing rapid changes in velocity. Fall damage is reduced and the Trauma rule is ignored. Depending on the situation this may have other bonuses, e.g. in fast vehicles.",
+        "price": "189",
+        "slots": "3",
+        "powered": "Y",
+        "weight": "26 kg"
+    },
+    {
+        "name": "Tacpad",
+        "effect": "Adds a data pad the the armor's forearm.",
+        "price": "22",
+        "slots": "1",
+        "powered": "N",
+        "weight": "1.1 kg"
+    },
+    {
+        "name": "Integrated Weapon",
+        "effect": "Any one-handed melee or pistol type weapon can be affixed to an arm. Pistols now use Ranged Combat Training (Integrated Weaponry). One-handed melee weapons may use Melee Combat Training (Striking) or their normal skill depending on how they are installed.\\\\ Removes the Inconspicuous rule.",
+        "price": "weapon + 10%",
+        "slots": "1",
+        "powered": "N",
+        "weight": "weapon +10%"
+    },
+    {
+        "name": "Intercom",
+        "effect": "An inbuilt communication device using very strong encryption. Different intercoms need to be grouped at a computing device equipped for the task before being able to communicate among each other safely.",
+        "price": "28",
+        "slots": "1",
+        "powered": "N",
+        "weight": "0.2 kg"
+    },
+    {
+        "name": "Jump Pack",
+        "effect": "A backpack-like armor attachment containing boosters to increase jump height, leap length, allow some amount of control in the air or stop hitting the floor at a violently rapid pace. Requires Pilot (Jetpack) to steer.\\\\ Height: increases the jump height by a factor of 3, reduced by 0.5 for every full 100 kg the wearer weighs, becoming useless at 400kg\\\\ Control: can decrease fall damage by 4 dice, reduced by 1 for every full 100 kg the wearer weighs, becoming useless at 400kg\\\\ Ground Slam: doubles fall damage but enables a Charge with a speed of 10 times meters fallen and Blast (1)",
+        "price": "82",
+        "slots": "2",
+        "powered": "N",
+        "weight": "32 kg"
+    },
+    {
+        "name": "Medic Container",
+        "effect": "Fits one pack of wound sealant foam or wound dressing, a field surgery or stitch kit, 5 doses of any medicine and a thermal blanket. Any equipment stored here can be drawn as a free action.",
+        "price": "21",
+        "slots": "1",
+        "powered": "N",
+        "weight": "1.2 kg"
+    },
+    {
+        "name": "Medical HUD",
+        "effect": "When a patient has an accessible vital monitor, this device gives much more detailed information, thereby improving medical tests by +20.",
+        "price": "36",
+        "slots": "2",
+        "powered": "N",
+        "weight": "0.8 kg"
+    },
+    {
+        "name": "Nanomesh Undersuit",
+        "effect": "The minimum armor the wearer can be reduced to (by e.g. maneuvers) is 8 in any location that is covered by the modded piece of armor.",
+        "price": "43",
+        "slots": "0",
+        "powered": "N",
+        "weight": "2.3 kg"
+    },
+    {
+        "name": "Night Vision",
+        "effect": "A night vision device included in the helmet.",
+        "price": "14",
+        "slots": "1",
+        "powered": "N",
+        "weight": "0.7 kg"
+    },
+    {
+        "name": "Odysseus Nav System",
+        "effect": "A display that includes many forms of navigation systems, granting a +10 to driving and +20 to navigation tests.",
+        "price": "28",
+        "slots": "1",
+        "powered": "N",
+        "weight": "1.3 kg"
+    },
+    {
+        "name": "Oversized Mag Holster",
+        "effect": "Hooks to hold a taped or drum mag",
+        "price": "16",
+        "slots": "1",
+        "powered": "N",
+        "weight": "0.2 kg"
+    },
+    {
+        "name": "Photo-Reactive Panels",
+        "effect": "While powered, the armor will automatically match the surroundings. This grants the same benefits as the \\emph{Ghillie} armor mod. ",
+        "price": "55",
+        "slots": "0",
+        "powered": "Y",
+        "weight": "0.8 kg"
+    },
+    {
+        "name": "Piezoelectric Exo-Frame",
+        "effect": "Carries the armor's weight. The armor loses \\emph{Cumbersome}, or if it wasn't, becomes \\emph{Light}.\\\\ When struck by an EMP, it grants a -20 penalty to all physical actions taken and deals D10+6 damage ignoring armor to all the wearer's locations every round.",
+        "price": "190",
+        "slots": "2",
+        "powered": "Y",
+        "weight": "18 kg"
+    },
+    {
+        "name": "Power Pack",
+        "effect": "Adds a generator to non-powered armor to accommodate armor mods requiring power.",
+        "price": "45",
+        "slots": "2",
+        "powered": "N",
+        "weight": "14 kg"
+    },
+    {
+        "name": "Radar",
+        "effect": "A small radar device detecting moving objects in the vicinity. Detecting someone sneaking around is at a +40 bonus. Has a range of 40m.",
+        "price": "78",
+        "slots": "2",
+        "powered": "N",
+        "weight": "11 kg"
+    },
+    {
+        "name": "Servo Exo-Frame",
+        "effect": "A replacement for the more prevalent piezoelectric exo-frame. The armor loses \\emph{Cumbersome} or if it wasn't, becomes \\emph{Light}. The user's speed is reduced by 1, to a minimum of 1. When hit by EMP, it only shuts off, losing all benefits.",
+        "price": "8",
+        "slots": "0",
+        "powered": "Y",
+        "weight": "18 kg"
+    },
+    {
+        "name": "Spring Charge (arm)",
+        "effect": "Increases Strength for quick tasks like punching or throwing by 20.",
+        "price": "54",
+        "slots": "1",
+        "powered": "Y",
+        "weight": "1.2 kg"
+    },
+    {
+        "name": "Spring Charge (leg)",
+        "effect": "Increases Strength for quick tasks like jumping or kicking by 20.",
+        "price": "58",
+        "slots": "1",
+        "powered": "Y",
+        "weight": "1.5 kg"
+    },
+    {
+        "name": "Temperature Regulators",
+        "effect": "Tries to keep the armor's internals at around room temperature, preventing heat stroke and hypothermia in all but the harsh wastelands. ",
+        "price": "24",
+        "slots": "1",
+        "powered": "N",
+        "weight": "0.8 kg"
+    },
+    {
+        "name": "TROPHY ADS",
+        "effect": "The TROPHY Active Defense System shoots projectiles out of the air that travel at least 5m/s, are between 2cm and 10cm across and within 10m of the wearer. Explosives are usually just destroyed while incendiaries still spill. Holds 6 cartridges of 11.8x45mm ammo and takes a minute to refill.",
+        "price": "54",
+        "slots": "4",
+        "powered": "N",
+        "weight": "2.1 kg"
+    },
+    {
+        "name": "Up-Armor",
+        "effect": "Additional armor plates that increase the location's armor by 1.",
+        "price": "22",
+        "slots": "1",
+        "powered": "N",
+        "weight": "2 kg"
+    },
+    {
+        "name": "Vacuum Seal",
+        "effect": "Seals the armor to prevent any gas leaking, like air flowing outside or hydrogen cyanide inside.",
+        "price": "32",
+        "slots": "0",
+        "powered": "N",
+        "weight": "1.1 kg"
+    },
+    {
+        "name": "Vital Monitor",
+        "effect": "Tracks the wearer's vital data. A abbreviation can be made accessible over network.",
+        "price": "8",
+        "slots": "0",
+        "powered": "N",
+        "weight": "1.6 kg"
+    }
+]

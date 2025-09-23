@@ -2,41 +2,64 @@
 \vspace{10mm}
 \begin{multicols}{2}
 %Manpower
-\service{Goon}{Hire a simple goon.}{cR 18}{day}
-\service{Bodyguard}{Hire a trained bodyguard.}{cR 32}{day}
-\service{Fire Team}{Employ a fire team of mercenaries.}{cR 100}{soldier}
-\service{Strike Team}{Employ a strike team.}{cR 700}{soldier}
-\service{Spec Ops}{Call in a special operations team.}{cR 320}{soldier}
+\service{Goon}{Hire a simple goon.}{cR 18}{day}{4}
+\service{Bodyguard}{Hire a trained bodyguard.}{cR 32}{day}{3}
+\service{Fire Team}{Employ a fire team of mercenaries.}{cR 100}{soldier}{3}
+\service{Strike Team}{Employ a strike team.}{cR 700}{soldier}{1}
+\service{Spec Ops}{Call in a special operations team.}{cR 320}{soldier}{1}
 
 %Fire support
 \service{CAS}{Call in close air-support on a marked location.
-	Very effective against infantry, less against fortifications and armor.}{cR 200}{run}
+	Very effective against infantry, less against fortifications and armor.}{cR 1000}{run}
+	{1}
 \service{Bombing Run}{Call in a bombing run on a marked target.
-	Very effective against infantry, high risk of collateral damage.}{cR 250}{run}
+	Very effective against infantry, high risk of collateral damage.}{cR 1200}{run}
+	{1}
 \service{MAC Strike}{Call in a rail cannon strike on a marked target.
-	Relatively small area of effect, massive effect against armor.}{cR 400}{strike}
+	Relatively small area of effect, massive effect against armor.}{cR 1200}{strike}
+	{1}
 
 %Assassination
 \service{Hitman (Simple target)}{Set a hitman on a rather simple target like a former soldier.}{cR 250}{target}
+	{3}
 \service{Hitman (Advanced Target)}{Set a hitman on a difficult target like an active general.}{at least cR 1200}{target}
+	{1}
 
 %Medical
 \service{Back Alley Doc}{The character is healed D5+1 wounds from medical attention and no word is lost about where those injuries came from.}{cR 25}{session}
-\service{Back Alley Surgery}{One of:\\
-	a) Install an augment, no questions asked. Recovery time is doubled.\\
-	b) The character undergoes facial reassembly,
-	becoming unrecognizable from sight alone.}{cR 45}{session}
-\service{Hospital}{One of:\\
-	a) The character is healed 4D5+2 wounds from medical attention.\\
-	b) Install an augment.}{cR 155}{session}
+	{4}
+\service{Back Alley Surgery}{
+	One of:
+	\begin{enumerate}
+		\item Install an augment, no questions asked. Recovery time is doubled.
+		\item The character undergoes facial reassembly, becoming unrecognizable from sight alone.
+		\item Tissue stitching - a fully broken limb is rebuilt. The character takes a week to recover, before the limb can be used again.
+	\end{enumerate}
+	}{cR 45}{session}
+	{3}
+\service{Hospital}{
+	One of:
+	\begin{enumerate}
+		\item The character is healed 4D5+2 wounds from medical attention.
+		\item Install an augment.
+		\item Tissue stitching - a fully broken limb is rebuilt. The character takes two days to recover, before the limb can be used again
+	\end{enumerate}
+	}{cR 155}{session}
+	{5}
 \service{Medical Tank}{The character is put into a medical tank.
 	He doesn't bleed, poisons stop and he is granted one natural regeneration phase per hour.
-	Since the setup and post-regeneration cleanup are the difficult and time consuming things,
+	\\%
+	Since the setup and post-regeneration cleanup are the difficult and time consuming parts of the procedure,
 	no time frame under 24 hours is usually at offer.}{cR 380}{24 hours}
+	{3}
 
 %Transportation
 \service{Taxi (Safe Area)}{The character is taken to a desired location. The ride goes through only safe neighborhoods.}{cR 7}{10 km}
+	{5}
 \service{Taxi (Dangerous Area)}{The character is taken to a desired location. The ride goes through a dangerous neighborhood.}{cR 4}{km}
+	{4}
 \service{VTOL Ride}{The character is taken to a desired location by a VTOL aircraft, like a helicopter.}{cR 40}{10 km}
+	{2}
 \service{Orbital Drop}{Drop from low orbit onto a desired location. This can obviously not be taken for inside underground complexes but may dig through a bunker's ceiling and trash buildings.}{cR 375}{jump}
+	{1}
 \end{multicols}

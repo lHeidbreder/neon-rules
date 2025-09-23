@@ -1,0 +1,73 @@
+[
+    {
+        "flavor_text": "The @market_name@ represents a paradigm shift in psionic countermeasures. It operates on principles of predictive resonance analysis, actively anticipating and helping to neutralize potential threats before they manifest.",
+        "market_name": "@name@",
+        "type": "Cybernetic",
+        "name": "\"Witchseeker\" Psi-Focus",
+        "slogan": "Eliminate pionics. Eliminate risk.",
+        "effect": " Allows access to Psionics but limits the user to the \\emph{Blank} discipline. Grants +10 to Psionics.",
+        "slot": "brain",
+        "load": "@RI@ RI, @MT@ MT",
+        "RI": 2,
+        "MT": 1,
+        "cost": "488",
+        "mods": null,
+        "_comment": null
+    },
+    {
+        "name": "Magic Brain",
+        "type": "Cybernetic",
+        "flavor_text": "The @market_name@ represents a paradigm shift in neural augmentation. Utilizing proprietary Neurometric Resonance Technology™, this cranial implant actively cultivates never-before-seen psionic potential. The @market_name@ delivers a bespoke, bio-integrated experience, guaranteeing a stable and predictable psionic output.",
+        "market_name": "Cassandra Psionic-Focus",
+        "slogan": "Elevated capabilities securing the future.",
+        "effect": "allows access to Psionics",
+        "slot": "brain",
+        "load": "@RI@ RI, @MT@ MT",
+        "RI": 2,
+        "MT": 2,
+        "cost": "465",
+        "mods": null,
+        "_comment": null
+    },
+    {
+        "flavor_text": "Recruiting a counter-force requires robust protection. The @market_name@ represents the apex of psionic defense technology.",
+        "market_name": "@name@",
+        "type": "Cybernetic",
+        "name": "Null Mesh",
+        "slogan": "A strategic investment in operational longevity.",
+        "effect": "Psionics cast by the wearer or targeting him suffer a -30 penalty.",
+        "slot": "skin",
+        "load": "@MT@ MT",
+        "RI": 0,
+        "MT": 1,
+        "cost": "55",
+        "mods": "Perfect fit, Aesthetic, Wrongly fitted, Inconspicuous"
+    },
+    {
+        "name": "Psi Amp",
+        "type": "Cybernetic",
+        "market_name": "VectorPulse Series Amplifier",
+        "slogan": "Amplifying Potential. Guaranteeing Results.",
+        "flavor_text": "Optimal psionic performance necessitates strategic amplification. This micro-engineered device, seamlessly interfacing with the Cassandra Focus, dynamically modulates psychic energy flow, mitigating instability and maximizing projection intensity.",
+        "effect": "The user gains +10 to cast powers of a certain discipline. This may be taken multiple times, for different disciplines.",
+        "slot": null,
+        "load": "@RI@ RI",
+        "cost": "55",
+        "mods": "Perfect fit"
+    },
+    {
+        "name": "Psi Battery",
+        "flavor_text": "The integration of the @market_name@ represents a critical strategic investment. When paired with the Cassandra Focus, we observe an astonishing +48% increase in sustainable psionic capacity. It's a sophisticated biofeedback loop designed for peak performance under duress.",
+        "market_name": "Kairos Equalizer",
+        "type": "Cybernetic",
+        "slogan": "Optimized resilience.",
+        "effect": "Reduce cost of powers by 2, down to a minimum of 0.",
+        "slot": "chest",
+        "load": "@MT@ MT",
+        "RI": 0,
+        "MT": 3,
+        "cost": "470",
+        "mods": null,
+        "_comment": null
+    }
+]

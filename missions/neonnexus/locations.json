@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Blue Lotus Bar",
+        "key": "bar",
+        "short_desc": "Initial meeting point.",
+        "long_desc": "A popular dive in the heart of the City, known for its shady deals and vibrant atmosphere. Soaked in neon and xenon lights, filled with diverse patrons. The air is thick with the smell of indifferentiable party drinks and the hum of conversation."
+    },
+    {
+        "name": "Tech Bazaar",
+        "key": "techbazaar",
+        "short_desc": "Information hub.",
+        "long_desc": "A street market filled with tech vendors, hackers, and black-market dealers. You want it, they have it. For a price. \\\\ While the bazaar is not officially supported, its existence is common knowledge and it is deemed a good alternative to corporate supremacy."
+    },
+    {
+        "name": "Hyperion Global Networks Facility",
+        "key": "facility",
+        "short_desc": "The chip's location.",
+        "long_desc": "An underground facility seemingly built from computing power and storage, dedicated to limit testing the AI chip."
+    },
+    {
+        "name": "Hidden Safehouse",
+        "key": "safehouse",
+        "short_desc": "Dusk's safehouse.",
+        "long_desc": "A temporary, discardable safehouse Evelyn propped up for the trade. It's lightly guarded and multiple escape routes have been prepared."
+    }
+]
