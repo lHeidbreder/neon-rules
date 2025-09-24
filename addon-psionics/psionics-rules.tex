@@ -7,7 +7,7 @@
 
 %default pside effects
 \newcommand{\dpeii}{\mod{Psychic Recoil}{Instead of the target, the psionic is hit by the power instead. If the caster is the target anyway, nothing unexpected happens.}}
-\newcommand{\dpeiv}{\mod{Strength to Spare}{The next power the character casts within 10 minutes gains a +10.}}
+\newcommand{\dpeiv}{\mod{Strength to Spare}{The next power the Subject casts within 10 minutes gains a +10.}}
 \newcommand{\dpeix}{\mod{Overload}{The Cassandra implant starts malfunctioning and goes into emergency reboot. Due to psionic fields in the skull the caster takes -10 to intelligence and can't use psionics for the next hour.}\setcounter{enumi}{-1}}
 
 \begin{document}
@@ -15,7 +15,8 @@
 
 	\chapter{Introduction}
 	This psionic system for Neon PnP serves as a magic system that may be added for a more science-fantasy (as opposed to a science-fiction) feeling.\\
-	Please note that a psionic described in this book is very flexible and may outshine even more specialized player characters. Also - due to how flexible these rules are - it might demand a lot of imagination from a GM.
+	Please note that a \emph{Psionic} described in this book is very flexible and may outshine even more specialized Protagonists in their own field.
+	Also - due to how flexible these rules are - it might demand a lot of imagination from an Adjudicator.
 
 	\begin{exampleblock}
 		\itshape
@@ -27,11 +28,12 @@
 	\end{exampleblock}
 
 	\chapter{Becoming a Psionic}
-	To even consider casting psionic powers, the character must first become a psionic. Luckily this is accessible to anyone with the necessary connections and funds to buy a \emph{Cassandra} focus implant.\\
+	To even consider casting psionic powers, our Protagonist must first become a \emph{Psionic}.
+	Luckily this is accessible to anyone with the necessary connections and funds to buy a \emph{Cassandra} focus implant.\\
 	Certain individuals are more efficient with this focus however (represented by a boon in chapter \ref{ch:addcontent}). This advanced affinity exists from birth and can't be recreated later, as is the case with all boons. \par
-	The moment a character attains a \hyperref[implant:cassandrapsi-focus]{Cassandra} focus,
-	he may learn the Psionics skill and with the first level of said skill,
-	the character gains access to his first psionic discipline.
+	The moment a Subject attains a \hyperref[implant:cassandrapsi-focus]{Cassandra} focus implant,
+		he may learn the Psionics skill and with the first level of said skill,
+		he gains access to his first psionic discipline.
 	He may learn more disciplines by buying the \emph{Psionic Discipline} ability as described in chapter \ref{ch:addcontent}.
 
 	\chapter{Creating a Power}
@@ -167,7 +169,9 @@
 	\chapter{Casting a Power}
 	Now that the power has been constructed, it is time to use it. Our target value is determined as follows:
 	\begin{enumerate}
-		\item A fitting characteristic determined by the GM - this may be constitution for most biomancy, and instinct or charisma for telepathy. In any case this is exactly what they would use to do the same task without psionic assistance.
+		\item A fitting characteristic determined by the Adjudicator
+			- this may be constitution for most biomancy, and instinct or charisma for telepathy.
+			In any case this is exactly what they would use to do the same task without psionic assistance.
 		\item The modifier of the power calculated in chapter \ref{ch:create}.
 		\item The skill bonus of the caster's \emph{Psionic} skill.
 		\item Potential special circumstances, like radiation.
@@ -191,19 +195,21 @@
 	Whenever a psionic test shows doubles - whether or not the cast was successful - a pside effect is invoked,
 		in addition to any critical result.
 	The specific effect is taken from a table below, with regards to the discipline cast and the number showing on the dice. \\
-	If some effect is unfeasible or does not fit the situation well, the next lower number may be applied instead, the effect is skipped or something \emph{completely} different may take effect as per GM discretion.
+	If some effect is unfeasible or does not fit the situation well,
+		the next lower number may be applied instead,
+		the effect is skipped or something \emph{completely} different may take effect, as per the Adjudicator's discretion.
 
 	\section{Telekinesis}
 	\begin{enumerate}
 		\setlength\itemsep{-5mm}
-		\mod{Another Happy Landing}{After casting the power the character is flung 2D10 meters into the air, crashing down a round later.}
+		\mod{Another Happy Landing}{After casting the power the Psionic is flung 2D10 meters into the air, crashing down a round later.}
 		\dpeii
-		\mod{Unlimited Power}{The character starts levitating for a minute, gaining +1 MS for the duration and ignoring difficult terrain.}
+		\mod{Unlimited Power}{The Psionic starts levitating for a minute, gaining +1 MS for the duration and ignoring difficult terrain.}
 		\dpeiv
 		\mod{Misdirected Force}{Strong winds pick up around the psionic and small objects in the area start flying around uncontrollably, potentially obstructing vision.}
 		\mod{Pushed Around}{The caster pulls the nearest - up to human sized - object toward him if the object is lighter. If it is heavier, he pulls himself towards the object.}
-		\mod{Spacial Distortions}{A sphere of 10m around the character becomes hard to move in for about 15 seconds (5 rounds). All physical actions work as if under water, except for actual swimming.}
-		\mod{Power Leak}{The power starts leaking from the psionic uncontrollably, pushing against the character from all sides. The caster becomes unable to move and very hard to be moved for D10 rounds.}
+		\mod{Spacial Distortions}{A sphere of 10m around the Psionic becomes hard to move in for about 15 seconds (5 rounds). All physical actions work as if under water, except for actual swimming.}
+		\mod{Power Leak}{The power starts leaking from the Psionic uncontrollably, pushing against her from all sides. The caster becomes unable to move and very hard to be moved for D10 rounds.}
 		\dpeix
 		\mod{Shatter Ground}{The psionic causes a massive shaking in about 10m radius, feeling much like an earthquake except every object itself is affected. Brittle objects like glass tends to brake and soft metals may deform. Objects and the psionic take damage equal to 3 times the power's cost, ignoring all armor.}
 	\end{enumerate}
@@ -215,7 +221,14 @@
 		\mod{Treasure Hunt}{Gain intel on the target's current thoughts and mood.}
 		\dpeiv
 		\mod{Primal Fear}{For about the next 24 hours all animals become agitated near the psionic, causing them to either flee in panic or attack in desperation.}
-		\mod{Body Swap}{Swap the body with the target for a minute. If there were multiple targets, one is chosen at random or all are swapped around, as seen fit by the GM. Cognitive characteristics and all skills are stuck follow the mind, all physical characteristics stay with the body. Should a body die, effects are up to the GM.}
+		\mod{Body Swap}{Swap the body with the target for a minute.
+			If there were multiple targets, one is chosen at random or all are swapped around, as seen fit by the Adjudicator.
+			Cognitive characteristics and all skills are stuck and follow with their mind; all physical characteristics stay with the body.
+			\\%
+			Should a body die, effects are up to the Adjudicator.
+			Common options are the swapped mind getting stuck in the new body,
+				or the old mind returning to its body for a split consciousness.
+		}
 		\mod{Targeting Issues}{Instead of the intended target a target within range is chosen at random.}
 		\mod{Open Stream}{Every person within range learns of the content of the telepathy. Even for experts the caster does not immediately become obvious if the power was cast subtly - and if the content does not give away the participants...}
 		\dpeix
@@ -224,16 +237,24 @@
 	\section{Biomancy}
 	\begin{enumerate}
 		\setlength\itemsep{-8mm}
-		\mod{Turned Off}{One random extremity loses its function as if destroyed for two minutes. If the result would indicate death, the character becomes catatonic instead.}
+		\mod{Turned Off}{One random extremity loses its function as if destroyed for two minutes. If the result would indicate death, the Psionic becomes catatonic instead.}
 		\dpeii
-		\mod{Really Soft}{The character ignores fall damage and the trauma rule for a minute and gains +20 to all tests concerned with squeezing through small openings.}
+		\mod{Really Soft}{The Psionic ignores fall damage and the trauma rule for a minute and gains +20 to all tests concerned with squeezing through small openings.}
 		\dpeiv
 		\mod{Nourishment}{The caster counts as having eaten for this day. Not only she gets nourished however - all perishables she has on her start sprouting fungal or bacterial colonies and effectively go bad immediately.}
 		\mod{Loss of Sense}{For a minute one random sense (touch, hearing, sight, smell, taste) is lost.}
-		\mod{Mixed Senses}{Senses get mixed up for a minute. The character loses all actions except the reaction, falls prone and cannot get up, and all physical actions are at -30.}
-		\mod{Augment Rebuff}{RI or MT (whichever is higher) is reduced by D5 for one hour. If it is reduced below 0, the character goes unconscious for the duration and takes D10 damage to every location that has implants requiring RI / MT (whichever was reduced).}
+		\mod{Mixed Senses}{Senses get mixed up for a minute.
+			The Psionic loses all actions except her reaction,
+				falls prone and cannot get up,
+				and all physical actions are at -30.}
+		\mod{Augment Rebuff}{RI or MT (whichever is higher) is reduced by D5 for one hour. If it is reduced below 0, the Psionic goes unconscious for the duration and takes D10 damage to every location that has implants requiring RI / MT (whichever was reduced).}
 		\dpeix
-		\mod{Berserk}{All of the psionic's physical charactistics and melee combat base increase by 20 and pain-related penalties are ignored for 2D5 rounds. The character falls into a bloodlusty rage and rushes the person in the vicinity that she has the strongest feelings for - whatever those feelings may be. After the duration the caster drops unconscious for a few hours.}
+		\mod{Berserk}{
+			All of the Psionic's physical charactistics and Melee Combat Base increase by 20
+				and pain-related penalties are ignored for 2D5 rounds.
+			She falls into a bloodlusty rage and rushes the Subject in the vicinity that she has the strongest feelings for
+				- whatever those feelings may be.
+			After the duration the caster drops unconscious for a few hours.}
 	\end{enumerate}
 	\section{Fluvimancy}
 	\begin{enumerate}
@@ -242,12 +263,19 @@
 		\dpeii
 		\mod{Loaded}{Electricity courses through the caster's body, eager to leave into other hosts. For 10 minutes unarmed attacks gain +3 damage and AP, as well as the Stun (2) and EMP special rules.}
 		\dpeiv
-		\mod{Static Field}{An electric field surrounds the character. It is not strong, just enough to be detected and to make hair stand on end.}
+		\mod{Static Field}{An electric field surrounds the Psionic. It is not strong, just enough to be detected and to make hair stand on end.}
 		\mod{Vengeful Tech}{All non-primitive weapons within 4D10 meters jam. Weapons that are currently jammed cook off as if they were \emph{Unstable}.}
 		\mod{Shining Example}{The psionic's eyes and mouth begin to shine, the skin to shimmer. Now more imposing than ever, the user gains +5 to all social tests but -20 to all stealth tests and shooting him in the dark is at no penalty. This lasts for an hour.}
-		\mod{Man's not hot}{The character is veiled into a mantle of flames for a minute, dealing D5 damage with the Spray, Flame and Blast (1) special rules centered around the character every round. The character is immune to all fire-based damage, his equipment however is not.}
+		\mod{Man's not hot}{The Psionic is veiled into a mantle of flames for a minute,
+				dealing D5 damage with the Spray, Flame and Blast (1) special rules
+				centered around her every round.
+			The Psionic is immune to all fire-based damage, her equipment however is not.}
 		\dpeix
-		\mod{Surge}{Overload protection of the focus implant fails at the worst time. The character takes a hit with D10+1 damage - ignoring cover, armor, shields and injury threshold - as well as the Stun and Flame special rules to the head in a violent display of lightning bolts. All characters within 3 meters take the same hit but reduced as if it was a ranged attack.}
+		\mod{Surge}{Overload protection of the focus implant fails at the worst time.
+			The Psionic takes a hit with D10+1 damage
+				- ignoring cover, armor, shields and injury threshold
+				- as well as the \emph{Stun} and \emph{Flame} special rules to the head in a violent display of lightning bolts.
+			All Subjects within 3 meters take the same hit but reduced as if it was a regular ranged attack.}
 	\end{enumerate}
 	\section{Whispers}
 	\begin{enumerate}
@@ -264,7 +292,9 @@
 		\mod{Calling Card}{After the power ends it leaves an undeniable tamper mark on the data. How exactly that looks is up to context but it guarantees that users notice something is off. Specialists may find out who tampered with the data as well.}
 		\dpeix
 		\mod{Take me with you}{The exchange leaves behind permanent scrap code streams in the psionic's brain which will randomly influence him from time to time - give advice or distract for example.\\
-			When the character does something in line with the other consciousness, he gains a +10 bonus. If he does something to its dislike or he is simply in its bad books, he gains a -10. The "possession" last for D10 days.}
+			When the Psionic does something in line with the other consciousness, he gains a +10 bonus.
+			If he does something to its dislike or he is simply in its bad books, he gains a -10.
+			The "possession" usually last for D10 days, the experience lasts forever.}
 	\end{enumerate}
 	\section{Blank}
 	Blank powers are a special case, as they cause pside effects depending on the type of power they are being used against. When they are just used to find psionic powers, they cause the same pside effects as Fluvimancy does.
@@ -305,14 +335,20 @@
 	\section{Boons}
 	\vspace{4mm}
 	\begin{multicols}{2}
-	\boon{Oozing Power}{When the character gains the ability to use psionics, he figuratively leaks power. All psionics he casts have their intensity increased by 1 level without additional costs but he permanently brings a very obvious effect around him wherever he goes. This may be strong winds, a faint whistling or optical illusions; whatever it may be, it makes it extremely obvious that he is a psionic.}{10}
+	\boon{Oozing Power}{
+		When the Subject gains the ability to use psionics, he figuratively leaks power.
+		All psionic powers he casts have their intensity increased by 1 level without additional costs
+			but he permanently brings a very obvious effect around him wherever he goes.
+		This may be strong winds, a faint whistling or optical illusions;
+			whatever it may be, it makes it extremely obvious that he is a psionic to anyone involved.
+		}{10}
 	\boon{Psionic Aptitude}{
-		The character can acquire an additional psionic discipline.
+		The Protagonist can acquire an additional psionic discipline.
 		He starts the game with the Psionics skill Trained.
 		Cannot be taken by Vat-grown or AIs.
 	}{12}
 	\boon{Psionic Prodigy}{
-		The character can acquire up to two additional psionic disciplines.
+		The Protagonist can acquire up to two additional psionic disciplines.
 		He starts with the Psionics skill at Trained.
 		Can only be taken by \emph{Pure} humans.
 	}{25}
@@ -328,14 +364,18 @@
 	\section{Abilities}
 	\vspace{6mm}
 	\begin{multicols}{2}
-	\ability{Psionic Discipline}{0}{Psionics Known}{Gain access to the character's first psionic discipline}
-	\ability{Additional Psionic Discipline I}{600}{Psionic discipline}{Gain access to an additional psionic discipline. Costs half for characters with Psionic Aptitude and a third for Psionic Prodigies.}
-	\ability{Additional Psionic Discipline II}{600}{Psionic Aptitude or Psionic Prodigy}{Gain access to a third psionic discipline. Costs two thirds for a Psionic Prodigy.}
-	\ability{Additional Psionic Discipline III}{600}{Psionics Prodigy}{Gain access to a fourth psionic discipline.}
+	\ability{Psionic Discipline}{0}{Psionics Known}{The Subject gains access to her first psionic discipline.}
+	\ability{Additional Psionic Discipline I}{600}{Psionic discipline}{
+		The Subject gains access to an additional psionic discipline.
+		Costs half for those with Psionic Aptitude, and a third for Psionic Prodigies.}
+	\ability{Additional Psionic Discipline II}{600}{Psionic Aptitude or Psionic Prodigy}{
+		The Subject gains access to a third psionic discipline.
+		Costs two thirds for a Psionic Prodigy.}
+	\ability{Additional Psionic Discipline III}{600}{Psionics Prodigy}{The Subject gains access to a fourth psionic discipline.}
 	\ability{Combat Caster}{500}{Psionics Trained}{Gain +5 to powers with a Cast Time of \emph{Quick} or shorter.}
 	\ability{Sixth Sense}{250}{Psionics Trained}{
 		When a psi power is cast within 20 meters,
-		the character may make a Psionics test as a free action.
+		the Subject may make a Psionics test as a free action.
 		On a success he learns the rough direction and distance of the active power.
 	}
 	\ability{Mage Slayer}{400}{Sixth Sense}{

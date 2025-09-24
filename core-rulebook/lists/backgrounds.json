@@ -151,6 +151,43 @@
         "Notes": ""
     },
     {
+        "name": "Coporate Asset",
+        "cost": "0",
+        "cr": "",
+        "int": "",
+        "ins": "",
+        "ch": "",
+        "dex": "",
+        "ag": "",
+        "con": "",
+        "str": "",
+        "itemize:other_modifiers": [
+            ""
+        ],
+        "itemize:skills": [
+            "Athletics +2",
+            "Bio-Maintenance +1",
+            "Navigation (Ground) +1",
+            "Restraint +2",
+            "Survival +2"
+        ],
+        "itemize:abilities": [
+            ""
+        ],
+        "abilitycostoverride": "",
+        "itemize:boons": [
+            ""
+        ],
+        "booncostoverride": "",
+        "itemize:banes": [
+            ""
+        ],
+        "banecostoverride": "",
+        "flavor_text": "A lot of work can be taken over by machines. Yet sometimes a machine can't be used or is simply more expensive than a low wage laborer or a slave. This usage of human resources is not officially endorsed and even technically illegal, yet when a contract is formed (or forged...), the endeavour might be considered legitimate.",
+        "Example equipment": "",
+        "Notes": ""
+    },
+    {
         "name": "Courier",
         "cost": "6",
         "cr": "",
@@ -444,43 +481,6 @@
         ],
         "banecostoverride": "",
         "flavor_text": "Be it private investigators or police officials, many unsolved cases drift through any city's archive. Some investigators are interested in these old, unsolved cases, others are commited to reducing the amount of new ones.",
-        "Example equipment": "",
-        "Notes": ""
-    },
-    {
-        "name": "Laborer",
-        "cost": "0",
-        "cr": "",
-        "int": "",
-        "ins": "",
-        "ch": "",
-        "dex": "",
-        "ag": "",
-        "con": "",
-        "str": "",
-        "itemize:other_modifiers": [
-            ""
-        ],
-        "itemize:skills": [
-            "Athletics +2",
-            "Bio-Maintenance +1",
-            "Navigation (Ground) +1",
-            "Restraint +2",
-            "Survival +2"
-        ],
-        "itemize:abilities": [
-            ""
-        ],
-        "abilitycostoverride": "",
-        "itemize:boons": [
-            ""
-        ],
-        "booncostoverride": "",
-        "itemize:banes": [
-            ""
-        ],
-        "banecostoverride": "",
-        "flavor_text": "A lot of work can be taken over by machines. Yet sometimes a machine can't be used or is simply more expensive than a low wage laborer or a slave. This usage of human resources is not officially endorsed and even technically illegal, yet when a contract is formed (or forged...), the endeavour might be considered legitimate.",
         "Example equipment": "",
         "Notes": ""
     },
