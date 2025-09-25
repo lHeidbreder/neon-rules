@@ -134,7 +134,7 @@
         "key": "drive-ground",
         "common_characteristic": "Agility",
         "short_description": "Operating cars, bikes, tanks",
-        "long_description": "If self-driving fails or a car is hotwired, the character still knows to handle herself \u2013 even at speed, under pressure, under fire.",
+        "long_description": "If self-driving fails or a vehicle was hotwired, the Subject still knows to handle herself \u2013 even at speed, under pressure, under fire.",
         "itemize:example_eds": [
             "Bike Racing",
             "Electronics"
@@ -377,7 +377,7 @@
         "key": "melee-grapple",
         "common_characteristic": "Melee Base",
         "short_description": "Skill with a certain group of melee weapons",
-        "long_description": "Grappling is unarmed or assisted close quarters combat that mainly acts to change positions in combat, be that throwing the enemy on the floor, a table or off a balcony, climbing a very large foe, or getting the enemy into a lock.",
+        "long_description": "Grappling is unarmed or assisted close quarters combat that mainly acts to change positions in combat, be that throwing the Adversary onto the floor, a table or off a balcony, climbing a very large foe, or getting the opponent into a lock.",
         "itemize:example_eds": [
             ""
         ]
@@ -497,7 +497,7 @@
         "key": "ranged-heavy",
         "common_characteristic": "Ranged Base",
         "short_description": "Skill with a certain group of ranged weapons",
-        "long_description": "Explosive launchers encompass rocket and grenade launchers, mortars and anything else that propels large high-explosives at an enemy. This also helps estimate explosion radii and colleteral damages.",
+        "long_description": "Heavy Weapons are the pinnacle of mobile firepower - heavy machine guns, railcannons and bunker breaking lasers. They usually have quite unique ergonomics and require specialized training.",
         "itemize:example_eds": [
             ""
         ]
