@@ -82,7 +82,7 @@
     },
     {
         "name": "Hidden Pathways",
-        "flavor_text": "Allows circling around or escaping from the enemy in defense situations",
+        "flavor_text": "Allows circling around or escaping from the aggressor in defense situations.",
         "size": "0",
         "concealment": "0",
         "defense": "1",
@@ -172,7 +172,7 @@
     },
     {
         "name": "MedEvac / ER",
-        "flavor_text": "If during a mission a character is mortally wounded, he may be extracted and survive the encounter. He will however be traumatized and gain a Bane worth roughly 4 GP.",
+        "flavor_text": "If during a mission a Subject is mortally wounded, he may be extracted and survive the encounter. He will however be traumatized and gain a Bane worth roughly 4 GP.",
         "size": "4",
         "concealment": "-3",
         "defense": "1",
