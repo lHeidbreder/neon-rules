@@ -92,6 +92,11 @@
 \luaimport{../externaldocs.csvin}{externaldoc.tpl}{xr}
 
 %Document Index
+\makeatletter
+\@ifundefined{theindex}{
+	\newenvironment{theindex}{}{}
+}{}
+\makeatother
 \usepackage{imakeidx}
 \makeindex[
 	columns=2,
