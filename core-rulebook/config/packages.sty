@@ -91,6 +91,13 @@
 \newcommand{\loadeddoc}{false}
 \luaimport{../externaldocs.csvin}{externaldoc.tpl}{xr}
 
+%Document Index
+\usepackage{imakeidx}
+\makeindex[
+	columns=2,
+	intoc,
+]
+
 %load hyperref last
 \usepackage[bookmarks=true,colorlinks=true,linkcolor=Blue]{hyperref}
 
