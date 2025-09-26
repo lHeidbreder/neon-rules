@@ -1,105 +1,105 @@
 [
     {
         "name": "Addiction",
-        "effect": "The character is addicted to a substance. A week of withdrawal will cause a level of exhaustion every day which are not naturally regenerated anymore. Other exhaustion still regenerates naturally until two weeks of withdrawal. This only applies to uncontrolled withdrawal, not to therapy.",
+        "effect": "The Protagonist is addicted to a substance. A week of withdrawal will cause a level of exhaustion every day which are not naturally regenerated anymore. Other exhaustion still regenerates naturally until two weeks of withdrawal. This only applies to uncontrolled withdrawal, not to therapy.",
         "cost": "10",
         "cost_addendum": "",
         "note": ""
     },
     {
         "name": "Agoraphobia (DC)",
-        "effect": "The character is afraid of wide, open places.",
+        "effect": "The Protagonist is afraid of wide, open places.",
         "cost": "1",
         "cost_addendum": "per 5",
         "note": ""
     },
     {
         "name": "Annoying Voice",
-        "effect": "The character has an annoying voice. This grants -10 to social tests that involve talking.",
+        "effect": "The Protagonist has an annoying voice. This grants -10 to social tests that involve talking.",
         "cost": "5",
         "cost_addendum": "",
         "note": ""
     },
     {
         "name": "Arrogance (DC)",
-        "effect": "The character believes to be superior to others.",
+        "effect": "The Protagonist believes to be superior to others.",
         "cost": "1",
         "cost_addendum": "per 5",
         "note": ""
     },
     {
         "name": "Backwoods Customs",
-        "effect": "Even though most cultures have melted, the character has grown up outside the core of society. He has internalized customs that some would call barbaric.",
+        "effect": "Even though most cultures have melted, the Protagonist has grown up outside the core of society. He has internalized customs that some would call barbaric.",
         "cost": "5",
         "cost_addendum": "",
         "note": ""
     },
     {
         "name": "Bad Reputation",
-        "effect": "The character has some sort of bad reputation, either from well known deeds or from known genetic markers. If he is talking to someone who knows of this, he gains a penalty equal to 5 times the boon's level. Can be taken up to level 10.",
+        "effect": "The Protagonist has some sort of bad reputation, either from well known deeds or from known genetic markers. If he is talking to someone who knows of this, he gains a penalty equal to 5 times the boon's level. Can be taken up to level 10.",
         "cost": "2",
         "cost_addendum": "per level",
         "note": ""
     },
     {
         "name": "Bathophobia (DC)",
-        "effect": "The character is afraid of depths. This may trigger at the bottom of the ocean just as much as it could in a massive canyon.",
+        "effect": "The Protagonist is afraid of depths. This may trigger at the bottom of the ocean just as much as it could in a massive canyon.",
         "cost": "1",
         "cost_addendum": "per 10",
         "note": ""
     },
     {
         "name": "Belief in Authority (DC)",
-        "effect": "The character believes in authority and those who represent it. Not compatible with Rebel.",
+        "effect": "The Protagonist believes in authority and those who represent it. Not compatible with Rebel.",
         "cost": "1",
         "cost_addendum": "per 10",
         "note": ""
     },
     {
         "name": "Berserk Rush",
-        "effect": "When the character is thoroughly enraged or he is influenced by substances that boost courage, he falls into a frenzy. Restraint tests to resist frenzy suffer a -20.",
+        "effect": "When the Protagonist is thoroughly enraged or he is influenced by substances that boost courage, he falls into a frenzy. Restraint tests to resist frenzy suffer a -20.",
         "cost": "15",
         "cost_addendum": "",
         "note": ""
     },
     {
         "name": "Blind",
-        "effect": "The character can't see. This is due to nervous or brain damage and can't be fixed via augments.",
+        "effect": "The Protagonist can't see. This is due to nervous or brain damage and can't be fixed via augments.",
         "cost": "40",
         "cost_addendum": "",
         "note": ""
     },
     {
         "name": "Blood Lust (DC)",
-        "effect": "Lust for bloody combat drives the character. She likes taking the time to make her victims suffer and might end up causing trouble for herself and her group due to this.",
+        "effect": "Lust for bloody combat drives the Protagonist. She likes taking the time to make her victims suffer and might end up causing trouble for herself and her group due to this.",
         "cost": "1",
         "cost_addendum": "per 10",
         "note": ""
     },
     {
         "name": "Bound by Duty",
-        "effect": "The character is obliged to follow a certain person's or group's commands. If she disobeys, there might be severe consequences.",
+        "effect": "The Protagonist is obliged to follow a certain person's or group's commands. If she disobeys, there might be severe external consequences.",
         "cost": "12",
         "cost_addendum": "",
         "note": ""
     },
     {
         "name": "Bound by Principle",
-        "effect": "The character is bound by her own principles. They are central moral values that may rarely be bent and almost never broken. If they are, doubts will follow the character for at least a week, inferring a -40 penalty to anything requiring focus. By GM discretion these penalties might function slightly differently depending on the situation.",
+        "effect": "The Protagonist is bound by her own principles. They are central moral values that may rarely be bent and almost never broken. If they are, doubts will follow the Protagonist for at least a week, inferring a -40 penalty to anything requiring focus. By the Adjudicator's discretion these penalties might function slightly differently depending on the situation.",
         "cost": "12",
         "cost_addendum": "",
         "note": ""
     },
     {
         "name": "Caring (DC)",
-        "effect": "The character is overly caring for his peers. He will take great risks to help others.",
+        "effect": "The Protagonist is overly caring for his peers. He will take great risks to help others.",
         "cost": "1",
         "cost_addendum": "per 5",
         "note": ""
     },
     {
         "name": "Claustrophobia (DC)",
-        "effect": "The character is afraid of small, narrow places.",
+        "effect": "The Protagonist is afraid of small, narrow places.",
         "cost": "3",
         "cost_addendum": "per 10",
         "note": ""
@@ -113,84 +113,84 @@
     },
     {
         "name": "Colorblind",
-        "effect": "The character is incapable of seeing colors. When she wants to identify something that is only discernible by color, she takes a -20 penalty. This also counts for ranged attacks against large or smaller targets.",
+        "effect": "The Protagonist is incapable of seeing colors. When she wants to identify something that is only discernible by color, she takes a -20 penalty. This also counts for ranged attacks against large or smaller targets.",
         "cost": "5",
         "cost_addendum": "",
         "note": ""
     },
     {
         "name": "Curiosity (DC)",
-        "effect": "When there is something to know, the character will want to know, whether it is of concern or not.",
+        "effect": "When there is something to know, the Protagonist will want to know, whether it is of concern or not.",
         "cost": "1",
         "cost_addendum": "per 5",
         "note": ""
     },
     {
         "name": "Cursed by Fortuna",
-        "effect": "When a bad event hits the group, this character is much more likely to be hit in particular. Also once per session the GM may declare a success to be a failure instead.",
+        "effect": "When a bad event hits the group, this Protagonist is much more likely to be hit in particular. Also once per session the Adjudicator may declare a success to be a failure instead.",
         "cost": "15",
         "cost_addendum": "",
         "note": ""
     },
     {
         "name": "Debt",
-        "effect": "The character is indebted to someone. The loaner will require regular payments or the character will suffer consequences depending on their relationship and the type of people they are.",
+        "effect": "The Protagonist is indebted to someone. The loaner will require regular payments or favors, or the Protagonist will suffer consequences depending on their relationship and the type of people they are.",
         "cost": "1",
         "cost_addendum": "per cR500",
         "note": ""
     },
     {
         "name": "Delusions of Grandeur (DC)",
-        "effect": "The character tends to overstate and overestimate her own ability and take on monumental tasks with delusional confidence.",
+        "effect": "The Protagonist tends to overstate and overestimate her own ability and take on monumental tasks with delusional confidence.",
         "cost": "1",
         "cost_addendum": "per 5",
         "note": ""
     },
     {
         "name": "Destitute",
-        "effect": "The character has made some bad choices regarding their money. While not knee-deep in debt, the character does not have fund and currently lives from paycheck to paycheck. The character starts with only half the cash. Cannot be combined with Big Spender.",
+        "effect": "The Protagonist has made some bad choices regarding their money. While not knee-deep in debt, she does not have fund and currently lives from paycheck to paycheck. She starts with only half the cash. Cannot be combined with Big Spender.",
         "cost": "5",
         "cost_addendum": "",
         "note": ""
     },
     {
         "name": "Dietary Rules",
-        "effect": "The character will only eat certain things due to personal reasons. Whenever the character is forced to eat something that does not align with his values, e.g. as to not starve to death, he will suffer general penalties of at least -30 resulting from guilt.",
+        "effect": "The Protagonist will only eat certain things due to personal reasons. Whenever he is forced to eat something that does not align with his values, e.g. as to not starve to death, he will suffer general penalties of at least -30 resulting from guilt.",
         "cost": "5",
         "cost_addendum": "",
         "note": ""
     },
     {
         "name": "Directionally Challenged",
-        "effect": "The character has extreme difficulty distinguishing left from right. This makes navigation quite difficult: navigation and navigation-related tests - like tests made in a chase - are at a -10 and can never benefit from map data (like Roadware).",
+        "effect": "The Protagonist has extreme difficulty distinguishing left from right. This makes navigation quite difficult: Navigation (the Skill) and navigation-related tests - like tests made in a chase - are at a -10 and can never benefit from map data (like Roadware).",
         "cost": "5",
         "cost_addendum": "",
         "note": ""
     },
     {
         "name": "Dwarfish",
-        "effect": "The character is tiny. He is harder to hit, has less melee range and is slower. He is also rarely taken seriously.",
+        "effect": "The Protagonist is tiny. He is harder to hit, has less melee range and is slower. He is also rarely taken seriously.",
         "cost": "8",
         "cost_addendum": "",
         "note": ""
     },
     {
         "name": "Envy (DC)",
-        "effect": "When another has something that the character does not, she will overstep boundaries to get some of her own.",
+        "effect": "When another has something that the Protagonist does not, she tends to overstep boundaries to get some of her own.",
         "cost": "1",
         "cost_addendum": "per 10",
         "note": ""
     },
     {
         "name": "Evil Monologue",
-        "effect": "The character tends to talk to herself. This may lead to embarrassing social encounters or even to spilling information about secret plans.",
+        "effect": "The Protagonist tends to talk to herself. This may lead to embarrassing social encounters or even to spilling information about secret plans.",
         "cost": "5",
         "cost_addendum": "",
         "note": ""
     },
     {
         "name": "Fear of Heights (DC)",
-        "effect": "The character is followed by an everlasting fear of falling.",
+        "effect": "The Protagonist is followed by an everlasting fear of falling.",
         "cost": "3",
         "cost_addendum": "per 10",
         "note": ""
@@ -204,21 +204,21 @@
     },
     {
         "name": "Food Restrictions",
-        "effect": "Due to mutation or specific engineering, the character can only consume certain types of food. Anything else leaves the body undigested; often times violently.",
+        "effect": "Due to mutation or specific engineering, the Protagonist can only consume certain types of food. Anything else leaves the body undigested; often times violently.",
         "cost": "5",
         "cost_addendum": "",
         "note": ""
     },
     {
         "name": "Forgetful",
-        "effect": "The character tends to forget even the most important details. Any Education is twice as expensive.",
+        "effect": "The Protagonist tends to forget even the most important details. Any Education is twice as expensive.",
         "cost": "12",
         "cost_addendum": "",
         "note": ""
     },
     {
         "name": "Gambler (DC)",
-        "effect": "The character will not pass up on a good bet. When he can play a more or less fair game for something, he has a hard time passing up the chance.",
+        "effect": "The Protagonist will not pass up on a good bet. When he can play a more or less fair game for something, he has a hard time passing up the chance.",
         "cost": "1",
         "cost_addendum": "per 5",
         "note": ""
@@ -232,91 +232,91 @@
     },
     {
         "name": "Hallucinations",
-        "effect": "Hallucinating characters live in a notably vastly different reality, e.g. thinking that milk is a deadly poison, that he is haunted by demons only vulnerable to supersonic cheese and so on. Every person will notice and this will infer penalties as per GM discretion.",
+        "effect": "Hallucinating Protagonists live in a notably vastly different reality, e.g. thinking that milk is a deadly poison, that he is haunted by demons only vulnerable to supersonic cheese and so on. Every person will notice and this will infer penalties as per the Adjudicator's discretion.",
         "cost": "10",
         "cost_addendum": "",
         "note": ""
     },
     {
         "name": "Hesitant",
-        "effect": "The character suffers a -3 to initiative.",
+        "effect": "The Protagonist suffers a -3 to initiative.",
         "cost": "5",
         "cost_addendum": "",
         "note": ""
     },
     {
         "name": "Hungry I/II/III",
-        "effect": "The character needs 1.5/2/3 times as much food.",
+        "effect": "The Protagonist needs 1.5/2/3 times as much food.",
         "cost": "5",
         "cost_addendum": "per level",
         "note": ""
     },
     {
         "name": "Impaired Sense",
-        "effect": "One of the character's senses functions improperly, incurring -20 on checks based on that sense. This may be offset with augments but never restored to normal levels. Not compatible with Outstanding Sense for the same sense.",
+        "effect": "One of the Protagonist's senses functions improperly, incurring -20 on checks based on that sense. This may be offset with augments but never restored to normal levels. Not compatible with Outstanding Sense for the same sense.",
         "cost": "5",
         "cost_addendum": "",
         "note": ""
     },
     {
         "name": "Impatient (DC)",
-        "effect": "The character does not like waiting. Tasks that take a long time of not doing much will be severely harder.",
+        "effect": "The Protagonist does not like waiting. Tasks that take a long time of not doing much will be severely harder.",
         "cost": "1",
         "cost_addendum": "per 5",
         "note": ""
     },
     {
         "name": "Impulsive",
-        "effect": "The character tends to act on stupid decisions in the heat of the moment. When such an idea comes up, it takes a -20 intelligence check to resist acting on it.",
+        "effect": "The Protagonist tends to act on stupid decisions in the heat of the moment. When such an idea comes up, it takes a -20 intelligence check to resist acting on it.",
         "cost": "5",
         "cost_addendum": "",
         "note": ""
     },
     {
         "name": "Insomnia",
-        "effect": "Getting a good night's rest is hard for the character. In roughly a quarter of all nights (whether randomly or following a pattern) the character takes a -30 penalty to regenerating naturally.",
+        "effect": "Getting a good night's rest is hard for this Protagonist. In roughly half of all nights (whether randomly or following a pattern) he takes a -30 penalty to regenerating naturally.",
         "cost": "7",
         "cost_addendum": "",
         "note": ""
     },
     {
         "name": "Laziness (DC)",
-        "effect": "The character is a slob and doesn't put more effort into things than absolutely necessary.",
+        "effect": "The Protagonist is a slob and doesn't put more effort into things than absolutely necessary.",
         "cost": "1",
         "cost_addendum": "per 5",
         "note": ""
     },
     {
         "name": "Light Sensitivity",
-        "effect": "The character hates the light. Every action taken in light is at a -30 penalty. Sufficient protection from the light is generally enough work and requires enough equipment that the sheer bulk grants similar penalties.",
+        "effect": "The Protagonist hates the light. Every action taken in light is at a -30 penalty. Sufficient protection from the light is generally enough work and requires enough equipment that the sheer bulk grants similar penalties.",
         "cost": "10",
         "cost_addendum": "",
         "note": ""
     },
     {
         "name": "Ignorant (DC)",
-        "effect": "The character has a hard time understanding a certain topic. This topic should be specified when the Bane is chosen. All tests checking knowledge of that topic suffer a penalty equal to this disabling characteristic.",
+        "effect": "The Protagonist has a hard time understanding a certain topic. This topic should be specified when the Bane is chosen. All tests checking knowledge of that topic suffer a penalty equal to this disabling characteristic.",
         "cost": "1",
         "cost_addendum": "per 10",
         "note": ""
     },
     {
         "name": "Naive (DC)",
-        "effect": "The character easily trusts strangers. Resisting deception and persuasion is at a penalty equal to the Bane.",
+        "effect": "The Protagonist easily trusts strangers. Resisting deception and persuasion is at a penalty equal to the Bane.",
         "cost": "1",
         "cost_addendum": "per 5",
         "note": ""
     },
     {
         "name": "Necrophobia (DC)",
-        "effect": "The character has fear of death and dead creatures and will be unable to focus properly when on battlefields, murder or slaughter scenes or graveyards.",
+        "effect": "The Protagonist has fear of death and dead creatures and will be unable to focus properly when on battlefields, murder or slaughter scenes or graveyards.",
         "cost": "1",
         "cost_addendum": "per 5",
         "note": ""
     },
     {
         "name": "Needy (DC)",
-        "effect": "The character's strong physical desires become distracting to everyday life.",
+        "effect": "The Protagonist's strong physical desires often become distracting to everyday life. He has a hard time focussing around or resisting the wishes of attractive people.",
         "cost": "1",
         "cost_addendum": "per 10",
         "note": ""
@@ -330,7 +330,7 @@
     },
     {
         "name": "Neurotically Hygienic (DC)",
-        "effect": "The character has a need to keep clean.",
+        "effect": "The Protagonist has an obsessive need to keep clean.",
         "cost": "1",
         "cost_addendum": "per 5",
         "note": ""
@@ -351,98 +351,98 @@
     },
     {
         "name": "Nyctophobia (DC)",
-        "effect": "The character has a strong fear of the dark.",
+        "effect": "The Protagonist has a strong fear of the dark.",
         "cost": "2",
         "cost_addendum": "per 5",
         "note": ""
     },
     {
         "name": "Obese",
-        "effect": "The character is heavily overweight. This comes with multiple drawbacks like a -20 penalty to strength based checks that have to do with body weight (e.g. climbing), -3 to medical toughness, as well as stigmatization and other drawbacks by GM discretion.",
+        "effect": "The Protagonist is heavily overweight. This comes with multiple drawbacks like a -20 penalty to strength based checks that have to do with body weight (e.g. climbing), -3 to medical toughness, as well as stigmatization and other drawbacks by the Adjudicator's discretion.",
         "cost": "15",
         "cost_addendum": "",
         "note": ""
     },
     {
         "name": "One-Armed",
-        "effect": "The character has lost an arm and due to nerve damage can't accept replacements.",
+        "effect": "The Protagonist has lost an arm and due to nerve damage can't accept replacements.",
         "cost": "15",
         "cost_addendum": "",
         "note": ""
     },
     {
         "name": "One-Eyed",
-        "effect": "The character has lost an eye and due to nerve damage can't accept replacements.",
+        "effect": "The Protagonist has lost an eye and due to nerve damage can't accept replacements.",
         "cost": "5",
         "cost_addendum": "",
         "note": ""
     },
     {
         "name": "One-Handed",
-        "effect": "The character has lost a hand and due to nerve damage can't accept replacements.",
+        "effect": "The Protagonist has lost a hand and due to nerve damage can't accept replacements.",
         "cost": "10",
         "cost_addendum": "",
         "note": ""
     },
     {
         "name": "One-Legged",
-        "effect": "The character has lost a leg and due to nerve damage can't accept replacements.",
+        "effect": "The Protagonist has lost a leg and due to nerve damage can't accept replacements.",
         "cost": "25",
         "cost_addendum": "",
         "note": ""
     },
     {
         "name": "Paralyzed Leg",
-        "effect": "Due to irreversible nervous damage the character can barely move one leg. This reduces speed by 2 and grants penalties around -15 to tests as per GM discretion.",
+        "effect": "Due to irreversible nervous damage the Protagonist can barely move one leg. This reduces speed by 2 and grants penalties around -15 to tests as per the Adjudicator's discretion.",
         "cost": "15",
         "cost_addendum": "",
         "note": ""
     },
     {
         "name": "Personal Enemy",
-        "effect": "An important person or group has set its eyes on the character and will take measures to foil his plans.",
+        "effect": "An important person or group has set its eyes on the Protagonist and will take measures to foil his plans.",
         "cost": "7",
         "cost_addendum": "",
         "note": ""
     },
     {
         "name": "Physically Repulsive",
-        "effect": "The character is staggeringly ugly. This infers a -20 penalty to social tests when the character can be seen. Not compatible with Smoking, Looker and Ugly.",
+        "effect": "The Protagonist is staggeringly ugly. This infers a -20 penalty to social tests when the Protagonist can be seen. Not compatible with Smoking, Looker and Ugly.",
         "cost": "12",
         "cost_addendum": "",
         "note": ""
     },
     {
         "name": "Playful (DC)",
-        "effect": "The character loves playing. That can include simple things like chess or video games, but also \"games\" of predator and prey.",
+        "effect": "The Protagonist loves playing. That can include simple things like chess or video games, but also \"games\" of predator and prey.",
         "cost": "1",
         "cost_addendum": "per 5",
         "note": ""
     },
     {
         "name": "Portly",
-        "effect": "The character is stocky or otherwise slower than her peers. Her speed is reduced by 1.",
+        "effect": "The Protagonist is stocky or otherwise slower than her peers. Her speed is reduced by 1.",
         "cost": "5",
         "cost_addendum": "",
         "note": ""
     },
     {
         "name": "Prejudice (DC)",
-        "effect": "The character is biased against a certain group of people and has a hard time interacting with them.",
+        "effect": "The Protagonist is biased against a certain group of people and has a hard time interacting with them.",
         "cost": "1",
         "cost_addendum": "per 5",
         "note": ""
     },
     {
         "name": "Rebel (DC)",
-        "effect": "The character has a hard time trusting authority and tends to revolt. Not compatible with Belief in Authority.",
+        "effect": "The Protagonist has a hard time trusting authority and tends to revolt. Not compatible with Belief in Authority.",
         "cost": "1",
         "cost_addendum": "per 10",
         "note": ""
     },
     {
         "name": "Righteous (DC)",
-        "effect": "Some laws are absolute and they must be followed. The character will work against any injustice to the order she believes in.",
+        "effect": "Some laws are absolute and they must be followed. The Protagonist will work against any injustice to the order she believes in.",
         "cost": "1",
         "cost_addendum": "per 5",
         "note": ""
@@ -456,7 +456,7 @@
     },
     {
         "name": "Second-class Citizen",
-        "effect": "The character is oppressed for one reason or another. This may e.g. be due to stigmatization of a part of his lifestyle or being born with extremely few resources. In any case this will have consequences in social situations and encounters with law enforcement. Cannot be taken by Vat-grown.",
+        "effect": "The Protagonist is oppressed for one reason or another. This may e.g. be due to stigmatization of a part of his lifestyle or being born with extremely few resources. In any case this will have consequences in social situations and encounters with law enforcement. Cannot be taken by Vat-grown.",
         "cost": "5",
         "cost_addendum": "",
         "note": ""
@@ -470,7 +470,7 @@
     },
     {
         "name": "Short",
-        "effect": "The character is small. He is harder to hit, has less melee range and is slower. He is also rarely taken seriously.",
+        "effect": "The Protagonist is small. He is harder to hit, has less melee range and is slower. He is also rarely taken seriously.",
         "cost": "5",
         "cost_addendum": "",
         "note": ""
@@ -487,116 +487,116 @@
         "effect": "Grants -15 penalty to resist disease.",
         "cost": "2",
         "cost_addendum": "",
-        "note": "\\begin{exampleblock} Banes like \\emph{Sickly} may have no chance to come up in game. In this case such Banes should be disallowed by the GM.\\end{exampleblock}"
+        "note": "\\begin{exampleblock} Banes like \\emph{Sickly} may have no chance to come up in game. In this case such Banes should be disallowed by the Adjudicator.\\end{exampleblock}"
     },
     {
         "name": "Slave Mentality (DC)",
-        "effect": "The character does not like making his own decisions - such situations put a lot of stress on the character. He is instead likely to adopt an idea ushered by someone else.",
+        "effect": "The Protagonist does not like making his own decisions - such situations put a lot of stress on him. He is instead likely to adopt an idea ushered by someone else.",
         "cost": "1",
         "cost_addendum": "per 5",
         "note": ""
     },
     {
         "name": "Slow Healer",
-        "effect": "The character only heals naturally at a -20 penalty and tests taken to heal this character are at a -10.",
+        "effect": "The Protagonist only heals naturally at a -20 penalty and tests taken to heal this Protagonist are at a -10.",
         "cost": "10",
         "cost_addendum": "",
         "note": ""
     },
     {
         "name": "Speech Disorder",
-        "effect": "The character has some sort of speaking disorder. What it may be, the character gains a -10 to tests requiring to speak and takes longer to finish sentences which might cause problems in stressful situations like combat or a heated chase.",
+        "effect": "The Protagonist has some sort of speaking disorder. What it may be, he suffers a -10 to tests requiring to speak and takes longer to finish sentences which might cause problems in stressful situations like combat or a heated chase.",
         "cost": "7",
         "cost_addendum": "",
         "note": ""
     },
     {
         "name": "Split Consciousness",
-        "effect": "Multiple consciousnesses fight over control of a single body. The character is represented by multiple character sheets, sharing physical characteristics, boons and banes, health conditions and their Athletics level. Mental characteristics boons and banes, conditions and all other skills are individual to every consciousness.",
+        "effect": "Multiple consciousnesses fight over control of a single body. The Protagonist is represented by multiple character sheets (and generally multiple Voices), sharing physical characteristics, boons and banes, health conditions and their Athletics level. Mental characteristics boons and banes, conditions and all other skills are individual to every consciousness.",
         "cost": "10",
         "cost_addendum": "per additional consciousness",
         "note": ""
     },
     {
         "name": "Squeamish (DC)",
-        "effect": "The character takes a penalty to tests to resist fear and panic.",
-        "cost": "2",
+        "effect": "The Protagonist takes a penalty to tests to resist fear and panic.",
+        "cost": "3",
         "cost_addendum": "per 5",
         "note": ""
     },
     {
         "name": "Superstition (DC)",
-        "effect": "The character is superstitious, often believing ideas that depend on far fetched assumptions.",
+        "effect": "The Protagonist is superstitious, often believing ideas that depend on far fetched assumptions.",
         "cost": "1",
         "cost_addendum": "per 5",
         "note": ""
     },
     {
         "name": "Technophobia (DC)",
-        "effect": "The character is suspicious of technological advancements, especially solutions to things that could easily be done by humans.",
+        "effect": "The Protagonist is suspicious of technological advancements, especially solutions to things that could easily be done by humans.",
         "cost": "3",
         "cost_addendum": "per 10",
         "note": ""
     },
     {
         "name": "Temperamental (DC)",
-        "effect": "Small things may make the character unreasonably angry.",
+        "effect": "Small things may make the Protagonist unreasonably angry.",
         "cost": "3",
         "cost_addendum": "per 10",
         "note": ""
     },
     {
         "name": "Terrible Odor",
-        "effect": "The character has bad smell. This grants -10 to social tests when the character is in smelling distance and hiding from watchdogs is essentially impossible. Not compatible with Pleasant smell.",
+        "effect": "The Protagonist has bad smell. This grants -10 to social tests when the Protagonist is in smelling distance and hiding from watchdogs is essentially impossible. Not compatible with Pleasant smell.",
         "cost": "5",
         "cost_addendum": "",
         "note": ""
     },
     {
         "name": "Trigger Phrase",
-        "effect": "Sleeper agents were rumored to have trigger phrases carved into their mind. For the longest time that was purely a myth but now many vat-grown are programmed with such a phrase to force certain behavior. When the phrase is heard by the character, all tests to resist persuasion and commands suffer at least a -40 penalty.",
+        "effect": "Sleeper agents were rumored to have trigger phrases carved into their mind. For the longest time that was purely a myth but now many vat-grown are programmed with such a phrase to force certain behavior. When the phrase is heard by the Protagonist, all tests to resist persuasion and commands suffer at least a -40 penalty.",
         "cost": "7",
         "cost_addendum": "",
         "note": ""
     },
     {
         "name": "Trouble Magnet (DC)",
-        "effect": "Some people actively look for trouble. This character has the tendency, willingly or not, to provoke and attract the wrath of others.",
+        "effect": "Some people actively look for trouble. This Protagonist has the tendency, willingly or not, to provoke and attract the wrath of others.",
         "cost": "1",
         "cost_addendum": "per 10",
         "note": ""
     },
     {
         "name": "Ugly",
-        "effect": "The character is unshapely. This grants -10 to social tests while the character is being seen. Not compatible with Smoking, Looker and Physically repulsive.",
+        "effect": "The Protagonist is unshapely. This grants -10 to social tests while the Protagonist is being seen. Not compatible with Smoking, Looker and Physically repulsive.",
         "cost": "5",
         "cost_addendum": "",
         "note": ""
     },
     {
         "name": "Uneducated",
-        "effect": "The character has not learned much and loses 50 XP. Can be taken multiple times but XP may never be negative.",
+        "effect": "The Protagonist has not learned much - he loses 50 XP. Can be taken multiple times, but XP may never be negative.",
         "cost": "1",
         "cost_addendum": "per level",
         "note": ""
     },
     {
         "name": "Vanity (DC)",
-        "effect": "The character is posh to an extreme. He might refuse tube food, simple and cheap clothing or getting dirty.",
+        "effect": "The Protagonist is posh to an extreme. He might refuse tube food, simple and cheap clothing or getting dirty.",
         "cost": "1",
         "cost_addendum": "per 5",
         "note": ""
     },
     {
         "name": "Vengeful (DC)",
-        "effect": "The character does not forget. When someone wronged him, he will make sure to pay them back tenfold.",
+        "effect": "The Protagonist does not forget, nor does he forgive. When someone wronged him, he will make sure to pay them back tenfold.",
         "cost": "1",
         "cost_addendum": "per 5",
         "note": ""
     },
     {
         "name": "Wanted I-V",
-        "effect": "The character is being looked for by an organization. This can be due to criminal record, corporate espionage or involvement in gang wars. The first step roughly describes being the target of a small mercenary or criminal group, a level 3 target would be a low-priority military target and a level 5 target is on LEGION's radar.",
+        "effect": "The Protagonist is being looked for by an organization. This can be due to criminal record, corporate espionage or involvement in gang wars. The first step roughly describes being the target of a small mercenary or criminal group, a level 3 target would be a low-priority military target and a level 5 target is on LEGION's radar.",
         "cost": "5",
         "cost_addendum": "per level",
         "note": ""

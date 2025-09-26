@@ -17,7 +17,7 @@
     },
     {
         "name": "Auto-Loader",
-        "effect": "An automated reload assistance system. When used, the character's \\emph{Reload} skill may be placed by the Auto-Loader's target value 50.",
+        "effect": "An automated reload assistance system. When used, the Subject's \\emph{Reload} skill may be placed by the Auto-Loader's target value 50.",
         "price": "40",
         "slots": "1",
         "powered": "N",
@@ -33,7 +33,7 @@
     },
     {
         "name": "Brace Assist",
-        "effect": "The character may brace as a free action. Moving still stops bracing.",
+        "effect": "The user may brace as a free action. Moving still stops bracing.",
         "price": "34",
         "slots": "2",
         "powered": "N",

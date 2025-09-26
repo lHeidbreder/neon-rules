@@ -33,7 +33,7 @@
         "name": "Control",
         "penalty": "-20",
         "duration": "the duration of the connection",
-        "effect": "Control the device or system directly. The actions the given device or system can take are up to the GM."
+        "effect": "Control the device or system directly. The actions the given device or system can take are up to the Adjudicator."
     },
     {
         "name": "Mole",

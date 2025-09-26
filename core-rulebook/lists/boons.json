@@ -7,7 +7,7 @@
     },
     {
         "name": "Ambidextrous",
-        "effect": "The character can use either hand equally good. The abilities \\emph{Dual Wielding} and \\emph{Maneuver: Flurry} only cost half.",
+        "effect": "The Protagonist can use either hand equally good. The abilities \\emph{Dual Wielding} and \\emph{Maneuver: Flurry} only cost half.",
         "cost": "5",
         "cost_addendum": ""
     },
@@ -19,7 +19,7 @@
     },
     {
         "name": "Augmented",
-        "effect": "The characters starts the game with augmentation. Limits depend on the boon's level: \\begin{enumerate} \\item 1 RI/MT, cR 150 \\item 2 RI/MT, cR 350 \\item 4 RI/MT, cR 600 \\end{enumerate}",
+        "effect": "The Protagonist starts the game with augmentation. Limits depend on the boon's level: \\begin{enumerate} \\item 1 RI/MT, cR 150 \\item 2 RI/MT, cR 350 \\item 4 RI/MT, cR 600 \\end{enumerate}",
         "cost": "6/15/30",
         "cost_addendum": null,
         "_comment": null
@@ -32,25 +32,25 @@
     },
     {
         "name": "Battle Trance",
-        "effect": "The character can enter a battle trance. This takes two actions and causes one level of exhaustion. The character becomes frenzied but can identify friend and foe and return to normal by spending two actions.",
+        "effect": "The Protagonist can enter a battle trance. This takes two actions and causes one level of exhaustion. He becomes frenzied but can identify friend and foe and return to normal by spending two actions.",
         "cost": "12",
         "cost_addendum": ""
     },
     {
         "name": "Big Spender",
-        "effect": "The character gains additional equipment worth up to \\(2 * Ch * level\\) of this boon. The money can only be spent at character creation and unused credits are wasted. Equipment may as always be restricted by the GM. Cannot be combined with Destitute.",
+        "effect": "The Protagonist gains additional equipment worth up to \\(2 * Ch * level\\) of this boon. The money can only be spent at character creation and unused credits are wasted. Particular equipment may as always be restricted by the Adjudicator. Cannot be combined with Destitute.",
         "cost": "3",
         "cost_addendum": "each"
     },
     {
         "name": "Born Hero",
-        "effect": "The character counts as having all prerequisites for the Abilities Heroic, On your feet! and Personified Inspiration. These abilities only cost half as much.",
+        "effect": "The Protagonist counts as having all prerequisites for the Abilities Heroic, On your feet! and Personified Inspiration. These abilities only cost half as much.",
         "cost": "6",
         "cost_addendum": ""
     },
     {
         "name": "Broad Education",
-        "effect": "The character may choose a second background and gain its bonuses as well. Bonuses to skills are added, but may not exceed +3.",
+        "effect": "The Protagonist may choose a second background and gain +1 to its Skills and Educations, as well as all its Boons, Banes and Abilities.",
         "cost": "17",
         "cost_addendum": "+ new background"
     },
@@ -62,19 +62,19 @@
     },
     {
         "name": "Dark Vision",
-        "effect": "The character only takes half penalties in low light but normal penalties in complete darkness.",
+        "effect": "The Protagonist only takes half penalties in low light but normal penalties in complete darkness.",
         "cost": "10",
         "cost_addendum": ""
     },
     {
         "name": "Diver's Lung",
-        "effect": "The character may hold her breath twice as long.",
+        "effect": "The Protagonist may hold her breath twice as long.",
         "cost": "4",
         "cost_addendum": ""
     },
     {
         "name": "Euphonia",
-        "effect": "The character has a beautiful voice. He gains a +10 to social interaction tests when the other party can hear him. This also makes Voice Athlete a basic skill.",
+        "effect": "The Protagonist has a commonly beautiful voice. He gains a +10 to social interaction tests when the target can hear him. This also makes Voice Athlete a basic skill.",
         "cost": "10",
         "cost_addendum": ""
     },
@@ -86,25 +86,25 @@
     },
     {
         "name": "Fortune's Child",
-        "effect": "Every session the character may re-roll one of her dice rolls or one that she is directly affected by.",
+        "effect": "Every session the Protagonist may re-roll one of her dice rolls or one that she is directly affected by.",
         "cost": "10",
         "cost_addendum": ""
     },
     {
         "name": "Giant",
-        "effect": "The character becomes two categories larger. He is easier to hit, has more melee range, is faster and more imposing.",
+        "effect": "The Protagonist becomes two categories larger. He is easier to hit, has more melee range, is faster and more imposing.",
         "cost": "10",
         "cost_addendum": ""
     },
     {
         "name": "Good Reputation",
-        "effect": "The character has some sort of good reputation, either from well known deeds or from known genetic markers. If he is talking to someone who knows of this, he gains a bonus equal to 5 times the boon's level. Can be taken up to level 10.",
+        "effect": "The Protagonist has some sort of good reputation, either from well known deeds or from known genetic markers. If he is talking to someone who knows of this, he gains a bonus equal to 5 times the boon's level. Can be taken up to level 10.",
         "cost": "2",
         "cost_addendum": "each"
     },
     {
         "name": "Heroic Characteristic",
-        "effect": "Whenever a character succeeds at a test against his Heroic Characteristic, he scores an additional 2 DoS. This requires an Aptitude in the same characteristic already.",
+        "effect": "Whenever the Protagonist succeeds at a test against his Heroic Characteristic, he scores an additional 2 DoS. This requires an Aptitude in the same characteristic already.",
         "cost": "6",
         "cost_addendum": ""
     },
@@ -116,25 +116,25 @@
     },
     {
         "name": "Large",
-        "effect": "The character becomes a category larger. He is easier to hit, has more melee range, is faster and more imposing.",
+        "effect": "The Protagonist becomes a category larger. He is easier to hit, has more melee range, is faster and more imposing.",
         "cost": "5",
         "cost_addendum": ""
     },
     {
         "name": "Looker",
-        "effect": "The character is beautiful. She gains +5 to social interaction tests. Not compatible with Smoking, Ugly and Physically Repulsive.",
+        "effect": "The Protagonist is beautiful. She gains +5 to social interaction tests. Not compatible with Smoking, Ugly and Physically Repulsive.",
         "cost": "5",
         "cost_addendum": ""
     },
     {
         "name": "Low Libido",
-        "effect": "The character has very little interest in getting frisky. This makes it near impossible for him to be involved in seduction attempts on either side, adding a -25 penalty to seduction tests targeting him or being performed by him.",
+        "effect": "The Protagonist has very little interest in getting frisky. This makes it near impossible for him to be involved in seduction attempts on either side, adding a -25 penalty to seduction tests targeting him or being performed by him.",
         "cost": "5",
         "cost_addendum": ""
     },
     {
         "name": "Natural Armor",
-        "effect": "The character has natural armor covering her skin. Adds +1 armor to every location and can be taken up to 8 times.",
+        "effect": "The Protagonist has natural armor covering her skin. Adds +1 armor to every location and can be taken up to 8 times.",
         "cost": "6",
         "cost_addendum": "each"
     },
@@ -146,7 +146,7 @@
     },
     {
         "name": "Night Vision",
-        "effect": "The character only takes half penalties in complete darkness and no penalties in low light.",
+        "effect": "The Protagonist only takes half penalties in complete darkness and no penalties in low light.",
         "cost": "18",
         "cost_addendum": ""
     },
@@ -164,25 +164,25 @@
     },
     {
         "name": "Personal Possession",
-        "effect": "The character owns a very special, valuable (up to 800cr) item with not only large material but especially high sentimental value. This may include sets of items such as two bionic arms, but those are are up to GM discretion even more than usual.",
+        "effect": "The Protagonist owns a very special, valuable (up to 800cr) item with not only large material but especially high sentimental value. This may include sets of items such as two bionic arms, but those are are up to the Adjudicator's discretion even more than usual.",
         "cost": "8",
         "cost_addendum": ""
     },
     {
         "name": "Pleasant Smell",
-        "effect": "If the target of a character's charming social test can smell the character, the character gains +10. Not compatible with Terrible odor.",
+        "effect": "If the target of the Protagonist's charming social test can smell him, the test gains +10. Not compatible with Terrible odor.",
         "cost": "7",
         "cost_addendum": ""
     },
     {
         "name": "Poison Resistance",
-        "effect": "When the character starts being effected by a chem, he may make a Con test. On a success he ignores the effects.",
+        "effect": "When the Protagonist starts being effected by a chem, he may make a Con test. On a success he ignores the effects.",
         "cost": "4",
         "cost_addendum": ""
     },
     {
         "name": "Privileged Access",
-        "effect": "The character gains a 25% discount for license-free equipment made by a certain company. During character creation this bonus is 50% instead to account for sales in the past. He also has access to limited, rare equipment made and/or sold by the company. Any roll for Availability (see p. \\pageref{sec:availability}) gains a +1 (again specific to the trade partner). Requires Good Reputation with that company / salesman.",
+        "effect": "The Protagonist gains a 25% discount for license-free equipment made by a certain company. During character creation this bonus is 50% instead to account for sales in the past. He also has access to limited, rare equipment made and/or sold by the company. Any roll for Availability (see p. \\pageref{sec:availability}) gains a +1 (again, specific to the trade partner). Requires Good Reputation with that company / salesman.",
         "cost": "7",
         "cost_addendum": ""
     },
@@ -194,13 +194,13 @@
     },
     {
         "name": "Smoking",
-        "effect": "The character is extremely physically attractive or otherwise imposing. He gains +15 to social interaction tests but -20 to hide because his appearance is extremely memorable and outstanding. Not compatible with Looker, Ugly and Physically repulsive. If the character already is a Looker, this can replace it for 7 GP.",
+        "effect": "The Protagonist is extremely physically attractive or otherwise imposing. He gains +15 to social interaction tests but -20 to hide because his appearance is extremely memorable and outstanding. Not compatible with Looker, Ugly and Physically repulsive. If the Protagonist already is a Looker, this can replace it for 7 GP.",
         "cost": "12",
         "cost_addendum": ""
     },
     {
         "name": "Social Chameleon",
-        "effect": "The character has extreme ease fitting into any social group. Trying to pass as someone of a different class, sex, origin, and so on gain +40.",
+        "effect": "The Protagonist has extreme ease fitting into any social group. Trying to pass as someone of a different class, sex, origin, and so on gain +40.",
         "cost": "8",
         "cost_addendum": ""
     },
@@ -218,7 +218,7 @@
     },
     {
         "name": "Tough As Nails",
-        "effect": "The character can continue acting while bleeding until completely bled out. He never starts \\emph{severe bleeding}.",
+        "effect": "The Protagonist can continue acting while bleeding until completely bled out. He never starts \\emph{severe bleeding}.",
         "cost": "12",
         "cost_addendum": ""
     },
@@ -230,14 +230,14 @@
     },
     {
         "name": "Unrivaled Flexibility",
-        "effect": "Agile without peer, it\u2019s easy for the character to squeeze through tight spaces. He gains a +30 when attempting to release himself from holds or to escape from being tied up.",
+        "effect": "Agile without peer, it\u2019s easy for the Protagonist to squeeze through tight spaces. He gains a +30 when attempting to release himself from holds or to escape from being tied up.",
         "cost": "15",
         "cost_addendum": ""
     },
     {
         "name": "Veteran",
-        "effect": "The character is older and more experienced. He gains his background's bonuses again. Bonuses to skills are added up, but are limited to +3.",
-        "cost": "17",
+        "effect": "The Protagonist is older and more experienced. He gains another +1 to all Skills and Educations in his Background.",
+        "cost": "12",
         "cost_addendum": "+ new background"
     }
 ]

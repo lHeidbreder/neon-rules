@@ -22,17 +22,17 @@
 
 %GM
 \renewcommand{\loadeddoc}{false}
-\IfFileExists{../_rulepackage/gm-companion.aux}{
-	\externaldocument[gm-]{../_rulepackage/gm-companion}
-	\wlog{Loading <../\_rulepackage/gm-companion>}
+\IfFileExists{../_rulepackage/adjudicators-manual.aux}{
+	\externaldocument[gm-]{../_rulepackage/adjudicators-manual}
+	\wlog{Loading <../\_rulepackage/adjudicators-manual>}
 	\renewcommand{\loadeddoc}{true}
 }{}
 \ifthenelse{
 	\equal{\loadeddoc}{false}
 }{
-	\IfFileExists{../gm-companion/gm-companion.aux}{
-		\externaldocument[gm-]{../gm-companion/gm-companion}
-		\wlog{Loading <../gm-companion/gm-companion>}
+	\IfFileExists{../adjudicators-manual/adjudicators-manual.aux}{
+		\externaldocument[gm-]{../adjudicators-manual/adjudicators-manual}
+		\wlog{Loading <../adjudicators-manual/adjudicators-manual>}
 	}{}
 }{}
 

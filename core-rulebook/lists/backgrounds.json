@@ -32,7 +32,7 @@
             ""
         ],
         "banecostoverride": "",
-        "flavor_text": "Formerly educated in a single or many different things this character mainly knows a lot of things but might lack in the necessary skills to apply them properly.",
+        "flavor_text": "Formerly educated in a single or many different things this Protagonist mainly knows a lot of things but might lack in the necessary skills to apply them properly.",
         "Example equipment": "",
         "Notes": ""
     },
@@ -70,7 +70,7 @@
             ""
         ],
         "banecostoverride": "",
-        "flavor_text": "Sworn to protect this character is versed in how to identify and eliminate threats to another person.",
+        "flavor_text": "Sworn to protect this Protagonist is versed in how to identify and eliminate threats to another person.",
         "Example equipment": "",
         "Notes": ""
     },
@@ -107,7 +107,7 @@
             ""
         ],
         "banecostoverride": "",
-        "flavor_text": "This character was employed to stop intrusions. Usually this happens rather peacefully but if necessary this might include force as well.",
+        "flavor_text": "This Protagonist was employed to stop intrusions. Usually this happens rather peacefully but if necessary this might include force as well.",
         "Example equipment": "",
         "Notes": ""
     },
@@ -151,6 +151,43 @@
         "Notes": ""
     },
     {
+        "name": "Coporate Asset",
+        "cost": "0",
+        "cr": "",
+        "int": "",
+        "ins": "",
+        "ch": "",
+        "dex": "",
+        "ag": "",
+        "con": "",
+        "str": "",
+        "itemize:other_modifiers": [
+            ""
+        ],
+        "itemize:skills": [
+            "Athletics +2",
+            "Bio-Maintenance +1",
+            "Navigation (Ground) +1",
+            "Restraint +2",
+            "Survival +2"
+        ],
+        "itemize:abilities": [
+            ""
+        ],
+        "abilitycostoverride": "",
+        "itemize:boons": [
+            ""
+        ],
+        "booncostoverride": "",
+        "itemize:banes": [
+            ""
+        ],
+        "banecostoverride": "",
+        "flavor_text": "A lot of work can be taken over by machines. Yet sometimes a machine can't be used or is simply more expensive than a low wage laborer or a slave. This usage of human resources is not officially endorsed and even technically illegal, yet when a contract is formed (or forged...), the endeavour might be considered legitimate.",
+        "Example equipment": "",
+        "Notes": ""
+    },
+    {
         "name": "Courier",
         "cost": "6",
         "cr": "",
@@ -183,7 +220,7 @@
             ""
         ],
         "banecostoverride": "",
-        "flavor_text": "Delivering packages in the darker parts can be easier said than done. It takes precision, cunning and obviously a fit pair of legs. Such a character knows the darkest secrets of his city and those secrets are safe with him.",
+        "flavor_text": "Delivering packages in the darker parts can be easier said than done. It takes precision, cunning and obviously a fit pair of legs. Such a Protagonist knows the darkest secrets of his city and those secrets are safe with him.",
         "Example equipment": "",
         "Notes": ""
     },
@@ -444,43 +481,6 @@
         ],
         "banecostoverride": "",
         "flavor_text": "Be it private investigators or police officials, many unsolved cases drift through any city's archive. Some investigators are interested in these old, unsolved cases, others are commited to reducing the amount of new ones.",
-        "Example equipment": "",
-        "Notes": ""
-    },
-    {
-        "name": "Laborer",
-        "cost": "0",
-        "cr": "",
-        "int": "",
-        "ins": "",
-        "ch": "",
-        "dex": "",
-        "ag": "",
-        "con": "",
-        "str": "",
-        "itemize:other_modifiers": [
-            ""
-        ],
-        "itemize:skills": [
-            "Athletics +2",
-            "Bio-Maintenance +1",
-            "Navigation (Ground) +1",
-            "Restraint +2",
-            "Survival +2"
-        ],
-        "itemize:abilities": [
-            ""
-        ],
-        "abilitycostoverride": "",
-        "itemize:boons": [
-            ""
-        ],
-        "booncostoverride": "",
-        "itemize:banes": [
-            ""
-        ],
-        "banecostoverride": "",
-        "flavor_text": "A lot of work can be taken over by machines. Yet sometimes a machine can't be used or is simply more expensive than a low wage laborer or a slave. This usage of human resources is not officially endorsed and even technically illegal, yet when a contract is formed (or forged...), the endeavour might be considered legitimate.",
         "Example equipment": "",
         "Notes": ""
     },
