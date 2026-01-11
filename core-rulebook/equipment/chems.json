@@ -6,7 +6,7 @@
         "availability": "4",
         "description": "An injection cycle to improve the body's development.",
         "effect": "The user only pays half as much XP to increase his physical characteristics. ",
-        "detriment": "The user permanently loses 0.1 MT for every 100 XP he saved from this chem.",
+        "detriment": "The user permanently loses 0.1 MT for every partial 100 XP he saved from this chem. \\emph{Note: You may sum up the total XP from all cycles.}",
         "duration": "one development cycle",
         "load": "",
         "overdose_effect": ""
@@ -18,7 +18,7 @@
         "availability": "4",
         "description": "A capsule cycle to improve the mind's development.",
         "effect": "The user only pays half as much XP to increase his mental characteristics. ",
-        "detriment": "The user permanently loses 0.1 RI for every 100 XP he saved from this chem.",
+        "detriment": "The user permanently loses 0.1 RI for every partial 100 XP he saved from this chem. \\emph{Note: You may sum up the total XP from all cycles.}",
         "duration": "one development cycle",
         "load": "",
         "overdose_effect": ""
