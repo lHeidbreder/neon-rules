@@ -186,6 +186,7 @@
 	\end{exampleblock}
 
 	\section{Characteristics}
+	\index{Characteristic}
 	We now know how to perform dice checks but how do we determine our target values?
 	The most basic form of target value are the Subject’s Characteristics.
 	These are the most fundamental features that define a creature.
@@ -205,24 +206,6 @@
 		\item \textbf{Constitution (Con)} describes the creature’s bodily sturdiness, endurance and pain tolerance.
 		\item \textbf{Strength (Str)} describes the creature’s bodily, physical strength,
 			and its ability to use it effectively.
-	\end{itemize}
-	Each characteristic can be increased to a maximum of 60 + the Anthrotype's starting value.
-	XP costs depend on the character's current total value:
-	\begin{itemize}
-	\item[<20] 10
-	\item[20–25] 20
-	\item[26–30] 25
-	\item[31–35] 30
-	\item[36–40] 40
-	\item[41–45] 60
-	\item[46–50] 80
-	\item[51–55] 110
-	\item[56–60] 140
-	\item[61–65] 180
-	\item[66–70] 220
-	\item[71–75] 270
-	\item[76–80] 320
-	\item[>80] 350
 	\end{itemize}
 
 	\section{Derived values}
@@ -293,6 +276,8 @@
 	}
 
 	\section{Skills}
+	\index{Skill}
+	\label{sec:Skills}
 	Likely being the most common modifier on dice checks, skills represent training in a field.
 	This training ranges through the following levels:
 	\begin{itemize}
@@ -317,15 +302,11 @@
 	Basic skills start untrained, advanced skills start unknown.
 	Depending on the Anthrotypes and Backgrounds taken,
 		the Protagonist will already have some increases.
-	The first increase costs 200 XP,
-		the second one (taking a basic skill from known to trained for example) will cost 400,
-		the third 600 and so on.
-	That means increasing a basic skill from untrained to mastered will cost 2000 XP
-		and taking an advanced skill from unknown to mastered will cost 3000 XP overall.
 	\\%
 	You can find a list of all skills at \pageref{skilllist}.
 	\section{Educations}
 	\label{eds-explanation}
+	\index{Education}
 	In addition to directly applicable skills Subjects may be trained in,
 		they also have more general, broader knowledge.
 	While this might not replace a skill,
@@ -347,14 +328,17 @@
 			- hence it should not be allowed and would need to be specified,
 			for example into "ethics", "political philosophy" or "transhumanism".
 	\end{exampleblock}
-	An Education has three potential levels.
-	They have to be acquired in order
-	(for up to 1200 XP in total).
-	\begin{sitemize}
-		\item \textbf{Familiar} (200 XP, granting +10)
-		\item \textbf{Informed} (400 XP, granting +10)
-		\item \textbf{Knowledgeable} (600 XP, granting +10)
-	\end{sitemize}
+	\newcommand{\edlevelinfo}{
+		An Education has three potential levels.
+		They have to be acquired in order
+		(for up to 1200 XP in total).
+		\begin{sitemize}
+			\item \textbf{Familiar} (200 XP, granting +10)
+			\item \textbf{Informed} (400 XP, granting +10)
+			\item \textbf{Knowledgeable} (600 XP, granting +10)
+		\end{sitemize}
+	}
+	\edlevelinfo
 	Any Education can at most double the skill bonus.
 	\begin{exampleblock}
 		\itshape
@@ -873,6 +857,10 @@
 		fitting of their social standing, former profession and to a degree place of origin.
 	They also generally have a L1NC implant (see p. \pageref{implant:l1nc}).
 	Visit the equipment section below to buy anything beyond that.
+	
+	\chapter{Character Advancement}
+	\index{Advancement}
+	\input{rules/character-advancement.tex}
 
 	\chapter{Equipment}
 	\label{ch:equipment}

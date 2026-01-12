@@ -1,10 +1,12 @@
 %TODO: make examples dynamic
 \vspace{-20mm}
 \section{Characteristics}
+\index{Characteristic}
+\index{Advancement!Characteristic}
 \vspace{4mm}
 \begin{multicols}{2}
 Characteristics can be increased by spending XP,
-	up to the characteristic in their \emph{Anthrotype} + 45.
+	usually up to the characteristic in their \emph{Anthrotype} + 45.
 \begin{exampleblock}
 	\itshape
 	Example:
@@ -16,9 +18,9 @@ Characteristics can be increased by spending XP,
 The next advancement's cost is dependent on the target value:
 \par
 \begin{center}
-	\begin{tabular}{lr}
-		New & Cost per \\
-		Value & Advancement
+	\begin{tabular}{rr}
+		\multicolumn{1}{l}{New} & Cost per \\
+		\multicolumn{1}{l}{Value} & Advancement
 		\\ \hline %
 		\luaimport{lists/char-cost-table.csv}{char-adv-cost.tpl}{lists/char-adv-cost}
 	\end{tabular}
@@ -32,14 +34,26 @@ The next advancement's cost is dependent on the target value:
 \end{multicols}
 
 \section{Skills}
-%OLD:
-Each characteristic can be increased 5 times by 5 points each by spending XP.
-Said advancements cost 200, 400, 800, 1200 and 1600XP respectively,
-	making for 4200 in total.
-These have to be bought in order for any one given characteristic.
-\\%
-Lastly, a character may attain \emph{Mastery} of a skill (see p. \pageref{ability-Mastery}).
+\index{Skill}
+\index{Advancement!Skill}
+Skills pass through levels described on p. \pageref{sec:Skills}.
+The first increase costs 200 XP,
+	the second one (taking a basic skill from known to trained for example) will cost 400,
+	the third 600 and so on.
+That means increasing a basic skill
+	from \emph{untrained} to \emph{mastered}
+	will cost 2000 XP
+	and taking an advanced skill
+	from \emph{unknown} to mastered
+	will cost 3000 XP overall.
 
 \section{Educations}
+\index{Advancement!Education}
+\index{Education}
+\edlevelinfo
 
 \section{Abilities}
+\index{Ability}
+\index{Advancement!Ability}
+Each ability has an XP cost associated with it.
+It can be acquired by fulfilling the prerequisites and spending the cost.
