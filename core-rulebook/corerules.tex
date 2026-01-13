@@ -414,6 +414,7 @@
 		- firing machine guns while sprinting might be more than difficult due to their bulk for example.
 	A sprinting Subject takes a level of exhaustion every other round.
 	\section{Marching}
+	\index{Travel Time}
 	For the most part getting access to vehicular transport is easy enough.
 	In some instances though it might be necessary to take longer marches on foot.
 	Normal groups travel at roughly 30 kilometers a day or 40 if they push themselves.
@@ -475,6 +476,7 @@
 	\chapter{Healing}
 	\vspace{-10mm} %fixes pagebreak
 	\section{Anatomy}
+	\index{Anatomy}
 	The human body is no monolith.
 	For our purposes it will be split in 6 parts:
 		two legs,
@@ -497,6 +499,8 @@
 	\begin{minipage}{\columnwidth}
 		\begin{tabularx}{\columnwidth}{Xcr}
 			Locations & HP & Random \\ \hline
+			\index{Anatomy}
+			\index{Hit Locations}
 			\luaimport{lists/bodylocations.json}{bodylocation-table.tpl}{lists/bodylocations}%
 		\end{tabularx}
 	\end{minipage}
@@ -725,10 +729,13 @@
 %
 	\section{Fear, Shock and Trauma}
 	\label{sec:fear}
+	\index{Fear}
+	\index{Shock}
 	When a Subject is exposed to stressful situations,
 		he will be at risk of suffering from Shock.
 	\\%
 	\paragraph{1. Fear}
+	\index{Fear}
 	The Subject makes a Courage check with a modifier according to source and severity.
 	\\%
 	This ranges from +0 for large amounts of blood or an unexpected dead body, over -20 for watching someone die in front of oneself, to -60 in truly desperate situations or near-death experiences.
@@ -737,6 +744,7 @@
 	In case the Subject meets multiple panic situations in a day,
 		add a -10 penalty for each after the first.
 	\paragraph{2. Shock}
+	\index{Shock}
 	If the check is failed, the Subject suffers from Shock.
 	Roll a D10, add the Degrees of Failure.
 	Then apply the according result from the table on page \pageref{feartable}.
@@ -770,6 +778,8 @@
 
 	\newpage
 	\section{Basic Questions}
+	\index{Basic Questions}
+	\index{Character Questions}
 	Before anyone determines \emph{what} the Protagonist is
 		- i.e. create a stat sheet -
 		first it needs to be decided \emph{who} he is.

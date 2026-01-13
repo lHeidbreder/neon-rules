@@ -7,7 +7,7 @@
     },
     {
         "name": "Ambidextrous",
-        "effect": "The Protagonist can use either hand equally good. The abilities \\emph{Dual Wielding} and \\emph{Maneuver: Flurry} only cost half.",
+        "effect": "The Protagonist can use either hand equally good, gaining the \\emph{Off-Hand Expert} ability for free. The abilities \\emph{Dual Wielding} and \\emph{Maneuver: Flurry} only cost half.",
         "cost": "5",
         "cost_addendum": ""
     },

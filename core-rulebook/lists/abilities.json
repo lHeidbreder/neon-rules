@@ -255,7 +255,7 @@
         "name": "Off-Hand Expert",
         "cost": 400,
         "prerequisites": null,
-        "effect": "The Protagonist suffers no penalties from using her off-hand."
+        "effect": "\\index{Off-Hand}The Protagonist suffers no penalties from using her off-hand, as if he was \\emph{Ambidextrous}."
     },
     {
         "name": "On Your Feet!",

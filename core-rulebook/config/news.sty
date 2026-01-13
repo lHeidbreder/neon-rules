@@ -80,6 +80,7 @@
 }
 \newcommand{\specialrule}[2]{
 	\begin{minipage}{\columnwidth}
+		\index{Special Rule!#1}
 		\textbf{\ul{#1:}}\\
 		#2
 	\end{minipage}
@@ -106,12 +107,11 @@
 	\par
 }
 \newcommand{\statuseffect}[2]{
-%	\begin{minipage}{\columnwidth}
 	\needspace{10mm}
+	\index{Status Effect!#1}
+	\index{#1}
 		\textbf{\ul{#1:}}\\
 		#2\\
-%	\end{minipage}
-%	\vspace{5mm}
 	\par
 	\vspace{-10mm}
 }
@@ -127,6 +127,7 @@
 }
 \newcommand{\maneuver}[3]{
 	\begin{minipage}{\columnwidth}
+		\index{#1}
 		\textbf{\ul{MVR: #1}} (#2 XP)\\
 		\textit{Prerequisites: #3\\}
 		Effect:\\

@@ -7,6 +7,7 @@
 \stepcounter{tmpcntr}
 \phantomsection
 \makelabelfromkey[race]{@name@@variant@}
+\index{@name@}
 \par%
 \def\currentfillerimagepath{../art/\subtitle/races/@picture_path@}
 \IfFileExists
@@ -30,7 +31,7 @@
     Cr & Int & Ins & Ch & Dex & Ag & Con & Str \\ \hline
     @cr@ & @int@ & @ins@ & @ch@ & @dex@ & @ag@ & @con@ & @str@ \\ \hline
 \end{tabular}\par
-\ifthenelse{\isempty{@itemize:other_modifiers@}}{}{\vspace{-8mm} \noindent\textbf{Other modifiers:}
+\ifthenelse{\isempty{@itemize:other_modifiers@}}{}{\vspace{-8mm} \noindent\textbf{Other Characteristics:}
     \begin{itemize}
     \setlength\itemsep{-10mm} \vspace{-8mm}
     @itemize:other_modifiers@
