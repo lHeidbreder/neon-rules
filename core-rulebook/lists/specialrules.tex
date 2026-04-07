@@ -24,7 +24,7 @@
 \specialrule{Improvised}{
 	Does not require familiarity,
 	but instead always invokes -10 penalty.
-	It is also \emph{Unreliable}
+	It is also \emph{Unreliable 2}
 	and usually breaks apart on a fumble.}
 \specialrule{Inconspicuous}{
 	The weapon is easier to hide or pass off as something else.
@@ -46,13 +46,26 @@
 \specialrule{Piercing}{The user's Melee Damage Bonus is added to the weapon's AP as well.}
 \specialrule{Powered}{Requires an external power source to function.}
 \specialrule{Protective}{Made for defense: -10 to hit, -2 damage, but +20 to parry.}
-\specialrule{Reliable}{Can't jam (instead just indicates a miss) and is more resilient to damage.}
+\specialrule{Refined (X)}{
+	The weapon is made with almost otherworldly craftsmanship, and will most definitely out-shoot you.
+	If the weapon is \emph{Unreliable}, reduce its value by X.
+	If the weapon is not (or no longer) \emph{Unreliable}, the chance for Critical Hits is increased by X.
+	For example, a weapon with \emph{Refined 2} will strike critically on results of 5 or less. %TODO: calculate threshold dynamically?
+}
+\specialrule{Reliable}{
+	Can't Fumble (instead just indicates a miss) and can generally take more of a beating.
+	An \emph{Unreliable} weapon cannot be \emph{Reliable}.
+}
 \specialrule{Rending}{When the attack is blocked by armor (after AP),
 	it deals no damage to the target.
 	Instead the armor is burnt away
 	and reduced by the damage that would have been dealt until it is repaired.
 	This will only affect solid armor, not energy shields, nor does it affect natural armor.}
-\specialrule{Scatter}{+10 to hit at short to extreme range, no AP at long and extreme range, +1d10 dmg when shooting in point blank range}
+\specialrule{Scatter}{
+	Shots at short range or further gain +10 to hit.
+	At long range or further the weapon loses all AP.
+	Below short range the weapon gains +1d10 dmg.
+}
 \specialrule{Single Loader}{Reloading may be interrupted after each bullet. The given reload time is a single round of ammunition. \\
 	A Reload test - instead of reducing the reload time - increases the amount of shells reloaded during the loading time, but is at a penalty equal to 5 times the reload time.}
 \specialrule{Smoke}{The area inside and behind the smoke is fully concealed. Smoke usually remains dense for a minute and lasts for another as slightly obscuring; this will be reduced in wind or active ventilation, or increased in a fully sealed room.}
@@ -78,8 +91,11 @@
 }
 \specialrule{Tearing}{Roll an additional damage dice and drop the lowest.}
 \specialrule{Trauma}{When attacking the head location, halve the target's armor. Also halves Stunning Strike penalties.}
-\specialrule{Unreliable}{The weapon is a liability more often than not.
-	It fumbles at any roll of 96+.}
+\specialrule{Unreliable X}{
+	The weapon is a liability more often than not.
+	The weapon's chance of Fumbles is increased by X.
+	For example, a weapon with \emph{Unreliable 2} will fumble on results of 96 or higher. %TODO: calculate threshold dynamically?
+}
 \specialrule{Unwieldy}{The weapon disallows transforming reactions to actions, or vice versa.}
 \specialrule{Upgrade Kit (X)}{The weapon is an upgrade kit for another weapon X. Price and weight include X.}
 \end{multicols}
