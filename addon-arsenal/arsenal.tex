@@ -1,0 +1,68 @@
+\documentclass[11pt,a4paper,openany,dvipsnames]{book}
+\pagestyle{plain}
+
+\usepackage{../core-rulebook/config/packages}
+\usepackage{../core-rulebook/config/news}
+
+% Title definition
+\def\subtitle{Arsenal}
+
+\begin{document}
+\input{../core-rulebook/config/frontpages}
+
+%% RANGED
+\chapter{Ranged}
+\section{Weapons}
+    \luaimport{../core-rulebook/equipment/rangedweapons.json}{ranged-arsenal.tpl}{equipment/ranged}
+
+\section{Attachments}
+\section{Ammunition}
+
+%% MELEE
+\chapter{Melee}
+\section{Assembly}
+\section{Base Damage}
+\section{Components}
+    \subsection{Hilts}
+    \vspace{8mm}
+    \begin{multicols}{2}
+	    \luaimport{../core-rulebook/equipment/meleecomponents-hilt.csvin}{meleecomponent.tpl}{equipment/meleecomponent-hilt}
+    \end{multicols}
+
+    \subsection{Shafts}
+    \vspace{8mm}
+    \begin{multicols}{2}
+    	\luaimport{../core-rulebook/equipment/meleecomponents-shaft.csvin}{meleecomponent.tpl}{equipment/meleecomponent-shaft}
+    \end{multicols}
+
+    \subsection{Blades}
+    \vspace{8mm}
+    \begin{multicols}{2}
+    	\luaimport{../core-rulebook/equipment/meleecomponents-blade.csvin}{meleecomponent.tpl}{equipment/meleecomponent-blade}
+    \end{multicols}
+
+    \subsection{Whips}
+    \vspace{8mm}
+    \begin{multicols}{2}
+    	\luaimport{../core-rulebook/equipment/meleecomponents-whip.csvin}{meleecomponent.tpl}{equipment/meleecomponent-whip}
+    \end{multicols}
+
+    \subsection{Heads}
+    \vspace{8mm}
+    \begin{multicols}{2}
+    	\luaimport{../core-rulebook/equipment/meleecomponents-head.csvin}{meleecomponent.tpl}{equipment/meleecomponent-head}
+    \end{multicols}
+
+    \subsection{Core}
+    \vspace{8mm}
+    \begin{multicols}{2}
+    	\luaimport{../core-rulebook/equipment/meleecomponents-core.csvin}{meleecomponent.tpl}{equipment/meleecomponent-core}
+    \end{multicols}
+
+%% ARMOR
+\chapter{Armor}
+
+\printindex
+
+\IfFileExists{../core-rulebook/config/builddata.texin}{\input{../core-rulebook/config/builddata.texin}}{ }
+\end{document}

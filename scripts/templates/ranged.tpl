@@ -31,7 +31,7 @@
     \ifthenelse{\equal{@reload@}{1}}{\def\acident{action}}{\def\acident{actions}}
 		\ifthenelse{\isempty{@reload@}}{}{\textbf{Reload}: \mbox{@reload@ \acident}\\}
 		\ifthenelse{\isempty{@range@}}{}{\textbf{Range}: @range@m\\}
-		\ifthenelse{\isempty{@special_rules@}}{}{\textbf{Special Rules}: @special_rules@}
+		\ifthenelse{\isempty{@special_rules@}}{}{\textbf{Special Rules}: \begin{commalist}@special_rules@\end{commalist}}
 	\end{minipage}
 	\par
 \renewcommand{\lastgroup}{@group@}
