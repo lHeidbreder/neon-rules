@@ -21,23 +21,21 @@
     \def\imagedoesexist{TRUE}
     \begin{multicols}{2}
 }{}
-    %TODO: only place if image exists
     \ifthenelse{\equal{\imageanchor}{LEFT} \AND \equal{\imagedoesexist}{TRUE}}{
         \includegraphics[width=\columnwidth]{\currentfillerimagepath}
         \columnbreak
-    }
+    }{}
     
     \begin{flavorblock}
         @flavor_text@
     \end{flavorblock}
 
-    %TODO: only place if image exists
-    \ifthenelse{\equal{\imageanchor}{LEFT} \AND \equal{\imagedoesexist}{TRUE}}{
+    \ifthenelse{\equal{\imageanchor}{RIGHT} \AND \equal{\imagedoesexist}{TRUE}}{
         \columnbreak
         \includegraphics[width=\columnwidth]{\currentfillerimagepath}
-    }
+    }{}
 %end of multicols
-\IfFileExists{\currentfillerimagepath}{\end{multicols}{2}}{}
+\IfFileExists{\currentfillerimagepath}{\end{multicols}}{}
 
 %data here
 Type: \textbf{@group@}\ifthenelse{\NOT \isempty{@ammo@}}{, }{}\textbf{@ammo@}
