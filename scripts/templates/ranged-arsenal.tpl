@@ -5,7 +5,7 @@
 
 %% Enter next group
 \ifthenelse{\NOT \equal{\lastgroup}{@group@}}{
-    \needspace{0.5\textheight}
+    \needspace{30mm}
     \subsection{@group@}
     \renewcommand{\lastgroup}{@group@}
 }{}
