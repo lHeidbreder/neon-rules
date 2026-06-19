@@ -1,17 +1,14 @@
-\providecommand{\lastcaliber}{ }
-
-\ifthenelse{\NOT \equal{\lastcaliber}{@caliber@}}{
-    \subsection{@caliber@}
-    \index{@caliber@}
-    %TODO: description?
-    \begin{tabularx}{\textwidth}{lXrrr}
-        Type & Effect & Price & Weight & Box Size \\
-        \hline
-    \end{tabularx} %FIXME: end on condition
-}{}
-
-\begin{tabularx}{\textwidth}{lXrrr}
-    @type@ & @effect@ & cR @price@ & @weight@ & @unitofsale@ \\
-\end{tabularx}
-
-\renewcommand{\lastcaliber}{@caliber@}
+\providecommand{\lastcaliber}{ }%
+\ifthenelse{\NOT \equal{\lastcaliber}{@caliber@}}{%
+    \ifintable%
+        \end{tabular}%
+    \fi%
+    \subsection{@caliber@}%
+    \index{@caliber@}%
+    \begin{tabular}{@{}lp{0.5\textwidth}rrr}%
+        Type & Effect & Price & Weight & Box Size \\%
+        \hline%
+    \global\intabletrue%
+}{}%
+@type@ & @effect@ & cR @price@ & @weight@ & @unitofsale@ \\%
+\renewcommand{\lastcaliber}{@caliber@}%
