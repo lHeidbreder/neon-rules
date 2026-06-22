@@ -42,10 +42,12 @@ Type: \textbf{@group@}\ifthenelse{\NOT \isempty{@ammo@}}{, }{}\textbf{@ammo@}
 \vspace{1mm}
 \hrule
 
-\begin{tabularx}{\columnwidth}{cccccc|ccc}
-    Damage & Shots & AP & Range & Mag & Reload & Price & Weight & Availability \\%
-    @damage@ & @shots@ & @ap@ & @range@m & @mag@ & @reload@ & cR @price@ & @weight@kg & @availability@ \\%
-\end{tabularx}
+\begin{center}
+\begin{tabular}{cccccc|ccc}
+    Damage & Shots & AP & Range & Mag & Rld & Price & Wgt & Av \\%
+    @damage@ & @shots@ & @ap@ & @range@m & @mag@ & @reload@ & cR @price@ & @weight@kg & @availability@ %
+\end{tabular}
+\end{center}
 
 \ifthenelse{\NOT \isempty{@special_rules@}}{
     \hrule
