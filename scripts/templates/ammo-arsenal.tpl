@@ -5,8 +5,8 @@
     \fi%
     \subsection{@caliber@}%
     \index{@caliber@}%
-    \begin{tabular}{@{}p{72pt}p{200pt}|R{38.5pt}R{34pt}R{22pt}}%
-        Type & Effect & Price & Weight & Box Size \\%
+    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{72pt}>{\raggedright\arraybackslash}p{200pt}|R{34pt}R{22pt}R{22pt}}%
+        Type & Effect & Price & Wgt & Box Size \\%
         \hline%
     \global\intabletrue%
 }{}%
