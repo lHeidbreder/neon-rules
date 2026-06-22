@@ -5,7 +5,7 @@
     \fi%
     \subsection{@caliber@}%
     \index{@caliber@}%
-    \begin{tabular}{@{}lp{0.5\textwidth}rrr}%
+    \begin{tabular}{@{}p{72pt}p{232pt}|R{38.5pt}R{34pt}R{41.5pt}}%
         Type & Effect & Price & Weight & Box Size \\%
         \hline%
     \global\intabletrue%
