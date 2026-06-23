@@ -2,7 +2,9 @@
     {
         "caliber": "7.2mm",
         "type": "FMJ",
-        "effect": "-",
+        "effect": [
+            "-"
+        ],
         "price": "2",
         "unitofsale": "30",
         "weight": "4g",
@@ -12,7 +14,10 @@
     {
         "caliber": "7.2mm",
         "type": "AP",
-        "effect": "-1 dmg, +4 AP",
+        "effect": [
+            "Dmg -1",
+            "AP +4"
+        ],
         "price": "4",
         "unitofsale": "30",
         "weight": "4g",
@@ -22,7 +27,11 @@
     {
         "caliber": "7.2mm",
         "type": "Hot Load",
-        "effect": "+1 dmg, +4 AP, +15 on hearing checks to identify the shooter's position",
+        "effect": [
+            "Dmg +1",
+            "AP +4",
+            "\\arsenalhotcoldammo +15"
+        ],
         "price": "12",
         "unitofsale": "30",
         "weight": "4g",
@@ -32,7 +41,10 @@
     {
         "caliber": "7.2mm",
         "type": "Hot AP",
-        "effect": "+10 AP, +15 on hearing checks to identify the shooter's position",
+        "effect": [
+            "AP +10",
+            "\\arsenalhotcoldammo +15"
+        ],
         "price": "16",
         "unitofsale": "30",
         "weight": "4g",
@@ -42,7 +54,10 @@
     {
         "caliber": "7.2mm",
         "type": "JSP",
-        "effect": "+2 dmg, -3 AP",
+        "effect": [
+            "Dmg +2",
+            "AP -3"
+        ],
         "price": "4",
         "unitofsale": "30",
         "weight": "4g",
@@ -52,7 +67,10 @@
     {
         "caliber": "7.2mm",
         "type": "JHP",
-        "effect": "+4 dmg, -6 AP",
+        "effect": [
+            "Dmg +4",
+            "AP -6"
+        ],
         "price": "8",
         "unitofsale": "30",
         "weight": "4g",
@@ -62,7 +80,11 @@
     {
         "caliber": "7.2mm",
         "type": "Cold Load",
-        "effect": "-3 dmg, -3 AP, -15 on hearing checks to identify the shooter's position",
+        "effect": [
+            "Dmg -3",
+            "AP -3",
+            "\\arsenalhotcoldammo -15"
+        ],
         "price": "5",
         "unitofsale": "30",
         "weight": "4g",
@@ -72,7 +94,10 @@
     {
         "caliber": "7.2mm",
         "type": "Cold AP",
-        "effect": "-4 dmg, -15 on hearing checks to identify the shooter's position",
+        "effect": [
+            "Dmg -4",
+            "\\arsenalhotcoldammo -15"
+        ],
         "price": "5",
         "unitofsale": "30",
         "weight": "4g",
@@ -82,7 +107,10 @@
     {
         "caliber": "7.2mm",
         "type": "Cold JSP",
-        "effect": "-6 AP, -15 on hearing checks to identify the shooter's position",
+        "effect": [
+            "AP -6",
+            "\\arsenalhotcoldammo -15"
+        ],
         "price": "8",
         "unitofsale": "30",
         "weight": "4g",
@@ -92,7 +120,11 @@
     {
         "caliber": "7.2mm",
         "type": "Cold JHP",
-        "effect": "+2 dmg, -8 AP, -15 on hearing checks to identify the shooter's position",
+        "effect": [
+            "Dmg +2",
+            "AP -8",
+            "\\arsenalhotcoldammo +15"
+        ],
         "price": "10",
         "unitofsale": "30",
         "weight": "4g",
@@ -102,7 +134,10 @@
     {
         "caliber": "7.2mm",
         "type": "Incendiary",
-        "effect": "-2 AP, will ignite flammable materials hit",
+        "effect": [
+            "AP -2",
+            "\\arsenaligniteammo"
+        ],
         "price": "8",
         "unitofsale": "30",
         "weight": "4g",
@@ -112,7 +147,12 @@
     {
         "caliber": "7.2mm",
         "type": "Rubber Rounds",
-        "effect": "-10 dmg, 0 AP, Stun (2), every hit against the target's head reduces it's initiative by D5-1",
+        "effect": [
+            "Dmg -10",
+            "0 AP",
+            "Stun (2)",
+            "\\arsenalrubberammo D5-1"
+        ],
         "price": "2",
         "unitofsale": "30",
         "weight": "4g",
@@ -122,7 +162,12 @@
     {
         "caliber": "7.2mm",
         "type": "Shock",
-        "effect": "-4 dmg, -5 AP, Stun (4), EMP",
+        "effect": [
+            "Dmg -4",
+            "AP -5",
+            "Stun (4)",
+            "EMP"
+        ],
         "price": "25",
         "unitofsale": "5",
         "weight": "4g",
@@ -132,7 +177,9 @@
     {
         "caliber": "7.2mm",
         "type": "Tracer",
-        "effect": "grants a +10 bonus to hit for others shooting at the same target during this turn",
+        "effect": [
+            "\\arsenaltracerammo"
+        ],
         "price": "2",
         "unitofsale": "5",
         "weight": "4g",
@@ -142,7 +189,9 @@
     {
         "caliber": "11.8x45mm",
         "type": "FMJ",
-        "effect": "-",
+        "effect": [
+            "-"
+        ],
         "price": "3",
         "unitofsale": "20",
         "weight": "22g",
@@ -152,7 +201,10 @@
     {
         "caliber": "11.8x45mm",
         "type": "AP",
-        "effect": "-1 dmg, +4 AP",
+        "effect": [
+            "Dmg -1",
+            "AP +4"
+        ],
         "price": "6",
         "unitofsale": "20",
         "weight": "22g",
@@ -162,7 +214,11 @@
     {
         "caliber": "11.8x45mm",
         "type": "Hot Load",
-        "effect": "+1 dmg, +4 AP, +15 on hearing checks to identify the shooter's position",
+        "effect": [
+            "Dmg +1",
+            "AP +4",
+            "\\arsenalhotcoldammo +15"
+        ],
         "price": "18",
         "unitofsale": "20",
         "weight": "22g",
@@ -172,7 +228,10 @@
     {
         "caliber": "11.8x45mm",
         "type": "Hot AP",
-        "effect": "+10 AP, +15 on hearing checks to identify the shooter's position",
+        "effect": [
+            "AP +10",
+            "\\arsenalhotcoldammo -15"
+        ],
         "price": "24",
         "unitofsale": "20",
         "weight": "22g",
@@ -182,7 +241,10 @@
     {
         "caliber": "11.8x45mm",
         "type": "JSP",
-        "effect": "+2 dmg, -3 AP",
+        "effect": [
+            "Dmg +2",
+            "AP -3"
+        ],
         "price": "6",
         "unitofsale": "20",
         "weight": "22g",
@@ -192,7 +254,10 @@
     {
         "caliber": "11.8x45mm",
         "type": "JHP",
-        "effect": "+4 dmg, -6 AP",
+        "effect": [
+            "Dmg +4",
+            "AP -6"
+        ],
         "price": "12",
         "unitofsale": "20",
         "weight": "22g",
@@ -202,7 +267,11 @@
     {
         "caliber": "11.8x45mm",
         "type": "Cold Load",
-        "effect": "-3 dmg, -3 AP, -15 on hearing checks to identify the shooter's position",
+        "effect": [
+            "Dmg -3",
+            "AP -3",
+            "\\arsenalhotcoldammo -15"
+        ],
         "price": "8",
         "unitofsale": "20",
         "weight": "22g",
@@ -212,7 +281,10 @@
     {
         "caliber": "11.8x45mm",
         "type": "Cold AP",
-        "effect": "-4 dmg, -15 on hearing checks to identify the shooter's position",
+        "effect": [
+            "Dmg -4",
+            "\\arsenalhotcoldammo -15"
+        ],
         "price": "8",
         "unitofsale": "20",
         "weight": "22g",
@@ -222,7 +294,10 @@
     {
         "caliber": "11.8x45mm",
         "type": "Cold JSP",
-        "effect": "-6 AP, -15 on hearing checks to identify the shooter's position",
+        "effect": [
+            "AP -6",
+            "\\arsenalhotcoldammo -15"
+        ],
         "price": "12",
         "unitofsale": "20",
         "weight": "22g",
@@ -232,7 +307,11 @@
     {
         "caliber": "11.8x45mm",
         "type": "Cold JHP",
-        "effect": "+2 dmg, -8 AP, -15 on hearing checks to identify the shooter's position",
+        "effect": [
+            "Dmg +2",
+            "AP -8",
+            "\\arsenalhotcoldammo -15"
+        ],
         "price": "15",
         "unitofsale": "20",
         "weight": "22g",
@@ -242,7 +321,10 @@
     {
         "caliber": "11.8x45mm",
         "type": "Incendiary",
-        "effect": "-2 AP, will ignite flammable materials hit",
+        "effect": [
+            "AP -2",
+            "\\arsenaligniteammo"
+        ],
         "price": "12",
         "unitofsale": "20",
         "weight": "22g",
@@ -252,7 +334,12 @@
     {
         "caliber": "11.8x45mm",
         "type": "Rubber Rounds",
-        "effect": "-10 dmg, 0 AP, Stun (2), every hit against the target's head reduces it's initiative by D5-1",
+        "effect": [
+            "Dmg -10",
+            "0 AP",
+            "Stun (2)",
+            "\\arsenalrubberammo D5-1"
+        ],
         "price": "3",
         "unitofsale": "20",
         "weight": "22g",
@@ -262,7 +349,12 @@
     {
         "caliber": "11.8x45mm",
         "type": "Shock",
-        "effect": "-4 dmg, -5 AP, Stun (4), EMP",
+        "effect": [
+            "Dmg -4",
+            "AP -5",
+            "Stun (4)",
+            "EMP"
+        ],
         "price": "38",
         "unitofsale": "5",
         "weight": "22g",
@@ -272,7 +364,9 @@
     {
         "caliber": "11.8x45mm",
         "type": "Tracer",
-        "effect": "grants a +10 bonus to hit for others shooting at the same target during this turn",
+        "effect": [
+            "\\arsenaltracerammo"
+        ],
         "price": "3",
         "unitofsale": "5",
         "weight": "22g",
@@ -282,7 +376,9 @@
     {
         "caliber": "6.3mm",
         "type": "FMJ",
-        "effect": "-",
+        "effect": [
+            "-"
+        ],
         "price": "4",
         "unitofsale": "40",
         "weight": "8.6g",
@@ -292,7 +388,10 @@
     {
         "caliber": "6.3mm",
         "type": "AP",
-        "effect": "-1 dmg, +4 AP",
+        "effect": [
+            "Dmg -1",
+            "AP +4"
+        ],
         "price": "8",
         "unitofsale": "40",
         "weight": "8.6g",
@@ -302,7 +401,11 @@
     {
         "caliber": "6.3mm",
         "type": "Hot Load",
-        "effect": "+1 dmg, +4 AP, +15 on hearing checks to identify the shooter's position",
+        "effect": [
+            "Dmg +1",
+            "AP +4",
+            "\\arsenalhotcoldammo +15"
+        ],
         "price": "24",
         "unitofsale": "40",
         "weight": "8.6g",
@@ -312,7 +415,10 @@
     {
         "caliber": "6.3mm",
         "type": "Hot AP",
-        "effect": "+10 AP, +15 on hearing checks to identify the shooter's position",
+        "effect": [
+            "AP +10",
+            "\\arsenalhotcoldammo +15"
+        ],
         "price": "32",
         "unitofsale": "40",
         "weight": "8.6g",
@@ -322,7 +428,10 @@
     {
         "caliber": "6.3mm",
         "type": "JSP",
-        "effect": "+2 dmg, -3 AP",
+        "effect": [
+            "Dmg +2",
+            "AP -3"
+        ],
         "price": "8",
         "unitofsale": "40",
         "weight": "8.6g",
@@ -332,7 +441,10 @@
     {
         "caliber": "6.3mm",
         "type": "JHP",
-        "effect": "+4 dmg, -6 AP",
+        "effect": [
+            "Dmg +4",
+            "AP -6"
+        ],
         "price": "16",
         "unitofsale": "40",
         "weight": "8.6g",
@@ -342,7 +454,11 @@
     {
         "caliber": "6.3mm",
         "type": "Cold Load",
-        "effect": "-3 dmg, -3 AP, -15 on hearing checks to identify the shooter's position",
+        "effect": [
+            "Dmg -3",
+            "AP -3",
+            "\\arsenalhotcoldammo -15"
+        ],
         "price": "8",
         "unitofsale": "40",
         "weight": "8.6g",
@@ -352,7 +468,10 @@
     {
         "caliber": "6.3mm",
         "type": "Cold AP",
-        "effect": "-4 dmg, -15 on hearing checks to identify the shooter's position",
+        "effect": [
+            "Dmg -4",
+            "\\arsenalhotcoldammo -15"
+        ],
         "price": "10",
         "unitofsale": "40",
         "weight": "8.6g",
@@ -362,7 +481,10 @@
     {
         "caliber": "6.3mm",
         "type": "Cold JSP",
-        "effect": "-6 AP, -15 on hearing checks to identify the shooter's position",
+        "effect": [
+            "AP -6",
+            "\\arsenalhotcoldammo -15"
+        ],
         "price": "8",
         "unitofsale": "40",
         "weight": "8.6g",
@@ -372,7 +494,11 @@
     {
         "caliber": "6.3mm",
         "type": "Cold JHP",
-        "effect": "+2 dmg, -8 AP, -15 on hearing checks to identify the shooter's position",
+        "effect": [
+            "Dmg +2",
+            "AP -8",
+            "\\arsenalhotcoldammo -15"
+        ],
         "price": "14",
         "unitofsale": "40",
         "weight": "8.6g",
@@ -382,7 +508,10 @@
     {
         "caliber": "6.3mm",
         "type": "Incendiary",
-        "effect": "-2 AP, will ignite flammable materials hit",
+        "effect": [
+            "AP -2",
+            "\\arsenaligniteammo"
+        ],
         "price": "16",
         "unitofsale": "40",
         "weight": "8.6g",
@@ -392,7 +521,12 @@
     {
         "caliber": "6.3mm",
         "type": "Rubber Rounds",
-        "effect": "-10 dmg, 0 AP, Stun (2), every hit against the target's head reduces it's initiative by D5-1",
+        "effect": [
+            "Dmg -10",
+            "0 AP",
+            "Stun (2)",
+            "\\arsenalrubberammo D5-1"
+        ],
         "price": "4",
         "unitofsale": "40",
         "weight": "8.6g",
@@ -402,7 +536,12 @@
     {
         "caliber": "6.3mm",
         "type": "Shock",
-        "effect": "-4 dmg, -5 AP, Stun (4), EMP",
+        "effect": [
+            "Dmg -4",
+            "AP -5",
+            "Stun (4)",
+            "EMP"
+        ],
         "price": "50",
         "unitofsale": "5",
         "weight": "8.6g",
@@ -412,7 +551,9 @@
     {
         "caliber": "6.3mm",
         "type": "Tracer",
-        "effect": "grants a +10 bonus to hit for others shooting at the same target during this turn",
+        "effect": [
+            "\\arsenaltracerammo"
+        ],
         "price": "4",
         "unitofsale": "5",
         "weight": "8.6g",
@@ -422,7 +563,10 @@
     {
         "caliber": "6.3mm",
         "type": "Shield Breaker",
-        "effect": "-3 dmg, Disrupt",
+        "effect": [
+            "Dmg -3",
+            "Disrupt"
+        ],
         "price": "38",
         "unitofsale": "5",
         "weight": "8.6g",
@@ -432,7 +576,9 @@
     {
         "caliber": "11.8x112mm",
         "type": "FMJ",
-        "effect": "-",
+        "effect": [
+            "-"
+        ],
         "price": "4",
         "unitofsale": "10",
         "weight": "50g",
@@ -442,7 +588,10 @@
     {
         "caliber": "11.8x112mm",
         "type": "AP",
-        "effect": "-1 dmg, +4 AP",
+        "effect": [
+            "Dmg -1",
+            "AP +4"
+        ],
         "price": "8",
         "unitofsale": "10",
         "weight": "50g",
@@ -452,7 +601,11 @@
     {
         "caliber": "11.8x112mm",
         "type": "Hot Load",
-        "effect": "+1 dmg, +4 AP, +15 on hearing checks to identify the shooter's position",
+        "effect": [
+            "Dmg +1",
+            "AP +4",
+            "\\arsenalhotcoldammo +15"
+        ],
         "price": "24",
         "unitofsale": "10",
         "weight": "50g",
@@ -462,7 +615,10 @@
     {
         "caliber": "11.8x112mm",
         "type": "Hot AP",
-        "effect": "+10 AP, +15 on hearing checks to identify the shooter's position",
+        "effect": [
+            "AP +10",
+            "\\arsenalhotcoldammo +15"
+        ],
         "price": "32",
         "unitofsale": "10",
         "weight": "50g",
@@ -472,7 +628,10 @@
     {
         "caliber": "11.8x112mm",
         "type": "JSP",
-        "effect": "+2 dmg, -3 AP",
+        "effect": [
+            "Dmg +2",
+            "AP -3"
+        ],
         "price": "8",
         "unitofsale": "10",
         "weight": "50g",
@@ -482,7 +641,10 @@
     {
         "caliber": "11.8x112mm",
         "type": "JHP",
-        "effect": "+4 dmg, -6 AP",
+        "effect": [
+            "Dmg +4",
+            "AP -6"
+        ],
         "price": "16",
         "unitofsale": "10",
         "weight": "50g",
@@ -492,7 +654,11 @@
     {
         "caliber": "11.8x112mm",
         "type": "Cold Load",
-        "effect": "-3 dmg, -3 AP, -15 on hearing checks to identify the shooter's position",
+        "effect": [
+            "Dmg -3",
+            "AP -3",
+            "\\arsenalhotcoldammo -15"
+        ],
         "price": "8",
         "unitofsale": "10",
         "weight": "50g",
@@ -502,7 +668,10 @@
     {
         "caliber": "11.8x112mm",
         "type": "Cold AP",
-        "effect": "-4 dmg, -15 on hearing checks to identify the shooter's position",
+        "effect": [
+            "Dmg -4",
+            "\\arsenalhotcoldammo -15"
+        ],
         "price": "10",
         "unitofsale": "10",
         "weight": "50g",
@@ -512,7 +681,10 @@
     {
         "caliber": "11.8x112mm",
         "type": "Cold JSP",
-        "effect": "-6 AP, -15 on hearing checks to identify the shooter's position",
+        "effect": [
+            "AP -6",
+            "\\arsenalhotcoldammo -15"
+        ],
         "price": "8",
         "unitofsale": "10",
         "weight": "50g",
@@ -522,7 +694,11 @@
     {
         "caliber": "11.8x112mm",
         "type": "Cold JHP",
-        "effect": "+2 dmg, -8 AP, -15 on hearing checks to identify the shooter's position",
+        "effect": [
+            "Dmg +2",
+            "AP -8",
+            "\\arsenalhotcoldammo -15"
+        ],
         "price": "14",
         "unitofsale": "10",
         "weight": "50g",
@@ -532,7 +708,10 @@
     {
         "caliber": "11.8x112mm",
         "type": "Incendiary",
-        "effect": "-2 AP, will ignite flammable materials hit",
+        "effect": [
+            "-2 AP",
+            "\\arsenaligniteammo"
+        ],
         "price": "16",
         "unitofsale": "10",
         "weight": "50g",
@@ -542,7 +721,12 @@
     {
         "caliber": "11.8x112mm",
         "type": "Rubber Rounds",
-        "effect": "-10 dmg, 0 AP, Stun (2), every hit against the target's head reduces it's initiative by D5-1",
+        "effect": [
+            "Dmg -10",
+            "0 AP",
+            "Stun (2)",
+            "\\arsenalrubberammo D5-1"
+        ],
         "price": "4",
         "unitofsale": "10",
         "weight": "50g",
@@ -552,7 +736,12 @@
     {
         "caliber": "11.8x112mm",
         "type": "Shock",
-        "effect": "-4 dmg, -5 AP, Stun (4), EMP",
+        "effect": [
+            "Dmg -4",
+            "AP -5",
+            "Stun (4)",
+            "EMP"
+        ],
         "price": "50",
         "unitofsale": "1",
         "weight": "50g",
@@ -562,7 +751,9 @@
     {
         "caliber": "11.8x112mm",
         "type": "Tracer",
-        "effect": "grants a +10 bonus to hit for others shooting at the same target during this turn",
+        "effect": [
+            "\\arsenaltracerammo"
+        ],
         "price": "4",
         "unitofsale": "5",
         "weight": "50g",
@@ -572,7 +763,10 @@
     {
         "caliber": "11.8x112mm",
         "type": "Shield Breaker",
-        "effect": "-3 dmg, Disrupt",
+        "effect": [
+            "Dmg -3",
+            "Disrupt"
+        ],
         "price": "38",
         "unitofsale": "1",
         "weight": "50g",
@@ -582,7 +776,9 @@
     {
         "caliber": "15x132mm",
         "type": "FMJ",
-        "effect": "-",
+        "effect": [
+            "-"
+        ],
         "price": "8",
         "unitofsale": "5",
         "weight": "85g",
@@ -592,7 +788,10 @@
     {
         "caliber": "15x132mm",
         "type": "AP",
-        "effect": "-1 dmg, +4 AP",
+        "effect": [
+            "Dmg -1",
+            "AP +4"
+        ],
         "price": "16",
         "unitofsale": "5",
         "weight": "85g",
@@ -602,7 +801,11 @@
     {
         "caliber": "15x132mm",
         "type": "Hot Load",
-        "effect": "+1 dmg, +4 AP, +15 on hearing checks to identify the shooter's position",
+        "effect": [
+            "Dmg +1",
+            "AP +4",
+            "\\arsenalhotcoldammo +15"
+        ],
         "price": "48",
         "unitofsale": "5",
         "weight": "85g",
@@ -612,7 +815,10 @@
     {
         "caliber": "15x132mm",
         "type": "Hot AP",
-        "effect": "+10 AP, +15 on hearing checks to identify the shooter's position",
+        "effect": [
+            "AP +10",
+            "\\arsenalhotcoldammo +15"
+        ],
         "price": "64",
         "unitofsale": "5",
         "weight": "85g",
@@ -622,7 +828,10 @@
     {
         "caliber": "15x132mm",
         "type": "JSP",
-        "effect": "+2 dmg, -3 AP",
+        "effect": [
+            "Dmg +2",
+            "AP -3"
+        ],
         "price": "16",
         "unitofsale": "5",
         "weight": "85g",
@@ -632,7 +841,10 @@
     {
         "caliber": "15x132mm",
         "type": "JHP",
-        "effect": "+4 dmg, -6 AP",
+        "effect": [
+            "Dmg +4",
+            "AP -6"
+        ],
         "price": "32",
         "unitofsale": "5",
         "weight": "85g",
@@ -642,7 +854,10 @@
     {
         "caliber": "15x132mm",
         "type": "Incendiary",
-        "effect": "-2 AP, will ignite flammable materials hit",
+        "effect": [
+            "AP -2",
+            "\\arsenaligniteammo"
+        ],
         "price": "32",
         "unitofsale": "5",
         "weight": "85g",
@@ -652,7 +867,12 @@
     {
         "caliber": "15x132mm",
         "type": "Rubber Rounds",
-        "effect": "-10 dmg, 0 AP, Stun (4), every hit against the target's head reduces it's initiative by D10",
+        "effect": [
+            "Dmg -10",
+            "0 AP",
+            "Stun (4)",
+            "\\arsenalrubberammo D5-1"
+        ],
         "price": "8",
         "unitofsale": "5",
         "weight": "85g",
@@ -662,7 +882,12 @@
     {
         "caliber": "15x132mm",
         "type": "Shock",
-        "effect": "-4 dmg, -5 AP, Stun (4), EMP",
+        "effect": [
+            "Dmg -4",
+            "AP -5",
+            "Stun (4)",
+            "EMP"
+        ],
         "price": "80",
         "unitofsale": "1",
         "weight": "85g",
@@ -672,7 +897,9 @@
     {
         "caliber": "15x132mm",
         "type": "Tracer",
-        "effect": "grants a +10 bonus to hit for others shooting at the same target during this turn",
+        "effect": [
+            "\\arsenaltracerammo"
+        ],
         "price": "8",
         "unitofsale": "5",
         "weight": "85g",
@@ -682,7 +909,9 @@
     {
         "caliber": "12gauge",
         "type": "Buckshot",
-        "effect": "-",
+        "effect": [
+            "-"
+        ],
         "price": "2",
         "unitofsale": "10",
         "weight": "42g",
@@ -692,7 +921,10 @@
     {
         "caliber": "12gauge",
         "type": "Birdshot",
-        "effect": "halves damage, ignores all negative size modifiers",
+        "effect": [
+            "Damage is halved",
+            "Ignore all negative size modifiers"
+        ],
         "price": "2",
         "unitofsale": "10",
         "weight": "42g",
@@ -702,7 +934,11 @@
     {
         "caliber": "12gauge",
         "type": "Incendiary",
-        "effect": "-2 dmg, -4 AP, ignites flammable materials hit",
+        "effect": [
+            "Dmg -2",
+            "AP -4",
+            "\\arsenaligniteammo"
+        ],
         "price": "4",
         "unitofsale": "10",
         "weight": "42g",
@@ -712,7 +948,11 @@
     {
         "caliber": "12gauge",
         "type": "Breaching Round",
-        "effect": "+3 dmg, +4 AP, halved range",
+        "effect": [
+            "Dmg +3",
+            "AP +4",
+            "Range is halved"
+        ],
         "price": "5",
         "unitofsale": "10",
         "weight": "42g",
@@ -722,7 +962,11 @@
     {
         "caliber": "12gauge",
         "type": "Slug",
-        "effect": "+2 AP, removes Scatter, doubles range",
+        "effect": [
+            "AP +2",
+            "removes Scatter",
+            "Range is doubled"
+        ],
         "price": "2",
         "unitofsale": "10",
         "weight": "42g",
@@ -732,7 +976,11 @@
     {
         "caliber": "12gauge",
         "type": "Fragmentation Slug",
-        "effect": "removes Scatter but adds Blast (2) rule, doubles range",
+        "effect": [
+            "removes Scatter",
+            "Blast (2)",
+            "Range is doubled"
+        ],
         "price": "8",
         "unitofsale": "10",
         "weight": "42g",
@@ -742,7 +990,12 @@
     {
         "caliber": "12gauge",
         "type": "Incendiary Slug",
-        "effect": "+1 AP, removes Scatter, doubles range, ignites flammable objects hit",
+        "effect": [
+            "AP +1",
+            "removes Scatter",
+            "Range is doubled",
+            "\\arsenaligniteammo"
+        ],
         "price": "4",
         "unitofsale": "10",
         "weight": "42g",
@@ -752,7 +1005,12 @@
     {
         "caliber": "12gauge",
         "type": "EMP Slug",
-        "effect": "-2 dmg, EMP, removes Scatter, doubles range",
+        "effect": [
+            "Dmg -2",
+            "EMP",
+            "removes Scatter",
+            "Range is doubled"
+        ],
         "price": "12",
         "unitofsale": "1",
         "weight": "42g",
@@ -762,7 +1020,13 @@
     {
         "caliber": "12gauge",
         "type": "Rubber Slug",
-        "effect": "-2 dmg, -6 AP, removes Scatter, doubles range, Stun (2)",
+        "effect": [
+            "Dmg -2",
+            "AP -6",
+            "removes Scatter",
+            "Range is doubled",
+            "Stun (2)"
+        ],
         "price": "2",
         "unitofsale": "10",
         "weight": "42g",
@@ -772,7 +1036,9 @@
     {
         "caliber": "Small Fuel Tanks",
         "type": "Napalm",
-        "effect": "ignites flammable surfaces and sticks even to non-flammable ones",
+        "effect": [
+            "\\arsenaligniteammo"
+        ],
         "price": "32",
         "unitofsale": "1",
         "weight": "10kg",
@@ -782,7 +1048,11 @@
     {
         "caliber": "Small Fuel Tanks",
         "type": "White Phosphorus",
-        "effect": "halves range, burns for a D5 minutes, ignites flammable surfaces and sticks even to non-flammable ones, cannot be extinguished by water",
+        "effect": [
+            "Range is halved",
+            "\\arsenaligniteammo",
+            "Burns for a D5 minutes and cannot be extinguished by water"
+        ],
         "price": "64",
         "unitofsale": "1",
         "weight": "20kg",
@@ -792,7 +1062,12 @@
     {
         "caliber": "Small Fuel Tanks",
         "type": "Water",
-        "effect": "1 dmg, ignores armor, Stun (*the original amount of damage dice). The target makes an Athletics Test or falls prone.",
+        "effect": [
+            "Dmg 1",
+            "ignores armor",
+            "Stun (*the original amount of damage dice)",
+            "The target makes an Athletics Test or falls prone."
+        ],
         "price": "8",
         "unitofsale": "1",
         "weight": "13kg",
@@ -802,7 +1077,10 @@
     {
         "caliber": "Small Fuel Tanks",
         "type": "Liquid Helium",
-        "effect": "halves range, causes D5 exhaustion per hit",
+        "effect": [
+            "Range is halved",
+            "causes D5 exhaustion per hit"
+        ],
         "price": "64",
         "unitofsale": "1",
         "weight": "13kg",
@@ -812,7 +1090,9 @@
     {
         "caliber": "Medium Fuel Tanks",
         "type": "Napalm",
-        "effect": "ignites flammable surfaces",
+        "effect": [
+            "\\arsenaligniteammo"
+        ],
         "price": "61",
         "unitofsale": "1",
         "weight": "20kg",
@@ -822,7 +1102,11 @@
     {
         "caliber": "Medium Fuel Tanks",
         "type": "White Phosphorus",
-        "effect": "halves range, burns for a D5 minutes, ignites flammable surfaces and sticks even to non-flammable ones",
+        "effect": [
+            "Range is halved",
+            "burns for a D5 minutes",
+            "\\arsenaligniteammo"
+        ],
         "price": "122",
         "unitofsale": "1",
         "weight": "40kg",
@@ -832,7 +1116,12 @@
     {
         "caliber": "Medium Fuel Tanks",
         "type": "Water",
-        "effect": "1 dmg, ignores armor, Stun (*the original amount of damage dice). The target makes a -10 Athletics Test or falls prone.",
+        "effect": [
+            "Dmg 1",
+            "ignores armor",
+            "Stun (*the original amount of damage dice)",
+            "The target makes a -10 Athletics Test or falls prone."
+        ],
         "price": "17",
         "unitofsale": "1",
         "weight": "25kg",
@@ -842,7 +1131,10 @@
     {
         "caliber": "Medium Fuel Tanks",
         "type": "Liquid Helium",
-        "effect": "halves range, causes D5 exhaustion per hit",
+        "effect": [
+            "Range is halved",
+            "causes D5 exhaustion per hit"
+        ],
         "price": "122",
         "unitofsale": "1",
         "weight": "25kg",
@@ -852,7 +1144,9 @@
     {
         "caliber": "Large Fuel Tanks",
         "type": "Napalm",
-        "effect": "ignites flammable surfaces",
+        "effect": [
+            "\\arsenaligniteammo"
+        ],
         "price": "150",
         "unitofsale": "1",
         "weight": "50kg",
@@ -862,7 +1156,11 @@
     {
         "caliber": "Large Fuel Tanks",
         "type": "White Phosphorus",
-        "effect": "halves range, burns for a D5 minutes, ignites flammable surfaces and sticks even to non-flammable ones",
+        "effect": [
+            "Range is halved",
+            "\\arsenaligniteammo",
+            "burns for a D5 minutes"
+        ],
         "price": "300",
         "unitofsale": "1",
         "weight": "100kg",
@@ -872,7 +1170,12 @@
     {
         "caliber": "Large Fuel Tanks",
         "type": "Water",
-        "effect": "1 dmg, ignores armor, Stun (*the original amount of damage dice). The target makes a -20 Athletics Test or falls prone.",
+        "effect": [
+            "Dmg 1",
+            "ignores armor",
+            "Stun (*the original amount of damage dice)",
+            "The target makes a -20 Athletics Test or falls prone."
+        ],
         "price": "32",
         "unitofsale": "1",
         "weight": "62.5kg",
@@ -882,7 +1185,10 @@
     {
         "caliber": "Large Fuel Tanks",
         "type": "Liquid Helium",
-        "effect": "halves range, causes D10 exhaustion per hit",
+        "effect": [
+            "Range is halved",
+            "causes D10 exhaustion per hit"
+        ],
         "price": "300",
         "unitofsale": "1",
         "weight": "62.5kg",
@@ -892,7 +1198,9 @@
     {
         "caliber": "Small Fuel Cells",
         "type": "Standard Issue",
-        "effect": "-",
+        "effect": [
+            "-"
+        ],
         "price": "5",
         "unitofsale": "1",
         "weight": "250g",
@@ -902,7 +1210,9 @@
     {
         "caliber": "Small Fuel Cells",
         "type": "Unstable",
-        "effect": "On a hit roll above 95 causes the weapon's damage with Blast (1) centered on the shooter.",
+        "effect": [
+            "On a hit roll above 95 causes the weapon's damage with Blast (1) centered on the shooter."
+        ],
         "price": "2",
         "unitofsale": "1",
         "weight": "250g",
@@ -912,7 +1222,9 @@
     {
         "caliber": "Medium Fuel Cells",
         "type": "Standard Issue",
-        "effect": "-",
+        "effect": [
+            "-"
+        ],
         "price": "8",
         "unitofsale": "1",
         "weight": "750g",
@@ -922,7 +1234,9 @@
     {
         "caliber": "Medium Fuel Cells",
         "type": "Unstable",
-        "effect": "On a hit roll above 95 causes the weapon's damage with Blast (1) centered on the shooter.",
+        "effect": [
+            "On a hit roll above 95 causes the weapon's damage with Blast (1) centered on the shooter."
+        ],
         "price": "4",
         "unitofsale": "1",
         "weight": "750g",
@@ -932,7 +1246,9 @@
     {
         "caliber": "Large Fuel Cells",
         "type": "Standard Issue",
-        "effect": "-",
+        "effect": [
+            "-"
+        ],
         "price": "16",
         "unitofsale": "1",
         "weight": "1.5kg",
@@ -942,7 +1258,9 @@
     {
         "caliber": "Large Fuel Cells",
         "type": "Unstable",
-        "effect": "On a hit roll above 95 causes the weapon's damage with Blast (1) centered on the shooter.",
+        "effect": [
+            "On a hit roll above 95 causes the weapon's damage with Blast (1) centered on the shooter."
+        ],
         "price": "11",
         "unitofsale": "1",
         "weight": "1.5kg",
@@ -952,7 +1270,9 @@
     {
         "caliber": "Small Shard Blocks",
         "type": "Standard Issue",
-        "effect": "-",
+        "effect": [
+            "-"
+        ],
         "price": "2",
         "unitofsale": "1",
         "weight": "300g",
@@ -962,7 +1282,10 @@
     {
         "caliber": "Small Shard Blocks",
         "type": "Crude",
-        "effect": "-50% mag size, jams on 91 and above",
+        "effect": [
+            "Mag size halved",
+            "Jams on 91 and above"
+        ],
         "price": "3",
         "unitofsale": "5",
         "weight": "300g",
@@ -972,7 +1295,9 @@
     {
         "caliber": "Large Shard Blocks",
         "type": "Standard Issue",
-        "effect": "-",
+        "effect": [
+            "-"
+        ],
         "price": "4",
         "unitofsale": "1",
         "weight": "1.8kg",
@@ -982,7 +1307,10 @@
     {
         "caliber": "Large Shard Blocks",
         "type": "Crude",
-        "effect": "-50% mag size, jams on 91 and above",
+        "effect": [
+            "Mag size halved",
+            "Jams on 91 and above"
+        ],
         "price": "6",
         "unitofsale": "5",
         "weight": "1.8kg",
@@ -992,7 +1320,10 @@
     {
         "caliber": "Large Shard Blocks",
         "type": "Osmium Alloy",
-        "effect": "+D5 damage, -2 AP",
+        "effect": [
+            "Dmg +D5",
+            "AP -2"
+        ],
         "price": "10",
         "unitofsale": "1",
         "weight": "3.6kg",
@@ -1002,7 +1333,9 @@
     {
         "caliber": "Vehicle Shard Blocks",
         "type": "Standard Issue",
-        "effect": "-",
+        "effect": [
+            "-"
+        ],
         "price": "12",
         "unitofsale": "1",
         "weight": "3.2kg",
@@ -1012,7 +1345,10 @@
     {
         "caliber": "Vehicle Shard Blocks",
         "type": "Crude",
-        "effect": "-50% mag size, jams on 91 and above",
+        "effect": [
+            "Mag size halved",
+            "Jams on 91 and above"
+        ],
         "price": "15",
         "unitofsale": "2",
         "weight": "3.2kg",
@@ -1022,7 +1358,10 @@
     {
         "caliber": "Vehicle Shard Blocks",
         "type": "Osmium Alloy",
-        "effect": "+D10 damage, -2 AP",
+        "effect": [
+            "Dmg +D10",
+            "AP -2"
+        ],
         "price": "35",
         "unitofsale": "1",
         "weight": "6.2kg",
@@ -1032,7 +1371,11 @@
     {
         "caliber": "20mm grenades",
         "type": "Fragmentation",
-        "effect": "2D10+2 | 2 AP | Blast (6)",
+        "effect": [
+            "2D10+2",
+            "AP 2",
+            "Blast (6)"
+        ],
         "price": "20",
         "unitofsale": "1",
         "weight": "120g",
@@ -1042,7 +1385,11 @@
     {
         "caliber": "20mm grenades",
         "type": "High Explosive",
-        "effect": "2D10+6 | 5 AP | Blast (2)",
+        "effect": [
+            "2D10+6",
+            "AP 5",
+            "Blast (2)"
+        ],
         "price": "20",
         "unitofsale": "1",
         "weight": "120g",
@@ -1052,7 +1399,13 @@
     {
         "caliber": "20mm grenades",
         "type": "Thermobaric",
-        "effect": "3D10 | 2 AP | Blast (10) | heat-based, ignores all cover and non-vacuum-sealed or natural armor",
+        "effect": [
+            "3D10",
+            "AP 2",
+            "Blast (10)",
+            "heat-based",
+            "Ignores all cover and non-vacuum-sealed or natural armor"
+        ],
         "price": "100",
         "unitofsale": "1",
         "weight": "120g",
@@ -1062,7 +1415,12 @@
     {
         "caliber": "20mm grenades",
         "type": "Incendiary",
-        "effect": "D10+2 | 0 AP | Blast (8) | ignites all flammable objects in the radius",
+        "effect": [
+            "D10+2",
+            "AP 0",
+            "Blast (8)",
+            "\\arsenaligniteammo"
+        ],
         "price": "20",
         "unitofsale": "1",
         "weight": "120g",
@@ -1072,7 +1430,11 @@
     {
         "caliber": "20mm grenades",
         "type": "Buckshot Canister",
-        "effect": "2D10+3 | 5 AP | Scatter",
+        "effect": [
+            "2D10+3",
+            "AP 5",
+            "Scatter"
+        ],
         "price": "15",
         "unitofsale": "1",
         "weight": "120g",
@@ -1082,7 +1444,10 @@
     {
         "caliber": "20mm grenades",
         "type": "Slug",
-        "effect": "2D5+8 | 8 AP",
+        "effect": [
+            "2D5+8",
+            "AP 8"
+        ],
         "price": "15",
         "unitofsale": "1",
         "weight": "120g",
@@ -1092,7 +1457,12 @@
     {
         "caliber": "20mm grenades",
         "type": "Smoke",
-        "effect": "0 | 0 AP | Blast (8), Smoke",
+        "effect": [
+            "0",
+            "AP 0",
+            "Blast (8)",
+            "Smoke"
+        ],
         "price": "10",
         "unitofsale": "1",
         "weight": "120g",
@@ -1102,7 +1472,12 @@
     {
         "caliber": "20mm grenades",
         "type": "Flashbang",
-        "effect": "0 | 0 AP | Blast (12), Flash",
+        "effect": [
+            "0",
+            "AP 0",
+            "Blast (12)",
+            "Flash"
+        ],
         "price": "15",
         "unitofsale": "1",
         "weight": "120g",
@@ -1112,7 +1487,12 @@
     {
         "caliber": "20mm grenades",
         "type": "EMP",
-        "effect": "0 | 0 AP | Blast (4), EMP",
+        "effect": [
+            "0",
+            "AP 0",
+            "Blast (4)",
+            "EMP"
+        ],
         "price": "180",
         "unitofsale": "1",
         "weight": "120g",
@@ -1122,7 +1502,15 @@
     {
         "caliber": "20mm grenades",
         "type": "Tear Gas",
-        "effect": "0 | 0 AP | Blast (6), Smoke, Stun (0), ignores cover and non-vacuum-sealed armor, Stun is applied every round in the Smoke",
+        "effect": [
+            "0",
+            "AP 0",
+            "Blast (6)",
+            "Smoke",
+            "Stun (0)",
+            "ignores cover and non-vacuum-sealed armor",
+            "Stun is applied every round in the Smoke"
+        ],
         "price": "20",
         "unitofsale": "1",
         "weight": "120g",
@@ -1132,7 +1520,12 @@
     {
         "caliber": "20mm grenades",
         "type": "Rubber Slug",
-        "effect": "1D10+3 | 2 AP | Stun (5), hits to the head cause 2D5 initiative loss",
+        "effect": [
+            "1D10+3",
+            "AP 2",
+            "Stun (5)",
+            "\\arsenalrubberammo 2D5"
+        ],
         "price": "15",
         "unitofsale": "1",
         "weight": "120g",
@@ -1142,7 +1535,12 @@
     {
         "caliber": "20mm grenades",
         "type": "Riot Foam",
-        "effect": "0 | 0 AP | Blast (12), Sticky",
+        "effect": [
+            "0",
+            "AP 0",
+            "Blast (12)",
+            "Sticky"
+        ],
         "price": "20",
         "unitofsale": "1",
         "weight": "120g",
@@ -1152,7 +1550,12 @@
     {
         "caliber": "20mm grenades",
         "type": "Signal Smoke",
-        "effect": "0 | 0 AP | Blast (4) | a smoke spewer to signal allies; comes in various colors",
+        "effect": [
+            "0",
+            "AP 0",
+            "Blast (4)",
+            "A signal smoke spewer in one of various colors, visible from great distance."
+        ],
         "price": "10",
         "unitofsale": "1",
         "weight": "120g",
@@ -1162,7 +1565,11 @@
     {
         "caliber": "20mm grenades",
         "type": "Parachute Flare",
-        "effect": "D5 | 0 AP | a signal flare that burns for 3 minutes and falls at 1 meter per 3 seconds (or 1 round)",
+        "effect": [
+            "Dmg D5",
+            "AP 0",
+            "A signal flare that burns for 3 minutes and falls at 1 meter per 3 seconds (or 1 round)"
+        ],
         "price": "15",
         "unitofsale": "1",
         "weight": "120g",
@@ -1172,7 +1579,11 @@
     {
         "caliber": "20mm grenades",
         "type": "Infrared Illuminator",
-        "effect": "1 | 0 AP | a large chemlight that emits infrared light in a very large area",
+        "effect": [
+            "Dmg 1",
+            "AP 0",
+            "A large chemlight that emits infrared light in a very large area"
+        ],
         "price": "15",
         "unitofsale": "1",
         "weight": "120g",
@@ -1182,7 +1593,11 @@
     {
         "caliber": "40mm grenades",
         "type": "Fragmentation",
-        "effect": "2D10+7 | 2 AP | Blast (9)",
+        "effect": [
+            "Dmg 2D10+7",
+            "AP 2",
+            "Blast (9)"
+        ],
         "price": "40",
         "unitofsale": "1",
         "weight": "230g",
@@ -1192,7 +1607,11 @@
     {
         "caliber": "40mm grenades",
         "type": "High Explosive",
-        "effect": "3D10+6 | 5 AP | Blast (3)",
+        "effect": [
+            "Dmg 3D10+6",
+            "AP 5",
+            "Blast (3)"
+        ],
         "price": "40",
         "unitofsale": "1",
         "weight": "230g",
@@ -1202,7 +1621,12 @@
     {
         "caliber": "40mm grenades",
         "type": "Thermobaric",
-        "effect": "4D10 | 2 AP | Blast (15) | heat-based, ignores all cover and non-vacuum-sealed armor",
+        "effect": [
+            "Dmg 4D10",
+            "AP 2",
+            "Blast (15)",
+            "Ignores all cover and non-vacuum-sealed or natural armor"
+        ],
         "price": "200",
         "unitofsale": "1",
         "weight": "230g",
@@ -1212,7 +1636,12 @@
     {
         "caliber": "40mm grenades",
         "type": "Incendiary",
-        "effect": "D10+3 | 0 AP | Blast (12) | ignites all flammable objects in the radius",
+        "effect": [
+            "Dmg D10+3",
+            "AP 0",
+            "Blast (12)",
+            "\\arsenaligniteammo"
+        ],
         "price": "40",
         "unitofsale": "1",
         "weight": "230g",
@@ -1222,7 +1651,11 @@
     {
         "caliber": "40mm grenades",
         "type": "Buckshot Canister",
-        "effect": "3D10+3 | 5 AP | Scatter",
+        "effect": [
+            "Dmg 3D10+3",
+            "AP 5",
+            "Scatter"
+        ],
         "price": "30",
         "unitofsale": "1",
         "weight": "230g",
@@ -1232,7 +1665,10 @@
     {
         "caliber": "40mm grenades",
         "type": "Slug",
-        "effect": "2D10+9 | 9 AP",
+        "effect": [
+            "Dmg 2D10+9",
+            "AP 9"
+        ],
         "price": "30",
         "unitofsale": "1",
         "weight": "230g",
@@ -1242,7 +1678,12 @@
     {
         "caliber": "40mm grenades",
         "type": "Smoke",
-        "effect": "0 | 0 AP | Blast (12), Smoke",
+        "effect": [
+            "Dmg 0",
+            "AP 0",
+            "Blast (12)",
+            "Smoke"
+        ],
         "price": "20",
         "unitofsale": "1",
         "weight": "230g",
@@ -1252,7 +1693,12 @@
     {
         "caliber": "40mm grenades",
         "type": "Flashbang",
-        "effect": "0 | 0 AP | Blast (18), Flash",
+        "effect": [
+            "Dmg 0",
+            "AP 0",
+            "Blast (18)",
+            "Flash"
+        ],
         "price": "30",
         "unitofsale": "1",
         "weight": "230g",
@@ -1262,7 +1708,12 @@
     {
         "caliber": "40mm grenades",
         "type": "EMP",
-        "effect": "0 | 0 AP | Blast (9), EMP",
+        "effect": [
+            "Dmg 0",
+            "AP 0",
+            "Blast (9)",
+            "EMP"
+        ],
         "price": "360",
         "unitofsale": "1",
         "weight": "230g",
@@ -1272,7 +1723,15 @@
     {
         "caliber": "40mm grenades",
         "type": "Tear Gas",
-        "effect": "0 | 0 AP | Blast (8), Smoke, Stun (0), ignores cover and non-vacuum-sealed armor, Stun is applied every round in the Smoke",
+        "effect": [
+            "Dmg 0",
+            "AP 0",
+            "Blast (8)",
+            "Smoke",
+            "Stun (0)",
+            "Ignores all cover and non-vacuum-sealed or natural armor",
+            "Stun is applied every round in the Smoke"
+        ],
         "price": "40",
         "unitofsale": "1",
         "weight": "230g",
@@ -1282,7 +1741,12 @@
     {
         "caliber": "40mm grenades",
         "type": "Rubber Slug",
-        "effect": "2D10+3 | 2 AP | Stun (7), hits to the head cause 2D10 initiative loss",
+        "effect": [
+            "Dmg 2D10+3",
+            "AP 2",
+            "Stun (7)",
+            "\\arsenalrubberammo 2D10"
+        ],
         "price": "30",
         "unitofsale": "1",
         "weight": "230g",
@@ -1292,7 +1756,12 @@
     {
         "caliber": "40mm grenades",
         "type": "Signal Smoke",
-        "effect": "0 | 0 AP | Blast (4) | a smoke spewer to signal allies that lasts for a few minutes; comes in various colors",
+        "effect": [
+            "Dmg 0",
+            "AP 0",
+            "Blast (4)",
+            "A signal smoke spewer in one of various colors, visible from great distance."
+        ],
         "price": "20",
         "unitofsale": "1",
         "weight": "230g",
@@ -1302,7 +1771,11 @@
     {
         "caliber": "40mm grenades",
         "type": "Parachute Flare",
-        "effect": "D5+1 | 0 AP | a signal flare that burns for 5 minutes and falls at 1 meter per 3 seconds (or 1 round)",
+        "effect": [
+            "Dmg D5+1",
+            "AP 0",
+            "A signal flare that burns for 5 minutes and falls at 1 meter per 3 seconds (or 1 round)"
+        ],
         "price": "30",
         "unitofsale": "1",
         "weight": "230g",
@@ -1312,7 +1785,13 @@
     {
         "caliber": "40mm grenades",
         "type": "Thermite",
-        "effect": "6D10+10 | 25 AP | Blast (3) | takes two rounds to get going, then burns for one minute dealing its damage every round; sticks to rough surfaces",
+        "effect": [
+            "6D10+10",
+            "AP 25",
+            "Blast (3)",
+            "sticks to rough surfaces",
+            "Takes two rounds (~5 seconds) to get going, then burns for one minute dealing its damage every round."
+        ],
         "price": "360",
         "unitofsale": "1",
         "weight": "230g",
@@ -1322,7 +1801,9 @@
     {
         "caliber": "Micro Missiles",
         "type": "Fragmentation",
-        "effect": "Blast (2)",
+        "effect": [
+            "Blast (2)"
+        ],
         "price": "80",
         "unitofsale": "4",
         "weight": "1kg",
@@ -1332,7 +1813,10 @@
     {
         "caliber": "Micro Missiles",
         "type": "High Explosive",
-        "effect": "-1D10 dmg | +8 AP",
+        "effect": [
+            "Dmg -1D10",
+            "AP +8"
+        ],
         "price": "80",
         "unitofsale": "4",
         "weight": "1kg",
@@ -1342,7 +1826,12 @@
     {
         "caliber": "Micro Missiles",
         "type": "Incendiary",
-        "effect": "-3 dmg | -3 AP | Blast (1), ignites flammable objects",
+        "effect": [
+            "Dmg -3",
+            "AP -3",
+            "Blast (1)",
+            "\\arsenaligniteammo"
+        ],
         "price": "80",
         "unitofsale": "4",
         "weight": "1kg",
@@ -1352,7 +1841,11 @@
     {
         "caliber": "Small Rockets",
         "type": "HEAT",
-        "effect": "4D10+5 dmg | 6 AP | Blast (3)",
+        "effect": [
+            "Dmg 4D10+5",
+            "AP 6",
+            "Blast (3)"
+        ],
         "price": "80",
         "unitofsale": "1",
         "weight": "2kg",
@@ -1362,7 +1855,11 @@
     {
         "caliber": "Small Rockets",
         "type": "High Explosive",
-        "effect": "4D10+2 dmg | 3 AP | Blast (6)",
+        "effect": [
+            "Dmg 4D10+2",
+            "AP 3",
+            "Blast (6)"
+        ],
         "price": "80",
         "unitofsale": "1",
         "weight": "2kg",
@@ -1372,7 +1869,11 @@
     {
         "caliber": "Small Rockets",
         "type": "Fragmentation",
-        "effect": "3D10+8 dmg | 2 AP | Blast (8)",
+        "effect": [
+            "Dmg 3D10+8",
+            "AP 2",
+            "Blast (8)"
+        ],
         "price": "80",
         "unitofsale": "1",
         "weight": "2kg",
@@ -1382,7 +1883,12 @@
     {
         "caliber": "Small Rockets",
         "type": "Incendiary",
-        "effect": "2D10+5 dmg | 2 AP | Blast (6) | ignites flammable objects",
+        "effect": [
+            "Dmg 2D10+5",
+            "AP 2",
+            "Blast (6)",
+            "\\arsenaligniteammo"
+        ],
         "price": "110",
         "unitofsale": "1",
         "weight": "2kg",
@@ -1392,7 +1898,12 @@
     {
         "caliber": "Small Rockets",
         "type": "Incendiary Fragmentation",
-        "effect": "3D10+5 dmg | 2 AP | Blast (8) | ignites flammable objects",
+        "effect": [
+            "Dmg 3D10+5",
+            "AP 2",
+            "Blast (8)",
+            "\\arsenaligniteammo"
+        ],
         "price": "170",
         "unitofsale": "1",
         "weight": "2kg",
@@ -1402,7 +1913,12 @@
     {
         "caliber": "Small Rockets",
         "type": "Thermobaric",
-        "effect": "4D10+8 dmg | 3 AP | Blast (12) | heat-based, ignores all cover and non-vacuum-sealed armor",
+        "effect": [
+            "Dmg 4D10+8",
+            "AP 3",
+            "Blast (12)",
+            "Ignores all cover and non-vacuum-sealed or natural armor"
+        ],
         "price": "400",
         "unitofsale": "1",
         "weight": "2kg",
@@ -1412,7 +1928,13 @@
     {
         "caliber": "Small Rockets",
         "type": "Thermite",
-        "effect": "6D10+10 | 25 AP | Blast (4) | takes two rounds to get going, then burns for one minute dealing its damage every round; sticks to rough surfaces",
+        "effect": [
+            "6D10+10",
+            "AP 25",
+            "Blast (4)",
+            "sticks to rough surfaces",
+            "Takes two rounds (~5 seconds) to get going, then burns for one minute dealing its damage every round."
+        ],
         "price": "400",
         "unitofsale": "1",
         "weight": "2kg",
@@ -1422,7 +1944,10 @@
     {
         "caliber": "Small Rockets",
         "type": "Kinetic Penetrator",
-        "effect": "4D10+5 dmg | 14 AP",
+        "effect": [
+            "Dmg 4D10+5",
+            "AP 14"
+        ],
         "price": "110",
         "unitofsale": "1",
         "weight": "2kg",
@@ -1432,7 +1957,11 @@
     {
         "caliber": "Large Rockets",
         "type": "HEAT",
-        "effect": "4D10+6 dmg | 8 AP | Blast (6)",
+        "effect": [
+            "Dmg 4D10+6",
+            "AP 8",
+            "Blast (6)"
+        ],
         "price": "120",
         "unitofsale": "1",
         "weight": "3.5kg",
@@ -1442,7 +1971,11 @@
     {
         "caliber": "Large Rockets",
         "type": "High Explosive",
-        "effect": "4D10+4 dmg | 5 AP | Blast (8)",
+        "effect": [
+            "Dmg 4D10+4",
+            "AP 5",
+            "Blast (8)"
+        ],
         "price": "120",
         "unitofsale": "1",
         "weight": "3.5kg",
@@ -1452,7 +1985,11 @@
     {
         "caliber": "Large Rockets",
         "type": "Fragmentation",
-        "effect": "3D10+11 dmg | 3 AP | Blast (10)",
+        "effect": [
+            "Dmg 3D10+11",
+            "AP 3",
+            "Blast (10)"
+        ],
         "price": "120",
         "unitofsale": "1",
         "weight": "3.5kg",
@@ -1462,7 +1999,12 @@
     {
         "caliber": "Large Rockets",
         "type": "Incendiary",
-        "effect": "2D10+8 dmg | 2 AP | Blast (8) | ignites flammable objects",
+        "effect": [
+            "Dmg 2D10+8",
+            "AP 2",
+            "Blast (8)",
+            "\\arsenaligniteammo"
+        ],
         "price": "180",
         "unitofsale": "1",
         "weight": "3.5kg",
@@ -1472,7 +2014,12 @@
     {
         "caliber": "Large Rockets",
         "type": "Incendiary Fragmentation",
-        "effect": "3D10+8 dmg | 3 AP | Blast (10) | ignites flammable objects",
+        "effect": [
+            "Dmg 3D10+8",
+            "AP 3",
+            "Blast (10)",
+            "\\arsenaligniteammo"
+        ],
         "price": "260",
         "unitofsale": "1",
         "weight": "3.5kg",
@@ -1482,7 +2029,12 @@
     {
         "caliber": "Large Rockets",
         "type": "Thermobaric",
-        "effect": "5D10+10 dmg | 5 AP | Blast (18) | heat-based, ignores all cover and non-vacuum-sealed armor",
+        "effect": [
+            "Dmg 5D10+10",
+            "AP 5",
+            "Blast (18)",
+            "Ignores all cover and non-vacuum-sealed or natural armor"
+        ],
         "price": "600",
         "unitofsale": "1",
         "weight": "3.5kg",
@@ -1492,7 +2044,13 @@
     {
         "caliber": "Large Rockets",
         "type": "Thermite",
-        "effect": "6D10+10 | 25 AP | Blast (6) | takes two rounds to get going, then burns for one minute dealing its damage every round; sticks to rough surfaces",
+        "effect": [
+            "Dmg 6D10+10",
+            "AP 25",
+            "Blast (6)",
+            "sticks to rough surfaces",
+            "Takes two rounds (~5 seconds) to get going, then burns for one minute dealing its damage every round."
+        ],
         "price": "600",
         "unitofsale": "1",
         "weight": "3.5kg",
@@ -1502,7 +2060,10 @@
     {
         "caliber": "Large Rockets",
         "type": "Kinetic Penetrator",
-        "effect": "4D10+8 dmg | 18 AP",
+        "effect": [
+            "Dmg 4D10+8",
+            "AP 18"
+        ],
         "price": "180",
         "unitofsale": "1",
         "weight": "3.5kg",
@@ -1512,7 +2073,9 @@
     {
         "caliber": "Arrow / Bolt",
         "type": "Broadhead",
-        "effect": "-",
+        "effect": [
+            "-"
+        ],
         "price": "1",
         "unitofsale": "20",
         "weight": "30g",
@@ -1522,7 +2085,10 @@
     {
         "caliber": "Arrow / Bolt",
         "type": "AP",
-        "effect": "-1 dmg, +3 AP",
+        "effect": [
+            "Dmg -1",
+            "AP +3"
+        ],
         "price": "1",
         "unitofsale": "20",
         "weight": "30g",
@@ -1532,7 +2098,10 @@
     {
         "caliber": "Arrow / Bolt",
         "type": "Shield Breaker",
-        "effect": "-1 dmg, Disrupt",
+        "effect": [
+            "Dmg -1",
+            "Disrupt"
+        ],
         "price": "25",
         "unitofsale": "3",
         "weight": "30g",
@@ -1542,7 +2111,11 @@
     {
         "caliber": "Arrow / Bolt",
         "type": "Syringer",
-        "effect": "-3 dmg, +1 AP, contains an empty vial to be filled with poisons or other injections that are released into a biological target when hit",
+        "effect": [
+            "Dmg -3",
+            "AP +1",
+            "Contains an empty vial to be filled with any one injection. It is released into a biological target on hit."
+        ],
         "price": "15",
         "unitofsale": "3",
         "weight": "30g",
@@ -1552,7 +2125,12 @@
     {
         "caliber": "Arrow / Bolt",
         "type": "Grapple",
-        "effect": "-4 dmg, 0 AP, half range; the mechanized grapple attaches to a rope and holds on most surfaces, except e.g. very sturdy metals or fragile materials like glass",
+        "effect": [
+            "Dmg -4",
+            "AP 0",
+            "Range is halved",
+            "The mechanized grappling hook can be attached to a rope. The front end will hold on most surfaces, except e.g. very sturdy metals or fragile materials like glass"
+        ],
         "price": "15",
         "unitofsale": "3",
         "weight": "30g",

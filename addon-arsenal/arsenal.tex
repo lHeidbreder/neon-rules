@@ -7,6 +7,12 @@
 % Title definition
 \def\subtitle{Arsenal}
 
+%Ammo macros
+\newcommand{\arsenalhotcoldammo}{Identifying the shooter's position by hearing gains}
+\newcommand{\arsenaltracerammo}{Others shooting the same target this turn gain +10 to hit.}
+\newcommand{\arsenaligniteammo}{Flammable materials will ignite on hit}
+\newcommand{\arsenalrubberammo}{Every hit against the target's head reduces its initiative by}
+
 \begin{document}
 \input{../core-rulebook/config/frontpages}
 
@@ -19,7 +25,7 @@
 \section{Ammunition}
 	\intablefalse
 	\luaimport{equipment/ammo.json}{ammo-arsenal.tpl}{equipment/ammo}
-	\end{tabular}
+	\end{longtable}
 
 %% MELEE
 \chapter{Melee}
